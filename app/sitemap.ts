@@ -9,6 +9,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 1,
     },
+    { url: `${siteUrl}/about`, lastModified: guidePublishedAt, changeFrequency: 'monthly', priority: 0.4 },
+    { url: `${siteUrl}/editorial`, lastModified: guidePublishedAt, changeFrequency: 'monthly', priority: 0.4 },
+    { url: `${siteUrl}/privacy`, lastModified: guidePublishedAt, changeFrequency: 'yearly', priority: 0.2 },
     ...repoGuidePages.map((guide) => ({ url: `${siteUrl}/guides/${guide.slug}`, lastModified: guidePublishedAt, changeFrequency: 'weekly' as const, priority: 0.8 })),
   ];
 }
