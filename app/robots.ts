@@ -1,6 +1,5 @@
 import type { MetadataRoute } from 'next';
-
-const siteUrl = 'https://roguelikegame.org';
+import { siteUrl } from '@/lib/repo-guide-pages';
 
 export default function robots(): MetadataRoute.Robots {
   return {
