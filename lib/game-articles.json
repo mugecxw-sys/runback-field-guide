@@ -1,0 +1,1930 @@
+[
+  {
+    "slug": "cult-of-the-lamb",
+    "title": "Cult of the Lamb",
+    "articles": [
+      {
+        "id": "P0-1",
+        "slug": "beginner-guide-your-first-sustainable-cult",
+        "title": "Beginner guide: your first sustainable cult",
+        "category": "Start",
+        "answer": "Before each crusade, feed the cult, clear sickness and repair beds. Spend the next run on one objective, then return to collect devotion and restore supplies before leaving again.",
+        "steps": [
+          "Inspect hunger, faith and sickness at the base. Cook enough meals for the followers you already have before recruiting more; food shortages become harder to fix when population keeps growing.",
+          "Give sick followers bed rest, remove waste and deal with bodies. Repair collapsed shelters so a combat run does not begin with several unresolved base problems.",
+          "Collect shrine devotion and choose practical Divine Inspiration unlocks. Farming and resource production reduce how often you must interrupt dungeon progress to gather basic supplies.",
+          "On the crusade map, choose food or material rooms when those supplies are the reason your base is struggling. During combat, take a short attack window and roll clear instead of finishing every combo.",
+          "After the boss or your planned objective, return and repeat the base check. Add a new building or follower only when you can maintain the extra daily demand."
+        ],
+        "mistakes": "Recruiting faster than your kitchen and farm can support.",
+        "versionNote": "Woolhaven requires the DLC and relevant story progress. Follow the quest requirements displayed in your save.",
+        "sources": [
+          {
+            "href": "https://cult-of-the-lamb.fandom.com/wiki/Doctrines",
+            "label": "cult-of-the-lamb.fandom.com — Doctrines"
+          },
+          {
+            "href": "https://cult-of-the-lamb.fandom.com/wiki/Follower_traits",
+            "label": "cult-of-the-lamb.fandom.com — Follower traits"
+          }
+        ]
+      },
+      {
+        "id": "P0-2",
+        "slug": "follower-traits-who-should-work-worship-and-gain-loyalty",
+        "title": "Follower traits: who should work, worship and gain loyalty?",
+        "category": "Followers",
+        "answer": "Use Industrious followers for production, Faithful followers for devotion, and Gullible followers when you want faster loyalty growth. Check negative traits before moving a follower into a permanent role.",
+        "steps": [
+          "Inspect the complete trait list during recruitment or through follower interaction. Two followers with the same appearance can behave differently, so assign by effects rather than follower form.",
+          "Keep productive followers on jobs you currently need: farming, lumber or stone. Avoid constant reassignment when the job is already supplying enough resources.",
+          "Assign devotion-oriented followers to worship. Collect the shrine regularly; extra production is less useful when the storage is already full.",
+          "Use daily loyalty interactions on followers you want to develop. Gullible is useful for this goal, but it does not by itself fix hunger or low cult faith.",
+          "When breeding, choose useful inheritable traits from the offered selection. A special story trait or necklace effect is not automatically available to pass on."
+        ],
+        "mistakes": "Judging a follower from one positive trait while ignoring the rest.",
+        "versionNote": "Woolhaven requires the DLC and relevant story progress. Follow the quest requirements displayed in your save.",
+        "sources": [
+          {
+            "href": "https://cult-of-the-lamb.fandom.com/wiki/Follower_traits",
+            "label": "cult-of-the-lamb.fandom.com — Follower traits"
+          },
+          {
+            "href": "https://www.reddit.com/r/CultOfTheLamb/comments/1sn8wg1/what_are_your_ideal_follower_traits/",
+            "label": "reddit.com — what are your ideal follower traits"
+          }
+        ]
+      },
+      {
+        "id": "P0-3",
+        "slug": "woolhaven-followers-winter-traits-and-snowlamb-care",
+        "title": "Woolhaven followers: winter traits and Snowlamb care",
+        "category": "Woolhaven",
+        "answer": "Read a winter follower's full trait description before bringing it into a long-term work plan. Snowlambs have special seasonal behavior; treat their survival differently from ordinary followers.",
+        "steps": [
+          "Prepare heating and winter resources before adding more winter-dependent followers. A recruit increases the number of bodies your base needs to support immediately.",
+          "For a Snowlamb, check whether its displayed traits or necklace protect it outside winter. Community reports distinguish ordinary Snowlambs from protected variants; appearance alone is not proof.",
+          "Keep a protected Snowlamb separate in your mental roster from temporary seasonal followers. Do not assign a critical production job to a follower whose survival condition you cannot maintain.",
+          "When choosing parents, inspect the child-trait selection instead of assuming a seasonal protection or story effect will inherit. Keep the parent available until the offspring's condition is clear.",
+          "For ranch work, use the relevant animal-affection trait only for its stated interaction. Petting and friendship benefits should not be treated as a blanket production multiplier."
+        ],
+        "mistakes": "Assuming every Snowlamb survives the same seasonal conditions.",
+        "versionNote": "Woolhaven requires the DLC and relevant story progress. Follow the quest requirements displayed in your save.",
+        "sources": [
+          {
+            "href": "https://www.reddit.com/r/CultOfTheLamb/comments/1re1zri/all_the_known_information_on_snowlambs_woolhaven/",
+            "label": "reddit.com — all the known information on snowlambs woolhaven"
+          },
+          {
+            "href": "https://www.reddit.com/r/CultOfTheLamb/comments/1rfs51o/woolhaven_secretsmissables/",
+            "label": "reddit.com — woolhaven secretsmissables"
+          }
+        ]
+      },
+      {
+        "id": "P0-4",
+        "slug": "woolhaven-quest-order-start-restore-the-village-and-prepare-for-winter",
+        "title": "Woolhaven quest order: start, restore the village and prepare for winter",
+        "category": "Woolhaven",
+        "answer": "Start Woolhaven at Yngya's statue after meeting the base-game progression requirement. Follow the offerings, ascend Ewefall, and restore the village while building a fuel reserve for winter.",
+        "steps": [
+          "Install and enable the DLC, then look for Yngya's statue near the cult entrance. If it is absent, defeat the four Bishops (Leshy, Heket, Kallamar and Shamura) and reload the base before checking again.",
+          "Interact with the statue and provide the offerings it requests. Follow the newly available route; arriving at the mountain and completing the introduction starts the winter storyline.",
+          "In Ewefall, follow the main objective and gather Charged Shards when their resource room appears. Break the glass lamps there, then collect the dropped shards before leaving.",
+          "Return recovered wool or souls to the appropriate grave or shrine in Woolhaven. Speak to restored villagers and complete the building requests they introduce; these unlock more village services.",
+          "Keep Rotburn and winter supplies ahead of optional decoration spending. Between major dungeon objectives, revisit both the cult and the village quest boards so the next unlock is not waiting on a completed hand-in."
+        ],
+        "mistakes": "Spending winter fuel on optional projects before the cult is prepared.",
+        "versionNote": "Woolhaven requires the DLC and relevant story progress. Follow the quest requirements displayed in your save.",
+        "sources": [
+          {
+            "href": "https://www.neoseeker.com/cult-of-the-lamb/walkthrough/How-to",
+            "label": "neoseeker.com — How to"
+          },
+          {
+            "href": "https://game8.co/games/Cult-of-the-Lamb/archives/576573",
+            "label": "game8.co — 576573"
+          }
+        ]
+      },
+      {
+        "id": "P0-5",
+        "slug": "follower-quest-not-appearing-prerequisite-and-dialogue-checks",
+        "title": "Follower quest not appearing: prerequisite and dialogue checks",
+        "category": "Troubleshooting",
+        "answer": "Check the active quest log, the follower's availability and any DLC prerequisites first. Return during a normal day and finish pending dialogue before treating a missing prompt as a save problem.",
+        "steps": [
+          "Find the intended follower at the base. If they are away, sick or occupied by a story event, resolve that state or wait for their return before attempting the interaction again.",
+          "Read existing quests before accepting more tasks. Hand in completed objectives; having the required item is different from reporting completion to the quest giver.",
+          "For Woolhaven requests, revisit the relevant village building and board. Restoration progress and returning a villager to their grave can matter before a later challenge appears.",
+          "Let a normal day pass and talk to the follower again. Avoid repeatedly changing multiple conditions at once, which makes it difficult to tell what actually unblocked the dialogue.",
+          "If nothing changes, save normally, relaunch and check the official update notes for your platform. Keep a copy of the save before using mods or save editors; removing the follower is not a routine fix."
+        ],
+        "mistakes": "Deleting a follower before checking dialogue and prerequisites.",
+        "versionNote": "Woolhaven requires the DLC and relevant story progress. Follow the quest requirements displayed in your save.",
+        "sources": [
+          {
+            "href": "https://www.neoseeker.com/cult-of-the-lamb/guides/Woolhaven-Sidequests",
+            "label": "neoseeker.com — Woolhaven Sidequests"
+          }
+        ]
+      },
+      {
+        "id": "P0-6",
+        "slug": "ritual-choices-hunger-faith-and-follower-recovery",
+        "title": "Ritual choices: hunger, faith and follower recovery",
+        "category": "Rituals",
+        "answer": "Choose a ritual for the problem in front of you. Feasting or fasting can address food pressure, while resurrection is for recovering a specific follower; availability depends on your chosen doctrines.",
+        "steps": [
+          "Open the ritual menu and read both the effect and cost. Check which doctrines your cult actually has; a recommended ritual may be unavailable because you selected the alternative.",
+          "For a hungry cult, compare immediate feeding with a fasting window. Use the breathing room to restore farming and meal production instead of immediately expanding the population.",
+          "For faith pressure, choose an available faith-restoring action and clear the underlying problem, such as poor living conditions or sickness. A temporary faith boost does not repair the base.",
+          "Reserve resurrection for a follower you want back and check the ritual's current restrictions. Do not assume every sacrificed or story-removed character can be recovered in the same way.",
+          "Before a long crusade, check cooldowns and material reserves. Keep enough resources for the next important ritual rather than spending everything on optional effects while the base is unstable."
+        ],
+        "mistakes": "Choosing a ritual you did not unlock through your doctrines.",
+        "versionNote": "Woolhaven requires the DLC and relevant story progress. Follow the quest requirements displayed in your save.",
+        "sources": [
+          {
+            "href": "https://cult-of-the-lamb.fandom.com/wiki/Doctrines",
+            "label": "cult-of-the-lamb.fandom.com — Doctrines"
+          }
+        ]
+      },
+      {
+        "id": "P0-7",
+        "slug": "follower-breeding-mating-tent-traits-eggs-and-the-hatchery",
+        "title": "Follower breeding: Mating Tent, traits, eggs and the Hatchery",
+        "category": "Followers",
+        "answer": "Build a Mating Tent and an Egg Hatchery, select eligible adults, and spend Sin on an attempt. After a successful pairing, choose the offered traits and move the egg into the Hatchery.",
+        "steps": [
+          "Unlock the Sin-related systems and check the building requirements at the construction menu. Prepare the Hatchery before making an egg so it has somewhere to incubate.",
+          "At the Mating Tent, select two eligible followers and inspect the success chance. Relationships and traits affect the pairing; a desirable parent is not automatically a reliable match.",
+          "Spend the required Sin and complete the attempt. On success, select the inheritable traits offered by the game; ordinary and golden eggs do not provide identical trait choices.",
+          "Carry the egg to the Hatchery and incubate it. Do not choose to crack it if you intend to raise the follower: cracking turns the egg into a resource instead.",
+          "After hatching, care for the child while maintaining meals and sanitation for the existing cult. Wait until the follower grows and is indoctrinated before counting it as a replacement worker."
+        ],
+        "mistakes": "Cracking an egg that you intended to hatch.",
+        "versionNote": "Woolhaven requires the DLC and relevant story progress. Follow the quest requirements displayed in your save.",
+        "sources": [
+          {
+            "href": "https://cult-of-the-lamb.fandom.com/wiki/Mating_Tent",
+            "label": "cult-of-the-lamb.fandom.com — Mating Tent"
+          },
+          {
+            "href": "https://primagames.com/gaming/how-to-build-a-mating-tent-in-cult-of-the-lamb",
+            "label": "primagames.com — how to build a mating tent in cult of the lamb"
+          }
+        ]
+      },
+      {
+        "id": "P0-8",
+        "slug": "base-layout-farms-beds-sanitation-and-expansion",
+        "title": "Base layout: farms, beds, sanitation and expansion",
+        "category": "Base",
+        "answer": "Start with working farm coverage and reachable daily services. Place buildings around their actual range indicators, then reserve expansion space for new systems such as Woolhaven ranching.",
+        "steps": [
+          "Place the farm station first and use its coverage display to position farm plots. Keep seeds and fertilizer supplied; moving plots around will not fix an empty input storage.",
+          "Group the food workflow so you can inspect crops, storage and cooking quickly on each return. Leave enough space to interact with every station without awkward camera overlap.",
+          "Keep shelters, sanitation and healing facilities easy to find. When a follower is sick or a bed breaks, you should be able to fix it without searching through decorations.",
+          "Put production buildings where their jobs remain visible. Leave small gaps around facilities that you frequently collect from, rather than packing the whole base edge to edge.",
+          "When Woolhaven expansion becomes available, move optional decorations into the added space first. Add ranching and winter facilities gradually, checking coverage and fuel before recruiting more mouths."
+        ],
+        "mistakes": "Putting farm plots outside the station's working area.",
+        "versionNote": "Woolhaven requires the DLC and relevant story progress. Follow the quest requirements displayed in your save.",
+        "sources": [
+          {
+            "href": "https://game8.co/games/Cult-of-the-Lamb/archives/575889",
+            "label": "game8.co — 575889"
+          },
+          {
+            "href": "https://www.neoseeker.com/cult-of-the-lamb/guides/Woolhaven-Sidequests",
+            "label": "neoseeker.com — Woolhaven Sidequests"
+          }
+        ]
+      },
+      {
+        "id": "P0-9",
+        "slug": "resource-farming-food-lumber-stone-and-winter-supplies",
+        "title": "Resource farming: food, lumber, stone and winter supplies",
+        "category": "Resources",
+        "answer": "Build reliable production for everyday materials and choose crusade branches for the shortage that is blocking progress. In Woolhaven, keep a separate reserve for heating and winter needs.",
+        "steps": [
+          "If food is low, cook from existing ingredients and restore the farm's seeds and fertilizer. Recruit fewer followers until daily food output covers the current population.",
+          "For construction, use lumber and stone production when unlocked. Check that followers are assigned and the building is still operational before spending another run on the same shortage.",
+          "Choose material rooms deliberately on the crusade route. Break and collect the room's resources before leaving; a skipped resource node cannot help the project waiting at home.",
+          "In Ewefall, inspect Charged Shard rooms and break their glass lamps. Follow the current quest for Rotburn and reserve fuel before buying optional Woolhaven decorations.",
+          "Return to base, spend on the one blocked upgrade, and leave a small reserve. Reassess after it is working: continuing to farm the old bottleneck can leave food or fuel short instead."
+        ],
+        "mistakes": "Farming construction materials while food or heating runs out.",
+        "versionNote": "Woolhaven requires the DLC and relevant story progress. Follow the quest requirements displayed in your save.",
+        "sources": [
+          {
+            "href": "https://game8.co/games/Cult-of-the-Lamb/archives/575875",
+            "label": "game8.co — 575875"
+          }
+        ]
+      },
+      {
+        "id": "P0-10",
+        "slug": "memories-of-haven-recover-yngya-s-memories-and-earn-her-fleece",
+        "title": "Memories of Haven: recover Yngya's memories and earn her fleece",
+        "category": "Woolhaven",
+        "answer": "Memories of Haven is a Woolhaven post-story quest involving Forget-Me-Nots. Finish the DLC story, follow Yngya's requests, and plant the flowers in Woolhaven to earn Yngya's Fleece.",
+        "steps": [
+          "Complete Woolhaven's main story before pursuing this quest. This is post-story content, so collecting miscellaneous lore tablets early does not substitute for the quest's prerequisite.",
+          "Return to Yngya and finish her available dialogue and preceding requests. Check the quest log for Memories of Haven rather than searching for a map collectible called a memory.",
+          "Read the flower requirement and gather the requested Forget-Me-Nots. Keep quest supplies available instead of spending them before returning to the village.",
+          "Follow the quest to Woolhaven and plant the flowers at the indicated places. Use the quest's progress feedback to identify what remains; ordinary decorative placement may not advance it.",
+          "Return to the quest giver and claim the reward once the objective is complete. Check your fleece collection for Yngya's Fleece; lore tablets, weapon fragments and this fleece are separate completion goals."
+        ],
+        "mistakes": "Confusing Memories of Haven with scattered lore tablets.",
+        "versionNote": "Woolhaven requires the DLC and relevant story progress. Follow the quest requirements displayed in your save.",
+        "sources": [
+          {
+            "href": "https://game8.co/games/Cult-of-the-Lamb/archives/580401",
+            "label": "game8.co — 580401"
+          },
+          {
+            "href": "https://cult-of-the-lamb.fandom.com/wiki/Yngya",
+            "label": "cult-of-the-lamb.fandom.com — Yngya"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "deep-rock-galactic",
+    "title": "Deep Rock Galactic",
+    "articles": [
+      {
+        "id": "P0-1",
+        "slug": "beginner-guide-objectives-nitra-and-extraction",
+        "title": "Beginner guide: objectives, Nitra and extraction",
+        "category": "Start",
+        "answer": "Read the mission objective, mine Nitra for resupplies, and keep a route back through the cave. In co-op, announce major objective triggers and take only your agreed share of a resupply.",
+        "steps": [
+          "On the Space Rig, choose the assignment mission and a comfortable hazard level. Bring both weapons and your traversal tool; the tool often solves a problem that ammunition cannot.",
+          "In the cave, light the room and use the laser pointer to mark minerals and threats. Start working on the primary objective instead of clearing every corner first.",
+          "Deposit Nitra until the team can afford a resupply: the usual cost is 80. Call it on reachable, defensible ground before ammunition runs out, not in the middle of a retreat.",
+          "A pod has four resupply portions. In a four-player team, take one unless somebody explicitly gives up theirs; use both weapons and utility so ammunition refills are not wasted.",
+          "When the objective is ready, check that the team is prepared before calling the Drop Pod. Follow its marker and the available return route, using platforms, drills or ziplines where terrain blocks the team."
+        ],
+        "mistakes": "Taking a second resupply portion without checking with the team.",
+        "versionNote": "Covers the original co-op FPS, not Deep Rock Galactic: Survivor. Modification values may change with updates.",
+        "sources": [
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Resupply_Pod",
+            "label": "deeprockgalactic.wiki.gg — Resupply Pod"
+          },
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/How_to_Play_Guide_for_Deep_Rock_Galactic",
+            "label": "deeprockgalactic.wiki.gg — How to Play Guide for Deep Rock Galactic"
+          }
+        ]
+      },
+      {
+        "id": "P0-2",
+        "slug": "unlock-overclocks-first-promotion-matrix-cores-and-the-forge",
+        "title": "Unlock Overclocks: first promotion, Matrix Cores and the Forge",
+        "category": "Overclocks",
+        "answer": "Promote your first dwarf, obtain an infused weapon Matrix Core, forge it, then equip the Overclock on its matching weapon. Earning the core alone does not equip the upgrade.",
+        "steps": [
+          "Level one dwarf to class level 25 and accept its promotion assignment. Complete the required missions, then return to the Memorial Hall and finish the promotion process.",
+          "Inspect the newly available core activities and assignments. Work through the introductory core assignment and then the weekly Core Hunt; Deep Dives provide another progression route.",
+          "When you obtain a blank core, bring it on ordinary missions. Complete a Machine Event and use its Core Infuser to turn that blank into one of the offered rewards.",
+          "Visit the Forge with an infused weapon core and the required minerals and credits. Check the weapon name before paying: cosmetic cores do not unlock weapon modifications.",
+          "At the equipment terminal, select the matching weapon and open its Overclock slot. Meet the weapon's modification-tier requirement if the slot is still locked, then choose the forged Overclock."
+        ],
+        "mistakes": "Forgetting to forge and equip an infused weapon core.",
+        "versionNote": "Covers the original co-op FPS, not Deep Rock Galactic: Survivor. Modification values may change with updates.",
+        "sources": [
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Overclocks",
+            "label": "deeprockgalactic.wiki.gg — Overclocks"
+          },
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Promotion",
+            "label": "deeprockgalactic.wiki.gg — Promotion"
+          }
+        ]
+      },
+      {
+        "id": "P0-3",
+        "slug": "getting-a-specific-overclock-what-you-can-choose",
+        "title": "Getting a specific Overclock: what you can choose",
+        "category": "Overclocks",
+        "answer": "Core rewards involve randomness. Use offered class choices to move toward your target, complete available core activities, and keep using a functional build while the specific Overclock is missing.",
+        "steps": [
+          "Check the exact weapon and Overclock name you want. Different guns in the same class have separate pools; a reward for your class does not guarantee your preferred weapon.",
+          "Complete the available weekly Core Hunt and eligible Deep Dives. Repeating an already claimed weekly reward does not create an unlimited supply of new rewards.",
+          "Carry blank Matrix Cores into missions and finish Machine Events. At the infuser, choose a weapon reward for your target class when it is offered.",
+          "Forge useful infused cores and collect Forge Mastery rewards as they become available. Cosmetics and weapon Overclocks are different reward categories, so read the selection before confirming.",
+          "Adapt around an Overclock you already own. If a build guide depends on one unstable Overclock, use a normal or clean setup until it drops instead of copying incompatible modification choices."
+        ],
+        "mistakes": "Expecting a class choice to guarantee one specific Overclock.",
+        "versionNote": "Covers the original co-op FPS, not Deep Rock Galactic: Survivor. Modification values may change with updates.",
+        "sources": [
+          {
+            "href": "https://www.reddit.com/r/DeepRockGalactic/comments/1urb16c/overclocks/",
+            "label": "reddit.com — overclocks"
+          },
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Deep_Dives",
+            "label": "deeprockgalactic.wiki.gg — Deep Dives"
+          }
+        ]
+      },
+      {
+        "id": "P0-4",
+        "slug": "promotion-guide-level-25-to-the-memorial-hall",
+        "title": "Promotion guide: level 25 to the Memorial Hall",
+        "category": "Progression",
+        "answer": "Reach class level 25, complete the promotion assignment, then pay the promotion cost in the Memorial Hall. Your equipment unlocks remain available after the class level resets.",
+        "steps": [
+          "Check the red class level for the dwarf you want to promote. Account rank is a separate number and does not replace reaching the class-level requirement.",
+          "Accept the promotion assignment at the Assignment Board. Follow the marked missions; selecting a similar mission outside the assignment will not advance the chain.",
+          "You can complete the assignment with another class. This is useful because the level-25 dwarf cannot keep earning class levels while waiting to promote.",
+          "After the final assignment mission, return to the Memorial Hall as the class being promoted. Check and pay the listed credits and minerals to complete the promotion.",
+          "Revisit equipment and progression menus. First-promotion unlocks make core progression and additional activities available; your reset class level is not a loss of purchased weapons and modifications."
+        ],
+        "mistakes": "Completing unmarked missions instead of the promotion assignment.",
+        "versionNote": "Covers the original co-op FPS, not Deep Rock Galactic: Survivor. Modification values may change with updates.",
+        "sources": [
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Promotion",
+            "label": "deeprockgalactic.wiki.gg — Promotion"
+          },
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Assignments",
+            "label": "deeprockgalactic.wiki.gg — Assignments"
+          }
+        ]
+      },
+      {
+        "id": "P0-5",
+        "slug": "best-beginner-class-choose-the-job-you-enjoy",
+        "title": "Best beginner class: choose the job you enjoy",
+        "category": "Classes",
+        "answer": "Choose Gunner for straightforward shooting and emergency shields, Scout for light and mobility, Engineer for prepared defenses, or Driller for clearing terrain and clustered enemies. All four can contribute without Overclocks.",
+        "steps": [
+          "Try Gunner if you want a clear combat role. Keep enemies in front of your sustained fire and learn to use the shield before a teammate is overwhelmed.",
+          "Try Scout if you enjoy movement and finding minerals. Light large caves for everyone, pick off awkward ranged targets, and learn safe landings before taking high ceiling deposits.",
+          "Try Engineer if you enjoy defending an area. Place and build your sentry before the wave arrives, and use platforms to support movement and mining.",
+          "Try Driller if you prefer changing the cave. Drill usable tunnels, remove obstructing terrain, and bring a secondary weapon for threats outside your primary's comfortable range.",
+          "Play a few normal missions on each class before specializing. Pick one to promote first, but use another when the team is missing a tool you want to learn."
+        ],
+        "mistakes": "Choosing a class for damage alone and ignoring its tools.",
+        "versionNote": "Covers the original co-op FPS, not Deep Rock Galactic: Survivor. Modification values may change with updates.",
+        "sources": [
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Equipment",
+            "label": "deeprockgalactic.wiki.gg — Equipment"
+          }
+        ]
+      },
+      {
+        "id": "P0-6",
+        "slug": "scout-starter-build-gk2-boomstick-and-safe-mining",
+        "title": "Scout starter build: GK2, Boomstick and safe mining",
+        "category": "Classes",
+        "answer": "Use the Deepcore GK2 for accurate ranged fire and the Boomstick for enemies that get too close. Keep the cave lit and use the Grappling Hook to reposition before you are surrounded.",
+        "steps": [
+          "Start with the default weapons and choose affordable modifications that improve control or ammunition. You do not need a named Overclock to perform Scout's main jobs.",
+          "Shoot flares across the room when the team enters or starts a fight. Your personal throwable flares do not replace the Flare Gun's coverage in a large cavern.",
+          "Prioritize web and acid spitters or other ranged threats that the team struggles to reach. Avoid spending all your primary ammunition into the front of a large armored target.",
+          "Ask Engineer for a platform beneath high minerals. Grapple only when you have a landing or foothold; falling with a full mineral bag wastes more time than waiting for support.",
+          "During a swarm, retreat toward lit, open ground and regroup. Use the Boomstick for close pressure, then grapple out while an exit remains; mobility is not a reason to leave the team permanently."
+        ],
+        "mistakes": "Grappling to a ceiling deposit with nowhere to land.",
+        "versionNote": "Covers the original co-op FPS, not Deep Rock Galactic: Survivor. Modification values may change with updates.",
+        "sources": [
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Scout",
+            "label": "deeprockgalactic.wiki.gg — Scout"
+          },
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Jury-Rigged_Boomstick",
+            "label": "deeprockgalactic.wiki.gg — Jury Rigged Boomstick"
+          }
+        ]
+      },
+      {
+        "id": "P0-7",
+        "slug": "driller-starter-build-flamethrower-subata-and-useful-tunnels",
+        "title": "Driller starter build: flamethrower, Subata and useful tunnels",
+        "category": "Classes",
+        "answer": "Use the CRSPR Flamethrower against nearby groups and the Subata for distant or exposed targets. Drill routes the whole team can use, and keep explosive charges clear of teammates.",
+        "steps": [
+          "Keep the starter CRSPR and Subata while learning enemy spacing. Pick ammunition or control upgrades that let you finish rooms comfortably before pursuing specialized damage combinations.",
+          "Use short flame applications on groups, then move while damage continues. Avoid holding the trigger on a single enemy that is already dying.",
+          "Use the Subata when a ceiling threat or distant weak point is outside the flamethrower's efficient reach. This also helps balance the ammunition you recover from resupplies.",
+          "Before drilling a shortcut, check the terrain scanner and the intended destination. Make a readable tunnel with enough room for teammates rather than a steep pit only you can navigate.",
+          "For a defensive fight, remove pillars or uneven ground that hide threats. Warn the team before using Satchel Charges and do not detonate a charge on a revive or shared escape route."
+        ],
+        "mistakes": "Using explosives on teammates or drilling without checking the scanner.",
+        "versionNote": "Covers the original co-op FPS, not Deep Rock Galactic: Survivor. Modification values may change with updates.",
+        "sources": [
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Subata_120",
+            "label": "deeprockgalactic.wiki.gg — Subata 120"
+          },
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Tips%2C_tricks_and_strategies",
+            "label": "deeprockgalactic.wiki.gg — Tips, tricks and strategies"
+          }
+        ]
+      },
+      {
+        "id": "P0-8",
+        "slug": "engineer-starter-build-warthog-pgl-and-sentry-placement",
+        "title": "Engineer starter build: Warthog, PGL and sentry placement",
+        "category": "Classes",
+        "answer": "Use the Warthog for close targets and the grenade launcher for groups. Build your sentry before combat and give it a clear view of the area you intend to defend.",
+        "steps": [
+          "Choose the starter Warthog and Deepcore 40mm PGL while learning the class. A useful pair covers both a single approaching enemy and a clustered wave.",
+          "Place the sentry where terrain will not block its firing lane, then finish construction. A placed but unbuilt sentry contributes nothing when the swarm reaches you.",
+          "Make platforms for high mineral deposits when Scout marks them. For your own movement, create a reachable step rather than one isolated platform above a dangerous drop.",
+          "Fire explosive rounds into groups with space around teammates. Use the shotgun for individual threats so a few small enemies do not drain all your launcher ammunition.",
+          "Reload the sentry between waves and relocate it when the objective moves. During extraction, prioritize keeping a path open over rebuilding a perfect defensive position in every room."
+        ],
+        "mistakes": "Placing a sentry without building or reloading it.",
+        "versionNote": "Covers the original co-op FPS, not Deep Rock Galactic: Survivor. Modification values may change with updates.",
+        "sources": [
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Engineer",
+            "label": "deeprockgalactic.wiki.gg — Engineer"
+          }
+        ]
+      },
+      {
+        "id": "P0-9",
+        "slug": "gunner-starter-build-minigun-bulldog-and-shield-timing",
+        "title": "Gunner starter build: Minigun, Bulldog and shield timing",
+        "category": "Classes",
+        "answer": "Use the Minigun for sustained pressure, the Bulldog for accurate priority shots, and the shield to create a recovery window. Deploy a shield while there is still time to revive or resupply.",
+        "steps": [
+          "Start with the Lead Storm Minigun and Bulldog. Learn the Minigun's heat and wind-up, and stop firing before overheating removes your main weapon during a push.",
+          "Aim at exposed weak points when possible. Switch to the Bulldog for a distant priority target rather than spending a long burst trying to track it.",
+          "Place a shield around the area the team must use: a downed dwarf, a resupply or a crowded defense point. Call it so teammates can benefit immediately.",
+          "Use ziplines across pits and difficult slopes, checking the landing point before committing. Avoid treating a zipline as invulnerability; ranged enemies can make an exposed crossing dangerous.",
+          "During extraction, cover the teammates who need time to climb or interact. Move before the shield expires so its protection leads into a safe position rather than another stationary fight."
+        ],
+        "mistakes": "Waiting until everyone is down before using a shield.",
+        "versionNote": "Covers the original co-op FPS, not Deep Rock Galactic: Survivor. Modification values may change with updates.",
+        "sources": [
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Shield_Generator",
+            "label": "deeprockgalactic.wiki.gg — Shield Generator"
+          },
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Equipment",
+            "label": "deeprockgalactic.wiki.gg — Equipment"
+          }
+        ]
+      },
+      {
+        "id": "P0-10",
+        "slug": "mission-types-what-to-do-before-pressing-the-button",
+        "title": "Mission types: what to do before pressing the button",
+        "category": "Missions",
+        "answer": "Follow the objective shown on the HUD and prepare before triggering a swarm or boss. Mining, eggs, refining, escort and defensive missions ask for different routes and tools.",
+        "steps": [
+          "Mining Expedition and Egg Hunt: collect the requested resources and deposit them. For eggs, agree before pulling the next one so the team is ready for the resulting pressure.",
+          "Point Extraction: bring Aquarqs to the Mine Head and avoid spending too long wandering. On-Site Refining: locate the geysers, connect and build pipelines, then repair marked breaks during refining.",
+          "Escort Duty: keep Doretta repaired and clear threats around the drilldozer; handle refueling together. Do not let every player chase minerals while nobody watches the objective.",
+          "Salvage Operation: repair the mini-M.U.L.E.s, then prepare the defense area before starting uplink and fuel stages. Stay in the required zone while making enough room to fight.",
+          "Elimination: clear nearby terrain and arrange a resupply before breaking a cocoon. Industrial Sabotage: finish power-station objectives before the Caretaker. For newer missions, read each HUD stage before activating the next device."
+        ],
+        "mistakes": "Triggering multiple objectives before the team is ready.",
+        "versionNote": "Covers the original co-op FPS, not Deep Rock Galactic: Survivor. Modification values may change with updates.",
+        "sources": [
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Missions",
+            "label": "deeprockgalactic.wiki.gg — Missions"
+          },
+          {
+            "href": "https://deeprockgalactic.wiki.gg/wiki/Escort_Duty",
+            "label": "deeprockgalactic.wiki.gg — Escort Duty"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "gamble-with-your-friends",
+    "title": "Gamble With Your Friends",
+    "articles": [
+      {
+        "id": "P0-1",
+        "slug": "beginner-guide-shared-money-casino-days-and-quota",
+        "title": "Beginner guide: shared money, casino days and quota",
+        "category": "Start",
+        "answer": "Your group uses a shared bank. Agree on a betting budget, buy and collect the items you intend to use, then protect the day's quota before spending money on optional challenges.",
+        "steps": [
+          "In the lobby, check tickets and item choices together. Decide who carries each purchase and confirm it is actually picked up before everyone enters the limo.",
+          "At the casino, read the day timer and quota. Have one player watch the shared balance so simultaneous bets do not spend money that another teammate is counting on.",
+          "Start at a game the active player understands. Use small bets while learning the controls; a table's large advertised payout does not make it a reliable first-day plan.",
+          "When an item affects a table or nearby players, bring its holder into position before betting. Call the start and end of the effect so the team does not continue on an expired protection window.",
+          "Once the quota is covered, stop risking the required money. Use remaining time to prepare for the next day and handle optional goals only with an agreed surplus budget."
+        ],
+        "mistakes": "Treating the shared bank as a personal betting allowance.",
+        "versionNote": "Uses launch-era community references. Follow current shop descriptions and Steam achievement conditions when they differ.",
+        "sources": [
+          {
+            "href": "https://games.gg/gamble-with-your-friends/guides/gamble-with-your-friends-beginners-guide/",
+            "label": "games.gg — gamble with your friends beginners guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-2",
+        "slug": "quota-guide-set-a-stop-point-for-the-whole-team",
+        "title": "Quota guide: set a stop point for the whole team",
+        "category": "Quota",
+        "answer": "Protect the quota with a shared stop call. Subtract money already committed to bets before deciding you are safe, and stop every table when the group reaches its target.",
+        "steps": [
+          "Read the actual quota for this day. Compare it with the settled shared balance, not the potential payout currently flashing on a table.",
+          "Assign a caller and agree on a maximum amount the group can lose before switching plans. With several players, use one coordinated betting window instead of several untracked all-ins.",
+          "Recheck the balance after each meaningful win or loss. If the gap is small, reduce bet size; you do not need to chase a huge multiplier to cover a small remaining amount.",
+          "If time is nearly over, compare available items and recovery options with the shortfall. Do not spend the last reserve on a table nobody understands simply because the countdown feels urgent.",
+          "After reaching quota, call a full stop and let outstanding results settle. If you continue for a challenge, agree on a surplus-only budget and stop as soon as that allowance is spent."
+        ],
+        "mistakes": "Counting an unsettled possible win as money already earned.",
+        "versionNote": "Uses launch-era community references. Follow current shop descriptions and Steam achievement conditions when they differ.",
+        "sources": [
+          {
+            "href": "https://www.whisperofthehouse.com/gamble-with-your-friends/quota-guide",
+            "label": "whisperofthehouse.com — quota guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-3",
+        "slug": "tickets-earning-spending-and-recovery-priorities",
+        "title": "Tickets: earning, spending and recovery priorities",
+        "category": "Tickets",
+        "answer": "Earn tickets through successful days and suitable challenges, then spend them on a specific item plan. Keep recovery needs ahead of cosmetics when the group's next run is unstable.",
+        "steps": [
+          "Finish a quota day and inspect its rewards before planning purchases. Keep casino money and ticket currency separate; they pay for different parts of the run.",
+          "Choose challenges you can attempt at a table somebody already knows. A ticket reward is poor value if the attempt consumes the bank needed to survive the day.",
+          "Check whether a teammate needs body-part recovery before buying optional items. Discuss this before one player spends a shared opportunity on a cosmetic.",
+          "Buy one item with a named carrier and a named use. If nobody can explain where and when it will activate, save the tickets until there is a workable plan.",
+          "After the next day, compare what the purchase actually helped accomplish. Keep buying the tool that solves your team's recurring problem instead of automatically rerolling for a favorite."
+        ],
+        "mistakes": "Spending recovery tickets on cosmetics during an unstable run.",
+        "versionNote": "Uses launch-era community references. Follow current shop descriptions and Steam achievement conditions when they differ.",
+        "sources": [
+          {
+            "href": "https://games.gg/gamble-with-your-friends/guides/gamble-with-your-friends-ticket-farming-guide/",
+            "label": "games.gg — gamble with your friends ticket farming guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-4",
+        "slug": "useful-items-golden-chip-holy-statue-taser-and-recovery-tools",
+        "title": "Useful items: Golden Chip, Holy Statue, Taser and recovery tools",
+        "category": "Items",
+        "answer": "Choose Golden Chip for a planned free all-in, Holy Statue for a coordinated protection window, and Taser when you understand the table's bet limit. Read the shop tooltip before paying.",
+        "steps": [
+          "Check the current ticket price and effect in the lobby. Golden Chip is a single-use opportunity; choose the table and player before consuming it.",
+          "Use Holy Statue with teammates grouped within its effect. Place the group first and stop the betting sequence when the active effect ends.",
+          "Use Taser on the appropriate keypad before committing the supported bet. Increasing the maximum wager also increases what an unprotected bad result can cost.",
+          "Keep emergency tools for an actual emergency. Quota Gun trades body parts for quota progress; it is not a harmless replacement for learning the regular economy.",
+          "After buying, physically collect the item and read its use prompt. If it appears inactive, check range, target and whether it has already been consumed before purchasing another."
+        ],
+        "mistakes": "Buying an item but leaving it on the shop floor.",
+        "versionNote": "Uses launch-era community references. Follow current shop descriptions and Steam achievement conditions when they differ.",
+        "sources": [
+          {
+            "href": "https://www.whisperofthehouse.com/gamble-with-your-friends/tickets-items-body-parts",
+            "label": "whisperofthehouse.com — tickets items body parts"
+          }
+        ]
+      },
+      {
+        "id": "P0-5",
+        "slug": "item-combinations-coordinate-the-setup-before-the-bet",
+        "title": "Item combinations: coordinate the setup before the bet",
+        "category": "Items",
+        "answer": "Use combinations only when every item has a clear target and timing. A bet-limit tool, a free-bet tool and a temporary profit or protection effect do different jobs.",
+        "steps": [
+          "Pick one table and one active bettor. Other players should finish their current bets and wait so the shared balance remains understandable.",
+          "For a Taser and Golden Chip attempt, change the keypad limit before consuming the chip. Confirm the displayed wager matches the intended setup before proceeding.",
+          "For a group protection plan, position everyone near the Holy Statue holder before activation. Keep the table sequence inside the visible active window.",
+          "For profit support such as Drink or Microphone, read who receives the effect and whether it is still active at settlement. Do not assume every nearby visual effect multiplies every payout.",
+          "Set a stop condition before the attempt. If the setup fails, stop and inspect what was missing; repeating the same unprotected bet does not repair the combination."
+        ],
+        "mistakes": "Continuing to bet after the temporary effect has ended.",
+        "versionNote": "Uses launch-era community references. Follow current shop descriptions and Steam achievement conditions when they differ.",
+        "sources": [
+          {
+            "href": "https://gamblewithyourfriends.net/items/",
+            "label": "gamblewithyourfriends.net — items"
+          }
+        ]
+      },
+      {
+        "id": "P0-6",
+        "slug": "body-parts-when-an-emergency-trade-is-worth-it",
+        "title": "Body parts: when an emergency trade is worth it",
+        "category": "Tickets",
+        "answer": "Treat body-part trades as a costed recovery option. Check how much they solve, what function the player loses, and how the group will restore that player afterward.",
+        "steps": [
+          "Compare the remaining quota with the available normal betting budget. If ordinary play can finish the day comfortably, keep the group's body parts and recovery tickets.",
+          "Read the specific offer or held tool. A body-part sale and Quota Gun use are different interactions; verify the displayed benefit instead of assuming all exchanges pay identically.",
+          "Choose the affected teammate deliberately. Tell them which part will be lost and ask them to confirm before aiming or activating the interaction.",
+          "Use only the trade needed for the present shortfall. Recheck the balance after each result rather than applying several trades while the first reward is still resolving.",
+          "At the next recovery opportunity, inspect restoration options and reserve tickets as a group. A teammate unable to perform their table role can make the following day harder even if this day was saved."
+        ],
+        "mistakes": "Surprising a teammate with a body-part trade.",
+        "versionNote": "Uses launch-era community references. Follow current shop descriptions and Steam achievement conditions when they differ.",
+        "sources": [
+          {
+            "href": "https://www.whisperofthehouse.com/gamble-with-your-friends/tickets-items-body-parts",
+            "label": "whisperofthehouse.com — tickets items body parts"
+          }
+        ]
+      },
+      {
+        "id": "P0-7",
+        "slug": "casino-games-learn-the-decision-before-raising-the-stake",
+        "title": "Casino games: learn the decision before raising the stake",
+        "category": "Minigames",
+        "answer": "Practice the table's input and payout rule at a low stake. Blackjack and Craps involve different decisions from timed cash-outs or random multiplier games; use the table your group can operate reliably.",
+        "steps": [
+          "At Blackjack, track the hand total before selecting hit or stand. Do not import an achievement condition into every normal hand; a special low-hand win is a separate objective.",
+          "At Street Craps, distinguish the opening roll from the point phase. Have the caller repeat the current target so players do not celebrate or reset the wrong result.",
+          "At Crash, choose a cash-out target before the round. A rising multiplier is not evidence that waiting longer is safe.",
+          "For games such as Plinko, Slots or a prize wheel, accept that a low-stake test teaches operation, not a future winning sequence. Repeated losses do not guarantee an upcoming win.",
+          "For more complex tables, let one person learn while others protect the remaining budget. Move to higher stakes only when you understand the controls, the loss condition and any item timing."
+        ],
+        "mistakes": "Increasing the stake because several losses feel due for a win.",
+        "versionNote": "Uses launch-era community references. Follow current shop descriptions and Steam achievement conditions when they differ.",
+        "sources": [
+          {
+            "href": "https://www.gamblewithyourfriends.wiki/gameplay/gamble-with-your-friends-minigames",
+            "label": "gamblewithyourfriends.wiki — gamble with your friends minigames"
+          }
+        ]
+      },
+      {
+        "id": "P0-8",
+        "slug": "achievement-route-choose-a-floor-and-one-objective",
+        "title": "Achievement route: choose a floor and one objective",
+        "category": "Achievements",
+        "answer": "Pursue one table-specific achievement at a time, keep quota safe, and separate deliberate-loss objectives from serious progression runs. Check the exact Steam condition rather than the similar daily challenge.",
+        "steps": [
+          "Open Steam's achievement list and select one currently reachable objective. Note its floor requirement before spending money on the right game at the wrong floor.",
+          "Use early-floor table objectives while learning the run. Keep the active player's role fixed so an attempted streak is not interrupted by another teammate taking over.",
+          "At later floors, agree on a capped attempt budget. If the quota is threatened, abandon the optional objective for this day and preserve the run.",
+          "Schedule deliberate-loss chains separately from money-building attempts. Do not surprise the team with intentional losses from the same shared account.",
+          "After meeting the condition, check Steam for the unlock. A challenge reward and an achievement notification are not interchangeable; re-read the wording before attempting the whole sequence again."
+        ],
+        "mistakes": "Confusing a daily challenge with Steam's achievement condition.",
+        "versionNote": "Uses launch-era community references. Follow current shop descriptions and Steam achievement conditions when they differ.",
+        "sources": [
+          {
+            "href": "https://games.gg/gamble-with-your-friends/guides/gamble-with-your-friends-complete-achievement-guide/",
+            "label": "games.gg — gamble with your friends complete achievement guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-9",
+        "slug": "achievement-conditions-that-are-easy-to-mix-up",
+        "title": "Achievement conditions that are easy to mix up",
+        "category": "Achievements",
+        "answer": "Floor, streak, hand restrictions and ending choices can all matter. Check the exact condition before beginning; some achievements require a separate run because their outcomes conflict.",
+        "steps": [
+          "For Risky Move, distinguish the achievement's low-hand requirement from a looser daily challenge. Do not count a challenge completion as evidence that Steam's stricter requirement was met.",
+          "For Poker Face, leave card locking untouched during the attempt. Winning a normal hand after using locks does not satisfy the special restriction described by the achievement guide.",
+          "For Safe Exit on Floor 4, prioritize repeated small Crash cash-outs instead of a single huge multiplier. A large win does not replace the requested consecutive wins.",
+          "For Step Into Fire or another deliberate-loss objective, use a group-approved attempt with a fixed budget. Reset your mental count after any outcome that breaks the requested chain.",
+          "For endings, separate debt repayment from the all-in coin flip. Winning and losing that flip are different outcomes. Older bug reports are dated reports, so check current patch notes before deciding an unlock is still broken."
+        ],
+        "mistakes": "Ignoring the required floor, streak or forbidden action.",
+        "versionNote": "Uses launch-era community references. Follow current shop descriptions and Steam achievement conditions when they differ.",
+        "sources": [
+          {
+            "href": "https://games.gg/gamble-with-your-friends/guides/gamble-with-your-friends-complete-achievement-guide/",
+            "label": "games.gg — gamble with your friends complete achievement guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-10",
+        "slug": "street-craps-opening-roll-point-phase-and-team-calls",
+        "title": "Street Craps: opening roll, point phase and team calls",
+        "category": "Minigames",
+        "answer": "On the opening roll, 7 or 11 wins and 2, 3 or 12 loses. Another total establishes the point: repeat that point before a 7 to win that phase.",
+        "steps": [
+          "Assign one shooter and one caller. Keep everyone else away from the controls so a second interaction does not change what the group thinks is happening.",
+          "Begin with a small wager. Read the opening dice total and resolve an immediate win or loss before starting another round.",
+          "If a point is established, have the caller repeat it. Keep using that target until the point phase finishes; a 7 now has a different meaning than on the opening roll.",
+          "Before an item-supported attempt, prepare the keypad and the item holder. A bigger possible bet does not change the underlying dice odds.",
+          "After settlement, check the shared balance and stop if quota is covered. Use a dedicated attempt for Lucky 7 or a floor-specific point-phase achievement instead of mixing it into every normal wager."
+        ],
+        "mistakes": "Applying opening-roll rules during the point phase.",
+        "versionNote": "Uses launch-era community references. Follow current shop descriptions and Steam achievement conditions when they differ.",
+        "sources": [
+          {
+            "href": "https://gamblewithyourfriends.net/games/street-craps/",
+            "label": "gamblewithyourfriends.net — street craps"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "hades-ii",
+    "title": "Hades II",
+    "articles": [
+      {
+        "id": "P0-1",
+        "slug": "beginner-guide-cast-magick-arcana-and-permanent-progress",
+        "title": "Beginner guide: Cast, Magick, Arcana and permanent progress",
+        "category": "Start",
+        "answer": "Use Cast to make space, choose a boon for the move you use most, and return resources to the Crossroads for lasting upgrades. A failed night can still advance incantations, Arcana and relationships.",
+        "steps": [
+          "At the Crossroads, equip a weapon you understand and inspect your active Arcana. Spend within your Grasp capacity and check that the cards you expect to use are actually active.",
+          "In combat, drop Cast when ordinary enemies crowd you. Move out of the group and attack from the clear side rather than repeatedly dashing into the center.",
+          "Try Attack, Special and their Omega versions separately. Omega moves consume Magick; choose a usable recovery effect before building the entire run around repeated charged attacks.",
+          "Take a boon for your main damage move first. Add survival or control next, then improve the established attack with Poms and compatible Hammer choices instead of dividing upgrades evenly.",
+          "After returning, talk to characters and inspect the cauldron. Gather missing materials on the next night. Surface access is a separate progression step and later needs protection against Melinoe's curse."
+        ],
+        "mistakes": "Building around repeated Omega moves without a way to restore Magick.",
+        "versionNote": "Boons are random: these are selection and route guides, not guaranteed rolls. Follow current Book of Shadows and Oath descriptions.",
+        "sources": [
+          {
+            "href": "https://www.supergiantgames.com/games/hades-ii/",
+            "label": "supergiantgames.com — hades ii"
+          },
+          {
+            "href": "https://www.leereamsnyder.com/hades-2-build-guide",
+            "label": "leereamsnyder.com — hades 2 build guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-2",
+        "slug": "choosing-boons-match-the-effect-to-your-attack",
+        "title": "Choosing boons: match the effect to your attack",
+        "category": "Boons",
+        "answer": "Choose a core boon for the move that lands reliably. Fast attacks suit repeatable hit effects; slower heavy attacks benefit from stronger individual hits. Add control and Magick support around that choice.",
+        "steps": [
+          "Spend the opening room learning which move is doing the work. Put your first damage boon on that slot instead of choosing a rare boon for a move you barely use.",
+          "For a rapid-hit weapon, consider effects you can apply repeatedly. For a heavy attack, compare the damage per opening rather than assuming a faster-hit build transfers unchanged.",
+          "Use a control effect or Cast support when the problem is being surrounded. Extra damage cannot help if you have no safe opportunity to attack.",
+          "If you repeatedly run out of Magick, add a Gain effect with a condition you can meet during combat. Read any drawbacks or priming costs before selecting more Omega-dependent upgrades.",
+          "At the next choice, improve the established plan unless a missing defensive tool is causing losses. A Duo is a bonus; the basic build should still clear ordinary rooms without it."
+        ],
+        "mistakes": "Choosing a boon for an attack you rarely use.",
+        "versionNote": "Boons are random: these are selection and route guides, not guaranteed rolls. Follow current Book of Shadows and Oath descriptions.",
+        "sources": [
+          {
+            "href": "https://www.leereamsnyder.com/hades-2-build-guide",
+            "label": "leereamsnyder.com — hades 2 build guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-3",
+        "slug": "duo-boons-prerequisites-eligible-choices-and-failed-rolls",
+        "title": "Duo boons: prerequisites, eligible choices and failed rolls",
+        "category": "Boons",
+        "answer": "A Duo needs qualifying boons from both gods. Meeting the prerequisites makes it eligible, not guaranteed. Use the Book of Shadows to check the exact current list before spending rerolls.",
+        "steps": [
+          "Choose the Duo you want before collecting unrelated boons. Open its requirement entry in the Book of Shadows when that information is unlocked; identify which choices count on each side.",
+          "Take an eligible prerequisite from the first god. A different boon from that god may not count, even if it improves the same build.",
+          "Seek the second god and take one of the listed qualifying options. Read AND and alternative groups carefully so you do not confuse several required groups with one optional choice.",
+          "Keep the qualifying boons when offered a replacement or exchange. Before rerolling another reward, recheck that the complete prerequisite combination is still present.",
+          "Continue taking eligible encounters, but keep buying ordinary damage and defense. If the Duo never appears, finish with the base build; Vow of Denial is not a guarantee that it will roll."
+        ],
+        "mistakes": "Having the right gods but the wrong prerequisite boons.",
+        "versionNote": "Boons are random: these are selection and route guides, not guaranteed rolls. Follow current Book of Shadows and Oath descriptions.",
+        "sources": [
+          {
+            "href": "https://www.reddit.com/r/Hades2/comments/1sggw1m/prerequisites_for_legendary_boons/",
+            "label": "reddit.com — prerequisites for legendary boons"
+          },
+          {
+            "href": "https://www.leereamsnyder.com/hades-2-build-guide",
+            "label": "leereamsnyder.com — hades 2 build guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-4",
+        "slug": "legendary-boons-unlock-the-prerequisite-chain-first",
+        "title": "Legendary boons: unlock the prerequisite chain first",
+        "category": "Boons",
+        "answer": "Legendary boons can require several specific prerequisite groups from one god. Check the in-game requirement list, complete missing branches, then spend rerolls only on an eligible reward.",
+        "steps": [
+          "Open the desired Legendary entry rather than starting from a rarity tier list. Look at its prerequisite groups and decide whether the current build can use those boons even without the final reward.",
+          "Collect the first qualifying effect. If the entry permits alternatives, choose the option that helps your current attack or resource plan instead of an unrelated option with better rarity.",
+          "Add the other required group or groups. Watch the game's boon-list indicators when available; they can point toward relevant prerequisite choices.",
+          "Before paying for another encounter or spending a reroll, check whether you removed a required boon during an exchange. An incomplete chain will not be repaired by repeatedly rerolling.",
+          "If the Legendary remains absent late in the route, take a useful immediate upgrade. Preserve the clear attempt instead of giving up healing and core damage for a reward that is still random."
+        ],
+        "mistakes": "Spending rerolls before completing the required groups.",
+        "versionNote": "Boons are random: these are selection and route guides, not guaranteed rolls. Follow current Book of Shadows and Oath descriptions.",
+        "sources": [
+          {
+            "href": "https://www.reddit.com/r/Hades2/comments/1sggw1m/prerequisites_for_legendary_boons/",
+            "label": "reddit.com — prerequisites for legendary boons"
+          }
+        ]
+      },
+      {
+        "id": "P0-5",
+        "slug": "weapon-builds-three-practical-starting-plans",
+        "title": "Weapon builds: three practical starting plans",
+        "category": "Weapons",
+        "answer": "For a learning run, use the Staff to control distance, the Sister Blades for short aggressive openings, or the Axe for deliberate heavy hits. Build the move you can land safely before chasing a rare combo.",
+        "steps": [
+          "Staff: use Cast to separate a crowd, then strike or use Special from open ground. Select a core boon for whichever move you are landing most often and add Magick recovery if you favor Omega attacks.",
+          "Sister Blades: approach after an enemy commits, deliver a short attack sequence, then leave. Hestia's attack Scorch is one option for repeatedly applying damage during brief openings.",
+          "Axe: make space before beginning a slow attack. Take safe swings and leave before the next enemy attack; do not assume completing the full combo is always the highest useful damage.",
+          "At a Hammer choice, read what changes about your main move. Avoid an upgrade that rewards an attack pattern you have not been using unless you are prepared to change the rotation.",
+          "Spend later rewards on the missing piece: boss damage, room control, Magick or survival. Keep a functioning ordinary build even if the ideal aspect, Duo or Hammer is unavailable."
+        ],
+        "mistakes": "Following an aspect build with a different Hammer interaction.",
+        "versionNote": "Boons are random: these are selection and route guides, not guaranteed rolls. Follow current Book of Shadows and Oath descriptions.",
+        "sources": [
+          {
+            "href": "https://www.leereamsnyder.com/hades-2-build-guide",
+            "label": "leereamsnyder.com — hades 2 build guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-6",
+        "slug": "32-fear-preparation-build-vows-and-a-repeatable-route",
+        "title": "32 Fear preparation: build, Vows and a repeatable route",
+        "category": "Fear",
+        "answer": "Start with a weapon and route you already clear reliably, keep the build functional without a rare boon, and choose Vows that do not all punish the same weakness. Confirm the total on the Oath screen.",
+        "steps": [
+          "Before raising Fear, complete the intended route with the same weapon. Upgrade the aspect and Arcana you depend on, and practice the bosses that usually consume your Death Defiances.",
+          "Use a familiar baseline such as Staff with an established core damage boon. Decide how you will handle crowds and restore Magick before choosing restrictions that affect those systems.",
+          "Add Vows by reading their current effects. Avoid simultaneously extending fights, restricting healing and tightening the timer if ordinary rooms already take too long.",
+          "Set the total to 32 in the current client. Older guides use different names and point values, so copy neither an Early Access screenshot nor a numeric preset blindly.",
+          "After a failed attempt, change the restriction responsible for the loss or practice that encounter at lower Fear. If a rare boon never appeared, improve the baseline build rather than treating the whole run as invalid."
+        ],
+        "mistakes": "Stacking several restrictions that all prolong the same difficult fights.",
+        "versionNote": "Boons are random: these are selection and route guides, not guaranteed rolls. Follow current Book of Shadows and Oath descriptions.",
+        "sources": [
+          {
+            "href": "https://steamcommunity.com/app/1145350/discussions/0/591766512413505007/",
+            "label": "steamcommunity.com — 591766512413505007"
+          },
+          {
+            "href": "https://www.leereamsnyder.com/hades-2-build-guide",
+            "label": "leereamsnyder.com — hades 2 build guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-7",
+        "slug": "surface-32-fear-route-planning-and-survival-priorities",
+        "title": "Surface 32 Fear: route planning and survival priorities",
+        "category": "Fear",
+        "answer": "Prepare for the full Surface route through Polyphemus, Eris, Prometheus and Typhon. Choose a build that damages safely while you move, and preserve enough recovery for the final two fights.",
+        "steps": [
+          "Finish Surface unlocks and remove the curse first. Learn each Guardian on lower Fear so an unfamiliar pattern is not competing with a strict time limit.",
+          "Pick a build with reliable range, persistent damage or short melee openings. For a Blades Scorch plan, apply the effect in brief attacks and reposition while damage continues.",
+          "Read economy restrictions before accepting them. Keep purchases that fix missing damage or defense available; a cheap extra Fear point can be costly if it prevents a crucial shop upgrade.",
+          "In each region, choose useful rewards promptly and avoid unnecessary backtracking. Pause to compare menus when needed instead of wasting the movement portion of a timed run hesitating at doors.",
+          "Before Prometheus and the Summit, check remaining Death Defiances, healing and Magick recovery. If you consistently arrive depleted, adjust the earlier Vows rather than assuming a stronger final-room boon will solve it."
+        ],
+        "mistakes": "Using an Underworld route plan without learning the Surface Guardians.",
+        "versionNote": "Boons are random: these are selection and route guides, not guaranteed rolls. Follow current Book of Shadows and Oath descriptions.",
+        "sources": [
+          {
+            "href": "https://www.reddit.com/r/HadesTheGame/comments/1jwyoyi/hades_2_32_fear_dodgebuild_guide_warsong_update/",
+            "label": "reddit.com — hades 2 32 fear dodgebuild guide warsong update"
+          },
+          {
+            "href": "https://www.leereamsnyder.com/hades-2-build-guide",
+            "label": "leereamsnyder.com — hades 2 build guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-8",
+        "slug": "unlock-the-surface-and-remove-its-health-draining-curse",
+        "title": "Unlock the Surface and remove its health-draining curse",
+        "category": "Surface",
+        "answer": "There are two gates: Permeation of Witching-Wards opens the route, and Unraveling a Fateful Bond removes the Surface curse. Opening the staircase alone does not make Melinoe safe there.",
+        "steps": [
+          "Progress through the Underworld and finish the Hermes and Hecate dialogue that introduces the Surface war. Check the Crossroads cauldron after returning for the ward-breaking incantation.",
+          "Gather the listed Moly, Cinder and Shadow. Shadow comes through the cauldron's extraction recipe; start that process before another run and collect it when ready.",
+          "Cast Permeation of Witching-Wards and return to the Silver Pool area to use the upward route. Expect the first Surface attempt to be short because the curse drains health.",
+          "After returning, follow Moros's dialogue and check for Unraveling a Fateful Bond. Gather Lotus in Oceanus, Moss in Ephyra, and grow Nightshade and Thalamus from the relevant seeds.",
+          "Finish the second incantation at the cauldron, then start another Surface run. Ordinary enemy damage remains, but the route's recurring curse damage should no longer force an early return."
+        ],
+        "mistakes": "Assuming opening the stairs also removes the Surface curse.",
+        "versionNote": "Boons are random: these are selection and route guides, not guaranteed rolls. Follow current Book of Shadows and Oath descriptions.",
+        "sources": [
+          {
+            "href": "https://www.gamesradar.com/games/hades/hades-2-surface-ward-incantation/",
+            "label": "gamesradar.com — hades 2 surface ward incantation"
+          }
+        ]
+      },
+      {
+        "id": "P0-9",
+        "slug": "wards-still-sealed-check-dialogue-shadow-and-the-cauldron",
+        "title": "Wards still sealed? Check dialogue, Shadow and the cauldron",
+        "category": "Surface",
+        "answer": "Breaking the wards requires the incantation at the Crossroads cauldron. If you have the ingredients but the route stays closed, check that you collected the brewed Shadow and actually cast the spell.",
+        "steps": [
+          "If the recipe is missing, continue the Underworld story and speak to Hermes and Hecate when their dialogue becomes available. A resource farm alone does not unlock a story-gated recipe.",
+          "If Shadow is missing, open the cauldron's extraction section. Start the recipe and leave enough encounters for it to finish; ingredients sitting in storage are not a completed Shadow.",
+          "Return and collect the finished result. Then open the incantation list and select Permeation of Witching-Wards, not the similarly related Surface-survival incantation.",
+          "After casting, visit the Silver Pool's upward route. If it is open but you lose health outside, you have cleared the ward gate and are now encountering the separate curse gate.",
+          "If the recipe is visibly completed yet access still fails, finish the current dialogue, return through a normal save and relaunch. Check platform patch notes before trying save edits or starting over."
+        ],
+        "mistakes": "Leaving completed Shadow extraction uncollected.",
+        "versionNote": "Boons are random: these are selection and route guides, not guaranteed rolls. Follow current Book of Shadows and Oath descriptions.",
+        "sources": [
+          {
+            "href": "https://www.gamesradar.com/games/hades/hades-2-surface-ward-incantation/",
+            "label": "gamesradar.com — hades 2 surface ward incantation"
+          }
+        ]
+      },
+      {
+        "id": "P0-10",
+        "slug": "surface-bosses-polyphemus-eris-prometheus-and-typhon",
+        "title": "Surface bosses: Polyphemus, Eris, Prometheus and Typhon",
+        "category": "Bosses",
+        "answer": "Learn the four Surface Guardians as separate fights. Avoid Polyphemus's landing zones, move off Eris's firing line, remember Prometheus's flame sequence, and keep an exit while attacking Typhon.",
+        "steps": [
+          "Polyphemus: watch the landing and shockwave before approaching. Take a brief opening between attacks and back out; standing close while he prepares a jump exposes you to both body and area damage.",
+          "Eris: keep moving around her firing direction and use intact cover when it blocks a barrage. Leave marked bomb areas and attack after a committed volley instead of trading hits from directly in front.",
+          "Prometheus: during the preview sequence, remember the safe lane for each wave. Follow the order when the flames execute, then return attention to the boss and eagle instead of continuing to stare at the old lanes.",
+          "Typhon: keep track of the active arena hazards and use short damage windows. When a new attack begins, move first; do not commit all of your Magick to a slow sequence with no exit.",
+          "Before each Guardian, select recovery or a defensive option if the build already clears rooms. Rival versions alter the encounter, so practice those versions separately instead of assuming the normal-fight timing transfers."
+        ],
+        "mistakes": "Using normal-boss timing against a changed Rival encounter.",
+        "versionNote": "Boons are random: these are selection and route guides, not guaranteed rolls. Follow current Book of Shadows and Oath descriptions.",
+        "sources": [
+          {
+            "href": "https://steamcommunity.com/sharedfiles/filedetails/?id=3544135758",
+            "label": "steamcommunity.com — filedetails"
+          },
+          {
+            "href": "https://vandal.elespanol.com/en/hades-2/all-hades-2-bosses-tips-and-tricks-to-defeat-them.html",
+            "label": "vandal.elespanol.com — all hades 2 bosses tips and tricks to defeat them.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "lost-castle-2",
+    "title": "Lost Castle 2",
+    "articles": [
+      {
+        "id": "P0-1",
+        "slug": "beginner-guide-weapons-treasure-and-camp-upgrades",
+        "title": "Beginner guide: weapons, treasure and camp upgrades",
+        "category": "Start",
+        "answer": "Pick a weapon you can control, add treasures that support its attacks, and use camp progression between attempts. A safer short combo is more useful than a stronger combo you cannot finish.",
+        "steps": [
+          "Try the available weapon's basic attack, skill and dodge before committing upgrades. Check whether the skill uses MP and whether its recovery leaves you exposed.",
+          "Use the first rooms to choose a main damage pattern: short melee hits, ranged shots or skills. Select treasures that support that pattern rather than collecting unrelated high-rarity effects.",
+          "Check rune colors and inscription text when replacing equipment. A new piece can improve raw stats while breaking the combination that was making your build work.",
+          "Before a boss gate, arrange healing and consumables in accessible slots. Enter with a plan for one safe attack opening instead of consuming everything during the first exchange.",
+          "After the run, inspect camp upgrades and newly available services. Spend persistent resources on the limitation that stopped progress, then repeat with the same weapon long enough to learn its timing."
+        ],
+        "mistakes": "Picking equipment by rarity while breaking the current build.",
+        "versionNote": "Later-route boss advice includes community reports. Match the difficulty and multiplayer mode to your current run.",
+        "sources": [
+          {
+            "href": "https://www.gamebrief.net/blog/lost-castle-2-beginner-guide-weapons-build-first-run",
+            "label": "gamebrief.net — lost castle 2 beginner guide weapons build first run"
+          }
+        ]
+      },
+      {
+        "id": "P0-2",
+        "slug": "build-choices-shield-safety-ranged-damage-and-skill-support",
+        "title": "Build choices: shield safety, ranged damage and skill support",
+        "category": "Builds",
+        "answer": "For early clears, use a controllable shield or ranged setup, then support one damage pattern with compatible treasures and runes. Check active inscription effects whenever you replace a piece.",
+        "steps": [
+          "For a shield-oriented run, prioritize a usable block or safe melee opening. Add enough damage to end fights without needing to stand in contact indefinitely.",
+          "For a bow or staff run, keep lateral escape space and attack across a clear lane. A ranged weapon is safer only if you avoid backing into the edge of the arena.",
+          "Choose treasures whose conditions you actually trigger: skill use for a skill-focused build, repeated hits for a fast weapon, or defense when survival is the immediate failure.",
+          "Look at the whole loadout before changing one strong piece. If it breaks an active inscription effect, compare the lost effect with the new item's benefit rather than judging rarity alone.",
+          "Before the later bosses, add single-target reliability and recovery. A build that deletes normal enemies may still struggle when there are no small targets to activate its rewards."
+        ],
+        "mistakes": "Taking only damage upgrades when every boss hit ends the run.",
+        "versionNote": "Later-route boss advice includes community reports. Match the difficulty and multiplayer mode to your current run.",
+        "sources": [
+          {
+            "href": "https://dq7reimagined.com/lost-castle-2/builds-guide/",
+            "label": "dq7reimagined.com — builds guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-3",
+        "slug": "weapon-skills-range-recovery-and-mp-management",
+        "title": "Weapon skills: range, recovery and MP management",
+        "category": "Weapons",
+        "answer": "Read what the skill does and test its recovery before spending on it. Use MP-based skills when you can keep them available, and keep a basic attack plan for the gaps.",
+        "steps": [
+          "On obtaining a weapon, use its skill in safe space. Check whether it moves you, charges in place, targets a line or creates an effect that remains afterward.",
+          "For a slow skill, bait an enemy attack and use the recovery window. Activating a powerful move while the enemy is already swinging often trades away its value.",
+          "For a movement skill, choose the landing point before pressing it. A charge through a group is not an escape if it ends against the far wall.",
+          "Watch MP across several rooms. If the skill empties the bar quickly, add compatible recovery or use it for groups and bosses instead of every single enemy.",
+          "When comparing another weapon, include its downtime and resource cost. Keep the weaker-looking weapon if you can consistently finish fights with it and the replacement disrupts the entire loadout."
+        ],
+        "mistakes": "Using a long skill animation during an enemy's attack.",
+        "versionNote": "Later-route boss advice includes community reports. Match the difficulty and multiplayer mode to your current run.",
+        "sources": [
+          {
+            "href": "https://www.gamebrief.net/blog/lost-castle-2-beginner-guide-weapons-build-first-run",
+            "label": "gamebrief.net — lost castle 2 beginner guide weapons build first run"
+          }
+        ]
+      },
+      {
+        "id": "P0-4",
+        "slug": "rune-resonance-identify-the-active-effect-before-swapping-gear",
+        "title": "Rune resonance: identify the active effect before swapping gear",
+        "category": "Runes",
+        "answer": "Read rune colors and inscriptions as separate parts of the loadout. Matching inscription effects can create stronger combinations, but three random high-rarity pieces do not automatically form a useful resonance.",
+        "steps": [
+          "Inspect the weapon, armor and treasures currently equipped. Read the inscription names and the activation text, then note which effects are visibly active.",
+          "Choose one desired effect and keep pieces that advance it. Do not confuse a matching color with meeting every requirement of a named inscription chain.",
+          "At each replacement, compare the active-effect panel before and after. If the new item breaks your core effect, keep the old piece unless the immediate gain clearly solves a larger problem.",
+          "Use the current client's threshold text when chasing higher resonance. Community descriptions of first, second and third layers are not a substitute for the equipment conditions shown in your build.",
+          "Test the completed effect in an ordinary room before a difficult boss. Make sure the trigger works with your chosen attack; an active bonus tied to a move you never use is still poor value."
+        ],
+        "mistakes": "Confusing matching rune colors with a completed inscription condition.",
+        "versionNote": "Later-route boss advice includes community reports. Match the difficulty and multiplayer mode to your current run.",
+        "sources": [
+          {
+            "href": "https://dq7reimagined.com/lost-castle-2/builds-guide/",
+            "label": "dq7reimagined.com — builds guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-5",
+        "slug": "rune-colors-damage-skills-and-survival",
+        "title": "Rune colors: damage, skills and survival",
+        "category": "Runes",
+        "answer": "Use red Akhil for damage-oriented support, blue Nairu for MP and skill plans, and green Parati for survival-oriented support. Read each item's actual effect before treating its color as the whole build.",
+        "steps": [
+          "Decide what is ending the run. If enemies live too long, investigate damage support; if the skill loop stops from empty MP, look at the resource side; if you take repeated hits, improve survival.",
+          "Choose a primary direction and add compatible pieces as they appear. Do not discard every off-color item when one of them supplies the healing or mobility the run lacks.",
+          "For a skill setup, check that your blue-support choice benefits the skill you actually use. A resource bonus is wasted if normal attacks are doing nearly all the work.",
+          "For a defensive setup, keep enough offense to finish a boss. Extra survival that turns each fight into a much longer encounter can expose you to more total mistakes.",
+          "When replacing equipment, review both colors and inscriptions. Keep the complete working combination in view instead of chasing a color total that disables a stronger active effect."
+        ],
+        "mistakes": "Ignoring a useful defensive item because it has the wrong color.",
+        "versionNote": "Later-route boss advice includes community reports. Match the difficulty and multiplayer mode to your current run.",
+        "sources": [
+          {
+            "href": "https://dq7reimagined.com/lost-castle-2/builds-guide/",
+            "label": "dq7reimagined.com — builds guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-6",
+        "slug": "boss-preparation-opening-areas-to-the-black-castle",
+        "title": "Boss preparation: opening areas to the Black Castle",
+        "category": "Bosses",
+        "answer": "Prepare for the next boss's attack pattern, keep healing for later phases, and use short recovery windows. At the Black Castle, do not assume defeating Steward means the run is already finished.",
+        "steps": [
+          "Before entering, inspect health, MP and consumable slots. If your only damage source needs MP, preserve enough for a longer fight instead of emptying it on the final ordinary room.",
+          "Against ground indicators or wide charges, leave the threatened lane early. Move perpendicular to an incoming path when retreating straight backward keeps you inside it.",
+          "Against a shielded target, look for the encounter's interaction instead of repeatedly hitting the shield. Thunder Sprite's crystal mechanic is a different problem from ordinary damage resistance.",
+          "At Castle Bridge, give the Wandering Knight room and punish after a committed attack. Avoid rolling through a large body when an upward or downward escape is available.",
+          "At the Black Castle finale, reserve recovery for the follow-up encounter after Steward. Treat late-game Mage Tower and Nightmare bosses as separate routes rather than assuming the story-path order covers them."
+        ],
+        "mistakes": "Using all recovery before a back-to-back finale.",
+        "versionNote": "Later-route boss advice includes community reports. Match the difficulty and multiplayer mode to your current run.",
+        "sources": [
+          {
+            "href": "https://allthings.how/lost-castle-2-how-to-beat-steward-and-the-demon-lord-of-destruction/",
+            "label": "allthings.how — lost castle 2 how to beat steward and the demon lord of destruction"
+          },
+          {
+            "href": "https://dq7reimagined.com/lost-castle-2/bosses-guide/",
+            "label": "dq7reimagined.com — bosses guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-7",
+        "slug": "wandering-knight-horseback-charges-and-the-sword-phase",
+        "title": "Wandering Knight: horseback charges and the sword phase",
+        "category": "Bosses",
+        "answer": "Move above or below the Knight's charge lane, then attack during recovery. A bow or another ranged option helps you keep damage going without rolling through his large body.",
+        "steps": [
+          "Before the bridge fight, equip healing and bombs where you can reach them. Leave room to move vertically; standing on the centerline gives the mounted charge a direct path to you.",
+          "During the horseback phase, watch the charge and traveling ground pressure. Dodge wide out of the lane, not straight through the horse.",
+          "Attack after he commits or passes, then reset your spacing. With a bow, take ranged shots from the side or rear while preserving your next escape direction.",
+          "When he dismounts, expect wider sword reach and spinning pressure. Wait until the sequence ends before moving in; the punish window is shorter than the animation may suggest.",
+          "Use bombs or ranged damage during safe gaps and heal only with space. If a dodge keeps getting clipped, change its direction before assuming you need a faster reaction."
+        ],
+        "mistakes": "Dodging through the Knight instead of leaving his charge lane.",
+        "versionNote": "Later-route boss advice includes community reports. Match the difficulty and multiplayer mode to your current run.",
+        "sources": [
+          {
+            "href": "https://progameguides.com/general-walkthroughs/lost-castle-2-walkthrough-all-bosses-and-achievements/",
+            "label": "progameguides.com — lost castle 2 walkthrough all bosses and achievements"
+          }
+        ]
+      },
+      {
+        "id": "P0-8",
+        "slug": "lord-alfred-punish-trident-and-beam-recovery",
+        "title": "Lord Alfred: punish trident and beam recovery",
+        "category": "Bosses",
+        "answer": "Lord Alfred is a later-route boss, not the ordinary Black Castle finale. Community reports identify trident sequences and the breath beam as useful punish windows, with extra follow-ups in later phases.",
+        "steps": [
+          "Arrive with a working single-target build and recovery available. Do not spend the entire run preparing only for ordinary enemies when the route ends with a long multi-phase fight.",
+          "Watch the opening trident overhead and its shockwave. A community strategy is to dodge toward him at an angle, reach the rear and take a small number of hits during his commitment.",
+          "In later phases, use the breath beam's committed direction to reach a safer attack angle. Leave before the animation finishes rather than extending the punish into his next move.",
+          "Do not assume being behind him is always safe. The reported second-phase dive can be followed by a corrupted-arm swing when you are already at his rear.",
+          "In co-op, avoid stacking everyone on the same escape lane. When a new phase adds a move, shorten attacks until you have seen its ending; the cited advice is community experience, not a guarantee for every modifier."
+        ],
+        "mistakes": "Assuming his rear is safe after every dive in later phases.",
+        "versionNote": "Later-route boss advice includes community reports. Match the difficulty and multiplayer mode to your current run.",
+        "sources": [
+          {
+            "href": "https://steamcommunity.com/app/2445690/discussions/0/563660559683412283/?ctp=2",
+            "label": "steamcommunity.com — 563660559683412283"
+          }
+        ]
+      },
+      {
+        "id": "P0-9",
+        "slug": "nightmare-5-preparation-a-complete-build-before-the-boss",
+        "title": "Nightmare 5 preparation: a complete build before the boss",
+        "category": "Nightmare",
+        "answer": "Enter higher Nightmare levels with a functioning damage chain, enough recovery and a weapon you already clear with. Confirm that the loadout's stronger inscription effects are active before chasing the next difficulty.",
+        "steps": [
+          "Repeat the preceding difficulty with your planned weapon and note where it loses health or MP. Raise difficulty after that failure is manageable, rather than changing both weapon and difficulty together.",
+          "Commit to one principal damage route early. For a staff or skill setup, keep resource recovery usable; for melee, keep a way to attack without committing to every long combo.",
+          "Check inscription compatibility across equipment and treasures. Seek stronger resonance only when the pieces work together; three expensive items are not proof of a completed chain.",
+          "Use shops and upgrades to repair the weak point before the boss. Skip a risky side route when its reward does not improve the current plan or you have no recovery left.",
+          "At the final encounter, keep short attack windows until you recognize the phase. A community depth-4 or depth-5 clear is a build example, not evidence that its exact drops are guaranteed in your run."
+        ],
+        "mistakes": "Copying the rare drops of one clear as a guaranteed route.",
+        "versionNote": "Later-route boss advice includes community reports. Match the difficulty and multiplayer mode to your current run.",
+        "sources": [
+          {
+            "href": "https://allthings.how/lost-castle-2-ethereal-nightmare-staff-and-greatsword-builds-for-depth-4-and-5/",
+            "label": "allthings.how — lost castle 2 ethereal nightmare staff and greatsword builds for depth 4 and 5"
+          }
+        ]
+      },
+      {
+        "id": "P0-10",
+        "slug": "multiplayer-progression-host-personal-unlocks-and-rewards",
+        "title": "Multiplayer progression: host, personal unlocks and rewards",
+        "category": "Co-op",
+        "answer": "Local co-op uses the host's save progression according to community reports. For online play, check each player's camp and unlock screen after the session; route access and personal rewards are different questions.",
+        "steps": [
+          "For local co-op, start from the intended host save. Community reports say joining players can use its unlocked content; do not assume local guests are creating independent account progression.",
+          "For online play, have each player check the planned route, weapon and upgrades on their own menus before starting. The host opening a route does not explain every personal reward rule.",
+          "Agree how to handle equipment drops. Give a piece to the player whose weapon and inscription chain it supports, especially when it completes an active effect.",
+          "Let result and reward screens finish before leaving the lobby. Return to camp and check new resources, services and unlocks rather than closing immediately after the boss.",
+          "If a reward seems missing, compare the player's displayed requirement with what the run completed. Note whether the session was local or online when looking up a matching report."
+        ],
+        "mistakes": "Assuming host route availability proves every personal unlock was earned.",
+        "versionNote": "Later-route boss advice includes community reports. Match the difficulty and multiplayer mode to your current run.",
+        "sources": [
+          {
+            "href": "https://steamcommunity.com/app/2445690/discussions/0/807973539029372866/",
+            "label": "steamcommunity.com — 807973539029372866"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "risk-of-rain-2",
+    "title": "Risk of Rain 2",
+    "articles": [
+      {
+        "id": "P0-1",
+        "slug": "beginner-guide-loot-efficiently-and-activate-the-teleporter",
+        "title": "Beginner guide: loot efficiently and activate the teleporter",
+        "category": "Start",
+        "answer": "Find the teleporter while gathering nearby items, start its event when you have enough damage and space, then leave after collecting the reward. Efficient looting matters more than a rigid time-per-stage rule.",
+        "steps": [
+          "On entering a stage, look for the teleporter's particles while moving through nearby loot. Avoid crossing the map repeatedly for isolated purchases when the same route could reveal several chests.",
+          "Buy a small set of useful items and prioritize movement if enemies keep surrounding you. Difficulty rises with time, but leaving without enough power can make the next stage worse.",
+          "Before activation, inspect the arena for cover, cliffs and dangerous elites. Buy important nearby chests first because the teleporter event restricts ordinary purchases in its area.",
+          "Activate, kill the boss and remain within the charging zone when it is safe. Leave temporarily to survive if necessary; dying to keep the percentage moving is not a useful trade.",
+          "Collect the boss reward and any worthwhile nearby purchases, then interact again to travel. On Sky Meadow, inspect the Primordial Teleporter's destination before deciding whether to continue to the end route or loop."
+        ],
+        "mistakes": "Rushing to the next stage with too little power, or over-looting with no plan.",
+        "versionNote": "Expansions, artifacts and updates change item pools and interactions. Numeric examples explain mechanics, not guaranteed results.",
+        "sources": [
+          {
+            "href": "https://riskofrain2.wiki.gg/wiki/Teleporter",
+            "label": "riskofrain2.wiki.gg — Teleporter"
+          }
+        ]
+      },
+      {
+        "id": "P0-2",
+        "slug": "useful-items-movement-single-target-damage-and-crowd-clear",
+        "title": "Useful items: movement, single-target damage and crowd clear",
+        "category": "Items",
+        "answer": "Choose items for the part of the run your survivor struggles with. Movement helps almost everyone; on-hit effects favor frequent eligible hits, while burst builds can use heavy-hit effects more easily.",
+        "steps": [
+          "Take movement seriously: Paul's Goat Hoof and Energy Drink make positioning easier in different situations. Do not convert every movement item into damage if you are repeatedly caught in crowds.",
+          "For frequent-hit survivors, look for compatible on-hit effects and critical-hit support. One slow attack and ten small hits do not trigger every item equally often.",
+          "For heavy burst attacks, consider effects such as Runald's and Kjaro's Bands when you can meet their damage condition. Read the trigger and cooldown instead of treating them as unconditional damage.",
+          "Add a crowd-clear option when ordinary enemies are the main pressure. Gasoline or an on-kill effect can help packs, but may contribute much less against a lone boss.",
+          "At a printer or scrapper, identify the item you can actually afford to lose. Avoid gambling away your last healing or movement just because the output has a higher community ranking."
+        ],
+        "mistakes": "Printing away all movement or recovery for a damage item.",
+        "versionNote": "Expansions, artifacts and updates change item pools and interactions. Numeric examples explain mechanics, not guaranteed results.",
+        "sources": [
+          {
+            "href": "https://riskofrain2.wiki.gg/wiki/Runald%27s_Band",
+            "label": "riskofrain2.wiki.gg — Runald's Band"
+          },
+          {
+            "href": "https://riskofrain2.wiki.gg/wiki/Proc_Coefficient",
+            "label": "riskofrain2.wiki.gg — Proc Coefficient"
+          }
+        ]
+      },
+      {
+        "id": "P0-3",
+        "slug": "item-synergy-three-combinations-and-what-makes-them-work",
+        "title": "Item synergy: three combinations and what makes them work",
+        "category": "Items",
+        "answer": "A synergy needs a trigger your survivor can supply. Critical hits can support crit-dependent items, heavy attacks can trigger Bands, and crowd kills can spread on-kill damage.",
+        "steps": [
+          "Start with the attack you land most often. Check its hit frequency and whether it naturally meets a damage threshold; this determines which combination will activate reliably.",
+          "Critical-hit support works when your build produces crits often enough to feed the dependent effect. A crit-dependent item with almost no crit chance is an unfinished combination.",
+          "Runald's and Kjaro's Bands suit attacks that meet their heavy-hit requirement. Save that attack for a priority target while the effect is ready instead of spending it on one weak enemy.",
+          "Gasoline-style on-kill damage needs an initial kill and nearby targets. Open a dense wave by finishing a weaker enemy; do not expect the same result against an isolated boss.",
+          "After adding the second item, keep mobility and recovery in the build. A damage combination that forces you to remain in a lethal position is not a complete solution."
+        ],
+        "mistakes": "Expecting an on-kill combo to work unchanged against a lone boss.",
+        "versionNote": "Expansions, artifacts and updates change item pools and interactions. Numeric examples explain mechanics, not guaranteed results.",
+        "sources": [
+          {
+            "href": "https://riskofrain2.wiki.gg/wiki/Runald%27s_Band",
+            "label": "riskofrain2.wiki.gg — Runald's Band"
+          },
+          {
+            "href": "https://riskofrain2.wiki.gg/wiki/Critical_Strike",
+            "label": "riskofrain2.wiki.gg — Critical Strike"
+          }
+        ]
+      },
+      {
+        "id": "P0-4",
+        "slug": "proc-coefficient-explained-chance-per-hit-not-damage-per-second",
+        "title": "Proc coefficient explained: chance per hit, not damage per second",
+        "category": "Proc",
+        "answer": "A proc coefficient changes how an eligible hit interacts with many on-hit items. For a simple chance-based effect, multiply the listed chance by the hit's coefficient before applying any other relevant rules.",
+        "steps": [
+          "Separate the attack from its individual hit events. A multi-hit skill may have a coefficient on each hit rather than one full-strength proc roll for the entire skill.",
+          "For a simple example, a 10% on-hit chance and a 0.5 coefficient give a 5% chance on that eligible hit. This example describes probability, not bonus weapon damage.",
+          "Compare the number of hits as well as the coefficient. Several smaller opportunities may activate a proc regularly, but you cannot simply add probabilities indefinitely or exceed certainty.",
+          "Check the item's own rules. Cooldowns, damage thresholds, luck and proc-chain restrictions mean not every effect can be predicted by the one multiplication alone.",
+          "For a build decision, ask whether the effect activates during your normal rotation. Do not treat a coefficient of zero on one effect as proof the survivor's entire kit cannot use on-hit items."
+        ],
+        "mistakes": "Confusing coefficient, hit count and item cooldowns.",
+        "versionNote": "Expansions, artifacts and updates change item pools and interactions. Numeric examples explain mechanics, not guaranteed results.",
+        "sources": [
+          {
+            "href": "https://riskofrain2.wiki.gg/wiki/Proc_Coefficient",
+            "label": "riskofrain2.wiki.gg — Proc Coefficient"
+          }
+        ]
+      },
+      {
+        "id": "P0-5",
+        "slug": "proc-chains-why-one-hit-can-cause-several-effects",
+        "title": "Proc chains: why one hit can cause several effects",
+        "category": "Proc",
+        "answer": "A proc chain begins with a hit that activates another effect, which may be able to activate additional effects. Each link has its own coefficient and restrictions; the same proc cannot simply repeat forever.",
+        "steps": [
+          "Identify the first reliable hit in your rotation. It must satisfy the initial item's trigger; an impressive chain cannot start if the opening attack does not qualify.",
+          "Add an on-hit effect and consider how its outgoing hits behave. Secondary damage is not automatically identical to your survivor's original hit for every item.",
+          "Add a different compatible effect instead of expecting one item to trigger itself endlessly. Proc-chain tracking prevents several forms of repetition within the same chain.",
+          "Keep threshold and cooldown items separate in your reasoning. A Band activation, an on-kill explosion and a random on-hit missile do not all obey the same trigger rule.",
+          "Improve the start of the chain as well as its length. More dependable hits and enough survival to keep attacking are usually more useful than collecting a final link that rarely activates."
+        ],
+        "mistakes": "Assuming secondary effects can trigger themselves without restriction.",
+        "versionNote": "Expansions, artifacts and updates change item pools and interactions. Numeric examples explain mechanics, not guaranteed results.",
+        "sources": [
+          {
+            "href": "https://riskofrain2.wiki.gg/wiki/Critical_Strike",
+            "label": "riskofrain2.wiki.gg — Critical Strike"
+          },
+          {
+            "href": "https://riskofrain2.wiki.gg/wiki/Proc_Coefficient",
+            "label": "riskofrain2.wiki.gg — Proc Coefficient"
+          }
+        ]
+      },
+      {
+        "id": "P0-6",
+        "slug": "survivor-builds-rapid-hits-heavy-burst-and-mobile-attacks",
+        "title": "Survivor builds: rapid hits, heavy burst and mobile attacks",
+        "category": "Survivors",
+        "answer": "Choose items around your survivor's normal attack pattern. Commando and other frequent hitters value repeated triggers; Loader and other heavy hitters can exploit burst openings; every build still needs mobility.",
+        "steps": [
+          "Frequent-hit setup: improve reliable shooting time and add on-hit effects. Use movement to keep the target in view rather than standing still to maximize theoretical fire rate.",
+          "Heavy-hit setup: plan a strong opening on an exposed target. Consider damage-threshold items and cooldown support that let you repeat the burst safely.",
+          "Cooldown-based setup: rotate the whole kit instead of trying to force a primary attack to do all the work. Use Backup Magazine or cooldown support where it helps the skill you depend on.",
+          "Mobile melee setup: choose an entry and an exit before committing. Damage while surrounded is not reliable if the next enemy burst arrives before your movement skill returns.",
+          "For each stage, add the missing role: crowd clear, boss damage or sustain. A survivor name alone does not define a universal build across all item rolls, artifacts and expansions."
+        ],
+        "mistakes": "Copying a build without checking the survivor's normal hit pattern.",
+        "versionNote": "Expansions, artifacts and updates change item pools and interactions. Numeric examples explain mechanics, not guaranteed results.",
+        "sources": [
+          {
+            "href": "https://riskofrain2.wiki.gg/wiki/Artificer",
+            "label": "riskofrain2.wiki.gg — Artificer"
+          },
+          {
+            "href": "https://riskofrain2.wiki.gg/wiki/Runald%27s_Band",
+            "label": "riskofrain2.wiki.gg — Runald's Band"
+          }
+        ]
+      },
+      {
+        "id": "P0-7",
+        "slug": "artificer-build-cooldowns-burst-and-ion-surge",
+        "title": "Artificer build: cooldowns, burst and Ion Surge",
+        "category": "Survivors",
+        "answer": "Artificer uses skill cooldowns and primary charges, not a mana bar. Rotate her abilities, keep distance during recovery, and consider Ion Surge for vertical mobility if you have unlocked it.",
+        "steps": [
+          "Learn the primary's limited charges. Spend them deliberately and use other skills while they recharge instead of waiting in place for another shot.",
+          "Charge Nano-Bomb or use the equipped secondary during a clear opening. Aim at a group or priority target, then reposition while the next part of the rotation becomes available.",
+          "Use freezing utility to control an approaching threat and create time for another attack. Watch enemies that resist control rather than assuming every boss can be stopped the same way.",
+          "If Ion Surge is unlocked, use it to gain height and attack from safer space. Remain aware of the teleporter's charging area; hovering far outside it can delay the event.",
+          "Prioritize movement and useful cooldown support. Backup Magazine adds a secondary stock; heavy burst can suit Bands. Flamethrower is another loadout choice, but its close commitment demands safer positioning."
+        ],
+        "mistakes": "Waiting on the primary instead of rotating cooldowns.",
+        "versionNote": "Expansions, artifacts and updates change item pools and interactions. Numeric examples explain mechanics, not guaranteed results.",
+        "sources": [
+          {
+            "href": "https://riskofrain2.wiki.gg/wiki/Artificer",
+            "label": "riskofrain2.wiki.gg — Artificer"
+          },
+          {
+            "href": "https://riskofrain2.wiki.gg/wiki/Backup_Magazine",
+            "label": "riskofrain2.wiki.gg — Backup Magazine"
+          }
+        ]
+      },
+      {
+        "id": "P0-8",
+        "slug": "teleporter-guide-charging-rewards-and-looping",
+        "title": "Teleporter guide: charging, rewards and looping",
+        "category": "Teleporter",
+        "answer": "Kill the teleporter boss and complete the charge, then collect rewards and activate travel. Stay inside the charging zone when possible, but leave it to avoid a lethal attack.",
+        "steps": [
+          "Look for teleporter particles and inspect the surrounding area before starting. Open important nearby chests and choose a route around hazards while the event is still inactive.",
+          "Activate when you can handle both the boss and ordinary enemies. Use cover to break dangerous ranged attacks and keep moving around the objective.",
+          "Fight inside the charge area when it is safe. If a boss attack covers it, leave briefly and return after the danger rather than sacrificing the run for a few percentage points.",
+          "After the boss and charge are complete, collect the reward and finish valuable nearby purchases. Check for a special portal if that is part of your route.",
+          "At the Primordial Teleporter, interact with its outer alignment before activation if you intend to loop rather than take the final route. Confirm the displayed destination before committing."
+        ],
+        "mistakes": "Dying inside the charge radius rather than stepping out briefly.",
+        "versionNote": "Expansions, artifacts and updates change item pools and interactions. Numeric examples explain mechanics, not guaranteed results.",
+        "sources": [
+          {
+            "href": "https://riskofrain2.wiki.gg/wiki/Teleporter",
+            "label": "riskofrain2.wiki.gg — Teleporter"
+          }
+        ]
+      },
+      {
+        "id": "P0-9",
+        "slug": "playing-after-a-dlc-update-enabled-content-and-old-build-advice",
+        "title": "Playing after a DLC update: enabled content and old build advice",
+        "category": "Updates",
+        "answer": "Check which expansions are enabled and whether the guide matches your platform's build. New items, survivors and rebalances can change a familiar loadout without changing the basic teleporter loop.",
+        "steps": [
+          "At the lobby, inspect the enabled expansions before selecting a survivor. In multiplayer, agree on that content set so players know which item pool and encounters to expect.",
+          "Read the current update notes for changes to the survivor or items you use. Pay particular attention to proc rules, cooldowns and reworked effects mentioned in your old build guide.",
+          "Try the changed setup on a familiar difficulty first. Keep artifacts and other modifiers consistent so a different ruleset does not get mistaken for a balance change.",
+          "When a new item appears, read both its benefit and cost before replacing an established piece. Void or other transformation mechanics can affect the rest of your inventory, not just the pickup slot.",
+          "If an old strategy stops working, check its publication date and enabled DLC. Preserve the useful role of the build, but replace the interaction that no longer matches the current description."
+        ],
+        "mistakes": "Using an old build without checking enabled expansions.",
+        "versionNote": "Expansions, artifacts and updates change item pools and interactions. Numeric examples explain mechanics, not guaranteed results.",
+        "sources": [
+          {
+            "href": "https://store.steampowered.com/app/632360/Risk_of_Rain_2/",
+            "label": "store.steampowered.com — Risk of Rain 2"
+          }
+        ]
+      },
+      {
+        "id": "P0-10",
+        "slug": "multiplayer-item-sharing-give-each-pickup-a-useful-owner",
+        "title": "Multiplayer item sharing: give each pickup a useful owner",
+        "category": "Teamplay",
+        "answer": "Share items by who can activate them well, while keeping every player able to survive. Coordinate boss drops, printers and movement pickups instead of treating every item as first-come-first-served.",
+        "steps": [
+          "Before starting, identify the team's attack patterns. A rapid shooter, a heavy burst survivor and a cooldown-based survivor may get different value from the same item.",
+          "Give early movement and basic recovery to the player who cannot keep up or keeps dying. A teammate losing the next stage's loot is a larger cost than a small damage trade.",
+          "Offer heavy-hit trigger items to the player who meets their condition naturally. Offer repeated-hit effects where there are enough eligible hits to make them worthwhile.",
+          "At the teleporter, count and distribute boss rewards before anyone collects extras. Announce unusual pickups or equipment that another survivor is specifically building around.",
+          "At printers and scrappers, say what you intend to trade and let a teammate claim an item you do not need when the game permits. Keep enough independent power that one death does not leave the whole team unable to continue."
+        ],
+        "mistakes": "Giving every damage item to one player while the rest cannot survive.",
+        "versionNote": "Expansions, artifacts and updates change item pools and interactions. Numeric examples explain mechanics, not guaranteed results.",
+        "sources": [
+          {
+            "href": "https://riskofrain2.wiki.gg/wiki/Teleporter",
+            "label": "riskofrain2.wiki.gg — Teleporter"
+          },
+          {
+            "href": "https://riskofrain2.wiki.gg/wiki/Runald%27s_Band",
+            "label": "riskofrain2.wiki.gg — Runald's Band"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "sephiria",
+    "title": "Sephiria",
+    "articles": [
+      {
+        "id": "P0-1",
+        "slug": "beginner-guide-weapons-artifacts-and-the-inventory-grid",
+        "title": "Beginner guide: weapons, Artifacts and the inventory grid",
+        "category": "Start",
+        "answer": "Keep useful Artifacts active in the main grid, place Tablets so their patterns benefit those Artifacts, and choose weapon upgrades that fit your attacks. Recheck the bag after every major pickup.",
+        "steps": [
+          "Start with the available weapon and learn its attack, defensive action and recovery. Take short openings until you can tell when the next enemy attack begins.",
+          "Place the Artifacts you depend on in the active grid. Do not count a stored item as a working bonus without checking its active state and placement condition.",
+          "Preview each Tablet's affected cells. Aim its positive pattern at important Artifacts and keep penalties away from the effect carrying your damage or survival.",
+          "At an Anvil, compare the offered upgrades with your current weapon and Artifact effects. Spend a reroll die only when the alternatives are genuinely poor for the run.",
+          "Before the boss, inspect the grid once more. A moved Tablet can disable an Artifact or change its level; fix the arrangement before entering combat rather than discovering the loss mid-fight."
+        ],
+        "mistakes": "Counting an inactive or stored Artifact as part of your damage.",
+        "versionNote": "Uses community 1.0-era references. Read current Artifact conditions and Anvil weapon branches.",
+        "sources": [
+          {
+            "href": "https://www.sephiria.tools/beginner-guide",
+            "label": "sephiria.tools — beginner guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-2",
+        "slug": "build-choices-a-safe-weapon-and-one-supported-artifact-family",
+        "title": "Build choices: a safe weapon and one supported Artifact family",
+        "category": "Builds",
+        "answer": "Choose a weapon you control well and build around the strongest compatible Artifact effects you actually find. Support that group with Tablets, then add survival before chasing more damage.",
+        "steps": [
+          "For a learning run, keep Sword and Shield if its defensive rhythm is comfortable. For ranged play, choose the Crossbow when available and preserve space to attack without being cornered.",
+          "Look at the Artifacts you have, not a perfect endgame screenshot. Choose a group whose effects activate from your normal attacks or skills.",
+          "Read matching family or combo requirements before keeping weaker pieces. A set is useful when it reaches its condition and its bonus helps your weapon, not merely because the names match.",
+          "Use Tablets to strengthen the core and avoid pushing another essential effect into an inactive state. Compare the actual result after placement rather than the Tablet's rarity.",
+          "Add a defensive or sustain effect when mistakes are ending attempts. If the run never produces the final combo piece, keep improving the working weapon instead of holding inactive items for the whole descent."
+        ],
+        "mistakes": "Holding several weak pieces for a combo that is not active.",
+        "versionNote": "Uses community 1.0-era references. Read current Artifact conditions and Anvil weapon branches.",
+        "sources": [
+          {
+            "href": "https://sephiria.blog/en/builds/best-build",
+            "label": "sephiria.blog — best build"
+          }
+        ]
+      },
+      {
+        "id": "P0-3",
+        "slug": "hard-mode-preparation-survive-the-opening-rooms",
+        "title": "Hard Mode preparation: survive the opening rooms",
+        "category": "Hard Mode",
+        "answer": "Enter Hard Mode with a familiar weapon, an active grid and a defensive plan. Recheck Artifact conditions before increasing damage: a broken placement can make a strong-looking inventory ineffective.",
+        "steps": [
+          "Practice the chosen weapon on a comfortable difficulty first. Learn which attacks let you leave quickly and which lock you into a longer animation.",
+          "On the Hard Mode run, take the first useful defensive or sustain effect when early mistakes cost too much health. Do not wait several floors for the exact rare item from a build screenshot.",
+          "Choose one damage pattern and support it consistently. Avoid spending several upgrades on separate attack styles when none is strong enough to finish a dangerous room.",
+          "Inspect the bag after every replacement. Keep the main Artifact active and check whether a Tablet penalty has removed an important supporting effect.",
+          "Before a boss, choose a survivable opening and a fallback attack. If the attempt fails, change the specific weak point—positioning, active damage or recovery—rather than replacing the whole loadout at once."
+        ],
+        "mistakes": "Chasing damage while a Tablet has disabled your survival effect.",
+        "versionNote": "Uses community 1.0-era references. Read current Artifact conditions and Anvil weapon branches.",
+        "sources": [
+          {
+            "href": "https://steamcommunity.com/app/2436940/discussions/0/588434434320216892/",
+            "label": "steamcommunity.com — 588434434320216892"
+          }
+        ]
+      },
+      {
+        "id": "P0-4",
+        "slug": "anvil-upgrades-choose-the-branch-your-build-supports",
+        "title": "Anvil upgrades: choose the branch your build supports",
+        "category": "Weapons",
+        "answer": "Anvil choices upgrade the weapon for the current run. Compare the offered effect with your Artifact setup and normal attack pattern before spending a reroll or committing to a branch.",
+        "steps": [
+          "At the Anvil, read all offered choices before selecting. Check whether the effect changes basic attacks, a skill, defense or a separate conditional mechanic.",
+          "Choose an improvement you can activate with your current equipment. A branch promising a powerful effect after a condition is poor value if you have no way to meet that condition.",
+          "If you have reroll dice, compare the cost of another roll with keeping them for a later decision. Accept a useful ordinary option rather than chasing one exact upgrade indefinitely.",
+          "After the change, try the move in a safe opening. Learn any new range, recovery or resource behavior before using it in a boss's shortest window.",
+          "At a later Anvil, read how the next choice builds on the current branch. Permanent unlock progression and in-run weapon upgrades are separate; finishing a branch this run does not mean every future run starts with it."
+        ],
+        "mistakes": "Spending all dice to chase one specific Anvil choice.",
+        "versionNote": "Uses community 1.0-era references. Read current Artifact conditions and Anvil weapon branches.",
+        "sources": [
+          {
+            "href": "https://sephiria.blog/en/weapons/weapon-upgrades",
+            "label": "sephiria.blog — weapon upgrades"
+          }
+        ]
+      },
+      {
+        "id": "P0-5",
+        "slug": "weapon-evolution-commit-to-a-branch-without-breaking-the-run",
+        "title": "Weapon evolution: commit to a branch without breaking the run",
+        "category": "Weapons",
+        "answer": "Use the next weapon upgrade to strengthen your working attack pattern. Keep a lower-stage choice when the offered change would undermine your build; a later upgrade is not automatically a better fit.",
+        "steps": [
+          "Identify which part of the weapon is currently dealing damage. Check whether your Artifacts support repeated hits, a special effect or a particular skill.",
+          "Read the next branch's full description. Pay attention to anything that replaces an attack or changes how its effect activates, not just the largest number.",
+          "Keep the branch when it preserves the core interaction and adds a useful benefit. If it demands items you do not have, compare the cost with remaining on the working setup.",
+          "After committing, rearrange Tablets only if the new attack changes which Artifacts matter. Avoid unnecessary bag changes that disable unrelated defensive effects.",
+          "For the boss, use the new move in its safest opening first. Once its recovery is familiar, increase commitment; do not assume a transformed weapon cancels every enemy attack."
+        ],
+        "mistakes": "Choosing a later branch that breaks the working attack pattern.",
+        "versionNote": "Uses community 1.0-era references. Read current Artifact conditions and Anvil weapon branches.",
+        "sources": [
+          {
+            "href": "https://sephiriawiki.wiki/wiki/sephiria-weapon-upgrades/",
+            "label": "sephiriawiki.wiki — sephiria weapon upgrades"
+          }
+        ]
+      },
+      {
+        "id": "P0-6",
+        "slug": "artifacts-active-effects-placement-conditions-and-replacements",
+        "title": "Artifacts: active effects, placement conditions and replacements",
+        "category": "Artifacts",
+        "answer": "An Artifact helps only when its effect is active and its trigger fits the run. Check location, level and conditions in the bag before replacing an item that already works.",
+        "steps": [
+          "Read the Artifact's effect and trigger. Separate an always-useful stat from an effect that needs a particular attack, status or condition.",
+          "Place it in the active area and inspect its level. If it has a positioning requirement, satisfy that requirement before evaluating whether it improves the build.",
+          "Move a Tablet while watching the affected cells. A bonus to one item may create a penalty elsewhere; recheck the entire small group, not just the new pickup.",
+          "When choosing between two Artifacts, keep the one that addresses a current need. A lower-rarity effect that keeps you alive can be better than an inactive rare combination piece.",
+          "Before discarding an item, check whether it completes a family or combo condition. Losing the supporting piece can cost more than the new Artifact adds."
+        ],
+        "mistakes": "Replacing a support piece without checking the lost combo effect.",
+        "versionNote": "Uses community 1.0-era references. Read current Artifact conditions and Anvil weapon branches.",
+        "sources": [
+          {
+            "href": "https://www.sephiria.tools/beginner-guide",
+            "label": "sephiria.tools — beginner guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-7",
+        "slug": "tablet-placement-read-the-pattern-and-protect-the-core",
+        "title": "Tablet placement: read the pattern and protect the core",
+        "category": "Tablets",
+        "answer": "A Tablet affects a specific pattern of cells. Arrange it around the Artifact you want to strengthen, then check every bonus and penalty before closing the bag.",
+        "steps": [
+          "Select the Tablet and inspect its highlighted pattern. Rows, columns and other shapes do not behave like a universal bonus to all adjacent cells.",
+          "Place your main damage Artifact in a beneficial affected cell. Move the Tablet or Artifact until the preview shows the intended change.",
+          "Check defensive and utility Artifacts that also lie in the pattern. Avoid an arrangement that gains damage but disables the effect keeping the run alive.",
+          "If an Artifact is already at its maximum level, redirect useful bonuses toward another item rather than expecting unlimited growth. Respect the item's displayed cap.",
+          "After another pickup or bag rearrangement, repeat the check. A Tablet layout is part of the build and can stop working when one supporting piece moves."
+        ],
+        "mistakes": "Assuming every Tablet affects all adjacent cells.",
+        "versionNote": "Uses community 1.0-era references. Read current Artifact conditions and Anvil weapon branches.",
+        "sources": [
+          {
+            "href": "https://mobalytics.gg/gamebase/guides/sephiria-tablet-guide",
+            "label": "mobalytics.gg — sephiria tablet guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-8",
+        "slug": "artifact-combinations-choose-a-trigger-your-weapon-repeats",
+        "title": "Artifact combinations: choose a trigger your weapon repeats",
+        "category": "Artifacts",
+        "answer": "Build combinations around an effect your weapon activates naturally. A fast-hit effect, a skill effect and a conditional family bonus need different support; check the game's active indicators.",
+        "steps": [
+          "Choose one core Artifact already working in the bag. Read what causes its effect and which part of your weapon supplies that trigger.",
+          "Add a second effect that benefits the same attack or solves its weakness. For example, a damage plan that needs close range also needs a way to survive the approach.",
+          "If matching family tags are required, inspect the actual threshold. Do not keep several weak pieces merely because they share a theme without reaching an active bonus.",
+          "Place Tablets to strengthen the working combination while keeping both pieces active. A visually neat arrangement is not helpful if the trigger item is switched off.",
+          "Try the combo in a room and against a priority enemy. If it only works after ordinary enemies die, retain a separate answer for bosses with few or no adds."
+        ],
+        "mistakes": "Keeping matching tags without checking their actual activation condition.",
+        "versionNote": "Uses community 1.0-era references. Read current Artifact conditions and Anvil weapon branches.",
+        "sources": [
+          {
+            "href": "https://sephiria.blog/en/builds/best-build",
+            "label": "sephiria.blog — best build"
+          }
+        ]
+      },
+      {
+        "id": "P0-9",
+        "slug": "boss-strategy-check-the-bag-watch-the-tell-and-punish-briefly",
+        "title": "Boss strategy: check the bag, watch the tell and punish briefly",
+        "category": "Bosses",
+        "answer": "Enter a boss room with your important Artifacts active and enough space to react. Watch one complete attack sequence, then use its recovery window rather than extending every combo.",
+        "steps": [
+          "Before crossing the gate, inspect the weapon branch and bag. Confirm the Artifacts you rely on are active and a recent Tablet move has not removed their benefit.",
+          "In the first exchange, watch the attack tell and the ground around your character. Move out of the threatened area before choosing a damage window.",
+          "Use a short attack after the boss finishes a committed move. With a slow weapon, stop early enough to defend or reposition before the next sequence.",
+          "When adds or arena hazards appear, make room first. Keeping a clear exit can be more valuable than landing one extra hit while the safe area disappears.",
+          "When the phase changes, reduce aggression until the new sequence is visible. Keep the same reliable damage plan and change your timing instead of assuming every new phase demands a different build."
+        ],
+        "mistakes": "Beginning a long combo before learning the end of a boss sequence.",
+        "versionNote": "Uses community 1.0-era references. Read current Artifact conditions and Anvil weapon branches.",
+        "sources": [
+          {
+            "href": "https://steamcommunity.com/app/2436940/discussions/0/588434434320216892/",
+            "label": "steamcommunity.com — 588434434320216892"
+          }
+        ]
+      },
+      {
+        "id": "P0-10",
+        "slug": "secret-rooms-cracked-walls-and-the-library-secret-study",
+        "title": "Secret rooms: cracked walls and the Library Secret Study",
+        "category": "Routes",
+        "answer": "After clearing a room, inspect the walls and strike suspicious cracked sections until they open. The Library Secret Study is a reported exception reached by walking through an unmarked wall.",
+        "steps": [
+          "Finish combat before wall checking. Compare the wall's repeated pattern with nearby sections; inspect both the wall face and its upper border for a break in the pattern.",
+          "Stand close to a suspicious section and attack several times. A passage can open without a normal connecting corridor appearing on the map.",
+          "Enter and collect the room's rewards before leaving. Exact room positions vary, so a screenshot from another run is a clue rather than a fixed coordinate.",
+          "For the Library exception after Mad Scientist Erma, cross the bridge to the room with the table. Community guides direct you into the plain wall immediately left of the table near the lower-left side.",
+          "Treat the rare Pocket Dimension portal as a separate event. If the Library route differs on your version, resume ordinary wall checks rather than spending the run trying to force a room that is not present."
+        ],
+        "mistakes": "Treating a procedural room screenshot as a fixed location.",
+        "versionNote": "Uses community 1.0-era references. Read current Artifact conditions and Anvil weapon branches.",
+        "sources": [
+          {
+            "href": "https://allthings.how/sephiria-secret-rooms-how-to-find-and-open-every-hidden-wall/",
+            "label": "allthings.how — sephiria secret rooms how to find and open every hidden wall"
+          },
+          {
+            "href": "https://sephiria.blog/en/guides/secret-rooms",
+            "label": "sephiria.blog — secret rooms"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "yet-another-zombie-survivors",
+    "title": "Yet Another Zombie Survivors",
+    "articles": [
+      {
+        "id": "P0-1",
+        "slug": "beginner-guide-leader-rescues-and-moving-through-the-horde",
+        "title": "Beginner guide: leader, rescues and moving through the horde",
+        "category": "Start",
+        "answer": "Choose a leader, strengthen one reliable damage source, and keep moving through open space. Recruit teammates whose abilities cover the leader's weakness instead of spreading upgrades evenly across every option.",
+        "steps": [
+          "Start with SWAT, Tank or Engineer and learn how the weapon attacks automatically. Your movement determines which enemies enter range and whether you have room to leave.",
+          "Move in broad arcs around the horde rather than repeatedly reversing into it. Leave pickups temporarily if collecting them would force you through a closed gap.",
+          "Use early upgrades to make one weapon or ability dependable. A team with several unfinished damage paths can struggle to kill anything before the crowd closes.",
+          "At an SOS rescue, choose a teammate for a missing role such as area coverage, protection or healing. Read the offered contribution instead of assuming every rescue replaces the leader.",
+          "After the run, inspect character progression, Training and mission rewards. Choose one reachable unlock for the next attempt while keeping the squad that already survives well."
+        ],
+        "mistakes": "Reversing direction into the horde to collect a small pickup.",
+        "versionNote": "Includes the expanded 1.0 roster. Published unlock thresholds conflict: the locked character card in your game is authoritative.",
+        "sources": [
+          {
+            "href": "https://yetanotherzombie.wiki/guides/beginner-guide",
+            "label": "yetanotherzombie.wiki — beginner guide"
+          }
+        ]
+      },
+      {
+        "id": "P0-2",
+        "slug": "squad-choices-swat-engineer-and-a-flexible-third-slot",
+        "title": "Squad choices: SWAT, Engineer and a flexible third slot",
+        "category": "Squads",
+        "answer": "A practical starter squad is SWAT for steady weapon damage, Engineer for utility and a third survivor chosen for the run's weakness. Leader order matters, so read the first character's perk.",
+        "steps": [
+          "Choose SWAT as leader if you want a weapon-focused start, or Tank if extra health helps you learn. Do not pick a locked late-game survivor as the foundation of a beginner route.",
+          "Recruit Engineer when the offered abilities help you control pressure or protect the squad. Upgrade the useful ability rather than assuming recruitment alone completes its progression.",
+          "Use the third slot for the problem still missing. Medic can support recovery when available; Huntress or Ghost can support an offensive plan; another starting survivor is a valid fallback.",
+          "Keep upgrading the damage source that is already killing reliably. Spreading every choice across three characters can delay the point where any one of them handles a dense wave.",
+          "Watch the whole squad while moving through tight gaps. The lead character passing a hazard does not mean the trailing teammates have already cleared it."
+        ],
+        "mistakes": "Assuming a rescued character provides the full leader setup.",
+        "versionNote": "Includes the expanded 1.0 roster. Published unlock thresholds conflict: the locked character card in your game is authoritative.",
+        "sources": [
+          {
+            "href": "https://www.reddit.com/r/YAZS/comments/158t6yl",
+            "label": "reddit.com — 158t6yl"
+          }
+        ]
+      },
+      {
+        "id": "P0-3",
+        "slug": "upgrade-priorities-damage-first-then-the-missing-survival-tool",
+        "title": "Upgrade priorities: damage first, then the missing survival tool",
+        "category": "Upgrades",
+        "answer": "Strengthen the weapon or ability doing most of the work, then add movement, defense or recovery to keep it active. Distinguish in-run choices from permanent Training upgrades.",
+        "steps": [
+          "During the opening minutes, choose upgrades that immediately improve reliable damage. An early multiplier to a weak or inactive effect may do less than finishing the main weapon's next step.",
+          "Check whether the squad spends too long reloading or waiting on abilities. Select support that addresses that specific downtime rather than buying every offensive stat evenly.",
+          "When fast enemies begin closing the gap, add mobility or control. Keep enough room to circle the horde; more damage is not the only way to avoid being surrounded.",
+          "Use permanent Training between runs for persistent weaknesses. Do not mistake a character's in-run weapon choice for an account-wide upgrade.",
+          "After a loss, identify the earliest point where the run stopped feeling safe. Improve that stage first instead of planning only for a final build you never reach."
+        ],
+        "mistakes": "Spreading every upgrade across unfinished damage paths.",
+        "versionNote": "Includes the expanded 1.0 roster. Published unlock thresholds conflict: the locked character card in your game is authoritative.",
+        "sources": [
+          {
+            "href": "https://www.yetanotherzombiesurvivorswiki.wiki/guide/Yet-Another-Zombie-Survivors-best-upgrades",
+            "label": "yetanotherzombiesurvivorswiki.wiki — Yet Another Zombie Survivors best upgrades"
+          }
+        ]
+      },
+      {
+        "id": "P0-4",
+        "slug": "survivor-roles-the-starting-trio-and-unlockable-teammates",
+        "title": "Survivor roles: the starting trio and unlockable teammates",
+        "category": "Characters",
+        "answer": "The starting trio is SWAT, Tank and Engineer. Later survivors add ranged, melee, healing, elemental and ability-focused options; choose them by the job your current squad needs.",
+        "steps": [
+          "Starting options: SWAT supports a weapon-focused run, Tank gives a more forgiving health-oriented start, and Engineer provides an ability-oriented kit. Learn these before treating a late unlock as mandatory.",
+          "Huntress is a ranged option and Ghost is a melee specialist. Compare their useful attacks with the space your squad can maintain rather than assuming either replaces all other damage roles.",
+          "Medic supplies healing-oriented support, while Pyro is an elemental option. Use them when the current squad can benefit from that role and you can afford to develop their relevant abilities.",
+          "Mechanic adds a later ability-oriented option; Ranger belongs to the expanded roster. If your older build does not show them, check the installed game version before searching for a hidden map entrance.",
+          "Read the leader and rescue effects separately. Selecting a character first and recruiting that character during a run need not provide the same result."
+        ],
+        "mistakes": "Using an Early Access roster as a complete current list.",
+        "versionNote": "Includes the expanded 1.0 roster. Published unlock thresholds conflict: the locked character card in your game is authoritative.",
+        "sources": [
+          {
+            "href": "https://yetanother-zombie-survivors.wiki/en/characters/yet-another-zombie-survivors-hidden-character",
+            "label": "yetanother-zombie-survivors.wiki — yet another zombie survivors hidden character"
+          }
+        ]
+      },
+      {
+        "id": "P0-5",
+        "slug": "unlock-every-survivor-roster-conditions-and-saved-counters",
+        "title": "Unlock every survivor: roster conditions and saved counters",
+        "category": "Characters",
+        "answer": "SWAT, Tank and Engineer start available. Huntress uses a survival-duration goal; Ghost, Medic, Pyro and Mechanic use accumulated objectives; Ranger is tied to Survival Level. Read the remaining amount on each locked card.",
+        "steps": [
+          "Work toward Huntress by surviving 15 minutes in an appropriate run. Pick a comfortable map and prioritize staying alive; the objective is not to defeat a particular secret enemy.",
+          "For Ghost, accumulate 100 zombie boss kills. Progress builds across runs, so take safe boss encounters during ordinary progression rather than forcing a dangerous cluster.",
+          "For Medic, collect healthpaks; for Pyro, deal elemental damage. Published threshold lists conflict across versions, so use the actual remaining counter on your roster card rather than an old fixed total.",
+          "For Mechanic, the published full objective is 4,000 ability activations. Use an ability-focused squad during productive runs and check the saved counter afterward.",
+          "For Ranger, current community references list Survival Level 175. This is the shared Survival Level, not one character's level. After satisfying a requirement, return to the roster and confirm the character is selectable."
+        ],
+        "mistakes": "Mistaking a remaining counter for the original total requirement.",
+        "versionNote": "Includes the expanded 1.0 roster. Published unlock thresholds conflict: the locked character card in your game is authoritative.",
+        "sources": [
+          {
+            "href": "https://yazs.mobs.gg/guides/survival-level-and-survivor-unlocks/",
+            "label": "yazs.mobs.gg — survival level and survivor unlocks"
+          },
+          {
+            "href": "https://yetanother-zombie-survivors.wiki/en/guide/yet-another-zombie-survivors-how-to-unlock-all-characters",
+            "label": "yetanother-zombie-survivors.wiki — yet another zombie survivors how to unlock all characters"
+          }
+        ]
+      },
+      {
+        "id": "P0-6",
+        "slug": "swat-build-reliable-ranged-damage-and-reload-support",
+        "title": "SWAT build: reliable ranged damage and reload support",
+        "category": "Characters",
+        "answer": "Lead with SWAT for a straightforward weapon-focused run. Improve his main weapon early, then recruit utility and survival support so the squad can keep firing while moving.",
+        "steps": [
+          "Begin with SWAT and choose an opening route with room to circle. Stay far enough from the horde to react when the weapon reloads.",
+          "Prioritize useful main-weapon upgrades while it is carrying the early kills. Add reload support when reload gaps are allowing enemies to reach the squad.",
+          "Recruit Engineer for a compatible ability plan or another survivor who covers the weakness you are actually seeing. Keep the second character's upgrades focused on that contribution.",
+          "Use the third slot for recovery, area coverage or a boss-focused damage option. Avoid adding another undeveloped weapon if the existing squad already lacks movement or protection.",
+          "During boss pressure, keep firing through an open lane while circling the smaller enemies. Do not stand still simply because the boss health bar is dropping quickly."
+        ],
+        "mistakes": "Standing still during a boss because the weapon is dealing damage.",
+        "versionNote": "Includes the expanded 1.0 roster. Published unlock thresholds conflict: the locked character card in your game is authoritative.",
+        "sources": [
+          {
+            "href": "https://www.reddit.com/r/YAZS/comments/158t6yl",
+            "label": "reddit.com — 158t6yl"
+          }
+        ]
+      },
+      {
+        "id": "P0-7",
+        "slug": "engineer-build-abilities-coverage-and-shield-support",
+        "title": "Engineer build: abilities, coverage and shield support",
+        "category": "Characters",
+        "answer": "Engineer rewards investment in useful abilities and enough movement to keep the squad safe between activations. Build around the abilities currently unlocked, not a late-rank setup you cannot select yet.",
+        "steps": [
+          "Check Engineer's available abilities before choosing him as leader. If the desired shield or upgrade is locked, use the available kit and progress the character rather than waiting for a nonexistent in-run choice.",
+          "Develop a dependable offensive ability early so normal waves do not surround the squad while you build support. Use the main weapon to fill gaps.",
+          "Choose cooldown support when it meaningfully improves the ability you rely on. A shorter cooldown is useful only if the ability continues to hit or protect during your movement pattern.",
+          "Recruit a weapon-focused teammate such as SWAT when the ability setup struggles against a durable enemy. Add recovery or another complementary role for the final slot.",
+          "Keep moving around open terrain even with a shield effect. Protection creates room to reposition; it does not make repeated contact with the entire horde a safe strategy."
+        ],
+        "mistakes": "Treating a temporary shield as permission to stay in contact.",
+        "versionNote": "Includes the expanded 1.0 roster. Published unlock thresholds conflict: the locked character card in your game is authoritative.",
+        "sources": [
+          {
+            "href": "https://www.reddit.com/r/YAZS/comments/158t6yl",
+            "label": "reddit.com — 158t6yl"
+          }
+        ]
+      },
+      {
+        "id": "P0-8",
+        "slug": "tank-and-ghost-durability-with-close-range-damage",
+        "title": "Tank and Ghost: durability with close-range damage",
+        "category": "Squads",
+        "answer": "Use Tank for a forgiving start and Ghost for a developed close-range damage role. Keep a ranged or utility teammate available so the pair does not depend entirely on walking into every threat.",
+        "steps": [
+          "Unlock Ghost before planning him as a selectable starter. If he is unavailable, progress boss kills with a squad that already survives and use the offered rescue choices normally.",
+          "Choose the leader based on the opening you need. Tank is a practical learning choice when mistakes cost too much health; Ghost needs a plan for surviving close-range pressure.",
+          "Improve one principal damage path before dividing upgrades between all characters. Give Ghost room to work without steering the squad directly into overlapping enemy attacks.",
+          "Use the third slot to solve range, area control or protection. Choose from the survivors and abilities currently unlocked instead of copying an endgame roster that your save cannot build.",
+          "Against bosses, approach only through a clear lane and retreat before the horde closes behind you. Tank's durability does not mean every teammate can safely remain in contact."
+        ],
+        "mistakes": "Assuming Tank's health makes every squad member safe in melee.",
+        "versionNote": "Includes the expanded 1.0 roster. Published unlock thresholds conflict: the locked character card in your game is authoritative.",
+        "sources": [
+          {
+            "href": "https://yet-another-zombie-survivors.fandom.com/wiki/Ghost",
+            "label": "yet-another-zombie-survivors.fandom.com — Ghost"
+          },
+          {
+            "href": "https://www.reddit.com/r/YAZS/comments/158t6yl",
+            "label": "reddit.com — 158t6yl"
+          }
+        ]
+      },
+      {
+        "id": "P0-9",
+        "slug": "achievements-and-missions-combine-goals-that-fit-the-same-run",
+        "title": "Achievements and missions: combine goals that fit the same run",
+        "category": "Achievements",
+        "answer": "Use the current achievement and mission descriptions to choose compatible objectives. Character unlock counters can progress during normal runs; special mode or leader conditions need deliberate setup.",
+        "steps": [
+          "Open the achievement list and active mission log before starting. Record the required map, mode and leader when the objective specifies them.",
+          "Combine a natural survival objective with accumulated progress such as boss kills or ability activations. These can advance while you pursue a normal clear.",
+          "Use a separate attempt when a condition asks for a different leader or an unusual play restriction. Do not assume a successful clear with another character satisfies it.",
+          "After the run, claim available mission rewards and check Steam achievements separately. A mission completion and a Steam achievement are different records.",
+          "If progress appears unchanged, read whether the card shows a total or an amount remaining and verify the run's mode. Use current wording before following an Early Access checklist with fewer characters."
+        ],
+        "mistakes": "Counting mission completion as the same thing as a Steam unlock.",
+        "versionNote": "Includes the expanded 1.0 roster. Published unlock thresholds conflict: the locked character card in your game is authoritative.",
+        "sources": [
+          {
+            "href": "https://yazs.mobs.gg/guides/survival-level-and-survivor-unlocks/",
+            "label": "yazs.mobs.gg — survival level and survivor unlocks"
+          }
+        ]
+      },
+      {
+        "id": "P0-10",
+        "slug": "boss-survival-keep-a-damage-lane-and-an-escape-path",
+        "title": "Boss survival: keep a damage lane and an escape path",
+        "category": "Bosses",
+        "answer": "Fight bosses while continuing to manage the horde. Keep moving, avoid overlapping hazards, and use a developed damage source instead of turning the squad into a stationary target.",
+        "steps": [
+          "Before the boss arrives, prioritize a reliable weapon or ability upgrade. A collection of low-level options may clear stragglers but struggle with a durable target.",
+          "Use the enemy warning and visible target to choose an open approach. Do not cross a dense pack just to reach the boss immediately.",
+          "Circle with the boss inside your effective attack range while avoiding ground effects and incoming charges. Make the next safe movement decision before chasing dropped pickups.",
+          "When several threats overlap, move away and separate them. A slower kill is preferable to standing between a boss, fast enemies and an area hazard with no exit.",
+          "After the boss dies, continue moving until the surrounding space is clear enough to collect rewards. Treat arena or special-mode bosses according to that mode's objective instead of assuming every boss ends the run."
+        ],
+        "mistakes": "Stopping immediately after the boss dies while the horde is still nearby.",
+        "versionNote": "Includes the expanded 1.0 roster. Published unlock thresholds conflict: the locked character card in your game is authoritative.",
+        "sources": [
+          {
+            "href": "https://www.reddit.com/r/YAZS/comments/158t6yl",
+            "label": "reddit.com — 158t6yl"
+          }
+        ]
+      }
+    ]
+  }
+]

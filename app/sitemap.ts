@@ -1,8 +1,13 @@
 import type { MetadataRoute } from 'next';
+import { articleLibraries, articlePublishedAt } from '@/lib/game-articles';
 import { guidePublishedAt, repoGuidePages, siteUrl } from '@/lib/repo-guide-pages';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
+    ...articleLibraries.flatMap(game => [
+      { url: `${siteUrl}/games/${game.slug}`, lastModified: articlePublishedAt, changeFrequency: 'monthly' as const, priority: 0.9 },
+      ...game.articles.map(article => ({ url: `${siteUrl}/games/${game.slug}/${article.slug}`, lastModified: articlePublishedAt, changeFrequency: 'monthly' as const, priority: 0.8 })),
+    ]),
     {
       url: siteUrl,
       lastModified: guidePublishedAt,

@@ -1,0 +1,11 @@
+import fs from 'node:fs';
+const base=process.argv[2] || 'http://127.0.0.1:4173';
+const data=JSON.parse(fs.readFileSync(new URL('../lib/game-articles.json',import.meta.url),'utf8'));
+const failures=[];let passed=0;
+const esc=s=>s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#x27;');
+const jobs=data.flatMap(g=>[{path:'/games/'+g.slug,check:h=>g.articles.every(a=>h.includes('/games/'+g.slug+'/'+a.slug))},...g.articles.map(a=>({path:'/games/'+g.slug+'/'+a.slug,check:h=>h.includes(esc(a.title))&&h.includes(esc(a.answer))&&a.steps.every(s=>h.includes(esc(s)))&&a.sources.every(s=>h.includes(esc(s.href)))&&h.includes('30-second answer')}))]);
+jobs.push({path:'/',check:h=>data.every(g=>h.includes('/games/'+g.slug))&&!h.includes('staged for review')},{path:'/sitemap.xml',check:h=>data.every(g=>g.articles.every(a=>h.includes('/games/'+g.slug+'/'+a.slug)))});
+await Promise.all(Array.from({length:4},async()=>{while(jobs.length){const j=jobs.shift();try{const r=await fetch(base+j.path,{signal:AbortSignal.timeout(30000)}),h=await r.text();if(r.status===200&&j.check(h))passed++;else failures.push({path:j.path,status:r.status,bodyMatches:j.check(h)});}catch(e){failures.push({path:j.path,error:e.message});}}}));
+const bad=await fetch(base+'/games/not-a-game/not-an-article');if(bad.status!==404)failures.push({invalidRouteStatus:bad.status});
+console.log(JSON.stringify({base,passed,expected:90,invalidRouteStatus:bad.status,failures},null,2));
+if(failures.length)process.exitCode=1;
