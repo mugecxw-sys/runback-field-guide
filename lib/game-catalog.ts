@@ -18,7 +18,7 @@ export const gameLibraries: GameLibrary[] = [
     version: 'v0.4.0 baseline',
     description: 'Carry valuable loot, read the room, and make it back to the truck.',
     status: 'LIVE',
-    guideCount: 31,
+    guideCount: 30,
     categories: ['First runs', 'Loot & quota', 'Enemies', 'Upgrades', 'Co-op'],
     sourceHref: 'https://store.steampowered.com/app/3241660/R.E.P.O/',
   },

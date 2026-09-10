@@ -195,7 +195,7 @@ export const repoGuidePages: RepoGuidePage[] = [
       'Record the baseline before buying the next Strength level.',
       'Test whether the target can be lifted, moved through a doorway, and delivered.',
       'Repeat the same setup at the next planned test level.',
-      'Publish the conditions beside the result and separate items from monsters.',
+      'Keep the test conditions beside the result and separate items from monsters.',
     ],
     mistakes:
       'Writing that one threshold moves everything, mixing monster and item behaviour, and treating community numbers as current official data.',
@@ -320,7 +320,7 @@ export const repoGuidePages: RepoGuidePage[] = [
     mistakes:
       'Treating a tier list as universal, forgetting shop inventory changes, and buying a tool without a player assigned to use it.',
     versionNote:
-      'Shop prices and inventory can change. Publish selection logic and patch-check any specific price or availability claim.',
+      'Shop prices and inventory can change. Use the selection logic here, then check any specific price or item in the current shop.',
     sources: [
       {
         label: 'Official R.E.P.O. announcements',
@@ -403,7 +403,7 @@ export const repoGuideSections: RepoGuideSection[] = [
     id: 'advanced',
     title: 'Advanced',
     description: 'Co-op planning, routes and version-aware play.',
-    guideIds: ['P1-16', 'P1-17', 'P1-20', 'P2-24', 'P2-25', 'P2-30'],
+    guideIds: ['P1-16', 'P1-17', 'P1-20', 'P2-24', 'P2-25'],
   },
 ];
 export const repoRelatedGuideIds: Record<string, string[]> = {

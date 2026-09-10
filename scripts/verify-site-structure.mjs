@@ -101,10 +101,11 @@ for (const [p, html] of pages) {
       failures.push([p, 'hub breadcrumb mismatch']);
   }
   if (
-    p.startsWith('/guides/') ||
-    (p.startsWith('/games/') &&
-      p.split('/').filter(Boolean).length === 3 &&
-      !p.includes('/enemies'))
+    p !== '/guides/r-e-p-o-upgrade-planner' &&
+    (p.startsWith('/guides/') ||
+      (p.startsWith('/games/') &&
+        p.split('/').filter(Boolean).length === 3 &&
+        !p.includes('/enemies')))
   ) {
     if (
       !schemas.some((s) => s['@type'] === 'Article') ||

@@ -122,7 +122,7 @@
       "Record whether the current build changes Tick behavior while holding, dropping, or using a counter."
     ],
     "mistakes": "Running while holding the item, turning into a wall, and assuming a small enemy can be ignored because it is not a boss.",
-    "versionNote": "Community guides disagree on some attack conditions and damage details; publish the handling rule first and test the exact trigger.",
+    "versionNote": "Community guides disagree on some attack conditions and damage details. Use the conservative handling rule here and treat exact triggers as version-sensitive.",
     "sources": [
       {
         "label": "Level strategy guide",
@@ -230,7 +230,7 @@
       "Record the objective, route, and failure point by level so the hub can link to a focused map page."
     ],
     "mistakes": "Assuming procedural layouts are fully memorized, judging a map only by loot value, and entering a difficulty spike with the same team plan.",
-    "versionNote": "Map layouts vary, while each map’s broad structure is more stable. Publish patterns and route principles, not invented fixed coordinates.",
+    "versionNote": "Map layouts vary, while each map’s broad structure is more stable. Use route principles rather than relying on fixed coordinates from another run.",
     "sources": [
       {
         "label": "Beginner levels 1–6",
@@ -354,26 +354,26 @@
     "id": "P2-24",
     "slug": "r-e-p-o-patch-notes-explained-for-players",
     "tag": "PATCH NOTES",
-    "title": "R.E.P.O. patch notes explained for players",
-    "description": "A player-facing reading order for official changes, not a copied changelog.",
-    "lead": "Patch notes matter when they change a route, a counter, a shop choice, or a failure condition. Read official changes first, then update the affected guide and retest only the behaviors that changed.",
+    "title": "R.E.P.O. v0.4.4 patch notes: what changed for players",
+    "description": "The v0.4.4 update improves melee handling at higher Strength, adds one second of protection after revival, updates all staffs, and makes Trudge more disruptive around large valuables.",
+    "lead": "The biggest v0.4.4 changes affect recovery and object control. Revived players get a brief safety window, melee weapons respond more firmly at higher Strength, all staffs use six battery pips, and Trudge now pulls large valuables with Void Staff-style suction.",
     "steps": [
-      "Start with the official announcement and record the exact version and date.",
-      "Group each change by player impact: map, shop, item, monster, revive, physics, save, or UI.",
-      "Link the change to every guide it can invalidate instead of leaving stale advice in place.",
-      "Retest the smallest behavior that proves the change: one item, one enemy, one extraction, or one save.",
-      "Add an update note to the affected page and preserve the old result as historical context only."
+      "Melee weapons now scale their handling correctly with Strength. Higher Strength should make them feel firmer, but it does not replace spacing or a safe attack angle.",
+      "A revived player receives one second of invincibility. Use that moment to move out of immediate danger; do not treat it as a long damage window.",
+      "All staffs now have six battery pips. Zero Gravity Staff is more controllable on non-enemy objects and can move the user when self-cast.",
+      "Roll Staff makes rolling objects target enemies, while self-use gives the player camera-steered rolling. Void Staff pulls heavy objects more strongly and creates outward surges near its center.",
+      "Trudge now uses Void Staff-style suction, pulling larger valuables more easily and creating more chaos near the center. Park important loot farther from its pull lane."
     ],
-    "mistakes": "Copying a full changelog without explaining the player consequence, mixing experimental and live notes, and leaving old prices or timings in evergreen pages.",
-    "versionNote": "Only official announcements should anchor patch facts; third-party summaries are discovery sources, not the final authority.",
+    "mistakes": "Assuming the revive protection lasts long enough to stand still, leaving heavy valuables near Trudge, and using old staff battery or behavior advice after updating.",
+    "versionNote": "Official v0.4.4 notes were published May 25, 2026. Check the version shown by the game before applying these changes to a later build.",
     "sources": [
       {
-        "label": "Official Steam announcements",
-        "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
+        "label": "Official R.E.P.O. v0.4.4 notes",
+        "href": "https://store.steampowered.com/news/app/3241660/view/697639476746256977?l=english"
       },
       {
-        "label": "Official v0.4.4",
-        "href": "https://store.steampowered.com/news/app/3241660/view/697639476746256977?l=english"
+        "label": "Official R.E.P.O. announcements",
+        "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
       }
     ]
   },
@@ -381,79 +381,79 @@
     "id": "P2-25",
     "slug": "current-version-changes-what-players-should-retest",
     "tag": "PATCH NOTES",
-    "title": "Current-version changes: what players should retest",
-    "description": "A focused checklist for monsters, items, upgrades, and recovery after recent patches.",
-    "lead": "The current live notes change more than cosmetics: melee handling scales with Strength, revive adds a short invincibility window, and several staffs, vehicles, and monsters were adjusted. Retest the routes that depend on those mechanics.",
+    "title": "R.E.P.O. v0.4.4 returning player checklist",
+    "description": "Returning to R.E.P.O. after v0.4.0? Relearn melee handling, revive timing, staff batteries and object control, vehicle buttons, and Trudge suction.",
+    "lead": "If your habits were built around v0.4.0, the v0.4.4 changes most likely to surprise you involve Strength-based melee handling, the one-second post-revive safety window, six-pip staffs, improved staff control, and Trudge pulling larger valuables.",
     "steps": [
-      "Update the page header with the current patch before comparing any old result.",
-      "Retest melee handling at two Strength values and note feel, reach, and enemy response.",
-      "Retest revive safety, especially the first second after a teammate returns.",
-      "Retest staff battery, duration, vehicle interactions, and Trudge heavy-object behavior.",
-      "Mark every result as verified, community-reported, or pending instead of merging them into one claim."
+      "Try one melee weapon at your current Strength before committing to a close-range fight; handling now becomes firmer as Strength increases.",
+      "After a revive, use the one-second invincibility window to escape the danger area and regroup rather than starting a long attack.",
+      "Recheck staff charges before a mission. All staffs now use six battery pips, and their object-control behavior changed across the v0.4.x updates.",
+      "Use extra care when grabbing a vehicle near its button: the interaction area was reduced to limit accidental activation.",
+      "Give Trudge a wider safety radius around valuable objects. Its Void Staff-style suction can catch larger loot and behaves more chaotically near the center."
     ],
-    "mistakes": "Using v0.4.0 as if it were current, copying a community timing without its patch, and treating a bug fix as a new feature.",
-    "versionNote": "The site’s original local baseline is v0.4.0, while official v0.4.1–v0.4.4 notes show later changes. Keep both labels visible.",
+    "mistakes": "Relying on muscle memory from v0.4.0, expecting old staff behavior, or parking the cart and large valuables inside Trudge’s pull lane.",
+    "versionNote": "This checklist reflects the official v0.4.4 announcement dated May 25, 2026. Later versions should take priority if your main menu shows a newer build.",
     "sources": [
       {
-        "label": "Official v0.4.4",
+        "label": "Official R.E.P.O. v0.4.4 notes",
         "href": "https://store.steampowered.com/news/app/3241660/view/697639476746256977?l=english"
       },
       {
-        "label": "Official v0.4.3",
-        "href": "https://store.steampowered.com/news/app/3241660/view/653728111564687019"
+        "label": "Official R.E.P.O. v0.4.3 notes",
+        "href": "https://store.steampowered.com/news/app/3241660/view/653728111564687019?l=english"
       }
     ]
   },
   {
     "id": "P2-26",
     "slug": "r-e-p-o-upgrade-planner",
-    "tag": "TOOLS",
+    "tag": "TOOL",
     "title": "R.E.P.O. upgrade planner",
-    "description": "A prototype decision tool built around role, failure cause, and version uncertainty.",
-    "lead": "The planner should recommend a next test, not pretend to know a universal build. Enter the player count, role, last failure, and available shop options, then return a reason and a verification note.",
+    "description": "Choose a crew role and the problem that ended your last run to get one upgrade priority, a fallback, and a practical check for the next attempt.",
+    "lead": "Use the interactive planner below. It gives decision support rather than a fixed tier list, and it never assumes a shop item is available.",
     "steps": [
-      "Input the crew size and the role receiving the purchase.",
-      "Choose the failure: carrying, stamina, damage, reach, control, or fragile value.",
-      "Show only recommendations supported by the current source set and label unknown prices.",
-      "Return one primary pick, one fallback, and the test that would confirm the choice.",
-      "Save the observed result with the patch so the recommendation can evolve."
+      "Select the crew size, the role receiving the purchase, and the failure that ended the run.",
+      "Read the primary priority and compare it with the upgrades or tools actually available at the Service Station.",
+      "Use the fallback when the first category is unavailable or the role does not need it.",
+      "Follow the next-run check to see whether the purchase solved the named problem.",
+      "Change one variable at a time; choose a different failure only when the previous bottleneck is no longer ending runs."
     ],
-    "mistakes": "Turning a community tier list into an automatic answer, hiding uncertainty, and recommending tools unavailable to the current player count.",
-    "versionNote": "This prototype is a framework until enough current-client observations exist to support numeric rules.",
+    "mistakes": "Choosing a universal tier-list favorite instead of the current bottleneck, buying a team tool without assigning a user, and changing several unrelated variables at once.",
+    "versionNote": "The planner avoids fixed prices, caps, and guaranteed shop availability because those details can change by version and run.",
     "sources": [
       {
-        "label": "Upgrade guide",
-        "href": "https://www.repo-game.org/en/repogame-upgrades"
+        "label": "Official R.E.P.O. announcements",
+        "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
       },
       {
-        "label": "Upgrade discussion",
-        "href": "https://www.reddit.com/r/REPOgame/comments/1uph5dq/caps_for_each_upgrade/"
+        "label": "Steam community upgrades and weapons guide",
+        "href": "https://steamcommunity.com/sharedfiles/filedetails/?id=3482961802&l=english"
       }
     ]
   },
   {
     "id": "P2-27",
     "slug": "monster-counter-cheat-sheet",
-    "tag": "TOOLS",
-    "title": "Monster counter cheat sheet",
-    "description": "A one-screen first-response table that links back to evidence pages.",
-    "lead": "A useful cheat sheet answers the first ten seconds: identify the threat, stop carrying, choose cover or space, and decide whether to wait, route, or counter.",
+    "tag": "ENEMIES",
+    "title": "R.E.P.O. monster counter cheat sheet",
+    "description": "A fast first-response checklist for sight, sound, proximity, grab, and object-control threats.",
+    "lead": "Identify the trigger before choosing a counter. Put the valuable down without blocking the retreat lane, call the threat, then use cover, distance, silence, or a prepared control tool.",
     "steps": [
-      "Build one row per confirmed monster with trigger, first callout, safe response, and “do not” rule.",
-      "Keep exact damage, timing, and tier values in the linked dossier rather than the quick sheet.",
-      "Add a patch column and a confidence state: verified, community-sourced, or retest needed.",
-      "Link each row to a focused page with evidence and team-role notes.",
-      "Review the sheet whenever official notes change a monster or item counter."
+      "For a sight or gaze threat, break line of sight behind solid cover and avoid staring to confirm it.",
+      "For a sound-sensitive threat, stop sprinting, jumping, hard drops, and noisy item handling until the team has a route.",
+      "For a proximity or charge threat, create open space and sidestep only after its approach or wind-up is clear.",
+      "For a grab or pull threat, call the victim’s direction and keep teammates and valuables out of the same danger lane.",
+      "For an object-control threat such as Rugrat or Trudge, secure the valuables first. Fight only if the enemy blocks the route and the crew has a tested counter."
     ],
-    "mistakes": "Overloading the quick sheet with lore, presenting an old counter as universal, and omitting what the carrier should do with the item.",
-    "versionNote": "This is a publishable structure; current-client footage is still required before marking every row verified.",
+    "mistakes": "Calling only the enemy name without its direction, fighting while carrying fragile loot, and stacking the team in one doorway.",
+    "versionNote": "Use the visual enemy index for individual dossiers. Exact damage, timing, spawn tier, and item interactions remain version-sensitive.",
     "sources": [
       {
-        "label": "Monster guide",
-        "href": "https://www.switchbladegaming.com/co-op-games/repo/all-monsters-guide-2026/"
+        "label": "R.E.P.O. Steam Tactical Bestiary",
+        "href": "https://steamcommunity.com/sharedfiles/filedetails/?id=3456545585"
       },
       {
-        "label": "Official announcements",
+        "label": "Official R.E.P.O. announcements",
         "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
       }
     ]
@@ -462,26 +462,26 @@
     "id": "P2-28",
     "slug": "r-e-p-o-faq-quota-upgrades-monsters-and-multiplayer",
     "tag": "FAQ",
-    "title": "R.E.P.O. FAQ: quota, upgrades, monsters, and multiplayer",
-    "description": "Short answers for recurring questions, each pointing to a deeper guide.",
-    "lead": "The FAQ should answer the immediate question in one or two sentences, then link to the evidence page. Keep unknowns visible instead of filling the page with guessed numbers.",
+    "title": "R.E.P.O. FAQ: quota, extraction, upgrades, monsters, and co-op",
+    "description": "Direct answers to common early-run questions, with links to the full guides for each system.",
+    "lead": "Quota tells you how much value the current objective needs; extraction and leaving are separate steps. Buy around the failure ending your runs, and treat monsters as route problems before treating them as fights.",
     "steps": [
-      "Collect questions from real search queries, comments, and player discussions.",
-      "Write the direct answer first: what to do, when to leave, or what to test.",
-      "Add one caveat when the answer changes by patch, player count, or map.",
-      "Link to the relevant quota, extraction, upgrade, enemy, or team page.",
-      "Review the FAQ after each patch so short answers do not become stale."
+      "Do I need to clear the whole map? No. Satisfy the displayed objective and leave when the extra loot is not worth the route risk.",
+      "Why can’t we leave after reaching quota? Confirm every required extraction point has resolved, then regroup at the truck and follow the current departure prompt.",
+      "What should I buy first? Choose the upgrade or tool that addresses the repeated failure: carrying, stamina, damage, reach, control, or fragile value.",
+      "Should we fight every monster? No. Identify its trigger, protect the loot lane, and fight only when it blocks the route and the crew has a safe setup.",
+      "How should co-op roles work? Assign navigation, carrying, and lookout duties, but let players switch when the room or current load changes."
     ],
-    "mistakes": "Answering a different question, hiding a version caveat below the fold, and using a single player’s anecdote as a universal mechanic.",
-    "versionNote": "The current FAQ is a structure and source-backed draft; Search Console data should replace assumptions after publication.",
+    "mistakes": "Treating quota as a full-clear order, assuming one purchase order fits every crew, and chasing a monster after the route is already safe.",
+    "versionNote": "Prompts, shops, enemy behavior, and multiplayer interactions can change. The linked focused guides carry the version-specific caveats.",
     "sources": [
       {
-        "label": "Community guide hub",
-        "href": "https://www.repo-game.org/zh/repogame-wiki"
+        "label": "Official R.E.P.O. announcements",
+        "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
       },
       {
-        "label": "Co-op guide FAQ",
-        "href": "https://www.switchbladegaming.com/co-op-games/repo/co-op-guide-3/"
+        "label": "Steam community guides",
+        "href": "https://steamcommunity.com/app/3241660/guides/?browsefilter=trend&browsesort=trend&filetype=11&numperpage=18&requiredtags%5B0%5D=english"
       }
     ]
   },
@@ -489,52 +489,25 @@
     "id": "P2-29",
     "slug": "what-is-r-e-p-o-story-setting-and-what-we-know",
     "tag": "LORE",
-    "title": "What is R.E.P.O.? Story, setting, and what we know",
-    "description": "Separate confirmed world-building from community theory.",
-    "lead": "R.E.P.O. uses environmental storytelling: Semibots retrieve value for the Taxman in abandoned human spaces. The guide should label what the game establishes, what official developers have hinted, and what remains fan theory.",
+    "title": "What is R.E.P.O.? Story, setting, and confirmed details",
+    "description": "R.E.P.O. is an online co-op horror game where physics-based valuables must be retrieved and extracted while monsters threaten the crew and its cargo.",
+    "lead": "The game casts players as Semibots sent to retrieve valuable objects from abandoned environments. The immediate story is communicated through the Taxman, objectives, locations, and environmental details; explanations beyond what the game or developer confirms should be treated as interpretation.",
     "steps": [
-      "Start with in-game terms, locations, messages, and official developer statements.",
-      "Describe the Semibots, Taxman, abandoned spaces, and monsters as separate evidence groups.",
-      "Label the current story state as Early Access and avoid inventing an ending.",
-      "Put community theories in their own section with clear uncertainty language.",
-      "Link lore entries back to the level, enemy, and patch pages that contain the evidence."
+      "The official premise is retrieval: locate valuable, fully physics-based objects and extract enough value to satisfy your creator.",
+      "The Semibots work as a crew, with the gameplay supporting up to six online players.",
+      "The Taxman frames quota and progression, but the game leaves much of the wider world and the fate of its human spaces implicit.",
+      "Rooms, props, valuables, shop interactions, and enemy designs provide environmental clues without establishing every fan theory as canon.",
+      "When a theory explains the creator, locations, or monsters, separate what appears on screen from what the community infers."
     ],
-    "mistakes": "Presenting fan theory as canon, copying another guide’s prose, and treating an early-access location list as a finished timeline.",
-    "versionNote": "The official Q&A says the larger story is intended to become clearer toward 1.0; mark later interpretation as provisional.",
+    "mistakes": "Presenting a fan theory as confirmed lore, treating a joke or item description as a complete timeline, and confusing gameplay terminology with an official story explanation.",
+    "versionNote": "This page stays with the official premise and visible environmental storytelling. Future developer statements or major updates may add confirmed context.",
     "sources": [
       {
-        "label": "Lore explainer",
-        "href": "https://www.repo-game.org/en/repogame-lore"
+        "label": "Official R.E.P.O. Steam store page",
+        "href": "https://store.steampowered.com/app/3241660/R.E.P.O./"
       },
       {
-        "label": "Official 2026 Q&A",
-        "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
-      }
-    ]
-  },
-  {
-    "id": "P2-30",
-    "slug": "r-e-p-o-complete-guide-hub",
-    "tag": "HUB",
-    "title": "R.E.P.O. complete guide hub",
-    "description": "A navigable home for every published guide, tool, and patch note.",
-    "lead": "The hub is the product’s map: start with first run and extraction, then route readers into upgrades, teamplay, enemies, levels, tools, FAQ, lore, and the latest patch. Every card needs a working destination and a visible version state.",
-    "steps": [
-      "Group pages by player intent: start, survive, carry, fight, plan, and understand the world.",
-      "Place the current-version notice and latest patch links near the top.",
-      "Give each guide one primary category and one clear next link.",
-      "Keep tools and quick references close to the deep pages that explain their evidence.",
-      "Check every card and source URL before a release; remove or label anything that is not ready."
-    ],
-    "mistakes": "Building a list with no route through it, hiding the newest update, and creating cards that lead to unfinished or dead pages.",
-    "versionNote": "The hub can publish immediately as a structured index, but it should expand only as each P1/P2 page gets verified.",
-    "sources": [
-      {
-        "label": "Community guide hub",
-        "href": "https://www.repo-game.org/zh/repogame-wiki"
-      },
-      {
-        "label": "Official announcements",
+        "label": "Official R.E.P.O. announcements",
         "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
       }
     ]

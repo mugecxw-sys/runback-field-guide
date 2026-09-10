@@ -12,7 +12,30 @@ export const metadata: Metadata = {
 export default function Enemies() {
   return (
     <main className="mx-auto max-w-5xl px-5 py-10 text-[#e1e6e8]">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify({'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:siteUrl},{'@type':'ListItem',position:2,name:'R.E.P.O.',item:siteUrl+'/games/repo/'},{'@type':'ListItem',position:3,name:'Enemy field index',item:siteUrl+'/games/repo/enemies/'}]})}}/>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'R.E.P.O.',
+                item: siteUrl + '/games/repo/',
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: 'Enemy field index',
+                item: siteUrl + '/games/repo/enemies/',
+              },
+            ],
+          }),
+        }}
+      />
       <nav aria-label="Breadcrumb">
         <Link href="/">Home</Link> / <Link href="/games/repo/">R.E.P.O.</Link> /{' '}
         <span>Enemy field index</span>

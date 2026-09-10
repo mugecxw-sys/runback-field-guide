@@ -56,13 +56,13 @@ export function GameHub({
         </p>
         <nav
           aria-label="Guide categories"
-          className="mt-6 flex flex-wrap gap-2"
+          className="sticky top-0 z-20 -mx-5 mt-6 flex gap-2 overflow-x-auto border-y border-white/10 bg-[#111417]/95 px-5 py-3 backdrop-blur md:static md:mx-0 md:flex-wrap md:overflow-visible md:border-0 md:bg-transparent md:p-0"
         >
           {sections.map((s) => (
             <a
               key={s.id}
               href={'#' + s.id}
-              className="rounded-full border border-white/15 px-4 py-2 text-sm hover:border-[#ff8662]"
+              className="shrink-0 rounded-full border border-white/15 px-4 py-2 text-sm hover:border-[#ff8662]"
             >
               {s.title}
             </a>
