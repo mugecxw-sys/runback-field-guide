@@ -74,7 +74,7 @@ export default async function ArticlePage({ params }: Props) {
     <ArticleView
       article={a}
       game={g.title}
-      hub={'/games/' + g.slug + '/'}
+      hub={'/games/' + g.slug}
       href={'/games/' + g.slug + '/' + a.slug}
       date={articlePublishedAt}
       related={related}

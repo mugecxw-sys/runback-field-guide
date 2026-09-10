@@ -1,6 +1,5 @@
 'use client';
 import { useMemo, useState } from 'react';
-import Link from 'next/link';
 import { siteUrl } from '@/lib/repo-guide-pages';
 const plans = {
   carrying: {
@@ -104,7 +103,7 @@ export function UpgradePlanner() {
                       '@type': 'ListItem',
                       position: 2,
                       name: 'R.E.P.O.',
-                      item: siteUrl + '/games/repo/',
+                      item: siteUrl + '/games/repo',
                     },
                     {
                       '@type': 'ListItem',
@@ -119,7 +118,7 @@ export function UpgradePlanner() {
           }}
         />
         <nav aria-label="Breadcrumb" className="text-sm text-[#aeb7bc]">
-          <Link href="/">Home</Link> › <Link href="/games/repo/">R.E.P.O.</Link>{' '}
+          <a href="/">Home</a> › <a href="/games/repo">R.E.P.O.</a>{' '}
           › <span>Upgrade planner</span>
         </nav>
         <h1 className="mt-7 text-4xl font-semibold">
@@ -235,30 +234,30 @@ export function UpgradePlanner() {
         >
           <h2 className="text-xl font-semibold">Related Guides</h2>
           <div className="mt-4 grid gap-3 sm:grid-cols-2">
-            <Link
+            <a
               href="/guides/upgrade-priority"
               className="rounded-lg border border-white/10 p-4"
             >
               Upgrade priority →
-            </Link>
-            <Link
+            </a>
+            <a
               href="/guides/upgrades-explained"
               className="rounded-lg border border-white/10 p-4"
             >
               Upgrades explained →
-            </Link>
-            <Link
+            </a>
+            <a
               href="/guides/first-shop-priority"
               className="rounded-lg border border-white/10 p-4"
             >
               First shop priority →
-            </Link>
-            <Link
-              href="/games/repo/"
+            </a>
+            <a
+              href="/games/repo"
               className="rounded-lg border border-white/10 p-4"
             >
               All R.E.P.O. guides →
-            </Link>
+            </a>
           </div>
         </nav>
       </div>

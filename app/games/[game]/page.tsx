@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       'Practical ' +
       g.title +
       ' guides: quick answers, detailed routes and sources.',
-    alternates: { canonical: siteUrl + '/games/' + g.slug + '/' },
+    alternates: { canonical: siteUrl + '/games/' + g.slug },
     openGraph: {
       title: g.title + ' Guides | RUNBACK',
       description:
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         g.title +
         ' guides: quick answers, detailed routes and sources.',
       type: 'website',
-      url: siteUrl + '/games/' + g.slug + '/',
+      url: siteUrl + '/games/' + g.slug,
       siteName: 'RUNBACK',
     },
     twitter: {
@@ -57,7 +57,7 @@ export default async function GamePage({ params }: Props) {
   return (
     <GameHub
       title={g.title}
-      href={'/games/' + g.slug + '/'}
+      href={'/games/' + g.slug}
       description={
         gameLibraries.find((x) => x.slug === g.slug)?.description ?? ''
       }

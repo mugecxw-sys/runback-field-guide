@@ -26,7 +26,7 @@ export function GameLibraryGrid({ query = '' }: { query?: string }) {
         {games.map((g) => (
           <a
             key={g.slug}
-            href={'/games/' + g.slug + '/'}
+            href={'/games/' + g.slug}
             className="group flex flex-col rounded-xl border border-white/10 bg-[#192126] p-5 transition hover:-translate-y-0.5 hover:border-[#ff8662]/60"
           >
             <p className="text-xs text-[#9fd7ba]">{g.type}</p>

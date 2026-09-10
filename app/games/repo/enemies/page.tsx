@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { EnemyIndex } from '@/components/enemy-index';
 import { repoEnemies } from '@/lib/repo-enemies';
 import { siteUrl } from '@/lib/repo-guide-pages';
@@ -7,7 +6,7 @@ export const metadata: Metadata = {
   title: 'R.E.P.O. Enemy Field Index | RUNBACK',
   description:
     '29 existing R.E.P.O. enemy dossiers with recognition, first responses and sources.',
-  alternates: { canonical: '/games/repo/enemies/' },
+  alternates: { canonical: '/games/repo/enemies' },
 };
 export default function Enemies() {
   return (
@@ -24,20 +23,20 @@ export default function Enemies() {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'R.E.P.O.',
-                item: siteUrl + '/games/repo/',
+                item: siteUrl + '/games/repo',
               },
               {
                 '@type': 'ListItem',
                 position: 3,
                 name: 'Enemy field index',
-                item: siteUrl + '/games/repo/enemies/',
+                item: siteUrl + '/games/repo/enemies',
               },
             ],
           }),
         }}
       />
       <nav aria-label="Breadcrumb">
-        <Link href="/">Home</Link> / <Link href="/games/repo/">R.E.P.O.</Link> /{' '}
+        <a href="/">Home</a> / <a href="/games/repo">R.E.P.O.</a> /{' '}
         <span>Enemy field index</span>
       </nav>
       <h1 className="mt-8 text-4xl font-semibold">
@@ -60,9 +59,9 @@ export default function Enemies() {
         </nav>
       </details>
       <EnemyIndex />
-      <Link href="/games/repo/" className="my-10 block text-[#ff9a7a]">
+      <a href="/games/repo" className="my-10 block text-[#ff9a7a]">
         All R.E.P.O. guides →
-      </Link>
+      </a>
     </main>
   );
 }

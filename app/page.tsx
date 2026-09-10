@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { GameLibraryGrid } from '@/components/game-library-grid';
 import { searchIndex } from '@/lib/search-index';
 import { siteUrl } from '@/lib/repo-guide-pages';
@@ -107,7 +106,7 @@ export default function Home() {
           {picks.map(
             (g) =>
               g && (
-                <Link
+                <a
                   key={g.href}
                   href={g.href}
                   className="rounded-xl border border-white/10 p-5 hover:border-[#ff8662]"
@@ -117,7 +116,7 @@ export default function Home() {
                   <p className="mt-3 text-sm leading-6 text-[#aeb7bc]">
                     {g.summary}
                   </p>
-                </Link>
+                </a>
               ),
           )}
         </div>
@@ -126,7 +125,7 @@ export default function Home() {
         <h2 className="text-2xl font-semibold">Latest guides</h2>
         <div className="mt-5 divide-y divide-white/10">
           {latest.map((g) => (
-            <Link
+            <a
               key={g.href}
               href={g.href}
               className="flex flex-wrap justify-between gap-3 py-5 hover:text-[#ff9a7a]"
@@ -137,14 +136,14 @@ export default function Home() {
               <time className="text-sm text-[#aeb7bc]" dateTime={g.date}>
                 {g.date.slice(0, 10)}
               </time>
-            </Link>
+            </a>
           ))}
         </div>
       </section>
       <footer className="mt-12 flex flex-wrap gap-5 border-t border-white/10 py-6 text-sm text-[#aeb7bc]">
-        <Link href="/about">About</Link>
-        <Link href="/editorial">Editorial policy</Link>
-        <Link href="/privacy">Privacy</Link>
+        <a href="/about">About</a>
+        <a href="/editorial">Editorial policy</a>
+        <a href="/privacy">Privacy</a>
       </footer>
     </main>
   );

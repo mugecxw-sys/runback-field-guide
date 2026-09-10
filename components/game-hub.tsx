@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { siteUrl } from '@/lib/repo-guide-pages';
 export type HubSection = {
   id: string;
@@ -46,7 +45,7 @@ export function GameHub({
           }}
         />
         <nav aria-label="Breadcrumb" className="text-sm text-[#aeb7bc]">
-          <Link href="/">Home</Link> / <span aria-current="page">{title}</span>
+          <a href="/">Home</a> / <span aria-current="page">{title}</span>
         </nav>
         <h1 className="mt-8 text-4xl font-semibold sm:text-5xl">
           {title} guides
@@ -95,9 +94,9 @@ export function GameHub({
         ))}
         {children}
         <footer className="mt-12 flex flex-wrap gap-5 border-t border-white/10 pt-6 text-sm text-[#aeb7bc]">
-          <Link href="/about">About</Link>
-          <Link href="/editorial">Editorial policy</Link>
-          <Link href="/privacy">Privacy</Link>
+          <a href="/about">About</a>
+          <a href="/editorial">Editorial policy</a>
+          <a href="/privacy">Privacy</a>
         </footer>
       </div>
     </main>

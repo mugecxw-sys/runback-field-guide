@@ -66,7 +66,7 @@ export default async function GuidePage({ params }: Props) {
     <ArticleView
       article={{ ...g, answer: g.lead, lead: undefined }}
       game="R.E.P.O."
-      hub="/games/repo/"
+      hub="/games/repo"
       href={'/guides/' + g.slug}
       date={g.id === 'CART' ? '2026-09-09T00:00:00.000Z' : guidePublishedAt}
       modified={

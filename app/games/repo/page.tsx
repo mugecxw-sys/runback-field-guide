@@ -9,13 +9,13 @@ export const metadata: Metadata = {
   title: 'R.E.P.O. Guides: Quota, Upgrades, Enemies & More | RUNBACK',
   description:
     'R.E.P.O. beginner guides, mechanics, upgrades, enemies, items and advanced co-op strategies.',
-  alternates: { canonical: siteUrl + '/games/repo/' },
+  alternates: { canonical: siteUrl + '/games/repo' },
   openGraph: {
     title: 'R.E.P.O. Guides: Quota, Upgrades, Enemies & More | RUNBACK',
     description:
       'R.E.P.O. beginner guides, mechanics, upgrades, enemies, items and advanced co-op strategies.',
     type: 'website',
-    url: siteUrl + '/games/repo/',
+    url: siteUrl + '/games/repo',
     siteName: 'RUNBACK',
   },
   twitter: {
@@ -39,7 +39,7 @@ export default function RepoGameHub() {
   sections
     .find((s) => s.id === 'enemies')!
     .guides.unshift({
-      href: '/games/repo/enemies/',
+      href: '/games/repo/enemies',
       title: 'Visual enemy field index',
       description:
         'Browse the existing 29 enemy dossiers, with recognition cues and credited images.',
@@ -47,7 +47,7 @@ export default function RepoGameHub() {
   return (
     <GameHub
       title="R.E.P.O."
-      href="/games/repo/"
+      href="/games/repo"
       description="Learn the extraction loop, protect your loot and plan the next run. Choose a category below or start with the first-run guide."
       sections={sections}
     />

@@ -9,14 +9,14 @@ import {
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: `${siteUrl}/games/repo/enemies/`,
+      url: `${siteUrl}/games/repo/enemies`,
       lastModified: '2026-09-09T00:00:00.000Z',
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     ...articleLibraries.flatMap((game) => [
       {
-        url: `${siteUrl}/games/${game.slug}/`,
+        url: `${siteUrl}/games/${game.slug}`,
         lastModified: articlePublishedAt,
         changeFrequency: 'monthly' as const,
         priority: 0.9,
@@ -35,7 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${siteUrl}/games/repo/`,
+      url: `${siteUrl}/games/repo`,
       lastModified: guidePublishedAt,
       changeFrequency: 'weekly',
       priority: 0.9,

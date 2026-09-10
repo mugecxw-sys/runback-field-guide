@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { BodyAdReservation } from './body-ad-reservation';
 import { siteUrl } from '@/lib/repo-guide-pages';
 import { linkRepoText } from '@/lib/repo-links';
@@ -216,9 +215,9 @@ export function ArticleView({
           aria-label="Breadcrumb"
           className="flex flex-wrap gap-2 text-sm text-[#aeb7bc]"
         >
-          <Link href="/">Home</Link>
+          <a href="/">Home</a>
           <span>›</span>
-          <Link href={hub}>{game}</Link>
+          <a href={hub}>{game}</a>
           <span>›</span>
           <span aria-current="page">{a.title}</span>
         </nav>
@@ -343,23 +342,23 @@ export function ArticleView({
           <h2 className="text-2xl font-semibold">Related Guides</h2>
           <div className="mt-5 grid gap-4 sm:grid-cols-2">
             {related.map((r) => (
-              <Link
+              <a
                 key={r.href}
                 href={r.href}
                 className="rounded-xl border border-white/10 p-4 leading-6 hover:border-[#ff8662]"
               >
                 {r.title} →
-              </Link>
+              </a>
             ))}
           </div>
-          <Link href={hub} className="mt-6 block text-[#ff9a7a]">
+          <a href={hub} className="mt-6 block text-[#ff9a7a]">
             All {game} guides →
-          </Link>
+          </a>
         </nav>
         <footer className="mt-12 flex flex-wrap gap-5 border-t border-white/10 pt-6 text-sm text-[#aeb7bc]">
-          <Link href="/about">About</Link>
-          <Link href="/editorial">Editorial policy</Link>
-          <Link href="/privacy">Privacy</Link>
+          <a href="/about">About</a>
+          <a href="/editorial">Editorial policy</a>
+          <a href="/privacy">Privacy</a>
         </footer>
       </article>
     </main>

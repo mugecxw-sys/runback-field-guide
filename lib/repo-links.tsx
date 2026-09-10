@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { repoGuidePages, repoInternalLinkRules } from './repo-guide-pages';
 import { repoEnemies } from './repo-enemies';
 const rules = [
@@ -11,7 +10,7 @@ const rules = [
   ...repoEnemies.flatMap((e) =>
     [e.name, e.alias].map((term) => ({
       term,
-      href: '/games/repo/enemies/#' + e.id,
+      href: '/games/repo/enemies#' + e.id,
     })),
   ),
 ];
@@ -38,14 +37,14 @@ export function linkRepoText(
     if (seen.has(rule.href) || rule.href === currentHref) continue;
     nodes.push(text.slice(last, match.index));
     nodes.push(
-      <Link
+      <a
         key={match.index}
         data-context-link
         href={rule.href}
         className="text-[#ff9a7a] underline underline-offset-4"
       >
         {match[0]}
-      </Link>,
+      </a>,
     );
     seen.add(rule.href);
     last = match.index! + match[0].length;
