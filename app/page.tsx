@@ -71,36 +71,37 @@ export default function Home() {
         <p className="mt-4 text-xl text-[#ff9a7a]">
           Find the route. Make the run count.
         </p>
-        <form
-          action="/search"
-          method="get"
-          role="search"
-          className="mt-6 flex max-w-2xl items-center rounded-xl border border-white/20 bg-[#192126] p-1 text-[#e1e6e8] focus-within:border-[#ff8662]"
-        >
-          <label htmlFor="home-search" className="sr-only">
-            Search games, bosses, builds, items, maps and unlocks
-          </label>
-          <input
-            id="home-search"
-            name="q"
-            type="search"
-            autoComplete="off"
-            placeholder="Search games, bosses, builds, items, maps and unlocks"
-            className="min-w-0 flex-1 bg-transparent px-3 py-3 text-base text-[#e1e6e8] outline-none placeholder:text-[#aeb7bc]"
-          />
-          <button
-            type="submit"
-            className="shrink-0 rounded-lg px-3 py-3 text-[#ff9a7a] hover:bg-white/[0.06] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]"
+        <search className="mt-6 max-w-2xl">
+          <form
+            action="/search"
+            method="get"
+            className="flex items-center rounded-xl border border-white/20 bg-[#192126] p-1 text-[#e1e6e8] focus-within:border-[#ff8662]"
           >
-            Search →
-          </button>
-        </form>
+            <label htmlFor="home-search" className="sr-only">
+              Search games, bosses, builds, items, maps and unlocks
+            </label>
+            <input
+              id="home-search"
+              name="q"
+              type="search"
+              autoComplete="off"
+              placeholder="Search games, bosses, builds, items, maps and unlocks"
+              className="min-w-0 flex-1 bg-transparent px-3 py-3 text-base text-[#e1e6e8] outline-none placeholder:text-[#aeb7bc]"
+            />
+            <button
+              type="submit"
+              className="shrink-0 rounded-lg px-3 py-3 text-[#ff9a7a] hover:bg-white/[0.06] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]"
+            >
+              Search →
+            </button>
+          </form>
+        </search>
       </section>
       <GameLibraryGrid />
       <section id="guides" className="mt-12">
         <h2 className="text-2xl font-semibold">Featured guides</h2>
         <p className="mt-2 text-sm text-[#aeb7bc]">
-          Editor's starting points — not a traffic ranking.
+          Editor&apos;s starting points — not a traffic ranking.
         </p>
         <div className="mt-5 grid gap-4 md:grid-cols-2">
           {picks.map(

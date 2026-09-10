@@ -47,6 +47,10 @@ for (const q of [
 assert.equal(searchGuides('THIS_CANNOT_BE_A_REAL_GAME_9876').length, 0);
 assert(searchGuides('build', 'Hades II').every((x) => x.game === 'Hades II'));
 assert.equal(new Set(searchIndex.map((x) => x.href)).size, searchIndex.length);
+assert(
+  !searchIndex.some((x) => x.href.includes('r-e-p-o-complete-guide-hub')),
+  'The retired R.E.P.O. hub must not be searchable',
+);
 assert.deepEqual(
   repoGuideSections.map((x) => x.title),
   ['Beginner', 'Mechanics', 'Upgrades', 'Enemies', 'Items', 'Advanced'],
@@ -59,6 +63,8 @@ const base = process.argv[2] || 'http://localhost:4174',
   failures = [],
   pages = new Map();
 const sm = await fetch(base + '/sitemap.xml').then((r) => r.text());
+if (sm.includes('r-e-p-o-complete-guide-hub'))
+  failures.push(['sitemap', 'retired R.E.P.O. hub is still listed']);
 const paths = [
   ...new Set(
     [...sm.matchAll(/<loc>(.*?)<\/loc>/g)]
@@ -84,7 +90,7 @@ await Promise.all(
 );
 const homeHtml = pages.get('/') ?? '';
 if (
-  !/<form\b(?=[^>]*action="\/search")(?=[^>]*role="search")[^>]*>/.test(
+  !/<search\b[^>]*>[\s\S]*?<form\b(?=[^>]*action="\/search")[^>]*>/.test(
     homeHtml,
   ) ||
   !/<input\b(?=[^>]*id="home-search")(?=[^>]*name="q")(?=[^>]*type="search")[^>]*>/.test(
@@ -95,6 +101,46 @@ if (
     '/',
     'homepage search must be a real search form with an editable input',
   ]);
+const retiredHub = await fetch(base + '/guides/r-e-p-o-complete-guide-hub', {
+  redirect: 'manual',
+});
+if (
+  retiredHub.status !== 301 ||
+  retiredHub.headers.get('location') !== '/games/repo'
+)
+  failures.push([
+    '/guides/r-e-p-o-complete-guide-hub',
+    'expected direct 301 to /games/repo',
+    retiredHub.status,
+    retiredHub.headers.get('location'),
+  ]);
+const plannerHtml = await fetch(base + '/guides/r-e-p-o-upgrade-planner').then(
+  (r) => r.text(),
+);
+if (
+  !plannerHtml.includes('Crew size') ||
+  !plannerHtml.includes('Last failure') ||
+  !plannerHtml.includes('Recommend')
+)
+  failures.push(['/guides/r-e-p-o-upgrade-planner', 'planner controls']);
+const faqHtml = pages.get('/guides/r-e-p-o-faq-quota-upgrades-monsters-and-multiplayer') ?? '';
+if (
+  !faqHtml.includes('Frequently Asked Questions') ||
+  faqHtml.includes('Step-by-step guide')
+)
+  failures.push(['/guides/r-e-p-o-faq-quota-upgrades-monsters-and-multiplayer', 'FAQ structure']);
+const firstRunHtml = pages.get('/guides/first-run-guide') ?? '';
+const firstRunList = firstRunHtml.match(/<ol\b[^>]*>([\s\S]*?)<\/ol>/)?.[1] ?? '';
+if (/<span\b[^>]*>\d+\.<\/span>/.test(firstRunList))
+  failures.push(['/guides/first-run-guide', 'duplicate step number markup']);
+const publicGuideSources = [
+  fs.readFileSync(new URL('../lib/repo-guide-pages.ts', import.meta.url), 'utf8'),
+  fs.readFileSync(new URL('../lib/repo-extra-guides.json', import.meta.url), 'utf8'),
+].join('\n');
+const internalInstructionPattern =
+  /update (?:the|this) page|site baseline|before release|before publishing|every card|working destination|source set|mark every result|add an update note|link the change|this prototype|the planner should|content team|page header|guide should/i;
+if (internalInstructionPattern.test(publicGuideSources))
+  failures.push(['guide data', 'internal instruction language']);
 for (const [p, html] of pages) {
   const schemas = [
     ...html.matchAll(

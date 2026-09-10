@@ -80,7 +80,7 @@ export const repoGuidePages: RepoGuidePage[] = [
     mistakes:
       'Entering an unknown room for one more item, leaving a valuable half inside a boundary, and ignoring the time needed to return safely.',
     versionNote:
-      'Avoid publishing a fixed quota formula unless it has been retested in the current client. Map and multiplayer conditions can change.',
+      'Exact quota formulas can vary with map and multiplayer conditions. Use the current HUD as the authority for your run.',
     sources: [
       {
         label: 'Steam discussion: over quota but cannot leave',
@@ -189,7 +189,7 @@ export const repoGuidePages: RepoGuidePage[] = [
     title: 'R.E.P.O. Strength upgrade breakpoints: test, do not assume',
     description:
       'Use a repeatable test sheet to verify R.E.P.O. Strength upgrades by target, player count, distance, and patch instead of relying on old charts.',
-    lead: 'Strength breakpoints are useful only when the test conditions are visible. Repeat the same target, route, player count, and version before publishing a claim about what a level can carry.',
+    lead: 'Strength breakpoints are useful only when the test conditions are visible. Repeat the same target, route, player count, and version before relying on a claim about what a level can carry.',
     steps: [
       'Lock the map, target, distance, player count, and patch version.',
       'Record the baseline before buying the next Strength level.',
@@ -255,7 +255,7 @@ export const repoGuidePages: RepoGuidePage[] = [
       'Turn away and move toward a teammate or the truck direction.',
       'Drop a large item if it blocks the escape route.',
       'Avoid pushing deeper alone after contact or damage.',
-      'Retest trigger distance and other exact mechanics before publishing numbers.',
+      'Treat trigger distance and other exact mechanics as uncertain until current gameplay confirms them.',
     ],
     mistakes:
       'Staring too long to confirm the enemy, stopping with a large item in a narrow room, and copying old damage values as current truth.',

@@ -11,6 +11,16 @@ import {
   siteUrl,
 } from '@/lib/repo-guide-pages';
 type Props = { params: Promise<{ slug: string }> };
+const repoArticleType = (tag: string) => {
+  if (tag === 'FAQ') return 'faq' as const;
+  if (tag === 'ENEMIES') return 'mechanic' as const;
+  if (tag === 'ITEMS' || tag === 'UPGRADES' || tag === 'STRENGTH')
+    return 'build' as const;
+  if (tag === 'LEVELS' || tag === 'ROUTES') return 'location' as const;
+  if (tag === 'MECHANICS' || tag === 'QUOTA' || tag === 'EXTRACTION')
+    return 'mechanic' as const;
+  return 'beginner' as const;
+};
 export function generateStaticParams() {
   return repoGuidePages.map((g) => ({ slug: g.slug }));
 }
@@ -66,6 +76,7 @@ export default async function GuidePage({ params }: Props) {
       }
       related={related}
       extra={repoEnrichment[g.slug] ?? []}
+      articleType={repoArticleType(g.tag)}
     />
   );
 }

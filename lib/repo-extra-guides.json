@@ -8,10 +8,10 @@
     "lead": "Read the item pool by job: damage, control, movement, carry protection, healing, and information. The right tool is the one that fixes the current route, not the one with the highest community tier.",
     "steps": [
       "Start with the item category: weapon, throwable, drone, staff, healing, or information.",
-      "Write down what the item changes for the crew: damage, time, distance, weight, durability, or recovery.",
-      "Separate permanent upgrades from run-only tools and label both with the patch they were tested on.",
+      "Compare what the item changes for the crew: damage, time, distance, weight, durability, or recovery.",
+      "Separate permanent upgrades from run-only tools, and check the current item description after a patch.",
       "Pair each tool with a situation: fragile heavy loot, blocked doorway, enemy control, revive, or low-health return.",
-      "Link every item entry to a source and a current-version test before publishing an exact price or duration."
+      "Before relying on an exact price or duration, confirm it in the current shop or item description."
     ],
     "mistakes": "Copying a price from an old guide, treating a mod entry as vanilla behavior, and describing an item without saying when to use it.",
     "versionNote": "Community item databases are useful for vocabulary and structure, but prices, pools, ammo, and effects need current-client checks.",
@@ -65,10 +65,10 @@
       "Stop carrying through the threat area and put the valuable somewhere recoverable.",
       "Split the team: one player watches the route while the carrier rotates toward the cart or extraction.",
       "Use the item or environment counter only after the escape route is clear.",
-      "Capture the exact trigger, chase behavior, player count, and patch before adding numbers."
+      "Treat exact triggers, chase behavior, and player-count interactions as version-sensitive unless you can confirm them in your current build."
     ],
-    "mistakes": "Chasing it with the valuable still in hand, stacking the team in one doorway, and publishing a single counter as if it works in every map.",
-    "versionNote": "Monster behavior and counter reliability are version-sensitive; this page is a source-backed test plan until current-client footage is attached.",
+    "mistakes": "Chasing it with the valuable still in hand, stacking the team in one doorway, and assuming a single counter works in every map.",
+    "versionNote": "Monster behavior and counter reliability are version-sensitive. Use this as conservative route advice rather than an exact timing reference.",
     "sources": [
       {
         "label": "Monster guide",
@@ -119,7 +119,7 @@
       "Put the item down in a safe position instead of trying to sprint-carry through contact.",
       "Use a wall, cart, or open room to separate the carrier from the threat.",
       "Resume the carry only after the team has a clear route and the item is stable.",
-      "Record whether the current build changes Tick behavior while holding, dropping, or using a counter."
+      "If Tick behaves differently while holding, dropping, or countering, prioritize the current game behavior over older guide claims."
     ],
     "mistakes": "Running while holding the item, turning into a wall, and assuming a small enemy can be ignored because it is not a boss.",
     "versionNote": "Community guides disagree on some attack conditions and damage details. Use the conservative handling rule here and treat exact triggers as version-sensitive.",
@@ -227,7 +227,7 @@
       "Mark extraction points and the safe staging area before spending time on low-value rooms.",
       "Use the first rooms to learn the current run’s loot density and threat pressure.",
       "Treat later levels as an efficiency check: fewer empty trips, safer carry paths, and clearer roles.",
-      "Record the objective, route, and failure point by level so the hub can link to a focused map page."
+      "Keep the objective, route, and failure point in mind so the team can adjust on the next level."
     ],
     "mistakes": "Assuming procedural layouts are fully memorized, judging a map only by loot value, and entering a difficulty spike with the same team plan.",
     "versionNote": "Map layouts vary, while each map’s broad structure is more stable. Use route principles rather than relying on fixed coordinates from another run.",
@@ -308,7 +308,7 @@
       "Keep heavy or fragile items close to the body and slow down before a doorway or corner.",
       "Use the mouse wheel or equivalent rotation control to set the object flat before placing it.",
       "Load fragile items into the cart early and use a second player for heavy or awkward objects.",
-      "Record collision, damage, and vehicle interactions on the current patch before claiming an exact physics rule."
+      "Use a low-value object to check collision, damage, and vehicle interactions before risking expensive loot."
     ],
     "mistakes": "Running while carrying, throwing fragile loot for speed, dropping on an edge, and assuming an item is safe because it is inside the cart but sticking out.",
     "versionNote": "Physics interactions are unusually version-sensitive; official patches have changed carts, vehicles, staffs, and item handling.",

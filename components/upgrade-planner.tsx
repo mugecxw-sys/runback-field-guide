@@ -54,11 +54,27 @@ const roles = {
     'Support/control: assign the tool and its trigger before leaving the Service Station.',
   flex: 'Flexible: give the purchase to the player who will use it most on the next route.',
 } as const;
+type Role = keyof typeof roles;
+type Failure = keyof typeof plans;
+type RecommendationInput = { crew: string; role: Role; failure: Failure };
+
+function crewAdvice(crew: string) {
+  if (crew === '1')
+    return 'Solo: favor the change that protects your own carry and exit route.';
+  if (crew === '2')
+    return 'Two players: decide who carries and who keeps the route clear before spending.';
+  return `${crew} players: assign the purchase to one player and agree on who covers the next carry.`;
+}
 export function UpgradePlanner() {
   const [crew, setCrew] = useState('3'),
-    [role, setRole] = useState<keyof typeof roles>('flex'),
-    [failure, setFailure] = useState<keyof typeof plans>('carrying');
-  const plan = useMemo(() => plans[failure], [failure]);
+    [role, setRole] = useState<Role>('flex'),
+    [failure, setFailure] = useState<Failure>('carrying'),
+    [recommendation, setRecommendation] =
+      useState<RecommendationInput | null>(null);
+  const plan = useMemo(
+    () => (recommendation ? plans[recommendation.failure] : null),
+    [recommendation],
+  );
   return (
     <main className="min-h-screen px-5 py-10 text-[#e1e6e8]">
       <div className="mx-auto max-w-3xl">
@@ -114,7 +130,11 @@ export function UpgradePlanner() {
           priority, a fallback, and one check for the next attempt. It does not
           assume a specific shop roll or fixed price.
         </p>
-        <section
+        <form
+          onSubmit={(event) => {
+            event.preventDefault();
+            setRecommendation({ crew, role, failure });
+          }}
           aria-label="Planner inputs"
           className="mt-8 grid gap-5 rounded-xl border border-white/10 bg-[#192126] p-5 sm:grid-cols-3"
         >
@@ -158,34 +178,51 @@ export function UpgradePlanner() {
               <option value="fragile">Fragile value was lost</option>
             </select>
           </label>
-        </section>
+          <div className="sm:col-span-3">
+            <button
+              type="submit"
+              className="rounded-lg bg-[#ff7043] px-5 py-3 font-semibold text-[#111417] hover:bg-[#ff9a7a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]"
+            >
+              Recommend
+            </button>
+          </div>
+        </form>
         <section
           aria-live="polite"
           className="mt-6 rounded-xl border border-[#ff7043]/30 bg-[#ff7043]/[0.06] p-6"
         >
           <p className="text-sm font-bold uppercase tracking-widest text-[#ff9a7a]">
-            Recommendation for {crew} player{crew === '1' ? '' : 's'}
+            {recommendation
+              ? `Recommendation for ${recommendation.crew} player${recommendation.crew === '1' ? '' : 's'}`
+              : 'Recommendation'}
           </p>
-          <dl className="mt-5 space-y-5">
-            <div>
-              <dt className="text-sm text-[#9fd7ba]">Primary priority</dt>
-              <dd className="mt-1 text-xl font-semibold">{plan.primary}</dd>
-            </div>
-            <div>
-              <dt className="text-sm text-[#9fd7ba]">Fallback</dt>
-              <dd className="mt-1 leading-7">{plan.fallback}</dd>
-            </div>
-            <div>
-              <dt className="text-sm text-[#9fd7ba]">Why</dt>
-              <dd className="mt-1 leading-7">
-                {plan.why} {roles[role]}
-              </dd>
-            </div>
-            <div>
-              <dt className="text-sm text-[#9fd7ba]">Next-run check</dt>
-              <dd className="mt-1 leading-7">{plan.check}</dd>
-            </div>
-          </dl>
+          {plan && recommendation ? (
+            <dl className="mt-5 space-y-5">
+              <div>
+                <dt className="text-sm text-[#9fd7ba]">Primary priority</dt>
+                <dd className="mt-1 text-xl font-semibold">{plan.primary}</dd>
+              </div>
+              <div>
+                <dt className="text-sm text-[#9fd7ba]">Fallback</dt>
+                <dd className="mt-1 leading-7">{plan.fallback}</dd>
+              </div>
+              <div>
+                <dt className="text-sm text-[#9fd7ba]">Why</dt>
+                <dd className="mt-1 leading-7">
+                  {plan.why} {roles[recommendation.role]}{' '}
+                  {crewAdvice(recommendation.crew)}
+                </dd>
+              </div>
+              <div>
+                <dt className="text-sm text-[#9fd7ba]">Next-run check</dt>
+                <dd className="mt-1 leading-7">{plan.check}</dd>
+              </div>
+            </dl>
+          ) : (
+            <p className="mt-4 leading-7 text-[#c7d0d5]">
+              Choose the crew, role, and last-run failure, then select Recommend.
+            </p>
+          )}
         </section>
         <aside className="mt-6 rounded-xl border border-white/10 p-5 text-sm leading-6 text-[#aeb7bc]">
           If the recommended category is not on the shelf, use the fallback or

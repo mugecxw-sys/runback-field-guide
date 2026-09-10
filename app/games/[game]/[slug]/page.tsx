@@ -9,6 +9,13 @@ import {
 } from '@/lib/game-articles';
 import { siteUrl } from '@/lib/repo-guide-pages';
 type Props = { params: Promise<{ game: string; slug: string }> };
+const gameArticleType = (category: string) => {
+  if (/boss/i.test(category)) return 'boss' as const;
+  if (/build/i.test(category)) return 'build' as const;
+  if (/location|collectible|route/i.test(category)) return 'location' as const;
+  if (/mechanic|systems|controls/i.test(category)) return 'mechanic' as const;
+  return 'beginner' as const;
+};
 export function generateStaticParams() {
   return articleLibraries.flatMap((g) =>
     g.articles.map((a) => ({ game: g.slug, slug: a.slug })),
@@ -77,6 +84,7 @@ export default async function ArticlePage({ params }: Props) {
           ? typhonSections
           : []
       }
+      articleType={gameArticleType(a.category)}
     />
   );
 }

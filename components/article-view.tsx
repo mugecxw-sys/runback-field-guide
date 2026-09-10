@@ -12,6 +12,44 @@ type Article = {
   versionNote: string;
   sources: { label: string; href: string }[];
 };
+export type ArticleType =
+  | 'beginner'
+  | 'walkthrough'
+  | 'boss'
+  | 'build'
+  | 'location'
+  | 'faq'
+  | 'mechanic';
+
+const typeLabels: Record<
+  ArticleType,
+  { main: string; mistakes: string; toc: string }
+> = {
+  beginner: {
+    main: 'Step-by-step guide',
+    mistakes: 'Common mistakes',
+    toc: 'Steps',
+  },
+  walkthrough: {
+    main: 'Step-by-step guide',
+    mistakes: 'Common mistakes',
+    toc: 'Steps',
+  },
+  boss: { main: 'Fight flow', mistakes: 'Common deaths', toc: 'Fight flow' },
+  build: { main: 'Core setup', mistakes: 'Common pitfalls', toc: 'Core setup' },
+  location: { main: 'Route', mistakes: 'Missable risks', toc: 'Route' },
+  faq: {
+    main: 'Frequently Asked Questions',
+    mistakes: 'Common misunderstandings',
+    toc: 'Questions',
+  },
+  mechanic: { main: 'Mechanics', mistakes: 'Common mistakes', toc: 'Mechanics' },
+};
+
+function splitFaq(item: string) {
+  const match = item.match(/^(.+?\?)\s*(.+)$/);
+  return match ? { question: match[1], answer: match[2] } : null;
+}
 export function ArticleView({
   article: a,
   game,
@@ -21,6 +59,7 @@ export function ArticleView({
   modified,
   related,
   extra = [],
+  articleType = 'beginner',
 }: {
   article: Article;
   game: string;
@@ -30,7 +69,9 @@ export function ArticleView({
   modified?: string;
   related: { href: string; title: string }[];
   extra?: Enrichment[];
+  articleType?: ArticleType;
 }) {
+  const labels = typeLabels[articleType];
   const seen = new Set<string>();
   const render = (text: string) =>
     game === 'R.E.P.O.' ? linkRepoText(text, href, seen) : text;
@@ -39,7 +80,7 @@ export function ArticleView({
     ...extra
       .filter((s) => s.heading === 'Quick Facts')
       .map(() => ({ id: 'quick-facts', label: 'Quick Facts' })),
-    { id: 'steps', label: 'Steps' },
+    { id: 'steps', label: labels.toc },
     ...extra
       .filter((s) => s.heading !== 'Quick Facts')
       .map((s, i) => ({ id: 'detail-' + i, label: s.heading })),
@@ -226,18 +267,36 @@ export function ArticleView({
           .filter((s) => s.heading === 'Quick Facts')
           .map((s) => detail(s, 'quick-facts'))}
         <section id="steps" className="mt-9">
-          <h2 className="text-2xl font-semibold">Step-by-step guide</h2>
-          <ol className="mt-5 space-y-4">
-            {a.steps.map((s, i) => (
-              <li
-                key={i}
-                className="flex gap-4 rounded-xl border border-white/10 bg-[#192126] p-5"
-              >
-                <span className="font-mono text-[#ff9a7a]">{i + 1}.</span>
-                <p className="leading-7">{render(s)}</p>
-              </li>
-            ))}
-          </ol>
+          <h2 className="text-2xl font-semibold">{labels.main}</h2>
+          {articleType === 'faq' ? (
+            <div className="mt-5 space-y-4">
+              {a.steps.map((s, i) => {
+                const faq = splitFaq(s);
+                return (
+                  <section
+                    key={i}
+                    className="rounded-xl border border-white/10 bg-[#192126] p-5"
+                  >
+                    <h3 className="text-lg font-semibold">
+                      {faq?.question ?? `Question ${i + 1}`}
+                    </h3>
+                    <p className="mt-3 leading-7">{render(faq?.answer ?? s)}</p>
+                  </section>
+                );
+              })}
+            </div>
+          ) : (
+            <ol className="mt-5 list-decimal space-y-4 pl-8 marker:font-mono marker:text-[#ff9a7a]">
+              {a.steps.map((s, i) => (
+                <li
+                  key={i}
+                  className="rounded-xl border border-white/10 bg-[#192126] p-5 pl-6"
+                >
+                  <p className="leading-7">{render(s)}</p>
+                </li>
+              ))}
+            </ol>
+          )}
         </section>
         {extra
           .filter((s) => s.heading !== 'Quick Facts')
@@ -250,7 +309,7 @@ export function ArticleView({
           }
         />
         <section id="mistakes" className="mt-9">
-          <h2 className="text-2xl font-semibold">Common mistakes</h2>
+          <h2 className="text-2xl font-semibold">{labels.mistakes}</h2>
           <p className="mt-4 leading-7">{render(a.mistakes)}</p>
         </section>
         <section className="mt-8 rounded-xl border border-[#79c7a0]/25 p-5">
