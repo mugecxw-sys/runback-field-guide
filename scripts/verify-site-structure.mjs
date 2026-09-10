@@ -82,6 +82,19 @@ await Promise.all(
     }
   }),
 );
+const homeHtml = pages.get('/') ?? '';
+if (
+  !/<form\b(?=[^>]*action="\/search")(?=[^>]*role="search")[^>]*>/.test(
+    homeHtml,
+  ) ||
+  !/<input\b(?=[^>]*id="home-search")(?=[^>]*name="q")(?=[^>]*type="search")[^>]*>/.test(
+    homeHtml,
+  )
+)
+  failures.push([
+    '/',
+    'homepage search must be a real search form with an editable input',
+  ]);
 for (const [p, html] of pages) {
   const schemas = [
     ...html.matchAll(

@@ -1,5 +1,5 @@
 'use client';
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { searchGuides, searchIndex } from '@/lib/search-index';
 import { gameLibraries } from '@/lib/game-catalog';
 
@@ -28,6 +28,10 @@ function ResultCard({ item }: { item: (typeof searchIndex)[number] }) {
 export function GlobalSearch() {
   const [query, setQuery] = useState('');
   const [game, setGame] = useState('All games');
+  useEffect(() => {
+    const initialQuery = new URLSearchParams(window.location.search).get('q');
+    if (initialQuery) setQuery(initialQuery);
+  }, []);
   const ready = query.trim().length >= 2;
   const results = ready ? searchGuides(query, game) : [];
   const popular = popularHrefs
