@@ -1,0 +1,542 @@
+[
+  {
+    "id": "P1-11",
+    "slug": "r-e-p-o-items-and-tools-explained",
+    "tag": "ITEMS",
+    "title": "R.E.P.O. items and tools explained",
+    "description": "A practical item index grouped by what each tool changes during a run.",
+    "lead": "Read the item pool by job: damage, control, movement, carry protection, healing, and information. The right tool is the one that fixes the current route, not the one with the highest community tier.",
+    "steps": [
+      "Start with the item category: weapon, throwable, drone, staff, healing, or information.",
+      "Write down what the item changes for the crew: damage, time, distance, weight, durability, or recovery.",
+      "Separate permanent upgrades from run-only tools and label both with the patch they were tested on.",
+      "Pair each tool with a situation: fragile heavy loot, blocked doorway, enemy control, revive, or low-health return.",
+      "Link every item entry to a source and a current-version test before publishing an exact price or duration."
+    ],
+    "mistakes": "Copying a price from an old guide, treating a mod entry as vanilla behavior, and describing an item without saying when to use it.",
+    "versionNote": "Community item databases are useful for vocabulary and structure, but prices, pools, ammo, and effects need current-client checks.",
+    "sources": [
+      {
+        "label": "Complete items guide",
+        "href": "https://itemlevel.net/repo-complete-items-and-upgrades-guide-what-they-do/"
+      },
+      {
+        "label": "Official v0.4.0 notes",
+        "href": "https://store.steampowered.com/news/app/3241660/view/653728111564685329?l=english"
+      }
+    ]
+  },
+  {
+    "id": "P1-12",
+    "slug": "when-to-save-or-spend-in-r-e-p-o",
+    "tag": "ECONOMY",
+    "title": "When to save or spend in R.E.P.O.",
+    "description": "A simple budget rule for upgrades, tools, and risky extra loot.",
+    "lead": "Spend when the purchase removes the reason you failed. Save only when the shop roll does not solve the next risk or when buying would leave the team without a basic recovery option.",
+    "steps": [
+      "Name the next run’s biggest bottleneck before opening the shop.",
+      "Buy a survival or carrying upgrade when it directly increases the chance of meeting quota.",
+      "Keep enough budget for a tool that changes a known enemy or extraction problem.",
+      "Do not hoard through several shops if the same weakness keeps ending runs.",
+      "Record the purchase, the run result, and whether the change paid for itself in safer value."
+    ],
+    "mistakes": "Saving by default, buying every visible item, and comparing prices without comparing the time or risk the item removes.",
+    "versionNote": "Prices and shop pools vary by level and version. Community discussions are evidence for questions, not universal rules.",
+    "sources": [
+      {
+        "label": "Upgrade priority",
+        "href": "https://www.repo-game.org/en/repogame-upgrades"
+      },
+      {
+        "label": "Community economy discussion",
+        "href": "https://www.reddit.com/r/REPOgame/comments/1vm257s/question_as_a_noob/"
+      }
+    ]
+  },
+  {
+    "id": "P1-13",
+    "slug": "apex-predator-duck-create-space-before-you-counter",
+    "tag": "ENEMIES",
+    "title": "Apex Predator (Duck): create space before you counter",
+    "description": "The Duck dossier: recognize the threat, protect the carrier, and avoid a bad chase.",
+    "lead": "Treat the Apex Predator as a route problem first. Call its location, move the valuable out of its line, and only use a dedicated counter when the team has a clear exit.",
+    "steps": [
+      "Call “Duck” with the room and direction as soon as the team recognizes it.",
+      "Stop carrying through the threat area and put the valuable somewhere recoverable.",
+      "Split the team: one player watches the route while the carrier rotates toward the cart or extraction.",
+      "Use the item or environment counter only after the escape route is clear.",
+      "Capture the exact trigger, chase behavior, player count, and patch before adding numbers."
+    ],
+    "mistakes": "Chasing it with the valuable still in hand, stacking the team in one doorway, and publishing a single counter as if it works in every map.",
+    "versionNote": "Monster behavior and counter reliability are version-sensitive; this page is a source-backed test plan until current-client footage is attached.",
+    "sources": [
+      {
+        "label": "Monster guide",
+        "href": "https://www.switchbladegaming.com/co-op-games/repo/all-monsters-guide-2026/"
+      },
+      {
+        "label": "Beginner strategy guide",
+        "href": "https://vortexgaming.io/en/postdetail/705296"
+      }
+    ]
+  },
+  {
+    "id": "P1-14",
+    "slug": "trudge-route-around-the-pull",
+    "tag": "ENEMIES",
+    "title": "Trudge: route around the pull",
+    "description": "Keep large valuables and the return path out of the danger zone.",
+    "lead": "Trudge turns a narrow route into a physics problem. Give the carrier an alternate line, stop feeding heavy items into the pull, and use control only when it creates a real window.",
+    "steps": [
+      "Call Trudge and identify the open side of the room or hallway.",
+      "Drop or park the valuable before the pull can move it into a wall or pit.",
+      "Move the scout first and make a visible return route for the carrier.",
+      "Use a control tool or a strong counter only when the team can finish the carry during its duration.",
+      "Test heavy-object behavior separately from player behavior; the patch changed how Trudge handles larger valuables."
+    ],
+    "mistakes": "Trying to out-pull it while holding a fragile item, fighting in a doorway, and forgetting the cart is part of the escape route.",
+    "versionNote": "Official v0.4.4 notes changed Trudge’s suck behavior, so older footage is useful for ideas but not for exact timing.",
+    "sources": [
+      {
+        "label": "Official v0.4.4 notes",
+        "href": "https://store.steampowered.com/news/app/3241660/view/697639476746256977?l=english"
+      },
+      {
+        "label": "Monster guide",
+        "href": "https://www.switchbladegaming.com/co-op-games/repo/all-monsters-guide-2026/"
+      }
+    ]
+  },
+  {
+    "id": "P1-15",
+    "slug": "tick-do-not-carry-blindly",
+    "tag": "ENEMIES",
+    "title": "Tick: do not carry blindly",
+    "description": "A small threat becomes dangerous when the carrier loses control of the item.",
+    "lead": "Ticks punish the player who keeps holding loot without checking the threat. Put the object down, create space, and make the next action deliberate.",
+    "steps": [
+      "Call the Tick and stop moving the valuable while the team identifies who is being pressured.",
+      "Put the item down in a safe position instead of trying to sprint-carry through contact.",
+      "Use a wall, cart, or open room to separate the carrier from the threat.",
+      "Resume the carry only after the team has a clear route and the item is stable.",
+      "Record whether the current build changes Tick behavior while holding, dropping, or using a counter."
+    ],
+    "mistakes": "Running while holding the item, turning into a wall, and assuming a small enemy can be ignored because it is not a boss.",
+    "versionNote": "Community guides disagree on some attack conditions and damage details; publish the handling rule first and test the exact trigger.",
+    "sources": [
+      {
+        "label": "Level strategy guide",
+        "href": "https://vortexgaming.io/en/postdetail/705296"
+      },
+      {
+        "label": "Monster guide",
+        "href": "https://www.switchbladegaming.com/co-op-games/repo/all-monsters-guide-2026/"
+      }
+    ]
+  },
+  {
+    "id": "P1-16",
+    "slug": "duo-strategy-split-focus-not-the-run",
+    "tag": "CO-OP",
+    "title": "Duo strategy: split focus, not the run",
+    "description": "A two-player plan for scouting, hauling, callouts, and extraction.",
+    "lead": "In a duo, one player should not be both blind scout and carrier. Give each person a job, use short callouts, and retreat before one mistake becomes a lost run.",
+    "steps": [
+      "Before leaving the truck, choose a carrier and a scout; swap only at a safe handoff point.",
+      "Use the scout to clear the next room and call the return route, not to wander out of voice range.",
+      "Keep the cart near the current work area so the carrier is not making empty trips.",
+      "At an enemy alert, the scout calls the route while the carrier drops the item and follows.",
+      "For extraction, the carrier finishes the point while the scout watches the return and truck."
+    ],
+    "mistakes": "Both players carrying at once, losing proximity voice, and waiting until quota is barely met to plan the return.",
+    "versionNote": "Role recommendations are strategy guidance, not game rules; map layout, monster density, and player skill change the best split.",
+    "sources": [
+      {
+        "label": "Co-op roles guide",
+        "href": "https://www.switchbladegaming.com/co-op-games/repo/co-op-guide-3/"
+      },
+      {
+        "label": "Maps and roles",
+        "href": "https://www.switchbladegaming.com/co-op-games/repo/maps-roles-guide/"
+      }
+    ]
+  },
+  {
+    "id": "P1-17",
+    "slug": "team-roles-for-3-6-players",
+    "tag": "CO-OP",
+    "title": "Team roles for 3–6 players",
+    "description": "Assign scout, hauler, distractor, extractor, and recovery jobs before danger appears.",
+    "lead": "More players only help when the team has distinct jobs. Keep the carrier protected, keep one person responsible for the return path, and avoid six people making the same call.",
+    "steps": [
+      "For three players, use one scout, one hauler, and one flexible support who can carry or watch the rear.",
+      "For four players, add a dedicated extractor or distractor so the carrier can stay focused.",
+      "For five or six players, keep two carriers but preserve one scout and one recovery/defense role.",
+      "Use a fixed callout format: room, item or enemy, action.",
+      "Before activating extraction, name who stays on the route and who returns to the truck."
+    ],
+    "mistakes": "Everyone looting, nobody owning the return route, and letting proximity voice break the team into isolated pairs.",
+    "versionNote": "The role matrix comes from community strategy guides and should be adjusted for the current map, player skill, and patch.",
+    "sources": [
+      {
+        "label": "Co-op guide",
+        "href": "https://www.switchbladegaming.com/co-op-games/repo/co-op-guide-3/"
+      },
+      {
+        "label": "Maps and roles",
+        "href": "https://www.switchbladegaming.com/co-op-games/repo/maps-roles-guide/"
+      }
+    ]
+  },
+  {
+    "id": "P1-18",
+    "slug": "common-beginner-mistakes-in-r-e-p-o",
+    "tag": "BEGINNER",
+    "title": "Common beginner mistakes in R.E.P.O.",
+    "description": "Twelve repeatable failure patterns and the correction for each.",
+    "lead": "Most early wipes are not caused by a missing secret. They come from rushing fragile items, fighting every monster, skipping the shop, and losing the return plan.",
+    "steps": [
+      "Walk by default while carrying; sprint only for a clear escape.",
+      "Use the cart early and keep fragile items out of repeated hand-to-wall collisions.",
+      "Do not fight every monster. Hide, route around, or wait when the threat has no clean counter.",
+      "Buy the upgrade or tool that fixes the last failure instead of saving by habit.",
+      "End each run from a safe truck or shop state and record the one mistake to remove next time."
+    ],
+    "mistakes": "Rushing fragile items, using movement upgrades without a landing plan, ignoring the radar/map, and treating every room as loot that must be taken.",
+    "versionNote": "Some advice in community beginner lists reflects current snapshots; keep hard numbers and save behavior version-tagged.",
+    "sources": [
+      {
+        "label": "Beginner tips",
+        "href": "https://www.repo-game.org/Puolity%C3%B6/repogame-tips"
+      },
+      {
+        "label": "Fatal mistakes",
+        "href": "https://vortexgaming.io/en/postdetail/1255197"
+      }
+    ]
+  },
+  {
+    "id": "P1-19",
+    "slug": "levels-and-objectives-what-changes-between-runs",
+    "tag": "LEVELS",
+    "title": "Levels and objectives: what changes between runs",
+    "description": "Plan around map identity, quota pressure, and the next difficulty spike.",
+    "lead": "Do not memorize one route and call it a plan. Track the map’s structural character, the extraction layout, the valuables you can safely move, and the point where monster pressure changes.",
+    "steps": [
+      "Identify the map and its stable shape: tight vertical rooms, open sightlines, holes, or long returns.",
+      "Mark extraction points and the safe staging area before spending time on low-value rooms.",
+      "Use the first rooms to learn the current run’s loot density and threat pressure.",
+      "Treat later levels as an efficiency check: fewer empty trips, safer carry paths, and clearer roles.",
+      "Record the objective, route, and failure point by level so the hub can link to a focused map page."
+    ],
+    "mistakes": "Assuming procedural layouts are fully memorized, judging a map only by loot value, and entering a difficulty spike with the same team plan.",
+    "versionNote": "Map layouts vary, while each map’s broad structure is more stable. Publish patterns and route principles, not invented fixed coordinates.",
+    "sources": [
+      {
+        "label": "Beginner levels 1–6",
+        "href": "https://vortexgaming.io/en/postdetail/705296"
+      },
+      {
+        "label": "Maps and roles",
+        "href": "https://www.switchbladegaming.com/co-op-games/repo/maps-roles-guide/"
+      }
+    ]
+  },
+  {
+    "id": "P1-20",
+    "slug": "headman-manor-route-risks-and-extraction-plan",
+    "tag": "LEVELS",
+    "title": "Headman Manor: route, risks, and extraction plan",
+    "description": "A focused map guide for a vertical, cluttered, high-collision layout.",
+    "lead": "Headman Manor rewards a cautious staging plan. Clear a route through the vertical rooms, use the cart to protect fragile value, and leave noisy or awkward valuables until the return path is known.",
+    "steps": [
+      "Find the main stair and the safest cart staging point before chasing high-value rooms.",
+      "Clear doorways and corners for large objects before attempting a heavy carry.",
+      "Treat noisy valuables as an alert decision: call the room, prepare the retreat, then pick up.",
+      "Use vertical shortcuts only when the landing and recovery route are visible.",
+      "Finish the safest extraction points first and reserve the return route for the crew, not extra loot."
+    ],
+    "mistakes": "Trying to move a piano or clock through a blind corner, carrying without a cart staging point, and assuming a high room is worth the fall risk.",
+    "versionNote": "Map-specific routes need current screenshots or footage. This page uses community map descriptions and is a route framework, not a fixed seed.",
+    "sources": [
+      {
+        "label": "Headman Manor guide",
+        "href": "https://gamefactsguide.com/en/gaming/repo/guides/maps-guide/headman-manor"
+      },
+      {
+        "label": "Map guide",
+        "href": "https://www.switchbladegaming.com/co-op-games/repo/maps-roles-guide/"
+      }
+    ]
+  },
+  {
+    "id": "P1-21",
+    "slug": "valuable-routes-and-safe-carry-plans",
+    "tag": "ROUTES",
+    "title": "Valuable routes and safe carry plans",
+    "description": "Plan the trip around staging, handoffs, and return safety instead of item value alone.",
+    "lead": "A valuable route is a sequence of safe handoffs: room to cart, cart to extraction, extraction to truck. The best item is the one the crew can deliver without turning the return into a second mission.",
+    "steps": [
+      "Choose a staging point near the current rooms and outside the most likely enemy route.",
+      "Prioritize valuables by value, fragility, distance, and the number of hands needed.",
+      "Move fragile items one at a time and use a callout before every doorway or corner.",
+      "Keep the return route clear; never stack the cart where it blocks the only escape.",
+      "Once quota is met, stop adding route length and convert the safe staging area into a return plan."
+    ],
+    "mistakes": "Ranking loot only by price, carrying several fragile items at once, and leaving the cart behind while the team explores deeper.",
+    "versionNote": "Exact route maps require a seed, screenshot, or current-client recording. The article publishes the route method and marks map-specific claims for verification.",
+    "sources": [
+      {
+        "label": "Beginner tips",
+        "href": "https://www.repo-game.org/Puolity%C3%B6/repogame-tips"
+      },
+      {
+        "label": "Physics beginner guide",
+        "href": "https://steamcommunity.com/sharedfiles/filedetails/?id=3597880885"
+      }
+    ]
+  },
+  {
+    "id": "P1-22",
+    "slug": "carrying-and-physics-tips",
+    "tag": "MECHANICS",
+    "title": "Carrying and physics tips",
+    "description": "The small movement choices that preserve item value and team time.",
+    "lead": "R.E.P.O. turns carrying into a route mechanic. Hold the item close, rotate before tight turns, walk through fragile sections, and use a cart or tool when the object is larger than the hallway.",
+    "steps": [
+      "Practice grab, rotate, pull, and gentle drop on a low-value object before handling expensive loot.",
+      "Keep heavy or fragile items close to the body and slow down before a doorway or corner.",
+      "Use the mouse wheel or equivalent rotation control to set the object flat before placing it.",
+      "Load fragile items into the cart early and use a second player for heavy or awkward objects.",
+      "Record collision, damage, and vehicle interactions on the current patch before claiming an exact physics rule."
+    ],
+    "mistakes": "Running while carrying, throwing fragile loot for speed, dropping on an edge, and assuming an item is safe because it is inside the cart but sticking out.",
+    "versionNote": "Physics interactions are unusually version-sensitive; official patches have changed carts, vehicles, staffs, and item handling.",
+    "sources": [
+      {
+        "label": "Controls and carrying",
+        "href": "https://repogameguide.com/guides/repo-game-controls-complete-keybinds-guide"
+      },
+      {
+        "label": "Official announcements",
+        "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
+      }
+    ]
+  },
+  {
+    "id": "P1-23",
+    "slug": "health-stamina-and-range-when-each-matters",
+    "tag": "UPGRADES",
+    "title": "Health, Stamina, and Range: when each matters",
+    "description": "Choose the stat that changes your route instead of buying a generic comfort pick.",
+    "lead": "Health buys forgiveness, Stamina buys actions, and Range buys safer interaction distance. Compare the failure each stat removes against the cost and the role that receives it.",
+    "steps": [
+      "Choose Health when one mistake or one hit repeatedly ends the run.",
+      "Choose Stamina when the carrier or scout loses time to repeated sprint, climb, or movement downtime.",
+      "Choose Range when reaching from a safer angle changes how you collect or control objects.",
+      "Give the stat to the role that uses it most: carrier, scout, or recovery player.",
+      "Run one comparable route after the purchase and record time, damage, and delivered value."
+    ],
+    "mistakes": "Calling one stat universally best, comparing old prices, and buying Range without a route where distance actually matters.",
+    "versionNote": "Effect summaries are stable strategy guidance; exact increments and price ranges must be retested on the current build.",
+    "sources": [
+      {
+        "label": "Upgrade priority guide",
+        "href": "https://www.repo-game.org/en/repogame-upgrades"
+      },
+      {
+        "label": "Community upgrade guide",
+        "href": "https://steamcommunity.com/sharedfiles/filedetails/?id=3482961802&l=english"
+      }
+    ]
+  },
+  {
+    "id": "P2-24",
+    "slug": "r-e-p-o-patch-notes-explained-for-players",
+    "tag": "PATCH NOTES",
+    "title": "R.E.P.O. patch notes explained for players",
+    "description": "A player-facing reading order for official changes, not a copied changelog.",
+    "lead": "Patch notes matter when they change a route, a counter, a shop choice, or a failure condition. Read official changes first, then update the affected guide and retest only the behaviors that changed.",
+    "steps": [
+      "Start with the official announcement and record the exact version and date.",
+      "Group each change by player impact: map, shop, item, monster, revive, physics, save, or UI.",
+      "Link the change to every guide it can invalidate instead of leaving stale advice in place.",
+      "Retest the smallest behavior that proves the change: one item, one enemy, one extraction, or one save.",
+      "Add an update note to the affected page and preserve the old result as historical context only."
+    ],
+    "mistakes": "Copying a full changelog without explaining the player consequence, mixing experimental and live notes, and leaving old prices or timings in evergreen pages.",
+    "versionNote": "Only official announcements should anchor patch facts; third-party summaries are discovery sources, not the final authority.",
+    "sources": [
+      {
+        "label": "Official Steam announcements",
+        "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
+      },
+      {
+        "label": "Official v0.4.4",
+        "href": "https://store.steampowered.com/news/app/3241660/view/697639476746256977?l=english"
+      }
+    ]
+  },
+  {
+    "id": "P2-25",
+    "slug": "current-version-changes-what-players-should-retest",
+    "tag": "PATCH NOTES",
+    "title": "Current-version changes: what players should retest",
+    "description": "A focused checklist for monsters, items, upgrades, and recovery after recent patches.",
+    "lead": "The current live notes change more than cosmetics: melee handling scales with Strength, revive adds a short invincibility window, and several staffs, vehicles, and monsters were adjusted. Retest the routes that depend on those mechanics.",
+    "steps": [
+      "Update the page header with the current patch before comparing any old result.",
+      "Retest melee handling at two Strength values and note feel, reach, and enemy response.",
+      "Retest revive safety, especially the first second after a teammate returns.",
+      "Retest staff battery, duration, vehicle interactions, and Trudge heavy-object behavior.",
+      "Mark every result as verified, community-reported, or pending instead of merging them into one claim."
+    ],
+    "mistakes": "Using v0.4.0 as if it were current, copying a community timing without its patch, and treating a bug fix as a new feature.",
+    "versionNote": "The site’s original local baseline is v0.4.0, while official v0.4.1–v0.4.4 notes show later changes. Keep both labels visible.",
+    "sources": [
+      {
+        "label": "Official v0.4.4",
+        "href": "https://store.steampowered.com/news/app/3241660/view/697639476746256977?l=english"
+      },
+      {
+        "label": "Official v0.4.3",
+        "href": "https://store.steampowered.com/news/app/3241660/view/653728111564687019"
+      }
+    ]
+  },
+  {
+    "id": "P2-26",
+    "slug": "r-e-p-o-upgrade-planner",
+    "tag": "TOOLS",
+    "title": "R.E.P.O. upgrade planner",
+    "description": "A prototype decision tool built around role, failure cause, and version uncertainty.",
+    "lead": "The planner should recommend a next test, not pretend to know a universal build. Enter the player count, role, last failure, and available shop options, then return a reason and a verification note.",
+    "steps": [
+      "Input the crew size and the role receiving the purchase.",
+      "Choose the failure: carrying, stamina, damage, reach, control, or fragile value.",
+      "Show only recommendations supported by the current source set and label unknown prices.",
+      "Return one primary pick, one fallback, and the test that would confirm the choice.",
+      "Save the observed result with the patch so the recommendation can evolve."
+    ],
+    "mistakes": "Turning a community tier list into an automatic answer, hiding uncertainty, and recommending tools unavailable to the current player count.",
+    "versionNote": "This prototype is a framework until enough current-client observations exist to support numeric rules.",
+    "sources": [
+      {
+        "label": "Upgrade guide",
+        "href": "https://www.repo-game.org/en/repogame-upgrades"
+      },
+      {
+        "label": "Upgrade discussion",
+        "href": "https://www.reddit.com/r/REPOgame/comments/1uph5dq/caps_for_each_upgrade/"
+      }
+    ]
+  },
+  {
+    "id": "P2-27",
+    "slug": "monster-counter-cheat-sheet",
+    "tag": "TOOLS",
+    "title": "Monster counter cheat sheet",
+    "description": "A one-screen first-response table that links back to evidence pages.",
+    "lead": "A useful cheat sheet answers the first ten seconds: identify the threat, stop carrying, choose cover or space, and decide whether to wait, route, or counter.",
+    "steps": [
+      "Build one row per confirmed monster with trigger, first callout, safe response, and “do not” rule.",
+      "Keep exact damage, timing, and tier values in the linked dossier rather than the quick sheet.",
+      "Add a patch column and a confidence state: verified, community-sourced, or retest needed.",
+      "Link each row to a focused page with evidence and team-role notes.",
+      "Review the sheet whenever official notes change a monster or item counter."
+    ],
+    "mistakes": "Overloading the quick sheet with lore, presenting an old counter as universal, and omitting what the carrier should do with the item.",
+    "versionNote": "This is a publishable structure; current-client footage is still required before marking every row verified.",
+    "sources": [
+      {
+        "label": "Monster guide",
+        "href": "https://www.switchbladegaming.com/co-op-games/repo/all-monsters-guide-2026/"
+      },
+      {
+        "label": "Official announcements",
+        "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
+      }
+    ]
+  },
+  {
+    "id": "P2-28",
+    "slug": "r-e-p-o-faq-quota-upgrades-monsters-and-multiplayer",
+    "tag": "FAQ",
+    "title": "R.E.P.O. FAQ: quota, upgrades, monsters, and multiplayer",
+    "description": "Short answers for recurring questions, each pointing to a deeper guide.",
+    "lead": "The FAQ should answer the immediate question in one or two sentences, then link to the evidence page. Keep unknowns visible instead of filling the page with guessed numbers.",
+    "steps": [
+      "Collect questions from real search queries, comments, and player discussions.",
+      "Write the direct answer first: what to do, when to leave, or what to test.",
+      "Add one caveat when the answer changes by patch, player count, or map.",
+      "Link to the relevant quota, extraction, upgrade, enemy, or team page.",
+      "Review the FAQ after each patch so short answers do not become stale."
+    ],
+    "mistakes": "Answering a different question, hiding a version caveat below the fold, and using a single player’s anecdote as a universal mechanic.",
+    "versionNote": "The current FAQ is a structure and source-backed draft; Search Console data should replace assumptions after publication.",
+    "sources": [
+      {
+        "label": "Community guide hub",
+        "href": "https://www.repo-game.org/zh/repogame-wiki"
+      },
+      {
+        "label": "Co-op guide FAQ",
+        "href": "https://www.switchbladegaming.com/co-op-games/repo/co-op-guide-3/"
+      }
+    ]
+  },
+  {
+    "id": "P2-29",
+    "slug": "what-is-r-e-p-o-story-setting-and-what-we-know",
+    "tag": "LORE",
+    "title": "What is R.E.P.O.? Story, setting, and what we know",
+    "description": "Separate confirmed world-building from community theory.",
+    "lead": "R.E.P.O. uses environmental storytelling: Semibots retrieve value for the Taxman in abandoned human spaces. The guide should label what the game establishes, what official developers have hinted, and what remains fan theory.",
+    "steps": [
+      "Start with in-game terms, locations, messages, and official developer statements.",
+      "Describe the Semibots, Taxman, abandoned spaces, and monsters as separate evidence groups.",
+      "Label the current story state as Early Access and avoid inventing an ending.",
+      "Put community theories in their own section with clear uncertainty language.",
+      "Link lore entries back to the level, enemy, and patch pages that contain the evidence."
+    ],
+    "mistakes": "Presenting fan theory as canon, copying another guide’s prose, and treating an early-access location list as a finished timeline.",
+    "versionNote": "The official Q&A says the larger story is intended to become clearer toward 1.0; mark later interpretation as provisional.",
+    "sources": [
+      {
+        "label": "Lore explainer",
+        "href": "https://www.repo-game.org/en/repogame-lore"
+      },
+      {
+        "label": "Official 2026 Q&A",
+        "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
+      }
+    ]
+  },
+  {
+    "id": "P2-30",
+    "slug": "r-e-p-o-complete-guide-hub",
+    "tag": "HUB",
+    "title": "R.E.P.O. complete guide hub",
+    "description": "A navigable home for every published guide, tool, and patch note.",
+    "lead": "The hub is the product’s map: start with first run and extraction, then route readers into upgrades, teamplay, enemies, levels, tools, FAQ, lore, and the latest patch. Every card needs a working destination and a visible version state.",
+    "steps": [
+      "Group pages by player intent: start, survive, carry, fight, plan, and understand the world.",
+      "Place the current-version notice and latest patch links near the top.",
+      "Give each guide one primary category and one clear next link.",
+      "Keep tools and quick references close to the deep pages that explain their evidence.",
+      "Check every card and source URL before a release; remove or label anything that is not ready."
+    ],
+    "mistakes": "Building a list with no route through it, hiding the newest update, and creating cards that lead to unfinished or dead pages.",
+    "versionNote": "The hub can publish immediately as a structured index, but it should expand only as each P1/P2 page gets verified.",
+    "sources": [
+      {
+        "label": "Community guide hub",
+        "href": "https://www.repo-game.org/zh/repogame-wiki"
+      },
+      {
+        "label": "Official announcements",
+        "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
+      }
+    ]
+  }
+]

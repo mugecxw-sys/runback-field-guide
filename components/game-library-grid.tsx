@@ -1,5 +1,60 @@
 import { gameLibraries } from '@/lib/game-catalog';
-export function GameLibraryGrid({query=''}:{query?:string}){
- const games=gameLibraries.filter(g=>(g.title+' '+g.description+' '+g.categories.join(' ')).toLowerCase().includes(query.toLowerCase()));
- return <section id="game-library" className="mt-9 scroll-mt-24"><div className="flex flex-wrap items-end justify-between gap-3"><div><p className="text-xs uppercase tracking-widest text-[#ff9a7a]">Pick your next run</p><h2 className="mt-2 text-2xl font-semibold text-white">Explore the game library</h2></div><p className="text-sm text-[#8f9aa1]">9 games · 80 new step-by-step guides</p></div><div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">{games.map(g=><a key={g.slug} href={g.slug==='repo'?'#repo-guides':'/games/'+g.slug} className="group flex flex-col rounded-xl border border-white/10 bg-[#192126] p-5 transition hover:-translate-y-0.5 hover:border-[#ff8662]/60"><p className="text-xs text-[#9fd7ba]">{g.type}</p><h3 className="mt-3 text-xl font-semibold text-white">{g.title}</h3><p className="mt-3 text-sm leading-6 text-[#aeb7bc]">{g.description}</p><div className="mt-4 flex flex-wrap gap-2">{g.categories.slice(0,3).map(c=><span key={c} className="rounded-full border border-white/10 px-2 py-1 text-xs text-[#9faab0]">{c}</span>)}</div><span className="mt-auto pt-5 text-sm font-semibold text-[#ff9a7a]">{g.guideCount} guides · Open library →</span></a>)}</div>{!games.length&&<p className="py-8 text-[#aeb7bc]">No games match this search. Try a game name or clear the search.</p>}</section>;
+export function GameLibraryGrid({ query = '' }: { query?: string }) {
+  const games = gameLibraries.filter((g) =>
+    (g.title + ' ' + g.description + ' ' + g.categories.join(' '))
+      .toLowerCase()
+      .includes(query.toLowerCase()),
+  );
+  return (
+    <section id="game-library" className="mt-9 scroll-mt-24">
+      <div className="flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <p className="text-xs uppercase tracking-widest text-[#ff9a7a]">
+            Pick your next run
+          </p>
+          <h2 className="mt-2 text-2xl font-semibold text-white">
+            Explore the game library
+          </h2>
+        </div>
+        <p className="text-sm text-[#8f9aa1]">
+          {gameLibraries.length} games ·{' '}
+          {gameLibraries.reduce((total, game) => total + game.guideCount, 0)}{' '}
+          guides
+        </p>
+      </div>
+      <div className="mt-5 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        {games.map((g) => (
+          <a
+            key={g.slug}
+            href={'/games/' + g.slug + '/'}
+            className="group flex flex-col rounded-xl border border-white/10 bg-[#192126] p-5 transition hover:-translate-y-0.5 hover:border-[#ff8662]/60"
+          >
+            <p className="text-xs text-[#9fd7ba]">{g.type}</p>
+            <h3 className="mt-3 text-xl font-semibold text-white">{g.title}</h3>
+            <p className="mt-3 text-sm leading-6 text-[#aeb7bc]">
+              {g.description}
+            </p>
+            <div className="mt-4 flex flex-wrap gap-2">
+              {g.categories.slice(0, 3).map((c) => (
+                <span
+                  key={c}
+                  className="rounded-full border border-white/10 px-2 py-1 text-xs text-[#9faab0]"
+                >
+                  {c}
+                </span>
+              ))}
+            </div>
+            <span className="mt-auto pt-5 text-sm font-semibold text-[#ff9a7a]">
+              {g.guideCount} guides · Open library →
+            </span>
+          </a>
+        ))}
+      </div>
+      {!games.length && (
+        <p className="py-8 text-[#aeb7bc]">
+          No games match this search. Try a game name or clear the search.
+        </p>
+      )}
+    </section>
+  );
 }
