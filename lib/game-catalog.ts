@@ -12,6 +12,17 @@ export type GameLibrary = {
 
 export const gameLibraries: GameLibrary[] = [
   {
+    slug: 'brotato',
+    title: 'Brotato',
+    type: 'Arena survival roguelite',
+    version: 'Source-backed guides · September 2026',
+    description: 'Build around characters, weapons, Luck, enemy pressure, and Endless mode without relying on unsupported universal rankings.',
+    status: 'LIVE',
+    guideCount: 5,
+    categories: ['Builds', 'Characters', 'Weapons', 'Luck', 'Enemies', 'Endless'],
+    sourceHref: 'https://store.steampowered.com/app/1942280/Brotato/',
+  },
+  {
     slug: 'repo',
     title: 'R.E.P.O.',
     type: 'Extraction horror roguelite',
@@ -95,7 +106,7 @@ export const gameLibraries: GameLibrary[] = [
     version: 'Source-backed guides · September 2026',
     description: 'Use the grid, Tablets, Artifacts, and weapon branches to make each run readable and repeatable.',
     status: 'LIVE',
-    guideCount: 10,
+    guideCount: 11,
     categories: ['Start', 'Grid', 'Tablets', 'Artifacts', 'Weapons', 'Bosses'],
     sourceHref: 'https://sephiriagame.com/guides/beginner-guide/',
   },
@@ -114,3 +125,4 @@ export const gameLibraries: GameLibrary[] = [
 
 export const additionalGames = gameLibraries.filter(game => game.slug !== 'repo');
 export const additionalGuideCount = additionalGames.reduce((total, game) => total + game.guideCount, 0);
+
