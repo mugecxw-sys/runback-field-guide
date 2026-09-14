@@ -1,5 +1,96 @@
 [
   {
+    "slug": "brotato",
+    "title": "Brotato",
+    "articles": [
+      {
+        "id": "PUBLISH-1",
+        "slug": "builds",
+        "title": "Brotato Builds: Character and Weapon Build Paths",
+        "category": "Builds",
+        "answer": "Use this hub to choose a character and a weapon direction, then verify the route against your current patch and difficulty. There is no single build proven best for every character, mode, or unlock pool.",
+        "steps": [
+          "Start with the character you want to play, then choose a weapon or playstyle direction that matches its confirmed mechanics.",
+          "Treat a build as a set of choices that work together; Brotato supports carrying up to six weapons in a run.",
+          "Use weapon direction to narrow choices, not as a promise that one weapon always wins across characters, modes, or patches.",
+          "Check the game version, platform, DLC, difficulty, and current character tooltip before copying a build.",
+          "Treat old screenshots and community setups as leads to test, not proof that a route is current."
+        ],
+        "mistakes": "Copying a universal tier list without checking the character, mode, DLC, platform, or patch.",
+        "versionNote": "This draft is limited to the PC Steam scope recorded upstream. Where the audited evidence does not confirm a current number, threshold, ranking, or UI label, this draft leaves it out.",
+        "sources": [{"href": "https://store.steampowered.com/app/1942280/Brotato/", "label": "Steam — Brotato"}]
+      },
+      {
+        "id": "PUBLISH-2",
+        "slug": "wiki",
+        "title": "Brotato Wiki: Characters, Weapons, Items, and Unlocks",
+        "category": "Wiki",
+        "answer": "Use this page as a route map for characters, weapons, items, enemies, mechanics, and progress. It is a navigation hub, not a claim that every current stat or UI label has been independently verified.",
+        "steps": [
+          "Split Brotato information by the player task: selecting a character, understanding a stat, checking an enemy, or following an unlock requirement.",
+          "Use the Builds hub for character and weapon-path navigation.",
+          "Check version and DLC scope before relying on a detailed weapon, item, enemy, or unlock reference.",
+          "Use the Luck guide for the verified scope of Luck and the Enemies guide for situation-based threat reading.",
+          "Treat the current PC Steam version and in-game presentation as the authority when a number or label is not verified."
+        ],
+        "mistakes": "Treating a reference page as an official database or assuming it exactly matches every platform, DLC, or patch.",
+        "versionNote": "This draft is limited to the PC Steam scope recorded upstream. Unverified current numbers, conditions, and in-game names are intentionally omitted.",
+        "sources": [{"href": "https://store.steampowered.com/app/1942280/Brotato/", "label": "Steam — Brotato"}]
+      },
+      {
+        "id": "PUBLISH-3",
+        "slug": "luck",
+        "title": "Brotato Luck Explained: What Luck Affects",
+        "category": "Mechanics",
+        "answer": "Luck can affect consumables, loot crates, shop items, and upgrade rarity. It is not a universal damage stat, and this guide does not claim an unverified exact breakpoint or probability.",
+        "steps": [
+          "Read Luck as a reward and availability stat: it can influence consumables, loot crates, shop inventory, and upgrade rarity.",
+          "Check whether the current character, item, or weapon has a clear reason to benefit from Luck.",
+          "Compare Luck against the defensive, offensive, and economy needs already present in the run.",
+          "Use a good crate or shop as an opportunity, not as proof of a fixed probability or formula.",
+          "Wait for version-matched evidence or in-game verification before relying on exact rarity curves, thresholds, or diminishing returns."
+        ],
+        "mistakes": "Turning a few lucky crates or a community preference into a universal purchase rule or exact probability claim.",
+        "versionNote": "This draft is limited to the PC Steam scope recorded upstream. Exact probability claims are omitted unless supported by version-matched evidence.",
+        "sources": [{"href": "https://store.steampowered.com/app/1942280/Brotato/", "label": "Steam — Brotato"}]
+      },
+      {
+        "id": "PUBLISH-4",
+        "slug": "enemies",
+        "title": "Brotato Enemies Guide: Threats and How to Respond",
+        "category": "Enemies",
+        "answer": "Read Brotato enemies by what they do in your current situation, then adjust movement, damage coverage, and survival tools. Do not rely on a stat number without its difficulty, mode, version, and DLC context.",
+        "steps": [
+          "Confirm difficulty and mode before comparing enemy health, damage, speed, or type.",
+          "Identify the behavior creating the immediate problem: closing space, pressuring a weak area, or forcing a movement break.",
+          "Adjust priorities to the build in front of you, especially when area coverage, mobility, or defenses are limited.",
+          "Keep difficulty and Endless scope attached to any future table, screenshot, or strategy claim.",
+          "Leave enemy-by-enemy values, first-wave appearances, and DLC-map differences out until they are verified for the target scope."
+        ],
+        "mistakes": "Calling one enemy type universally most dangerous without stating the difficulty, mode, build, version, and DLC context.",
+        "versionNote": "This draft is limited to the PC Steam scope recorded upstream. Current enemy-by-enemy values and appearances are omitted where unverified.",
+        "sources": [{"href": "https://store.steampowered.com/app/1942280/Brotato/", "label": "Steam — Brotato"}]
+      },
+      {
+        "id": "PUBLISH-5",
+        "slug": "endless",
+        "title": "Brotato Endless Mode Guide: How Endless Works",
+        "category": "Modes",
+        "answer": "Endless continues the run beyond the standard Wave 20 endpoint. It can be enabled when choosing Danger or before the Wave 20 boss, then continues until the run ends.",
+        "steps": [
+          "Use the current in-game menu as the authority for the exact Endless presentation on your version.",
+          "Understand the core scope change: the run continues past Wave 20 rather than ending there.",
+          "Plan for durable coverage, survival, and options that remain useful as the run extends.",
+          "Account for character, difficulty, current patch, item pool, and player execution when evaluating a route.",
+          "Treat community setups as test candidates, not proof of the best high-wave build."
+        ],
+        "mistakes": "Presenting unverified late-wave formulas, scaling thresholds, special-character exceptions, or a single best high-wave route as settled fact.",
+        "versionNote": "This draft is limited to the PC Steam scope recorded upstream. Exact late-wave formulas and current best routes require version-matched testing.",
+        "sources": [{"href": "https://store.steampowered.com/app/1942280/Brotato/", "label": "Steam — Brotato"}]
+      }
+    ]
+  },
+  {
     "slug": "cult-of-the-lamb",
     "title": "Cult of the Lamb",
     "articles": [
@@ -1690,6 +1781,23 @@
             "label": "sephiria.blog — secret rooms"
           }
         ]
+      },
+      {
+        "id": "PUBLISH-6",
+        "slug": "sephiria-wiki",
+        "title": "Sephiria Wiki: Beginner Systems and Game Guide",
+        "category": "Wiki",
+        "answer": "Sephiria is built around collecting and arranging Artifacts, then strengthening them with Tablets. Use this hub to understand the verified game scope without assuming an unverified tutorial order or UI label.",
+        "steps": [
+          "Use the hub as an entry point for Artifacts, Tablets, Talents, weapons, upgrades, enemies, bosses, chapters, and cooperative play.",
+          "Treat the published scope as system context, not as proof of where a specific enemy appears, how a boss works, or what a current run requires.",
+          "Remember that the official description lists six weapon types and more than 50 upgrades for each weapon, but this does not establish a current tier list or upgrade tree.",
+          "Recheck current UI wording, unlock timing, and the complete catalog in-game before relying on a detailed mechanic.",
+          "Use future weapon, Artifact, talent, boss, and chapter pages only after their current behavior and information have been manually recorded."
+        ],
+        "mistakes": "Inventing tutorial steps, unlock timing, UI labels, or best-build claims from a high-level game description.",
+        "versionNote": "Sephiria is actively updated. This draft uses the official game description retained upstream and leaves unverified current UI and progression details out.",
+        "sources": [{"href": "https://sephiriagame.com/guides/beginner-guide/", "label": "Sephiria — official beginner guide"}]
       }
     ]
   },
@@ -1928,3 +2036,4 @@
     ]
   }
 ]
+
