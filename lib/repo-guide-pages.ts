@@ -96,29 +96,25 @@ export const repoGuidePages: RepoGuidePage[] = [
     id: 'P0-3',
     slug: 'extraction-guide',
     tag: 'EXTRACTION',
-    title: 'How to extract in R.E.P.O. and return to the truck',
+    title: 'How to Extract in R.E.P.O.: What to Do After Reaching Quota',
     description:
-      'Finish R.E.P.O. extraction correctly: secure valuables, complete every required extraction point, regroup, and confirm the leave sequence.',
-    lead: 'Extraction is not complete when an item reaches the platform. Finish every required point, keep the route clear while the point resolves, then regroup at the truck before ending the run.',
+      'Reached quota in R.E.P.O.? Extraction starts automatically. Finish extraction, return to the truck, and leave—no separate extraction point or start button.',
+    lead: "Once you reach the required quota, Extraction starts automatically. You do not need to find a separate Extraction Point or press another button to start it. Wait for the extraction sequence to finish, return to the truck, then use the truck's leave control to finish the sequence.",
     steps: [
-      'Check the map early or ask one player to remember extraction points and truck direction.',
-      'Clear a route before placing large or fragile valuables.',
-      'Keep players out of the extraction area while it resolves and wait for its completion signal.',
-      'Confirm every required point is complete before starting the return.',
-      'Return as a group and follow the current client prompt to finish the run.',
+      'Reach the required quota.',
+      'Extraction starts automatically.',
+      'Wait for Extraction to complete.',
+      'Return to the truck.',
+      'Leave from the truck.',
     ],
     mistakes:
-      'Missing a required point, scraping large loot on the boundary, waiting in a dangerous platform area, and stranding a teammate during the return.',
+      'You do not need to search for another Extraction Point, manually activate Extraction, or press a separate extraction-start button after quota has been satisfied.',
     versionNote:
-      'Follow the current client prompt for leaving. Community explanations of edge cases can become stale after patches.',
+      'R.E.P.O. is an Early Access game, so UI and mechanics can change. This guide does not claim untested failure conditions, multiplayer-only differences, timer behavior, or exact input bindings.',
     sources: [
       {
-        label: 'Steam discussion: extraction-point confusion',
-        href: 'https://steamcommunity.com/app/3241660/discussions/0/595142635298030173/',
-      },
-      {
-        label: 'Official R.E.P.O. announcements',
-        href: 'https://steamcommunity.com/app/3241660/announcements/?l=english',
+        label: 'R.E.P.O. extraction after reaching quota and returning to the truck',
+        href: 'https://youtu.be/Fytce0ossj0',
       },
     ],
   },
