@@ -4,7 +4,7 @@ import { repoEnemies, type RepoEnemy } from '@/lib/repo-enemies';
 
 function Dossier({ enemy }: { enemy: RepoEnemy }) {
   return (
-    <div className="hidden group-open:block md:block">
+    <div className="hidden group-open:block md:!block">
       <img
         src={enemy.image}
         alt={enemy.name + ' reference'}
