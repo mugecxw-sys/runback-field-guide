@@ -108,7 +108,7 @@ function MarkdownBody() {
     }
     if (line.startsWith('| ')) {
       const rows: string[][] = [];
-      while (lines[index]?.startsWith('| ')) {
+      while (lines[index]?.startsWith('|')) {
         if (!/^\|[-| ]+\|$/.test(lines[index])) {
           rows.push(lines[index].split('|').slice(1, -1).map((cell) => cell.trim()));
         }
