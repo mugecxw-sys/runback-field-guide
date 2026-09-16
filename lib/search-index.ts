@@ -1,6 +1,6 @@
 import { articleLibraries, articlePublishedAt } from './game-articles';
 import { gameLibraries } from './game-catalog';
-import { repoGuidePages, guidePublishedAt } from './repo-guide-pages';
+import { repoGuidePages, guidePublishedAt, guideSortDate } from './repo-guide-pages';
 import { repoEnemies } from './repo-enemies';
 export const searchIndex = [
   ...gameLibraries.map((g) => ({
@@ -19,7 +19,7 @@ export const searchIndex = [
     href: '/guides/' + g.slug,
     summary: g.description,
     text: [g.lead, ...g.steps].join(' '),
-    date: guidePublishedAt,
+    date: guideSortDate(g),
   })),
   ...articleLibraries.flatMap((g) =>
     g.articles.map((a) => ({

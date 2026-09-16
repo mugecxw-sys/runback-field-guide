@@ -15,7 +15,13 @@ export type RepoGuidePage = {
   mistakes: string;
   versionNote: string;
   sources: GuideSource[];
+  publishedAt?: string;
+  updatedAt?: string;
 };
+
+export function guideSortDate(guide: RepoGuidePage) {
+  return guide.updatedAt ?? guide.publishedAt ?? guidePublishedAt;
+}
 
 export type RepoGuideSection = {
   id: string;
@@ -117,6 +123,8 @@ export const repoGuidePages: RepoGuidePage[] = [
         href: 'https://youtu.be/Fytce0ossj0',
       },
     ],
+    publishedAt: guidePublishedAt,
+    updatedAt: '2026-09-15T00:00:00.000Z',
   },
   {
     id: 'P0-4',

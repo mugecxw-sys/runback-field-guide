@@ -62,18 +62,17 @@ export default async function GuidePage({ params }: Props) {
     .map((id) => repoGuidePages.find((x) => x.id === id)!)
     .filter(Boolean)
     .map((r) => ({ href: '/guides/' + r.slug, title: r.title }));
+  const modified = g.updatedAt ?? (repoEnrichment[g.slug] || ['P2-24', 'P2-25'].includes(g.id)
+    ? '2026-09-10T00:00:00.000Z'
+    : undefined);
   return (
     <ArticleView
       article={{ ...g, answer: g.lead, lead: undefined }}
       game="R.E.P.O."
       hub="/games/repo"
       href={'/guides/' + g.slug}
-      date={g.id === 'CART' ? '2026-09-09T00:00:00.000Z' : guidePublishedAt}
-      modified={
-        repoEnrichment[g.slug] || ['P2-24', 'P2-25'].includes(g.id)
-          ? '2026-09-10T00:00:00.000Z'
-          : undefined
-      }
+      date={g.publishedAt ?? guidePublishedAt}
+      modified={modified}
       related={related}
       extra={repoEnrichment[g.slug] ?? []}
       articleType={repoArticleType(g.tag)}
