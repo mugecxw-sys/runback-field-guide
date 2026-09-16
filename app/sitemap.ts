@@ -1,10 +1,29 @@
 import type { MetadataRoute } from 'next';
-import { articleLibraries, articlePublishedAt, articleSortDate } from '@/lib/game-articles';
+import {
+  articleLibraries,
+  articleSortDate,
+  latestArticleDate,
+} from '@/lib/game-articles';
 import {
   guidePublishedAt,
   repoGuidePages,
   siteUrl,
+  guideSortDate,
 } from '@/lib/repo-guide-pages';
+
+const latestDate = (dates: string[], fallback: string) =>
+  dates.reduce((latest, date) => (date > latest ? date : latest), fallback);
+const repoLastModified = latestDate(
+  repoGuidePages.map(guideSortDate),
+  guidePublishedAt,
+);
+const siteLastModified = latestDate(
+  [
+    ...repoGuidePages.map(guideSortDate),
+    ...articleLibraries.flatMap((game) => game.articles.map(articleSortDate)),
+  ],
+  guidePublishedAt,
+);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -17,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...articleLibraries.flatMap((game) => [
       {
         url: `${siteUrl}/games/${game.slug}`,
-        lastModified: articlePublishedAt,
+        lastModified: latestArticleDate(game.articles),
         changeFrequency: 'monthly' as const,
         priority: 0.9,
       },
@@ -30,13 +49,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]),
     {
       url: siteUrl,
-      lastModified: guidePublishedAt,
+      lastModified: siteLastModified,
       changeFrequency: 'weekly',
       priority: 1,
     },
     {
       url: `${siteUrl}/games/repo`,
-      lastModified: guidePublishedAt,
+      lastModified: repoLastModified,
       changeFrequency: 'weekly',
       priority: 0.9,
     },
@@ -60,7 +79,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...repoGuidePages.map((guide) => ({
       url: `${siteUrl}/guides/${guide.slug}`,
-      lastModified: guide.updatedAt ?? guide.publishedAt ?? guidePublishedAt,
+      lastModified: guideSortDate(guide),
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     })),

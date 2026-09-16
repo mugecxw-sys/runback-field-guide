@@ -8,6 +8,7 @@
         "slug": "builds",
         "title": "Brotato Builds: Character and Weapon Build Paths",
         "category": "Builds",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Use this hub to choose a character and a weapon direction, then verify the route against your current patch and difficulty. There is no single build proven best for every character, mode, or unlock pool.",
         "steps": [
           "Start with the character you want to play, then choose a weapon or playstyle direction that matches its confirmed mechanics.",
@@ -25,6 +26,7 @@
         "slug": "wiki",
         "title": "Brotato Wiki: Characters, Weapons, Items, and Unlocks",
         "category": "Wiki",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Use this page as a route map for characters, weapons, items, enemies, mechanics, and progress. It is a navigation hub, not a claim that every current stat or UI label has been independently verified.",
         "steps": [
           "Split Brotato information by the player task: selecting a character, understanding a stat, checking an enemy, or following an unlock requirement.",
@@ -42,6 +44,7 @@
         "slug": "luck",
         "title": "Brotato Luck Explained: What Luck Affects",
         "category": "Mechanics",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Luck can affect consumables, loot crates, shop items, and upgrade rarity. It is not a universal damage stat, and this guide does not claim an unverified exact breakpoint or probability.",
         "steps": [
           "Read Luck as a reward and availability stat: it can influence consumables, loot crates, shop inventory, and upgrade rarity.",
@@ -59,6 +62,7 @@
         "slug": "enemies",
         "title": "Brotato Enemies Guide: Threats and How to Respond",
         "category": "Enemies",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Read Brotato enemies by what they do in your current situation, then adjust movement, damage coverage, and survival tools. Do not rely on a stat number without its difficulty, mode, version, and DLC context.",
         "steps": [
           "Confirm difficulty and mode before comparing enemy health, damage, speed, or type.",
@@ -76,6 +80,7 @@
         "slug": "endless",
         "title": "Brotato Endless Mode Guide: How Endless Works",
         "category": "Modes",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Endless continues the run beyond the standard Wave 20 endpoint. It can be enabled when choosing Danger or before the Wave 20 boss, then continues until the run ends.",
         "steps": [
           "Use the current in-game menu as the authority for the exact Endless presentation on your version.",
@@ -99,6 +104,7 @@
         "slug": "beginner-guide-your-first-sustainable-cult",
         "title": "Beginner guide: your first sustainable cult",
         "category": "Start",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Before each crusade, feed the cult, clear sickness and repair beds. Spend the next run on one objective, then return to collect devotion and restore supplies before leaving again.",
         "steps": [
           "Inspect hunger, faith and sickness at the base. Cook enough meals for the followers you already have before recruiting more; food shortages become harder to fix when population keeps growing.",
@@ -125,6 +131,7 @@
         "slug": "follower-traits-who-should-work-worship-and-gain-loyalty",
         "title": "Follower traits: who should work, worship and gain loyalty?",
         "category": "Followers",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Use Industrious followers for production, Faithful followers for devotion, and Gullible followers when you want faster loyalty growth. Check negative traits before moving a follower into a permanent role.",
         "steps": [
           "Inspect the complete trait list during recruitment or through follower interaction. Two followers with the same appearance can behave differently, so assign by effects rather than follower form.",
@@ -151,6 +158,7 @@
         "slug": "woolhaven-followers-winter-traits-and-snowlamb-care",
         "title": "Woolhaven followers: winter traits and Snowlamb care",
         "category": "Woolhaven",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Read a winter follower's full trait description before bringing it into a long-term work plan. Snowlambs have special seasonal behavior; treat their survival differently from ordinary followers.",
         "steps": [
           "Prepare heating and winter resources before adding more winter-dependent followers. A recruit increases the number of bodies your base needs to support immediately.",
@@ -177,6 +185,7 @@
         "slug": "woolhaven-quest-order-start-restore-the-village-and-prepare-for-winter",
         "title": "Woolhaven quest order: start, restore the village and prepare for winter",
         "category": "Woolhaven",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Start Woolhaven at Yngya's statue after meeting the base-game progression requirement. Follow the offerings, ascend Ewefall, and restore the village while building a fuel reserve for winter.",
         "steps": [
           "Install and enable the DLC, then look for Yngya's statue near the cult entrance. If it is absent, defeat the four Bishops (Leshy, Heket, Kallamar and Shamura) and reload the base before checking again.",
@@ -203,6 +212,7 @@
         "slug": "follower-quest-not-appearing-prerequisite-and-dialogue-checks",
         "title": "Follower quest not appearing: prerequisite and dialogue checks",
         "category": "Troubleshooting",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Check the active quest log, the follower's availability and any DLC prerequisites first. Return during a normal day and finish pending dialogue before treating a missing prompt as a save problem.",
         "steps": [
           "Find the intended follower at the base. If they are away, sick or occupied by a story event, resolve that state or wait for their return before attempting the interaction again.",
@@ -225,6 +235,7 @@
         "slug": "ritual-choices-hunger-faith-and-follower-recovery",
         "title": "Ritual choices: hunger, faith and follower recovery",
         "category": "Rituals",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Choose a ritual for the problem in front of you. Feasting or fasting can address food pressure, while resurrection is for recovering a specific follower; availability depends on your chosen doctrines.",
         "steps": [
           "Open the ritual menu and read both the effect and cost. Check which doctrines your cult actually has; a recommended ritual may be unavailable because you selected the alternative.",
@@ -247,6 +258,7 @@
         "slug": "follower-breeding-mating-tent-traits-eggs-and-the-hatchery",
         "title": "Follower breeding: Mating Tent, traits, eggs and the Hatchery",
         "category": "Followers",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Build a Mating Tent and an Egg Hatchery, select eligible adults, and spend Sin on an attempt. After a successful pairing, choose the offered traits and move the egg into the Hatchery.",
         "steps": [
           "Unlock the Sin-related systems and check the building requirements at the construction menu. Prepare the Hatchery before making an egg so it has somewhere to incubate.",
@@ -273,6 +285,7 @@
         "slug": "base-layout-farms-beds-sanitation-and-expansion",
         "title": "Base layout: farms, beds, sanitation and expansion",
         "category": "Base",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Start with working farm coverage and reachable daily services. Place buildings around their actual range indicators, then reserve expansion space for new systems such as Woolhaven ranching.",
         "steps": [
           "Place the farm station first and use its coverage display to position farm plots. Keep seeds and fertilizer supplied; moving plots around will not fix an empty input storage.",
@@ -299,6 +312,7 @@
         "slug": "resource-farming-food-lumber-stone-and-winter-supplies",
         "title": "Resource farming: food, lumber, stone and winter supplies",
         "category": "Resources",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Build reliable production for everyday materials and choose crusade branches for the shortage that is blocking progress. In Woolhaven, keep a separate reserve for heating and winter needs.",
         "steps": [
           "If food is low, cook from existing ingredients and restore the farm's seeds and fertilizer. Recruit fewer followers until daily food output covers the current population.",
@@ -321,6 +335,7 @@
         "slug": "memories-of-haven-recover-yngya-s-memories-and-earn-her-fleece",
         "title": "Memories of Haven: recover Yngya's memories and earn her fleece",
         "category": "Woolhaven",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Memories of Haven is a Woolhaven post-story quest involving Forget-Me-Nots. Finish the DLC story, follow Yngya's requests, and plant the flowers in Woolhaven to earn Yngya's Fleece.",
         "steps": [
           "Complete Woolhaven's main story before pursuing this quest. This is post-story content, so collecting miscellaneous lore tablets early does not substitute for the quest's prerequisite.",
@@ -353,6 +368,7 @@
         "slug": "beginner-guide-objectives-nitra-and-extraction",
         "title": "Beginner guide: objectives, Nitra and extraction",
         "category": "Start",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Read the mission objective, mine Nitra for resupplies, and keep a route back through the cave. In co-op, announce major objective triggers and take only your agreed share of a resupply.",
         "steps": [
           "On the Space Rig, choose the assignment mission and a comfortable hazard level. Bring both weapons and your traversal tool; the tool often solves a problem that ammunition cannot.",
@@ -379,6 +395,7 @@
         "slug": "unlock-overclocks-first-promotion-matrix-cores-and-the-forge",
         "title": "Unlock Overclocks: first promotion, Matrix Cores and the Forge",
         "category": "Overclocks",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Promote your first dwarf, obtain an infused weapon Matrix Core, forge it, then equip the Overclock on its matching weapon. Earning the core alone does not equip the upgrade.",
         "steps": [
           "Level one dwarf to class level 25 and accept its promotion assignment. Complete the required missions, then return to the Memorial Hall and finish the promotion process.",
@@ -405,6 +422,7 @@
         "slug": "getting-a-specific-overclock-what-you-can-choose",
         "title": "Getting a specific Overclock: what you can choose",
         "category": "Overclocks",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Core rewards involve randomness. Use offered class choices to move toward your target, complete available core activities, and keep using a functional build while the specific Overclock is missing.",
         "steps": [
           "Check the exact weapon and Overclock name you want. Different guns in the same class have separate pools; a reward for your class does not guarantee your preferred weapon.",
@@ -431,6 +449,7 @@
         "slug": "promotion-guide-level-25-to-the-memorial-hall",
         "title": "Promotion guide: level 25 to the Memorial Hall",
         "category": "Progression",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Reach class level 25, complete the promotion assignment, then pay the promotion cost in the Memorial Hall. Your equipment unlocks remain available after the class level resets.",
         "steps": [
           "Check the red class level for the dwarf you want to promote. Account rank is a separate number and does not replace reaching the class-level requirement.",
@@ -457,6 +476,7 @@
         "slug": "best-beginner-class-choose-the-job-you-enjoy",
         "title": "Best beginner class: choose the job you enjoy",
         "category": "Classes",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Choose Gunner for straightforward shooting and emergency shields, Scout for light and mobility, Engineer for prepared defenses, or Driller for clearing terrain and clustered enemies. All four can contribute without Overclocks.",
         "steps": [
           "Try Gunner if you want a clear combat role. Keep enemies in front of your sustained fire and learn to use the shield before a teammate is overwhelmed.",
@@ -479,6 +499,7 @@
         "slug": "scout-starter-build-gk2-boomstick-and-safe-mining",
         "title": "Scout starter build: GK2, Boomstick and safe mining",
         "category": "Classes",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Use the Deepcore GK2 for accurate ranged fire and the Boomstick for enemies that get too close. Keep the cave lit and use the Grappling Hook to reposition before you are surrounded.",
         "steps": [
           "Start with the default weapons and choose affordable modifications that improve control or ammunition. You do not need a named Overclock to perform Scout's main jobs.",
@@ -505,6 +526,7 @@
         "slug": "driller-starter-build-flamethrower-subata-and-useful-tunnels",
         "title": "Driller starter build: flamethrower, Subata and useful tunnels",
         "category": "Classes",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Use the CRSPR Flamethrower against nearby groups and the Subata for distant or exposed targets. Drill routes the whole team can use, and keep explosive charges clear of teammates.",
         "steps": [
           "Keep the starter CRSPR and Subata while learning enemy spacing. Pick ammunition or control upgrades that let you finish rooms comfortably before pursuing specialized damage combinations.",
@@ -531,6 +553,7 @@
         "slug": "engineer-starter-build-warthog-pgl-and-sentry-placement",
         "title": "Engineer starter build: Warthog, PGL and sentry placement",
         "category": "Classes",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Use the Warthog for close targets and the grenade launcher for groups. Build your sentry before combat and give it a clear view of the area you intend to defend.",
         "steps": [
           "Choose the starter Warthog and Deepcore 40mm PGL while learning the class. A useful pair covers both a single approaching enemy and a clustered wave.",
@@ -553,6 +576,7 @@
         "slug": "gunner-starter-build-minigun-bulldog-and-shield-timing",
         "title": "Gunner starter build: Minigun, Bulldog and shield timing",
         "category": "Classes",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Use the Minigun for sustained pressure, the Bulldog for accurate priority shots, and the shield to create a recovery window. Deploy a shield while there is still time to revive or resupply.",
         "steps": [
           "Start with the Lead Storm Minigun and Bulldog. Learn the Minigun's heat and wind-up, and stop firing before overheating removes your main weapon during a push.",
@@ -579,6 +603,7 @@
         "slug": "mission-types-what-to-do-before-pressing-the-button",
         "title": "Mission types: what to do before pressing the button",
         "category": "Missions",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Follow the objective shown on the HUD and prepare before triggering a swarm or boss. Mining, eggs, refining, escort and defensive missions ask for different routes and tools.",
         "steps": [
           "Mining Expedition and Egg Hunt: collect the requested resources and deposit them. For eggs, agree before pulling the next one so the team is ready for the resulting pressure.",
@@ -611,6 +636,7 @@
         "slug": "beginner-guide-shared-money-casino-days-and-quota",
         "title": "Beginner guide: shared money, casino days and quota",
         "category": "Start",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Your group uses a shared bank. Agree on a betting budget, buy and collect the items you intend to use, then protect the day's quota before spending money on optional challenges.",
         "steps": [
           "In the lobby, check tickets and item choices together. Decide who carries each purchase and confirm it is actually picked up before everyone enters the limo.",
@@ -633,6 +659,7 @@
         "slug": "quota-guide-set-a-stop-point-for-the-whole-team",
         "title": "Quota guide: set a stop point for the whole team",
         "category": "Quota",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Protect the quota with a shared stop call. Subtract money already committed to bets before deciding you are safe, and stop every table when the group reaches its target.",
         "steps": [
           "Read the actual quota for this day. Compare it with the settled shared balance, not the potential payout currently flashing on a table.",
@@ -655,6 +682,7 @@
         "slug": "tickets-earning-spending-and-recovery-priorities",
         "title": "Tickets: earning, spending and recovery priorities",
         "category": "Tickets",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Earn tickets through successful days and suitable challenges, then spend them on a specific item plan. Keep recovery needs ahead of cosmetics when the group's next run is unstable.",
         "steps": [
           "Finish a quota day and inspect its rewards before planning purchases. Keep casino money and ticket currency separate; they pay for different parts of the run.",
@@ -677,6 +705,7 @@
         "slug": "useful-items-golden-chip-holy-statue-taser-and-recovery-tools",
         "title": "Useful items: Golden Chip, Holy Statue, Taser and recovery tools",
         "category": "Items",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Choose Golden Chip for a planned free all-in, Holy Statue for a coordinated protection window, and Taser when you understand the table's bet limit. Read the shop tooltip before paying.",
         "steps": [
           "Check the current ticket price and effect in the lobby. Golden Chip is a single-use opportunity; choose the table and player before consuming it.",
@@ -699,6 +728,7 @@
         "slug": "item-combinations-coordinate-the-setup-before-the-bet",
         "title": "Item combinations: coordinate the setup before the bet",
         "category": "Items",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Use combinations only when every item has a clear target and timing. A bet-limit tool, a free-bet tool and a temporary profit or protection effect do different jobs.",
         "steps": [
           "Pick one table and one active bettor. Other players should finish their current bets and wait so the shared balance remains understandable.",
@@ -721,6 +751,7 @@
         "slug": "body-parts-when-an-emergency-trade-is-worth-it",
         "title": "Body parts: when an emergency trade is worth it",
         "category": "Tickets",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Treat body-part trades as a costed recovery option. Check how much they solve, what function the player loses, and how the group will restore that player afterward.",
         "steps": [
           "Compare the remaining quota with the available normal betting budget. If ordinary play can finish the day comfortably, keep the group's body parts and recovery tickets.",
@@ -743,6 +774,7 @@
         "slug": "casino-games-learn-the-decision-before-raising-the-stake",
         "title": "Casino games: learn the decision before raising the stake",
         "category": "Minigames",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Practice the table's input and payout rule at a low stake. Blackjack and Craps involve different decisions from timed cash-outs or random multiplier games; use the table your group can operate reliably.",
         "steps": [
           "At Blackjack, track the hand total before selecting hit or stand. Do not import an achievement condition into every normal hand; a special low-hand win is a separate objective.",
@@ -765,6 +797,7 @@
         "slug": "achievement-route-choose-a-floor-and-one-objective",
         "title": "Achievement route: choose a floor and one objective",
         "category": "Achievements",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Pursue one table-specific achievement at a time, keep quota safe, and separate deliberate-loss objectives from serious progression runs. Check the exact Steam condition rather than the similar daily challenge.",
         "steps": [
           "Open Steam's achievement list and select one currently reachable objective. Note its floor requirement before spending money on the right game at the wrong floor.",
@@ -787,6 +820,7 @@
         "slug": "achievement-conditions-that-are-easy-to-mix-up",
         "title": "Achievement conditions that are easy to mix up",
         "category": "Achievements",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Floor, streak, hand restrictions and ending choices can all matter. Check the exact condition before beginning; some achievements require a separate run because their outcomes conflict.",
         "steps": [
           "For Risky Move, distinguish the achievement's low-hand requirement from a looser daily challenge. Do not count a challenge completion as evidence that Steam's stricter requirement was met.",
@@ -809,6 +843,7 @@
         "slug": "street-craps-opening-roll-point-phase-and-team-calls",
         "title": "Street Craps: opening roll, point phase and team calls",
         "category": "Minigames",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "On the opening roll, 7 or 11 wins and 2, 3 or 12 loses. Another total establishes the point: repeat that point before a 7 to win that phase.",
         "steps": [
           "Assign one shooter and one caller. Keep everyone else away from the controls so a second interaction does not change what the group thinks is happening.",
@@ -837,6 +872,7 @@
         "slug": "beginner-guide-cast-magick-arcana-and-permanent-progress",
         "title": "Beginner guide: Cast, Magick, Arcana and permanent progress",
         "category": "Start",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Use Cast to make space, choose a boon for the move you use most, and return resources to the Crossroads for lasting upgrades. A failed night can still advance incantations, Arcana and relationships.",
         "steps": [
           "At the Crossroads, equip a weapon you understand and inspect your active Arcana. Spend within your Grasp capacity and check that the cards you expect to use are actually active.",
@@ -863,6 +899,7 @@
         "slug": "choosing-boons-match-the-effect-to-your-attack",
         "title": "Choosing boons: match the effect to your attack",
         "category": "Boons",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Choose a core boon for the move that lands reliably. Fast attacks suit repeatable hit effects; slower heavy attacks benefit from stronger individual hits. Add control and Magick support around that choice.",
         "steps": [
           "Spend the opening room learning which move is doing the work. Put your first damage boon on that slot instead of choosing a rare boon for a move you barely use.",
@@ -885,6 +922,7 @@
         "slug": "duo-boons-prerequisites-eligible-choices-and-failed-rolls",
         "title": "Duo boons: prerequisites, eligible choices and failed rolls",
         "category": "Boons",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "A Duo needs qualifying boons from both gods. Meeting the prerequisites makes it eligible, not guaranteed. Use the Book of Shadows to check the exact current list before spending rerolls.",
         "steps": [
           "Choose the Duo you want before collecting unrelated boons. Open its requirement entry in the Book of Shadows when that information is unlocked; identify which choices count on each side.",
@@ -911,6 +949,7 @@
         "slug": "legendary-boons-unlock-the-prerequisite-chain-first",
         "title": "Legendary boons: unlock the prerequisite chain first",
         "category": "Boons",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Legendary boons can require several specific prerequisite groups from one god. Check the in-game requirement list, complete missing branches, then spend rerolls only on an eligible reward.",
         "steps": [
           "Open the desired Legendary entry rather than starting from a rarity tier list. Look at its prerequisite groups and decide whether the current build can use those boons even without the final reward.",
@@ -933,6 +972,7 @@
         "slug": "weapon-builds-three-practical-starting-plans",
         "title": "Weapon builds: three practical starting plans",
         "category": "Weapons",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "For a learning run, use the Staff to control distance, the Sister Blades for short aggressive openings, or the Axe for deliberate heavy hits. Build the move you can land safely before chasing a rare combo.",
         "steps": [
           "Staff: use Cast to separate a crowd, then strike or use Special from open ground. Select a core boon for whichever move you are landing most often and add Magick recovery if you favor Omega attacks.",
@@ -955,6 +995,7 @@
         "slug": "32-fear-preparation-build-vows-and-a-repeatable-route",
         "title": "32 Fear preparation: build, Vows and a repeatable route",
         "category": "Fear",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Start with a weapon and route you already clear reliably, keep the build functional without a rare boon, and choose Vows that do not all punish the same weakness. Confirm the total on the Oath screen.",
         "steps": [
           "Before raising Fear, complete the intended route with the same weapon. Upgrade the aspect and Arcana you depend on, and practice the bosses that usually consume your Death Defiances.",
@@ -981,6 +1022,7 @@
         "slug": "surface-32-fear-route-planning-and-survival-priorities",
         "title": "Surface 32 Fear: route planning and survival priorities",
         "category": "Fear",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Prepare for the full Surface route through Polyphemus, Eris, Prometheus and Typhon. Choose a build that damages safely while you move, and preserve enough recovery for the final two fights.",
         "steps": [
           "Finish Surface unlocks and remove the curse first. Learn each Guardian on lower Fear so an unfamiliar pattern is not competing with a strict time limit.",
@@ -1007,6 +1049,7 @@
         "slug": "unlock-the-surface-and-remove-its-health-draining-curse",
         "title": "Unlock the Surface and remove its health-draining curse",
         "category": "Surface",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "There are two gates: Permeation of Witching-Wards opens the route, and Unraveling a Fateful Bond removes the Surface curse. Opening the staircase alone does not make Melinoe safe there.",
         "steps": [
           "Progress through the Underworld and finish the Hermes and Hecate dialogue that introduces the Surface war. Check the Crossroads cauldron after returning for the ward-breaking incantation.",
@@ -1029,6 +1072,7 @@
         "slug": "wards-still-sealed-check-dialogue-shadow-and-the-cauldron",
         "title": "Wards still sealed? Check dialogue, Shadow and the cauldron",
         "category": "Surface",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Breaking the wards requires the incantation at the Crossroads cauldron. If you have the ingredients but the route stays closed, check that you collected the brewed Shadow and actually cast the spell.",
         "steps": [
           "If the recipe is missing, continue the Underworld story and speak to Hermes and Hecate when their dialogue becomes available. A resource farm alone does not unlock a story-gated recipe.",
@@ -1051,6 +1095,7 @@
         "slug": "surface-bosses-polyphemus-eris-prometheus-and-typhon",
         "title": "Surface bosses: Polyphemus, Eris, Prometheus and Typhon",
         "category": "Bosses",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Learn the four Surface Guardians as separate fights. Avoid Polyphemus's landing zones, move off Eris's firing line, remember Prometheus's flame sequence, and keep an exit while attacking Typhon.",
         "steps": [
           "Polyphemus: watch the landing and shockwave before approaching. Take a brief opening between attacks and back out; standing close while he prepares a jump exposes you to both body and area damage.",
@@ -1083,6 +1128,7 @@
         "slug": "beginner-guide-weapons-treasure-and-camp-upgrades",
         "title": "Beginner guide: weapons, treasure and camp upgrades",
         "category": "Start",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Pick a weapon you can control, add treasures that support its attacks, and use camp progression between attempts. A safer short combo is more useful than a stronger combo you cannot finish.",
         "steps": [
           "Try the available weapon's basic attack, skill and dodge before committing upgrades. Check whether the skill uses MP and whether its recovery leaves you exposed.",
@@ -1105,6 +1151,7 @@
         "slug": "build-choices-shield-safety-ranged-damage-and-skill-support",
         "title": "Build choices: shield safety, ranged damage and skill support",
         "category": "Builds",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "For early clears, use a controllable shield or ranged setup, then support one damage pattern with compatible treasures and runes. Check active inscription effects whenever you replace a piece.",
         "steps": [
           "For a shield-oriented run, prioritize a usable block or safe melee opening. Add enough damage to end fights without needing to stand in contact indefinitely.",
@@ -1127,6 +1174,7 @@
         "slug": "weapon-skills-range-recovery-and-mp-management",
         "title": "Weapon skills: range, recovery and MP management",
         "category": "Weapons",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Read what the skill does and test its recovery before spending on it. Use MP-based skills when you can keep them available, and keep a basic attack plan for the gaps.",
         "steps": [
           "On obtaining a weapon, use its skill in safe space. Check whether it moves you, charges in place, targets a line or creates an effect that remains afterward.",
@@ -1149,6 +1197,7 @@
         "slug": "rune-resonance-identify-the-active-effect-before-swapping-gear",
         "title": "Rune resonance: identify the active effect before swapping gear",
         "category": "Runes",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Read rune colors and inscriptions as separate parts of the loadout. Matching inscription effects can create stronger combinations, but three random high-rarity pieces do not automatically form a useful resonance.",
         "steps": [
           "Inspect the weapon, armor and treasures currently equipped. Read the inscription names and the activation text, then note which effects are visibly active.",
@@ -1171,6 +1220,7 @@
         "slug": "rune-colors-damage-skills-and-survival",
         "title": "Rune colors: damage, skills and survival",
         "category": "Runes",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Use red Akhil for damage-oriented support, blue Nairu for MP and skill plans, and green Parati for survival-oriented support. Read each item's actual effect before treating its color as the whole build.",
         "steps": [
           "Decide what is ending the run. If enemies live too long, investigate damage support; if the skill loop stops from empty MP, look at the resource side; if you take repeated hits, improve survival.",
@@ -1193,6 +1243,7 @@
         "slug": "boss-preparation-opening-areas-to-the-black-castle",
         "title": "Boss preparation: opening areas to the Black Castle",
         "category": "Bosses",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Prepare for the next boss's attack pattern, keep healing for later phases, and use short recovery windows. At the Black Castle, do not assume defeating Steward means the run is already finished.",
         "steps": [
           "Before entering, inspect health, MP and consumable slots. If your only damage source needs MP, preserve enough for a longer fight instead of emptying it on the final ordinary room.",
@@ -1219,6 +1270,7 @@
         "slug": "wandering-knight-horseback-charges-and-the-sword-phase",
         "title": "Wandering Knight: horseback charges and the sword phase",
         "category": "Bosses",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Move above or below the Knight's charge lane, then attack during recovery. A bow or another ranged option helps you keep damage going without rolling through his large body.",
         "steps": [
           "Before the bridge fight, equip healing and bombs where you can reach them. Leave room to move vertically; standing on the centerline gives the mounted charge a direct path to you.",
@@ -1241,6 +1293,7 @@
         "slug": "lord-alfred-punish-trident-and-beam-recovery",
         "title": "Lord Alfred: punish trident and beam recovery",
         "category": "Bosses",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Lord Alfred is a later-route boss, not the ordinary Black Castle finale. Community reports identify trident sequences and the breath beam as useful punish windows, with extra follow-ups in later phases.",
         "steps": [
           "Arrive with a working single-target build and recovery available. Do not spend the entire run preparing only for ordinary enemies when the route ends with a long multi-phase fight.",
@@ -1263,6 +1316,7 @@
         "slug": "nightmare-5-preparation-a-complete-build-before-the-boss",
         "title": "Nightmare 5 preparation: a complete build before the boss",
         "category": "Nightmare",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Enter higher Nightmare levels with a functioning damage chain, enough recovery and a weapon you already clear with. Confirm that the loadout's stronger inscription effects are active before chasing the next difficulty.",
         "steps": [
           "Repeat the preceding difficulty with your planned weapon and note where it loses health or MP. Raise difficulty after that failure is manageable, rather than changing both weapon and difficulty together.",
@@ -1285,6 +1339,7 @@
         "slug": "multiplayer-progression-host-personal-unlocks-and-rewards",
         "title": "Multiplayer progression: host, personal unlocks and rewards",
         "category": "Co-op",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Local co-op uses the host's save progression according to community reports. For online play, check each player's camp and unlock screen after the session; route access and personal rewards are different questions.",
         "steps": [
           "For local co-op, start from the intended host save. Community reports say joining players can use its unlocked content; do not assume local guests are creating independent account progression.",
@@ -1313,6 +1368,7 @@
         "slug": "beginner-guide-loot-efficiently-and-activate-the-teleporter",
         "title": "Beginner guide: loot efficiently and activate the teleporter",
         "category": "Start",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Find the teleporter while gathering nearby items, start its event when you have enough damage and space, then leave after collecting the reward. Efficient looting matters more than a rigid time-per-stage rule.",
         "steps": [
           "On entering a stage, look for the teleporter's particles while moving through nearby loot. Avoid crossing the map repeatedly for isolated purchases when the same route could reveal several chests.",
@@ -1335,6 +1391,7 @@
         "slug": "useful-items-movement-single-target-damage-and-crowd-clear",
         "title": "Useful items: movement, single-target damage and crowd clear",
         "category": "Items",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Choose items for the part of the run your survivor struggles with. Movement helps almost everyone; on-hit effects favor frequent eligible hits, while burst builds can use heavy-hit effects more easily.",
         "steps": [
           "Take movement seriously: Paul's Goat Hoof and Energy Drink make positioning easier in different situations. Do not convert every movement item into damage if you are repeatedly caught in crowds.",
@@ -1361,6 +1418,7 @@
         "slug": "item-synergy-three-combinations-and-what-makes-them-work",
         "title": "Item synergy: three combinations and what makes them work",
         "category": "Items",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "A synergy needs a trigger your survivor can supply. Critical hits can support crit-dependent items, heavy attacks can trigger Bands, and crowd kills can spread on-kill damage.",
         "steps": [
           "Start with the attack you land most often. Check its hit frequency and whether it naturally meets a damage threshold; this determines which combination will activate reliably.",
@@ -1387,6 +1445,7 @@
         "slug": "proc-coefficient-explained-chance-per-hit-not-damage-per-second",
         "title": "Proc coefficient explained: chance per hit, not damage per second",
         "category": "Proc",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "A proc coefficient changes how an eligible hit interacts with many on-hit items. For a simple chance-based effect, multiply the listed chance by the hit's coefficient before applying any other relevant rules.",
         "steps": [
           "Separate the attack from its individual hit events. A multi-hit skill may have a coefficient on each hit rather than one full-strength proc roll for the entire skill.",
@@ -1409,6 +1468,7 @@
         "slug": "proc-chains-why-one-hit-can-cause-several-effects",
         "title": "Proc chains: why one hit can cause several effects",
         "category": "Proc",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "A proc chain begins with a hit that activates another effect, which may be able to activate additional effects. Each link has its own coefficient and restrictions; the same proc cannot simply repeat forever.",
         "steps": [
           "Identify the first reliable hit in your rotation. It must satisfy the initial item's trigger; an impressive chain cannot start if the opening attack does not qualify.",
@@ -1435,6 +1495,7 @@
         "slug": "survivor-builds-rapid-hits-heavy-burst-and-mobile-attacks",
         "title": "Survivor builds: rapid hits, heavy burst and mobile attacks",
         "category": "Survivors",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Choose items around your survivor's normal attack pattern. Commando and other frequent hitters value repeated triggers; Loader and other heavy hitters can exploit burst openings; every build still needs mobility.",
         "steps": [
           "Frequent-hit setup: improve reliable shooting time and add on-hit effects. Use movement to keep the target in view rather than standing still to maximize theoretical fire rate.",
@@ -1461,6 +1522,7 @@
         "slug": "artificer-build-cooldowns-burst-and-ion-surge",
         "title": "Artificer build: cooldowns, burst and Ion Surge",
         "category": "Survivors",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Artificer uses skill cooldowns and primary charges, not a mana bar. Rotate her abilities, keep distance during recovery, and consider Ion Surge for vertical mobility if you have unlocked it.",
         "steps": [
           "Learn the primary's limited charges. Spend them deliberately and use other skills while they recharge instead of waiting in place for another shot.",
@@ -1487,6 +1549,7 @@
         "slug": "teleporter-guide-charging-rewards-and-looping",
         "title": "Teleporter guide: charging, rewards and looping",
         "category": "Teleporter",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Kill the teleporter boss and complete the charge, then collect rewards and activate travel. Stay inside the charging zone when possible, but leave it to avoid a lethal attack.",
         "steps": [
           "Look for teleporter particles and inspect the surrounding area before starting. Open important nearby chests and choose a route around hazards while the event is still inactive.",
@@ -1509,6 +1572,7 @@
         "slug": "playing-after-a-dlc-update-enabled-content-and-old-build-advice",
         "title": "Playing after a DLC update: enabled content and old build advice",
         "category": "Updates",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Check which expansions are enabled and whether the guide matches your platform's build. New items, survivors and rebalances can change a familiar loadout without changing the basic teleporter loop.",
         "steps": [
           "At the lobby, inspect the enabled expansions before selecting a survivor. In multiplayer, agree on that content set so players know which item pool and encounters to expect.",
@@ -1531,6 +1595,7 @@
         "slug": "multiplayer-item-sharing-give-each-pickup-a-useful-owner",
         "title": "Multiplayer item sharing: give each pickup a useful owner",
         "category": "Teamplay",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Share items by who can activate them well, while keeping every player able to survive. Coordinate boss drops, printers and movement pickups instead of treating every item as first-come-first-served.",
         "steps": [
           "Before starting, identify the team's attack patterns. A rapid shooter, a heavy burst survivor and a cooldown-based survivor may get different value from the same item.",
@@ -1563,6 +1628,7 @@
         "slug": "beginner-guide-weapons-artifacts-and-the-inventory-grid",
         "title": "Beginner guide: weapons, Artifacts and the inventory grid",
         "category": "Start",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Keep useful Artifacts active in the main grid, place Tablets so their patterns benefit those Artifacts, and choose weapon upgrades that fit your attacks. Recheck the bag after every major pickup.",
         "steps": [
           "Start with the available weapon and learn its attack, defensive action and recovery. Take short openings until you can tell when the next enemy attack begins.",
@@ -1585,6 +1651,7 @@
         "slug": "build-choices-a-safe-weapon-and-one-supported-artifact-family",
         "title": "Build choices: a safe weapon and one supported Artifact family",
         "category": "Builds",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Choose a weapon you control well and build around the strongest compatible Artifact effects you actually find. Support that group with Tablets, then add survival before chasing more damage.",
         "steps": [
           "For a learning run, keep Sword and Shield if its defensive rhythm is comfortable. For ranged play, choose the Crossbow when available and preserve space to attack without being cornered.",
@@ -1607,6 +1674,7 @@
         "slug": "hard-mode-preparation-survive-the-opening-rooms",
         "title": "Hard Mode preparation: survive the opening rooms",
         "category": "Hard Mode",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Enter Hard Mode with a familiar weapon, an active grid and a defensive plan. Recheck Artifact conditions before increasing damage: a broken placement can make a strong-looking inventory ineffective.",
         "steps": [
           "Practice the chosen weapon on a comfortable difficulty first. Learn which attacks let you leave quickly and which lock you into a longer animation.",
@@ -1629,6 +1697,7 @@
         "slug": "anvil-upgrades-choose-the-branch-your-build-supports",
         "title": "Anvil upgrades: choose the branch your build supports",
         "category": "Weapons",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Anvil choices upgrade the weapon for the current run. Compare the offered effect with your Artifact setup and normal attack pattern before spending a reroll or committing to a branch.",
         "steps": [
           "At the Anvil, read all offered choices before selecting. Check whether the effect changes basic attacks, a skill, defense or a separate conditional mechanic.",
@@ -1651,6 +1720,7 @@
         "slug": "weapon-evolution-commit-to-a-branch-without-breaking-the-run",
         "title": "Weapon evolution: commit to a branch without breaking the run",
         "category": "Weapons",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Use the next weapon upgrade to strengthen your working attack pattern. Keep a lower-stage choice when the offered change would undermine your build; a later upgrade is not automatically a better fit.",
         "steps": [
           "Identify which part of the weapon is currently dealing damage. Check whether your Artifacts support repeated hits, a special effect or a particular skill.",
@@ -1673,6 +1743,7 @@
         "slug": "artifacts-active-effects-placement-conditions-and-replacements",
         "title": "Artifacts: active effects, placement conditions and replacements",
         "category": "Artifacts",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "An Artifact helps only when its effect is active and its trigger fits the run. Check location, level and conditions in the bag before replacing an item that already works.",
         "steps": [
           "Read the Artifact's effect and trigger. Separate an always-useful stat from an effect that needs a particular attack, status or condition.",
@@ -1695,6 +1766,7 @@
         "slug": "tablet-placement-read-the-pattern-and-protect-the-core",
         "title": "Tablet placement: read the pattern and protect the core",
         "category": "Tablets",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "A Tablet affects a specific pattern of cells. Arrange it around the Artifact you want to strengthen, then check every bonus and penalty before closing the bag.",
         "steps": [
           "Select the Tablet and inspect its highlighted pattern. Rows, columns and other shapes do not behave like a universal bonus to all adjacent cells.",
@@ -1717,6 +1789,7 @@
         "slug": "artifact-combinations-choose-a-trigger-your-weapon-repeats",
         "title": "Artifact combinations: choose a trigger your weapon repeats",
         "category": "Artifacts",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Build combinations around an effect your weapon activates naturally. A fast-hit effect, a skill effect and a conditional family bonus need different support; check the game's active indicators.",
         "steps": [
           "Choose one core Artifact already working in the bag. Read what causes its effect and which part of your weapon supplies that trigger.",
@@ -1739,6 +1812,7 @@
         "slug": "boss-strategy-check-the-bag-watch-the-tell-and-punish-briefly",
         "title": "Boss strategy: check the bag, watch the tell and punish briefly",
         "category": "Bosses",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Enter a boss room with your important Artifacts active and enough space to react. Watch one complete attack sequence, then use its recovery window rather than extending every combo.",
         "steps": [
           "Before crossing the gate, inspect the weapon branch and bag. Confirm the Artifacts you rely on are active and a recent Tablet move has not removed their benefit.",
@@ -1761,6 +1835,7 @@
         "slug": "secret-rooms-cracked-walls-and-the-library-secret-study",
         "title": "Secret rooms: cracked walls and the Library Secret Study",
         "category": "Routes",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "After clearing a room, inspect the walls and strike suspicious cracked sections until they open. The Library Secret Study is a reported exception reached by walking through an unmarked wall.",
         "steps": [
           "Finish combat before wall checking. Compare the wall's repeated pattern with nearby sections; inspect both the wall face and its upper border for a break in the pattern.",
@@ -1787,6 +1862,7 @@
         "slug": "sephiria-wiki",
         "title": "Sephiria Wiki: Beginner Systems and Game Guide",
         "category": "Wiki",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Sephiria is built around collecting and arranging Artifacts, then strengthening them with Tablets. Use this hub to understand the verified game scope without assuming an unverified tutorial order or UI label.",
         "steps": [
           "Use the hub as an entry point for Artifacts, Tablets, Talents, weapons, upgrades, enemies, bosses, chapters, and cooperative play.",
@@ -1810,6 +1886,7 @@
         "slug": "beginner-guide-leader-rescues-and-moving-through-the-horde",
         "title": "Beginner guide: leader, rescues and moving through the horde",
         "category": "Start",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Choose a leader, strengthen one reliable damage source, and keep moving through open space. Recruit teammates whose abilities cover the leader's weakness instead of spreading upgrades evenly across every option.",
         "steps": [
           "Start with SWAT, Tank or Engineer and learn how the weapon attacks automatically. Your movement determines which enemies enter range and whether you have room to leave.",
@@ -1832,6 +1909,7 @@
         "slug": "squad-choices-swat-engineer-and-a-flexible-third-slot",
         "title": "Squad choices: SWAT, Engineer and a flexible third slot",
         "category": "Squads",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "A practical starter squad is SWAT for steady weapon damage, Engineer for utility and a third survivor chosen for the run's weakness. Leader order matters, so read the first character's perk.",
         "steps": [
           "Choose SWAT as leader if you want a weapon-focused start, or Tank if extra health helps you learn. Do not pick a locked late-game survivor as the foundation of a beginner route.",
@@ -1854,6 +1932,7 @@
         "slug": "upgrade-priorities-damage-first-then-the-missing-survival-tool",
         "title": "Upgrade priorities: damage first, then the missing survival tool",
         "category": "Upgrades",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Strengthen the weapon or ability doing most of the work, then add movement, defense or recovery to keep it active. Distinguish in-run choices from permanent Training upgrades.",
         "steps": [
           "During the opening minutes, choose upgrades that immediately improve reliable damage. An early multiplier to a weak or inactive effect may do less than finishing the main weapon's next step.",
@@ -1876,6 +1955,7 @@
         "slug": "survivor-roles-the-starting-trio-and-unlockable-teammates",
         "title": "Survivor roles: the starting trio and unlockable teammates",
         "category": "Characters",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "The starting trio is SWAT, Tank and Engineer. Later survivors add ranged, melee, healing, elemental and ability-focused options; choose them by the job your current squad needs.",
         "steps": [
           "Starting options: SWAT supports a weapon-focused run, Tank gives a more forgiving health-oriented start, and Engineer provides an ability-oriented kit. Learn these before treating a late unlock as mandatory.",
@@ -1898,6 +1978,7 @@
         "slug": "unlock-every-survivor-roster-conditions-and-saved-counters",
         "title": "Unlock every survivor: roster conditions and saved counters",
         "category": "Characters",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "SWAT, Tank and Engineer start available. Huntress uses a survival-duration goal; Ghost, Medic, Pyro and Mechanic use accumulated objectives; Ranger is tied to Survival Level. Read the remaining amount on each locked card.",
         "steps": [
           "Work toward Huntress by surviving 15 minutes in an appropriate run. Pick a comfortable map and prioritize staying alive; the objective is not to defeat a particular secret enemy.",
@@ -1924,6 +2005,7 @@
         "slug": "swat-build-reliable-ranged-damage-and-reload-support",
         "title": "SWAT build: reliable ranged damage and reload support",
         "category": "Characters",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Lead with SWAT for a straightforward weapon-focused run. Improve his main weapon early, then recruit utility and survival support so the squad can keep firing while moving.",
         "steps": [
           "Begin with SWAT and choose an opening route with room to circle. Stay far enough from the horde to react when the weapon reloads.",
@@ -1946,6 +2028,7 @@
         "slug": "engineer-build-abilities-coverage-and-shield-support",
         "title": "Engineer build: abilities, coverage and shield support",
         "category": "Characters",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Engineer rewards investment in useful abilities and enough movement to keep the squad safe between activations. Build around the abilities currently unlocked, not a late-rank setup you cannot select yet.",
         "steps": [
           "Check Engineer's available abilities before choosing him as leader. If the desired shield or upgrade is locked, use the available kit and progress the character rather than waiting for a nonexistent in-run choice.",
@@ -1968,6 +2051,7 @@
         "slug": "tank-and-ghost-durability-with-close-range-damage",
         "title": "Tank and Ghost: durability with close-range damage",
         "category": "Squads",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Use Tank for a forgiving start and Ghost for a developed close-range damage role. Keep a ranged or utility teammate available so the pair does not depend entirely on walking into every threat.",
         "steps": [
           "Unlock Ghost before planning him as a selectable starter. If he is unavailable, progress boss kills with a squad that already survives and use the offered rescue choices normally.",
@@ -1994,6 +2078,7 @@
         "slug": "achievements-and-missions-combine-goals-that-fit-the-same-run",
         "title": "Achievements and missions: combine goals that fit the same run",
         "category": "Achievements",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Use the current achievement and mission descriptions to choose compatible objectives. Character unlock counters can progress during normal runs; special mode or leader conditions need deliberate setup.",
         "steps": [
           "Open the achievement list and active mission log before starting. Record the required map, mode and leader when the objective specifies them.",
@@ -2016,6 +2101,7 @@
         "slug": "boss-survival-keep-a-damage-lane-and-an-escape-path",
         "title": "Boss survival: keep a damage lane and an escape path",
         "category": "Bosses",
+        "publishedAt": "2026-09-09T00:00:00.000Z",
         "answer": "Fight bosses while continuing to manage the horde. Keep moving, avoid overlapping hazards, and use a developed damage source instead of turning the squad into a stationary target.",
         "steps": [
           "Before the boss arrives, prioritize a reliable weapon or ability upgrade. A collection of low-level options may clear stragglers but struggle with a durable target.",
@@ -2036,4 +2122,3 @@
     ]
   }
 ]
-
