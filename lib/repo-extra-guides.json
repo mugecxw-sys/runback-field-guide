@@ -173,7 +173,7 @@
       "For four players, add a dedicated extractor or distractor so the carrier can stay focused.",
       "For five or six players, keep two carriers but preserve one scout and one recovery/defense role.",
       "Use a fixed callout format: room, item or enemy, action.",
-      "Before activating extraction, name who stays on the route and who returns to the truck."
+      "Before quota is reached, name who stays on the route and who returns to the truck for the automatic extraction sequence."
     ],
     "mistakes": "Everyone looting, nobody owning the return route, and letting proximity voice break the team into isolated pairs.",
     "versionNote": "The role matrix comes from community strategy guides and should be adjusted for the current map, player skill, and patch.",

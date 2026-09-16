@@ -4,7 +4,6 @@ import { ArticleView } from '@/components/article-view';
 import { typhonSections } from '@/lib/guide-enrichment';
 import {
   articleLibraries,
-  articlePublishedAt,
   findLibrary,
 } from '@/lib/game-articles';
 import { siteUrl } from '@/lib/repo-guide-pages';
@@ -37,7 +36,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       description: a.answer,
       type: 'article',
       url,
-      publishedTime: articlePublishedAt,
+      publishedTime: a.publishedAt,
+      modifiedTime: a.updatedAt,
     },
     twitter: { card: 'summary', title, description: a.answer },
   };
@@ -76,7 +76,8 @@ export default async function ArticlePage({ params }: Props) {
       game={g.title}
       hub={'/games/' + g.slug}
       href={'/games/' + g.slug + '/' + a.slug}
-      date={articlePublishedAt}
+      date={a.publishedAt}
+      modified={a.updatedAt}
       related={related}
       extra={
         g.slug === 'hades-ii' &&

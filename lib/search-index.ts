@@ -1,4 +1,4 @@
-import { articleLibraries, articlePublishedAt } from './game-articles';
+import { articleLibraries, articlePublishedAt, articleSortDate } from './game-articles';
 import { gameLibraries } from './game-catalog';
 import { repoGuidePages, guidePublishedAt, guideSortDate } from './repo-guide-pages';
 import { repoEnemies } from './repo-enemies';
@@ -29,7 +29,7 @@ export const searchIndex = [
       href: '/games/' + g.slug + '/' + a.slug,
       summary: a.answer,
       text: a.steps.join(' '),
-      date: articlePublishedAt,
+      date: articleSortDate(a),
     })),
   ),
   ...repoEnemies.map((e) => ({
