@@ -150,7 +150,11 @@ export default function MageGuide() {
         inLanguage: 'en', mainEntityOfPage: siteUrl + href,
         author: { '@type': 'Organization', name: 'RUNBACK', url: siteUrl + '/about' },
         publisher: { '@type': 'Organization', '@id': siteUrl + '/#organization', name: 'RUNBACK', url: siteUrl },
-        citation: ['https://store.steampowered.com/app/1942280/Brotato/'],
+        citation: [
+          'https://brotato.wiki.spellsandguns.com/Mage',
+          'https://brotato.wiki.spellsandguns.com/Taser',
+          'https://store.steampowered.com/app/1942280/Brotato/',
+        ],
         image: Object.keys(images).map((name) => siteUrl + '/images/brotato/mage/' + name),
       },
       {

@@ -18,7 +18,7 @@ export const gameLibraries: GameLibrary[] = [
     version: 'Source-backed guides · September 2026',
     description: 'Build around characters, weapons, Luck, enemy pressure, and Endless mode without relying on unsupported universal rankings.',
     status: 'LIVE',
-    guideCount: 5,
+    guideCount: 6,
     categories: ['Builds', 'Characters', 'Weapons', 'Luck', 'Enemies', 'Endless'],
     sourceHref: 'https://store.steampowered.com/app/1942280/Brotato/',
   },

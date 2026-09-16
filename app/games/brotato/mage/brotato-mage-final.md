@@ -240,6 +240,12 @@ The manual test stopped at Wave 9.
 
 It provides evidence for the early/mid-game Taser setup and exposes one important weakness, but it does not prove full-clear performance, Danger 5 performance, or boss performance.
 
+## Sources
+
+- [Brotato Wiki — Mage](https://brotato.wiki.spellsandguns.com/Mage)
+- [Brotato Wiki — Taser](https://brotato.wiki.spellsandguns.com/Taser)
+- [Steam — Brotato](https://store.steampowered.com/app/1942280/Brotato/)
+
 ## Related Brotato guides
 
 - [Brotato Builds](/games/brotato/builds)
