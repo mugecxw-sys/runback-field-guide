@@ -92,6 +92,23 @@
         "mistakes": "Presenting unverified late-wave formulas, scaling thresholds, special-character exceptions, or a single best high-wave route as settled fact.",
         "versionNote": "This draft is limited to the PC Steam scope recorded upstream. Exact late-wave formulas and current best routes require version-matched testing.",
         "sources": [{"href": "https://store.steampowered.com/app/1942280/Brotato/", "label": "Steam — Brotato"}]
+      },
+      {
+        "id": "PUBLISH-6",
+        "slug": "mage",
+        "title": "Brotato Mage Taser Build and How to Play Mage",
+        "category": "Builds",
+        "publishedAt": "2026-09-16T00:00:00.000Z",
+        "answer": "Mage naturally favors Elemental Damage, and Taser is one available starting weapon that fits that direction. In RUNBACK's partial Danger 0 test, a six-Taser Elemental setup reached Wave 9 but became noticeably fragile.",
+        "steps": [
+          "Start with Taser and use Elemental Damage as the main offensive direction.",
+          "Add Tasers when reasonable shop opportunities appear, without treating six as mandatory.",
+          "As enemy pressure rises, accept useful survivability options instead of investing only in damage.",
+          "Keep moving and create space when Wave 8–9 pressure increases."
+        ],
+        "mistakes": "Treating a partial Danger 0 test as proof of a full clear, boss performance, or Mage's strongest possible setup.",
+        "versionNote": "MANUAL_VERIFIED: Danger 0, Taser, Wave 9, 5 × Taser II plus 1 × Taser I, Elemental Damage 23, Attack Speed -7%, Max HP 23, and Armor 0. SOURCE_VERIFIED mechanics are kept distinct in the published Markdown.",
+        "sources": [{"href": "https://store.steampowered.com/app/1942280/Brotato/", "label": "Steam — Brotato"}]
       }
     ]
   },
