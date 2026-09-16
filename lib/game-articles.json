@@ -113,6 +113,35 @@
     ]
   },
   {
+    "slug": "wanderburg",
+    "title": "Wanderburg",
+    "articles": [
+      {
+        "id": "REFERENCE-1",
+        "slug": "reference",
+        "title": "Wanderburg Complete Reference Guide: Core Loop, Modules, Vehicles, Bosses and Map Data",
+        "category": "Wiki",
+        "publishedAt": "2026-09-16T00:00:00.000Z",
+        "answer": "A data-focused Wanderburg reference for the core loop, controls, upgrades, vehicles, modules, captains, enemies, bosses, maps, tasks, and version-scoped mechanics.",
+        "steps": [
+          "Use Core Loop and Controls to look up run structure, stage timing, controls, and selection-screen inputs.",
+          "Use Vehicles and Chassis, Modules and Unlocks, and Captains, Crew and Artifacts to compare build and progression systems.",
+          "Use Enemies, Bosses and Non-Consumable Targets for target rules, boss order, boss health tables, and their stated cautions.",
+          "Keep source-capture values, approximate values, community-tested data, and open questions tied to their version notes.",
+          "Recheck official Steam announcements and the current client after updates before treating a changing value as permanent."
+        ],
+        "mistakes": "Treating source-capture, approximate, community-tested, or version-specific values as permanent universal rules.",
+        "versionNote": "Early Access / current community-tested data checked against official hotfixes through 0.9.10 as of 2026-09-16. Values marked as source-capture or needing verification remain version-scoped.",
+        "sources": [
+          {"href": "https://wanderburggame.wiki/guides/getting-started/", "label": "Wanderburg Wiki — Getting Started"},
+          {"href": "https://wanderburggame.wiki/guides/progression/", "label": "Wanderburg Wiki — Progression Guide"},
+          {"href": "https://wanderburggame.wiki/players/enemies/", "label": "Wanderburg Wiki — Enemy Database"},
+          {"href": "https://steamcommunity.com/app/3624140/allnews/", "label": "Steam announcements — Wanderburg"}
+        ]
+      }
+    ]
+  },
+  {
     "slug": "cult-of-the-lamb",
     "title": "Cult of the Lamb",
     "articles": [

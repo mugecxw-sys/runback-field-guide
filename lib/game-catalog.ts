@@ -23,6 +23,17 @@ export const gameLibraries: GameLibrary[] = [
     sourceHref: 'https://store.steampowered.com/app/1942280/Brotato/',
   },
   {
+    slug: 'wanderburg',
+    title: 'Wanderburg',
+    type: 'Data-focused reference',
+    version: 'Community-tested data · September 2026',
+    description: 'A data-focused reference for Wanderburg core loop, modules, vehicles, bosses, maps, and version-scoped mechanics.',
+    status: 'LIVE',
+    guideCount: 1,
+    categories: ['Core Loop', 'Vehicles', 'Modules', 'Bosses', 'Maps', 'Mechanics'],
+    sourceHref: 'https://steamcommunity.com/app/3624140/allnews/',
+  },
+  {
     slug: 'repo',
     title: 'R.E.P.O.',
     type: 'Extraction horror roguelite',
