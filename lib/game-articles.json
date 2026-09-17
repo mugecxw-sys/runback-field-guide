@@ -138,6 +138,28 @@
           {"href": "https://wanderburggame.wiki/players/enemies/", "label": "Wanderburg Wiki — Enemy Database"},
           {"href": "https://steamcommunity.com/app/3624140/allnews/", "label": "Steam announcements — Wanderburg"}
         ]
+      },
+      {
+        "id": "PUBLISH-7",
+        "slug": "arms-dealer",
+        "title": "Brotato Arms Dealer Build: Shop Strategy, Economy and How to Play",
+        "category": "Builds",
+        "publishedAt": "2026-09-17T00:00:00.000Z",
+        "answer": "Arms Dealer destroys weapons when entering each shop, so material economy and rebuilding temporary loadouts are central. RUNBACK's Danger 0 test failed around Wave 12 after material management became increasingly restrictive.",
+        "steps": [
+          "Treat each shop as a rebuild: buy enough usable weapons for the next wave, then preserve materials for future rerolls and purchases.",
+          "Build permanent stats and economy that remain useful when the temporary weapon set disappears.",
+          "Use Lock to preserve a useful option and buy it before rerolling, without treating one weapon class as guaranteed.",
+          "Do not force six ideal weapons at any cost; adapt the temporary loadout to the shop and the next wave."
+        ],
+        "mistakes": "Treating a melee-leaning Danger 0 partial test as a clear, a proven best build, or proof that a fixed number of weapons is always enough or required.",
+        "versionNote": "MANUAL_VERIFIED: Danger 0, Starting Weapon Pistol, reached and failed around Wave 12, first-shop Pistol destroyed, first-shop weapons 0/6, locked Cacti Club bought first, and additional melee options appeared after rerolling. BRT-ARMS-03 and BRT-ARMS-04 are Wave 5 and Wave 8 snapshots, not Wave 12 final stats.",
+        "sources": [
+          {"href": "https://brotato.wiki.spellsandguns.com/Arms_Dealer", "label": "Brotato Wiki — Arms Dealer"},
+          {"href": "https://brotato.wiki.spellsandguns.com/Dangerous_Bunny", "label": "Brotato Wiki — Dangerous Bunny"},
+          {"href": "https://brotato.wiki.spellsandguns.com/Shop", "label": "Brotato Wiki — Shop"},
+          {"href": "https://store.steampowered.com/app/1942280/Brotato/", "label": "Steam — Brotato"}
+        ]
       }
     ]
   },
