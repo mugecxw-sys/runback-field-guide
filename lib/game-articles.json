@@ -131,6 +131,28 @@
           {"href": "https://brotato.wiki.spellsandguns.com/Shop", "label": "Brotato Wiki — Shop"},
           {"href": "https://store.steampowered.com/app/1942280/Brotato/", "label": "Steam — Brotato"}
         ]
+      },
+      {
+        "id": "PUBLISH-8",
+        "slug": "golem",
+        "title": "Brotato Golem Guide: Build, Weapons, Stats and Strategy",
+        "category": "Builds",
+        "publishedAt": "2026-09-18T00:00:00.000Z",
+        "answer": "Golem cannot heal during waves and gains stronger Max HP and Armor modifications. RUNBACK's Danger 0 Rock-start test became a flexible mixed loadout by Wave 8, reached Wave 12, and did not clear.",
+        "steps": [
+          "Use a Rock-start defensive melee direction, then keep a functional mixed loadout if the shop does not keep offering Rocks.",
+          "Prioritize Max HP and Armor while preserving enough offense and movement for the enemy pressure in front of you.",
+          "Treat the below-50%-HP bonus as a naturally triggered comeback effect, not a reason to seek damage during a wave.",
+          "Read the Wave 3 and Wave 8 values as recorded snapshots rather than final Wave 12 stats or universal targets."
+        ],
+        "mistakes": "Treating a limited Danger 0 test as a clear, a proof that Rock is best, or evidence that a pure Rock loadout forms reliably.",
+        "versionNote": "MANUAL_VERIFIED: Golem, Danger 0, Rock, reached Wave 12 without a clear, and became noticeably harder after Wave 8. GOL-02 is a Wave 3 Rock ×3 snapshot; GOL-03 is a Wave 8 6/6 mixed-loadout snapshot with only two Rocks, Rock II ×1, and Rock I ×1. The below-50%-HP passive triggered naturally and felt slight in this test.",
+        "sources": [
+          {"href": "https://brotato.wiki.spellsandguns.com/Golem", "label": "Brotato Wiki — Golem"},
+          {"href": "https://brotato.wiki.spellsandguns.com/Rock", "label": "Brotato Wiki — Rock"},
+          {"href": "https://brotato.wiki.spellsandguns.com/Spiky_Shield", "label": "Brotato Wiki — Spiky Shield"},
+          {"href": "https://store.steampowered.com/news/app/1942280", "label": "Official Brotato Steam patch notes"}
+        ]
       }
     ]
   },
