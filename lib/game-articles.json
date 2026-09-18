@@ -153,6 +153,27 @@
           {"href": "https://brotato.wiki.spellsandguns.com/Spiky_Shield", "label": "Brotato Wiki — Spiky Shield"},
           {"href": "https://store.steampowered.com/news/app/1942280", "label": "Official Brotato Steam patch notes"}
         ]
+      },
+      {
+        "id": "PUBLISH-9",
+        "slug": "lich",
+        "title": "Brotato Lich Guide: Healing Build, Weapons and Stats",
+        "category": "Builds",
+        "publishedAt": "2026-09-18T00:00:00.000Z",
+        "answer": "Lich turns healing into random-enemy damage. RUNBACK's Danger 0 Medical Gun-start test verified a healing-trigger hybrid through the Wave 8 shop; it does not claim a full clear.",
+        "steps": [
+          "Start with Medical Gun as a healing-engine direction, not as a promise of an all-Medical-Gun final loadout.",
+          "Use HP Regeneration and Life Steal as complementary healing sources without ranking one above the other from this test.",
+          "Keep direct weapon output functional and use flexible weapons when forcing more Medical Guns would be inefficient.",
+          "Treat the Wave 8 shop as the final verified snapshot; positioning became more important after it, but the exact stopping wave was not recorded."
+        ],
+        "mistakes": "Treating a Wave 8 Danger 0 snapshot as a full clear, calling Medical Gun best, forcing pure Medical Gun, or making intentional damage a required loop.",
+        "versionNote": "MANUAL_VERIFIED: Lich, Danger 0, Medical Gun start, and a healing-trigger hybrid verified through the Wave 8 shop. LCH-02, LCH-03, and LCH-04 are Wave 3, Wave 6, and Wave 8 snapshots only. No exact final stopping wave, Wave 9/10, Danger 0 clear, Boss, or full-run claim is made. HP Regeneration and Life Steal both contributed; the passive was noticeable and useful, while direct weapon damage felt weak without a single-cause attribution.",
+        "sources": [
+          {"href": "https://brotato.wiki.spellsandguns.com/Lich", "label": "Brotato Wiki — Lich"},
+          {"href": "https://brotato.wiki.spellsandguns.com/Medical_Gun", "label": "Brotato Wiki — Medical Gun"},
+          {"href": "https://brotato.wiki.spellsandguns.com/Life_Steal", "label": "Brotato Wiki — Life Steal"}
+        ]
       }
     ]
   },
