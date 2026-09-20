@@ -174,6 +174,26 @@
           {"href": "https://brotato.wiki.spellsandguns.com/Medical_Gun", "label": "Brotato Wiki — Medical Gun"},
           {"href": "https://brotato.wiki.spellsandguns.com/Life_Steal", "label": "Brotato Wiki — Life Steal"}
         ]
+      },
+      {
+        "id": "PUBLISH-10",
+        "slug": "cyborg",
+        "title": "Brotato Cyborg Guide: Minigun, Engineering and Build Strategy",
+        "category": "Builds",
+        "publishedAt": "2026-09-20T00:00:00.000Z",
+        "answer": "Cyborg's automatic Minigun uses Ranged Damage before its temporary mid-wave conversion to Engineering. RUNBACK's Danger 0 Wrench hybrid test reached the Wave 8 shop; it does not claim a full clear.",
+        "steps": [
+          "Use the automatic Minigun and other guns for the first half of a wave while Ranged Damage is active.",
+          "Let the temporary Ranged Damage-to-Engineering conversion support Wrench structures and other Engineering sources in the second half.",
+          "Keep the Minigun + Wrench setup flexible instead of forcing a pure gun, pure Engineering, or six-Wrench build.",
+          "Treat Wave 8 as the verified final snapshot from this Danger 0 manual test, not a full-clear result."
+        ],
+        "mistakes": "Treating the temporary conversion as permanent, assuming three or six Wrenches are required, or reading a Wave 8 Danger 0 snapshot as a full clear.",
+        "versionNote": "MANUAL_VERIFIED: Cyborg, Danger 0, Wrench selected weapon, automatic Minigun, and a Minigun + Wrench / Ranged-to-Engineering hybrid through Wave 8. CYB-02 is a Wave 4 snapshot; CYB-03-1 and CYB-03-2 are paired, separate Wave 5 mechanic captures proving 12 Ranged Damage / 0 Engineering becomes 0 Ranged Damage / 24 Engineering; CYB-04 is a Wave 8 shop snapshot after the temporary conversion ended. No full clear, Danger 5, best/meta, or complete DPS attribution claim is made.",
+        "sources": [
+          {"href": "https://brotato.wiki.spellsandguns.com/Cyborg", "label": "Brotato Wiki — Cyborg"},
+          {"href": "https://brotato.wiki.spellsandguns.com/Engineering", "label": "Brotato Wiki — Engineering"}
+        ]
       }
     ]
   },
