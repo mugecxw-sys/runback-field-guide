@@ -203,6 +203,25 @@
           {"href": "https://wanderburggame.wiki/players/enemies/", "label": "Wanderburg Wiki — Enemy Database"},
           {"href": "https://steamcommunity.com/app/3624140/allnews/", "label": "Steam announcements — Wanderburg"}
         ]
+      },
+      {
+        "id": "PUBLISH-2",
+        "slug": "builds",
+        "title": "Wanderburg Best Builds Guide: 6 Meta & Fun Setups for Dominating Early Access",
+        "category": "Builds",
+        "publishedAt": "2026-09-20T00:00:00.000Z",
+        "answer": "Below is our comprehensive build guide featuring the 6 most effective and fun setups currently dominating the meta.",
+        "steps": [
+          "The Heavy Artillery Cannon Build",
+          "The OP Turrets & Arrows Drive-By",
+          "The Drill Sergeant (Minion Army Build)",
+          "The Firestarter (Pyromaniac AoE Build)",
+          "Can't Touch This (Mine Layer Kite Build)",
+          "Speed Racer (Heavy Battering Ram Build)"
+        ],
+        "mistakes": "",
+        "versionNote": "",
+        "sources": []
       }
     ]
   },

@@ -29,7 +29,7 @@ export const gameLibraries: GameLibrary[] = [
     version: 'Community-tested data · September 2026',
     description: 'A data-focused reference for Wanderburg core loop, modules, vehicles, bosses, maps, and version-scoped mechanics.',
     status: 'LIVE',
-    guideCount: 1,
+    guideCount: 2,
     categories: ['Core Loop', 'Vehicles', 'Modules', 'Bosses', 'Maps', 'Mechanics'],
     sourceHref: 'https://steamcommunity.com/app/3624140/allnews/',
   },
