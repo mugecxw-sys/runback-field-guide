@@ -62,7 +62,14 @@ export default async function GuidePage({ params }: Props) {
     .map((id) => repoGuidePages.find((x) => x.id === id)!)
     .filter(Boolean)
     .map((r) => ({ href: '/guides/' + r.slug, title: r.title }));
-  const modified = g.updatedAt ?? (repoEnrichment[g.slug] || ['P2-24', 'P2-25'].includes(g.id)
+  const hasDefaultModifiedDate =
+    (repoEnrichment[g.slug] &&
+      ![
+        'repo-ps5-xbox-console-crossplay',
+        'what-is-r-e-p-o-story-setting-and-what-we-know',
+      ].includes(g.slug)) ||
+    ['P2-24', 'P2-25'].includes(g.id);
+  const modified = g.updatedAt ?? (hasDefaultModifiedDate
     ? '2026-09-10T00:00:00.000Z'
     : undefined);
   return (
