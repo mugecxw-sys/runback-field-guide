@@ -377,7 +377,7 @@ export const repoGuideSections: RepoGuideSection[] = [
     id: 'beginner',
     title: 'Beginner',
     description: 'Start safely and learn the core loop.',
-    guideIds: ['P0-1', 'P1-18', 'P2-28', 'P2-29'],
+    guideIds: ['P0-1', 'P1-18', 'P2-28', 'P2-29', 'P2-30'],
   },
   {
     id: 'mechanics',
@@ -421,6 +421,10 @@ export const repoRelatedGuideIds: Record<string, string[]> = {
   'P0-8': ['P0-7', 'P0-9', 'P0-3'],
   'P0-9': ['P0-7', 'P0-8', 'P0-3'],
   'P0-10': ['P0-4', 'P0-5', 'P0-2', 'P0-1'],
+  'P1-17': ['P2-30', 'P0-1', 'P0-2', 'P2-28'],
+  'P2-28': ['P2-30', 'P2-29', 'P0-2', 'P0-3'],
+  'P2-29': ['P2-30', 'P0-1', 'P0-2', 'P2-28'],
+  'P2-30': ['P0-1', 'P1-17', 'P2-28', 'P2-29'],
 };
 
 for (const guide of repoGuidePages) {

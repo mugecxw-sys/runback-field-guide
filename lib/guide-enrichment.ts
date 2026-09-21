@@ -13,6 +13,33 @@ export type Enrichment = {
   source?: { href: string; label: string };
 };
 export const repoEnrichment: Record<string, Enrichment[]> = {
+  'repo-ps5-xbox-console-crossplay': [
+    {
+      heading: 'Current Platform Status',
+      columns: ['Platform', 'Current Status'],
+      rows: [
+        ['Windows PC / Steam', 'Available'],
+        ['PS5', 'Not currently released'],
+        ['Xbox', 'Not currently released'],
+        ['PC ↔ PS5 crossplay', 'Not currently available'],
+        ['PC ↔ Xbox crossplay', 'Not currently available'],
+        ['Future console version', 'Planned, no confirmed release date'],
+      ],
+      paragraphs: [],
+    },
+  ],
+  'what-is-r-e-p-o-story-setting-and-what-we-know': [
+    {
+      heading: 'What Does R.E.P.O. Stand For?',
+      paragraphs: [
+        'You will often see R.E.P.O. expanded as: Retrieve, Extract and Profit Operation.',
+        "That wording matches the game's basic loop: retrieve valuables, extract them safely, and turn the recovered value into progress.",
+        'However, RUNBACK has not found a primary semiwork statement formally defining that phrase as the official expansion of the title.',
+        'For that reason, it is better described as the commonly reported expansion of R.E.P.O. rather than something this guide can independently label as an officially confirmed acronym.',
+        'The name also plays naturally on the word repo, short for repossession, which fits a game about entering abandoned locations and recovering valuable property.',
+      ],
+    },
+  ],
   'first-run-guide': [
     {
       heading: 'Quick Facts',

@@ -12,7 +12,7 @@ import {
 } from '@/lib/repo-guide-pages';
 type Props = { params: Promise<{ slug: string }> };
 const repoArticleType = (tag: string) => {
-  if (tag === 'FAQ') return 'faq' as const;
+  if (tag === 'FAQ' || tag === 'PLATFORMS') return 'faq' as const;
   if (tag === 'ENEMIES') return 'mechanic' as const;
   if (tag === 'ITEMS' || tag === 'UPGRADES' || tag === 'STRENGTH')
     return 'build' as const;

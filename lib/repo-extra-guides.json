@@ -165,15 +165,15 @@
     "id": "P1-17",
     "slug": "team-roles-for-3-6-players",
     "tag": "CO-OP",
-    "title": "Team roles for 3–6 players",
-    "description": "Assign scout, hauler, distractor, extractor, and recovery jobs before danger appears.",
-    "lead": "More players only help when the team has distinct jobs. Keep the carrier protected, keep one person responsible for the return path, and avoid six people making the same call.",
+    "title": "How Many Players Can Play R.E.P.O.? Max Player Count and Team Roles",
+    "description": "Learn R.E.P.O.'s up to 6-player online co-op limit and practical team roles for groups of two to six.",
+    "lead": "R.E.P.O. supports up to six players in online co-op. The official Steam page describes the game as playable with up to five friends, meaning you plus five other players. Smaller groups can still play; you do not need a six-player lobby.",
     "steps": [
-      "For three players, use one scout, one hauler, and one flexible support who can carry or watch the rear.",
-      "For four players, add a dedicated extractor or distractor so the carrier can stay focused.",
-      "For five or six players, keep two carriers but preserve one scout and one recovery/defense role.",
-      "Use a fixed callout format: room, item or enemy, action.",
-      "Before quota is reached, name who stays on the route and who returns to the truck for the automatic extraction sequence."
+      "How Many Players Can Play R.E.P.O.? R.E.P.O. supports up to 6 players total in online multiplayer. The official Steam description says you can venture into the game with up to five friends: 1 player + 5 friends = 6 players total. You do not need six people to start playing.",
+      "Can You Play R.E.P.O. With 2 Players? Yes. A two-player group can split basic responsibilities between scouting, carrying, watching the route, and reacting to enemies. With fewer players, each player has to cover more jobs.",
+      "Can You Play R.E.P.O. With 3 or 4 Players? Yes. This is where defined roles become more useful. For three players, use one scout, one hauler, and one flexible support player. With four players, an additional player can focus more heavily on extraction, enemy distraction, or protecting the return route.",
+      "What About 5 or 6 Players? Larger groups give you more people for carrying and enemy control, but more players do not automatically make a run organized. Keep distinct responsibilities: a scout, one or more carriers, route awareness, and recovery or defensive support.",
+      "Is R.E.P.O. 6-Player Co-op? Yes. Six players is the current official maximum described on the Steam store page. That does not mean six players are required. Use the team size you actually have and adjust roles around the current map, valuables, enemies, and return route."
     ],
     "mistakes": "Everyone looting, nobody owning the return route, and letting proximity voice break the team into isolated pairs.",
     "versionNote": "The role matrix comes from community strategy guides and should be adjusted for the current map, player skill, and patch.",
@@ -185,6 +185,10 @@
       {
         "label": "Maps and roles",
         "href": "https://www.switchbladegaming.com/co-op-games/repo/maps-roles-guide/"
+      },
+      {
+        "label": "Official R.E.P.O. Steam store page",
+        "href": "https://store.steampowered.com/app/3241660/R.E.P.O./"
       }
     ]
   },
@@ -470,7 +474,9 @@
       "Why can’t we leave immediately after reaching quota? Wait for the automatic extraction sequence to finish, then regroup at the truck and follow the current departure prompt.",
       "What should I buy first? Choose the upgrade or tool that addresses the repeated failure: carrying, stamina, damage, reach, control, or fragile value.",
       "Should we fight every monster? No. Identify its trigger, protect the loot lane, and fight only when it blocks the route and the crew has a safe setup.",
-      "How should co-op roles work? Assign navigation, carrying, and lookout duties, but let players switch when the room or current load changes."
+      "How should co-op roles work? Assign navigation, carrying, and lookout duties, but let players switch when the room or current load changes.",
+      "How Much Is R.E.P.O.? As of September 2026, R.E.P.O.'s standard U.S. Steam price is $9.99. Steam sales can temporarily reduce that price, and regional pricing can differ by country. Because R.E.P.O. is still in Early Access, this price is not guaranteed to stay unchanged forever. The developer has said the price may increase when the game reaches version 1.0. RUNBACK treats $9.99 as the current U.S. base price rather than a permanent lifetime price.",
+      "Is R.E.P.O. Free? No. R.E.P.O. is currently a paid Steam game, not a free-to-play game. Temporary discounts do not make the game permanently free. If you see a different price, check the current Steam listing because discounts and regional pricing can change."
     ],
     "mistakes": "Treating quota as a full-clear order, assuming one purchase order fits every crew, and chasing a monster after the route is already safe.",
     "versionNote": "Prompts, shops, enemy behavior, and multiplayer interactions can change. The linked focused guides carry the version-specific caveats.",
@@ -482,6 +488,10 @@
       {
         "label": "Steam community guides",
         "href": "https://steamcommunity.com/app/3241660/guides/?browsefilter=trend&browsesort=trend&filetype=11&numperpage=18&requiredtags%5B0%5D=english"
+      },
+      {
+        "label": "Official R.E.P.O. Steam store page",
+        "href": "https://store.steampowered.com/app/3241660/R.E.P.O./"
       }
     ]
   },
@@ -509,7 +519,42 @@
       {
         "label": "Official R.E.P.O. announcements",
         "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
+      },
+      {
+        "label": "The Escapist — What does R.E.P.O.'s title stand for?",
+        "href": "https://www.escapistmagazine.com/what-does-repos-title-stand-for/"
       }
     ]
+  },
+  {
+    "id": "P2-30",
+    "slug": "repo-ps5-xbox-console-crossplay",
+    "tag": "PLATFORMS",
+    "title": "Is R.E.P.O. on PS5 or Xbox? Console Release & Crossplay Status",
+    "description": "Is R.E.P.O. on PS5 or Xbox? Check the current console release status, crossplay support, PC availability, and what semiwork has said about future console versions.",
+    "lead": "R.E.P.O. is currently available on Windows PC through Steam. Developer semiwork says a console release is part of the current plan, but the team does not expect to fully work on it until development is closer to the 1.0 release. There is currently no confirmed PS5 or Xbox release date, and PC-to-console crossplay is not available because no console version has been released yet.",
+    "steps": [
+      "Is R.E.P.O. on PS5? No. As of September 2026, R.E.P.O. does not have a released PS5 version. semiwork has said that bringing R.E.P.O. to consoles is the current plan, but console development is not expected to become a major focus until the game is closer to its 1.0 release. There is no confirmed PS5 release date, no PlayStation Store version to play, and no official PS5 launch window. A planned console version is not the same thing as an announced release date.",
+      "Is R.E.P.O. on Xbox? R.E.P.O. is not currently released on Xbox either. The developer's public console statement did not announce separate Xbox or PlayStation dates. It only confirmed that a console release is part of the plan for the future. Until semiwork announces specific platforms and dates, Xbox players should treat any exact release date circulating online as speculation.",
+      "Is R.E.P.O. on Console? Not yet. The current public version is the Windows PC version sold through Steam. The official Steam system requirements list Windows 10 as the minimum operating system and Windows 11 as the recommended operating system. semiwork has publicly said that a console release is planned, but development on it is expected later in the road toward R.E.P.O. 1.0.",
+      "Is R.E.P.O. Crossplay? There is currently no PC-to-PS5 or PC-to-Xbox crossplay because R.E.P.O. has not yet released on those consoles. The current game supports online multiplayer on its existing PC release. semiwork's 2026 console statement confirms plans to investigate a console release later in development, but it does not confirm a future crossplay system. R.E.P.O. does not currently have PC-console crossplay, and future crossplay has not been officially confirmed.",
+      "Is R.E.P.O. Cross Platform? Not in the usual PC/PlayStation/Xbox sense right now. R.E.P.O. currently has one public PC release rather than separate PC, PlayStation, and Xbox versions that can play together. If a console version is released later, cross-platform multiplayer will depend on what semiwork chooses to support at that time.",
+      "When Is R.E.P.O. Coming to PS5 or Xbox? There is no confirmed date. In its March 2026 Q&A, semiwork said a console release is the current plan but that the team would not fully dig into console development until it was on the homestretch toward the 1.0 update. That gives players a development direction, not a launch window. Do not treat third-party countdowns, store placeholders, or predicted dates as official unless semiwork announces them.",
+      "Can You Play R.E.P.O. on PC Now? Yes. R.E.P.O. is available through Steam for Windows PC. The game remains in Early Access, so its supported platforms and features may expand as development continues.",
+      "Does R.E.P.O. Support Multiplayer? Yes. The Steam store describes R.E.P.O. as an online co-op horror game where you can play with up to five friends. That means a lobby can support up to six players total. For player-count details and team-role suggestions, see the RUNBACK multiplayer guide."
+    ],
+    "mistakes": "Treating a planned console release as a dated announcement, treating third-party predictions as official, or assuming future crossplay is confirmed.",
+    "versionNote": "Platform availability, console development, and future multiplayer support can change. This page reports the current public Windows PC release and semiwork's stated development direction without predicting a launch date.",
+    "sources": [
+      {
+        "label": "Official R.E.P.O. announcement — Addressing the BIGGEST QUESTIONS about R.E.P.O. in 2026",
+        "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
+      },
+      {
+        "label": "Official R.E.P.O. Steam store page",
+        "href": "https://store.steampowered.com/app/3241660/R.E.P.O./"
+      }
+    ],
+    "publishedAt": "2026-09-21T00:00:00.000Z"
   }
 ]
