@@ -358,6 +358,7 @@ export function ArticleView({
         <footer className="mt-12 flex flex-wrap gap-5 border-t border-white/10 pt-6 text-sm text-[#aeb7bc]">
           <a href="/about">About</a>
           <a href="/editorial">Editorial policy</a>
+          <a href="/contact">Contact</a>
           <a href="/privacy">Privacy</a>
         </footer>
       </article>

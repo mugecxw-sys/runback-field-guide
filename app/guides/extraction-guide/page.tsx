@@ -138,7 +138,7 @@ export default function ExtractionGuide() {
           <a href="/games/repo" className="mt-6 block text-[#ff9a7a]">All R.E.P.O. guides →</a>
         </nav>
         <footer className="mt-12 flex flex-wrap gap-5 border-t border-white/10 pt-6 text-sm text-[#aeb7bc]">
-          <a href="/about">About</a><a href="/editorial">Editorial policy</a><a href="/privacy">Privacy</a>
+          <a href="/about">About</a><a href="/editorial">Editorial policy</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a>
         </footer>
       </article>
     </main>
