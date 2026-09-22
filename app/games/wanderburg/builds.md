@@ -268,6 +268,8 @@ They do not, by themselves, prove that any of these Captains is the best partner
 
 Choose the Captain after deciding what your build actually needs.
 
+For verified Captain effects and patch changes, see the [Wanderburg Captains Wiki](/games/wanderburg/wiki/captains).
+
 ---
 
 ## Use Rerolls Instead of Forcing a Bad Build

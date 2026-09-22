@@ -335,6 +335,8 @@ Keeping those jobs separate prevents a balance change from turning a raw referen
 
 See the Wanderburg Builds Guide for current build directions involving Electric Mage, Side Arms, Side Ballista, Front Barracks and Force Mage.
 
+For verified Captain effects and patch changes, see the [Wanderburg Captains Wiki](/games/wanderburg/wiki/captains).
+
 For the broader patch and system overview, see the [Wanderburg Wiki & Reference](/games/wanderburg/reference). Return to the [Wanderburg game hub](/games/wanderburg) for all Wanderburg guides.
 
 # Version History to Watch

@@ -212,6 +212,8 @@ Extra damage taken while boosting:
 
 Because captain balance is already changing during Early Access, rankings and build recommendations should always be tied to a game version.
 
+For verified Captain patch changes, see the [Wanderburg Captains Wiki](/games/wanderburg/wiki/captains).
+
 ---
 
 ## Vehicles
