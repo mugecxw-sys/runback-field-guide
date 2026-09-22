@@ -4,16 +4,36 @@ import buildsMarkdown from '../builds.md?raw';
 import { siteUrl } from '@/lib/repo-guide-pages';
 
 const href = '/games/wanderburg/builds';
-const h1 = 'Wanderburg Best Builds Guide: 6 Meta & Fun Setups for Dominating Early Access';
-const description = 'Wanderburg throws you into a relentless medieval roguelite where your only shelter is a massive castle on wheels. To crush rival keeps, survive brutal biomes like the Golden Dunes, and claim top ranks on the global leaderboard, your build synergy needs to be razor-sharp.';
+const title = 'Wanderburg Builds Guide (0.9.14): Modules & Build Directions';
+const h1 = 'Wanderburg Builds Guide (0.9.14): What to Build Around Now';
+const description = 'A current Wanderburg builds guide for Early Access 0.9.14, covering Electric Mage, Side Arms, Side Ballista, Front Barracks, Force Mage, captains and practical build decisions.';
 const publishedAt = '2026-09-20T00:00:00.000Z';
+const sources = [
+  ['Official Wanderburg Hotfix 0.9.14', 'https://steamcommunity.com/app/3624140/allnews/'],
+  ['Official Wanderburg Hotfix 0.9.13', 'https://steamcommunity.com/app/3624140/allnews/'],
+  ['Official Wanderburg Hotfix 0.9.10', 'https://steamcommunity.com/app/3624140/allnews/'],
+  ['Official Wanderburg Hotfix 0.9.9', 'https://steamcommunity.com/app/3624140/allnews/'],
+  ['Official Wanderburg Steam store page', 'https://store.steampowered.com/app/3624140/Wanderburg/'],
+] as const;
+const toc = [
+  'Is There a Best Wanderburg Build?',
+  'Current Build Directions Worth Testing',
+  'What About Back Turret?',
+  'Captains Matter to the Build',
+  'Use Rerolls Instead of Forcing a Bad Build',
+  'Use Damage Numbers to Test Your Build',
+  'A Simple Build Decision Order',
+  'What RUNBACK Is Not Calling “Meta” Yet',
+  'Current Patch Takeaway',
+  'Sources',
+];
 
 export const metadata: Metadata = {
-  title: h1 + ' | RUNBACK',
+  title: title + ' | RUNBACK',
   description,
   alternates: { canonical: siteUrl + href },
-  openGraph: { title: h1, description, type: 'article', url: siteUrl + href, publishedTime: publishedAt },
-  twitter: { card: 'summary', title: h1, description },
+  openGraph: { title, description, type: 'article', url: siteUrl + href, publishedTime: publishedAt },
+  twitter: { card: 'summary', title, description },
 };
 
 function slugify(value: string) {
@@ -56,7 +76,12 @@ function MarkdownBody() {
     }
     if (line.startsWith('### ')) {
       const heading = line.slice(4);
-      blocks.push(<h3 id={slugify(heading)} key={index} className="mt-8 scroll-mt-24 text-xl font-semibold">{heading}</h3>);
+      blocks.push(<h3 id={`${slugify(heading)}-${index}`} key={index} className="mt-8 scroll-mt-24 text-xl font-semibold">{heading}</h3>);
+      index += 1;
+      continue;
+    }
+    if (line.startsWith('> ')) {
+      blocks.push(<blockquote key={index} className="mt-5 border-l-2 border-[#ff8662] pl-4 leading-7 text-[#c7d0d5]"><Inline text={line.slice(2)} /></blockquote>);
       index += 1;
       continue;
     }
@@ -68,6 +93,12 @@ function MarkdownBody() {
       blocks.push(<div key={index} className="mt-5 overflow-x-auto rounded-xl border border-white/15"><table className="min-w-full border-collapse text-left text-sm leading-6"><thead className="bg-[#192126]"><tr>{header.map(cell => <th key={cell} scope="col" className="whitespace-nowrap border-b border-white/20 px-4 py-3 font-semibold"><Inline text={cell} /></th>)}</tr></thead><tbody>{rows.map((row, rowIndex) => <tr key={rowIndex} className="border-b border-white/10 last:border-0">{row.map((cell, cellIndex) => cellIndex === 0 ? <th key={cellIndex} scope="row" className="whitespace-nowrap px-4 py-3 text-left font-medium"><Inline text={cell} /></th> : <td key={cellIndex} className="min-w-72 px-4 py-3 text-[#c7d0d5]"><Inline text={cell} /></td>)}</tr>)}</tbody></table></div>);
       continue;
     }
+    if (line.startsWith('- ')) {
+      const items: string[] = [];
+      while (lines[index]?.startsWith('- ')) { items.push(lines[index].slice(2)); index += 1; }
+      blocks.push(<ul key={index} className="mt-5 list-disc space-y-2 pl-6 leading-7">{items.map(item => <li key={item}><Inline text={item} /></li>)}</ul>);
+      continue;
+    }
     blocks.push(<p key={index} className="mt-5 leading-8 text-[#c7d0d5]"><Inline text={line} /></p>);
     index += 1;
   }
@@ -75,6 +106,7 @@ function MarkdownBody() {
 }
 
 export default function WanderburgBuilds() {
+  const citation = [...new Set(sources.map(([, url]) => url))];
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -83,6 +115,7 @@ export default function WanderburgBuilds() {
         inLanguage: 'en', mainEntityOfPage: siteUrl + href,
         author: { '@type': 'Organization', name: 'RUNBACK', url: siteUrl + '/about' },
         publisher: { '@type': 'Organization', '@id': siteUrl + '/#organization', name: 'RUNBACK', url: siteUrl },
+        citation,
       },
       {
         '@type': 'BreadcrumbList', itemListElement: [
@@ -98,6 +131,7 @@ export default function WanderburgBuilds() {
     <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[#aeb7bc]"><a href="/">Home</a><span>›</span><a href="/games/wanderburg">Wanderburg</a><span>›</span><span aria-current="page">{h1}</span></nav>
     <h1 className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl">{h1}</h1>
     <p className="mt-4 text-xs text-[#aeb7bc]">By RUNBACK · Published <time dateTime={publishedAt}>2026-09-20</time></p>
+    <nav aria-label="On this page" className="mt-6 rounded-xl border border-white/15 bg-[#192126] p-5"><p className="font-semibold">On this page</p><ul className="mt-3 grid gap-2 sm:grid-cols-2">{toc.map((item) => <li key={item}><a className="text-[#ff9a7a] underline underline-offset-4" href={'#' + slugify(item)}>{item}</a></li>)}</ul></nav>
     <MarkdownBody />
   </article></main>;
 }
