@@ -160,6 +160,8 @@ Examples confirmed in official Early Access patch notes include:
 
 RUNBACK will keep module reference data separate from build recommendations.
 
+For a verified list of modules explicitly named in official patch notes, see the [Wanderburg Modules Wiki](/games/wanderburg/wiki/modules).
+
 A reference page answers:
 
 **What does this module do?**

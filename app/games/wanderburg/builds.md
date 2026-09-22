@@ -388,6 +388,8 @@ Use these as build directions rather than fixed recipes.
 
 Wanderburg is still in Early Access, and the strongest practical combinations can change as Randwerk continues balancing the game.
 
+For confirmed module effects and patch changes, see the [Wanderburg Modules Wiki](/games/wanderburg/wiki/modules).
+
 ## Sources
 
 Primary sources:

@@ -62,6 +62,22 @@ export default async function GamePage({ params }: Props) {
         gameLibraries.find((x) => x.slug === g.slug)?.description ?? ''
       }
       sections={sections}
-    />
+    >
+      {g.slug === 'wanderburg' && (
+        <section className="mt-10">
+          <h2 className="text-2xl font-semibold">Wanderburg Wiki</h2>
+          <div className="mt-4 grid gap-4 md:grid-cols-2">
+            <a
+              href="/games/wanderburg/wiki/modules"
+              className="rounded-xl border border-white/10 bg-[#192126] p-5 hover:border-[#ff8662]/60"
+            >
+              <h3 className="text-lg font-semibold">Wanderburg Modules Wiki (0.9.14)</h3>
+              <p className="mt-3 text-sm leading-6 text-[#aeb7bc]">Verified module effects and official Early Access patch changes.</p>
+              <span className="mt-4 block text-sm text-[#ff9a7a]">Read wiki →</span>
+            </a>
+          </div>
+        </section>
+      )}
+    </GameHub>
   );
 }
