@@ -286,6 +286,8 @@ Use the current tooltip and actual run behavior before turning an interaction in
 
 For module mechanics, see the [Wanderburg Modules Wiki](/games/wanderburg/wiki/modules).
 
+For verified Artifact effects and reroll changes, see the [Wanderburg Artifacts Wiki](/games/wanderburg/wiki/artifacts).
+
 For practical build directions, see the [Wanderburg Builds Guide](/games/wanderburg/builds).
 
 For the broader patch and system overview, see the [Wanderburg Wiki & Reference](/games/wanderburg/reference). Return to the [Wanderburg game hub](/games/wanderburg) for all Wanderburg guides.

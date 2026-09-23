@@ -294,6 +294,8 @@ you receive:
 
 Hotfix 0.9.14 also added a **second Artifact reroll from the start**.
 
+For verified Artifact effects, rerolls and patch changes, see the [Wanderburg Artifacts Wiki](/games/wanderburg/wiki/artifacts).
+
 This makes it easier to search for something useful, but it still does not guarantee that one exact multi-module loadout will appear every run.
 
 A practical rule is:

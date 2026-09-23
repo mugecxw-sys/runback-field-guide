@@ -83,6 +83,14 @@ export default async function GamePage({ params }: Props) {
               <p className="mt-3 text-sm leading-6 text-[#aeb7bc]">Verified Captain effects and official Early Access balance changes.</p>
               <span className="mt-4 block text-sm text-[#ff9a7a]">Read wiki →</span>
             </a>
+            <a
+              href="/games/wanderburg/wiki/artifacts"
+              className="rounded-xl border border-white/10 bg-[#192126] p-5 hover:border-[#ff8662]/60"
+            >
+              <h3 className="text-lg font-semibold">Wanderburg Artifacts Wiki (0.9.14)</h3>
+              <p className="mt-3 text-sm leading-6 text-[#aeb7bc]">Verified Artifact effects, rerolls and official Early Access patch changes.</p>
+              <span className="mt-4 block text-sm text-[#ff9a7a]">Read wiki →</span>
+            </a>
           </div>
         </section>
       )}

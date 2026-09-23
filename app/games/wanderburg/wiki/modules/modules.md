@@ -269,6 +269,8 @@ Hotfix 0.9.10 added:
 
 Artifact rerolls use a separate progression rule.
 
+For verified Artifact effects, rerolls and patch changes, see the [Wanderburg Artifacts Wiki](/games/wanderburg/wiki/artifacts).
+
 This means unlocking more modules affects more than the size of your equipment pool: it also increases the number of module rerolls available to you.
 
 # Locked Module Options

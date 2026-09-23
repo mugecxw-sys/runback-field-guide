@@ -54,6 +54,8 @@ The **Repair Wrench** was changed from percentage-based healing to a flat:
 
 **25 HP heal**
 
+For verified Artifact effects, rerolls and patch changes, see the [Wanderburg Artifacts Wiki](/games/wanderburg/wiki/artifacts).
+
 This is especially important when comparing older guides or builds that describe Repair Wrench as healing 25% of health.
 
 **Allied units**
