@@ -2,6 +2,7 @@ import { articleLibraries, articlePublishedAt, articleSortDate } from './game-ar
 import { gameLibraries } from './game-catalog';
 import { repoGuidePages, guidePublishedAt, guideSortDate } from './repo-guide-pages';
 import { repoEnemies } from './repo-enemies';
+import { wanderburgWikiPages } from './wanderburg-wiki-pages';
 export const searchIndex = [
   ...gameLibraries.map((g) => ({
     title: g.title,
@@ -32,6 +33,15 @@ export const searchIndex = [
       date: articleSortDate(a),
     })),
   ),
+  ...wanderburgWikiPages.map((page) => ({
+    title: page.title,
+    game: 'Wanderburg',
+    kind: 'Wiki',
+    href: page.href,
+    summary: page.summary,
+    text: page.text,
+    date: page.publishedAt,
+  })),
   ...repoEnemies.map((e) => ({
     title: e.name,
     game: 'R.E.P.O.',

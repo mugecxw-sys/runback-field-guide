@@ -7,8 +7,8 @@ const href = '/games/wanderburg/wiki/artifacts';
 const title = 'Wanderburg Artifacts Wiki (0.9.14): Effects, Rerolls & Patch Changes';
 const h1 = 'Wanderburg Artifacts Wiki (0.9.14)';
 const description = 'Wanderburg Artifacts reference for Early Access 0.9.14, covering Repair Wrench, Electric Arrow, Tinderbox, Artifact rerolls and confirmed patch changes.';
-const publishedAt = '2026-09-22T00:00:00.000Z';
-const modifiedAt = '2026-09-22T00:00:00.000Z';
+const publishedAt = '2026-09-23T00:00:00.000Z';
+const modifiedAt = '2026-09-23T00:00:00.000Z';
 const sources = [
   ['Official Wanderburg Steam Hotfix 0.9.14', 'https://steamcommunity.com/app/3624140/allnews/'],
   ['Official Wanderburg Steam Hotfix 0.9.10', 'https://steamcommunity.com/app/3624140/allnews/'],
@@ -138,7 +138,7 @@ export default function WanderburgArtifacts() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
     <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[#aeb7bc]"><a href="/">Home</a><span>›</span><a href="/games/wanderburg">Wanderburg</a><span>›</span><span aria-current="page">{h1}</span></nav>
     <h1 className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl">{h1}</h1>
-    <p className="mt-4 text-xs text-[#aeb7bc]">By RUNBACK · Published <time dateTime={publishedAt}>2026-09-22</time> · Updated <time dateTime={modifiedAt}>2026-09-22</time></p>
+    <p className="mt-4 text-xs text-[#aeb7bc]">By RUNBACK · Published <time dateTime={publishedAt}>2026-09-23</time> · Updated <time dateTime={modifiedAt}>2026-09-23</time></p>
     <nav aria-label="On this page" className="mt-6 rounded-xl border border-white/15 bg-[#192126] p-5"><p className="font-semibold">On this page</p><ul className="mt-3 grid gap-2 sm:grid-cols-2">{toc.map((item) => <li key={item}><a className="text-[#ff9a7a] underline underline-offset-4" href={'#' + slugify(item)}>{item}</a></li>)}</ul></nav>
     <MarkdownBody />
   </article></main>;

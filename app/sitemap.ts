@@ -10,6 +10,7 @@ import {
   siteUrl,
   guideSortDate,
 } from '@/lib/repo-guide-pages';
+import { wanderburgWikiPages } from '@/lib/wanderburg-wiki-pages';
 
 const latestDate = (dates: string[], fallback: string) =>
   dates.reduce((latest, date) => (date > latest ? date : latest), fallback);
@@ -47,6 +48,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.8,
       })),
     ]),
+    ...wanderburgWikiPages.map((page) => ({
+      url: `${siteUrl}${page.href}`,
+      lastModified: page.publishedAt,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    })),
     {
       url: siteUrl,
       lastModified: siteLastModified,
