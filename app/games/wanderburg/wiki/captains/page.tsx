@@ -1,27 +1,33 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+import Image from 'next/image';
 import captainsMarkdown from './captains.md?raw';
 import { siteUrl } from '@/lib/repo-guide-pages';
 
 const href = '/games/wanderburg/wiki/captains';
-const title = 'Wanderburg Captains Wiki (0.9.14): Effects & Balance Changes';
+const title = 'Wanderburg Captains Wiki (0.9.14): All 14 Captains & Effects';
 const h1 = 'Wanderburg Captains Wiki (0.9.14)';
-const description = 'Wanderburg Captains reference for Early Access 0.9.14, covering PatchyThePirate, Kapitalstus Maximus, Huntress, Tankbert and Duelist with confirmed balance changes.';
+const description = 'Wanderburg Captains reference for Early Access 0.9.14, covering all 14 current Captains, their bonuses, drawbacks, screenshots and confirmed balance changes.';
 const publishedAt = '2026-09-22T00:00:00.000Z';
-const modifiedAt = '2026-09-22T00:00:00.000Z';
+const modifiedAt = '2026-09-23T00:00:00.000Z';
 const sources = [
   ['Official Wanderburg Steam Hotfix 0.9.14', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Steam Hotfix 0.9.13', 'https://steamcommunity.com/app/3624140/allnews/'],
   ['Official Wanderburg Steam Hotfix 0.9.10', 'https://steamcommunity.com/app/3624140/allnews/'],
   ['Official Wanderburg Steam Hotfix 0.9.7', 'https://steamcommunity.com/app/3624140/allnews/'],
   ['Official Wanderburg Steam Hotfix 0.9.6', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Steam Store', 'https://store.steampowered.com/app/3624140/Wanderburg/'],
 ] as const;
 const toc = [
-  'Quick Captain Reference', 'PatchyThePirate', 'Kapitalstus Maximus', 'Huntress', 'Tankbert', 'Duelist',
-  'Captain Balance Changed Quickly After Launch', 'Are These All Wanderburg Captains?', 'Captain Names and Localization',
-  'How to Compare Captains', 'Captains and Builds', 'What RUNBACK Still Needs to Verify', 'Version Status', 'Sources',
+  'Current Captain List', 'Current Names vs Patch-Note Names', 'Patchy The Pirate', 'Dieter The Drunk', 'Duelist', 'Empress',
+  'Huntress', 'Kapitalistus Maximus', 'Lumberjack', 'Norbert The Normal', 'Pyromaniac', 'Racer Ruth', 'Sire Jonah',
+  'Tankbert', 'The Count', 'Time Witch', 'Captain Balance History', 'How to Read Captain Effects', 'Captains and Builds',
+  'Data Confidence', 'Current Coverage', 'Sources',
 ];
+const captainImages: Record<string, string> = {
+  'Patchy The Pirate': 'patchy-the-pirate', 'Dieter The Drunk': 'dieter-the-drunk', Duelist: 'duelist', Empress: 'empress',
+  Huntress: 'huntress', 'Kapitalistus Maximus': 'kapitalistus-maximus', Lumberjack: 'lumberjack',
+  'Norbert The Normal': 'norbert-the-normal', Pyromaniac: 'pyromaniac', 'Racer Ruth': 'racer-ruth',
+  'Sire Jonah': 'sire-jonah', Tankbert: 'tankbert', 'The Count': 'the-count', 'Time Witch': 'time-witch',
+};
 
 export const metadata: Metadata = {
   title: title + ' | RUNBACK',
@@ -53,22 +59,31 @@ function cells(line: string) {
 function MarkdownBody() {
   const lines = captainsMarkdown.replace(/\r\n/g, '\n').split('\n');
   const blocks: ReactNode[] = [];
+  let pendingCaptainImage: string | null = null;
+  const imageFigure = (file: string, alt: string, caption: string, key: string) => (
+    <figure key={key} className="my-6 max-w-[648px]">
+      <Image src={'/images/games/wanderburg/captains/' + file + '.png'} alt={alt} width={648} height={1024} className="h-auto max-w-full rounded-xl border border-white/15" />
+      <figcaption className="mt-2 text-sm text-[#aeb7bc]">{caption}</figcaption>
+    </figure>
+  );
   let index = 0;
   while (index < lines.length) {
     const line = lines[index];
     if (!line) { index += 1; continue; }
     if (line === '---') { blocks.push(<hr key={index} className="mt-10 border-white/15" />); index += 1; continue; }
     if (line.startsWith('# ')) {
+      const heading = line.slice(2);
       if (index !== 0) {
-        const heading = line.slice(2);
         blocks.push(<h2 id={slugify(heading)} key={index} className="mt-10 scroll-mt-24 text-2xl font-semibold">{heading}</h2>);
       }
+      pendingCaptainImage = captainImages[heading] ? heading : null;
       index += 1;
       continue;
     }
     if (line.startsWith('## ')) {
       const heading = line.slice(3);
       blocks.push(<h2 id={slugify(heading)} key={index} className="mt-10 scroll-mt-24 text-2xl font-semibold">{heading}</h2>);
+      pendingCaptainImage = captainImages[heading] ? heading : null;
       index += 1;
       continue;
     }
@@ -90,6 +105,7 @@ function MarkdownBody() {
       const rows: string[][] = [];
       while (lines[index]?.startsWith('|')) { rows.push(cells(lines[index])); index += 1; }
       blocks.push(<div key={index} className="mt-5 max-w-full overflow-x-auto rounded-xl border border-white/15"><table className="min-w-[850px] border-collapse text-left text-sm leading-6"><thead className="bg-[#192126]"><tr>{header.map((cell) => <th key={cell} scope="col" className="border-b border-white/20 px-4 py-3 font-semibold"><Inline text={cell} /></th>)}</tr></thead><tbody>{rows.map((row, rowIndex) => <tr key={rowIndex} className="border-b border-white/10 last:border-0">{row.map((cell, cellIndex) => cellIndex === 0 ? <th key={cellIndex} scope="row" className="whitespace-nowrap px-4 py-3 text-left font-medium"><Inline text={cell} /></th> : <td key={cellIndex} className="px-4 py-3 text-[#c7d0d5]"><Inline text={cell} /></td>)}</tr>)}</tbody></table></div>);
+      if (header.includes('Positive effect')) blocks.push(imageFigure('captains-list-0.9.14', 'Wanderburg 0.9.14 Captain selection showing 14 Captains', 'All 14 Captains visible in the Wanderburg Early Access 0.9.14 client used for this reference.', 'captains-list'));
       continue;
     }
     if (line.startsWith('- ')) {
@@ -99,6 +115,11 @@ function MarkdownBody() {
       continue;
     }
     blocks.push(<p key={index} className="mt-5 leading-8 text-[#c7d0d5]"><Inline text={line} /></p>);
+    if (pendingCaptainImage) {
+      const heading = pendingCaptainImage;
+      blocks.push(imageFigure(captainImages[heading], 'Wanderburg 0.9.14 ' + heading + ' Captain tooltip', heading + ' in the Wanderburg Early Access 0.9.14 client.', 'captain-' + slugify(heading)));
+      pendingCaptainImage = null;
+    }
     index += 1;
   }
   return <>{blocks}</>;
@@ -127,7 +148,7 @@ export default function WanderburgCaptains() {
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
     <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[#aeb7bc]"><a href="/">Home</a><span>›</span><a href="/games/wanderburg">Wanderburg</a><span>›</span><span aria-current="page">{h1}</span></nav>
     <h1 className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl">{h1}</h1>
-    <p className="mt-4 text-xs text-[#aeb7bc]">By RUNBACK · Published <time dateTime={publishedAt}>2026-09-22</time> · Updated <time dateTime={modifiedAt}>2026-09-22</time></p>
+    <p className="mt-4 text-xs text-[#aeb7bc]">By RUNBACK · Published <time dateTime={publishedAt}>2026-09-22</time> · Updated <time dateTime={modifiedAt}>2026-09-23</time></p>
     <nav aria-label="On this page" className="mt-6 rounded-xl border border-white/15 bg-[#192126] p-5"><p className="font-semibold">On this page</p><ul className="mt-3 grid gap-2 sm:grid-cols-2">{toc.map((item) => <li key={item}><a className="text-[#ff9a7a] underline underline-offset-4" href={'#' + slugify(item)}>{item}</a></li>)}</ul></nav>
     <MarkdownBody />
   </article></main>;

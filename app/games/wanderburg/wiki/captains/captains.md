@@ -1,337 +1,526 @@
 # Wanderburg Captains Wiki (0.9.14)
 
-Captains are part of Wanderburg's loadout system and can change the trade-offs you play around during a run.
+This page covers all 14 Captains visible in the current Wanderburg Early Access 0.9.14 client.
 
-This page tracks Captains that are explicitly named in official Wanderburg Early Access patch notes and records only the effects or balance changes that can currently be supported by first-party information.
+Current-client screenshots are the primary source for Captain names and visible effects. Official patch notes are used to track balance changes and older naming.
 
-> **Current coverage:** Early Access 0.9.14\
-> **Last reviewed:** September 22, 2026\
-> **Important:** This is a verified Captain reference, not a claim that these are every Captain currently available in Wanderburg.
+> **Current client:** Early Access 0.9.14
+> **Client roster verified:** 14 Captains
+> **Last reviewed:** September 23, 2026
 
-## Quick Captain Reference
+## Current Captain List
 
-| Captain             | Officially confirmed current change                              | Patch  |
-| ------------------- | ---------------------------------------------------------------- | ------ |
-| PatchyThePirate     | Enemy Cannon bonus-damage value reduced from 50% to 25%          | 0.9.10 |
-| Kapitalstus Maximus | Gold penalty reduced from -30% to -15%                           | 0.9.10 |
-| Huntress            | Extra ability cooldown time reduced from 50% to 40%              | 0.9.10 |
-| Tankbert            | Nitro regeneration penalty reduced from 50% slower to 30% slower | 0.9.10 |
-| Duelist             | Extra damage taken while boosting reduced from 50% to 20%        | 0.9.10 |
+| Captain | Positive effect | Drawback |
+| --- | --- | --- |
+| Patchy The Pirate | Cannons deal 30% extra damage | Enemy Cannons deal 25% extra damage |
+| Dieter The Drunk | Super Lucky | Controls are wobbly |
+| Duelist | 50% more melee damage when boosting | 20% more damage taken when boosting |
+| Empress | Spawn 100% more friendly units | -30% speed |
+| Huntress | +50% auto attack speed | +40% ability cooldown time |
+| Kapitalistus Maximus | +25% Silver after run | Gain -15% Gold during run |
+| Lumberjack | Consuming trees gains Nitro | Much slower Nitro regeneration |
+| Norbert The Normal | No gameplay modifier shown | No gameplay modifier shown |
+| Pyromaniac | Always on fire; touching enemies ignites them | No Luck |
+| Racer Ruth | +50% speed when boosting | -15% normal driving speed |
+| Sire Jonah | Plays techno music | Only knows one song |
+| Tankbert | Max HP bar grows when destroying a vehicle | Current client displays -50% Nitro regeneration |
+| The Count | Heal by consuming units | No health boxes spawn |
+| Time Witch | The game runs twice as fast | The game runs twice as fast |
 
-All five changes were listed by Randwerk under **Character Buffs** in Hotfix 0.9.10.
+These are the effects shown directly in the captured 0.9.14 Captain-selection tooltips.
 
-Hotfixes 0.9.13 and 0.9.14 do not list additional Captain balance changes.
+RUNBACK does not add hidden values, unlock requirements or undocumented effects that are not shown in the current client or supported by reliable first-party information.
 
 ---
 
-## PatchyThePirate
+# Current Names vs Patch-Note Names
 
-PatchyThePirate was buffed in Hotfix 0.9.10.
+Official Wanderburg patch notes do not always use the same spelling or formatting as the current English client.
 
-The official patch note changed the Captain's enemy Cannon bonus-damage value from:
+| Current 0.9.14 client | Official patch-note name |
+| --- | --- |
+| Patchy The Pirate | PatchyThePirate |
+| Kapitalistus Maximus | Kapitalstus Maximus |
+
+RUNBACK uses the current-client spelling as the primary name.
+
+Patch-note spellings are retained only when discussing version history.
+
+---
+
+# Patchy The Pirate
+
+Patchy The Pirate changes Cannon damage on both sides of the fight.
+
+Current-client tooltip:
+
+**+ Your Cannons do 30% extra damage**
+
+**- Enemy Cannons do 25% extra damage**
+
+Official Hotfix 0.9.10 reduced the enemy Cannon bonus-damage drawback from:
 
 **50% → 25%**
 
-The important part of this update is the reduction.
+This matches the negative value visible in the current 0.9.14 client.
 
-Older guides using the 50% value are no longer current for Early Access 0.9.14.
-
-### What we can confirm
-
-The official patch establishes:
-
-- PatchyThePirate exists as a selectable character
-- the relevant enemy Cannon value was previously 50%
-- it was reduced to 25% in 0.9.10
-
-The patch note does not provide a complete current Captain tooltip.
-
-RUNBACK therefore does not reconstruct additional bonuses, unlock prices or synergies from this line alone.
+The current client also confirms the positive 30% Cannon-damage effect, which is not fully described in that patch note.
 
 ---
 
-## Kapitalstus Maximus
+# Dieter The Drunk
 
-The official spelling used in Hotfix 0.9.10 is:
+Current-client tooltip:
 
-**Kapitalstus Maximus**
+**+ Super Lucky**
 
-Its Gold penalty was reduced from:
+**- Controls are wobbly**
 
-**-30% → -15%**
+The client does not display a numerical Luck value or a numerical definition for the control effect on the Captain-selection screen.
 
-This was a significant reduction to the downside recorded in the official patch.
+RUNBACK therefore does not invent one.
 
-### What this affects
-
-A Gold penalty changes the resources available during a run.
-
-That makes Kapitalstus Maximus relevant to decisions involving spending and progression inside the current attempt.
-
-However, the 0.9.10 patch line does not give us the Captain's complete positive effect or a complete current tooltip.
-
-Those details should be verified from the current client before being presented as exact facts.
+These effects should be treated as current-client descriptions until more precise behavior is verified.
 
 ---
 
-## Huntress
+# Duelist
 
-Huntress received a cooldown-related buff in Hotfix 0.9.10.
+Current-client tooltip:
 
-Extra ability cooldown time changed from:
+**+ 50% more melee damage when boosting**
 
-**50% → 40%**
+**- 20% more damage taken when boosting**
 
-This means the cooldown drawback became less severe.
-
-### Why this matters
-
-The change is especially relevant when a build depends heavily on active module abilities.
-
-A Captain that modifies ability timing can feel very different in:
-
-- active-heavy builds
-- mostly automatic builds
-- builds that depend on a defensive active ability at specific moments
-
-The official patch confirms the cooldown penalty change.
-
-It does not establish Huntress as a universally preferred choice for active builds.
-
----
-
-## Tankbert
-
-Tankbert appears in two official balance updates.
-
-### Hotfix 0.9.6
-
-Tankbert was:
-
-**nerfed**
-
-The official announcement did not publish the exact value or mechanic changed in that nerf.
-
-### Hotfix 0.9.10
-
-Its Nitro regeneration penalty was reduced from:
-
-**50% slower → 30% slower**
-
-This later change made the documented Nitro drawback less severe.
-
-### Why this matters
-
-Nitro recovery affects how frequently you can rely on boosting.
-
-That can influence:
-
-- engagement timing
-- escape options
-- repeated repositioning
-- builds that depend heavily on boost movement
-
-Do not use 0.9.6 to invent an exact earlier Tankbert statistic.
-
-The official note only says that Tankbert was nerfed.
-
----
-
-## Duelist
-
-Duelist received one of the largest numerical penalty reductions listed in Hotfix 0.9.10.
-
-Extra damage taken while boosting changed from:
+Hotfix 0.9.10 reduced the boosting damage-taken penalty from:
 
 **50% → 20%**
 
-### Why this matters
+The current 0.9.14 client matches the newer 20% value.
 
-The penalty specifically concerns damage taken **while boosting**.
+The penalty applies while boosting.
 
-It should not be interpreted as:
-
-- 20% more damage at all times
-- 20% less defense permanently
-- a universal health penalty
-
-The distinction matters when comparing normal driving with aggressive boost-based play.
-
-The patch confirms the drawback.
-
-It does not by itself establish Duelist's complete offensive effect or prove that Duelist is universally preferred for boost-oriented play.
+It should not be rewritten as a permanent 20% damage-taken penalty.
 
 ---
 
-# Captain Balance Changed Quickly After Launch
+# Empress
 
-Wanderburg entered Early Access on September 8, 2026.
+Current-client tooltip:
 
-Within the first few days, Randwerk had already changed several Captains.
+**+ Spawn +100% friendly units**
 
-Hotfix 0.9.6 included a Tankbert nerf.
+**- 30% speed**
 
-Hotfix 0.9.7 fixed:
+Empress directly changes allied-unit quantity while imposing a movement penalty.
 
-**Captain localization/description**
+The current Captain-selection screen does not provide additional hidden spawning formulas or specify separate modifiers for different allied-unit sources.
 
-Hotfix 0.9.10 then reduced the drawbacks of five named Captains:
+Those details should not be inferred from the short tooltip alone.
 
-- PatchyThePirate
-- Kapitalstus Maximus
-- Huntress
-- Tankbert
-- Duelist
+---
 
-This is why launch-day or demo-era Captain guides should not automatically be treated as current.
+# Huntress
 
-# Are These All Wanderburg Captains?
+Current-client tooltip:
 
-No.
+**+ 50% auto attack speed**
 
-This page currently lists the Captains for which RUNBACK has sufficiently clear first-party patch evidence.
+**+ 40% ability cooldown time**
 
-Community databases already contain larger Captain rosters, but those lists may combine:
+The second line is a drawback: abilities take longer to become available again.
 
-- demo-era data
-- current Early Access data
-- player-transcribed tooltips
-- different localization spellings
-- unverified unlock prices
-- older balance values
+Hotfix 0.9.10 reduced the additional ability cooldown time from:
 
-RUNBACK will expand the roster when the current-client data can be checked reliably.
+**50% → 40%**
 
-Until then, this page does not claim that five Captains are the complete Wanderburg roster.
+The current 0.9.14 tooltip matches the 40% patched value.
 
-# Captain Names and Localization
+This Captain therefore creates a clear trade-off between faster automatic attacks and slower active-ability cycling.
 
-Early Access Hotfix 0.9.7 specifically fixed:
+That does not automatically make Huntress the best Captain for automatic-attack builds.
 
-**Captain localization/description**
+---
 
-That matters when comparing older screenshots, demo footage and community databases.
+# Kapitalistus Maximus
 
-Names or wording found in older material may not perfectly match the current English client.
+The current client spells the name:
 
-For that reason, RUNBACK keeps the official patch-note spelling where first-party material is available.
+**Kapitalistus Maximus**
 
-For example:
+Official Hotfix 0.9.10 used the spelling:
 
 **Kapitalstus Maximus**
 
-is the spelling used in the official 0.9.10 announcement.
+Current-client tooltip:
 
-# How to Compare Captains
+**+ 25% Silver after run**
 
-Do not choose a Captain only from a tier label.
+**- Gain 15% less Gold during run**
 
-Start by identifying which part of your run the Captain changes.
+Hotfix 0.9.10 reduced the Gold penalty from:
 
-### Ability timing
+**-30% → -15%**
 
-Relevant example:
+The current-client drawback matches the patched -15% value.
 
-**Huntress**
+The +25% post-run Silver effect is directly visible in the current client.
 
-Ask whether your build actually depends on frequent active abilities.
+---
 
-### Nitro recovery
+# Lumberjack
 
-Relevant example:
+Current-client tooltip:
 
-**Tankbert**
+**+ Consuming trees gains Nitro**
 
-Ask how often your route requires repeated boosts.
+**- Much slower Nitro regeneration**
 
-### Boost exposure
+The current selection screen does not provide:
 
-Relevant example:
+- exact Nitro gained per tree
+- exact Nitro regeneration penalty
+- cooldown
+- internal scaling
 
-**Duelist**
+RUNBACK therefore keeps these effects qualitative until the actual numbers can be verified.
 
-Separate damage received during boosting from ordinary movement.
+---
 
-### Enemy Cannon pressure
+# Norbert The Normal
 
-Relevant example:
+Norbert The Normal's current Captain screen does not show a green positive modifier or red negative modifier.
+
+Its description is:
+
+**The most boring person you've ever met.**
+
+RUNBACK therefore does not assign Norbert an undocumented gameplay bonus or drawback.
+
+If a hidden effect exists, it requires separate verification.
+
+---
+
+# Pyromaniac
+
+Current-client tooltip:
+
+**+ Always on fire, ignites enemies when touching**
+
+**- No Luck**
+
+The tooltip establishes a contact-based fire interaction and removes Luck.
+
+It does not provide an exact contact-damage value, burn duration or numerical Luck value on the Captain-selection screen.
+
+Those values remain unpublished here.
+
+---
+
+# Racer Ruth
+
+Current-client tooltip:
+
+**+ 50% speed when boosting**
+
+**- 15% normal driving speed**
+
+This Captain clearly separates:
+
+**boosting speed**
+
+from:
+
+**normal driving speed**
+
+The -15% modifier should therefore not be described as a permanent reduction to all movement.
+
+---
+
+# Sire Jonah
+
+Current-client tooltip:
+
+**+ Plays techno music**
+
+**- Only knows one song**
+
+These are the effects shown by the current client.
+
+The Captain-selection screen does not display a numerical combat, economy, health or movement modifier.
+
+RUNBACK therefore does not invent one.
+
+---
+
+# Tankbert
+
+Tankbert currently has the most important unresolved Captain-data conflict.
+
+Current-client tooltip:
+
+**+ Your Max HP bar gets bigger when destroying a vehicle**
+
+and:
+
+**-50% Nitro Regeneration**
+
+However, official Hotfix 0.9.10 states that Tankbert's Nitro regeneration penalty was reduced from:
+
+**50% slower → 30% slower**
+
+These two current evidence sources do not agree.
+
+## Current evidence
+
+**Current-client 0.9.14 UI**
+
+-50% Nitro regeneration
+
+**Official Hotfix 0.9.10**
+
+-30% intended Nitro regeneration penalty
+
+## RUNBACK status
+
+**CONFLICT — runtime value not yet verified**
+
+RUNBACK does not silently replace the current UI with the patch-note value, and it does not assume that the UI value necessarily reflects the actual runtime calculation.
+
+A short controlled gameplay test would be required to resolve which value the current build actually applies.
+
+Hotfix 0.9.6 also states that Tankbert was nerfed, but that update did not publish the exact changed value.
+
+---
+
+# The Count
+
+Current-client tooltip:
+
+**+ Heal by consuming units**
+
+**- No health boxes spawn**
+
+The current selection screen does not specify the exact healing amount per consumed unit.
+
+RUNBACK therefore does not attach a numerical heal value without additional verification.
+
+The drawback is explicit: normal health boxes do not spawn.
+
+---
+
+# Time Witch
+
+Time Witch has an unusual current tooltip.
+
+Both sides state:
+
+**The game runs twice as fast.**
+
+The same effect is presented as both an advantage and a disadvantage.
+
+RUNBACK preserves that current-client presentation instead of trying to reinterpret one side into a different hidden effect.
+
+---
+
+# Captain Balance History
+
+Several Captains changed very early in Wanderburg's Early Access period.
+
+## Hotfix 0.9.6
+
+The developers stated:
+
+**Tankbert nerfed**
+
+but did not publish the numerical change.
+
+## Hotfix 0.9.7
+
+The developers fixed:
+
+**Captain localization/description**
+
+This is one reason current-client wording takes priority when names differ from early patch notes.
+
+## Hotfix 0.9.10
+
+Five Captains received explicitly documented changes:
 
 **PatchyThePirate**
 
-Consider whether enemy Cannon encounters are a meaningful source of danger in the run you are attempting.
+Enemy Cannon bonus damage:
 
-### Gold economy
-
-Relevant example:
+**50% → 25%**
 
 **Kapitalstus Maximus**
 
-Consider whether the Gold penalty materially restricts your in-run choices.
+Gold penalty:
 
-This method is more useful than assuming that one Captain is universally best.
+**-30% → -15%**
+
+**Huntress**
+
+Extra ability cooldown time:
+
+**50% → 40%**
+
+**Tankbert**
+
+Nitro regeneration penalty:
+
+**50% slower → 30% slower**
+
+**Duelist**
+
+Extra damage taken while boosting:
+
+**50% → 20%**
+
+The current 0.9.14 client agrees with four of those newer drawback values.
+
+Tankbert is the exception and remains marked as a conflict.
+
+---
+
+# How to Read Captain Effects
+
+Captain tooltips often combine a major benefit with a meaningful cost.
+
+When evaluating one, separate the effect into the system it changes.
+
+### Damage
+
+Examples:
+
+- Patchy The Pirate
+- Duelist
+
+### Attack timing
+
+Example:
+
+- Huntress
+
+### Movement and Nitro
+
+Examples:
+
+- Lumberjack
+- Racer Ruth
+- Tankbert
+
+### Economy and progression
+
+Example:
+
+- Kapitalistus Maximus
+
+### Allied units
+
+Example:
+
+- Empress
+
+### Healing
+
+Example:
+
+- The Count
+
+### Rule-changing effects
+
+Examples:
+
+- Dieter The Drunk
+- Pyromaniac
+- Time Witch
+
+This is more useful than turning the current roster into an unsupported universal tier list.
+
+---
 
 # Captains and Builds
 
-A Captain should be evaluated together with the modules and actions your build actually uses.
+A Captain effect can matter very differently depending on the Modules and Vehicle used in a run.
 
-For example:
+Examples:
 
-A Captain that affects ability cooldowns matters more when active abilities are central to the build.
+A faster automatic-attack effect matters more to setups that already rely heavily on automatic Module attacks.
 
-A Nitro-related drawback matters more when frequent boosting is part of your movement plan.
+A boosting modifier matters more to playstyles that use Nitro repeatedly.
 
-That does not automatically establish a fixed Captain + Module combination.
+An allied-unit modifier matters only when the run actually makes meaningful use of allied units.
 
-Use the current tooltip and actual run behavior before turning an interaction into a build recommendation.
+These are mechanical relationships, not proof that a specific Captain + Module combination is universally best.
 
-For module mechanics, see the [Wanderburg Modules Wiki](/games/wanderburg/wiki/modules).
+See:
 
-For verified Artifact effects and reroll changes, see the [Wanderburg Artifacts Wiki](/games/wanderburg/wiki/artifacts).
+- [Wanderburg Modules Wiki](/games/wanderburg/wiki/modules)
+- [Wanderburg Builds Guide](/games/wanderburg/builds)
 
-For practical build directions, see the [Wanderburg Builds Guide](/games/wanderburg/builds).
+for the systems those Captain effects interact with.
 
-For the broader patch and system overview, see the [Wanderburg Wiki & Reference](/games/wanderburg/reference). Return to the [Wanderburg game hub](/games/wanderburg) for all Wanderburg guides.
+For broader patch and system context, see the [Wanderburg Wiki & Reference](/games/wanderburg/reference). Return to the [Wanderburg game hub](/games/wanderburg) for all Wanderburg guides.
 
-# What RUNBACK Still Needs to Verify
+---
 
-The following information should not be filled in from guesswork:
+# Data Confidence
 
-- complete Captain roster
-- exact unlock prices
-- exact positive bonuses
-- exact unlock conditions
-- demo-versus-Early-Access differences
-- complete current tooltip wording
-- hidden scaling
-- interactions not documented by the game
+RUNBACK uses the following evidence order.
 
-These are good candidates for a short current-client verification session later.
+### Current Client Verified
 
-They do not need to block this reference page.
+Used for:
 
-# Version Status
+- current Captain roster
+- current names
+- visible positive effects
+- visible drawbacks
+- current tooltip wording
 
-The latest official Wanderburg version covered by this page is:
+### Official Verified
 
-**Early Access 0.9.14**
+Used for:
 
-The latest official patch containing named Captain balance changes is:
+- historical balance changes
+- older patch-note aliases
+- localization changes
 
-**Hotfix 0.9.10**
+### Conflict
 
-No additional Captain balance changes are listed in the official 0.9.13 or 0.9.14 notes.
+Used when reliable sources disagree.
 
-If a future patch modifies one of these Captains, update both the version label and the affected entry.
+Current example:
+
+**Tankbert Nitro regeneration**
+
+Client UI:
+
+**-50%**
+
+Official 0.9.10:
+
+**-30%**
+
+No single number is presented as settled runtime fact until that conflict is tested.
+
+---
+
+# Current Coverage
+
+This page covers all **14 Captains visible in the captured Wanderburg Early Access 0.9.14 client**.
+
+RUNBACK does not add additional Captains that are absent from the current captured roster merely because they appear in an external database or older material.
 
 ## Sources
 
-Primary sources:
+Primary evidence:
 
-- [Official Wanderburg Hotfix 0.9.14](https://steamcommunity.com/app/3624140/allnews/)
-- [Official Wanderburg Hotfix 0.9.13](https://steamcommunity.com/app/3624140/allnews/)
+- Wanderburg Early Access 0.9.14 current-client Captain captures
 - [Official Wanderburg Hotfix 0.9.10](https://steamcommunity.com/app/3624140/allnews/)
 - [Official Wanderburg Hotfix 0.9.7](https://steamcommunity.com/app/3624140/allnews/)
 - [Official Wanderburg Hotfix 0.9.6](https://steamcommunity.com/app/3624140/allnews/)
-- [Official Wanderburg Steam Store](https://store.steampowered.com/app/3624140/Wanderburg/)
+- [Official Wanderburg Hotfix 0.9.14](https://steamcommunity.com/app/3624140/allnews/) for current-version context
 
 Current reference coverage: Early Access 0.9.14.
