@@ -1,373 +1,236 @@
 # Wanderburg Modules Wiki (0.9.14)
 
-Wanderburg builds are built around modules attached to your moving fortress.
+This page covers the Modules visible in the current Wanderburg Early Access 0.9.14 client.
 
-This page tracks modules that are explicitly named in official Wanderburg Early Access patch notes and records the changes the developers have confirmed for them.
+The current roster below is based on the in-game Module selection screen and current English tooltips. Patch notes and external data are used only to supplement information that the selection screen does not show.
 
-> **Current coverage:** Early Access 0.9.14\
-> **Last reviewed:** September 22, 2026\
-> **Important:** Randwerk has not published a complete official module database. The list below is therefore a verified reference, not a claim that these are every module currently available in Wanderburg.
+> **Current client:** Early Access 0.9.14
+> **Client roster verified:** 20 Modules
+> **Last reviewed:** September 23, 2026
 
-## Quick Module Reference
+## Current Module List
 
-| Module         | What is currently confirmed                                                                 | Latest relevant patch  |
-| -------------- | ------------------------------------------------------------------------------------------- | ---------------------- |
-| Electric Mage  | Multi-target auto attack; base targets increased from 5 to 7; upgrades can add more targets | 0.9.14                 |
-| Side Arms      | Automatic and active attacks; base auto-attack interval improved from 3.0s to 2.5s          | 0.9.13                 |
-| Front Barracks | Active attack and allied-unit gameplay; active base damage was increased from 200 to 250    | 0.9.14 / 0.9.9 / 0.9.7 |
-| Side Ballista  | Automatic attack was nerfed while its active ability was buffed                             | 0.9.9                  |
-| Force Mage     | Active ability cancels incoming projectiles                                                 | 0.9.9                  |
-| Back Turret    | Attack-speed-focused module whose maximum attack-speed boost was reduced                    | 0.9.10                 |
-| Fire Mage      | Firestorm damage was increased during the launch balance pass                               | 0.9.6                  |
-| Top Mortar     | Active ability projectile count was reduced                                                 | 0.9.6                  |
-| Ram            | Ram behavior and Tier 3 presentation were improved; inconsistent damage was later fixed     | 0.9.8 / 0.9.6          |
+| Module | Slot | Current-client role |
+| --- | --- | --- |
+| Archer Tower | Top | Fires arrows at nearby enemies; active ability is Arrow Rain |
+| Arms | Side | Melee-oriented Module that strikes enemies and blocks projectiles |
+| Cannon | Side | Fires cannonballs from the side; active ability fires a broadside |
+| Cannon Tower | Top | Targets strong nearby enemies and can fire a barrage |
+| Catapult | Back | Creates pestilence zones behind the vehicle |
+| Companion | Back | Spawns a Hammer Companion that fights nearby enemies |
+| Dash | Back | Dashes forward and produces fire behind the vehicle while boosting |
+| Fire Mage | Top | Fires fire projectiles and has a ring-of-fire active ability |
+| Force Mage | Front | Pushes enemies away and provides a force-based active ability |
+| Front Barracks | Front | Spawns Biker Knights that fight for the player |
+| FrontCannon | Front | Long-range forward Cannon with a powerful active shot |
+| Lightning Mage | Top | Attacks nearby enemies with lightning and stun effects |
+| Mine Layer | Back | Drops mines behind the vehicle |
+| RAM | Front | Deals speed-based collision damage and knockback |
+| Side Ballista | Side | Fires large penetrating arrows from the side |
+| Side Barracks | Side | Spawns allied troops |
+| Side Flamethrower | Side | Burns enemies beside the vehicle |
+| Teleporter | Front | Teleports forward and damages the arrival area |
+| Top Mortar | Top | Fires cannonballs from the top and can bombard an area behind the vehicle |
+| Turret Layer | Back | Places friendly Ballista Turrets |
 
-The official patch notes do not provide complete current damage tables for every module.
-
-When a precise value is not published or verified in the current client, RUNBACK does not invent one.
-
----
-
-## Electric Mage
-
-Electric Mage has received several changes since Wanderburg entered Early Access.
-
-### Hotfix 0.9.7
-
-The developers increased:
-
-- passive damage gained per upgrade
-- active ability stun duration
-
-### Hotfix 0.9.10
-
-Electric Mage was fixed so it no longer stuns allied units.
-
-### Hotfix 0.9.14
-
-Electric Mage received another direct buff.
-
-Its base number of auto-attack targets increased from:
-
-**5 → 7**
-
-Its upgrades can also grant more targets per attack.
-
-The reliability of its **Roaming Storm** effect was also improved.
-
-### Current takeaway
-
-Electric Mage is one of the modules most affected by post-launch balancing.
-
-Any guide written before 0.9.14 that evaluates the module using the older five-target auto attack is working from outdated behavior.
-
-The official changes confirm stronger multi-target coverage.
-
-They do not prove that Electric Mage is currently the strongest module in the game.
+This list intentionally follows the current 0.9.14 client. Third-party databases may contain additional names that are not visible in the current captured Module-selection roster. Those entries are not added here unless they can be verified in the current client.
 
 ---
 
-## Side Arms
+# Patch-Note Names vs Current Client Names
 
-Side Arms has received improvements to both damage scaling and attack frequency.
+| Current client | Name used in official patch notes |
+| --- | --- |
+| Lightning Mage | Electric Mage / Top Electric Mage |
+| Arms | Side Arm Module |
+| Turret Layer | Back Turret Module |
 
-### Hotfix 0.9.10
-
-The developers increased rarity-based damage for:
-
-- the active ability
-- automatic attacks
-
-The patch did not publish a complete new damage table.
-
-### Hotfix 0.9.13
-
-Base automatic attack speed changed from:
-
-**3.0 seconds → 2.5 seconds**
-
-### Current takeaway
-
-Older Side Arms comparisons may understate its current automatic pressure.
-
-When comparing it with another module, make sure the guide or test was performed after 0.9.13.
+These are aliases for patch-history purposes, not separate Modules.
 
 ---
 
-## Front Barracks
+# Base Module Values
 
-Front Barracks is tied to Wanderburg's allied-unit gameplay and has received multiple changes.
+The Module-selection screen does not display complete damage and cooldown values. The following values are secondary reference data matched against the current Module roster. Where an official patch gives a newer value, the official patch takes priority over older database values.
 
-### Hotfix 0.9.7
+| Module | Active Base | Auto Base | Active CD | Auto CD |
+| --- | ---: | ---: | ---: | ---: |
+| Archer Tower | 10 | 5 | 25s | 2s |
+| Arms | 40 | 40 | 30s | **2.5s** |
+| Cannon | 30 | 15 | 15s | 3s |
+| Cannon Tower | 75 | 90 | 45s | 3s |
+| Catapult | 10 | 5 | 45s | 2.8s |
+| Companion | 2 | 100 | — | 2s |
+| Dash | — | 20 | 18s | 2.5s |
+| Fire Mage | 125 | 2.5 | 30s | 10s |
+| Force Mage | 20 | 80 | 30s | 4s |
+| Front Barracks | **250** | 5 | 45s | 10s |
+| FrontCannon | 150 | 7 | 10s | 2s |
+| Lightning Mage | 150 | 20 | 60s | 2s |
+| Mine Layer | 50 | 80 | 40s | 5s |
+| RAM | — | — | 15s | — |
+| Side Ballista | — | — | — | — |
+| Side Barracks | — | 3 | 60s | 12s |
+| Side Flamethrower | 30 | 50 | 35s | 4.5s |
+| Teleporter | 100 | 15 | 20s | 5s |
+| Top Mortar | 70 | 70 | 40s | 2.5s |
+| Turret Layer | — | — | — | — |
 
-Active base damage increased from:
+— means RUNBACK does not currently have a sufficiently clear value to publish. It does not mean zero.
 
-**200 → 250**
+## Important Data Notes
 
-### Hotfix 0.9.9
+**Arms** — Hotfix 0.9.13 explicitly changed the Side Arms Module base auto-attack interval from **3.0s → 2.5s**. RUNBACK therefore uses **2.5 seconds**, not older external 3-second data.
 
-The developers:
+**Front Barracks** — Hotfix 0.9.7 explicitly changed active base damage from **200 → 250**. RUNBACK therefore uses **250**.
 
-- fixed diminishing-damage upgrades
-- buffed the active ability
-- increased the movement speed of allied melee units toward their targets
+**Lightning Mage** — Hotfix 0.9.14 increased its base automatic target count from **5 → 7**. Upgrades can add more targets per attack.
 
-### Hotfix 0.9.14
+**RAM** — Available extracted data contains values that appear to behave as speed/damage multipliers rather than straightforward displayed damage. RUNBACK does not present those raw internal values as normal damage numbers.
 
-Allied units became immune to:
-
-- fire
-- stun
-- knockback
-
-The developers noted that allied units were already invincible.
-
-### Current takeaway
-
-Very early impressions of Front Barracks may no longer represent its current behavior.
-
-The module's active attack and the behavior of the units it relies on have both changed since launch.
-
----
-
-## Side Ballista
-
-Side Ballista is especially important to read correctly because its two attack types were changed in opposite directions.
-
-Hotfix 0.9.9:
-
-- **nerfed the automatic attack**
-- **buffed the active ability**
-
-That means it is inaccurate to describe the patch as simply a Side Ballista buff or nerf.
-
-### Current takeaway
-
-When comparing Side Ballista upgrades, separate:
-
-**automatic attack performance**
-
-from:
-
-**active ability performance**
-
-A build that relies mainly on one of those systems can react very differently to the same balance patch.
+**Side Ballista and Turret Layer** — Reliable current base damage/cooldown tables are incomplete, so missing values remain unpublished rather than being reconstructed.
 
 ---
 
-## Force Mage
+# Top-Slot Modules
 
-Force Mage has one of the clearest utility effects documented in the official patch history.
+## Archer Tower
 
-Hotfix 0.9.9 added:
+Archer Tower uses the Top slot. Its current client description shows automatic arrows against nearby enemies and an Arrow Rain active ability. Current external base-data matching gives 10 active base damage, 5 automatic base damage, a 25-second active cooldown and a 2-second automatic cooldown.
 
-**The Force Mage active ability cancels incoming projectiles.**
+## Cannon Tower
 
-This makes it different from a module chosen only for raw damage.
-
-### What is confirmed
-
-The official patch specifically says:
-
-**incoming projectiles**
-
-It does not state that Force Mage cancels:
-
-- melee contact
-- every area effect
-- collision damage
-- every form of incoming damage
-
-Do not expand the mechanic beyond what the game or current client actually demonstrates.
-
----
-
-## Back Turret
-
-Back Turret received balance changes shortly after launch.
-
-### Hotfix 0.9.6
-
-Back Turret was nerfed.
-
-The announcement did not publish the complete numerical change.
-
-### Hotfix 0.9.10
-
-The maximum attack-speed boost was reduced.
-
-Again, the official announcement did not provide a complete current attack-speed table.
-
-### Current takeaway
-
-Older builds based around extreme Back Turret attack-speed scaling should be treated cautiously.
-
-Use current in-game values when exact numbers matter.
-
----
+Cannon Tower uses the Top slot. Its automatic behavior prioritizes a strong nearby enemy, while its active ability fires a barrage: **75 active / 90 automatic**, with **45s active cooldown / 3s automatic cooldown**.
 
 ## Fire Mage
 
-Fire Mage appears in the official 0.9.6 balance notes.
+Fire Mage uses the Top slot: automatic fire projectiles and an active ring of fire. Current external base-data matching gives **125 active / 2.5 automatic**, with **30s active cooldown / 10s automatic cooldown**. Fire Mage was explicitly touched by early post-launch balancing, so old demo values should not automatically be treated as current.
 
-The update increased:
+## Lightning Mage
 
-**Firestorm damage**
-
-The developers did not publish a complete new damage table in that announcement.
-
-### Current takeaway
-
-Fire Mage is officially confirmed as part of the Early Access equipment pool, but exact current damage and upgrade scaling should come from current-client data rather than reconstructed launch tables.
-
----
+Lightning Mage is the current-client name for **Electric Mage** in official patch notes. Its current client describes lightning attacks that can stun enemies. Hotfix 0.9.14 changed its automatic attack from **5 → 7 base targets per attack**, and upgrades can add more targets. Hotfix 0.9.10 fixed the lightning attack so it no longer stunned allied units. Current matched values are **150 active / 20 automatic** and **60s active cooldown / 2s automatic cooldown**.
 
 ## Top Mortar
 
-Top Mortar was adjusted in Hotfix 0.9.6.
-
-Its active ability received:
-
-**fewer projectiles**
-
-The official note confirms the direction of the change but does not publish the complete current projectile-count progression.
-
-### Current takeaway
-
-Launch or demo footage may show behavior that no longer matches the current Early Access version.
+Top Mortar uses the Top slot. Its automatic attack bombards nearby enemies, while its active ability fires a volley into an area behind the vehicle. Current matched values: **70 active / 70 automatic** and **40s active cooldown / 2.5s automatic cooldown**. Hotfix 0.9.6 reduced active projectile count.
 
 ---
 
-## Ram
+# Side-Slot Modules
 
-Ram has been touched by multiple early fixes.
+## Arms
 
-### Hotfix 0.9.6
+Arms is the current-client name corresponding to **Side Arm Module** in official notes. One part strikes enemies and another blocks projectiles; its active enters a bashing frenzy. Current matched values are **40 active / 40 automatic**, **30s active cooldown**, and **2.5 seconds** automatic timing. Hotfix 0.9.10 increased rarity-based damage for both attacks.
 
-The developers:
+## Cannon
 
-- fixed Tier 3 visuals
-- improved Ram behavior
+Cannon uses a Side slot. Normal attacks fire at nearby enemies and its active fires a broadside: **30 active / 15 automatic**, **15s active cooldown / 3s automatic cooldown**.
 
-### Hotfix 0.9.8
+## Side Ballista
 
-A bug causing inconsistent Module Ram damage was fixed.
+Side Ballista fires large side arrows. The client distinguishes automatic arrow volleys from large active Ballista arrows. Hotfix 0.9.9 nerfed the automatic attack and buffed the active ability. RUNBACK does not assign exact base damage or cooldown values.
 
-### Current takeaway
+## Side Barracks
 
-Ram is another module where very early gameplay footage may include behavior caused by launch bugs.
+Side Barracks summons allied troops. Its active summons additional troops and buffs them; automatic behavior spawns troops. Current matched data gives **3 automatic base damage**, **60s active cooldown / 12s automatic cooldown**. A clear active base-damage value is not currently published.
 
-Exact collision or damage formulas should not be reconstructed from those videos without current-client verification.
+## Side Flamethrower
+
+Side Flamethrower attacks beside the vehicle with an active side-flame attack and recurring automatic fire projectiles: **30 active / 50 automatic**, **35s active cooldown / 4.5s automatic cooldown**.
+
+---
+
+# Front-Slot Modules
+
+## Force Mage
+
+Force Mage uses the Front slot. The client describes pushing nearby enemies away and firing magic tornadoes from the front. Hotfix 0.9.9 confirms its active ability cancels incoming projectiles; that does not establish immunity against every type of incoming damage. Current matched values: **20 active / 80 automatic**, **30s active cooldown / 4s automatic cooldown**.
+
+## Front Barracks
+
+Front Barracks spawns Biker Knights. Its active performs a larger cavalry summon and automatic behavior produces allied units. Hotfix 0.9.7 changed active base damage **200 → 250**. Hotfix 0.9.9 fixed diminishing-damage upgrades, buffed the active ability and increased allied melee-unit movement. Hotfix 0.9.14 made allied units immune to fire, stun and knockback. Current values: **250 active**, **5 automatic**, **45s active cooldown / 10s automatic cooldown**.
+
+## FrontCannon
+
+FrontCannon is the current-client spelling. It is a forward-facing long-range Cannon with a stronger active cannonball and smaller automatic cannonballs: **150 active / 7 automatic**, **10s active cooldown / 2s automatic cooldown**.
+
+## RAM
+
+RAM is a collision-oriented Front Module. The client states that damage is based on speed and its active ability increases ramming performance. The reliable current reference is **15s active cooldown**. Exact collision damage remains version- and speed-dependent until the formula is properly verified.
+
+## Teleporter
+
+Teleporter moves the vehicle forward. Its active teleport damages the arrival area and its automatic attack fires front magic projectiles: **100 active / 15 automatic**, **20s active cooldown / 5s automatic cooldown**.
+
+---
+
+# Back-Slot Modules
+
+## Catapult
+
+Catapult creates pestilence zones behind the vehicle. Its active creates a larger zone and its automatic attack produces smaller zones: **10 active / 5 automatic**, **45s active cooldown / 2.8s automatic cooldown**.
+
+## Companion
+
+Companion summons a Hammer Companion that fights near the player; its active sends the Companion into a more aggressive state. Current matched data gives **2 active base / 100 automatic base** and **2s automatic cooldown**. A clear current active cooldown is not published.
+
+## Dash
+
+Dash provides forward movement and produces flames behind the vehicle while boosting. Current matched data gives **20 automatic base damage** and **18s active cooldown / 2.5s automatic cooldown**. The active movement ability is not assigned a flat damage value.
+
+## Mine Layer
+
+Mine Layer drops mines behind the vehicle and its active creates a larger mine field: **50 active / 80 automatic**, **40s active cooldown / 5s automatic cooldown**.
+
+## Turret Layer
+
+Turret Layer is the current-client name corresponding to **Back Turret Module** in official notes. The current client shows single friendly Ballista Turrets automatically, and a group of turrets plus a buff from the active ability. Hotfix 0.9.10 reduced its maximum attack-speed boost. A complete current base damage/cooldown table remains unpublished.
+
+---
 
 # Module Rerolls
 
-Wanderburg's permanent progression affects how often you can search for new module options.
+Official Hotfix 0.9.10 added permanent progression for Module rerolls: **Every 6 unlocked Modules → +1 New Module Reroll**. This is separate from Artifact rerolls. The roster above is based on the current-client selection screen, not inferred unlock-state information.
 
-Hotfix 0.9.10 added:
+---
 
-**Every 6 unlocked Modules → +1 New Module Reroll**
+# Data Confidence
 
-Artifact rerolls use a separate progression rule.
+### Current Client Verified
 
-For verified Artifact effects, rerolls and patch changes, see the [Wanderburg Artifacts Wiki](/games/wanderburg/wiki/artifacts).
+Current Module names, visible roster, slots, current English descriptions, and visible active/automatic behavior.
 
-This means unlocking more modules affects more than the size of your equipment pool: it also increases the number of module rerolls available to you.
+### Official Verified
 
-# Locked Module Options
+Patch changes including Lightning Mage/Electric Mage targets, Arms/Side Arm timing, Front Barracks 200 → 250, Force Mage projectile cancellation, Side Ballista balance direction, Turret Layer/Back Turret attack speed, and Module rerolls.
 
-Hotfix 0.9.13 changed the module-selection interface:
+### External Data Cross-Check
 
-**Locked module options are no longer displayed.**
+Base damage and cooldown values not displayed on the selection screen. When external data conflicts with a newer official patch, the official patch wins. When a value cannot be interpreted safely, RUNBACK leaves it blank.
 
-This is useful when comparing current screenshots with older footage.
+---
 
-An option missing from the selection screen does not necessarily mean a module was removed from the game; it may simply still be locked.
+# Current Coverage
 
-# Are These All Wanderburg Modules?
+This page covers the **20 Modules visible in the captured Wanderburg 0.9.14 client roster**. It does not automatically add entries that appear only in external databases.
 
-No.
-
-This page intentionally does **not** claim to be a complete module list yet.
-
-Randwerk's official Early Access patch notes currently give us reliable information about specific modules that were changed, but they do not publish a full canonical equipment database with every current tooltip, unlock requirement and numerical value.
-
-RUNBACK separates three levels of evidence:
-
-### Officially confirmed
-
-A module or effect directly named in official Wanderburg material.
-
-### Current-client verified
-
-A value or mechanic checked directly in the current playable version.
-
-### Community-reported
-
-Information reported by players or third-party databases but not yet confirmed by either of the above.
-
-Only the first two should be presented as current numerical facts.
-
-# Why Some Community Module Lists Are Longer
-
-Several Wanderburg community databases already list many more equipment names.
-
-Those databases can be useful leads, but their existence alone does not establish:
-
-- current localization
-- current tooltip values
-- unlock requirements
-- rarity scaling
-- active cooldowns
-- exact damage
-- whether demo-era data still applies
-
-RUNBACK will add more entries as they can be verified against the current Early Access client or reliable first-party information.
-
-# Modules vs Builds
-
-This Wiki page answers:
-
-**What does the module currently do?**
-
-The separate [Wanderburg Builds Guide](/games/wanderburg/builds) answers:
-
-**How might you build around that mechanic?**
-
-Keeping those jobs separate prevents a balance change from turning a raw reference entry into an unsupported tier-list claim.
-
-See the Wanderburg Builds Guide for current build directions involving Electric Mage, Side Arms, Side Ballista, Front Barracks and Force Mage.
-
-For verified Captain effects and patch changes, see the [Wanderburg Captains Wiki](/games/wanderburg/wiki/captains).
-
-For the broader patch and system overview, see the [Wanderburg Wiki & Reference](/games/wanderburg/reference). Return to the [Wanderburg game hub](/games/wanderburg) for all Wanderburg guides.
-
-# Version History to Watch
-
-The modules on this page have already been affected by:
-
-- 0.9.6
-- 0.9.7
-- 0.9.8
-- 0.9.9
-- 0.9.10
-- 0.9.13
-- 0.9.14
-
-Wanderburg remains in Early Access.
-
-If a future patch changes any module listed here, the version shown at the top of this page should be updated together with the affected entry.
+For broader patch and system context, see the [Wanderburg Wiki & Reference](/games/wanderburg/reference). For current build directions, see the [Wanderburg Builds Guide](/games/wanderburg/builds). For verified Captain changes, see the [Wanderburg Captains Wiki](/games/wanderburg/wiki/captains). Return to the [Wanderburg game hub](/games/wanderburg) for all Wanderburg guides.
 
 ## Sources
 
-Primary sources:
+Primary evidence:
 
-- [Official Wanderburg Steam Hotfix 0.9.14](https://steamcommunity.com/app/3624140/allnews/)
-- [Official Wanderburg Steam Hotfix 0.9.13](https://steamcommunity.com/app/3624140/allnews/)
-- [Official Wanderburg Steam Hotfix 0.9.10](https://steamcommunity.com/app/3624140/allnews/)
-- [Official Wanderburg Steam Hotfix 0.9.9](https://steamcommunity.com/app/3624140/allnews/)
-- [Official Wanderburg Steam Hotfix 0.9.8](https://steamcommunity.com/app/3624140/allnews/)
-- [Official Wanderburg Steam Hotfix 0.9.7](https://steamcommunity.com/app/3624140/allnews/)
-- [Official Wanderburg Steam Hotfix 0.9.6](https://steamcommunity.com/app/3624140/allnews/)
-- [Official Wanderburg Steam Store](https://store.steampowered.com/app/3624140/Wanderburg/)
+- Wanderburg Early Access 0.9.14 current-client Module selection captures
+- [Official Wanderburg Hotfix 0.9.14](https://steamcommunity.com/app/3624140/allnews/)
+- [Official Wanderburg Hotfix 0.9.13](https://steamcommunity.com/app/3624140/allnews/)
+- [Official Wanderburg Hotfix 0.9.10](https://steamcommunity.com/app/3624140/allnews/)
+- [Official Wanderburg Hotfix 0.9.9](https://steamcommunity.com/app/3624140/allnews/)
+- [Official Wanderburg Hotfix 0.9.8](https://steamcommunity.com/app/3624140/allnews/)
+- [Official Wanderburg Hotfix 0.9.7](https://steamcommunity.com/app/3624140/allnews/)
+- [Official Wanderburg Hotfix 0.9.6](https://steamcommunity.com/app/3624140/allnews/)
+
+Supplemental numerical reference:
+
+- [PlayerTome Wanderburg Module database](https://wanderburg.playertome.com/database/modules/)
 
 Current reference coverage: Early Access 0.9.14.
