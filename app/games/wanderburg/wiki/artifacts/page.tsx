@@ -102,11 +102,11 @@ const scopeLines = introLines.filter((line) => line !== warningLine);
 const referenceLines = markdownLines.slice(referenceStart, detailStart);
 const supportingLines = markdownLines.slice(systemsStart);
 
-function MarkdownContent({ lines, nested = false }: { lines: string[]; nested?: boolean }) {
+function MarkdownContent({ lines, nested = false, idPrefix = '' }: { lines: string[]; nested?: boolean; idPrefix?: string }) {
   const blocks: ReactNode[] = [];
   const headingIds = new Map<string, number>();
   const uniqueHeadingId = (heading: string) => {
-    const base = slugify(heading);
+    const base = idPrefix ? `${idPrefix}-${slugify(heading)}` : slugify(heading);
     const count = (headingIds.get(base) ?? 0) + 1;
     headingIds.set(base, count);
     return count === 1 ? base : `${base}-${count}`;
@@ -193,7 +193,7 @@ function ArtifactDatabase() {
           ]} />
           <div className="border-t border-white/10 pt-4">
             <h3 className="text-xs font-bold uppercase tracking-[0.14em] text-[#dca464]">Full Artifact Notes</h3>
-            <div className="game-wiki-markdown text-sm"><MarkdownContent lines={entry.notes} nested /></div>
+            <div className="game-wiki-markdown text-sm"><MarkdownContent lines={entry.notes} nested idPrefix={slugify(entry.name)} /></div>
           </div>
           <a href="#artifact-database" className="inline-block text-xs font-semibold text-[#ff9a7a] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Back to Artifact Database ↑</a>
         </WikiEntitySection>)}
