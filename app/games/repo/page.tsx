@@ -30,6 +30,7 @@ export default function RepoGameHub() {
     ...s,
     guides: s.guideIds
       .map((id) => repoGuidePages.find((g) => g.id === id)!)
+      .filter((g) => g && !g.noindex)
       .map((g) => ({
         href: '/guides/' + g.slug,
         title: g.title,

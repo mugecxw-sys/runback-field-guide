@@ -3,18 +3,17 @@
     "id": "P1-11",
     "slug": "r-e-p-o-items-and-tools-explained",
     "tag": "ITEMS",
-    "title": "R.E.P.O. items and tools explained",
-    "description": "A practical item index grouped by what each tool changes during a run.",
-    "lead": "Read the item pool by job: damage, control, movement, carry protection, healing, and information. The right tool is the one that fixes the current route, not the one with the highest community tier.",
+    "title": "R.E.P.O. Items and Tools: Three Staff Effects Explained",
+    "description": "A concise reference to the Zero Gravity, Roll, and Void Staff effects documented in the existing R.E.P.O. patch notes.",
+    "lead": "The official v0.4.4 notes describe three specific staffs and give all staffs six battery pips. Use the current item description for any effect or cost not listed here.",
     "steps": [
-      "Start with the item category: weapon, throwable, drone, staff, healing, or information.",
-      "Compare what the item changes for the crew: damage, time, distance, weight, durability, or recovery.",
-      "Separate permanent upgrades from run-only tools, and check the current item description after a patch.",
-      "Pair each tool with a situation: fragile heavy loot, blocked doorway, enemy control, revive, or low-health return.",
-      "Before relying on an exact price or duration, confirm it in the current shop or item description."
+      "Zero Gravity Staff is more controllable on non-enemy objects and can move the user when self-cast. Its documented use here is repositioning an object or the player, not an invented damage value.",
+      "Roll Staff makes rolling objects target enemies. Self-use gives the player camera-steered rolling; check the space ahead before choosing that movement.",
+      "Void Staff pulls heavy objects more strongly and creates outward surges near its center. Keep important valuables away from an uncontrolled pull lane.",
+      "All staffs have six battery pips in v0.4.4. Read the current item and shop display for availability, price, and any later changes."
     ],
-    "mistakes": "Copying a price from an old guide, treating a mod entry as vanilla behavior, and describing an item without saying when to use it.",
-    "versionNote": "Community item databases are useful for vocabulary and structure, but prices, pools, ammo, and effects need current-client checks.",
+    "mistakes": "Treating a staff's object interaction as a universal enemy counter, or copying a pre-v0.4.4 battery description.",
+    "versionNote": "These are documented v0.4.4 effects, not a complete item database or a current shop inventory.",
     "sources": [
       {
         "label": "Complete items guide",
@@ -32,15 +31,13 @@
     "tag": "ENEMIES",
     "title": "Apex Predator (Duck): create space before you counter",
     "description": "The Duck dossier: recognize the threat, protect the carrier, and avoid a bad chase.",
-    "lead": "Treat the Apex Predator as a route problem first. Call its location, move the valuable out of its line, and only use a dedicated counter when the team has a clear exit.",
+    "lead": "The yellow duck is harmless until picked up or damaged; then it becomes a fast chaser for a short window. The Enemy Index already records the trigger and counter, so this page stays brief.",
     "steps": [
-      "Call “Duck” with the room and direction as soon as the team recognizes it.",
-      "Stop carrying through the threat area and put the valuable somewhere recoverable.",
-      "Split the team: one player watches the route while the carrier rotates toward the cart or extraction.",
-      "Use the item or environment counter only after the escape route is clear.",
-      "Treat exact triggers, chase behavior, and player-count interactions as version-sensitive unless you can confirm them in your current build."
+      "Do not pick up or damage the duck when the route does not require it.",
+      "If it has transformed, leave the item recoverable and use the Enemy Index dossier for the documented environment or Duck Bucket counter with a clear exit."
     ],
-    "mistakes": "Chasing it with the valuable still in hand, stacking the team in one doorway, and assuming a single counter works in every map.",
+    "mistakes": "Picking up the duck casually or committing to a counter without an exit.",
+    "noindex": true,
     "versionNote": "Monster behavior and counter reliability are version-sensitive. Use this as conservative route advice rather than an exact timing reference.",
     "sources": [
       {
@@ -59,15 +56,13 @@
     "tag": "ENEMIES",
     "title": "Trudge: route around the pull",
     "description": "Keep large valuables and the return path out of the danger zone.",
-    "lead": "Trudge turns a narrow route into a physics problem. Give the carrier an alternate line, stop feeding heavy items into the pull, and use control only when it creates a real window.",
+    "lead": "Trudge can pull players and large valuables into a close-range strike. Official v0.4.4 notes changed its suction to Void Staff-style behavior, making larger valuables easier to pull. Park the load outside that lane before crossing.",
     "steps": [
-      "Call Trudge and identify the open side of the room or hallway.",
-      "Drop or park the valuable before the pull can move it into a wall or pit.",
-      "Move the scout first and make a visible return route for the carrier.",
-      "Use a control tool or a strong counter only when the team can finish the carry during its duration.",
-      "Test heavy-object behavior separately from player behavior; the patch changed how Trudge handles larger valuables."
+      "Recognize the grinding mace audio and ground vibration described in the Enemy Index dossier.",
+      "Park large valuables outside the pull lane. The v0.4.4 change means older footage of heavy-object behavior may not describe the current pull.",
+      "Wait for an open crossing instead of fighting in a choke point; consult the dossier for the short counter."
     ],
-    "mistakes": "Trying to out-pull it while holding a fragile item, fighting in a doorway, and forgetting the cart is part of the escape route.",
+    "mistakes": "Leaving a large valuable in the pull lane or using old heavy-object footage as a timing chart.",
     "versionNote": "Official v0.4.4 notes changed Trudge’s suck behavior, so older footage is useful for ideas but not for exact timing.",
     "sources": [
       {
@@ -86,15 +81,13 @@
     "tag": "ENEMIES",
     "title": "Tick: do not carry blindly",
     "description": "A small threat becomes dangerous when the carrier loses control of the item.",
-    "lead": "Ticks punish the player who keeps holding loot without checking the threat. Put the object down, create space, and make the next action deliberate.",
+    "lead": "A Tick can latch onto a player handling an object and drain health. The Enemy Index dossier already has the recognition cue and counter; keep the carry response short here.",
     "steps": [
-      "Call the Tick and stop moving the valuable while the team identifies who is being pressured.",
-      "Put the item down in a safe position instead of trying to sprint-carry through contact.",
-      "Use a wall, cart, or open room to separate the carrier from the threat.",
-      "Resume the carry only after the team has a clear route and the item is stable.",
-      "If Tick behaves differently while holding, dropping, or countering, prioritize the current game behavior over older guide claims."
+      "Put the valuable down outside the contact area instead of forcing a carry through the latch.",
+      "Create space and use the Tick dossier in the Enemy Index before resuming the item route."
     ],
-    "mistakes": "Running while holding the item, turning into a wall, and assuming a small enemy can be ignored because it is not a boss.",
+    "mistakes": "Keeping the valuable in hand while the Tick is attaching.",
+    "noindex": true,
     "versionNote": "Community guides disagree on some attack conditions and damage details. Use the conservative handling rule here and treat exact triggers as version-sensitive.",
     "sources": [
       {
@@ -113,15 +106,14 @@
     "tag": "CO-OP",
     "title": "Duo strategy: split focus, not the run",
     "description": "A two-player plan for scouting, hauling, callouts, and extraction.",
-    "lead": "In a duo, one player should not be both blind scout and carrier. Give each person a job, use short callouts, and retreat before one mistake becomes a lost run.",
+    "lead": "With two players, one handles the valuable and C.A.R.T. while the other checks the next doorway and return route. Swap at a safe handoff when the carrier needs to scout.",
     "steps": [
-      "Before leaving the truck, choose a carrier and a scout; swap only at a safe handoff point.",
-      "Use the scout to clear the next room and call the return route, not to wander out of voice range.",
-      "Keep the cart near the current work area so the carrier is not making empty trips.",
-      "At an enemy alert, the scout calls the route while the carrier drops the item and follows.",
-      "For extraction, the carrier finishes the point while the scout watches the return and truck."
+      "Choose which player carries and which checks the next room and truck route before moving the first valuable.",
+      "Keep the C.A.R.T. near the current work area. If the carrier needs to inspect an unknown doorway, set the item down and swap roles at that handoff.",
+      "At extraction, one player adjusts the load inside the boundary while the other watches the return path and remaining objective."
     ],
-    "mistakes": "Both players carrying at once, losing proximity voice, and waiting until quota is barely met to plan the return.",
+    "mistakes": "Both players entering an unscouted room with valuables and leaving nobody to check the return lane.",
+    "noindex": true,
     "versionNote": "Role recommendations are strategy guidance, not game rules; map layout, monster density, and player skill change the best split.",
     "sources": [
       {
@@ -198,15 +190,14 @@
     "tag": "UPGRADES",
     "title": "Health, Stamina, and Range: when each matters",
     "description": "Choose the stat that changes your route instead of buying a generic comfort pick.",
-    "lead": "Health buys forgiveness, Stamina buys actions, and Range buys safer interaction distance. Compare the failure each stat removes against the cost and the role that receives it.",
+    "lead": "Health can absorb a repeated hit; Stamina supports movement and actions on the same route; Range matters when a pickup or interaction is unsafe at the current distance. The repo does not establish numerical efficiency for any of them.",
     "steps": [
-      "Choose Health when one mistake or one hit repeatedly ends the run.",
-      "Choose Stamina when the carrier or scout loses time to repeated sprint, climb, or movement downtime.",
-      "Choose Range when reaching from a safer angle changes how you collect or control objects.",
-      "Give the stat to the role that uses it most: carrier, scout, or recovery player.",
-      "Run one comparable route after the purchase and record time, damage, and delivered value."
+      "Choose Health if damage repeatedly ends an otherwise workable route; check whether the same hit is survived on the next comparable run.",
+      "Choose Stamina if movement or carrying repeatedly runs out before the crew can reach safety; keep an escape reserve on the same route.",
+      "Choose Range when extra interaction distance changes a specific pickup or control position. If it does not change that angle, save for a different offer."
     ],
-    "mistakes": "Calling one stat universally best, comparing old prices, and buying Range without a route where distance actually matters.",
+    "mistakes": "Buying Range without a specific safer interaction angle or comparing old prices as current shop facts.",
+    "noindex": true,
     "versionNote": "Effect summaries are stable strategy guidance; exact increments and price ranges must be retested on the current build.",
     "sources": [
       {
@@ -277,6 +268,7 @@
   {
     "id": "P2-28",
     "slug": "r-e-p-o-faq-quota-upgrades-monsters-and-multiplayer",
+    "noindex": true,
     "tag": "FAQ",
     "title": "R.E.P.O. FAQ: quota, extraction, upgrades, monsters, and co-op",
     "description": "Direct answers to common early-run questions, with links to the full guides for each system.",
@@ -310,6 +302,7 @@
   {
     "id": "P2-29",
     "slug": "what-is-r-e-p-o-story-setting-and-what-we-know",
+    "noindex": true,
     "tag": "LORE",
     "title": "What is R.E.P.O.? Story, setting, and confirmed details",
     "description": "R.E.P.O. is an online co-op horror game where physics-based valuables must be retrieved and extracted while monsters threaten the crew and its cargo.",

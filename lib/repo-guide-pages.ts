@@ -17,6 +17,7 @@ export type RepoGuidePage = {
   sources: GuideSource[];
   publishedAt?: string;
   updatedAt?: string;
+  noindex?: boolean;
 };
 
 export function guideSortDate(guide: RepoGuidePage) {
@@ -42,20 +43,19 @@ export const repoGuidePages: RepoGuidePage[] = [
     id: 'P0-1',
     slug: 'first-run-guide',
     tag: 'FIRST RUN',
-    title: 'R.E.P.O. first run guide: finish your first run safely',
+    title: 'R.E.P.O. first run guide: from first loot to leaving',
     description:
       'A practical R.E.P.O. first-run checklist: learn controls, stage loot, meet quota, extract, and choose the next upgrade.',
-    lead: 'Your first objective is a clean run, not a perfect map clear. Learn the controls, stage nearby valuables, satisfy quota, then leave with the crew before greed turns a stable run into a wipe.',
+    lead: 'Learn how to handle an object, find a short route to the C.A.R.T., meet the displayed quota, finish extraction, and return to the truck. The next level can change the layout and required points.',
     steps: [
-      'Use the tutorial or Controls menu to learn movement, grabbing, item rotation, the map, and sprinting.',
-      'Find the C.A.R.T. before collecting. Start with nearby intact valuables that can pass through doors.',
-      'Create a safe staging point between the rooms and the extraction route.',
-      'Watch the quota and required extraction points instead of trying to empty every room.',
-      'At the Service Station, compare the current offers with the failure you actually had; assign a user to any team tool before buying it.',
-      'At the start of each level, check its layout, extraction arrangement, nearby loot and threat pressure instead of assuming the previous route still fits.',
+      'Use the tutorial or Controls menu to practice grabbing, rotating, and setting down a low-value object. Locate the truck, C.A.R.T., and the first extraction point before carrying farther.',
+      'Start with a nearby intact valuable that fits through the known doorways. Place it in the cart without letting it scrape a wall or block the return lane.',
+      'Compare the cart value with the displayed quota. Put the full load inside the extraction boundary and wait for the point to register; check whether another point is required.',
+      'After extraction resolves, return to the truck and follow its leave prompt. At the Service Station, compare the available purchase with the problem that slowed or ended the run.',
+      'On the next level, read the new layout, extraction points, nearby loot, and threats before reusing the last route.',
     ],
     mistakes:
-      'Forcing large valuables through a doorway, letting the whole team roam without a regroup point, treating a full map clear as the only successful result, and assuming the previous level’s route still fits.',
+      'Loading an item that cannot pass the next doorway, mistaking cart value for a completed extraction point, or assuming the next level has the same return path.',
     versionNote:
       'This page uses the R.E.P.O. v0.4.x period as its baseline. Recheck in-game prompts after every major patch.',
     sources: [
@@ -73,19 +73,18 @@ export const repoGuidePages: RepoGuidePage[] = [
     id: 'P0-2',
     slug: 'meet-quota',
     tag: 'QUOTA',
-    title: 'How to meet quota in R.E.P.O. before you get greedy',
+    title: 'How to meet quota in R.E.P.O.',
     description:
       'Meet quota in R.E.P.O. by reading the HUD, protecting easy valuables, completing extraction points, and leaving once the run is safe.',
-    lead: 'Quota is the extraction gate, not an instruction to empty the map. Use the HUD to plan the route, deliver manageable valuables, and stop taking unnecessary risk once the objective is met.',
+    lead: 'Read the required value and point count on the current HUD. Cart value is a load check; an extraction point counts only after the valuables are inside its boundary and the point resolves.',
     steps: [
-      'Confirm the quota, the number of extraction points, and the truck direction before going deep.',
-      'Choose nearby valuables that are intact and controllable before committing to awkward heavy pieces.',
-      'Use the C.A.R.T. to reduce repeated crossings of dangerous rooms.',
-      'Place each item fully inside the extraction boundary and wait for the point to register.',
-      'When quota is complete, prioritize the crew and the return route over one last item.',
+      'Read the displayed quota and required extraction points before choosing which known valuables to carry.',
+      'Compare the remaining value gap with nearby intact items; use the C.A.R.T. for a load you can actually move through the route.',
+      'Place every valuable fully inside the extraction boundary and wait for the point to register. Check the HUD again before seeking another item or point.',
+      'Once the required quota and points are complete, follow the extraction sequence and truck departure steps in the separate extraction guide.',
     ],
     mistakes:
-      'Entering an unknown room for one more item, leaving a valuable half inside a boundary, and ignoring the time needed to return safely.',
+      'Counting an item still in the cart as extracted, leaving part of it outside the boundary, or overlooking a remaining required point.',
     versionNote:
       'Exact quota formulas can vary with map and multiplayer conditions. Use the current HUD as the authority for your run.',
     sources: [
@@ -131,19 +130,18 @@ export const repoGuidePages: RepoGuidePage[] = [
     id: 'P0-4',
     slug: 'upgrade-priority',
     tag: 'UPGRADES',
-    title: 'R.E.P.O. upgrade priority: buy the fix for your last failure',
+    title: 'R.E.P.O. upgrade and shop priority: what to buy or save',
     description:
       'Choose R.E.P.O. upgrades and shop purchases by the problem that ended the previous run, and know when saving is the better call.',
-    lead: 'A purchase is valuable when it removes the team’s next likely failure. Name what ended the run, choose one improvement, then observe what changed rather than copying a universal tier list.',
+    lead: 'At the Service Station, compare the actual offers with the last run. Strength addresses a slow or awkward carry; Stamina addresses exhausted movement; Health can absorb a repeated hit; Range can change an unsafe pickup. Save when the shelf offers no useful change or a purchase would leave no basic recovery option.',
     steps: [
-      'Name the failure that ended the run: carrying pressure, stamina, damage, reach, lost control, or missing information.',
-      'Choose a carrying improvement when the route is safe but weight or handling is the bottleneck; choose a survival improvement when damage ends otherwise workable runs.',
-      'Consider reach or mobility only when distance or positioning is causing the problem. A tool should have an assigned user and a clear job.',
-      'At the Service Station, compare the current offer and price with that problem. Spend when an available choice addresses it; keep resources when none does or spending would remove a basic recovery option.',
-      'Change one category at a time and observe whether it helped before adding another variable.',
+      'If a known valuable repeatedly stalls at a doorway, compare Strength or a carrying option with a shorter cart route before buying movement speed.',
+      'If the carrier runs out of actions or escape reserve on the same route, consider Stamina. If otherwise workable runs end after damage, consider Health; if unsafe interaction distance is the problem, compare Range.',
+      'For a specific blocked route or enemy, buy a relevant available tool only when someone will carry and use it. Read the current shop description and price.',
+      'Save when the shelf does not solve the named failure or buying would remove a basic recovery option. Recheck the same failure next run rather than changing several purchases at once.',
     ],
     mistakes:
-      'Buying by price or a copied order without matching the choice to the run, hoarding while the same failure repeats, and changing several unrelated upgrades at once.',
+      'Buying Range without a safer pickup angle, assigning no user to a team tool, or copying a purchase order when the shop offers different items.',
     versionNote:
       'Prices, upgrade pools, and availability are version-sensitive. This page explains decision logic rather than a permanent purchase order.',
     sources: [
@@ -161,21 +159,20 @@ export const repoGuidePages: RepoGuidePage[] = [
     id: 'P0-6',
     slug: 'strength-upgrade-breakpoints',
     tag: 'STRENGTH',
-    title: 'R.E.P.O. Strength upgrade breakpoints: test, do not assume',
+    title: 'R.E.P.O. Strength Upgrade Testing: Finding Carry Thresholds',
     description:
-      'Use a repeatable test sheet to verify R.E.P.O. Strength upgrades by target, player count, distance, and patch instead of relying on old charts.',
-    lead: 'Strength breakpoints are useful only when the test conditions are visible. Repeat the same target, route, player count, and version before relying on a claim about what a level can carry.',
+      'A repeatable way to check whether another Strength level changes what your crew can lift and deliver; no unverified breakpoint chart.',
+    lead: 'The repo has no verified Strength breakpoint numbers. To find a useful threshold, compare the same object, crew size, doorway, and route before and after one Strength upgrade.',
     steps: [
-      'Lock the map, target, distance, player count, and patch version.',
-      'Record the baseline before buying the next Strength level.',
-      'Test whether the target can be lifted, moved through a doorway, and delivered.',
-      'Repeat the same setup at the next planned test level.',
-      'Keep the test conditions beside the result and separate items from monsters.',
+      'Record the game version, Strength level, player count, object, and route before buying another level.',
+      'Test whether the object can be lifted, carried through the same doorway, and delivered. Repeat after the upgrade with the same crew and path.',
+      'Report the changed observation with its conditions; do not generalize one item result to monsters or every valuable.',
     ],
     mistakes:
       'Writing that one threshold moves everything, mixing monster and item behaviour, and treating community numbers as current official data.',
     versionNote:
       'Community strength charts are useful for hypotheses, not proof. Re-test after physics or enemy-balance changes.',
+    noindex: true,
     sources: [
       {
         label: 'Steam community guide',
@@ -194,16 +191,15 @@ export const repoGuidePages: RepoGuidePage[] = [
     title: 'R.E.P.O. monsters: identify the trigger before you fight',
     description:
       'A first-response system for R.E.P.O. monsters: identify sight, sound, proximity, or special triggers, then protect the escape route.',
-    lead: 'The first question is not “can we kill it?” It is “what triggers it?” Call the threat, stop blocking the route with loot, create space, and fight only when the team has an advantage.',
+    lead: 'Set down loot without blocking the retreat lane, identify whether the threat reacts to sight, sound, proximity, or contact, then use the matching dossier in the Enemy Index.',
     steps: [
-      'Call the enemy location and direction as soon as you see or hear it.',
-      'Set down the valuable where it will not block the retreat path.',
-      'Use doors, walls, containers, and distance for sight-based threats.',
-      'Reduce sprinting, jumping, and hard drops when sound or proximity is the concern.',
-      'Fight only with a clear weapon plan, open space, and a route back to the team.',
+      'Call the enemy and direction, and put carried loot somewhere recoverable outside the return lane.',
+      'Check its trigger in the Enemy Index: break sight with solid cover for a gaze threat, reduce noise for a sound threat, or create distance from a proximity or contact threat.',
+      'Use the individual dossier for a counter before committing a weapon or valuable to the encounter.',
     ],
     mistakes:
-      'Carrying silently into a threat, forcing a narrow doorway, and risking the whole run for one item.',
+      'Treating a sound trigger like a sight trigger, or blocking the only retreat doorway with the carried item.',
+    noindex: true,
     versionNote:
       'Enemy rosters, damage, and specific counters change. Keep only current, reproducible behavior in a quick reference.',
     sources: [
@@ -224,16 +220,15 @@ export const repoGuidePages: RepoGuidePage[] = [
     title: 'R.E.P.O. Shadow Child guide: hear the laugh, then look away',
     description:
       'A conservative R.E.P.O. Shadow Child response: identify the cue briefly, look away, create space, and keep the route to your team open.',
-    lead: 'Treat Shadow Child as a positioning problem. Confirm the direction without locking your camera, turn away, create space, and avoid taking a large item deeper into a narrow route.',
+    lead: 'A giggle and dark child-shaped silhouette signal Shadow Child. Use a short glance to locate it, then look away and leave a clear retreat lane. The Enemy Index contains the same behavior and counter in its dossier.',
     steps: [
-      'Use the sound cue or screen edge for a brief confirmation instead of staring.',
-      'Turn away and move toward a teammate or the truck direction.',
-      'Drop a large item if it blocks the escape route.',
-      'Avoid pushing deeper alone after contact or damage.',
-      'Treat trigger distance and other exact mechanics as uncertain until current gameplay confirms them.',
+      'Use the sound cue or a brief glance to locate it without prolonged eye contact.',
+      'Look away and move toward an open route; set down a large object if it blocks that route.',
+      'Use the Shadow Child dossier in the Enemy Index for the recognition cue and current counter.',
     ],
     mistakes:
-      'Staring too long to confirm the enemy, stopping with a large item in a narrow room, and copying old damage values as current truth.',
+      'Prolonged eye contact while trying to identify it, or blocking the retreat with a carried object.',
+    noindex: true,
     versionNote:
       'This page keeps its advice behavioral until current-client footage verifies any timing, damage, or collision claim.',
     sources: [
@@ -254,16 +249,14 @@ export const repoGuidePages: RepoGuidePage[] = [
     title: 'R.E.P.O. Rugrat guide: protect the valuables first',
     description:
       'When Rugrat threatens R.E.P.O. loot, secure valuables and the route first; only then decide whether controlling it is worth the risk.',
-    lead: 'Rugrat turns a loot route into a recovery problem. Call it out, move valuables toward a safe handoff point, spread the team, and never trade a stable run for a chase.',
+    lead: 'Rugrat reaches for valuables and can throw them. Move fragile loot out of reach before deciding whether to avoid it or use the coordinated counter in the Enemy Index dossier.',
     steps: [
-      'Call Rugrat as soon as it approaches an important valuable.',
-      'Move discovered loot toward the truck, a safe corner, or a teammate handoff.',
-      'Keep teammates out of a shared throwing line.',
-      'Decide whether to route around or counter only after the loot is safe.',
-      'Record what was lost and how player count changed the recovery.',
+      'Move nearby valuables out of its reach and keep players clear of the thrown-item line.',
+      'If it blocks the route, use the Rugrat dossier in the Enemy Index for the counter; otherwise carry by a different path.',
     ],
     mistakes:
-      'Chasing before securing loot, stacking the whole team in one line, and parking a large item between the enemy and the return route.',
+      'Leaving fragile loot in reach or standing together in the path of a thrown object.',
+    noindex: true,
     versionNote:
       'Throw timing, damage, and multiplayer behaviour need current-version verification before adding fixed values.',
     sources: [
@@ -387,10 +380,7 @@ for (const guide of repoGuidePages) {
 export const repoInternalLinkRules: RepoInternalLinkRule[] = [
   { targetId: 'CART', terms: ['C.A.R.T.', 'cart'] },
   { targetId: 'P0-4', terms: ['Service Station'] },
-  { targetId: 'P0-8', terms: ['Shadow Child'] },
-  { targetId: 'P0-9', terms: ['Rugrat'] },
   { targetId: 'P0-2', terms: ['quota'] },
   { targetId: 'P0-3', terms: ['extraction'] },
   { targetId: 'P0-4', terms: ['upgrades', 'upgrade'] },
-  { targetId: 'P0-7', terms: ['monsters', 'monster', 'enemies', 'enemy'] },
 ];

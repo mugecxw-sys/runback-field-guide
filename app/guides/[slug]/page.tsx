@@ -43,6 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: g.title + ' | RUNBACK',
     description: g.description,
+    ...(g.noindex ? { robots: { index: false, follow: true } } : {}),
     alternates: { canonical: siteUrl + '/guides/' + g.slug },
     openGraph: {
       title: g.title,
@@ -60,7 +61,7 @@ export default async function GuidePage({ params }: Props) {
   if (!g) notFound();
   const related = (repoRelatedGuideIds[g.id] ?? [])
     .map((id) => repoGuidePages.find((x) => x.id === id)!)
-    .filter(Boolean)
+    .filter((r) => r && !r.noindex)
     .map((r) => ({ href: '/guides/' + r.slug, title: r.title }));
   const hasDefaultModifiedDate =
     (repoEnrichment[g.slug] &&
@@ -81,7 +82,16 @@ export default async function GuidePage({ params }: Props) {
       date={g.publishedAt ?? guidePublishedAt}
       modified={modified}
       related={related}
-      extra={repoEnrichment[g.slug] ?? []}
+      extra={[
+        ...(repoEnrichment[g.slug] ?? []),
+        ...(g.tag === 'ENEMIES' && g.noindex
+          ? [{
+              heading: 'Enemy Index',
+              paragraphs: ['Use the enemy dossier for its recognition cue and counter.'],
+              source: { href: '/games/repo/enemies', label: 'Open the R.E.P.O. Enemy Index' },
+            }]
+          : []),
+      ]}
       articleType={repoArticleType(g.tag)}
     />
   );

@@ -61,17 +61,15 @@ export const repoEnrichment: Record<string, Enrichment[]> = {
       paragraphs: [],
     },
     {
-      heading: 'Plan the first ten minutes',
+      heading: 'Before a long carry',
       paragraphs: [
-        'Give each player a concrete job before the first carry. One person identifies the return route, another handles manageable valuables, and a third watches the next doorway. In a duo, combine scouting and lookout duties; alone, stop carrying whenever you need to inspect an unfamiliar room. The aim is to avoid learning a route while wrestling with a fragile object.',
-        'Work outward from a safe staging point. Take a short path with repeatable handling before committing to a large piece at the far end of the map. Each detour should have a reason: a clearer doorway, a nearby extraction point or an item that closes the remaining gap. If nobody can explain how the object gets home, leave it until the team has a plan.',
+        'Walk the doorway and return path without the object first. Park the C.A.R.T. where it leaves that route open. If the item cannot clear a turn without scraping a wall, choose a smaller nearby valuable or move it separately.',
       ],
     },
     {
-      heading: 'Alternative: a low-risk solo route',
+      heading: 'On the next level',
       paragraphs: [
-        'Take smaller batches and return along a route you already know. Before lifting an awkward object, walk the next doorway empty-handed. If the object makes you lose sight of the route or prevents a quick retreat, park it and scout again. The slower-looking carry can be the faster successful run.',
-        'After the run, choose one change. If the crew got separated, fix callouts before shopping. If handling was the bottleneck on an otherwise safe path, compare carrying upgrades. Spending cannot repair a plan that asks everyone to cross an unknown room at once.',
+        'Check the new extraction points and truck route before loading the cart. The prior level’s path and loot placement do not establish a safe path through the next one.',
       ],
     },
   ],
@@ -175,16 +173,16 @@ export const repoEnrichment: Record<string, Enrichment[]> = {
       paragraphs: [],
     },
     {
-      heading: 'Choose a role before a purchase',
+      heading: 'Match the offer to a failed task',
       paragraphs: [
-        'Compare the last failure with the next map’s likely demands. A dedicated carrier may benefit from a handling improvement that a lookout rarely uses. Agree who will use a team tool before paying for it; a tool left unassigned cannot reliably solve the problem that justified the purchase.',
-        'Do not treat this table as a universal build order. A group that survives comfortably but wastes time moving valuables needs a different decision from a group that loses players on the first room. Read the current item description and price, then select the smallest change that addresses the repeated failure.',
+        'If a carrier cannot manage the same heavy object through a doorway, compare Strength with changing the cart route. If the crew repeatedly runs out of Stamina on the return, buying Health does not fix that movement problem.',
+        'Read the current shop offer and price. Give a team tool to the player who will use it on the next route before paying for it.',
       ],
     },
     {
-      heading: 'Alternative: change the route and save',
+      heading: 'When to save',
       paragraphs: [
-        'When no available item solves the problem, keep the money and make a concrete route adjustment instead. Carry smaller batches, scout the next corner first, or set a regroup point. Saving is useful when paired with an improvement in play; repeating the same failed plan while waiting for an ideal shop roll is not a strategy.',
+        'If the Service Station does not offer a relevant purchase, keep the money. Shorten the carry, move the cart closer, or take smaller batches on the next attempt; compare that result before paying for an unrelated offer.',
       ],
     },
   ],

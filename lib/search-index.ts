@@ -13,7 +13,7 @@ export const searchIndex = [
     text: g.categories.join(' '),
     date: articlePublishedAt,
   })),
-  ...repoGuidePages.map((g) => ({
+  ...repoGuidePages.filter((g) => !g.noindex).map((g) => ({
     title: g.title,
     game: 'R.E.P.O.',
     kind: g.tag,

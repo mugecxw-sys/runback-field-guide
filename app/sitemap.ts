@@ -90,7 +90,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'yearly',
       priority: 0.2,
     },
-    ...repoGuidePages.map((guide) => ({
+    ...repoGuidePages.filter((guide) => !guide.noindex).map((guide) => ({
       url: `${siteUrl}/guides/${guide.slug}`,
       lastModified: guideSortDate(guide),
       changeFrequency: 'weekly' as const,
