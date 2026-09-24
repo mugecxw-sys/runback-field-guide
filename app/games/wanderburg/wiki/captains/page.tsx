@@ -21,7 +21,7 @@ const sources = [
 ] as const;
 const toc = [
   'Captain Database', 'Captain Details', 'Captain Balance History', 'How to Read Captain Effects',
-  'Captains and Builds', 'Data Confidence', 'Current Coverage', 'Sources',
+  'Captains and Builds', 'Current Coverage', 'Sources',
 ];
 const captainImages: Record<string, string> = {
   'Patchy The Pirate': 'patchy-the-pirate', 'Dieter The Drunk': 'dieter-the-drunk', Duelist: 'duelist', Empress: 'empress',

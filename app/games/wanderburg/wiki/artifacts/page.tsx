@@ -21,7 +21,7 @@ const toc = [
   'Artifact Database', 'Artifact Details', 'Artifact Rerolls',
   'Artifact Rerolls vs Module Rerolls', 'Rare Artifact Screen', 'Are These All Wanderburg Artifacts?',
   'Why RUNBACK Does Not Copy a Community Artifact List', 'How to Evaluate an Artifact', 'Artifacts and Builds',
-  'What RUNBACK Still Needs to Verify', 'Version Status', 'Sources',
+  'Version Status', 'Sources',
 ];
 
 export const metadata: Metadata = {

@@ -194,25 +194,9 @@ Official Hotfix 0.9.10 added permanent progression for Module rerolls: **Every 6
 
 ---
 
-# Data Confidence
-
-### Current Client Verified
-
-Current Module names, visible roster, slots, current English descriptions, and visible active/automatic behavior.
-
-### Official Verified
-
-Patch changes including Lightning Mage/Electric Mage targets, Arms/Side Arm timing, Front Barracks 200 → 250, Force Mage projectile cancellation, Side Ballista balance direction, Turret Layer/Back Turret attack speed, and Module rerolls.
-
-### External Data Cross-Check
-
-Base damage and cooldown values not displayed on the selection screen. When external data conflicts with a newer official patch, the official patch wins. When a value cannot be interpreted safely, RUNBACK leaves it blank.
-
----
-
 # Current Coverage
 
-This page covers the **20 Modules visible in the captured Wanderburg 0.9.14 client roster**. It does not automatically add entries that appear only in external databases.
+This reference covers the 20 Modules shown in the Wanderburg Early Access 0.9.14 client. Values not shown in the client are included only when supported by the listed patch notes or supplemental source; unclear values are left blank.
 
 For broader patch and system context, see the [Wanderburg Wiki & Reference](/games/wanderburg/reference). For current build directions, see the [Wanderburg Builds Guide](/games/wanderburg/builds). For verified Captain changes, see the [Wanderburg Captains Wiki](/games/wanderburg/wiki/captains). Return to the [Wanderburg game hub](/games/wanderburg) for all Wanderburg guides.
 

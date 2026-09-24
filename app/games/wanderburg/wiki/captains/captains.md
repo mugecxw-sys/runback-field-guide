@@ -465,53 +465,9 @@ For broader patch and system context, see the [Wanderburg Wiki & Reference](/gam
 
 ---
 
-# Data Confidence
-
-RUNBACK uses the following evidence order.
-
-### Current Client Verified
-
-Used for:
-
-- current Captain roster
-- current names
-- visible positive effects
-- visible drawbacks
-- current tooltip wording
-
-### Official Verified
-
-Used for:
-
-- historical balance changes
-- older patch-note aliases
-- localization changes
-
-### Conflict
-
-Used when reliable sources disagree.
-
-Current example:
-
-**Tankbert Nitro regeneration**
-
-Client UI:
-
-**-50%**
-
-Official 0.9.10:
-
-**-30%**
-
-No single number is presented as settled runtime fact until that conflict is tested.
-
----
-
 # Current Coverage
 
-This page covers all **14 Captains visible in the captured Wanderburg Early Access 0.9.14 client**.
-
-RUNBACK does not add additional Captains that are absent from the current captured roster merely because they appear in an external database or older material.
+This reference covers the 14 Captains shown in the Wanderburg Early Access 0.9.14 client. Tankbert's conflicting Nitro regeneration values remain documented in the Tankbert section above.
 
 ## Sources
 

@@ -26,7 +26,7 @@ const sources = [
 const toc = [
   'Module Database', 'Top-Slot Modules', 'Side-Slot Modules', 'Front-Slot Modules', 'Back-Slot Modules',
   'Module Details',
-  'Module Rerolls', 'Data Confidence', 'Current Coverage', 'Sources',
+  'Module Rerolls', 'Current Coverage', 'Sources',
 ];
 const moduleImages: Record<string, string> = {
   'Archer Tower': 'archer-tower', Arms: 'arms', Cannon: 'cannon', 'Cannon Tower': 'cannon-tower',

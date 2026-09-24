@@ -185,9 +185,7 @@ For this melee-leaning test, the useful directions were:
 
 If you are leaning toward melee weapons when reasonable offers appear, permanent Melee Damage supports those changing weapons.
 
-This test does not prove melee is Arms Dealer's best overall build.
-
-It only validates a melee-leaning flexible direction through the tested portion of Danger 0.
+This single Danger 0 run tested a flexible, melee-leaning approach through the portion played; it does not establish an overall best build.
 
 ### 2. General Damage
 
@@ -337,7 +335,7 @@ This test used a melee-leaning flexible direction.
 
 Permanent Melee Damage was emphasized and reasonable melee offers were preferred, but the test did not force pure melee every wave.
 
-It does not prove melee is better than ranged.
+This run did not compare the melee-leaning approach with a ranged run.
 
 ### What should I lock?
 
@@ -367,9 +365,7 @@ No.
 
 The test failed during or around Wave 12.
 
-This run provides evidence for the early/mid-game shop loop, economy pressure, and a melee-leaning flexible strategy.
-
-It is not evidence of a complete Danger 0 clear.
+This run shows the early/mid-game shop loop, economy pressure, and a melee-leaning flexible strategy. It ended around Wave 12 without a Danger 0 clear.
 
 ## Related Brotato guides
 

@@ -10,7 +10,7 @@ The character gets **+25% to Elemental Damage modifications**, starts with **Sna
 
 Snake and Scared Sausage also support burn-focused play. Snake helps burning spread to another nearby enemy, while Scared Sausage can add burn to attacks.
 
-Those are source-backed Mage mechanics, not something this RUNBACK test attempted to isolate or measure.
+Those Mage and Taser mechanics come from the cited references; this run did not isolate or measure them.
 
 ![Mage selected with Taser on Danger 0](BRT-MAGE-01.png)
 
@@ -238,7 +238,7 @@ No.
 
 The manual test stopped at Wave 9.
 
-It provides evidence for the early/mid-game Taser setup and exposes one important weakness, but it does not prove full-clear performance, Danger 5 performance, or boss performance.
+This run illustrates the early/mid-game Taser setup and exposes one important weakness. It does not cover a full clear, Danger 5 run, or boss fight.
 
 ## Sources
 

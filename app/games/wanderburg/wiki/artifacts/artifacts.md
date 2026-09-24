@@ -313,28 +313,6 @@ For the broader patch and system overview, see the [Wanderburg Wiki & Reference]
 
 ---
 
-# What RUNBACK Still Needs to Verify
-
-The next useful Artifact data should come from the current 0.9.14 client.
-
-Priority fields are:
-
-1. complete Artifact roster
-2. current English names
-3. full tooltip text
-4. rarity
-5. unlock conditions
-6. exact trigger conditions
-7. numerical effects
-8. whether effects stack
-9. interactions with specific Modules or Captains
-
-This does not require completing full runs.
-
-A short Artifact-selection capture session can verify much of the missing reference data.
-
----
-
 # Version Status
 
 Current page coverage:

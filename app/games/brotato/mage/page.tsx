@@ -174,7 +174,7 @@ export default function MageGuide() {
         <h1 className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl">{title}</h1>
         <p className="mt-4 text-xs text-[#aeb7bc]">By RUNBACK · Published <time dateTime={publishedAt}>2026-09-16</time></p>
         <aside className="mt-5 rounded-xl border border-white/15 bg-[#192126] p-5 text-sm leading-7 text-[#c7d0d5]">
-          <strong>MANUAL_VERIFIED</strong> marks the limited Danger 0 run observations. <strong>SOURCE_VERIFIED</strong> marks Mage and Taser mechanics stated in the supplied Markdown; the two are not treated as the same evidence.
+          The run observations below come from one Danger 0 attempt. Mage and Taser mechanics are described separately from that run.
         </aside>
         <MarkdownBody />
       </article>

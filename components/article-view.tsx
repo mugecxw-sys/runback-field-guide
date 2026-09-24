@@ -317,10 +317,6 @@ export function ArticleView({
         </section>
         <section id="sources" className="mt-10 border-t border-white/10 pt-6">
           <h2 className="text-xl font-semibold">Sources and further reading</h2>
-          <p className="mt-3 text-sm leading-6 text-[#aeb7bc]">
-            Source-backed synthesis. Community recommendations are not
-            guaranteed outcomes; no new firsthand playtest is claimed.
-          </p>
           <ul className="mt-4 space-y-3">
             {a.sources.map((s) => (
               <li key={s.href}>

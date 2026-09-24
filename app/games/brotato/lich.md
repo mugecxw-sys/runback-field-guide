@@ -200,7 +200,7 @@ Those statements can both be true.
 
 The passive should be treated as **extra pressure**, not as a replacement for normal offense.
 
-The test does not prove that 4% Damage or 2 Ranged Damage caused the issue. It only suggests that healing synergy does not remove the need to maintain useful direct weapon output.
+The run does not isolate whether 4% Damage or 2 Ranged Damage caused the issue. It suggests that healing synergy does not remove the need to maintain useful direct weapon output.
 
 ## Should Lich Intentionally Take Damage?
 
@@ -210,7 +210,7 @@ During the test, the player sometimes intentionally took damage to create room f
 
 That is a real observed tactic from this run.
 
-But it is not evidence that deliberately taking hits is optimal or required.
+That occasional tactic should not be treated as optimal or required.
 
 Because the passive was only occasional, intentionally taking damage should be treated as an optional risk/reward tactic, not the default loop.
 
@@ -232,7 +232,7 @@ So this page does **not** claim that two melee weapons are required after Wave 6
 
 ## What Happened After Wave 8
 
-The manual evidence is verified through the **Wave 8 shop**.
+The last recorded snapshot is the **Wave 8 shop**.
 
 The player later reported that movement and positioning became more important after Wave 8.
 

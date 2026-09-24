@@ -109,7 +109,7 @@ Once Ranged Damage converts into Engineering, the Engineering side becomes more 
 
 The player felt that Engineering damage was strong in the second half.
 
-That is a player observation, not a DPS breakdown. This draft does not claim that Engineering carries all second-half damage or that guns become irrelevant after the conversion.
+The player felt Engineering damage was strong in the second half, but this run did not isolate its share of total damage or determine whether guns stop contributing after conversion.
 
 ## Wave 8 Snapshot
 
@@ -160,7 +160,7 @@ By the Wave 8 shop, the test had 25% Damage, 16% Attack Speed, and 15 Ranged Dam
 
 Wrench is a simple way to support the second half because it provides structures without requiring heavy raw Engineering investment.
 
-Cyborg has an Engineering modification penalty, so this draft does not recommend aggressively stacking normal Engineering.
+Cyborg has an Engineering modification penalty; this run did not test aggressive investment in normal Engineering.
 
 The stronger concept is:
 

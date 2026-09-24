@@ -122,7 +122,7 @@ export default function ArmsDealerGuide() {
     <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[#aeb7bc]"><a href="/">Home</a><span>›</span><a href="/games/brotato">Brotato</a><span>›</span><span aria-current="page">{title}</span></nav>
     <h1 className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl">{title}</h1>
     <p className="mt-4 text-xs text-[#aeb7bc]">By RUNBACK · Published <time dateTime={publishedAt}>2026-09-17</time></p>
-    <aside className="mt-5 rounded-xl border border-white/15 bg-[#192126] p-5 text-sm leading-7 text-[#c7d0d5]"><strong>MANUAL_VERIFIED</strong> marks the limited Danger 0 observations in the supplied test. The run failed around Wave 12; this page does not treat that partial test as a clear or universal best build.</aside>
+    <aside className="mt-5 rounded-xl border border-white/15 bg-[#192126] p-5 text-sm leading-7 text-[#c7d0d5]">This Danger 0 melee-leaning run failed around Wave 12. Its snapshots show part of the run, not a full clear or a universal build recipe.</aside>
     <MarkdownBody />
   </article></main>;
 }

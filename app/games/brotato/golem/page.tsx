@@ -43,7 +43,7 @@ function cells(line: string) {
 }
 
 function MarkdownBody() {
-  const lines = golemMarkdown.split('\n## MANUAL_VERIFIED\n')[0].replace(/\r\n/g, '\n').split('\n');
+  const lines = golemMarkdown.replace(/\r\n/g, '\n').split('\n## MANUAL_VERIFIED\n')[0].split('\n');
   const blocks: ReactNode[] = [];
   let index = 0;
   while (index < lines.length) {
@@ -120,7 +120,7 @@ export default function GolemGuide() {
     <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[#aeb7bc]"><a href="/">Home</a><span>›</span><a href="/games/brotato">Brotato</a><span>›</span><span aria-current="page">{h1}</span></nav>
     <h1 className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl">{h1}</h1>
     <p className="mt-4 text-xs text-[#aeb7bc]">By RUNBACK · Published <time dateTime={publishedAt}>2026-09-18</time></p>
-    <aside className="mt-5 rounded-xl border border-white/15 bg-[#192126] p-5 text-sm leading-7 text-[#c7d0d5]"><strong>MANUAL_VERIFIED</strong> marks a limited Danger 0 Rock-start test. It reached Wave 12 but did not clear; Wave 3 and Wave 8 are snapshots, not final Wave 12 stats. The below-50%-HP passive activated naturally and felt slight in this test.</aside>
+    <aside className="mt-5 rounded-xl border border-white/15 bg-[#192126] p-5 text-sm leading-7 text-[#c7d0d5]">This Danger 0 Rock-start run reached Wave 12 without clearing. Wave 3 and Wave 8 are snapshots, not Wave 12 final stats. Golem&apos;s below-50%-HP passive activated naturally and felt slight in this run.</aside>
     <MarkdownBody />
   </article></main>;
 }
