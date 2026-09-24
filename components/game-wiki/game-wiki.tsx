@@ -146,7 +146,7 @@ export function GameWikiArticleLayout({ config, activeHref, title, description, 
         <article className="min-w-0">
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
           <GameWikiMobileNav config={config} activeHref={activeHref} />
-          <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[#aeb7bc]"><a href="/">Home</a><span>›</span><a href={config.hubHref}>Games</a><span>›</span><a href={config.hubHref}>{config.gameName}</a><span>›</span><span aria-current="page">{title}</span></nav>
+          <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[#aeb7bc]"><a href="/">Home</a><span>›</span><a href="/#game-library">Games</a><span>›</span><a href={config.hubHref}>{config.gameName}</a><span>›</span><span aria-current="page">{title}</span></nav>
           <header className="mt-5 border-b border-[#b99256]/25 pb-6">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#dca464]">RUNBACK → {config.gameName} Wiki</p>
             <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight text-[#fff2df] sm:text-4xl">{title}</h1>
