@@ -6,9 +6,9 @@ import { GameWikiArticleLayout } from '@/components/game-wiki/game-wiki';
 import { wanderburgWikiConfig } from '@/components/game-wiki/wanderburg-config';
 
 const href = '/games/wanderburg/builds';
-const title = 'Wanderburg Builds Guide (0.9.14): Modules & Build Directions';
-const h1 = 'Wanderburg Builds Guide (0.9.14): What to Build Around Now';
-const description = 'A current Wanderburg builds guide for Early Access 0.9.14, covering Electric Mage, Side Arms, Side Ballista, Front Barracks, Force Mage, captains and practical build decisions.';
+const h1 = 'Wanderburg Builds Guide: Modules, Captains & Build Directions (0.9.14)';
+const title = h1;
+const description = 'A Wanderburg builds guide for Early Access 0.9.14, with practical directions for current Modules, Captain effects, allied units, automatic attacks and projectile control.';
 const publishedAt = '2026-09-20T00:00:00.000Z';
 const sources = [
   ['Official Wanderburg Hotfix 0.9.14', 'https://steamcommunity.com/app/3624140/allnews/'],
@@ -18,15 +18,12 @@ const sources = [
   ['Official Wanderburg Steam store page', 'https://store.steampowered.com/app/3624140/Wanderburg/'],
 ] as const;
 const toc = [
-  'Is There a Best Wanderburg Build?',
-  'Current Build Directions Worth Testing',
-  'What About Back Turret?',
-  'Captains Matter to the Build',
-  'Use Rerolls Instead of Forcing a Bad Build',
-  'Use Damage Numbers to Test Your Build',
-  'A Simple Build Decision Order',
-  'What RUNBACK Is Not Calling “Meta” Yet',
-  'Current Patch Takeaway',
+  'Short Answer',
+  'How a Wanderburg Build Comes Together',
+  'Build Directions',
+  'How to Adapt When the Run Does Not Offer Your First Choice',
+  'Patch 0.9.14 Build Changes That Matter',
+  'Related Wanderburg Reference Pages',
   'Sources',
 ];
 

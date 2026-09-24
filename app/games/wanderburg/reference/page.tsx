@@ -6,9 +6,9 @@ import { GameWikiArticleLayout } from '@/components/game-wiki/game-wiki';
 import { wanderburgWikiConfig } from '@/components/game-wiki/wanderburg-config';
 
 const href = '/games/wanderburg/reference';
-const title = 'Wanderburg Wiki & Reference: Modules, Captains, Bosses & Current Patch';
+const title = 'Wanderburg Wiki & Reference: Current Patch, Modules & Progression';
 const h1 = 'Wanderburg Wiki & Reference';
-const description = 'Wanderburg wiki and Early Access reference covering modules, captains, artifacts, vehicles, bosses, progression and current patch changes through version 0.9.14.';
+const description = 'Wanderburg Early Access 0.9.14 reference covering current patch changes, rerolls, Modules, Captains, Artifacts, boss rewards and Overtime.';
 const publishedAt = '2026-09-16T00:00:00.000Z';
 const sources = [
   ['Official Wanderburg Steam announcements and hotfix notes', 'https://steamcommunity.com/app/3624140/allnews/'],
@@ -16,16 +16,14 @@ const sources = [
 ] as const;
 const toc = [
   'Wanderburg at a Glance',
-  'Current Game Version',
-  'Changes from Hotfix 0.9.13',
+  'Current Version — Early Access 0.9.14',
+  'Important Current Patch Changes',
   'Progression and Rerolls',
   'Modules',
   'Captains',
-  'Vehicles',
-  'Bosses',
-  'Overtime',
-  'How RUNBACK Handles Early Access Data',
-  'What to Read Next',
+  'Artifacts',
+  'Bosses and Overtime',
+  'Related Guides',
   'Sources',
 ];
 
@@ -126,7 +124,7 @@ export default function WanderburgReference() {
       ] },
     ],
   };
-  return <GameWikiArticleLayout config={wanderburgWikiConfig} activeHref={href} title={h1} description={description} publishedAt={publishedAt} reviewedAt="2026-09-22T00:00:00.000Z" toc={toc} schema={schema} coverage="Core systems & version notes">
+  return <GameWikiArticleLayout config={wanderburgWikiConfig} activeHref={href} title={h1} description={description} publishedAt={publishedAt} reviewedAt="2026-09-22T00:00:00.000Z" toc={toc} schema={schema} label="Reference" coverage="Core systems & version notes">
     <div className="game-wiki-markdown"><MarkdownBody /></div>
   </GameWikiArticleLayout>;
 }
