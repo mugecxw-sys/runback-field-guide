@@ -51,10 +51,11 @@ export const repoGuidePages: RepoGuidePage[] = [
       'Find the C.A.R.T. before collecting. Start with nearby intact valuables that can pass through doors.',
       'Create a safe staging point between the rooms and the extraction route.',
       'Watch the quota and required extraction points instead of trying to empty every room.',
-      'At the Service Station, buy the upgrade that addresses the failure you actually had.',
+      'At the Service Station, compare the current offers with the failure you actually had; assign a user to any team tool before buying it.',
+      'At the start of each level, check its layout, extraction arrangement, nearby loot and threat pressure instead of assuming the previous route still fits.',
     ],
     mistakes:
-      'Forcing large valuables through a doorway, letting the whole team roam without a regroup point, and treating a full map clear as the only successful result.',
+      'Forcing large valuables through a doorway, letting the whole team roam without a regroup point, treating a full map clear as the only successful result, and assuming the previous level’s route still fits.',
     versionNote:
       'This page uses the R.E.P.O. v0.4.x period as its baseline. Recheck in-game prompts after every major patch.',
     sources: [
@@ -132,17 +133,17 @@ export const repoGuidePages: RepoGuidePage[] = [
     tag: 'UPGRADES',
     title: 'R.E.P.O. upgrade priority: buy the fix for your last failure',
     description:
-      'Choose R.E.P.O. upgrades by the problem that ended the previous run: carrying, stamina, survivability, reach, or route control.',
+      'Choose R.E.P.O. upgrades and shop purchases by the problem that ended the previous run, and know when saving is the better call.',
     lead: 'A purchase is valuable when it removes the team’s next likely failure. Name what ended the run, choose one improvement, then observe what changed rather than copying a universal tier list.',
     steps: [
-      'Identify the specific failure: carrying pressure, stamina, damage, reach, or lost control.',
-      'Use carrying upgrades when the route is safe but weight and time are the problem.',
-      'Use survival upgrades when the route is correct but damage repeatedly ends runs.',
-      'Use reach or mobility when distance and positioning are the risk.',
-      'Test one category per run and record the result before adding another variable.',
+      'Name the failure that ended the run: carrying pressure, stamina, damage, reach, lost control, or missing information.',
+      'Choose a carrying improvement when the route is safe but weight or handling is the bottleneck; choose a survival improvement when damage ends otherwise workable runs.',
+      'Consider reach or mobility only when distance or positioning is causing the problem. A tool should have an assigned user and a clear job.',
+      'At the Service Station, compare the current offer and price with that problem. Spend when an available choice addresses it; keep resources when none does or spending would remove a basic recovery option.',
+      'Change one category at a time and observe whether it helped before adding another variable.',
     ],
     mistakes:
-      'Treating a community recommendation as a fixed order, buying on price alone, and changing several unrelated upgrades at once.',
+      'Buying by price or a copied order without matching the choice to the run, hoarding while the same failure repeats, and changing several unrelated upgrades at once.',
     versionNote:
       'Prices, upgrade pools, and availability are version-sensitive. This page explains decision logic rather than a permanent purchase order.',
     sources: [
@@ -153,36 +154,6 @@ export const repoGuidePages: RepoGuidePage[] = [
       {
         label: 'Steam community upgrade guide',
         href: 'https://steamcommunity.com/sharedfiles/filedetails/?id=3482961802&l=english',
-      },
-    ],
-  },
-  {
-    id: 'P0-5',
-    slug: 'upgrades-explained',
-    tag: 'UPGRADES',
-    title: 'R.E.P.O. upgrades explained: choose by the problem they solve',
-    description:
-      'A practical way to read R.E.P.O. upgrades: survival, carrying, movement, and information, with version checks before fixed values.',
-    lead: 'Organize upgrades by the job they do for the run. Survival protects a working route, carrying reduces handling pressure, mobility opens safer paths, and information helps the crew avoid bad commitments.',
-    steps: [
-      'Start with the problem category instead of the item name.',
-      'Compare survival upgrades when damage or action downtime ends the run.',
-      'Compare carrying upgrades when weight, distance, or fragile handling is the bottleneck.',
-      'Use mobility only when it changes a real route, doorway, or escape decision.',
-      'Record the observed effect and patch version before adding exact numbers.',
-    ],
-    mistakes:
-      'Copying old values into a new patch, assuming an offered upgrade always appears, and treating every available tool as mandatory.',
-    versionNote:
-      'Official patch notes should be the source of version changes; game-client testing confirms whether the guide still reflects play.',
-    sources: [
-      {
-        label: 'Official R.E.P.O. announcements',
-        href: 'https://steamcommunity.com/app/3241660/announcements/?l=english',
-      },
-      {
-        label: 'Steam community guides',
-        href: 'https://steamcommunity.com/app/3241660/guides/?browsefilter=trend&browsesort=trend&filetype=11&numperpage=18&requiredtags%5B0%5D=english',
       },
     ],
   },
@@ -306,36 +277,6 @@ export const repoGuidePages: RepoGuidePage[] = [
       },
     ],
   },
-  {
-    id: 'P0-10',
-    slug: 'first-shop-priority',
-    tag: 'SHOP',
-    title: 'R.E.P.O. shop priority: spend first money on run stability',
-    description:
-      'Use R.E.P.O. shop money to solve the next likely failure: survival, carrying, control, or protection for fragile loot.',
-    lead: 'The first purchase should improve the next run, not flatter a tier list. Buy for the bottleneck in front of the crew, assign a role to the tool, and verify its value on the next attempt.',
-    steps: [
-      'Name the previous run’s failure: stamina, carrying, damage, control, or lost value.',
-      'Choose a survival or carrying option when it directly raises the chance of meeting quota.',
-      'Keep enough budget for a tool that changes a known route or enemy problem.',
-      'Assign ownership before buying a team tool.',
-      'With a tight budget, buy one item and test its value before expanding the plan.',
-    ],
-    mistakes:
-      'Treating a tier list as universal, forgetting shop inventory changes, and buying a tool without a player assigned to use it.',
-    versionNote:
-      'Shop prices and inventory can change. Use the selection logic here, then check any specific price or item in the current shop.',
-    sources: [
-      {
-        label: 'Official R.E.P.O. announcements',
-        href: 'https://steamcommunity.com/app/3241660/announcements/?l=english',
-      },
-      {
-        label: 'Steam community guides',
-        href: 'https://steamcommunity.com/app/3241660/guides/?browsefilter=trend&browsesort=trend&filetype=11&numperpage=18&requiredtags%5B0%5D=english',
-      },
-    ],
-  },
 ];
 
 repoGuidePages.push(...extraGuides);
@@ -348,10 +289,10 @@ repoGuidePages.push({
     'Use the C.A.R.T. to consolidate manageable valuables, check the loaded value and reduce repeat trips. Keep the entire load inside the extraction boundary.',
   lead: 'The cart is transport, not proof that quota is complete. Plan its route before loading it, and keep a clear lane for the return.',
   steps: [
-    'Park on a clear stretch of floor before bringing in valuables. Keep doors and the route back to the truck accessible.',
-    'Lower manageable pieces into the cart and check that nothing awkward is scraping a wall. Move oversized objects separately if necessary.',
+    'Choose a staging spot near the rooms but outside the likely enemy route, with doors and the return lane kept accessible.',
+    'Prioritize each valuable by its value, fragility, distance and number of hands needed. Practice grabbing, rotating and gently placing a low-value object first; check that carted items do not scrape a wall or stick out.',
     'Use the cart’s value display to track the load, then compare it with the current objective. Uncollected items elsewhere do not solve the immediate extraction.',
-    'Approach corners slowly. If the load becomes unstable, stop and reposition one object rather than dragging everything through the obstruction.',
+    'Rotate objects before tight turns, approach corners slowly and use a second player for heavy or awkward pieces. If the load becomes unstable, stop and reposition one object rather than dragging everything through the obstruction.',
     'At extraction, check the whole load is inside the boundary. Step away while it resolves, then check the remaining objectives before returning.',
   ],
   mistakes:
@@ -377,50 +318,48 @@ export const repoGuideSections: RepoGuideSection[] = [
     id: 'beginner',
     title: 'Beginner',
     description: 'Start safely and learn the core loop.',
-    guideIds: ['P0-1', 'P1-18', 'P2-28', 'P2-29', 'P2-30'],
+    guideIds: ['P0-1', 'P2-28', 'P2-29', 'P2-30'],
   },
   {
     id: 'mechanics',
     title: 'Mechanics',
     description: 'Quota, extraction, carrying and level objectives.',
-    guideIds: ['P0-2', 'P0-3', 'CART', 'P1-19', 'P1-21', 'P1-22'],
+    guideIds: ['P0-2', 'P0-3', 'CART', 'P1-20'],
   },
   {
     id: 'upgrades',
     title: 'Upgrades',
     description: 'Choose purchases around your next run.',
-    guideIds: ['P0-4', 'P0-5', 'P0-6', 'P1-23', 'P2-26'],
+    guideIds: ['P0-4', 'P0-6', 'P1-23', 'P2-26'],
   },
   {
     id: 'enemies',
     title: 'Enemies',
     description: 'Recognition, counters and a visual field index.',
-    guideIds: ['P0-7', 'P0-8', 'P0-9', 'P1-13', 'P1-14', 'P1-15', 'P2-27'],
+    guideIds: ['P0-7', 'P0-8', 'P0-9', 'P1-13', 'P1-14', 'P1-15'],
   },
   {
     id: 'items',
     title: 'Items',
-    description: 'Service Station, tools and spending decisions.',
-    guideIds: ['P0-10', 'P1-11', 'P1-12'],
+    description: 'Browse useful equipment and tools for a run.',
+    guideIds: ['P1-11'],
   },
   {
     id: 'advanced',
     title: 'Advanced',
     description: 'Co-op planning, routes and version-aware play.',
-    guideIds: ['P1-16', 'P1-17', 'P1-20', 'P2-24', 'P2-25'],
+    guideIds: ['P1-16', 'P1-17', 'P2-24'],
   },
 ];
 export const repoRelatedGuideIds: Record<string, string[]> = {
-  'P0-1': ['P0-2', 'P0-3', 'P0-4', 'P0-7'],
-  'P0-2': ['P0-3', 'P0-1', 'P0-10', 'P0-4'],
-  'P0-3': ['P0-2', 'P0-1', 'P0-7', 'P0-10'],
-  'P0-4': ['P0-5', 'P0-10', 'P0-1', 'P0-6'],
-  'P0-5': ['P0-4', 'P0-6', 'P0-10', 'P0-1'],
-  'P0-6': ['P0-5', 'P0-4', 'P0-7', 'P0-9'],
+  'P0-1': ['P0-2', 'P0-3', 'CART', 'P0-4'],
+  'P0-2': ['P0-3', 'P0-1', 'P0-4', 'CART'],
+  'P0-3': ['P0-2', 'P0-1', 'P0-7', 'CART'],
+  'P0-4': ['P0-6', 'P0-1', 'P0-2', 'P0-7'],
+  'P0-6': ['P0-4', 'P0-7', 'P0-9', 'CART'],
   'P0-7': ['P0-8', 'P0-9', 'P0-1', 'P0-3'],
   'P0-8': ['P0-7', 'P0-9', 'P0-3'],
   'P0-9': ['P0-7', 'P0-8', 'P0-3'],
-  'P0-10': ['P0-4', 'P0-5', 'P0-2', 'P0-1'],
   'P1-17': ['P2-30', 'P0-1', 'P0-2', 'P2-28'],
   'P2-28': ['P2-30', 'P2-29', 'P0-2', 'P0-3'],
   'P2-29': ['P2-30', 'P0-1', 'P0-2', 'P2-28'],
@@ -447,11 +386,11 @@ for (const guide of repoGuidePages) {
 }
 export const repoInternalLinkRules: RepoInternalLinkRule[] = [
   { targetId: 'CART', terms: ['C.A.R.T.', 'cart'] },
-  { targetId: 'P0-10', terms: ['Service Station'] },
+  { targetId: 'P0-4', terms: ['Service Station'] },
   { targetId: 'P0-8', terms: ['Shadow Child'] },
   { targetId: 'P0-9', terms: ['Rugrat'] },
   { targetId: 'P0-2', terms: ['quota'] },
   { targetId: 'P0-3', terms: ['extraction'] },
-  { targetId: 'P0-5', terms: ['upgrades', 'upgrade'] },
+  { targetId: 'P0-4', terms: ['upgrades', 'upgrade'] },
   { targetId: 'P0-7', terms: ['monsters', 'monster', 'enemies', 'enemy'] },
 ];

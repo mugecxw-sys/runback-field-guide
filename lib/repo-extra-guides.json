@@ -27,33 +27,6 @@
     ]
   },
   {
-    "id": "P1-12",
-    "slug": "when-to-save-or-spend-in-r-e-p-o",
-    "tag": "ECONOMY",
-    "title": "When to save or spend in R.E.P.O.",
-    "description": "A simple budget rule for upgrades, tools, and risky extra loot.",
-    "lead": "Spend when the purchase removes the reason you failed. Save only when the shop roll does not solve the next risk or when buying would leave the team without a basic recovery option.",
-    "steps": [
-      "Name the next run’s biggest bottleneck before opening the shop.",
-      "Buy a survival or carrying upgrade when it directly increases the chance of meeting quota.",
-      "Keep enough budget for a tool that changes a known enemy or extraction problem.",
-      "Do not hoard through several shops if the same weakness keeps ending runs.",
-      "Record the purchase, the run result, and whether the change paid for itself in safer value."
-    ],
-    "mistakes": "Saving by default, buying every visible item, and comparing prices without comparing the time or risk the item removes.",
-    "versionNote": "Prices and shop pools vary by level and version. Community discussions are evidence for questions, not universal rules.",
-    "sources": [
-      {
-        "label": "Upgrade priority",
-        "href": "https://www.repo-game.org/en/repogame-upgrades"
-      },
-      {
-        "label": "Community economy discussion",
-        "href": "https://www.reddit.com/r/REPOgame/comments/1vm257s/question_as_a_noob/"
-      }
-    ]
-  },
-  {
     "id": "P1-13",
     "slug": "apex-predator-duck-create-space-before-you-counter",
     "tag": "ENEMIES",
@@ -193,60 +166,6 @@
     ]
   },
   {
-    "id": "P1-18",
-    "slug": "common-beginner-mistakes-in-r-e-p-o",
-    "tag": "BEGINNER",
-    "title": "Common beginner mistakes in R.E.P.O.",
-    "description": "Twelve repeatable failure patterns and the correction for each.",
-    "lead": "Most early wipes are not caused by a missing secret. They come from rushing fragile items, fighting every monster, skipping the shop, and losing the return plan.",
-    "steps": [
-      "Walk by default while carrying; sprint only for a clear escape.",
-      "Use the cart early and keep fragile items out of repeated hand-to-wall collisions.",
-      "Do not fight every monster. Hide, route around, or wait when the threat has no clean counter.",
-      "Buy the upgrade or tool that fixes the last failure instead of saving by habit.",
-      "End each run from a safe truck or shop state and record the one mistake to remove next time."
-    ],
-    "mistakes": "Rushing fragile items, using movement upgrades without a landing plan, ignoring the radar/map, and treating every room as loot that must be taken.",
-    "versionNote": "Some advice in community beginner lists reflects current snapshots; keep hard numbers and save behavior version-tagged.",
-    "sources": [
-      {
-        "label": "Beginner tips",
-        "href": "https://www.repo-game.org/Puolity%C3%B6/repogame-tips"
-      },
-      {
-        "label": "Fatal mistakes",
-        "href": "https://vortexgaming.io/en/postdetail/1255197"
-      }
-    ]
-  },
-  {
-    "id": "P1-19",
-    "slug": "levels-and-objectives-what-changes-between-runs",
-    "tag": "LEVELS",
-    "title": "Levels and objectives: what changes between runs",
-    "description": "Plan around map identity, quota pressure, and the next difficulty spike.",
-    "lead": "Do not memorize one route and call it a plan. Track the map’s structural character, the extraction layout, the valuables you can safely move, and the point where monster pressure changes.",
-    "steps": [
-      "Identify the map and its stable shape: tight vertical rooms, open sightlines, holes, or long returns.",
-      "Mark extraction points and the safe staging area before spending time on low-value rooms.",
-      "Use the first rooms to learn the current run’s loot density and threat pressure.",
-      "Treat later levels as an efficiency check: fewer empty trips, safer carry paths, and clearer roles.",
-      "Keep the objective, route, and failure point in mind so the team can adjust on the next level."
-    ],
-    "mistakes": "Assuming procedural layouts are fully memorized, judging a map only by loot value, and entering a difficulty spike with the same team plan.",
-    "versionNote": "Map layouts vary, while each map’s broad structure is more stable. Use route principles rather than relying on fixed coordinates from another run.",
-    "sources": [
-      {
-        "label": "Beginner levels 1–6",
-        "href": "https://vortexgaming.io/en/postdetail/705296"
-      },
-      {
-        "label": "Maps and roles",
-        "href": "https://www.switchbladegaming.com/co-op-games/repo/maps-roles-guide/"
-      }
-    ]
-  },
-  {
     "id": "P1-20",
     "slug": "headman-manor-route-risks-and-extraction-plan",
     "tag": "LEVELS",
@@ -270,60 +189,6 @@
       {
         "label": "Map guide",
         "href": "https://www.switchbladegaming.com/co-op-games/repo/maps-roles-guide/"
-      }
-    ]
-  },
-  {
-    "id": "P1-21",
-    "slug": "valuable-routes-and-safe-carry-plans",
-    "tag": "ROUTES",
-    "title": "Valuable routes and safe carry plans",
-    "description": "Plan the trip around staging, handoffs, and return safety instead of item value alone.",
-    "lead": "A valuable route is a sequence of safe handoffs: room to cart, cart to extraction, extraction to truck. The best item is the one the crew can deliver without turning the return into a second mission.",
-    "steps": [
-      "Choose a staging point near the current rooms and outside the most likely enemy route.",
-      "Prioritize valuables by value, fragility, distance, and the number of hands needed.",
-      "Move fragile items one at a time and use a callout before every doorway or corner.",
-      "Keep the return route clear; never stack the cart where it blocks the only escape.",
-      "Once quota is met, stop adding route length and convert the safe staging area into a return plan."
-    ],
-    "mistakes": "Ranking loot only by price, carrying several fragile items at once, and leaving the cart behind while the team explores deeper.",
-    "versionNote": "Exact route maps require a seed, screenshot, or current-client recording. The article publishes the route method and marks map-specific claims for verification.",
-    "sources": [
-      {
-        "label": "Beginner tips",
-        "href": "https://www.repo-game.org/Puolity%C3%B6/repogame-tips"
-      },
-      {
-        "label": "Physics beginner guide",
-        "href": "https://steamcommunity.com/sharedfiles/filedetails/?id=3597880885"
-      }
-    ]
-  },
-  {
-    "id": "P1-22",
-    "slug": "carrying-and-physics-tips",
-    "tag": "MECHANICS",
-    "title": "Carrying and physics tips",
-    "description": "The small movement choices that preserve item value and team time.",
-    "lead": "R.E.P.O. turns carrying into a route mechanic. Hold the item close, rotate before tight turns, walk through fragile sections, and use a cart or tool when the object is larger than the hallway.",
-    "steps": [
-      "Practice grab, rotate, pull, and gentle drop on a low-value object before handling expensive loot.",
-      "Keep heavy or fragile items close to the body and slow down before a doorway or corner.",
-      "Use the mouse wheel or equivalent rotation control to set the object flat before placing it.",
-      "Load fragile items into the cart early and use a second player for heavy or awkward objects.",
-      "Use a low-value object to check collision, damage, and vehicle interactions before risking expensive loot."
-    ],
-    "mistakes": "Running while carrying, throwing fragile loot for speed, dropping on an edge, and assuming an item is safe because it is inside the cart but sticking out.",
-    "versionNote": "Physics interactions are unusually version-sensitive; official patches have changed carts, vehicles, staffs, and item handling.",
-    "sources": [
-      {
-        "label": "Controls and carrying",
-        "href": "https://repogameguide.com/guides/repo-game-controls-complete-keybinds-guide"
-      },
-      {
-        "label": "Official announcements",
-        "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
       }
     ]
   },
@@ -366,9 +231,10 @@
       "A revived player receives one second of invincibility. Use that moment to move out of immediate danger; do not treat it as a long damage window.",
       "All staffs now have six battery pips. Zero Gravity Staff is more controllable on non-enemy objects and can move the user when self-cast.",
       "Roll Staff makes rolling objects target enemies, while self-use gives the player camera-steered rolling. Void Staff pulls heavy objects more strongly and creates outward surges near its center.",
-      "Trudge now uses Void Staff-style suction, pulling larger valuables more easily and creating more chaos near the center. Park important loot farther from its pull lane."
+      "Trudge now uses Void Staff-style suction, pulling larger valuables more easily and creating more chaos near the center. Park important loot farther from its pull lane.",
+      "Vehicle interaction areas around buttons were reduced to limit accidental activation; take care when grabbing a vehicle near its button."
     ],
-    "mistakes": "Assuming the revive protection lasts long enough to stand still, leaving heavy valuables near Trudge, and using old staff battery or behavior advice after updating.",
+    "mistakes": "Assuming the revive protection lasts long enough to stand still, leaving heavy valuables near Trudge, using old staff battery or behavior advice after updating, and grabbing a vehicle carelessly beside its button.",
     "versionNote": "Official v0.4.4 notes were published May 25, 2026. Check the version shown by the game before applying these changes to a later build.",
     "sources": [
       {
@@ -378,33 +244,6 @@
       {
         "label": "Official R.E.P.O. announcements",
         "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
-      }
-    ]
-  },
-  {
-    "id": "P2-25",
-    "slug": "current-version-changes-what-players-should-retest",
-    "tag": "PATCH NOTES",
-    "title": "R.E.P.O. v0.4.4 returning player checklist",
-    "description": "Returning to R.E.P.O. after v0.4.0? Relearn melee handling, revive timing, staff batteries and object control, vehicle buttons, and Trudge suction.",
-    "lead": "If your habits were built around v0.4.0, the v0.4.4 changes most likely to surprise you involve Strength-based melee handling, the one-second post-revive safety window, six-pip staffs, improved staff control, and Trudge pulling larger valuables.",
-    "steps": [
-      "Try one melee weapon at your current Strength before committing to a close-range fight; handling now becomes firmer as Strength increases.",
-      "After a revive, use the one-second invincibility window to escape the danger area and regroup rather than starting a long attack.",
-      "Recheck staff charges before a mission. All staffs now use six battery pips, and their object-control behavior changed across the v0.4.x updates.",
-      "Use extra care when grabbing a vehicle near its button: the interaction area was reduced to limit accidental activation.",
-      "Give Trudge a wider safety radius around valuable objects. Its Void Staff-style suction can catch larger loot and behaves more chaotically near the center."
-    ],
-    "mistakes": "Relying on muscle memory from v0.4.0, expecting old staff behavior, or parking the cart and large valuables inside Trudge’s pull lane.",
-    "versionNote": "This checklist reflects the official v0.4.4 announcement dated May 25, 2026. Later versions should take priority if your main menu shows a newer build.",
-    "sources": [
-      {
-        "label": "Official R.E.P.O. v0.4.4 notes",
-        "href": "https://store.steampowered.com/news/app/3241660/view/697639476746256977?l=english"
-      },
-      {
-        "label": "Official R.E.P.O. v0.4.3 notes",
-        "href": "https://store.steampowered.com/news/app/3241660/view/653728111564687019?l=english"
       }
     ]
   },
@@ -432,33 +271,6 @@
       {
         "label": "Steam community upgrades and weapons guide",
         "href": "https://steamcommunity.com/sharedfiles/filedetails/?id=3482961802&l=english"
-      }
-    ]
-  },
-  {
-    "id": "P2-27",
-    "slug": "monster-counter-cheat-sheet",
-    "tag": "ENEMIES",
-    "title": "R.E.P.O. monster counter cheat sheet",
-    "description": "A fast first-response checklist for sight, sound, proximity, grab, and object-control threats.",
-    "lead": "Identify the trigger before choosing a counter. Put the valuable down without blocking the retreat lane, call the threat, then use cover, distance, silence, or a prepared control tool.",
-    "steps": [
-      "For a sight or gaze threat, break line of sight behind solid cover and avoid staring to confirm it.",
-      "For a sound-sensitive threat, stop sprinting, jumping, hard drops, and noisy item handling until the team has a route.",
-      "For a proximity or charge threat, create open space and sidestep only after its approach or wind-up is clear.",
-      "For a grab or pull threat, call the victim’s direction and keep teammates and valuables out of the same danger lane.",
-      "For an object-control threat such as Rugrat or Trudge, secure the valuables first. Fight only if the enemy blocks the route and the crew has a tested counter."
-    ],
-    "mistakes": "Calling only the enemy name without its direction, fighting while carrying fragile loot, and stacking the team in one doorway.",
-    "versionNote": "Use the visual enemy index for individual dossiers. Exact damage, timing, spawn tier, and item interactions remain version-sensitive.",
-    "sources": [
-      {
-        "label": "R.E.P.O. Steam Tactical Bestiary",
-        "href": "https://steamcommunity.com/sharedfiles/filedetails/?id=3456545585"
-      },
-      {
-        "label": "Official R.E.P.O. announcements",
-        "href": "https://steamcommunity.com/app/3241660/announcements/?l=english"
       }
     ]
   },

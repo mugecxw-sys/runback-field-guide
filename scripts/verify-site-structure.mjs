@@ -219,8 +219,7 @@ for (const href of [
   '/guides/cart-guide',
   '/guides/meet-quota',
   '/guides/extraction-guide',
-  '/guides/first-shop-priority',
-  '/guides/upgrades-explained',
+  '/guides/upgrade-priority',
 ])
   if (!first.includes('href="' + href + '"'))
     failures.push(['first-run', 'missing contextual destination', href]);

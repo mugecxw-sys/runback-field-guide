@@ -46,6 +46,36 @@ export default function Enemies() {
         29 existing dossiers. Recognition and counters are community-sourced;
         this is not a claim that the roster matches every future patch.
       </p>
+      <section className="mt-6 rounded-xl border border-white/10 p-5">
+        <h2 className="text-xl font-semibold">Global first response</h2>
+        <p className="mt-3 leading-7 text-[#aeb7bc]">
+          Call out the threat and its direction, set down loot without blocking
+          the retreat lane, then respond to the behavior shown in its dossier.
+          Use cover for sight threats, reduce noise when sound matters, create
+          space for approaches or grabs, and secure valuables before dealing
+          with enemies that move or disrupt them.
+        </p>
+        <p className="mt-3 text-sm text-[#aeb7bc]">
+          Further reading:{' '}
+          <a
+            href="https://steamcommunity.com/sharedfiles/filedetails/?id=3456545585"
+            target="_blank"
+            rel="noreferrer"
+            className="text-[#ff9a7a] underline"
+          >
+            Steam Tactical Bestiary
+          </a>
+          {' · '}
+          <a
+            href="https://steamcommunity.com/app/3241660/announcements/?l=english"
+            target="_blank"
+            rel="noreferrer"
+            className="text-[#ff9a7a] underline"
+          >
+            Official R.E.P.O. announcements
+          </a>
+        </p>
+      </section>
       <details className="mt-6 rounded-xl border border-white/10 p-4">
         <summary className="cursor-pointer">
           On this page — choose an enemy

@@ -241,18 +241,6 @@ export function UpgradePlanner() {
               Upgrade priority →
             </a>
             <a
-              href="/guides/upgrades-explained"
-              className="rounded-lg border border-white/10 p-4"
-            >
-              Upgrades explained →
-            </a>
-            <a
-              href="/guides/first-shop-priority"
-              className="rounded-lg border border-white/10 p-4"
-            >
-              First shop priority →
-            </a>
-            <a
               href="/games/repo"
               className="rounded-lg border border-white/10 p-4"
             >
