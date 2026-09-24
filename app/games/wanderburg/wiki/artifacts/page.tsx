@@ -19,9 +19,7 @@ const sources = [
 ] as const;
 const toc = [
   'Artifact Database', 'Artifact Details', 'Artifact Rerolls',
-  'Artifact Rerolls vs Module Rerolls', 'Rare Artifact Screen', 'Are These All Wanderburg Artifacts?',
-  'Why RUNBACK Does Not Copy a Community Artifact List', 'How to Evaluate an Artifact', 'Artifacts and Builds',
-  'Version Status', 'Sources',
+  'Artifact Rerolls vs Module Rerolls', 'Artifacts and Builds',
 ];
 
 export const metadata: Metadata = {
@@ -59,7 +57,7 @@ if (referenceStart < 0 || detailStart <= referenceStart || systemsStart <= detai
   throw new Error('Artifact source sections are incomplete');
 }
 
-const referenceHeader = markdownLines.findIndex((line, index) => index > referenceStart && line.startsWith('| Artifact ') && line.includes('What is officially confirmed'));
+const referenceHeader = markdownLines.findIndex((line, index) => index > referenceStart && line.startsWith('| Artifact ') && line.includes('Effect / Update'));
 if (referenceHeader < 0) throw new Error('Quick Artifact Reference table is missing');
 const referenceRows: string[][] = [];
 for (let index = referenceHeader + 2; markdownLines[index]?.startsWith('|'); index += 1) {
@@ -94,11 +92,6 @@ if (
   throw new Error('Patch-note-confirmed Artifact reference and detail sections do not match');
 }
 
-const introLines = markdownLines.slice(1, referenceStart);
-const warningLine = introLines.find((line) => line.startsWith('> **Important:**'));
-if (!warningLine) throw new Error('Incomplete Artifact roster warning is missing');
-const warningText = warningLine.slice(2).replace(/\\$/, '');
-const scopeLines = introLines.filter((line) => line !== warningLine);
 const referenceLines = markdownLines.slice(referenceStart, detailStart);
 const supportingLines = markdownLines.slice(systemsStart);
 
@@ -119,7 +112,7 @@ function MarkdownContent({ lines, nested = false, idPrefix = '' }: { lines: stri
     const headingMatch = line.match(/^(#{1,3}) (.+)$/);
     if (headingMatch) {
       const heading = headingMatch[2];
-      const level = nested ? 3 : headingMatch[1].length === 3 ? 4 : headingMatch[1].length === 2 && lines === supportingLines && heading !== 'Sources' ? 3 : 2;
+      const level = nested ? 3 : headingMatch[1].length === 3 ? 4 : headingMatch[1].length === 2 && lines === supportingLines ? 3 : 2;
       const Heading = (`h${level}`) as 'h2' | 'h3' | 'h4';
       blocks.push(<Heading id={uniqueHeadingId(heading)} key={index} className="mt-8 scroll-mt-24 text-xl font-semibold">{heading}</Heading>);
       index += 1;
@@ -163,36 +156,27 @@ function ArtifactDatabase() {
       <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#dca464]">ARTIFACT DATABASE</p>
       <h2 id="artifact-database-title" className="mt-2 font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">Artifact Database</h2>
       <div className="mt-4 flex flex-wrap gap-2 text-xs font-semibold">
-        <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#fff2df]">{artifacts.length} patch-note-confirmed Artifacts</span>
-        <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#f2d6ac]">Early Access 0.9.14</span>
-        <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#f2d6ac]">Incomplete roster</span>
-        <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#f2d6ac]">No current-client tooltip captures</span>
+        <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#fff2df]">{artifacts.length} Artifacts</span>
       </div>
-      <p className="mt-5 border-l-2 border-[#ff8662] pl-4 text-sm leading-6 text-[#c7d0d5]"><Inline text={warningText} /></p>
-      <details className="mt-4 border-t border-white/10 pt-3">
-        <summary className="cursor-pointer text-xs font-semibold text-[#f2d6ac] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Scope and evidence notes</summary>
-        <div className="game-wiki-markdown text-sm"><MarkdownContent lines={scopeLines} /></div>
-      </details>
+      <p className="mt-5 text-sm leading-6 text-[#c7d0d5]">This page currently covers three documented Artifacts and is not a complete Artifact list.</p>
     </section>
     <div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-      {artifacts.map((entry) => <WikiEntityCard key={entry.name} href={'#' + slugify(entry.name)} name={entry.name} category="Patch-note confirmed Artifact" summary={entry.confirmation + ' · Latest relevant patch: ' + entry.patch} />)}
+      {artifacts.map((entry) => <WikiEntityCard key={entry.name} href={'#' + slugify(entry.name)} name={entry.name} category="Artifact" summary={entry.confirmation} />)}
     </div>
     <details className="mt-10 border-y border-[#b99256]/25 py-4">
-      <summary className="cursor-pointer font-serif text-lg font-semibold text-[#f2d6ac] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Reference table and evidence notes</summary>
+      <summary className="cursor-pointer font-serif text-lg font-semibold text-[#f2d6ac] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Artifact Table</summary>
       <div className="game-wiki-markdown pb-6"><MarkdownContent lines={referenceLines} /></div>
     </details>
     <section aria-labelledby="artifact-details" className="mt-12">
       <h2 id="artifact-details" className="scroll-mt-24 font-serif text-3xl font-semibold text-[#fff2df]">Artifact Details</h2>
       <div className="mt-5">
-        {artifacts.map((entry) => <WikiEntitySection key={entry.name} id={slugify(entry.name)} name={entry.name} category="Patch-note confirmed Artifact">
-          <WikiDataBlock title="Evidence status" rows={[
-            { label: 'Official confirmation', value: entry.confirmation },
-            { label: 'Latest relevant patch', value: entry.patch },
-            { label: 'Current-client tooltip', value: 'Not yet verified' },
-            { label: 'Current-client screenshot', value: 'Not available in this repository' },
+        {artifacts.map((entry) => <WikiEntitySection key={entry.name} id={slugify(entry.name)} name={entry.name} category="Artifact">
+          <WikiDataBlock title="Artifact Data" rows={[
+            { label: 'Effect / Update', value: entry.confirmation },
+            { label: 'Patch', value: entry.patch },
           ]} />
           <div className="border-t border-white/10 pt-4">
-            <h3 className="text-xs font-bold uppercase tracking-[0.14em] text-[#dca464]">Full Artifact Notes</h3>
+            <h3 className="text-xs font-bold uppercase tracking-[0.14em] text-[#dca464]">Notes</h3>
             <div className="game-wiki-markdown text-sm"><MarkdownContent lines={entry.notes} nested idPrefix={slugify(entry.name)} /></div>
           </div>
           <a href="#artifact-database" className="inline-block text-xs font-semibold text-[#ff9a7a] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Back to Artifact Database ↑</a>
@@ -222,7 +206,7 @@ export default function WanderburgArtifacts() {
       ] },
     ],
   };
-  return <GameWikiArticleLayout config={wanderburgWikiConfig} activeHref={href} title={h1} description={description} publishedAt={publishedAt} modifiedAt={modifiedAt} reviewedAt="2026-09-22T00:00:00.000Z" toc={toc} schema={schema} coverage="3 named Artifacts from patch notes">
+  return <GameWikiArticleLayout config={{ ...wanderburgWikiConfig, officialHref: undefined }} activeHref={href} title={h1} description={description} label="Artifact Database" labelTone="neutral" footerNote="" toc={toc} schema={schema}>
     <ArtifactDatabase />
   </GameWikiArticleLayout>;
 }

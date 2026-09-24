@@ -20,8 +20,8 @@ const sources = [
   ['Official Wanderburg Steam Hotfix 0.9.6', 'https://steamcommunity.com/app/3624140/allnews/'],
 ] as const;
 const toc = [
-  'Captain Database', 'Captain Details', 'Captain Balance History', 'How to Read Captain Effects',
-  'Captains and Builds', 'Current Coverage', 'Sources',
+  'Captain Database', 'Captain Details', 'Captain Balance History',
+  'Captains and Builds',
 ];
 const captainImages: Record<string, string> = {
   'Patchy The Pirate': 'patchy-the-pirate', 'Dieter The Drunk': 'dieter-the-drunk', Duelist: 'duelist', Empress: 'empress',
@@ -105,7 +105,6 @@ if (
   throw new Error('Current-client Captain roster, screenshots and detail anchors do not match');
 }
 
-const introLines = markdownLines.slice(1, rosterStart);
 const referenceLines = markdownLines.slice(rosterStart, detailStart);
 const supportingLines = markdownLines.slice(historyStart);
 
@@ -126,7 +125,7 @@ function MarkdownContent({ lines, showRosterScreenshot = false, nested = false }
     const headingMatch = line.match(/^(#{1,3}) (.+)$/);
     if (headingMatch) {
       const heading = headingMatch[2];
-      const level = nested ? 3 : headingMatch[1].length === 3 ? 4 : headingMatch[1].length === 2 && lines === supportingLines && heading !== 'Sources' ? 3 : 2;
+      const level = nested ? 3 : headingMatch[1].length === 3 ? 4 : headingMatch[1].length === 2 && lines === supportingLines ? 3 : 2;
       const Heading = (`h${level}`) as 'h2' | 'h3' | 'h4';
       blocks.push(<Heading id={slugify(heading) + (level === 2 ? '' : '-' + index)} key={index} className="mt-8 scroll-mt-24 text-xl font-semibold">{heading}</Heading>);
       index += 1;
@@ -168,27 +167,22 @@ function CaptainDatabase() {
       <h2 id="captain-database-title" className="mt-2 font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">Captain Database</h2>
       <div className="mt-4 flex flex-wrap gap-2 text-xs font-semibold">
         <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#fff2df]">{captains.length} Captains</span>
-        <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#f2d6ac]">Early Access 0.9.14</span>
       </div>
-      <details className="mt-4 border-t border-white/10 pt-3">
-        <summary className="cursor-pointer text-xs font-semibold text-[#f2d6ac] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Scope and evidence notes</summary>
-        <div className="game-wiki-markdown text-sm"><MarkdownContent lines={introLines} /></div>
-      </details>
     </section>
     <div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
       {captains.map((entry) => <WikiEntityCard key={entry.name} href={'#' + slugify(entry.name)} name={entry.name} category="Captain" summary={'Positive: ' + entry.positive + ' · Drawback: ' + entry.drawback} image={captainImage(entry)} />)}
     </div>
     <details className="mt-10 border-y border-[#b99256]/25 py-4">
-      <summary className="cursor-pointer font-serif text-lg font-semibold text-[#f2d6ac] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Reference tables and naming notes</summary>
+      <summary className="cursor-pointer font-serif text-lg font-semibold text-[#f2d6ac] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Captain Table</summary>
       <div className="game-wiki-markdown pb-6"><MarkdownContent lines={referenceLines} showRosterScreenshot /></div>
     </details>
     <section aria-labelledby="captain-details" className="mt-12">
       <h2 id="captain-details" className="scroll-mt-24 font-serif text-3xl font-semibold text-[#fff2df]">Captain Details</h2>
       <div className="mt-5">
         {captains.map((entry) => <WikiEntitySection key={entry.name} id={slugify(entry.name)} name={entry.name} category="Captain" image={captainImage(entry)}>
-          <WikiDataBlock title="Current client" rows={[{ label: 'Positive effect', value: entry.positive }, { label: 'Drawback', value: entry.drawback }]} />
+          <WikiDataBlock title="Effects" rows={[{ label: 'Positive effect', value: entry.positive }, { label: 'Drawback', value: entry.drawback }]} />
           <div className="border-t border-white/10 pt-4">
-            <h3 className="text-xs font-bold uppercase tracking-[0.14em] text-[#dca464]">Full Captain Notes</h3>
+            <h3 className="text-xs font-bold uppercase tracking-[0.14em] text-[#dca464]">Notes</h3>
             <div className="game-wiki-markdown text-sm"><MarkdownContent lines={entry.notes} nested /></div>
           </div>
           <a href="#captain-database" className="inline-block text-xs font-semibold text-[#ff9a7a] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Back to Captain Database ↑</a>
@@ -218,7 +212,7 @@ export default function WanderburgCaptains() {
       ] },
     ],
   };
-  return <GameWikiArticleLayout config={wanderburgWikiConfig} activeHref={href} title={h1} description={description} publishedAt={publishedAt} modifiedAt={modifiedAt} reviewedAt="2026-09-23T00:00:00.000Z" toc={toc} schema={schema} coverage="14 current-client Captains">
+  return <GameWikiArticleLayout config={{ ...wanderburgWikiConfig, officialHref: undefined }} activeHref={href} title={h1} description={description} label="Captain Database" labelTone="neutral" footerNote="" toc={toc} schema={schema}>
     <CaptainDatabase />
   </GameWikiArticleLayout>;
 }

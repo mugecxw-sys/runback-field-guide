@@ -21,12 +21,11 @@ const sources = [
   ['Official Wanderburg Steam Hotfix 0.9.8', 'https://steamcommunity.com/app/3624140/allnews/'],
   ['Official Wanderburg Steam Hotfix 0.9.7', 'https://steamcommunity.com/app/3624140/allnews/'],
   ['Official Wanderburg Steam Hotfix 0.9.6', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['PlayerTome Wanderburg Module database', 'https://wanderburg.playertome.com/database/modules/'],
 ] as const;
 const toc = [
   'Module Database', 'Top-Slot Modules', 'Side-Slot Modules', 'Front-Slot Modules', 'Back-Slot Modules',
   'Module Details',
-  'Module Rerolls', 'Current Coverage', 'Sources',
+  'Module Rerolls',
 ];
 const moduleImages: Record<string, string> = {
   'Archer Tower': 'archer-tower', Arms: 'arms', Cannon: 'cannon', 'Cannon Tower': 'cannon-tower',
@@ -83,7 +82,7 @@ function tableRows(header: string) {
   return rows;
 }
 
-const rosterRows = tableRows('| Module | Slot | Current-client role |');
+const rosterRows = tableRows('| Module | Slot | Effect |');
 const baseRows = tableRows('| Module | Active Base | Auto Base | Active CD | Auto CD |');
 const rosterByName = new Map(rosterRows.map((row) => [row[0], row]));
 const baseByName = new Map(baseRows.map((row) => [row[0], row]));
@@ -144,7 +143,6 @@ const rerollsStart = markdownLines.indexOf('# Module Rerolls');
 if (rosterStart < 0 || detailStart < 0 || rerollsStart < 0) {
   throw new Error('Module source sections are incomplete');
 }
-const introLines = markdownLines.slice(1, rosterStart);
 const referenceLines = markdownLines.slice(rosterStart, detailStart);
 const supportingLines = markdownLines.slice(rerollsStart);
 
@@ -186,7 +184,7 @@ function MarkdownContent({ lines, showRosterScreenshot = false }: { lines: strin
       const rows: string[][] = [];
       while (lines[index]?.startsWith('|')) { rows.push(cells(lines[index])); index += 1; }
       blocks.push(<div key={index} className="mt-5 max-w-full overflow-x-auto border border-white/15"><table className="min-w-[850px] border-collapse text-left text-sm leading-6"><thead className="bg-[#192126]"><tr>{header.map((cell) => <th key={cell} scope="col" className="border-b border-white/20 px-4 py-3 font-semibold"><Inline text={cell} /></th>)}</tr></thead><tbody>{rows.map((row, rowIndex) => <tr key={rowIndex} className="border-b border-white/10 last:border-0">{row.map((cell, cellIndex) => cellIndex === 0 ? <th key={cellIndex} scope="row" className="whitespace-nowrap px-4 py-3 text-left font-medium"><Inline text={cell} /></th> : <td key={cellIndex} className="px-4 py-3 text-[#c7d0d5]"><Inline text={cell} /></td>)}</tr>)}</tbody></table></div>);
-      if (showRosterScreenshot && header.includes('Current-client role')) {
+      if (showRosterScreenshot && header.includes('Effect')) {
         blocks.push(<figure key="modules-list" className="my-6 max-w-[640px]"><Image src="/images/games/wanderburg/modules/modules-list-0.9.14.png" alt="Wanderburg 0.9.14 module selection showing 20 modules" width={640} height={1032} className="h-auto max-w-full border border-white/15" /><figcaption className="mt-2 text-sm text-[#aeb7bc]">All 20 Modules visible in the Wanderburg Early Access 0.9.14 client used for this reference.</figcaption></figure>);
       }
       continue;
@@ -211,17 +209,12 @@ function ModuleDatabase() {
         <h2 id="module-database-title" className="mt-2 font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">Module Database</h2>
         <div className="mt-4 flex flex-wrap gap-2 text-xs font-semibold">
           <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#fff2df]">{allModules.length} Modules</span>
-          <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#f2d6ac]">Early Access 0.9.14</span>
         </div>
         <nav aria-label="Browse modules by slot" className="mt-6 flex flex-wrap gap-2 border-t border-white/10 pt-5">
           {groupedModules.map((group) => (
             <a key={group.slot} href={'#' + slugify(group.heading.slice(2))} className="border border-[#b99256]/35 px-3 py-2 text-xs font-bold uppercase tracking-[0.12em] text-[#f2d6ac] hover:border-[#ff8662] hover:text-[#fff2df] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">{group.slot}</a>
           ))}
         </nav>
-        <details className="mt-4 border-t border-white/10 pt-3">
-          <summary className="cursor-pointer text-xs font-semibold text-[#f2d6ac] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Scope and evidence notes</summary>
-          <div className="game-wiki-markdown text-sm"><MarkdownContent lines={introLines} /></div>
-        </details>
       </section>
       {groupedModules.map((group) => {
         const heading = group.heading.slice(2);
@@ -241,12 +234,11 @@ function ModuleDatabase() {
         );
       })}
       <details className="mt-10 border-y border-[#b99256]/25 py-4">
-        <summary className="cursor-pointer font-serif text-lg font-semibold text-[#f2d6ac] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Reference tables and data notes</summary>
+        <summary className="cursor-pointer font-serif text-lg font-semibold text-[#f2d6ac] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Module Tables</summary>
         <div className="game-wiki-markdown pb-6"><MarkdownContent lines={referenceLines} showRosterScreenshot /></div>
       </details>
       <section aria-labelledby="module-details" className="mt-12">
         <h2 id="module-details" className="scroll-mt-24 font-serif text-3xl font-semibold text-[#fff2df]">Module Details</h2>
-        <p className="mt-3 text-sm leading-6 text-[#aeb7bc]">Current-client descriptions and the existing version-scoped notes are kept with each Module.</p>
         <div className="mt-5">
           {allModules.map((entry) => {
             const fields = ['Active Base', 'Auto Base', 'Active CD', 'Auto CD'];
@@ -255,10 +247,10 @@ function ModuleDatabase() {
               .map((row) => ({ label: row.label, value: <Inline text={row.raw} /> }));
             return (
               <WikiEntitySection key={entry.name} id={slugify(entry.name)} name={entry.name} category={entry.slot + ' slot'} image={moduleImage(entry)}>
-                <WikiDataBlock title="Current client" rows={[{ label: 'Slot', value: entry.slot }, { label: 'Current-client role', value: entry.role }]} />
-                <WikiDataBlock title="Secondary reference base values" rows={baseRows} />
+                <WikiDataBlock title="Module" rows={[{ label: 'Slot', value: entry.slot }, { label: 'Effect', value: entry.role }]} />
+                <WikiDataBlock title="Base Values" rows={baseRows} />
                 <div className="border-t border-white/10 pt-4">
-                  <h3 className="text-xs font-bold uppercase tracking-[0.14em] text-[#dca464]">Full module notes</h3>
+                  <h3 className="text-xs font-bold uppercase tracking-[0.14em] text-[#dca464]">Notes</h3>
                   <div className="game-wiki-markdown text-sm"><MarkdownContent lines={entry.notes} /></div>
                 </div>
                 <a href="#module-database" className="inline-block text-xs font-semibold text-[#ff9a7a] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Back to Module Database ↑</a>
@@ -291,7 +283,7 @@ export default function WanderburgModules() {
       ] },
     ],
   };
-  return <GameWikiArticleLayout config={wanderburgWikiConfig} activeHref={href} title={h1} description={description} publishedAt={publishedAt} modifiedAt={modifiedAt} reviewedAt="2026-09-23T00:00:00.000Z" toc={toc} schema={schema} coverage="20 current-client Modules">
+  return <GameWikiArticleLayout config={{ ...wanderburgWikiConfig, officialHref: undefined }} activeHref={href} title={h1} description={description} label="Module Database" labelTone="neutral" footerNote="" toc={toc} schema={schema}>
     <ModuleDatabase />
   </GameWikiArticleLayout>;
 }
