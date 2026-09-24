@@ -4,6 +4,7 @@ import { GameHub } from '@/components/game-hub';
 import { articleLibraries, findLibrary } from '@/lib/game-articles';
 import { gameLibraries } from '@/lib/game-catalog';
 import { siteUrl } from '@/lib/repo-guide-pages';
+import { WanderburgHub } from '@/components/game-wiki/wanderburg-hub';
 type Props = { params: Promise<{ game: string }> };
 export function generateStaticParams() {
   return articleLibraries.map((g) => ({ game: g.slug }));
@@ -41,6 +42,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function GamePage({ params }: Props) {
   const g = findLibrary((await params).game);
   if (!g) notFound();
+  if (g.slug === 'wanderburg') return <WanderburgHub />;
   const sections = [...new Set(g.articles.map((a) => a.category))].map(
     (c, i) => ({
       id: 'category-' + i,
@@ -62,38 +64,6 @@ export default async function GamePage({ params }: Props) {
         gameLibraries.find((x) => x.slug === g.slug)?.description ?? ''
       }
       sections={sections}
-    >
-      {g.slug === 'wanderburg' && (
-        <section className="mt-10">
-          <h2 className="text-2xl font-semibold">Wanderburg Wiki</h2>
-          <div className="mt-4 grid gap-4 md:grid-cols-2">
-            <a
-              href="/games/wanderburg/wiki/modules"
-              className="rounded-xl border border-white/10 bg-[#192126] p-5 hover:border-[#ff8662]/60"
-            >
-              <h3 className="text-lg font-semibold">Wanderburg Modules Wiki (0.9.14)</h3>
-              <p className="mt-3 text-sm leading-6 text-[#aeb7bc]">Verified module effects and official Early Access patch changes.</p>
-              <span className="mt-4 block text-sm text-[#ff9a7a]">Read wiki →</span>
-            </a>
-            <a
-              href="/games/wanderburg/wiki/captains"
-              className="rounded-xl border border-white/10 bg-[#192126] p-5 hover:border-[#ff8662]/60"
-            >
-              <h3 className="text-lg font-semibold">Wanderburg Captains Wiki (0.9.14)</h3>
-              <p className="mt-3 text-sm leading-6 text-[#aeb7bc]">Verified Captain effects and official Early Access balance changes.</p>
-              <span className="mt-4 block text-sm text-[#ff9a7a]">Read wiki →</span>
-            </a>
-            <a
-              href="/games/wanderburg/wiki/artifacts"
-              className="rounded-xl border border-white/10 bg-[#192126] p-5 hover:border-[#ff8662]/60"
-            >
-              <h3 className="text-lg font-semibold">Wanderburg Artifacts Wiki (0.9.14)</h3>
-              <p className="mt-3 text-sm leading-6 text-[#aeb7bc]">Verified Artifact effects, rerolls and official Early Access patch changes.</p>
-              <span className="mt-4 block text-sm text-[#ff9a7a]">Read wiki →</span>
-            </a>
-          </div>
-        </section>
-      )}
-    </GameHub>
+    />
   );
 }

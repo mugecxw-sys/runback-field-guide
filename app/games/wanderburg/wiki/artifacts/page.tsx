@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import artifactsMarkdown from './artifacts.md?raw';
 import { siteUrl } from '@/lib/repo-guide-pages';
+import { GameWikiArticleLayout } from '@/components/game-wiki/game-wiki';
+import { wanderburgWikiConfig } from '@/components/game-wiki/wanderburg-config';
 
 const href = '/games/wanderburg/wiki/artifacts';
 const title = 'Wanderburg Artifacts Wiki (0.9.14): Effects, Rerolls & Patch Changes';
@@ -115,6 +117,15 @@ function MarkdownBody() {
   return <>{blocks}</>;
 }
 
+function ArtifactStatusCards() {
+  const cards = [
+    { name: 'Repair Wrench', change: '25% healing', current: 'Flat 25 HP healing', verified: ['Official 0.9.14 patch confirmed', 'Current value: 25 HP'], unknown: ['Exact trigger conditions', 'Cooldown and rarity', 'Unlock requirement'] },
+    { name: 'Electric Arrow', change: 'Trigger reliability issue', current: 'Triggers more reliably', verified: ['Official 0.9.10 patch confirmed', 'Confirmed as an Artifact'], unknown: ['Exact trigger condition', 'Current damage and rarity', 'Unlock requirement'] },
+    { name: 'Tinderbox', change: 'Artifact-specific bug', current: 'Bug fixed in 0.9.14', verified: ['Official 0.9.14 patch confirmed', 'Confirmed as an Artifact'], unknown: ['Full effect and damage', 'Trigger condition and rarity', 'Unlock requirement'] },
+  ];
+  return <section className="mt-8 border border-[#b99256]/25 bg-[#17201d] p-4 sm:p-5" aria-labelledby="artifact-status"><div className="flex flex-wrap items-end justify-between gap-3"><div><p className="text-xs font-bold uppercase tracking-[0.16em] text-[#dca464]">Confirmed patch-note data</p><h2 id="artifact-status" className="mt-2 font-serif text-2xl font-semibold text-[#fff2df]">Quick Artifact Reference</h2></div><p className="max-w-md text-sm leading-6 text-[#bdc6c5]">No current-client tooltip captures are available in this repository, so these remain evidence cards rather than reconstructed item descriptions.</p></div><div className="mt-5 overflow-x-auto border border-white/10"><table className="min-w-[620px] w-full text-left text-sm"><caption className="sr-only">Verified Wanderburg Artifact reference</caption><thead className="bg-[#101714]"><tr><th scope="col" className="px-4 py-3">Artifact</th><th scope="col" className="px-4 py-3">Verified effect</th><th scope="col" className="px-4 py-3">Key change</th><th scope="col" className="px-4 py-3">Version</th></tr></thead><tbody><tr className="border-t border-white/10"><th scope="row" className="px-4 py-3">Repair Wrench</th><td className="px-4 py-3">Healing changed to flat 25 HP</td><td className="px-4 py-3">25% → 25 HP</td><td className="px-4 py-3">0.9.14</td></tr><tr className="border-t border-white/10"><th scope="row" className="px-4 py-3">Electric Arrow</th><td className="px-4 py-3">Trigger reliability improved</td><td className="px-4 py-3">Reliability fix</td><td className="px-4 py-3">0.9.10</td></tr><tr className="border-t border-white/10"><th scope="row" className="px-4 py-3">Tinderbox</th><td className="px-4 py-3">Artifact-specific bug fixed</td><td className="px-4 py-3">Bug fix</td><td className="px-4 py-3">0.9.14</td></tr></tbody></table></div><div className="mt-5 grid gap-4">{cards.map((card) => <section key={card.name} className="border-t border-[#b99256]/20 pt-5"><h3 className="font-serif text-xl font-semibold text-[#fff2df]">{card.name}</h3><div className="mt-3 grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)]"><div className="border border-white/10 bg-[#101714] p-4 text-sm leading-6 text-[#bdc6c5]"><p className="text-xs font-bold uppercase tracking-[0.14em] text-[#b99256]">What changed</p><p className="mt-2">{card.change}</p><p className="my-2 text-[#ff9a7a]">↓</p><p className="font-semibold text-[#fff2df]">{card.current}</p></div><div className="border border-[#79c7a0]/25 bg-[#79c7a0]/[0.06] p-4 text-sm leading-6"><p className="text-xs font-bold uppercase tracking-[0.14em] text-[#a8d9b8]">What we can verify</p><ul className="mt-2 space-y-1 text-[#c4cfca]">{card.verified.map((item) => <li key={item}>✓ {item}</li>)}</ul></div><div className="border border-[#b99256]/25 bg-[#b99256]/[0.06] p-4 text-sm leading-6"><p className="text-xs font-bold uppercase tracking-[0.14em] text-[#f2d6ac]">Not yet verified</p><ul className="mt-2 space-y-1 text-[#c4cfca]">{card.unknown.map((item) => <li key={item}>? {item}</li>)}</ul></div></div></section>)}</div></section>;
+}
+
 export default function WanderburgArtifacts() {
   const citation = [...new Set(sources.map(([, url]) => url))];
   const schema = {
@@ -134,12 +145,8 @@ export default function WanderburgArtifacts() {
       ] },
     ],
   };
-  return <main className="min-h-screen px-5 py-8 text-[#e1e6e8]"><article className="mx-auto max-w-4xl">
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
-    <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[#aeb7bc]"><a href="/">Home</a><span>›</span><a href="/games/wanderburg">Wanderburg</a><span>›</span><span aria-current="page">{h1}</span></nav>
-    <h1 className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl">{h1}</h1>
-    <p className="mt-4 text-xs text-[#aeb7bc]">By RUNBACK · Published <time dateTime={publishedAt}>2026-09-23</time> · Updated <time dateTime={modifiedAt}>2026-09-23</time></p>
-    <nav aria-label="On this page" className="mt-6 rounded-xl border border-white/15 bg-[#192126] p-5"><p className="font-semibold">On this page</p><ul className="mt-3 grid gap-2 sm:grid-cols-2">{toc.map((item) => <li key={item}><a className="text-[#ff9a7a] underline underline-offset-4" href={'#' + slugify(item)}>{item}</a></li>)}</ul></nav>
-    <MarkdownBody />
-  </article></main>;
+  return <GameWikiArticleLayout config={wanderburgWikiConfig} activeHref={href} title={h1} description={description} publishedAt={publishedAt} modifiedAt={modifiedAt} reviewedAt="2026-09-22T00:00:00.000Z" toc={toc} schema={schema} coverage="3 named Artifacts from patch notes">
+    <ArtifactStatusCards />
+    <div className="game-wiki-markdown"><MarkdownBody /></div>
+  </GameWikiArticleLayout>;
 }

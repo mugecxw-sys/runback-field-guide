@@ -20,3 +20,18 @@ body { margin: 0; min-width: 320px; background: #111417; font-family: var(--font
 button, input { font: inherit; }
 button { cursor: pointer; }
 ::selection { background: #ff7043; color: #111417; }
+
+.game-wiki-markdown h2 {
+  border-top: 1px solid color-mix(in srgb, #b99256 26%, transparent);
+  padding-top: 1.5rem;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #fff2df;
+}
+.game-wiki-markdown h3 { color: #f2d6ac; }
+.game-wiki-markdown blockquote {
+  background: color-mix(in srgb, #b99256 7%, transparent);
+  padding: 0.9rem 1rem;
+}
+.game-wiki-markdown table { background: #141c19; }
+.game-wiki-markdown tbody tr:nth-child(even) { background: color-mix(in srgb, #fff 2%, transparent); }
+.game-wiki-markdown a:focus-visible { outline: 2px solid #ff8662; outline-offset: 2px; }

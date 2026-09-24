@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import wanderburgMarkdown from './wanderburg-complete-reference-guide.md?raw';
 import { siteUrl } from '@/lib/repo-guide-pages';
+import { GameWikiArticleLayout } from '@/components/game-wiki/game-wiki';
+import { wanderburgWikiConfig } from '@/components/game-wiki/wanderburg-config';
 
 const href = '/games/wanderburg/reference';
 const title = 'Wanderburg Wiki & Reference: Modules, Captains, Bosses & Current Patch';
@@ -124,13 +126,7 @@ export default function WanderburgReference() {
       ] },
     ],
   };
-  return <main className="min-h-screen px-5 py-8 text-[#e1e6e8]"><article className="mx-auto max-w-4xl">
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
-    <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[#aeb7bc]"><a href="/">Home</a><span>›</span><a href="/games/wanderburg">Wanderburg</a><span>›</span><span aria-current="page">{h1}</span></nav>
-    <h1 className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl">{h1}</h1>
-    <p className="mt-4 text-xs text-[#aeb7bc]">By RUNBACK · Published <time dateTime={publishedAt}>2026-09-16</time></p>
-    <p className="mt-5 text-lg leading-8 text-[#c7d0d5]">{description}</p>
-    <nav aria-label="On this page" className="mt-6 rounded-xl border border-white/15 bg-[#192126] p-5"><p className="font-semibold">On this page</p><ul className="mt-3 grid gap-2 sm:grid-cols-2">{toc.map((item) => <li key={item}><a className="text-[#ff9a7a] underline underline-offset-4" href={'#' + slugify(item)}>{item}</a></li>)}</ul></nav>
-    <MarkdownBody />
-  </article></main>;
+  return <GameWikiArticleLayout config={wanderburgWikiConfig} activeHref={href} title={h1} description={description} publishedAt={publishedAt} reviewedAt="2026-09-22T00:00:00.000Z" toc={toc} schema={schema} coverage="Core systems & version notes">
+    <div className="game-wiki-markdown"><MarkdownBody /></div>
+  </GameWikiArticleLayout>;
 }
