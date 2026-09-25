@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+import Image from 'next/image';
 import artifactsMarkdown from './artifacts.md?raw';
 import { siteUrl } from '@/lib/repo-guide-pages';
 import { GameWikiArticleLayout } from '@/components/game-wiki/game-wiki';
@@ -7,9 +8,9 @@ import { WikiDataBlock, WikiEntityCard, WikiEntitySection } from '@/components/g
 import { wanderburgWikiConfig } from '@/components/game-wiki/wanderburg-config';
 
 const href = '/games/wanderburg/wiki/artifacts';
-const title = 'Wanderburg Artifacts Wiki (0.9.14): Effects, Rerolls & Patch Changes';
+const title = 'Wanderburg Artifacts Wiki (0.9.14): 21 Starter Artifacts & Effects';
 const h1 = 'Wanderburg Artifacts Wiki (0.9.14)';
-const description = 'Wanderburg Artifacts reference for Early Access 0.9.14, covering Repair Wrench, Electric Arrow, Tinderbox, Artifact rerolls and confirmed patch changes.';
+const description = 'Wanderburg Artifacts reference for Early Access 0.9.14, covering all 21 Starter Artifacts visible in the current client, their effects, screenshots and important version changes.';
 const publishedAt = '2026-09-23T00:00:00.000Z';
 const modifiedAt = '2026-09-23T00:00:00.000Z';
 const sources = [
@@ -19,8 +20,31 @@ const sources = [
 ] as const;
 const toc = [
   'Artifact Database', 'Artifact Details', 'Artifact Rerolls',
-  'Artifact Rerolls vs Module Rerolls', 'Artifacts and Builds',
+  'Tinderbox',
 ];
+const artifactImages: Record<string, { file: string; width: number; height: number }> = {
+  Bumper: { file: 'bumper', width: 639, height: 1017 },
+  Campfire: { file: 'campfire', width: 640, height: 1024 },
+  'Cluster Core': { file: 'cluster-core', width: 640, height: 1015 },
+  Couldron: { file: 'couldron', width: 639, height: 1021 },
+  'Electric Arrow': { file: 'electric-arrow', width: 637, height: 1018 },
+  'Extra Rations': { file: 'extra-rations', width: 634, height: 1018 },
+  'Fast Quiver': { file: 'fast-quiver', width: 637, height: 1012 },
+  'Four Leaf Clover': { file: 'four-leaf-clover', width: 645, height: 1018 },
+  'Hand Crank': { file: 'hand-crank', width: 646, height: 1023 },
+  'Magma Core': { file: 'magma-core', width: 648, height: 1023 },
+  Napalm: { file: 'napalm', width: 637, height: 1018 },
+  'Quick Reload': { file: 'quick-reload', width: 640, height: 1014 },
+  'Repair Wrench': { file: 'repair-wrench', width: 649, height: 1015 },
+  'Reset Lever': { file: 'reset-lever', width: 646, height: 1018 },
+  'Running Shoes': { file: 'running-shoes', width: 648, height: 1027 },
+  Shovel: { file: 'shovel', width: 640, height: 1012 },
+  Souvenir: { file: 'souvenir', width: 646, height: 1015 },
+  Stiletto: { file: 'stiletto', width: 643, height: 1027 },
+  TAX: { file: 'tax', width: 637, height: 1021 },
+  'Upgrade Dice': { file: 'upgrade-dice', width: 643, height: 1023 },
+  'Work Contract': { file: 'work-contract', width: 643, height: 1021 },
+};
 
 export const metadata: Metadata = {
   title: title + ' | RUNBACK',
@@ -50,15 +74,15 @@ function cells(line: string) {
 }
 
 const markdownLines = artifactsMarkdown.replace(/\r\n/g, '\n').split('\n');
-const referenceStart = markdownLines.indexOf('## Quick Artifact Reference');
-const detailStart = markdownLines.indexOf('# Repair Wrench');
+const referenceStart = markdownLines.indexOf('## Current Starter Artifact List');
+const detailStart = markdownLines.indexOf('# Bumper');
 const systemsStart = markdownLines.indexOf('# Artifact Rerolls');
 if (referenceStart < 0 || detailStart <= referenceStart || systemsStart <= detailStart) {
   throw new Error('Artifact source sections are incomplete');
 }
 
-const referenceHeader = markdownLines.findIndex((line, index) => index > referenceStart && line.startsWith('| Artifact ') && line.includes('Effect / Update'));
-if (referenceHeader < 0) throw new Error('Quick Artifact Reference table is missing');
+const referenceHeader = markdownLines.findIndex((line, index) => index > referenceStart && line === '| Artifact | Effect |');
+if (referenceHeader < 0) throw new Error('Current Starter Artifact List table is missing');
 const referenceRows: string[][] = [];
 for (let index = referenceHeader + 2; markdownLines[index]?.startsWith('|'); index += 1) {
   referenceRows.push(cells(markdownLines[index]));
@@ -78,24 +102,35 @@ for (const line of markdownLines.slice(detailStart, systemsStart)) {
 const referenceByName = new Map(referenceRows.map((row) => [row[0], row]));
 const artifacts = detailSections.map(({ name, notes }) => {
   const row = referenceByName.get(name);
-  if (!row || row.length !== 3 || !row[1] || !row[2]) {
+  const image = artifactImages[name];
+  if (!row || row.length !== 2 || !row[1] || !image) {
     throw new Error('Artifact source mapping is incomplete: ' + name);
   }
-  return { name, confirmation: row[1], patch: row[2], notes };
+  return { name, effect: row[1], image, notes };
 });
 const anchors = artifacts.map((entry) => slugify(entry.name));
 if (
-  referenceRows.length !== 3 || artifacts.length !== 3 || referenceByName.size !== 3 ||
-  new Set(artifacts.map((entry) => entry.name)).size !== 3 || new Set(anchors).size !== 3 ||
+  referenceRows.length !== 21 || artifacts.length !== 21 || referenceByName.size !== 21 ||
+  Object.keys(artifactImages).length !== 21 ||
+  new Set(artifacts.map((entry) => entry.name)).size !== 21 || new Set(anchors).size !== 21 ||
+  new Set(artifacts.map((entry) => entry.image.file)).size !== 21 ||
+  artifacts.some((entry) => entry.name === 'Tinderbox') ||
   referenceRows.some((row) => !artifacts.some((entry) => entry.name === row[0]))
 ) {
-  throw new Error('Patch-note-confirmed Artifact reference and detail sections do not match');
+  throw new Error('Starter Artifact roster and detail sections do not match');
 }
 
 const referenceLines = markdownLines.slice(referenceStart, detailStart);
 const supportingLines = markdownLines.slice(systemsStart);
 
-function MarkdownContent({ lines, nested = false, idPrefix = '' }: { lines: string[]; nested?: boolean; idPrefix?: string }) {
+function artifactImage(entry: (typeof artifacts)[number]) {
+  return {
+    src: '/images/games/wanderburg/artifacts/' + entry.image.file + '.png',
+    alt: 'Wanderburg 0.9.14 ' + entry.name + ' artifact tooltip',
+  };
+}
+
+function MarkdownContent({ lines, nested = false, idPrefix = '', showRosterScreenshot = false }: { lines: string[]; nested?: boolean; idPrefix?: string; showRosterScreenshot?: boolean }) {
   const blocks: ReactNode[] = [];
   const headingIds = new Map<string, number>();
   const uniqueHeadingId = (heading: string) => {
@@ -130,6 +165,9 @@ function MarkdownContent({ lines, nested = false, idPrefix = '' }: { lines: stri
       const rows: string[][] = [];
       while (lines[index]?.startsWith('|')) { rows.push(cells(lines[index])); index += 1; }
       blocks.push(<div key={index} className="mt-5 max-w-full overflow-x-auto rounded-xl border border-white/15"><table className="min-w-[850px] border-collapse text-left text-sm leading-6"><thead className="bg-[#192126]"><tr>{header.map((cell) => <th key={cell} scope="col" className="border-b border-white/20 px-4 py-3 font-semibold"><Inline text={cell} /></th>)}</tr></thead><tbody>{rows.map((row, rowIndex) => <tr key={rowIndex} className="border-b border-white/10 last:border-0">{row.map((cell, cellIndex) => cellIndex === 0 ? <th key={cellIndex} scope="row" className="whitespace-nowrap px-4 py-3 text-left font-medium"><Inline text={cell} /></th> : <td key={cellIndex} className="px-4 py-3 text-[#c7d0d5]"><Inline text={cell} /></td>)}</tr>)}</tbody></table></div>);
+      if (showRosterScreenshot && header[0] === 'Artifact' && header[1] === 'Effect') {
+        blocks.push(<figure key="artifacts-list" className="my-6 max-w-[924px]"><Image src="/images/games/wanderburg/artifacts/artifacts-list-0.9.14.png" alt="Wanderburg 0.9.14 Starter Artifact selection showing 21 artifacts" width={924} height={486} className="h-auto max-w-full rounded-xl border border-white/15" /><figcaption className="mt-2 text-sm text-[#aeb7bc]">All 21 Starter Artifacts visible in Wanderburg Early Access 0.9.14.</figcaption></figure>);
+      }
       continue;
     }
     if (line.startsWith('- ')) {
@@ -156,29 +194,32 @@ function ArtifactDatabase() {
       <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#dca464]">ARTIFACT DATABASE</p>
       <h2 id="artifact-database-title" className="mt-2 font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">Artifact Database</h2>
       <div className="mt-4 flex flex-wrap gap-2 text-xs font-semibold">
-        <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#fff2df]">{artifacts.length} Artifacts</span>
+        <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#fff2df]">{artifacts.length} Starter Artifacts</span>
       </div>
-      <p className="mt-5 text-sm leading-6 text-[#c7d0d5]">This page currently covers three documented Artifacts and is not a complete Artifact list.</p>
+      <p className="mt-5 text-sm leading-6 text-[#c7d0d5]">The in-game menu is labeled “Starter Artifact.” This list covers its 21 visible choices, not every Artifact that may appear elsewhere.</p>
     </section>
     <div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-      {artifacts.map((entry) => <WikiEntityCard key={entry.name} href={'#' + slugify(entry.name)} name={entry.name} category="Artifact" summary={entry.confirmation} />)}
+      {artifacts.map((entry) => <WikiEntityCard key={entry.name} href={'#' + slugify(entry.name)} name={entry.name} category="Starter Artifact" summary={entry.effect} image={artifactImage(entry)} />)}
     </div>
     <details className="mt-10 border-y border-[#b99256]/25 py-4">
-      <summary className="cursor-pointer font-serif text-lg font-semibold text-[#f2d6ac] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Artifact Table</summary>
-      <div className="game-wiki-markdown pb-6"><MarkdownContent lines={referenceLines} /></div>
+      <summary className="cursor-pointer font-serif text-lg font-semibold text-[#f2d6ac] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Current Starter Artifact List</summary>
+      <div className="game-wiki-markdown pb-6"><MarkdownContent lines={referenceLines} showRosterScreenshot /></div>
     </details>
     <section aria-labelledby="artifact-details" className="mt-12">
       <h2 id="artifact-details" className="scroll-mt-24 font-serif text-3xl font-semibold text-[#fff2df]">Artifact Details</h2>
       <div className="mt-5">
-        {artifacts.map((entry) => <WikiEntitySection key={entry.name} id={slugify(entry.name)} name={entry.name} category="Artifact">
+        {artifacts.map((entry) => <WikiEntitySection key={entry.name} id={slugify(entry.name)} name={entry.name} category="Starter Artifact">
           <WikiDataBlock title="Artifact Data" rows={[
-            { label: 'Effect / Update', value: entry.confirmation },
-            { label: 'Patch', value: entry.patch },
+            { label: 'Effect', value: entry.effect },
           ]} />
-          <div className="border-t border-white/10 pt-4">
+          {entry.notes.some((line) => line.trim()) && <div className="border-t border-white/10 pt-4">
             <h3 className="text-xs font-bold uppercase tracking-[0.14em] text-[#dca464]">Notes</h3>
             <div className="game-wiki-markdown text-sm"><MarkdownContent lines={entry.notes} nested idPrefix={slugify(entry.name)} /></div>
-          </div>
+          </div>}
+          <figure className="min-w-0 self-start border border-white/10 bg-[#17201d] p-3">
+            <Image src={artifactImage(entry).src} alt={artifactImage(entry).alt} width={entry.image.width} height={entry.image.height} loading="lazy" className="h-auto max-w-full" />
+            <figcaption className="mt-3 text-xs leading-5 text-[#aeb7bc]">{entry.name} in Wanderburg Early Access 0.9.14.</figcaption>
+          </figure>
           <a href="#artifact-database" className="inline-block text-xs font-semibold text-[#ff9a7a] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Back to Artifact Database ↑</a>
         </WikiEntitySection>)}
       </div>
