@@ -1,6 +1,6 @@
 # Wanderburg Artifacts Wiki (0.9.14)
 
-This page covers the 21 Starter Artifacts visible in Wanderburg Early Access 0.9.14, including their effects, trigger conditions, useful numeric values and important patch changes.
+This page covers the effects, trigger conditions and numeric values shown for the 21 Starter Artifacts in Wanderburg Early Access 0.9.14.
 
 The in-game menu is labeled “Starter Artifact,” so this list covers the current Starter Artifact selection rather than every Artifact that may appear elsewhere in the game.
 
@@ -42,7 +42,6 @@ The explosion follows a cannonball kill of an enemy vehicle, not every Cannon hi
 
 # Electric Arrow
 
-Hotfix 0.9.10 improved its trigger reliability.
 
 # Extra Rations
 
@@ -60,13 +59,11 @@ Hotfix 0.9.10 improved its trigger reliability.
 
 # Repair Wrench
 
-Hotfix 0.9.14 changed Repair Wrench from 25% healing to a flat 25 HP heal.
 
 # Reset Lever
 
 # Running Shoes
 
-This matters when the run already has friendly units.
 
 # Shovel
 
@@ -82,12 +79,6 @@ This matters when the run already has friendly units.
 
 # Artifact Rerolls
 
-Hotfix 0.9.10: Every 6 unlocked Artifacts grants +1 Artifact Reroll.
+Every **6 unlocked Artifacts** grants **+1 Artifact Reroll**.
 
-Hotfix 0.9.14: A second Artifact reroll was added from the start.
-
-# Tinderbox
-
-Tinderbox is mentioned in the 0.9.14 patch notes, where a bug affecting the Artifact was fixed.
-
-It does not appear in the 21-entry Starter Artifact selection, so it is not included in the Starter Artifact list above.
+You start with **2 Artifact rerolls**.

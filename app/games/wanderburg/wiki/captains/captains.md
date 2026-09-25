@@ -1,8 +1,9 @@
 # Wanderburg Captains Wiki (0.9.14)
 
-The Early Access 0.9.14 Captain selection shows 14 Captains. Their current tooltip effects are listed below.
+The Early Access 0.9.14 Captain selection has 14 Captains. Their current effects and drawbacks are listed below.
 
 ## Current Captain List
+
 | Captain | Positive effect | Drawback |
 | --- | --- | --- |
 | Patchy The Pirate | Cannons deal 30% extra damage | Enemy Cannons deal 25% extra damage |
@@ -16,79 +17,66 @@ The Early Access 0.9.14 Captain selection shows 14 Captains. Their current toolt
 | Pyromaniac | Always on fire; touching enemies ignites them | No Luck |
 | Racer Ruth | +50% speed when boosting | -15% normal driving speed |
 | Sire Jonah | Plays techno music | Only knows one song |
-| Tankbert | Max HP bar grows when destroying a vehicle | Current client displays -50% Nitro regeneration |
+| Tankbert | Max HP bar grows when destroying a vehicle | -50% Nitro Regeneration |
 | The Count | Heal by consuming units | No health boxes spawn |
 | Time Witch | The game runs twice as fast | The game runs twice as fast |
 
-# Current Names vs Patch-Note Names
-
-| Current client | Patch-note name |
-| --- | --- |
-| Patchy The Pirate | PatchyThePirate |
-| Kapitalistus Maximus | Kapitalstus Maximus |
-
 # Patchy The Pirate
 
-Cannons deal **30%** extra damage; enemy Cannons deal **25%** extra damage. Hotfix 0.9.10 reduced the enemy-Cannon value from **50% → 25%**. Patch-note name: PatchyThePirate.
+Cannons deal **30%** extra damage, while enemy Cannons deal **25%** extra damage.
 
 # Dieter The Drunk
 
-**Super Lucky**; controls are wobbly. The tooltip gives no numerical Luck or control value.
+Dieter is **Super Lucky**, but the controls are wobbly.
 
 # Duelist
 
-**50%** more melee damage while boosting; **20%** more damage taken while boosting. Hotfix 0.9.10 reduced the damage-taken value from **50% → 20%**.
+Duelist deals **50%** more melee damage while boosting and takes **20%** more damage while boosting.
 
 # Empress
 
-Spawns **100%** more friendly units; **-30%** speed.
+Empress spawns **100%** more friendly units and has **-30% speed**.
 
 # Huntress
 
-**+50%** automatic attack speed; **+40%** ability cooldown time. Hotfix 0.9.10 reduced the extra cooldown from **50% → 40%**.
+Huntress has **+50%** auto attack speed and **+40%** ability cooldown time.
 
 # Kapitalistus Maximus
 
-**+25%** Silver after the run; **-15%** Gold during the run. Hotfix 0.9.10 changed the Gold penalty from **-30% → -15%**. Patch-note name: Kapitalstus Maximus.
+Kapitalistus Maximus gains **+25% Silver after the run** and **-15% Gold during the run**.
 
 # Lumberjack
 
-Consuming trees gains Nitro; Nitro regeneration is much slower. The tooltip gives no numerical values.
+Consuming trees gains Nitro, but Nitro regenerates much more slowly.
 
 # Norbert The Normal
 
-No positive or negative gameplay modifier is shown. Description: **The most boring person you've ever met.**
+No positive or negative gameplay modifier is shown. The description is: **The most boring person you've ever met.**
 
 # Pyromaniac
 
-Always on fire; ignites enemies on contact. **No Luck.**
+Pyromaniac is always on fire and ignites enemies on contact. The drawback is **No Luck**.
 
 # Racer Ruth
 
-**+50%** speed when boosting; **-15%** normal driving speed.
+Racer Ruth has **+50% speed while boosting** and **-15% normal driving speed**.
 
 # Sire Jonah
 
-Plays techno music; only knows one song. No numerical combat modifier is shown.
+Sire Jonah plays techno music and only knows one song.
 
 # Tankbert
 
-Destroying a vehicle increases the Max HP bar. The **0.9.14 client UI shows -50% Nitro Regeneration**, while **official Hotfix 0.9.10 says 50% slower → 30% slower**. The current runtime value is unclear. Hotfix 0.9.6 also noted a Tankbert nerf without a value.
+Destroying a vehicle makes Tankbert's **Max HP bar grow**. The drawback is **-50% Nitro Regeneration**.
 
 # The Count
 
-Heals by consuming units; no health boxes spawn. The tooltip gives no healing amount.
+The Count heals by consuming units. **Health boxes do not spawn.**
 
 # Time Witch
 
-The tooltip presents **the game runs twice as fast** as both its advantage and disadvantage.
-
-# Captain Balance History
-
-- Hotfix 0.9.6: Tankbert nerfed; no numerical change published.
-- Hotfix 0.9.7: Captain localization and descriptions fixed.
-- Hotfix 0.9.10: PatchyThePirate **50% → 25%** enemy-Cannon value; Kapitalstus Maximus **-30% → -15%** Gold penalty; Huntress **50% → 40%** extra ability cooldown; Tankbert **50% slower → 30% slower** Nitro regeneration in patch notes; Duelist **50% → 20%** damage taken while boosting. The Tankbert client tooltip still disagrees.
+The tooltip lists **the game runs twice as fast** as both the positive effect and the drawback.
 
 # Captains and Builds
 
-Compare Captain effects with the actions your run actually uses. See the [Modules Wiki](/games/wanderburg/wiki/modules), [builds guide](/games/wanderburg/builds), [reference](/games/wanderburg/reference), and [Wanderburg hub](/games/wanderburg).
+Compare a Captain's benefit and drawback with the actions your run actually uses. See the [Wanderburg Modules Wiki](/games/wanderburg/wiki/modules), [Builds Guide](/games/wanderburg/builds), [Reference](/games/wanderburg/reference), and [Wanderburg hub](/games/wanderburg).

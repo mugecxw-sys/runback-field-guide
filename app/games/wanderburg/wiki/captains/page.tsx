@@ -8,19 +8,13 @@ import { WikiDataBlock, WikiEntityCard, WikiEntitySection } from '@/components/g
 import { wanderburgWikiConfig } from '@/components/game-wiki/wanderburg-config';
 
 const href = '/games/wanderburg/wiki/captains';
-const title = 'Wanderburg Captains Wiki (0.9.14): All 14 Captains & Effects';
+const title = 'Wanderburg Captains Wiki (0.9.14): All 14 Captains & Current Effects';
 const h1 = 'Wanderburg Captains Wiki (0.9.14)';
-const description = 'Wanderburg Captains reference for Early Access 0.9.14, covering all 14 current Captains, their bonuses, drawbacks, screenshots and confirmed balance changes.';
+const description = 'Wanderburg Captains reference for Early Access 0.9.14, covering all 14 current Captains, their effects, drawbacks and screenshots.';
 const publishedAt = '2026-09-22T00:00:00.000Z';
 const modifiedAt = '2026-09-23T00:00:00.000Z';
-const sources = [
-  ['Official Wanderburg Steam Hotfix 0.9.14', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Steam Hotfix 0.9.10', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Steam Hotfix 0.9.7', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Steam Hotfix 0.9.6', 'https://steamcommunity.com/app/3624140/allnews/'],
-] as const;
 const toc = [
-  'Captain Database', 'Captain Details', 'Captain Balance History',
+  'Captain Database', 'Captain Details',
   'Captains and Builds',
 ];
 const captainImages: Record<string, string> = {
@@ -60,8 +54,8 @@ function cells(line: string) {
 const markdownLines = captainsMarkdown.replace(/\r\n/g, '\n').split('\n');
 const rosterStart = markdownLines.indexOf('## Current Captain List');
 const detailStart = markdownLines.indexOf('# Patchy The Pirate');
-const historyStart = markdownLines.indexOf('# Captain Balance History');
-if (rosterStart < 0 || detailStart <= rosterStart || historyStart <= detailStart) {
+const supportingStart = markdownLines.indexOf('# Captains and Builds');
+if (rosterStart < 0 || detailStart <= rosterStart || supportingStart <= detailStart) {
   throw new Error('Captain source sections are incomplete');
 }
 
@@ -75,7 +69,7 @@ for (let index = rosterHeader + 2; markdownLines[index]?.startsWith('|'); index 
 type CaptainEntry = { name: string; positive: string; drawback: string; imageFile: string; notes: string[] };
 const detailSections: { name: string; notes: string[] }[] = [];
 let currentSection: { name: string; notes: string[] } | null = null;
-for (const line of markdownLines.slice(detailStart, historyStart)) {
+for (const line of markdownLines.slice(detailStart, supportingStart)) {
   if (line.startsWith('# ')) {
     currentSection = { name: line.slice(2), notes: [] };
     detailSections.push(currentSection);
@@ -106,7 +100,7 @@ if (
 }
 
 const referenceLines = markdownLines.slice(rosterStart, detailStart);
-const supportingLines = markdownLines.slice(historyStart);
+const supportingLines = markdownLines.slice(supportingStart);
 
 function captainImage(entry: CaptainEntry) {
   return {
@@ -194,7 +188,6 @@ function CaptainDatabase() {
 }
 
 export default function WanderburgCaptains() {
-  const citation = [...new Set(sources.map(([, url]) => url))];
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -203,7 +196,6 @@ export default function WanderburgCaptains() {
         inLanguage: 'en', mainEntityOfPage: siteUrl + href,
         author: { '@type': 'Organization', name: 'RUNBACK', url: siteUrl + '/about' },
         publisher: { '@type': 'Organization', '@id': siteUrl + '/#organization', name: 'RUNBACK', url: siteUrl },
-        citation,
       },
       { '@type': 'BreadcrumbList', itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },

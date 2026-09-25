@@ -10,18 +10,10 @@ import { wanderburgWikiConfig } from '@/components/game-wiki/wanderburg-config';
 const href = '/games/wanderburg/wiki/artifacts';
 const title = 'Wanderburg Artifacts Wiki (0.9.14): 21 Starter Artifacts & Effects';
 const h1 = 'Wanderburg Artifacts Wiki (0.9.14)';
-const description = 'Wanderburg Artifacts reference for Early Access 0.9.14, covering all 21 Starter Artifacts visible in the current client, their effects, screenshots and important version changes.';
+const description = 'Wanderburg Artifacts reference for Early Access 0.9.14, covering all 21 Starter Artifacts, their current effects, trigger conditions, values and screenshots.';
 const publishedAt = '2026-09-23T00:00:00.000Z';
 const modifiedAt = '2026-09-23T00:00:00.000Z';
-const sources = [
-  ['Official Wanderburg Steam Hotfix 0.9.14', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Steam Hotfix 0.9.10', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Steam Store', 'https://store.steampowered.com/app/3624140/Wanderburg/'],
-] as const;
-const toc = [
-  'Artifact Database', 'Artifact Details', 'Artifact Rerolls',
-  'Tinderbox',
-];
+const toc = ['Artifact Database', 'Artifact Details', 'Artifact Rerolls'];
 const artifactImages: Record<string, { file: string; width: number; height: number }> = {
   Bumper: { file: 'bumper', width: 639, height: 1017 },
   Campfire: { file: 'campfire', width: 640, height: 1024 },
@@ -229,7 +221,6 @@ function ArtifactDatabase() {
 }
 
 export default function WanderburgArtifacts() {
-  const citation = [...new Set(sources.map(([, url]) => url))];
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -238,7 +229,6 @@ export default function WanderburgArtifacts() {
         inLanguage: 'en', mainEntityOfPage: siteUrl + href,
         author: { '@type': 'Organization', name: 'RUNBACK', url: siteUrl + '/about' },
         publisher: { '@type': 'Organization', '@id': siteUrl + '/#organization', name: 'RUNBACK', url: siteUrl },
-        citation,
       },
       { '@type': 'BreadcrumbList', itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },

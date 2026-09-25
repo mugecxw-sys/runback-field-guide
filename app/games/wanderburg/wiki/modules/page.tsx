@@ -8,20 +8,11 @@ import { WikiDataBlock, WikiEntityCard, WikiEntitySection } from '@/components/g
 import { wanderburgWikiConfig } from '@/components/game-wiki/wanderburg-config';
 
 const href = '/games/wanderburg/wiki/modules';
-const title = 'Wanderburg Modules Wiki (0.9.14): All 20 Modules, Stats & Effects';
+const title = 'Wanderburg Modules Wiki (0.9.14): All 20 Modules, Effects & Current Values';
 const h1 = 'Wanderburg Modules Wiki (0.9.14)';
-const description = 'Wanderburg Modules reference for Early Access 0.9.14, covering all 20 Modules visible in the current client with slots, effects, base stats, cooldowns and patch changes.';
+const description = 'Wanderburg Modules reference for Early Access 0.9.14, covering all 20 current Modules with slots, effects, base values and cooldowns.';
 const publishedAt = '2026-09-22T00:00:00.000Z';
 const modifiedAt = '2026-09-23T00:00:00.000Z';
-const sources = [
-  ['Official Wanderburg Steam Hotfix 0.9.14', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Steam Hotfix 0.9.13', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Steam Hotfix 0.9.10', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Steam Hotfix 0.9.9', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Steam Hotfix 0.9.8', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Steam Hotfix 0.9.7', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Steam Hotfix 0.9.6', 'https://steamcommunity.com/app/3624140/allnews/'],
-] as const;
 const toc = [
   'Module Database', 'Top-Slot Modules', 'Side-Slot Modules', 'Front-Slot Modules', 'Back-Slot Modules',
   'Module Details',
@@ -265,7 +256,6 @@ function ModuleDatabase() {
 }
 
 export default function WanderburgModules() {
-  const citation = [...new Set(sources.map(([, url]) => url))];
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -274,7 +264,6 @@ export default function WanderburgModules() {
         inLanguage: 'en', mainEntityOfPage: siteUrl + href,
         author: { '@type': 'Organization', name: 'RUNBACK', url: siteUrl + '/about' },
         publisher: { '@type': 'Organization', '@id': siteUrl + '/#organization', name: 'RUNBACK', url: siteUrl },
-        citation,
       },
       { '@type': 'BreadcrumbList', itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },

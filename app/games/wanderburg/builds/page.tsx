@@ -10,21 +10,12 @@ const h1 = 'Wanderburg Builds Guide: Modules, Captains & Build Directions (0.9.1
 const title = h1;
 const description = 'A Wanderburg builds guide for Early Access 0.9.14, with practical directions for current Modules, Captain effects, allied units, automatic attacks and projectile control.';
 const publishedAt = '2026-09-20T00:00:00.000Z';
-const sources = [
-  ['Official Wanderburg Hotfix 0.9.14', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Hotfix 0.9.13', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Hotfix 0.9.10', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Hotfix 0.9.9', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Steam store page', 'https://store.steampowered.com/app/3624140/Wanderburg/'],
-] as const;
 const toc = [
   'Short Answer',
   'How a Wanderburg Build Comes Together',
   'Build Directions',
   'How to Adapt When the Run Does Not Offer Your First Choice',
-  'Patch 0.9.14 Build Changes That Matter',
-  'Related Wanderburg Reference Pages',
-  'Sources',
+  'Related Wanderburg Pages',
 ];
 
 export const metadata: Metadata = {
@@ -105,7 +96,6 @@ function MarkdownBody() {
 }
 
 export default function WanderburgBuilds() {
-  const citation = [...new Set(sources.map(([, url]) => url))];
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -114,7 +104,6 @@ export default function WanderburgBuilds() {
         inLanguage: 'en', mainEntityOfPage: siteUrl + href,
         author: { '@type': 'Organization', name: 'RUNBACK', url: siteUrl + '/about' },
         publisher: { '@type': 'Organization', '@id': siteUrl + '/#organization', name: 'RUNBACK', url: siteUrl },
-        citation,
       },
       {
         '@type': 'BreadcrumbList', itemListElement: [

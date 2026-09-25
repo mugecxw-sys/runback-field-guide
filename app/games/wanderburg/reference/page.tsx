@@ -6,25 +6,16 @@ import { GameWikiArticleLayout } from '@/components/game-wiki/game-wiki';
 import { wanderburgWikiConfig } from '@/components/game-wiki/wanderburg-config';
 
 const href = '/games/wanderburg/reference';
-const title = 'Wanderburg Wiki & Reference: Current Patch, Modules & Progression';
+const title = 'Wanderburg Wiki & Reference: Current Systems & Progression';
 const h1 = 'Wanderburg Wiki & Reference';
-const description = 'Wanderburg Early Access 0.9.14 reference covering current patch changes, rerolls, Modules, Captains, Artifacts, boss rewards and Overtime.';
+const description = 'Wanderburg Early Access 0.9.14 reference covering the core game loop, vehicles, Modules, Captains, Artifacts, Crew, progression, bosses and Overtime.';
 const publishedAt = '2026-09-16T00:00:00.000Z';
-const sources = [
-  ['Official Wanderburg Steam announcements and hotfix notes', 'https://steamcommunity.com/app/3624140/allnews/'],
-  ['Official Wanderburg Steam store page', 'https://store.steampowered.com/app/3624140/Wanderburg/'],
-] as const;
 const toc = [
   'Wanderburg at a Glance',
-  'Current Version — Early Access 0.9.14',
-  'Important Current Patch Changes',
+  'Core Systems',
   'Progression and Rerolls',
-  'Modules',
-  'Captains',
-  'Artifacts',
   'Bosses and Overtime',
-  'Related Guides',
-  'Sources',
+  'Find a Guide',
 ];
 
 export const metadata: Metadata = {
@@ -106,7 +97,6 @@ function MarkdownBody() {
 }
 
 export default function WanderburgReference() {
-  const citation = sources.map(([, url]) => url);
   const schema = {
     '@context': 'https://schema.org',
     '@graph': [
@@ -115,7 +105,6 @@ export default function WanderburgReference() {
         inLanguage: 'en', mainEntityOfPage: siteUrl + href,
         author: { '@type': 'Organization', name: 'RUNBACK', url: siteUrl + '/about' },
         publisher: { '@type': 'Organization', '@id': siteUrl + '/#organization', name: 'RUNBACK', url: siteUrl },
-        citation,
       },
       { '@type': 'BreadcrumbList', itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
