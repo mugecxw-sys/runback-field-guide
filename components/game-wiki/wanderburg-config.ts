@@ -19,6 +19,8 @@ export const wanderburgWikiConfig: GameWikiConfig = {
         { href: '/games/wanderburg/wiki/modules', label: 'Modules' },
         { href: '/games/wanderburg/wiki/captains', label: 'Captains' },
         { href: '/games/wanderburg/wiki/artifacts', label: 'Artifacts' },
+        { href: '/games/wanderburg/wiki/crew', label: 'Crew' },
+        { href: '/games/wanderburg/wiki/vehicles', label: 'Vehicles' },
       ],
     },
     {

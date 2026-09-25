@@ -31,4 +31,20 @@ export const wanderburgWikiPages: WanderburgWikiPage[] = [
     text: 'wanderburg artifacts repair wrench electric arrow tinderbox artifact rerolls',
     publishedAt: '2026-09-23T00:00:00.000Z',
   },
+  {
+    title: 'Wanderburg Crew Wiki (0.9.14)',
+    href: '/games/wanderburg/wiki/crew',
+    summary:
+      'Wanderburg Crew reference covering six current Crew, their effects, mechanics and screenshots.',
+    text: 'wanderburg crew archer crew canoneer crew carpenters fire crew merchants wizard crew',
+    publishedAt: '2026-09-25T00:00:00.000Z',
+  },
+  {
+    title: 'Wanderburg Vehicles Wiki (0.9.14)',
+    href: '/games/wanderburg/wiki/vehicles',
+    summary:
+      'Wanderburg Vehicles reference covering three current Vehicles, Module slots, mechanics and screenshots.',
+    text: 'wanderburg vehicles spiderburg tankenburg wanderturm vehicle module slots',
+    publishedAt: '2026-09-25T00:00:00.000Z',
+  },
 ];

@@ -5,18 +5,19 @@ import { wanderburgWikiConfig } from './wanderburg-config';
 const categories: GameWikiLink[] = [
   { href: '/games/wanderburg/reference', label: 'Reference', description: 'Core systems, progression and version notes.', count: '1 guide' },
   { href: '/games/wanderburg/builds', label: 'Builds', description: 'Practical build directions and play styles.', count: '1 guide' },
-  { href: '/games/wanderburg/wiki/modules', label: 'Modules', description: 'Verified module data and effects (0.9.14).', count: '20 verified entries' },
-  { href: '/games/wanderburg/wiki/captains', label: 'Captains', description: 'Verified Captain data and current Early Access changes.', count: '14 verified entries' },
-  { href: '/games/wanderburg/wiki/artifacts', label: 'Artifacts', description: 'Verified Artifact data and current patch changes.', count: 'Verified reference' },
-  { href: '/games/wanderburg/mods', label: 'Mods & Tools', description: 'Mods, utilities and installation guides for Wanderburg.', count: 'In Development' },
+  { href: '/games/wanderburg/wiki/modules', label: 'Modules', description: 'Module slots, effects and reference values (0.9.14).', count: '20 Modules' },
+  { href: '/games/wanderburg/wiki/captains', label: 'Captains', description: 'Current Captain effects and drawbacks.', count: '14 Captains' },
+  { href: '/games/wanderburg/wiki/artifacts', label: 'Artifacts', description: 'Starter Artifact effects and reroll rules.', count: '21 Starter Artifacts' },
+  { href: '/games/wanderburg/wiki/crew', label: 'Crew', description: 'Crew effects and in-game details.', count: '6 Crew' },
+  { href: '/games/wanderburg/wiki/vehicles', label: 'Vehicles', description: 'Vehicle mechanics and Module slot layouts.', count: '3 Vehicles' },
 ];
 
 const latest = [
+  { href: '/games/wanderburg/wiki/vehicles', title: 'Wanderburg Vehicles Wiki (0.9.14)', date: '2026-09-25' },
+  { href: '/games/wanderburg/wiki/crew', title: 'Wanderburg Crew Wiki (0.9.14)', date: '2026-09-25' },
   { href: '/games/wanderburg/wiki/artifacts', title: 'Wanderburg Artifacts Wiki (0.9.14)', date: '2026-09-23' },
   { href: '/games/wanderburg/wiki/modules', title: 'Wanderburg Modules Wiki (0.9.14)', date: '2026-09-22' },
   { href: '/games/wanderburg/wiki/captains', title: 'Wanderburg Captains Wiki (0.9.14)', date: '2026-09-22' },
-  { href: '/games/wanderburg/builds', title: 'Wanderburg Builds Guide (0.9.14)', date: '2026-09-20' },
-  { href: '/games/wanderburg/reference', title: 'Wanderburg Wiki & Reference', date: '2026-09-16' },
 ];
 
 export function WanderburgHub() {
