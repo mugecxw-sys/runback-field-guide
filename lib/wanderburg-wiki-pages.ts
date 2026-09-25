@@ -8,6 +8,13 @@ export type WanderburgWikiPage = {
 
 export const wanderburgWikiPages: WanderburgWikiPage[] = [
   {
+    title: 'Wanderburg Beginner Guide: What to Do First (0.9.14)',
+    href: '/games/wanderburg/beginner-guide',
+    summary: 'A short first-run guide to starting choices, Module slots, upgrades, active abilities and Nitro.',
+    text: 'wanderburg beginner guide what to do first first run main module archer tower vehicle movement slot upgrade auto attacks active abilities nitro first boss',
+    publishedAt: '2026-09-26T00:00:00.000Z',
+  },
+  {
     title: 'Wanderburg Modules Wiki (0.9.14)',
     href: '/games/wanderburg/wiki/modules',
     summary:

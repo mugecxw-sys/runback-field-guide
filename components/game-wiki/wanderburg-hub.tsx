@@ -3,6 +3,7 @@ import { GameWikiCategoryCard, GameWikiHero, GameWikiShell, type GameWikiLink } 
 import { wanderburgWikiConfig } from './wanderburg-config';
 
 const categories: GameWikiLink[] = [
+  { href: '/games/wanderburg/beginner-guide', label: 'Beginner Guide', description: 'First-run priorities, Module slots, upgrades and Nitro.', count: '1 guide' },
   { href: '/games/wanderburg/reference', label: 'Reference', description: 'Core systems, progression and version notes.', count: '1 guide' },
   { href: '/games/wanderburg/builds', label: 'Builds', description: 'Practical build directions and play styles.', count: '1 guide' },
   { href: '/games/wanderburg/wiki/modules', label: 'Modules', description: 'Module slots, effects and reference values (0.9.14).', count: '20 Modules' },
