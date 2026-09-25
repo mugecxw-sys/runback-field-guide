@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { siteUrl } from '@/lib/repo-guide-pages';
 import { GameWikiArticleLayout } from '@/components/game-wiki/game-wiki';
-import { WikiDataBlock } from '@/components/game-wiki/database-ui';
+import { WikiDataBlock, WikiEntityCard, WikiEntitySection } from '@/components/game-wiki/database-ui';
 import { wanderburgWikiConfig } from '@/components/game-wiki/wanderburg-config';
 
 const href = '/games/wanderburg/wiki/crew';
@@ -64,28 +64,30 @@ const crew: CrewEntry[] = [
 ];
 
 const slugify = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-const toc = ['Current Crew List', 'Crew Details', ...crew.map((entry) => entry.name)];
+const toc = ['Crew Database', 'Crew Details', ...crew.map((entry) => entry.name)];
 
 if (crew.length !== 6 || new Set(crew.map((entry) => entry.name)).size !== 6) {
-  throw new Error('Current-client Crew roster must contain exactly six unique entries');
+  throw new Error('Crew roster must contain exactly six unique entries');
+}
+
+function crewImage(entry: CrewEntry) {
+  return {
+    src: `/images/games/wanderburg/crew/${entry.file}.png`,
+    alt: `Wanderburg Early Access 0.9.14 ${entry.name} image`,
+  };
 }
 
 function CrewDatabase() {
   return (
     <>
-      <section id="current-crew-list" aria-labelledby="current-crew-list-title" className="mt-8 scroll-mt-24 border border-[#b99256]/30 bg-[#17201d] p-4 sm:p-6">
+      <section id="crew-database" aria-labelledby="crew-database-title" className="mt-8 scroll-mt-24 border border-[#b99256]/30 bg-[#17201d] p-4 sm:p-6">
         <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#dca464]">CREW DATABASE</p>
-        <h2 id="current-crew-list-title" className="mt-2 font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">Current Crew List</h2>
+        <h2 id="crew-database-title" className="mt-2 font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">Crew Database</h2>
         <div className="mt-4 flex flex-wrap gap-2 text-xs font-semibold">
           <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#fff2df]">{crew.length} Crew</span>
+          <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#fff2df]">Early Access 0.9.14</span>
         </div>
-        <div className="mt-5 max-w-full overflow-x-auto rounded-xl border border-white/15">
-          <table className="min-w-[620px] border-collapse text-left text-sm leading-6">
-            <thead className="bg-[#192126]"><tr><th scope="col" className="border-b border-white/20 px-4 py-3 font-semibold">Crew</th><th scope="col" className="border-b border-white/20 px-4 py-3 font-semibold">Effect</th></tr></thead>
-            <tbody>{crew.map((entry) => <tr key={entry.name} className="border-b border-white/10 last:border-0"><th scope="row" className="whitespace-nowrap px-4 py-3 text-left font-medium"><a className="text-[#ff9a7a] underline underline-offset-4" href={`#${slugify(entry.name)}`}>{entry.name}</a></th><td className="px-4 py-3 text-[#c7d0d5]">{entry.effect}{entry.cooldown ? ` Auto cooldown: ${entry.cooldown}.` : ''}</td></tr>)}</tbody>
-          </table>
-        </div>
-        <figure className="mt-6 w-full max-w-[955px] border border-white/10 bg-[#17201d] p-3">
+        <figure className="mt-6 max-w-[955px] border border-white/10 bg-[#17201d] p-3">
           <Image
             src="/images/games/wanderburg/crew/crew-list-0.9.14.png"
             alt="Wanderburg 0.9.14 Crew selection showing all six Crew"
@@ -93,36 +95,23 @@ function CrewDatabase() {
             height={280}
             className="h-auto max-w-full"
           />
-          <figcaption className="mt-3 text-xs leading-5 text-[#aeb7bc]">All six Crew visible in the Wanderburg Early Access 0.9.14 client.</figcaption>
+          <figcaption className="mt-3 text-xs leading-5 text-[#aeb7bc]">All six Crew visible in Wanderburg Early Access 0.9.14.</figcaption>
         </figure>
       </section>
-
+      <div className="mt-5 grid min-w-0 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+        {crew.map((entry) => <WikiEntityCard key={entry.name} href={`#${slugify(entry.name)}`} name={entry.name} category="Crew" summary={entry.effect} image={crewImage(entry)} />)}
+      </div>
       <section id="crew-details" aria-labelledby="crew-details-title" className="mt-12">
         <h2 id="crew-details-title" className="scroll-mt-24 font-serif text-3xl font-semibold text-[#fff2df]">Crew Details</h2>
-        <div className="mt-5 space-y-8">
-          {crew.map((entry) => (
-            <section key={entry.name} id={slugify(entry.name)} aria-labelledby={`${slugify(entry.name)}-title`} className="scroll-mt-24 border-t border-[#b99256]/30 py-8">
-              <h3 id={`${slugify(entry.name)}-title`} className="font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">{entry.name}</h3>
-              <p className="mt-4 max-w-3xl leading-7 text-[#c7d0d5]">{entry.note}</p>
-              <figure className="mt-5 w-full max-w-[640px] border border-white/10 bg-[#17201d] p-3">
-                <Image
-                  src={`/images/games/wanderburg/crew/${entry.file}.png`}
-                  alt={`Wanderburg Early Access 0.9.14 ${entry.name} current-client image`}
-                  width={entry.width}
-                  height={entry.height}
-                  loading="lazy"
-                  className="h-auto max-w-full"
-                />
-                <figcaption className="mt-3 text-xs leading-5 text-[#aeb7bc]">{entry.name} in Wanderburg Early Access 0.9.14.</figcaption>
-              </figure>
-              <div className="mt-5 max-w-2xl">
-                <WikiDataBlock title="Crew Data" rows={[
-                  { label: 'Effect', value: entry.effect },
-                  ...(entry.cooldown ? [{ label: 'Auto cooldown', value: entry.cooldown }] : []),
-                ]} />
-              </div>
-            </section>
-          ))}
+        <div className="mt-5">
+          {crew.map((entry) => <WikiEntitySection key={entry.name} id={slugify(entry.name)} name={entry.name} category="Crew" image={crewImage(entry)}>
+            <WikiDataBlock title="Crew Data" rows={[
+              { label: 'Effect', value: entry.effect },
+              ...(entry.cooldown ? [{ label: 'Auto cooldown', value: entry.cooldown }] : []),
+            ]} />
+            <p className="leading-7 text-[#c7d0d5]">{entry.note}</p>
+            <a href="#crew-database" className="inline-block text-xs font-semibold text-[#ff9a7a] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Back to Crew Database ↑</a>
+          </WikiEntitySection>)}
         </div>
       </section>
     </>
