@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import Image from 'next/image';
 
 export type GameWikiLink = {
   href: string;
@@ -18,6 +19,8 @@ export type GameWikiConfig = {
   version: string;
   navigationSections: GameWikiNavigationSection[];
   officialHref?: string;
+  showAboutLink?: boolean;
+  relatedLabel?: string;
 };
 
 function SectionLabel({ children }: { children: ReactNode }) {
@@ -52,7 +55,7 @@ export function GameWikiSidebar({ config, activeHref }: { config: GameWikiConfig
           <div>{section.links.map(link)}</div>
         </div>
       ))}
-      <SectionLabel>MORE</SectionLabel>
+      {(config.officialHref || config.showAboutLink !== false) && <SectionLabel>MORE</SectionLabel>}
       {config.officialHref && (
         <a
           href={config.officialHref}
@@ -61,9 +64,11 @@ export function GameWikiSidebar({ config, activeHref }: { config: GameWikiConfig
           Official Steam ↗
         </a>
       )}
-      <a href="/about" className="block border-l-2 border-transparent px-3 py-2 text-sm text-[#bdc6c5] hover:border-[#b99256]/70 hover:bg-white/[0.035] hover:text-[#fff2df] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">
-        Sources / About
-      </a>
+      {config.showAboutLink !== false && (
+        <a href="/about" className="block border-l-2 border-transparent px-3 py-2 text-sm text-[#bdc6c5] hover:border-[#b99256]/70 hover:bg-white/[0.035] hover:text-[#fff2df] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">
+          About
+        </a>
+      )}
     </nav>
   );
 }
@@ -106,7 +111,7 @@ export function GameWikiShell({ config, activeHref, children }: { config: GameWi
 export function GameWikiHero({ eyebrow, title, description, version, image }: { eyebrow: string; title: string; description: string; version: string; image?: { src: string; alt: string } }) {
   return (
     <section className="relative overflow-hidden border border-[#b99256]/35 bg-[#17201d] px-5 py-7 shadow-[0_12px_32px_rgba(0,0,0,0.16)] sm:px-8 sm:py-10">
-      {image ? <img src={image.src} alt={image.alt} className="absolute inset-0 h-full w-full object-cover opacity-25" /> : <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(185,146,86,0.16),transparent_32%),linear-gradient(135deg,rgba(255,112,67,0.08),transparent_45%)]" />}
+      {image ? <Image src={image.src} alt={image.alt} fill sizes="100vw" className="absolute inset-0 h-full w-full object-cover opacity-25" /> : <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(185,146,86,0.16),transparent_32%),linear-gradient(135deg,rgba(255,112,67,0.08),transparent_45%)]" />}
       <div className="relative max-w-3xl">
         <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#dca464]">{eyebrow}</p>
         <h1 className="mt-3 font-serif text-4xl font-semibold leading-[1.05] tracking-tight text-[#fff2df] sm:text-5xl">{title}</h1>
@@ -127,7 +132,7 @@ export function GameWikiCategoryCard({ item }: { item: GameWikiLink }) {
   );
 }
 
-export function GameWikiArticleLayout({ config, activeHref, title, description, publishedAt, modifiedAt, reviewedAt, toc, children, schema, label = 'Verified Reference', labelTone = 'verified', coverage, footerNote = 'RUNBACK verified reference' }: { config: GameWikiConfig; activeHref: string; title: string; description: string; publishedAt?: string; modifiedAt?: string; reviewedAt?: string; toc: string[]; children: ReactNode; schema: unknown; label?: string; labelTone?: 'verified' | 'neutral'; coverage?: string; footerNote?: string }) {
+export function GameWikiArticleLayout({ config, activeHref, title, description, publishedAt, modifiedAt, reviewedAt, toc, children, schema, label = 'Reference', labelTone = 'verified', coverage, footerNote = 'RUNBACK reference' }: { config: GameWikiConfig; activeHref: string; title: string; description: string; publishedAt?: string; modifiedAt?: string; reviewedAt?: string; toc: string[]; children: ReactNode; schema: unknown; label?: string; labelTone?: 'verified' | 'neutral'; coverage?: string; footerNote?: string }) {
   const related = config.navigationSections.flatMap((section) => section.links).filter((item) => item.href !== activeHref);
   const lastReviewed = reviewedAt ?? modifiedAt ?? publishedAt;
   const tocLinks = toc.map((item) => ({ label: item, href: '#' + item.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') }));
@@ -156,7 +161,7 @@ export function GameWikiArticleLayout({ config, activeHref, title, description, 
           <details className="mt-5 border border-[#b99256]/25 bg-[#17201d] p-4 xl:hidden"><summary className="cursor-pointer text-sm font-semibold text-[#fff2df]">On this page</summary><div className="mt-3">{onThisPage()}</div></details>
           {children}
         </article>
-        <aside className="hidden xl:block"><div className="sticky top-24 space-y-8 border-l border-[#b99256]/20 pl-5">{onThisPage()}<nav aria-label="Related guides"><p className="text-sm font-semibold text-[#fff2df]">Related guides</p><ul className="mt-3 space-y-2 text-sm">{related.map((item) => <li key={item.href}><a href={item.href} className="text-[#c4cfca] hover:text-[#ff9a7a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">{item.label}</a></li>)}</ul></nav><div className="border-t border-white/10 pt-4 text-xs leading-5 text-[#aeb7bc]">{config.version}<br />{footerNote}</div></div></aside>
+        <aside className="hidden xl:block"><div className="sticky top-24 space-y-8 border-l border-[#b99256]/20 pl-5">{onThisPage()}<nav aria-label={config.relatedLabel ?? 'Related guides'}><p className="text-sm font-semibold text-[#fff2df]">{config.relatedLabel ?? 'Related guides'}</p><ul className="mt-3 space-y-2 text-sm">{related.map((item) => <li key={item.href}><a href={item.href} className="text-[#c4cfca] hover:text-[#ff9a7a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">{item.label}</a></li>)}</ul></nav><div className="border-t border-white/10 pt-4 text-xs leading-5 text-[#aeb7bc]">{config.version}<br />{footerNote}</div></div></aside>
       </div>
     </main>
   );

@@ -19,7 +19,9 @@ export type ArticleLibrary = {
   articles: GameArticle[];
 };
 
-export const articleLibraries: ArticleLibrary[] = data;
+// Sephiria's former guide articles have been superseded by the Wiki routes;
+// they remain in the source JSON for the internal migration audit only.
+export const articleLibraries: ArticleLibrary[] = (data as ArticleLibrary[]).filter((library) => library.slug !== 'sephiria');
 export const articleSortDate = (article: GameArticle) =>
   article.updatedAt ?? article.publishedAt;
 export const latestArticleDate = (

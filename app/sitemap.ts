@@ -11,6 +11,7 @@ import {
   guideSortDate,
 } from '@/lib/repo-guide-pages';
 import { wanderburgWikiPages } from '@/lib/wanderburg-wiki-pages';
+import { sephiriaWikiPages } from '@/lib/sephiria-wiki-data';
 
 const latestDate = (dates: string[], fallback: string) =>
   dates.reduce((latest, date) => (date > latest ? date : latest), fallback);
@@ -22,6 +23,7 @@ const siteLastModified = latestDate(
   [
     ...repoGuidePages.map(guideSortDate),
     ...articleLibraries.flatMap((game) => game.articles.map(articleSortDate)),
+    ...sephiriaWikiPages.map((page) => page.publishedAt),
   ],
   guidePublishedAt,
 );
@@ -53,6 +55,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: page.publishedAt,
       changeFrequency: 'monthly' as const,
       priority: 0.8,
+    })),
+    ...sephiriaWikiPages.map((page) => ({
+      url: `${siteUrl}${page.href}`,
+      lastModified: page.publishedAt,
+      changeFrequency: 'monthly' as const,
+      priority: page.group === 'game' || page.group === 'wiki' ? 0.9 : 0.8,
     })),
     {
       url: siteUrl,

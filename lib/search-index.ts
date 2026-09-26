@@ -3,6 +3,7 @@ import { gameLibraries } from './game-catalog';
 import { repoGuidePages, guidePublishedAt, guideSortDate } from './repo-guide-pages';
 import { repoEnemies } from './repo-enemies';
 import { wanderburgWikiPages } from './wanderburg-wiki-pages';
+import { sephiriaAllRecords, sephiriaWikiPages } from './sephiria-wiki-data';
 export const searchIndex = [
   ...gameLibraries.map((g) => ({
     title: g.title,
@@ -42,6 +43,31 @@ export const searchIndex = [
     text: page.text,
     date: page.publishedAt,
   })),
+  ...sephiriaWikiPages.filter((page) => page.group !== 'game').map((page) => ({
+    title: page.title,
+    game: 'Sephiria',
+    kind: page.group === 'game' ? 'Game' : page.group === 'wiki' ? 'Wiki' : page.group === 'category' ? 'Category' : 'System',
+    href: page.href,
+    summary: page.summary,
+    text: page.title,
+    date: page.publishedAt,
+  })),
+  ...sephiriaAllRecords.map((entry) => {
+    const categoryPath: Record<string, string> = {
+      Weapon: 'weapons', 'Weapon Upgrade': 'weapon-upgrades', Artifact: 'artifacts',
+      Tablet: 'tablets', Costume: 'costumes', 'Hard Mode Element': 'hard-mode',
+      Boss: 'bosses', Miniboss: 'bosses', Grimoire: 'grimoires',
+    };
+    return {
+      title: entry.name,
+      game: 'Sephiria',
+      kind: entry.category,
+      href: `/games/sephiria/wiki/${categoryPath[entry.category]}#${entry.slug}`,
+      summary: entry.category,
+      text: [...entry.aliases, ...entry.tags].join(' '),
+      date: '2026-09-26T00:00:00.000Z',
+    };
+  }),
   ...repoEnemies.map((e) => ({
     title: e.name,
     game: 'R.E.P.O.',

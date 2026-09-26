@@ -45,7 +45,7 @@ export function GameLibraryGrid({ query = '' }: { query?: string }) {
               ))}
             </div>
             <span className="mt-auto pt-5 text-sm font-semibold text-[#ff9a7a]">
-              {g.guideCount} guides · Open library →
+              {g.contentLabel ?? `${g.guideCount} guides`} · Open library →
             </span>
           </a>
         ))}
