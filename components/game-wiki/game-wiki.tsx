@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import Image from 'next/image';
 
 export type GameWikiLink = {
   href: string;
@@ -18,6 +19,7 @@ export type GameWikiConfig = {
   version: string;
   navigationSections: GameWikiNavigationSection[];
   officialHref?: string;
+  showAboutLink?: boolean;
 };
 
 function SectionLabel({ children }: { children: ReactNode }) {
@@ -52,7 +54,7 @@ export function GameWikiSidebar({ config, activeHref }: { config: GameWikiConfig
           <div>{section.links.map(link)}</div>
         </div>
       ))}
-      <SectionLabel>MORE</SectionLabel>
+      {(config.officialHref || config.showAboutLink !== false) && <SectionLabel>MORE</SectionLabel>}
       {config.officialHref && (
         <a
           href={config.officialHref}
@@ -61,9 +63,11 @@ export function GameWikiSidebar({ config, activeHref }: { config: GameWikiConfig
           Official Steam ↗
         </a>
       )}
-      <a href="/about" className="block border-l-2 border-transparent px-3 py-2 text-sm text-[#bdc6c5] hover:border-[#b99256]/70 hover:bg-white/[0.035] hover:text-[#fff2df] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">
-        Sources / About
-      </a>
+      {config.showAboutLink !== false && (
+        <a href="/about" className="block border-l-2 border-transparent px-3 py-2 text-sm text-[#bdc6c5] hover:border-[#b99256]/70 hover:bg-white/[0.035] hover:text-[#fff2df] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">
+          Sources / About
+        </a>
+      )}
     </nav>
   );
 }
@@ -106,7 +110,7 @@ export function GameWikiShell({ config, activeHref, children }: { config: GameWi
 export function GameWikiHero({ eyebrow, title, description, version, image }: { eyebrow: string; title: string; description: string; version: string; image?: { src: string; alt: string } }) {
   return (
     <section className="relative overflow-hidden border border-[#b99256]/35 bg-[#17201d] px-5 py-7 shadow-[0_12px_32px_rgba(0,0,0,0.16)] sm:px-8 sm:py-10">
-      {image ? <img src={image.src} alt={image.alt} className="absolute inset-0 h-full w-full object-cover opacity-25" /> : <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(185,146,86,0.16),transparent_32%),linear-gradient(135deg,rgba(255,112,67,0.08),transparent_45%)]" />}
+      {image ? <Image src={image.src} alt={image.alt} fill sizes="100vw" className="absolute inset-0 h-full w-full object-cover opacity-25" /> : <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(185,146,86,0.16),transparent_32%),linear-gradient(135deg,rgba(255,112,67,0.08),transparent_45%)]" />}
       <div className="relative max-w-3xl">
         <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#dca464]">{eyebrow}</p>
         <h1 className="mt-3 font-serif text-4xl font-semibold leading-[1.05] tracking-tight text-[#fff2df] sm:text-5xl">{title}</h1>

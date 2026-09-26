@@ -1,4 +1,5 @@
 import type { NextConfig } from 'next';
+import { sephiriaLegacyRedirects } from './lib/sephiria-wiki-data';
 
 const nextConfig: NextConfig = {
   trailingSlash: false,
@@ -13,6 +14,11 @@ const nextConfig: NextConfig = {
       { source: '/guides/valuable-routes-and-safe-carry-plans', destination: '/guides/cart-guide', permanent: true },
       { source: '/guides/carrying-and-physics-tips', destination: '/guides/cart-guide', permanent: true },
       { source: '/guides/current-version-changes-what-players-should-retest', destination: '/guides/r-e-p-o-patch-notes-explained-for-players', permanent: true },
+      ...sephiriaLegacyRedirects.map(({ oldUrl, destination }) => ({
+        source: oldUrl,
+        destination,
+        permanent: true,
+      })),
     ];
   },
 };
