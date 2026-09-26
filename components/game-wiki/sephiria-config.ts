@@ -9,6 +9,7 @@ export const sephiriaWikiConfig: GameWikiConfig = {
   hubHref: '/games/sephiria',
   version: 'Patch 1.0.33',
   showAboutLink: false,
+  relatedLabel: 'Related pages',
   navigationSections: [
     { label: 'GUIDES', links: [{ href: '/games/sephiria', label: 'Overview' }, { href: '/games/sephiria/wiki', label: 'Wiki Home' }] },
     { label: 'WIKI', links: categories.map(({ title, href }) => ({ href, label: title })) },

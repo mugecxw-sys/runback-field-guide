@@ -6,6 +6,7 @@ export type GameLibrary = {
   description: string;
   status: 'LIVE' | 'DRAFT';
   guideCount: number;
+  contentLabel?: string;
   categories: string[];
   sourceHref: string;
 };
@@ -117,9 +118,10 @@ export const gameLibraries: GameLibrary[] = [
     version: 'Patch 1.0.33',
     description: 'A structured reference for weapons, upgrades, Artifacts, Tablets, costumes, grimoires, bosses, and systems.',
     status: 'LIVE',
-    guideCount: 15,
+    guideCount: 0,
+    contentLabel: 'Wiki reference',
     categories: ['Weapons', 'Weapon Upgrades', 'Artifacts', 'Tablets', 'Costumes', 'Bosses'],
-    sourceHref: 'https://sephiriagame.com/guides/beginner-guide/',
+    sourceHref: 'https://store.steampowered.com/app/2436940/Sephiria/',
   },
   {
     slug: 'yet-another-zombie-survivors',

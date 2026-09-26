@@ -43,7 +43,7 @@ export const searchIndex = [
     text: page.text,
     date: page.publishedAt,
   })),
-  ...sephiriaWikiPages.map((page) => ({
+  ...sephiriaWikiPages.filter((page) => page.group !== 'game').map((page) => ({
     title: page.title,
     game: 'Sephiria',
     kind: page.group === 'game' ? 'Game' : page.group === 'wiki' ? 'Wiki' : page.group === 'category' ? 'Category' : 'System',

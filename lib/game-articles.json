@@ -2013,17 +2013,15 @@
         "title": "Sephiria Wiki: Beginner Systems and Game Guide",
         "category": "Wiki",
         "publishedAt": "2026-09-09T00:00:00.000Z",
-        "answer": "Sephiria is built around collecting and arranging Artifacts, then strengthening them with Tablets. Use this hub to understand the verified game scope without assuming an unverified tutorial order or UI label.",
+        "answer": "Sephiria is built around collecting and arranging Artifacts, then strengthening them with Tablets. Use this hub to browse weapons, upgrades, Artifacts, Tablets, enemies, bosses, chapters, and cooperative play.",
         "steps": [
-          "Use the hub as an entry point for Artifacts, Tablets, Talents, weapons, upgrades, enemies, bosses, chapters, and cooperative play.",
-          "Treat the published scope as system context, not as proof of where a specific enemy appears, how a boss works, or what a current run requires.",
-          "Remember that the official description lists six weapon types and more than 50 upgrades for each weapon, but this does not establish a current tier list or upgrade tree.",
-          "Recheck current UI wording, unlock timing, and the complete catalog in-game before relying on a detailed mechanic.",
-          "Use future weapon, Artifact, talent, boss, and chapter pages only after their current behavior and information have been manually recorded."
+          "Use the hub as an entry point for Artifacts, Tablets, talents, weapons, upgrades, enemies, bosses, chapters, and cooperative play.",
+          "Browse the named game systems and encounters from the reference pages.",
+          "The game includes six weapon types and more than 50 upgrades for each weapon.",
+          "Use the relevant reference page for the listed mechanics and game systems."
         ],
-        "mistakes": "Inventing tutorial steps, unlock timing, UI labels, or best-build claims from a high-level game description.",
-        "versionNote": "Sephiria is actively updated. This draft uses the official game description retained upstream and leaves unverified current UI and progression details out.",
-        "sources": [{"href": "https://sephiriagame.com/guides/beginner-guide/", "label": "Sephiria — official beginner guide"}]
+        "mistakes": "Assuming an unlisted mechanic or unlock requirement.",
+        "versionNote": "Sephiria Wiki overview."
       }
     ]
   },

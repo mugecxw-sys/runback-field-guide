@@ -86,31 +86,31 @@ export const sephiriaArtifacts: SephiriaRecord[] = [
 ];
 
 export const sephiriaTablets = [
-  record('TBL-01', 'Nurture', 'Tablet', { patchHistory: [{ version: '1.0.33', text: 'Rarity changed from Advanced to Common.' }] }),
-  record('TBL-02', 'Competition', 'Tablet', { patchHistory: [{ version: '1.0.33', text: 'Downward bonus changed from +2 to +3.' }] }),
-  record('TBL-03', 'Wave', 'Tablet', { patchHistory: [{ version: '1.0.33', text: 'Upper-right diagonal bonus changed from +2 to +3.' }] }),
-  record('TBL-04', 'Trick', 'Tablet', { patchHistory: [{ version: '1.0.33', text: 'Rarity changed from Advanced to Common.' }] }),
-  record('TBL-05', 'Preparation', 'Tablet', { patchHistory: [{ version: '1.0.33', text: 'Lower-right diagonal bonus changed from +1 to +2.' }] }),
-  record('TBL-06', 'Daydream', 'Tablet', { patchHistory: [{ version: '1.0.33', text: 'Pattern changed to +2 on the four immediately diagonal cells.' }] }),
+  record('TBL-01', 'Nurture', 'Tablet', { patchHistory: [{ version: '1.0.19', text: 'Rarity changed from Advanced to Common.' }] }),
+  record('TBL-02', 'Competition', 'Tablet', { patchHistory: [{ version: '1.0.19', text: 'Downward bonus changed from +2 to +3.' }] }),
+  record('TBL-03', 'Wave', 'Tablet', { patchHistory: [{ version: '1.0.19', text: 'Upper-right diagonal bonus changed from +2 to +3.' }] }),
+  record('TBL-04', 'Trick', 'Tablet', { patchHistory: [{ version: '1.0.19', text: 'Rarity changed from Advanced to Common.' }] }),
+  record('TBL-05', 'Preparation', 'Tablet', { patchHistory: [{ version: '1.0.19', text: 'Lower-right diagonal bonus changed from +1 to +2.' }] }),
+  record('TBL-06', 'Daydream', 'Tablet', { patchHistory: [{ version: '1.0.19', text: 'Pattern changed from +1 in each of the four diagonal directions plus +1 in each cell beyond those diagonals to +2 in each of the four diagonal directions.' }] }),
 ];
 
 export const sephiriaCostumes = [
-  record('CST-01', 'Orange Rabbit', 'Costume', { patchHistory: [{ version: '1.0', text: 'Debuff Damage +14%; Defense -8.' }] }),
-  record('CST-02', 'White Rabbit', 'Costume', { patchHistory: [{ version: '1.0', text: 'Special Attack Damage +12%; Max MP +8; Evasion -15.' }] }),
-  record('CST-03', 'Red-Clothed Cat', 'Costume'),
-  record('CST-04', 'Frog', 'Costume'),
-  record('CST-05', 'Wizard Bunny', 'Costume'),
-  record('CST-06', 'Skeleton', 'Costume', { patchHistory: [{ version: '1.0', text: 'Effect changed to 20% amplified damage dealt.' }] }),
+  record('CST-01', 'Orange Rabbit', 'Costume', { patchHistory: [{ version: '1.0.19', text: 'Before: Max HP +10; Max MP -15. After: Debuff Damage +14%; Defense -8.' }] }),
+  record('CST-02', 'White Rabbit', 'Costume', { patchHistory: [{ version: '1.0.19', text: 'Before: Normal Attack Damage +8%; Special Attack Damage -5%. After: Special Attack Damage +12%; Max MP +8; Evasion -15.' }] }),
+  record('CST-03', 'Red-Clothed Cat', 'Costume', { patchHistory: [{ version: '1.0.19', text: 'Each elemental damage amplified +15%; Physical Damage amplified -20%.' }] }),
+  record('CST-04', 'Frog', 'Costume', { patchHistory: [{ version: '1.0.19', text: 'Each elemental damage amplified +15%; Physical Damage amplified -20%.' }] }),
+  record('CST-05', 'Wizard Bunny', 'Costume', { patchHistory: [{ version: '1.0.19', text: 'Each elemental damage amplified +15%; Physical Damage amplified -20%.' }] }),
+  record('CST-06', 'Skeleton', 'Costume', { patchHistory: [{ version: '1.0.19', text: 'Before: Revive +2; Healing Curse 50%. After: Damage dealt amplified by 20%.' }] }),
   record('CST-07', 'Scholar Lizard', 'Costume', { patchHistory: [{ version: '1.0.33', text: 'Fixed an issue where the Costume effect could be removed by a certain weapon.' }] }),
 ];
 
 export const sephiriaHardModeElements = [
-  record('HM-01', 'Festival of Blood', 'Hard Mode Element'),
-  record('HM-02', 'False Vanguard', 'Hard Mode Element', { aliases: ['Pseudo-Vanguard'] }),
-  record('HM-03', 'Deterioration', 'Hard Mode Element', { aliases: ['Decline'] }),
-  record('HM-04', 'Tension', 'Hard Mode Element'),
-  record('HM-05', 'Heavy Heart', 'Hard Mode Element'),
-  record('HM-06', 'Proliferation', 'Hard Mode Element'),
+  record('HM-01', 'Festival of Blood', 'Hard Mode Element', { effectCurrent: 'Enemies restore HP when they hit a player. Minibosses and bosses restore more HP.' }),
+  record('HM-02', 'False Vanguard', 'Hard Mode Element', { aliases: ['Pseudo-Vanguard'], effectCurrent: 'Minibosses become stronger.' }),
+  record('HM-03', 'Deterioration', 'Hard Mode Element', { aliases: ['Decline'], effectCurrent: 'Level Up Restoration is reduced.\n\n4 levels:\n-10%\n-25%\n-40%\n-60%' }),
+  record('HM-04', 'Tension', 'Hard Mode Element', { effectCurrent: 'Potions cannot be used during boss fights.' }),
+  record('HM-05', 'Heavy Heart', 'Hard Mode Element', { effectCurrent: 'Start each run with the Heavy Heart Artifact. Heavy Heart has no effect and cannot be discarded.' }),
+  record('HM-06', 'Proliferation', 'Hard Mode Element', { effectCurrent: 'More Normal Enemies appear.\n\n2 levels:\n+10%\n+25%' }),
 ];
 
 export const sephiriaBosses = [

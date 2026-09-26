@@ -8,7 +8,7 @@ const systems = sephiriaWikiPages.filter((page) => page.group === 'system');
 const facts = [
   ['Developer', 'TEAM HORAY'], ['Publisher', 'TEAM HORAY'],
   ['Early Access', 'April 3, 2025'], ['Full Release', 'July 31, 2026'],
-  ['Reviewed patch', '1.0.33'], ['Chapters', '6'], ['Weapons', '6'],
+  ['Current version', '1.0.33'], ['Chapters', '6'], ['Weapons', '6'],
   ['Weapon upgrades', '50+ per weapon · 200+ at 1.0 launch scope'],
   ['Artifacts', 'About 300 at 1.0 launch'], ['Tablets', 'About 70 at 1.0 launch'],
   ['Potions', '30+'], ['Costumes', '20+'], ['Enemies', '60+'],
@@ -42,11 +42,7 @@ export function SephiriaGameHub() {
     <section className="mt-9 border-t border-[#b99256]/25 pt-7">
       <h2 className="font-serif text-2xl font-semibold text-[#fff2df]">Sephiria Wiki</h2>
       <p className="mt-2 max-w-3xl text-sm leading-6 text-[#bdc6c5]">Open the Wiki to browse the current reference sections and game systems.</p>
-      <div className="mt-4 max-w-2xl"><GameWikiCategoryCard item={{ href: '/games/sephiria/wiki', label: 'Open the Wiki', description: 'Weapons, items, systems and named encounters.', count: '15 structural pages' }} /></div>
-    </section>
-    <section className="mt-9 border-t border-[#b99256]/25 pt-7">
-      <h2 className="font-serif text-2xl font-semibold text-[#fff2df]">Guides & Builds</h2>
-      <p className="mt-2 max-w-3xl text-sm leading-6 text-[#bdc6c5]">The guide and build library can grow as player-facing material is added.</p>
+      <div className="mt-4 max-w-2xl"><GameWikiCategoryCard item={{ href: '/games/sephiria/wiki', label: 'Open the Wiki', description: 'Weapons, items, systems and named encounters.', count: 'Wiki reference' }} /></div>
     </section>
   </GameWikiShell>;
 }
