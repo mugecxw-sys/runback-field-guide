@@ -15,6 +15,13 @@ export const wanderburgWikiPages: WanderburgWikiPage[] = [
     publishedAt: '2026-09-26T00:00:00.000Z',
   },
   {
+    title: 'Wanderburg Cannon Build Guide (0.9.14)',
+    href: '/games/wanderburg/builds/cannon-build',
+    summary: 'Tested Tankenburg Cannon setup with upgrade priorities, positioning and boss notes.',
+    text: 'wanderburg cannon build tankenburg patchy the pirate canoneer crew frontcannon cannon tower repair wrench upgrade priority positioning boss tested clear',
+    publishedAt: '2026-09-26T00:00:00.000Z',
+  },
+  {
     title: 'Wanderburg Modules Wiki (0.9.14)',
     href: '/games/wanderburg/wiki/modules',
     summary:

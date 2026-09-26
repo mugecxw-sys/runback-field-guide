@@ -15,6 +15,7 @@ const toc = [
   'How a Wanderburg Build Comes Together',
   'Build Directions',
   'How to Adapt When the Run Does Not Offer Your First Choice',
+  'Tested Builds',
   'Related Wanderburg Pages',
 ];
 
