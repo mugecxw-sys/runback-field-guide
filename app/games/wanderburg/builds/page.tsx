@@ -4,6 +4,7 @@ import buildsMarkdown from '../builds.md?raw';
 import { siteUrl } from '@/lib/repo-guide-pages';
 import { GameWikiArticleLayout } from '@/components/game-wiki/game-wiki';
 import { wanderburgWikiConfig } from '@/components/game-wiki/wanderburg-config';
+import { TestedBuildCard, type TestedBuildCardProps } from '@/components/game-guide/tested-build-card';
 
 const href = '/games/wanderburg/builds';
 const h1 = 'Wanderburg Builds Guide: Modules, Captains & Build Directions (0.9.14)';
@@ -17,6 +18,30 @@ const toc = [
   'How to Adapt When the Run Does Not Offer Your First Choice',
   'Tested Builds',
   'Related Wanderburg Pages',
+];
+const testedBuilds: TestedBuildCardProps[] = [
+  {
+    title: 'Cannon Build',
+    href: '/games/wanderburg/builds/cannon-build',
+    vehicle: 'Tankenburg',
+    captain: 'Patchy The Pirate',
+    core: 'Cannon + Canoneer Crew',
+    playstyle: 'Steady ranged damage',
+    notes: ['FrontCannon is a useful natural addition.', 'Cannon Tower is optional — do not force it.'],
+    result: 'Tested — Clear',
+    cta: 'View Cannon Build →',
+  },
+  {
+    title: 'RAM Build',
+    href: '/games/wanderburg/builds/ram-build',
+    vehicle: 'Spiderburg',
+    captain: 'Duelist',
+    core: 'RAM + Bumper',
+    playstyle: 'Boost → Hit → Disengage',
+    notes: ['Support damage matters while RAM is cooling down.', 'Dash worked well, but is optional.'],
+    result: 'Tested — Clear',
+    cta: 'View RAM Build →',
+  },
 ];
 
 export const metadata: Metadata = {
@@ -54,6 +79,17 @@ function MarkdownBody() {
   while (index < lines.length) {
     const line = lines[index];
     if (!line || line.startsWith('# ')) { index += 1; continue; }
+    if (line === '<!-- TESTED_BUILDS_CARDS -->') {
+      blocks.push(<section key={index} aria-labelledby="tested-builds">
+        <h2 id="tested-builds" className="mt-10 scroll-mt-24 text-2xl font-semibold">Tested Builds</h2>
+        <p className="mt-5 leading-8 text-[#c7d0d5]">These builds were tested in the current 0.9.14 client.</p>
+        <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
+          {testedBuilds.map(build => <TestedBuildCard key={build.href} {...build} />)}
+        </div>
+      </section>);
+      index += 1;
+      continue;
+    }
     if (line === '---') {
       blocks.push(<hr key={index} className="mt-10 border-white/15" />);
       index += 1;

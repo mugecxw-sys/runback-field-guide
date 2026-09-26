@@ -60,15 +60,7 @@ For current details, see the [Wanderburg Modules Wiki](/games/wanderburg/wiki/mo
 - Consider both the benefit and drawback shown for your Captain.
 - Use the in-game damage numbers to compare how much different attacks contribute.
 
-## Tested Builds
-
-### [Cannon Build](/games/wanderburg/builds/cannon-build)
-
-Tested Tankenburg Cannon setup with upgrade priorities, positioning and boss notes.
-
-### [RAM Build](/games/wanderburg/builds/ram-build)
-
-Tested hit-and-run RAM setup using Boost timing, speed and support damage.
+<!-- TESTED_BUILDS_CARDS -->
 
 ## Related Wanderburg Pages
 
