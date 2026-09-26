@@ -5,7 +5,7 @@ import { wanderburgWikiConfig } from './wanderburg-config';
 const categories: GameWikiLink[] = [
   { href: '/games/wanderburg/beginner-guide', label: 'Beginner Guide', description: 'First-run priorities, Module slots, upgrades and Nitro.', count: '1 guide' },
   { href: '/games/wanderburg/reference', label: 'Reference', description: 'Core systems, progression and version notes.', count: '1 guide' },
-  { href: '/games/wanderburg/builds', label: 'Builds', description: 'Practical build directions and play styles.', count: '2 guides' },
+  { href: '/games/wanderburg/builds', label: 'Builds', description: 'Practical build directions and play styles.', count: '3 guides' },
   { href: '/games/wanderburg/wiki/modules', label: 'Modules', description: 'Module slots, effects and reference values (0.9.14).', count: '20 Modules' },
   { href: '/games/wanderburg/wiki/captains', label: 'Captains', description: 'Current Captain effects and drawbacks.', count: '14 Captains' },
   { href: '/games/wanderburg/wiki/artifacts', label: 'Artifacts', description: 'Starter Artifact effects and reroll rules.', count: '21 Starter Artifacts' },
@@ -14,6 +14,7 @@ const categories: GameWikiLink[] = [
 ];
 
 const latest = [
+  { href: '/games/wanderburg/builds/ram-build', title: 'Wanderburg RAM Build Guide (0.9.14)', date: '2026-09-27' },
   { href: '/games/wanderburg/builds/cannon-build', title: 'Wanderburg Cannon Build Guide (0.9.14)', date: '2026-09-26' },
   { href: '/games/wanderburg/wiki/vehicles', title: 'Wanderburg Vehicles Wiki (0.9.14)', date: '2026-09-25' },
   { href: '/games/wanderburg/wiki/crew', title: 'Wanderburg Crew Wiki (0.9.14)', date: '2026-09-25' },

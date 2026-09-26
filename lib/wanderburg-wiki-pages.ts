@@ -22,6 +22,13 @@ export const wanderburgWikiPages: WanderburgWikiPage[] = [
     publishedAt: '2026-09-26T00:00:00.000Z',
   },
   {
+    title: 'Wanderburg RAM Build Guide (0.9.14)',
+    href: '/games/wanderburg/builds/ram-build',
+    summary: 'Tested hit-and-run RAM setup using Boost timing, speed and support damage.',
+    text: 'wanderburg ram build spiderburg duelist carpenters bumper dash cooldown ability boost collision boss tested clear',
+    publishedAt: '2026-09-27T00:00:00.000Z',
+  },
+  {
     title: 'Wanderburg Modules Wiki (0.9.14)',
     href: '/games/wanderburg/wiki/modules',
     summary:

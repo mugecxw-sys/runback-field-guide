@@ -66,6 +66,10 @@ For current details, see the [Wanderburg Modules Wiki](/games/wanderburg/wiki/mo
 
 Tested Tankenburg Cannon setup with upgrade priorities, positioning and boss notes.
 
+### [RAM Build](/games/wanderburg/builds/ram-build)
+
+Tested hit-and-run RAM setup using Boost timing, speed and support damage.
+
 ## Related Wanderburg Pages
 
 - [Wanderburg Modules Wiki](/games/wanderburg/wiki/modules) — current Module names, slots, effects and available values.
