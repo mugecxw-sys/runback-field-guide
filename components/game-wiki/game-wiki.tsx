@@ -6,6 +6,7 @@ export type GameWikiLink = {
   label: string;
   description?: string;
   count?: string;
+  backgroundImage?: string;
 };
 
 export type GameWikiNavigationSection = {
@@ -124,10 +125,12 @@ export function GameWikiHero({ eyebrow, title, description, version, image }: { 
 
 export function GameWikiCategoryCard({ item }: { item: GameWikiLink }) {
   return (
-    <a href={item.href} className="group border border-[#b99256]/25 bg-[#17201d] p-5 shadow-[0_10px_24px_rgba(0,0,0,0.12)] transition-colors hover:border-[#ff8662]/70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">
-      <div className="flex items-start justify-between gap-4"><h3 className="font-serif text-xl font-semibold text-[#fff2df]">{item.label}</h3><span className="text-[#dca464] transition-transform group-hover:translate-x-0.5">→</span></div>
-      {item.description && <p className="mt-3 text-sm leading-6 text-[#bdc6c5]">{item.description}</p>}
-      {item.count && <p className="mt-5 border-t border-white/10 pt-3 text-xs font-semibold tracking-wide text-[#dca464]">{item.count}</p>}
+    <a href={item.href} className="group relative isolate overflow-hidden border border-[#b99256]/25 bg-[#17201d] p-5 shadow-[0_10px_24px_rgba(0,0,0,0.12)] transition-colors hover:border-[#ff8662]/70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">
+      {item.backgroundImage && <div aria-hidden="true" className="absolute inset-0 -z-10 bg-cover bg-center transition-transform duration-300 ease-out group-hover:scale-[1.03]" style={{ backgroundImage: `url(${item.backgroundImage})` }} />}
+      {item.backgroundImage && <div aria-hidden="true" className="absolute inset-0 -z-10 bg-[#07100d]/75 transition-colors duration-300 group-hover:bg-[#07100d]/65" />}
+      <div className="relative flex items-start justify-between gap-4"><h3 className="font-serif text-xl font-semibold text-[#fff2df]">{item.label}</h3><span className="text-[#dca464] transition-transform group-hover:translate-x-0.5">→</span></div>
+      {item.description && <p className="relative mt-3 text-sm leading-6 text-[#e0e8e3]">{item.description}</p>}
+      {item.count && <p className="relative mt-5 border-t border-white/20 pt-3 text-xs font-semibold tracking-wide text-[#f0c98b]">{item.count}</p>}
     </a>
   );
 }
