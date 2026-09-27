@@ -5,18 +5,18 @@ import { siteUrl } from '@/lib/repo-guide-pages';
 import { GameWikiArticleLayout } from '@/components/game-wiki/game-wiki';
 import { wanderburgWikiConfig } from '@/components/game-wiki/wanderburg-config';
 import { TestedBuildCard, type TestedBuildCardProps } from '@/components/game-guide/tested-build-card';
+import { BuildDirectionCard, type BuildDirectionCardProps } from '@/components/game-guide/build-direction-card';
 
 const href = '/games/wanderburg/builds';
-const h1 = 'Wanderburg Builds Guide: Modules, Captains & Build Directions (0.9.14)';
+const h1 = 'Wanderburg Builds (0.9.14)';
 const title = h1;
-const description = 'A Wanderburg builds guide for Early Access 0.9.14, with practical directions for current Modules, Captain effects, allied units, automatic attacks and projectile control.';
+const description = 'Tested Wanderburg builds for Early Access 0.9.14, plus compact build directions for choosing Modules, Captains and play styles.';
+const intro = 'Choose a tested build below, or use the build directions further down when the run gives you different Modules. Wanderburg is flexible by design, so treat these as practical setups rather than fixed recipes.';
 const publishedAt = '2026-09-20T00:00:00.000Z';
 const toc = [
-  'Short Answer',
-  'How a Wanderburg Build Comes Together',
-  'Build Directions',
-  'How to Adapt When the Run Does Not Offer Your First Choice',
   'Tested Builds',
+  'How to Choose a Build',
+  'Build Directions',
   'Related Wanderburg Pages',
 ];
 const testedBuilds: TestedBuildCardProps[] = [
@@ -41,6 +41,38 @@ const testedBuilds: TestedBuildCardProps[] = [
     notes: ['Support damage matters while RAM is cooling down.', 'Dash worked well, but is optional.'],
     result: 'Tested — Clear',
     cta: 'View RAM Build →',
+  },
+];
+const buildDirections: BuildDirectionCardProps[] = [
+  {
+    title: 'Multi-target attacks',
+    coreIdea: 'Hit several enemies with one attack.',
+    example: 'Lightning Mage — 7 base automatic targets.',
+    note: 'Huntress trades faster auto attacks for longer ability cooldowns.',
+  },
+  {
+    title: 'Automatic attacks',
+    coreIdea: 'Keep dealing damage while you focus on driving.',
+    example: 'Arms — 2.5s automatic attack interval.',
+    note: 'Useful when you want low-maintenance damage.',
+  },
+  {
+    title: 'Active side attacks',
+    coreIdea: 'Use a Module whose active attack matters as much as its auto attack.',
+    example: 'Side Ballista.',
+    note: 'Better when you are comfortable choosing when to fire the active ability.',
+  },
+  {
+    title: 'Allied-unit direction',
+    coreIdea: 'Let friendly units contribute while you drive.',
+    example: 'Front Barracks — spawns Biker Knights.',
+    note: 'Empress adds 100% more friendly units but reduces speed by 30%.',
+  },
+  {
+    title: 'Projectile control',
+    coreIdea: 'Use utility when incoming projectiles are the main problem.',
+    example: 'Force Mage — active ability cancels incoming projectiles.',
+    note: 'This solves projectile pressure, not every type of threat.',
   },
 ];
 
@@ -82,9 +114,19 @@ function MarkdownBody() {
     if (line === '<!-- TESTED_BUILDS_CARDS -->') {
       blocks.push(<section key={index} aria-labelledby="tested-builds">
         <h2 id="tested-builds" className="mt-10 scroll-mt-24 text-2xl font-semibold">Tested Builds</h2>
-        <p className="mt-5 leading-8 text-[#c7d0d5]">These builds were tested in the current 0.9.14 client.</p>
+        <p className="mt-5 leading-8 text-[#c7d0d5]">These builds were played and cleared in the current 0.9.14 client.</p>
         <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
           {testedBuilds.map(build => <TestedBuildCard key={build.href} {...build} />)}
+        </div>
+      </section>);
+      index += 1;
+      continue;
+    }
+    if (line === '<!-- BUILD_DIRECTION_CARDS -->') {
+      blocks.push(<section key={index} aria-labelledby="build-directions">
+        <h2 id="build-directions" className="mt-10 scroll-mt-24 text-2xl font-semibold">Build Directions</h2>
+        <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
+          {buildDirections.map(direction => <BuildDirectionCard key={direction.title} {...direction} />)}
         </div>
       </section>);
       index += 1;
@@ -151,7 +193,7 @@ export default function WanderburgBuilds() {
       },
     ],
   };
-  return <GameWikiArticleLayout config={wanderburgWikiConfig} activeHref={href} title={h1} description={description} publishedAt={publishedAt} reviewedAt="2026-09-22T00:00:00.000Z" toc={toc} schema={schema} label="Build directions" coverage="Early Access guidance">
+  return <GameWikiArticleLayout config={wanderburgWikiConfig} activeHref={href} title={h1} description={intro} publishedAt={publishedAt} reviewedAt="2026-09-22T00:00:00.000Z" toc={toc} schema={schema} label="Build library">
     <div className="game-wiki-markdown"><MarkdownBody /></div>
   </GameWikiArticleLayout>;
 }
