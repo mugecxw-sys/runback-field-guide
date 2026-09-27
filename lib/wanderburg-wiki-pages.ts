@@ -8,6 +8,13 @@ export type WanderburgWikiPage = {
 
 export const wanderburgWikiPages: WanderburgWikiPage[] = [
   {
+    title: 'Wanderburg Vehicle Guide: Spiderburg vs Tankenburg vs Wanderturm',
+    href: '/games/wanderburg/vehicle-guide',
+    summary: 'A short tested comparison of Wanderburg Vehicle handling, Module slots and play styles.',
+    text: 'wanderburg vehicle guide wanderturm tankenburg spiderburg handling driving nitro side top front back slots',
+    publishedAt: '2026-09-28T00:00:00.000Z',
+  },
+  {
     title: 'Wanderburg Beginner Guide: What to Do First (0.9.14)',
     href: '/games/wanderburg/beginner-guide',
     summary: 'A short first-run guide to starting choices, Module slots, upgrades, active abilities and Nitro.',

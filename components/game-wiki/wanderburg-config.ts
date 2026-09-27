@@ -12,6 +12,7 @@ export const wanderburgWikiConfig: GameWikiConfig = {
         { href: '/games/wanderburg/beginner-guide', label: 'Beginner Guide' },
         { href: '/games/wanderburg/reference', label: 'Reference' },
         { href: '/games/wanderburg/builds', label: 'Builds' },
+        { href: '/games/wanderburg/vehicle-guide', label: 'Vehicle Guide' },
       ],
     },
     {
