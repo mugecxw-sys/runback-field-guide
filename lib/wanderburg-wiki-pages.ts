@@ -29,6 +29,13 @@ export const wanderburgWikiPages: WanderburgWikiPage[] = [
     publishedAt: '2026-09-27T00:00:00.000Z',
   },
   {
+    title: 'Wanderburg Friendly Units Build Guide (0.9.14)',
+    href: '/games/wanderburg/builds/friendly-units-build',
+    summary: 'Tested Wanderturm friendly-units setup with Empress, Barracks upgrades and Running Shoes.',
+    text: 'wanderburg friendly units build wanderturm empress carpenters front barracks side barracks running shoes companion boss tested clear',
+    publishedAt: '2026-09-27T00:00:00.000Z',
+  },
+  {
     title: 'Wanderburg Modules Wiki (0.9.14)',
     href: '/games/wanderburg/wiki/modules',
     summary:

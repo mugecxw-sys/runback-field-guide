@@ -42,6 +42,17 @@ const testedBuilds: TestedBuildCardProps[] = [
     result: 'Tested — Clear',
     cta: 'View RAM Build →',
   },
+  {
+    title: 'Friendly Units Build',
+    href: '/games/wanderburg/builds/friendly-units-build',
+    vehicle: 'Wanderturm',
+    captain: 'Empress',
+    core: 'Front Barracks + Side Barracks',
+    playstyle: 'Drive while the army fights',
+    notes: ['Running Shoes helps friendly units keep up.', 'Companion fits naturally, but is optional.'],
+    result: 'Tested — Clear',
+    cta: 'View Friendly Units Build →',
+  },
 ];
 const buildDirections: BuildDirectionCardProps[] = [
   {

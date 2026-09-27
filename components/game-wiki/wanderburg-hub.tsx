@@ -5,7 +5,7 @@ import { wanderburgWikiConfig } from './wanderburg-config';
 const categories: GameWikiLink[] = [
   { href: '/games/wanderburg/beginner-guide', label: 'Beginner Guide', description: 'First-run priorities, Module slots, upgrades and Nitro.', count: '1 guide', backgroundImage: '/images/games/wanderburg/hub-cards/beginner-guide.png' },
   { href: '/games/wanderburg/reference', label: 'Reference', description: 'Core systems, progression and version notes.', count: '1 guide', backgroundImage: '/images/games/wanderburg/hub-cards/reference.png' },
-  { href: '/games/wanderburg/builds', label: 'Builds', description: 'Practical build directions and play styles.', count: '3 guides', backgroundImage: '/images/games/wanderburg/hub-cards/builds.png' },
+  { href: '/games/wanderburg/builds', label: 'Builds', description: 'Practical build directions and play styles.', count: '4 guides', backgroundImage: '/images/games/wanderburg/hub-cards/builds.png' },
   { href: '/games/wanderburg/wiki/modules', label: 'Modules', description: 'Module slots, effects and reference values (0.9.14).', count: '20 Modules', backgroundImage: '/images/games/wanderburg/hub-cards/modules.png' },
   { href: '/games/wanderburg/wiki/captains', label: 'Captains', description: 'Current Captain effects and drawbacks.', count: '14 Captains', backgroundImage: '/images/games/wanderburg/hub-cards/captains.png' },
   { href: '/games/wanderburg/wiki/artifacts', label: 'Artifacts', description: 'Starter Artifact effects and reroll rules.', count: '21 Starter Artifacts', backgroundImage: '/images/games/wanderburg/hub-cards/artifacts.png' },
@@ -14,6 +14,7 @@ const categories: GameWikiLink[] = [
 ];
 
 const latest = [
+  { href: '/games/wanderburg/builds/friendly-units-build', title: 'Wanderburg Friendly Units Build Guide (0.9.14)', date: '2026-09-27' },
   { href: '/games/wanderburg/builds/ram-build', title: 'Wanderburg RAM Build Guide (0.9.14)', date: '2026-09-27' },
   { href: '/games/wanderburg/builds/cannon-build', title: 'Wanderburg Cannon Build Guide (0.9.14)', date: '2026-09-26' },
   { href: '/games/wanderburg/wiki/vehicles', title: 'Wanderburg Vehicles Wiki (0.9.14)', date: '2026-09-25' },
