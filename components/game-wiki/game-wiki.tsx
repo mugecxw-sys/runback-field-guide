@@ -135,7 +135,7 @@ export function GameWikiCategoryCard({ item }: { item: GameWikiLink }) {
   );
 }
 
-export function GameWikiArticleLayout({ config, activeHref, title, description, publishedAt, modifiedAt, reviewedAt, toc, children, schema, label = 'Reference', labelTone = 'verified', coverage, footerNote = 'RUNBACK reference' }: { config: GameWikiConfig; activeHref: string; title: string; description: string; publishedAt?: string; modifiedAt?: string; reviewedAt?: string; toc: string[]; children: ReactNode; schema: unknown; label?: string; labelTone?: 'verified' | 'neutral'; coverage?: string; footerNote?: string }) {
+export function GameWikiArticleLayout({ config, activeHref, title, description, publishedAt, modifiedAt, reviewedAt, toc, children, schema, label = 'Reference', labelTone = 'verified', coverage, footerNote = 'RUNBACK reference', breadcrumbItems }: { config: GameWikiConfig; activeHref: string; title: string; description: string; publishedAt?: string; modifiedAt?: string; reviewedAt?: string; toc: string[]; children: ReactNode; schema: unknown; label?: string; labelTone?: 'verified' | 'neutral'; coverage?: string; footerNote?: string; breadcrumbItems?: { label: string; href?: string }[] }) {
   const related = config.navigationSections.flatMap((section) => section.links).filter((item) => item.href !== activeHref);
   const lastReviewed = reviewedAt ?? modifiedAt ?? publishedAt;
   const tocLinks = toc.map((item) => ({ label: item, href: '#' + item.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') }));
@@ -154,7 +154,7 @@ export function GameWikiArticleLayout({ config, activeHref, title, description, 
         <article className="min-w-0">
           <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
           <GameWikiMobileNav config={config} activeHref={activeHref} />
-          <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[#aeb7bc]"><a href="/">Home</a><span>›</span><a href="/#game-library">Games</a><span>›</span><a href={config.hubHref}>{config.gameName}</a><span>›</span><span aria-current="page">{title}</span></nav>
+          <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[#aeb7bc]">{breadcrumbItems ? breadcrumbItems.map((item, index) => <span key={item.label} className="contents">{index > 0 && <span aria-hidden="true">›</span>}{item.href ? <a href={item.href}>{item.label}</a> : <span aria-current="page">{item.label}</span>}</span>) : <><a href="/">Home</a><span>›</span><a href="/#game-library">Games</a><span>›</span><a href={config.hubHref}>{config.gameName}</a><span>›</span><span aria-current="page">{title}</span></>}</nav>
           <header className="mt-5 border-b border-[#b99256]/25 pb-6">
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#dca464]">RUNBACK → {config.gameName} Wiki</p>
             <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight text-[#fff2df] sm:text-4xl">{title}</h1>

@@ -8,6 +8,27 @@ export type WanderburgWikiPage = {
 
 export const wanderburgWikiPages: WanderburgWikiPage[] = [
   {
+    title: 'Wanderburg Boss Guide (0.9.14)',
+    href: '/games/wanderburg/boss-guide',
+    summary: 'Short Wanderburg boss guides for Early Access 0.9.14, with practical dodge tips, screenshots and short gameplay videos.',
+    text: 'wanderburg boss guide glasslands desert taurus drillus fresensburg bombardia the dark tower king klopp rust shield saturna raketa the ancient',
+    publishedAt: '2026-09-29T00:00:00.000Z',
+  },
+  {
+    title: 'Wanderburg Glasslands Boss Guide (0.9.14)',
+    href: '/games/wanderburg/boss-guide/glasslands',
+    summary: 'Short Glasslands boss guides with dodge tips, screenshots and gameplay clips for four bosses.',
+    text: 'wanderburg glasslands boss taurus drillus fresensburg bombardia the dark tower watch dodge attack',
+    publishedAt: '2026-09-29T00:00:00.000Z',
+  },
+  {
+    title: 'Wanderburg Desert Boss Guide (0.9.14)',
+    href: '/games/wanderburg/boss-guide/desert',
+    summary: 'Short Desert boss guides with dodge tips, screenshots and gameplay clips for four bosses.',
+    text: 'wanderburg desert boss king klopp rust shield saturna raketa the ancient watch dodge attack',
+    publishedAt: '2026-09-29T00:00:00.000Z',
+  },
+  {
     title: 'Wanderburg Vehicle Guide: Spiderburg vs Tankenburg vs Wanderturm',
     href: '/games/wanderburg/vehicle-guide',
     summary: 'A short tested comparison of Wanderburg Vehicle handling, Module slots and play styles.',
