@@ -29,6 +29,13 @@ export const wanderburgWikiPages: WanderburgWikiPage[] = [
     publishedAt: '2026-09-29T00:00:00.000Z',
   },
   {
+    title: 'Wanderburg Dark Forest Boss Guide (0.9.14)',
+    href: '/games/wanderburg/boss-guide/dark-forest',
+    summary: 'Short Dark Forest boss guides with dodge tips, screenshots and gameplay clips for four bosses.',
+    text: 'wanderburg dark forest boss guide schnittburg boss schnappenstein castle boss rammi boss gunnings watch dodge attack rotating sweep fire zones mortar markers side cannons top cannon',
+    publishedAt: '2026-09-29T00:00:00.000Z',
+  },
+  {
     title: 'Wanderburg Vehicle Guide: Spiderburg vs Tankenburg vs Wanderturm',
     href: '/games/wanderburg/vehicle-guide',
     summary: 'A short tested comparison of Wanderburg Vehicle handling, Module slots and play styles.',
