@@ -29,13 +29,14 @@ function recordIcon(entry: SephiriaRecord) {
 
 const normalize = (value: string) => value.normalize('NFKD').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 
-export function SephiriaDatabaseIndex({ title, entries, filterTypes = false }: { title: string; entries: SephiriaRecord[]; filterTypes?: boolean }) {
+export function SephiriaDatabaseIndex({ title, entries, relationEntries = [], filterTypes = false }: { title: string; entries: SephiriaRecord[]; relationEntries?: SephiriaRecord[]; filterTypes?: boolean }) {
   const [query, setQuery] = useState('');
   const [type, setType] = useState('All');
   const results = useMemo(() => entries.filter((entry) => {
     const haystack = normalize([entry.name, ...entry.aliases, ...entry.tags].join(' '));
     return (!query || haystack.includes(normalize(query))) && (type === 'All' || entry.category === type);
   }), [entries, query, type]);
+  const relations = new Map(relationEntries.map((entry) => [entry.id, entry]));
 
   return (
     <section aria-label={title} className="mt-7 min-w-0">
@@ -54,10 +55,19 @@ export function SephiriaDatabaseIndex({ title, entries, filterTypes = false }: {
       <div className="grid min-w-0 gap-3 sm:grid-cols-2 xl:grid-cols-3">
         {results.map((entry) => {
           const Icon = recordIcon(entry);
+          const isWeapon = entry.category === 'Weapon';
+          const isUpgrade = entry.category === 'Weapon Upgrade';
+          const relatedWeapon = isUpgrade ? entry.relatedIds.map((id) => relations.get(id)).find((item) => item?.category === 'Weapon') : undefined;
+          const upgrades = isWeapon ? (entry.upgradeIds ?? []).map((id) => relations.get(id)).filter((item): item is SephiriaRecord => item?.category === 'Weapon Upgrade') : [];
           return <article key={entry.id} id={entry.slug} className="min-w-0 border border-[#b99256]/25 bg-[#17201d] p-4">
             <div className="flex min-w-0 items-start gap-3"><span aria-hidden="true" className="flex h-9 w-9 shrink-0 items-center justify-center border border-[#b99256]/25 bg-[#101714] text-[#dca464]"><Icon className="h-4 w-4" /></span><div className="min-w-0"><p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#b99256]">{entry.category}</p><h3 className="mt-1 break-words font-serif text-lg font-semibold leading-tight text-[#fff2df]">{entry.name}</h3></div></div>
             {entry.aliases.length > 0 && <p className="mt-3 break-words text-sm text-[#bdc6c5]">Also called: {entry.aliases.join(', ')}</p>}
-            {entry.effectCurrent && <p className="mt-3 break-words text-sm leading-6 text-[#e1e6e8]">{entry.effectCurrent}</p>}
+            {isWeapon && entry.weaponRole && <p className="mt-3 break-words text-sm leading-6 text-[#e1e6e8]"><span className="font-semibold text-[#fff2df]">Combat Style: </span>{entry.weaponRole}</p>}
+            {isUpgrade && relatedWeapon && <p className="mt-3 break-words text-sm leading-6 text-[#e1e6e8]"><span className="font-semibold text-[#fff2df]">Weapon: </span><a href={`/games/sephiria/wiki/weapons#${relatedWeapon.slug}`} className="text-[#dca464] hover:text-[#ff9a7a] focus-visible:outline focus-visible:outline-2">{relatedWeapon.name}</a></p>}
+            {entry.effectCurrent && <p className="mt-3 break-words text-sm leading-6 text-[#e1e6e8]">{isUpgrade && <span className="font-semibold text-[#fff2df]">Effect: </span>}{entry.effectCurrent}</p>}
+            {(isWeapon || isUpgrade) && entry.mechanicCurrent && <p className="mt-3 break-words text-sm leading-6 text-[#e1e6e8]"><span className="font-semibold text-[#fff2df]">Mechanic: </span>{entry.mechanicCurrent}</p>}
+            {(isWeapon || isUpgrade) && entry.unlockCurrent && <p className="mt-3 break-words text-sm leading-6 text-[#e1e6e8]"><span className="font-semibold text-[#fff2df]">Unlock: </span>{entry.unlockCurrent}</p>}
+            {upgrades.length > 0 && <div className="mt-3 border-t border-white/10 pt-3"><p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#dca464]">Related Weapon Upgrades</p><ul className="mt-2 space-y-2">{upgrades.map((upgrade) => <li key={upgrade.id} className="break-words text-sm leading-5"><a href={`/games/sephiria/wiki/weapon-upgrades#${upgrade.slug}`} className="text-[#dca464] hover:text-[#ff9a7a] focus-visible:outline focus-visible:outline-2">{upgrade.name}</a></li>)}</ul></div>}
             {entry.patchHistory.length > 0 && <div className="mt-3 border-t border-white/10 pt-3"><p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#dca464]">Patch History</p><ul className="mt-2 space-y-2">{entry.patchHistory.map((item) => <li key={item.version + item.text} className="text-sm leading-5 text-[#bdc6c5]"><span className="font-semibold text-[#fff2df]">{item.version}:</span> {item.text}</li>)}</ul></div>}
           </article>;
         })}
