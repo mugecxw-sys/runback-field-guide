@@ -10,6 +10,10 @@ export type SephiriaRecord = {
   effectCurrent: string | null;
   rarity: string | null;
   weapon: string | null;
+  weaponRole?: string | null;
+  mechanicCurrent?: string | null;
+  unlockCurrent?: string | null;
+  upgradeIds?: string[];
   patchHistory: SephiriaPatchNote[];
   relatedIds: string[];
 };
@@ -42,21 +46,155 @@ const record = (
 });
 
 export const sephiriaWeapons = [
-  record('WPN-01', 'Sword & Shield', 'Weapon', { tags: ['weapon', 'sword', 'shield'] }),
-  record('WPN-02', 'Greatsword', 'Weapon', { aliases: ['Great Sword'], tags: ['weapon', 'greatsword'] }),
-  record('WPN-03', 'Crossbow', 'Weapon', { tags: ['weapon', 'ranged'] }),
-  record('WPN-04', 'Dagger', 'Weapon', { tags: ['weapon', 'dagger'] }),
-  record('WPN-05', 'Blade', 'Weapon', { aliases: ['Katana'], tags: ['weapon', 'blade'] }),
-  record('WPN-06', 'Staff', 'Weapon', { tags: ['weapon', 'staff', 'grimoire'] }),
+  record('WPN-01', 'Sword & Shield', 'Weapon', {
+    tags: ['weapon', 'sword', 'shield', 'block', 'cleave'],
+    weaponRole: 'Melee guarding and Cleave.',
+    mechanicCurrent: 'Use Block to guard attacks and Cleave for your Special Attack.',
+    upgradeIds: ['WUP-02', 'WUP-03', 'WUP-04'],
+  }),
+  record('WPN-02', 'Greatsword', 'Weapon', {
+    aliases: ['Great Sword'], tags: ['weapon', 'greatsword', 'whirlwind'],
+    weaponRole: 'Melee attacks and charged Whirlwind.',
+    mechanicCurrent: 'Whirlwind is a charged Special Attack. Upgrades can change its charge speed or replace the Special Attack.',
+    upgradeIds: ['WUP-05', 'WUP-12', 'WUP-13'],
+  }),
+  record('WPN-03', 'Crossbow', 'Weapon', {
+    tags: ['weapon', 'ranged', 'reload', 'ammunition'],
+    weaponRole: 'Ranged attacks with ammunition and Reload.',
+    mechanicCurrent: 'The Crossbow uses ammunition and requires Reload. Its upgrade branches can modify ammunition or Special Attacks such as Ammo Compression.',
+    unlockCurrent: 'Unlock through a Destiny Inscription quest.',
+    upgradeIds: ['WUP-06', 'WUP-17'],
+  }),
+  record('WPN-04', 'Dagger', 'Weapon', {
+    tags: ['weapon', 'dagger', 'dash attack', 'parry', 'fury'],
+    weaponRole: 'Melee Dash Attack, Parry and Fury.',
+    mechanicCurrent: 'Dash Attack can chain into Special Attack: Parry or Special Attack: Fury.',
+    upgradeIds: ['WUP-18'],
+  }),
+  record('WPN-05', 'Blade', 'Weapon', {
+    aliases: ['Katana'], tags: ['weapon', 'blade', 'sheath', 'unsheath'],
+    weaponRole: 'Melee attacks alternating between sheathed and unsheathed states.',
+    mechanicCurrent: 'Alternate between Sheath and Unsheath. Both actions have an invincibility window; upgrades can replace Sheath with another Special Attack.',
+    unlockCurrent: 'Unlock through Destiny Inscription.',
+    upgradeIds: ['WUP-07'],
+  }),
+  record('WPN-06', 'Staff', 'Weapon', {
+    tags: ['weapon', 'staff'],
+    unlockCurrent: 'Unlock through Destiny Inscription.',
+    upgradeIds: [],
+  }),
 ];
 
 export const sephiriaWeaponUpgrades = [
-  'Glacial Blade', 'Blinding Silence', 'Garden of Needle Ice', 'Prismatic Magic Wand',
-  'Bloodletting Gearblade', 'M-9200', "Cerulean Cloud Sword 'Arges'", 'Incendium',
-  'Solis Missio', 'Flame Eater: Haetae', 'Hypersensitivity', 'Lightning Greatsword “S3G”',
-  'Greatsword of Exorcism', 'Mischievous Prank', 'Red Snake Crush', 'Solis Cineris',
-  'Colossal Crossbow: Rapid Freeze Crystal', 'Lightning Dagger',
-].map((name, index) => record(`WUP-${String(index + 1).padStart(2, '0')}`, name, 'Weapon Upgrade', { tags: ['weapon upgrade', 'upgrade'] }));
+  record('WUP-01', 'Glacial Blade', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'frost relic'],
+    patchHistory: [{ version: '1.0.19', text: 'Scabbard of Exorcism gained a smaller projectile while retaining 50% faster charging. This bonus multiplies with Frost Relic charge speed.' }],
+  }),
+  record('WUP-02', 'Blinding Silence', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'lightning', 'cleave'],
+    weapon: 'Sword & Shield', relatedIds: ['WPN-01'],
+    effectCurrent: "Lightning Damage +5. Thunder's Earring gains 1 attack and 100 damage.",
+    mechanicCurrent: "Special Attack: Cleave immediately triggers Thunder's Earring.",
+  }),
+  record('WUP-03', 'Garden of Needle Ice', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'cold', 'ice vine'],
+    weapon: 'Sword & Shield', relatedIds: ['WPN-01'],
+    effectCurrent: 'Cold Damage +5.',
+    mechanicCurrent: 'Activated Ice Vine orbits you and has no cooldown.',
+  }),
+  record('WUP-04', 'Prismatic Magic Wand', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'magic missile', 'elemental', 'chaos'],
+    weapon: 'Sword & Shield', relatedIds: ['WPN-01'],
+    effectCurrent: 'Weapon Attack fires Magic Missiles.',
+    mechanicCurrent: 'Missiles use your highest-damage element. A tie between two or more highest elements produces Chaos Damage.',
+    patchHistory: [{ version: '1.0.31', text: 'Replaced the Magic Wand upgrade.' }],
+  }),
+  record('WUP-05', 'Bloodletting Gearblade', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'bloodletting', 'hp'],
+    weapon: 'Greatsword', relatedIds: ['WPN-02'],
+    effectCurrent: 'Bloodletting fixes Max HP and converts excess HP at activation into damage. Converted current HP returns when the effect ends.',
+    mechanicCurrent: 'Special Attack: Bloodletting replaces Reassemble.',
+  }),
+  record('WUP-06', 'M-9200', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'ammo compression', 'enhanced round'],
+    weapon: 'Crossbow', relatedIds: ['WPN-03'],
+    effectCurrent: 'Enhanced Rounds deal 20% more damage.',
+    mechanicCurrent: 'Ammo Compression with at least 10 rounds creates a larger Enhanced Round.',
+  }),
+  record('WUP-07', "Cerulean Cloud Sword 'Arges'", 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'lightning', 'cloud slash', 'residual lightning'],
+    weapon: 'Blade', relatedIds: ['WPN-05'],
+    effectCurrent: 'Weapon Attack damage is reduced by 20% and scales with Lightning Damage. Cloud Slash costs 5 MP. Its base power rises every 5 Residual Lightning stacks (200/220/250/300% of Lightning Damage), with an additional 5% damage per stack.',
+    mechanicCurrent: 'Cloud Slash replaces Sheath and consumes all Residual Lightning for a wide frontal slash. Each independent Storm Cloud lightning strike grants 1 stack, up to 20.',
+  }),
+  record('WUP-08', 'Incendium', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'fire'],
+    patchHistory: [{ version: '1.0.19', text: 'Changed from Fire Damage +5 to Weapon Attack damage reduced by 15% and based on Fire Damage.' }],
+  }),
+  record('WUP-09', 'Solis Missio', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'reignite', 'solar blade'],
+    patchHistory: [
+      { version: '1.0.19', text: 'Reignite throws Solar Blades every 0.12 seconds instead of every 0.2 seconds.' },
+      { version: '1.0.31', text: 'Reignite time changed from counting down immediately to counting down only during Block.' },
+    ],
+  }),
+  record('WUP-10', 'Flame Eater: Haetae', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'flame strike'],
+    patchHistory: [
+      { version: '0.11.3', text: 'The basic Slam became Normal Attack: Flame Strike and stopped consuming MP.' },
+      { version: '1.0.19', text: 'Base Attack Speed increased.' },
+    ],
+  }),
+  record('WUP-11', 'Hypersensitivity', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'whirlwind'],
+    patchHistory: [{ version: '1.0.19', text: 'The 20% Special Attack Damage bonus became a 20% Whirlwind damage bonus. The 50% faster Whirlwind charging remained.' }],
+  }),
+  record('WUP-12', 'Lightning Greatsword “S3G”', 'Weapon Upgrade', {
+    aliases: ['Lightning Greatsword S3G'],
+    tags: ['weapon upgrade', 'upgrade', 'lightning', 'electrocution'],
+    weapon: 'Greatsword', relatedIds: ['WPN-02'],
+    patchHistory: [
+      { version: '0.11.0', text: 'Fixed Electrocution extra damage applying additively instead of multiplicatively.' },
+      { version: '1.0.19', text: 'The Electrocution extra-damage bonus on Weapon Attack changed from 20% to 33%.' },
+    ],
+  }),
+  record('WUP-13', 'Greatsword of Exorcism', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'greatsword', 'scabbard of exorcism'],
+    weapon: 'Greatsword', relatedIds: ['WPN-02'],
+    patchHistory: [
+      { version: '0.12.0', text: 'Scabbard of Exorcism charge speed changed from 50% to 80%.' },
+      { version: '1.0.19', text: 'Fixed incorrect application of some stats.' },
+    ],
+  }),
+  record('WUP-14', 'Mischievous Prank', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'leaf explosion'],
+    patchHistory: [{ version: '1.0.19', text: 'Replaced the -20% Critical Chance / +25% Weapon Damage effect with Special Attack: Leaf Explosion, adding Normal Attack Damage to its damage.' }],
+  }),
+  record('WUP-15', 'Red Snake Crush', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'red snake eyes'],
+    patchHistory: [{ version: '1.0.19', text: 'Red Snake Eyes damage bonus changed from 20% to 33%; Normal Attack reduces its cooldown by 2.5 seconds.' }],
+  }),
+  record('WUP-16', 'Solis Cineris', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'solar blade'],
+    patchHistory: [
+      { version: '0.10.6', text: 'Additional Solar Blade triggers were restricted to Weapon Attack.' },
+      { version: '1.0.19', text: 'The Solar Blade Critical Damage bonus changed from 33% to 36%, retaining 2 additional Solar Blade activations on Weapon Attack.' },
+    ],
+  }),
+  record('WUP-17', 'Colossal Crossbow: Rapid Freeze Crystal', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'crossbow', 'frost relic', 'frost veil'],
+    weapon: 'Crossbow', relatedIds: ['WPN-03'],
+    patchHistory: [
+      { version: '1.0.19', text: 'Replaced the effect preventing arrow consumption during Frost Veil with Frost Relic damage +20%.' },
+      { version: '1.0.31', text: 'Replaced the Frost Relic damage bonus with Frost Relic: Frost Veil, allowing Normal Attack to benefit from Frost Relic enhancements.' },
+    ],
+  }),
+  record('WUP-18', 'Lightning Dagger', 'Weapon Upgrade', {
+    tags: ['weapon upgrade', 'upgrade', 'dagger', 'lightning'],
+    weapon: 'Dagger', relatedIds: ['WPN-04'],
+    patchHistory: [{ version: '1.0.19', text: 'Extra damage on Weapon Attack changed from 20% to 25% of Lightning Damage.' }],
+  }),
+];
 
 const artifactNames = [
   'Frozen Egg', 'Devotion Insignia', 'Eternal Winter', 'Electro Chakram', 'Shield Earrings',
@@ -144,8 +282,8 @@ const publishedAt = '2026-09-26T00:00:00.000Z';
 export const sephiriaWikiPages: SephiriaWikiPage[] = [
   { title: 'Sephiria', href: '/games/sephiria', summary: 'Game overview and entry to the Sephiria Wiki.', publishedAt, group: 'game' },
   { title: 'Sephiria Wiki', href: '/games/sephiria/wiki', summary: 'Browse weapons, Artifacts, systems and other Sephiria reference pages.', publishedAt, group: 'wiki' },
-  { title: 'Weapons', href: '/games/sephiria/wiki/weapons', summary: 'Six weapon names and known aliases.', publishedAt, group: 'category' },
-  { title: 'Weapon Upgrades', href: '/games/sephiria/wiki/weapon-upgrades', summary: 'An index of named weapon upgrades.', publishedAt, group: 'category' },
+  { title: 'Weapons', href: '/games/sephiria/wiki/weapons', summary: 'Six weapon branches, combat mechanics, unlock routes and related upgrades.', publishedAt, group: 'category' },
+  { title: 'Weapon Upgrades', href: '/games/sephiria/wiki/weapon-upgrades', summary: 'Weapon upgrade effects, mechanics, weapon branches and version changes.', publishedAt, group: 'category' },
   { title: 'Artifacts', href: '/games/sephiria/wiki/artifacts', summary: 'Artifact index and named version changes.', publishedAt, group: 'category' },
   { title: 'Tablets', href: '/games/sephiria/wiki/tablets', summary: 'Tablet names and documented pattern or rarity changes.', publishedAt, group: 'category' },
   { title: 'Costumes', href: '/games/sephiria/wiki/costumes', summary: 'Costume index and documented version history.', publishedAt, group: 'category' },

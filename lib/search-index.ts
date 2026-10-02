@@ -64,7 +64,7 @@ export const searchIndex = [
       kind: entry.category,
       href: `/games/sephiria/wiki/${categoryPath[entry.category]}#${entry.slug}`,
       summary: entry.category,
-      text: [...entry.aliases, ...entry.tags].join(' '),
+      text: [...entry.aliases, ...entry.tags, ...(entry.category === 'Weapon' || entry.category === 'Weapon Upgrade' ? [entry.weapon, entry.weaponRole, entry.effectCurrent, entry.mechanicCurrent, entry.unlockCurrent].filter(Boolean) : [])].join(' '),
       date: '2026-09-26T00:00:00.000Z',
     };
   }),
