@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { GameLibraryGrid } from '@/components/game-library-grid';
+import { HomepagePrototype } from '@/components/homepage-prototype';
 import { searchIndex } from '@/lib/search-index';
 import { siteUrl } from '@/lib/repo-guide-pages';
 export const metadata: Metadata = {
@@ -58,94 +58,12 @@ export default function Home() {
     ],
   };
   return (
-    <main className="mx-auto max-w-6xl px-5 py-10 text-[#e1e6e8]">
+    <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
-      <section>
-        <h1 className="max-w-4xl text-4xl font-semibold leading-tight tracking-tight sm:text-5xl">
-          Roguelike Game Guides &amp; Walkthroughs
-        </h1>
-        <p className="mt-4 text-xl text-[#ff9a7a]">
-          Find the route. Make the run count.
-        </p>
-        <search className="mt-6 max-w-2xl">
-          <form
-            action="/search"
-            method="get"
-            className="flex items-center rounded-xl border border-white/20 bg-[#192126] p-1 text-[#e1e6e8] focus-within:border-[#ff8662]"
-          >
-            <label htmlFor="home-search" className="sr-only">
-              Search games, bosses, builds, items, maps and unlocks
-            </label>
-            <input
-              id="home-search"
-              name="q"
-              type="search"
-              autoComplete="off"
-              placeholder="Search games, bosses, builds, items, maps and unlocks"
-              className="min-w-0 flex-1 bg-transparent px-3 py-3 text-base text-[#e1e6e8] outline-none placeholder:text-[#aeb7bc]"
-            />
-            <button
-              type="submit"
-              className="shrink-0 rounded-lg px-3 py-3 text-[#ff9a7a] hover:bg-white/[0.06] hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]"
-            >
-              Search →
-            </button>
-          </form>
-        </search>
-      </section>
-      <GameLibraryGrid />
-      <section id="guides" className="mt-12">
-        <h2 className="text-2xl font-semibold">Featured guides</h2>
-        <p className="mt-2 text-sm text-[#aeb7bc]">
-          Editor&apos;s starting points — not a traffic ranking.
-        </p>
-        <div className="mt-5 grid gap-4 md:grid-cols-2">
-          {picks.map(
-            (g) =>
-              g && (
-                <a
-                  key={g.href}
-                  href={g.href}
-                  className="rounded-xl border border-white/10 p-5 hover:border-[#ff8662]"
-                >
-                  <p className="text-sm text-[#9fd7ba]">{g.game}</p>
-                  <h3 className="mt-2 text-lg font-semibold">{g.title}</h3>
-                  <p className="mt-3 text-sm leading-6 text-[#aeb7bc]">
-                    {g.summary}
-                  </p>
-                </a>
-              ),
-          )}
-        </div>
-      </section>
-      <section id="latest" className="mt-12">
-        <h2 className="text-2xl font-semibold">Latest guides</h2>
-        <div className="mt-5 divide-y divide-white/10">
-          {latest.map((g) => (
-            <a
-              key={g.href}
-              href={g.href}
-              className="flex flex-wrap justify-between gap-3 py-5 hover:text-[#ff9a7a]"
-            >
-              <span>
-                {g.game} · {g.title}
-              </span>
-              <time className="text-sm text-[#aeb7bc]" dateTime={g.date}>
-                {g.date.slice(0, 10)}
-              </time>
-            </a>
-          ))}
-        </div>
-      </section>
-      <footer className="mt-12 flex flex-wrap gap-5 border-t border-white/10 py-6 text-sm text-[#aeb7bc]">
-        <a href="/about">About</a>
-        <a href="/editorial">Editorial policy</a>
-        <a href="/contact">Contact</a>
-        <a href="/privacy">Privacy</a>
-      </footer>
-    </main>
+      <HomepagePrototype featured={picks.filter((guide) => guide !== undefined)} latest={latest} />
+    </>
   );
 }
