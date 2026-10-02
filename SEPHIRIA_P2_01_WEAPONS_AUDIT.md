@@ -106,6 +106,21 @@ These are optional high-value checks only if already unlocked and available in t
 
 ## QA
 
+### Final Review presentation correction — 2026-10-03
+
+- Patch History retained internally: all `patchHistory` arrays, internal source decisions and the audit tables above remain unchanged.
+- Patch History hidden from public Weapons / Weapon Upgrades cards only. `showPatchHistory` defaults to true, preserving other Sephiria categories.
+- 18 Weapon Upgrades = current RUNBACK database records, not the game's total upgrade count. The unfiltered list displays `18 entries`; filtered results display `<matches> of 18 entries`.
+- Official game scope is 200+ upgrades across six weapon branches, as specified in Final Review. No new Overview statistic or public game-data claim is added in this correction.
+- Overview has no Weapon Upgrades count; the Wiki Hub and upgrade metadata do not claim that 18 is the game's total.
+- All P2-01 gameplay records and conclusions remain unchanged: 6 weapons, 18 upgrade records, 10 assigned weapons, 6 current effects, 6 upgrade mechanics and 13 internal Patch History records. Blade / Katana stays one weapon; Staff stays separate from Grimoires; null fields and the three optional manual checks are unchanged.
+- Final Review QA: changed-files lint, typecheck and build PASS using the project's installed local tools. Full-project lint remains EXISTING_27_UNRELATED, all in unchanged files.
+- Weapons / Weapon Upgrades PASS at 1440 and 390: no public history headings or historical version text, current effects/mechanics intact, all 20 relationship anchors valid, and no horizontal page overflow (document widths 1425 / 375; viewports 1440 / 390). Alias filtering, both relationship directions and expanded mobile navigation also PASS.
+- Upgrade filtering PASS: `18 entries` initially and after clearing; `4 of 18 entries` for Lightning; `0 of 18 entries` for no matches. Overview / Wiki Hub and metadata do not expose 18 as a game-total upgrade statistic.
+- Regression PASS: all six other Sephiria category card HTML outputs are identical to commit `11e4b4e`; Artifacts / Tablets / Costumes retain their public history labels (2 / 6 / 7). Those three pages and Wanderburg Modules / Captains / Artifacts pass local HTTP and 1440 / 390 checks. No Wanderburg source or shared styling is changed.
+
+### Initial P2-01 verification — 2026-10-02
+
 - Changed-files lint: PASS for all five modified TypeScript/TSX source files.
 - Full-project lint: EXISTING_27_UNRELATED; the same 27 diagnostics occur in unchanged files. No unrelated lint fixes are included.
 - Typecheck: PASS.
