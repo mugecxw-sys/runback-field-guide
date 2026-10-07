@@ -104,7 +104,7 @@ function CategoryPage({ section }: { section: string }) {
   return <>
     {section === 'hard-mode' && <><Subheading>Hard Mode Overview</Subheading><Paragraph>Hard Mode Elements: 18. Maximum Hard Mode Level: 60. The entries below are named elements.</Paragraph></>}
     {section === 'tablets' && <TabletPatternGrid pattern={null} />}
-    <SephiriaDatabaseIndex title={pageTitle[section]} entries={entries} filterTypes={section === 'bosses'} />
+    <SephiriaDatabaseIndex title={pageTitle[section]} entries={entries} relationEntries={section === 'weapons' ? sephiriaWeaponUpgrades : section === 'weapon-upgrades' ? sephiriaWeapons : []} filterTypes={section === 'bosses'} showPatchHistory={section !== 'weapons' && section !== 'weapon-upgrades'} countLabel={section === 'weapon-upgrades' ? 'entries' : undefined} />
     {section === 'grimoires' && <>
       <Subheading>Grimoire System</Subheading><Paragraph>Staff and Grimoires are separate systems. Grimoires use active actions, MP is involved, and relevant stats include Grimoire Damage, Grimoire Haste and MP Cost.</Paragraph>
       <Subheading>Related Records</Subheading><Paragraph>Known related records: Tome of Mimicry, Rylie’s Pocket Watch, Academy Fountain Pen, Standards of Magic and Empty Hilt.</Paragraph>
