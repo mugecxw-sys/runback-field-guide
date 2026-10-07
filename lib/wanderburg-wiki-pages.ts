@@ -71,6 +71,13 @@ export const wanderburgWikiPages: WanderburgWikiPage[] = [
     publishedAt: '2026-09-27T00:00:00.000Z',
   },
   {
+    title: 'Wanderburg Magic Build Guide (0.9.14)',
+    href: '/games/wanderburg/builds/magic-build',
+    summary: 'A tested Wanderburg Magic build centered on Lightning Mage, with upgrade priorities, Force Mage support, Legendary upgrades and boss tips.',
+    text: 'wanderburg magic build lightning mage force mage wizard crew wanderturm norbert the normal repair wrench auto attack cooldown thunderstorm ultra lightning dash boss tested',
+    publishedAt: '2026-10-07T00:00:00.000Z',
+  },
+  {
     title: 'Wanderburg Modules Wiki (0.9.14)',
     href: '/games/wanderburg/wiki/modules',
     summary:

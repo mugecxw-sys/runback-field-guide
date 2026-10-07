@@ -53,6 +53,17 @@ const testedBuilds: TestedBuildCardProps[] = [
     result: 'Tested — Clear',
     cta: 'View Friendly Units Build →',
   },
+  {
+    title: 'Magic Build',
+    href: '/games/wanderburg/builds/magic-build',
+    vehicle: 'Wanderturm',
+    captain: 'Norbert The Normal',
+    core: 'Lightning Mage + Force Mage',
+    playstyle: 'Automatic Magic damage while driving',
+    notes: ['Prioritize Lightning Mage. Force Mage is support, and other slots can stay flexible.'],
+    result: 'Tested',
+    cta: 'View Magic Build →',
+  },
 ];
 const buildDirections: BuildDirectionCardProps[] = [
   {
@@ -125,7 +136,7 @@ function MarkdownBody() {
     if (line === '<!-- TESTED_BUILDS_CARDS -->') {
       blocks.push(<section key={index} aria-labelledby="tested-builds">
         <h2 id="tested-builds" className="mt-10 scroll-mt-24 text-2xl font-semibold">Tested Builds</h2>
-        <p className="mt-5 leading-8 text-[#c7d0d5]">These builds were played and cleared in the current 0.9.14 client.</p>
+        <p className="mt-5 leading-8 text-[#c7d0d5]">These builds were played in the 0.9.14 client. Results are listed on each card.</p>
         <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
           {testedBuilds.map(build => <TestedBuildCard key={build.href} {...build} />)}
         </div>
