@@ -2,6 +2,7 @@
 import { useMemo, useState } from 'react';
 import { searchGuides, searchIndex } from '@/lib/search-index';
 import { gameLibraries } from '@/lib/game-catalog';
+import { libraryStatistics } from '@/lib/library-statistics';
 
 const popularHrefs = [
   '/guides/first-run-guide',
@@ -42,20 +43,16 @@ export function GlobalSearch({ initialQuery = '' }: { initialQuery?: string }) {
         .slice(0, 4),
     [],
   );
-  const guideCount = searchIndex.filter(
-    (item) => item.kind !== 'Game' && item.kind !== 'Enemy',
-  ).length;
-  const enemyCount = searchIndex.filter((item) => item.kind === 'Enemy').length;
   return (
     <section>
       <p className="mt-4 text-sm text-[#aeb7bc]">
-        {guideCount} Guides · {gameLibraries.length} Games · {enemyCount}{' '}
-        Enemies
+        {libraryStatistics.searchableEntryCount} Searchable Guide &amp; Reference Entries ·{' '}
+        {libraryStatistics.gameCount} Games · {libraryStatistics.enemyCount} Enemies
       </p>
       <div className="mt-6 grid gap-4 sm:grid-cols-[1fr_240px]">
         <div>
           <label htmlFor="search-input" className="mb-2 block text-sm">
-            Search all guides
+            Search guides &amp; references
           </label>
           <input
             id="search-input"
