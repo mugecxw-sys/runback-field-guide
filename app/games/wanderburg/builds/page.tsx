@@ -58,7 +58,7 @@ const testedBuilds: TestedBuildCardProps[] = [
     href: '/games/wanderburg/builds/magic-build',
     vehicle: 'Wanderturm',
     captain: 'Norbert The Normal',
-    core: 'Lightning Mage + Force Mage',
+    core: 'Lightning Mage',
     playstyle: 'Automatic Magic damage while driving',
     notes: ['Prioritize Lightning Mage. Force Mage is support, and other slots can stay flexible.'],
     result: 'Tested',
@@ -215,7 +215,7 @@ export default function WanderburgBuilds() {
       },
     ],
   };
-  return <GameWikiArticleLayout config={wanderburgWikiConfig} activeHref={href} title={h1} description={intro} publishedAt={publishedAt} reviewedAt="2026-09-22T00:00:00.000Z" toc={toc} schema={schema} label="Build library">
+  return <GameWikiArticleLayout config={wanderburgWikiConfig} activeHref={href} title={h1} description={intro} publishedAt={publishedAt} reviewedAt="2026-10-07T00:00:00.000Z" toc={toc} schema={schema} label="Build library">
     <div className="game-wiki-markdown"><MarkdownBody /></div>
   </GameWikiArticleLayout>;
 }
