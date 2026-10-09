@@ -5,7 +5,7 @@ import { wanderburgWikiConfig } from './wanderburg-config';
 const categories: GameWikiLink[] = [
   { href: '/games/wanderburg/beginner-guide', label: 'Beginner Guide', description: 'First-run priorities, Module slots, upgrades and Nitro.', count: '1 guide', backgroundImage: '/images/games/wanderburg/hub-cards/beginner-guide.png' },
   { href: '/games/wanderburg/reference', label: 'Reference', description: 'Core systems, progression and version notes.', count: '1 guide', backgroundImage: '/images/games/wanderburg/hub-cards/reference.png' },
-  { href: '/games/wanderburg/builds', label: 'Builds', description: 'Practical build directions and play styles.', count: '5 guides', backgroundImage: '/images/games/wanderburg/hub-cards/builds.png' },
+  { href: '/games/wanderburg/builds', label: 'Builds', description: 'Practical build directions and play styles.', count: '6 guides', backgroundImage: '/images/games/wanderburg/hub-cards/builds.png' },
   { href: '/games/wanderburg/vehicle-guide', label: 'Vehicle Guide', description: 'Handling, slot layouts and which Vehicle fits each play style.', count: '1 guide', backgroundImage: '/images/games/wanderburg/hub-cards/vehicles.png' },
   { href: '/games/wanderburg/boss-guide', label: 'Boss Guide', description: 'Short boss dodge tips with screenshots and gameplay clips.', count: '3 regions', backgroundImage: '/images/games/wanderburg/hub-cards/reference.png' },
   { href: '/games/wanderburg/wiki/modules', label: 'Modules', description: 'Module slots, effects and reference values (0.9.14).', count: '20 Modules', backgroundImage: '/images/games/wanderburg/hub-cards/modules.png' },
@@ -16,6 +16,7 @@ const categories: GameWikiLink[] = [
 ];
 
 const latest = [
+  { href: '/games/wanderburg/builds/arrow-build', title: 'Wanderburg Arrow Build Guide (0.9.14)', date: '2026-10-09' },
   { href: '/games/wanderburg/builds/magic-build', title: 'Wanderburg Magic Build Guide (0.9.14)', date: '2026-10-07' },
   { href: '/games/wanderburg/vehicle-guide', title: 'Wanderburg Vehicle Guide (0.9.14)', date: '2026-09-28' },
   { href: '/games/wanderburg/builds/friendly-units-build', title: 'Wanderburg Friendly Units Build Guide (0.9.14)', date: '2026-09-27' },

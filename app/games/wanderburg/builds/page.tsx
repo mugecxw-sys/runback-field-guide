@@ -64,6 +64,18 @@ const testedBuilds: TestedBuildCardProps[] = [
     result: 'Tested',
     cta: 'View Magic Build →',
   },
+  {
+    title: 'Arrow Build',
+    href: '/games/wanderburg/builds/arrow-build',
+    vehicle: 'Wanderturm',
+    captain: 'Huntress',
+    core: 'Archer Tower + Side Ballista',
+    playstyle: 'High-frequency ranged auto attacks',
+    notes: ['High projectile count, but weak single-target damage in this tested setup.'],
+    result: 'Tested — Not Recommended',
+    resultTone: 'caution',
+    cta: 'View Arrow Build →',
+  },
 ];
 const buildDirections: BuildDirectionCardProps[] = [
   {

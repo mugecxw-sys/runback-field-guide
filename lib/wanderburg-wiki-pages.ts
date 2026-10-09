@@ -8,6 +8,13 @@ export type WanderburgWikiPage = {
 
 export const wanderburgWikiPages: WanderburgWikiPage[] = [
   {
+    title: 'Wanderburg Arrow Build Guide (0.9.14)',
+    href: '/games/wanderburg/builds/arrow-build',
+    summary: 'A tested Arrow setup using Archer Tower, Side Ballista and Huntress — not recommended as-is because of weak single-target damage and mobility.',
+    text: 'wanderburg arrow build archer tower side ballista wanderturm huntress archer crew electric arrow ram dash auto attack cooldown ability tested not recommended weak boss single-target damage mobility',
+    publishedAt: '2026-10-09T00:00:00.000Z',
+  },
+  {
     title: 'Wanderburg Boss Guide (0.9.14)',
     href: '/games/wanderburg/boss-guide',
     summary: 'Short Wanderburg boss guides for Early Access 0.9.14, with practical dodge tips, screenshots and short gameplay videos.',
