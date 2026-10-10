@@ -1,5 +1,6 @@
 import { sephiriaArtifactFacts } from './sephiria-artifact-facts';
 import { sephiriaTabletFacts } from './sephiria-tablet-facts';
+import { sephiriaCostumeFacts } from './sephiria-costume-facts';
 import type { TabletPatternCell } from '@/components/game-wiki/tablet-pattern-grid';
 
 export type SephiriaPatchNote = { version: string; text: string };
@@ -24,6 +25,8 @@ export type SephiriaRecord = {
   effectsByLevel?: string[];
   tabletPattern?: TabletPatternCell[];
   tabletPatternNote?: string | null;
+  costumeEffectLabel?: 'Current Effect' | 'Selected effects';
+  costumeSkins?: { name: string; unlockType: 'Default' | 'Purchase' | null }[];
   patchHistory: SephiriaPatchNote[];
   relatedIds: string[];
 };
@@ -247,7 +250,7 @@ export const sephiriaTablets: SephiriaRecord[] = sephiriaTabletFacts.map(({ id, 
   return record(id, name, 'Tablet', { ...starter, ...fields });
 });
 
-export const sephiriaCostumes = [
+const starterCostumes = [
   record('CST-01', 'Orange Rabbit', 'Costume', { patchHistory: [{ version: '1.0.19', text: 'Before: Max HP +10; Max MP -15. After: Debuff Damage +14%; Defense -8.' }] }),
   record('CST-02', 'White Rabbit', 'Costume', { patchHistory: [{ version: '1.0.19', text: 'Before: Normal Attack Damage +8%; Special Attack Damage -5%. After: Special Attack Damage +12%; Max MP +8; Evasion -15.' }] }),
   record('CST-03', 'Red-Clothed Cat', 'Costume', { patchHistory: [{ version: '1.0.19', text: 'Each elemental damage amplified +15%; Physical Damage amplified -20%.' }] }),
@@ -256,6 +259,11 @@ export const sephiriaCostumes = [
   record('CST-06', 'Skeleton', 'Costume', { patchHistory: [{ version: '1.0.19', text: 'Before: Revive +2; Healing Curse 50%. After: Damage dealt amplified by 20%.' }] }),
   record('CST-07', 'Scholar Lizard', 'Costume', { patchHistory: [{ version: '1.0.33', text: 'Fixed an issue where the Costume effect could be removed by a certain weapon.' }] }),
 ];
+
+export const sephiriaCostumes: SephiriaRecord[] = sephiriaCostumeFacts.map(({ id, name, ...fields }) => {
+  const starter = starterCostumes.find((entry) => entry.id === id);
+  return record(id, name, 'Costume', { ...starter, ...fields });
+});
 
 export const sephiriaHardModeElements = [
   record('HM-01', 'Festival of Blood', 'Hard Mode Element', { effectCurrent: 'Enemies restore HP when they hit a player. Minibosses and bosses restore more HP.' }),
@@ -301,7 +309,7 @@ export const sephiriaWikiPages: SephiriaWikiPage[] = [
   { title: 'Weapon Upgrades', href: '/games/sephiria/wiki/weapon-upgrades', summary: 'Weapon upgrade database entries with effects, mechanics and weapon relationships.', publishedAt, group: 'category' },
   { title: 'Artifacts', href: '/games/sephiria/wiki/artifacts', summary: 'Browse Artifact effects, rarity, categories and current values.', publishedAt, group: 'category' },
   { title: 'Tablets', href: '/games/sephiria/wiki/tablets', summary: 'Tablet effects and placement patterns.', publishedAt, group: 'category' },
-  { title: 'Costumes', href: '/games/sephiria/wiki/costumes', summary: 'Costume index and documented version history.', publishedAt, group: 'category' },
+  { title: 'Costumes', href: '/games/sephiria/wiki/costumes', summary: 'Costume effects, unlocks and skins.', publishedAt, group: 'category' },
   { title: 'Grimoires', href: '/games/sephiria/wiki/grimoires', summary: 'How Grimoires relate to Staff, MP and relevant stats.', publishedAt, group: 'category' },
   { title: 'Bosses', href: '/games/sephiria/wiki/bosses', summary: 'Named bosses and minibosses.', publishedAt, group: 'category' },
   { title: 'Hard Mode', href: '/games/sephiria/wiki/hard-mode', summary: 'Hard Mode scope, maximum level and named elements.', publishedAt, group: 'category' },
