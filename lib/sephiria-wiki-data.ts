@@ -1,4 +1,6 @@
 import { sephiriaArtifactFacts } from './sephiria-artifact-facts';
+import { sephiriaTabletFacts } from './sephiria-tablet-facts';
+import type { TabletPatternCell } from '@/components/game-wiki/tablet-pattern-grid';
 
 export type SephiriaPatchNote = { version: string; text: string };
 
@@ -20,6 +22,8 @@ export type SephiriaRecord = {
   artifactEffectLabel?: 'Selected effects' | 'Base effect';
   currentValues?: { label: string; values: string[] }[];
   effectsByLevel?: string[];
+  tabletPattern?: TabletPatternCell[];
+  tabletPatternNote?: string | null;
   patchHistory: SephiriaPatchNote[];
   relatedIds: string[];
 };
@@ -229,7 +233,7 @@ export const sephiriaArtifacts: SephiriaRecord[] = [
   record('ART-45', 'Blacksmith’s Tongs', 'Artifact', { tags: ['artifact'] }),
 ].map((entry) => ({ ...entry, ...sephiriaArtifactFacts[entry.id] }));
 
-export const sephiriaTablets = [
+const starterTablets = [
   record('TBL-01', 'Nurture', 'Tablet', { patchHistory: [{ version: '1.0.19', text: 'Rarity changed from Advanced to Common.' }] }),
   record('TBL-02', 'Competition', 'Tablet', { patchHistory: [{ version: '1.0.19', text: 'Downward bonus changed from +2 to +3.' }] }),
   record('TBL-03', 'Wave', 'Tablet', { patchHistory: [{ version: '1.0.19', text: 'Upper-right diagonal bonus changed from +2 to +3.' }] }),
@@ -237,6 +241,11 @@ export const sephiriaTablets = [
   record('TBL-05', 'Preparation', 'Tablet', { patchHistory: [{ version: '1.0.19', text: 'Lower-right diagonal bonus changed from +1 to +2.' }] }),
   record('TBL-06', 'Daydream', 'Tablet', { patchHistory: [{ version: '1.0.19', text: 'Pattern changed from +1 in each of the four diagonal directions plus +1 in each cell beyond those diagonals to +2 in each of the four diagonal directions.' }] }),
 ];
+
+export const sephiriaTablets: SephiriaRecord[] = sephiriaTabletFacts.map(({ id, name, ...fields }) => {
+  const starter = starterTablets.find((entry) => entry.id === id);
+  return record(id, name, 'Tablet', { ...starter, ...fields });
+});
 
 export const sephiriaCostumes = [
   record('CST-01', 'Orange Rabbit', 'Costume', { patchHistory: [{ version: '1.0.19', text: 'Before: Max HP +10; Max MP -15. After: Debuff Damage +14%; Defense -8.' }] }),
@@ -291,7 +300,7 @@ export const sephiriaWikiPages: SephiriaWikiPage[] = [
   { title: 'Weapons', href: '/games/sephiria/wiki/weapons', summary: 'Six weapon branches, combat mechanics, unlock routes and related upgrades.', publishedAt, group: 'category' },
   { title: 'Weapon Upgrades', href: '/games/sephiria/wiki/weapon-upgrades', summary: 'Weapon upgrade database entries with effects, mechanics and weapon relationships.', publishedAt, group: 'category' },
   { title: 'Artifacts', href: '/games/sephiria/wiki/artifacts', summary: 'Browse Artifact effects, rarity, categories and current values.', publishedAt, group: 'category' },
-  { title: 'Tablets', href: '/games/sephiria/wiki/tablets', summary: 'Tablet names and documented pattern or rarity changes.', publishedAt, group: 'category' },
+  { title: 'Tablets', href: '/games/sephiria/wiki/tablets', summary: 'Tablet effects and placement patterns.', publishedAt, group: 'category' },
   { title: 'Costumes', href: '/games/sephiria/wiki/costumes', summary: 'Costume index and documented version history.', publishedAt, group: 'category' },
   { title: 'Grimoires', href: '/games/sephiria/wiki/grimoires', summary: 'How Grimoires relate to Staff, MP and relevant stats.', publishedAt, group: 'category' },
   { title: 'Bosses', href: '/games/sephiria/wiki/bosses', summary: 'Named bosses and minibosses.', publishedAt, group: 'category' },

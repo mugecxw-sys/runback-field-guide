@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import { Gem, Search, Shield, Skull, Sparkles, Swords, UserRound, WandSparkles } from 'lucide-react';
 import type { SephiriaRecord } from '@/lib/sephiria-wiki-data';
+import { TabletPatternGrid } from './tablet-pattern-grid';
 
 const icons = {
   weapon: Swords,
@@ -61,17 +62,20 @@ export function SephiriaDatabaseIndex({ title, entries, relationEntries = [], fi
           const isWeapon = entry.category === 'Weapon';
           const isUpgrade = entry.category === 'Weapon Upgrade';
           const isArtifact = entry.category === 'Artifact';
+          const isTablet = entry.category === 'Tablet';
+          const widePattern = isTablet && entry.tabletPattern && Math.max(...entry.tabletPattern.map(cell => cell.x)) - Math.min(...entry.tabletPattern.map(cell => cell.x)) > 7;
           const relatedWeapon = isUpgrade ? entry.relatedIds.map((id) => relations.get(id)).find((item) => item?.category === 'Weapon') : undefined;
           const upgrades = isWeapon ? (entry.upgradeIds ?? []).map((id) => relations.get(id)).filter((item): item is SephiriaRecord => item?.category === 'Weapon Upgrade') : [];
-          return <article key={entry.id} id={entry.slug} className="min-w-0 border border-[#b99256]/25 bg-[#17201d] p-4">
+          return <article key={entry.id} id={entry.slug} className={`min-w-0 border border-[#b99256]/25 bg-[#17201d] p-4${widePattern ? ' sm:col-span-2 xl:col-span-3' : ''}`}>
             <div className="flex min-w-0 items-start gap-3"><span aria-hidden="true" className="flex h-9 w-9 shrink-0 items-center justify-center border border-[#b99256]/25 bg-[#101714] text-[#dca464]"><Icon className="h-4 w-4" /></span><div className="min-w-0"><p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#b99256]">{entry.category}</p><h3 className="mt-1 break-words font-serif text-lg font-semibold leading-tight text-[#fff2df]">{entry.name}</h3></div></div>
             {entry.aliases.length > 0 && <p className="mt-3 break-words text-sm text-[#bdc6c5]">Also called: {entry.aliases.join(', ')}</p>}
             {isArtifact && entry.rarity && <p className="mt-3 break-words text-sm text-[#bdc6c5]"><span className="font-semibold text-[#fff2df]">Rarity: </span>{entry.rarity}</p>}
             {isArtifact && !!entry.artifactCategories?.length && <p className="mt-3 break-words text-sm text-[#bdc6c5]"><span className="font-semibold text-[#fff2df]">Categories: </span>{entry.artifactCategories.join(', ')}</p>}
             {isWeapon && entry.weaponRole && <p className="mt-3 break-words text-sm leading-6 text-[#e1e6e8]"><span className="font-semibold text-[#fff2df]">Combat Style: </span>{entry.weaponRole}</p>}
             {isUpgrade && relatedWeapon && <p className="mt-3 break-words text-sm leading-6 text-[#e1e6e8]"><span className="font-semibold text-[#fff2df]">Weapon: </span><a href={`/games/sephiria/wiki/weapons#${relatedWeapon.slug}`} className="text-[#dca464] hover:text-[#ff9a7a] focus-visible:outline focus-visible:outline-2">{relatedWeapon.name}</a></p>}
-            {entry.effectCurrent && <p className={`mt-3 break-words text-sm leading-6 text-[#e1e6e8]${isArtifact ? ' whitespace-pre-line' : ''}`}>{(isUpgrade || isArtifact) && <span className="font-semibold text-[#fff2df]">{isArtifact ? entry.artifactEffectLabel ?? 'Effect' : 'Effect'}: </span>}{entry.effectCurrent}</p>}
-            {(isWeapon || isUpgrade || isArtifact) && entry.mechanicCurrent && <p className="mt-3 break-words text-sm leading-6 text-[#e1e6e8]"><span className="font-semibold text-[#fff2df]">Mechanic: </span>{entry.mechanicCurrent}</p>}
+            {entry.effectCurrent && <p className={`mt-3 break-words text-sm leading-6 text-[#e1e6e8]${isArtifact || isTablet ? ' whitespace-pre-line' : ''}`}>{(isUpgrade || isArtifact || isTablet) && <span className="font-semibold text-[#fff2df]">{isArtifact ? entry.artifactEffectLabel ?? 'Effect' : 'Effect'}: </span>}{entry.effectCurrent}</p>}
+            {(isWeapon || isUpgrade || isArtifact || isTablet) && entry.mechanicCurrent && <p className="mt-3 break-words text-sm leading-6 text-[#e1e6e8]"><span className="font-semibold text-[#fff2df]">Mechanic: </span>{entry.mechanicCurrent}</p>}
+            {isTablet && !!entry.tabletPattern?.length && <div className="mt-3 min-w-0 border-t border-white/10 pt-3"><p className="mb-2 text-[10px] font-bold uppercase tracking-[0.14em] text-[#dca464]">Placement pattern</p><TabletPatternGrid pattern={entry.tabletPattern} label={`${entry.name} placement pattern`} />{entry.tabletPatternNote && <p className="mt-2 break-words text-xs leading-5 text-[#bdc6c5]">{entry.tabletPatternNote}</p>}</div>}
             {isArtifact && !!entry.currentValues?.length && <div className="mt-3 border-t border-white/10 pt-3"><p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#dca464]">Current Values</p><dl className="mt-2 space-y-2 text-sm leading-5 text-[#bdc6c5]">{entry.currentValues.map((item) => <div key={item.label} className="break-words"><dt className="font-semibold text-[#fff2df]">{item.label}</dt><dd>{item.values.join(' / ')}</dd></div>)}</dl></div>}
             {isArtifact && !!entry.effectsByLevel?.length && <details className="mt-3 border-t border-white/10 pt-3"><summary className="cursor-pointer text-sm font-semibold text-[#dca464]">Effects by level</summary><ol className="mt-2 list-decimal space-y-3 pl-5 text-sm leading-6 text-[#bdc6c5]">{entry.effectsByLevel.map((effect, index) => <li key={index} className="whitespace-pre-line break-words">{effect}</li>)}</ol></details>}
             {(isWeapon || isUpgrade) && entry.unlockCurrent && <p className="mt-3 break-words text-sm leading-6 text-[#e1e6e8]"><span className="font-semibold text-[#fff2df]">Unlock: </span>{entry.unlockCurrent}</p>}
