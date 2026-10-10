@@ -13,6 +13,7 @@ const title = h1;
 const description = 'Tested Wanderburg builds for Early Access 0.9.14, plus compact build directions for choosing Modules, Captains and play styles.';
 const intro = 'Choose a tested build below, or use the build directions further down when the run gives you different Modules. Wanderburg is flexible by design, so treat these as practical setups rather than fixed recipes.';
 const publishedAt = '2026-09-20T00:00:00.000Z';
+const reviewedAt = '2026-10-10T00:00:00.000Z';
 const toc = [
   'Tested Builds',
   'How to Choose a Build',
@@ -69,11 +70,10 @@ const testedBuilds: TestedBuildCardProps[] = [
     href: '/games/wanderburg/builds/arrow-build',
     vehicle: 'Wanderturm',
     captain: 'Huntress',
-    core: 'Archer Tower + Side Ballista',
-    playstyle: 'High-frequency ranged auto attacks',
-    notes: ['High projectile count, but weak single-target damage in this tested setup.'],
-    result: 'Tested — Not Recommended',
-    resultTone: 'caution',
+    core: 'Archer Tower + Side Ballista + Turret Layer',
+    playstyle: 'Mobile ranged pressure with sustained damage',
+    notes: ['Setup 2 performed clearly better after Turret Layer joined the core.'],
+    result: 'Tested — Clear',
     cta: 'View Arrow Build →',
   },
 ];
@@ -114,7 +114,7 @@ export const metadata: Metadata = {
   title: title + ' | RUNBACK',
   description,
   alternates: { canonical: siteUrl + href },
-  openGraph: { title, description, type: 'article', url: siteUrl + href, publishedTime: publishedAt },
+  openGraph: { title, description, type: 'article', url: siteUrl + href, publishedTime: publishedAt, modifiedTime: reviewedAt },
   twitter: { card: 'summary', title, description },
 };
 
@@ -213,7 +213,7 @@ export default function WanderburgBuilds() {
     '@context': 'https://schema.org',
     '@graph': [
       {
-        '@type': 'Article', headline: h1, description, datePublished: publishedAt,
+        '@type': 'Article', headline: h1, description, datePublished: publishedAt, dateModified: reviewedAt,
         inLanguage: 'en', mainEntityOfPage: siteUrl + href,
         author: { '@type': 'Organization', name: 'RUNBACK', url: siteUrl + '/about' },
         publisher: { '@type': 'Organization', '@id': siteUrl + '/#organization', name: 'RUNBACK', url: siteUrl },
@@ -227,7 +227,7 @@ export default function WanderburgBuilds() {
       },
     ],
   };
-  return <GameWikiArticleLayout config={wanderburgWikiConfig} activeHref={href} title={h1} description={intro} publishedAt={publishedAt} reviewedAt="2026-10-07T00:00:00.000Z" toc={toc} schema={schema} label="Build library">
+  return <GameWikiArticleLayout config={wanderburgWikiConfig} activeHref={href} title={h1} description={intro} publishedAt={publishedAt} reviewedAt={reviewedAt} toc={toc} schema={schema} label="Build library">
     <div className="game-wiki-markdown"><MarkdownBody /></div>
   </GameWikiArticleLayout>;
 }

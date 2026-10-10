@@ -10,8 +10,8 @@ export const wanderburgWikiPages: WanderburgWikiPage[] = [
   {
     title: 'Wanderburg Arrow Build Guide (0.9.14)',
     href: '/games/wanderburg/builds/arrow-build',
-    summary: 'A tested Arrow setup using Archer Tower, Side Ballista and Huntress — not recommended as-is because of weak single-target damage and mobility.',
-    text: 'wanderburg arrow build archer tower side ballista wanderturm huntress archer crew electric arrow ram dash auto attack cooldown ability tested not recommended weak boss single-target damage mobility',
+    summary: 'Two tested Arrow builds compared: Archer Tower, Side Ballista and Turret Layer performed better in Setup 2. Both setups completed full runs.',
+    text: 'wanderburg arrow build comparison setup 1 setup 2 archer tower side ballista turret layer wanderturm huntress archer crew reset lever electric arrow fast quiver golden bow ram dash auto attack cooldown ability tested clear single-target damage mobility',
     publishedAt: '2026-10-09T00:00:00.000Z',
   },
   {

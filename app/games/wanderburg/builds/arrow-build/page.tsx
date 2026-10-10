@@ -7,27 +7,42 @@ import { siteUrl } from '@/lib/repo-guide-pages';
 
 const href = '/games/wanderburg/builds/arrow-build';
 const h1 = 'Wanderburg Arrow Build Guide (0.9.14)';
-const description = 'A tested Wanderburg Arrow build using Archer Tower, Side Ballista and Huntress, with upgrade priorities and the weaknesses found during the run.';
+const description = 'Two tested Wanderburg Arrow builds compared, showing why Archer Tower, Side Ballista and Turret Layer performed better in the stronger setup.';
 const publishedAt = '2026-10-09T00:00:00.000Z';
+const modifiedAt = '2026-10-10T00:00:00.000Z';
 const imageBase = '/images/games/wanderburg/builds/arrow/';
-const videoCaption = 'The setup can put a large number of arrows on screen, even though single-target damage remained limited.';
+const videoCaption = 'Archer Tower, Side Ballista and Turret Layer working together after the full core came online.';
 const toc = [
-  'Quick Setup',
-  'Upgrade Archer Tower First',
-  'Side Ballista Was a Useful Addition',
-  'Huntress Did Not Add Enough',
-  'Archer Crew Is Support',
-  'Electric Arrow Was Hard to Notice',
-  'Good Against Groups, Weaker Against Bosses',
-  'RAM and Dash Helped the Build',
-  'Tested Result',
+  'Short Answer',
+  'Setup 1 vs Setup 2',
+  'Why Setup 2 Was Stronger',
+  'Upgrade Priority',
+  'Artifact Choices',
+  'Huntress',
+  'Setup 2 in Combat',
+  'Final Verdict',
+];
+const comparisonRows = [
+  ['Vehicle', 'Wanderturm', 'Wanderturm'],
+  ['Captain', 'Huntress', 'Huntress'],
+  ['Crew', 'Archer Crew', 'Archer Crew'],
+  ['Starter Module', 'Archer Tower', 'Archer Tower'],
+  ['Starter Artifact', 'Electric Arrow', 'Reset Lever'],
+  ['Main Core', 'Archer Tower + Side Ballista', 'Archer Tower + Side Ballista + Turret Layer'],
+  ['Front', 'RAM', 'RAM'],
+  ['Back', 'Dash', 'Turret Layer'],
+  ['Crowd Damage', 'Enough', 'Stronger after Turret Layer'],
+  ['Single-Target Damage', 'Weak', 'Better than Setup 1'],
+  ['Mobility', 'Better with Dash', 'More dependent on positioning'],
+  ['Artifact Result', 'Electric Arrow was hard to notice', 'Fast Quiver / Golden Bow felt more useful'],
+  ['Overall', 'Cleared, but felt weak', 'Clearly stronger'],
 ];
 
 export const metadata: Metadata = {
   title: h1 + ' | RUNBACK',
   description,
   alternates: { canonical: siteUrl + href },
-  openGraph: { title: h1 + ' | RUNBACK', description, type: 'article', url: siteUrl + href, publishedTime: publishedAt },
+  openGraph: { title: h1 + ' | RUNBACK', description, type: 'article', url: siteUrl + href, publishedTime: publishedAt, modifiedTime: modifiedAt },
   twitter: { card: 'summary', title: h1 + ' | RUNBACK', description },
 };
 
@@ -35,7 +50,7 @@ const schema = {
   '@context': 'https://schema.org',
   '@graph': [
     {
-      '@type': 'Article', headline: h1, description, datePublished: publishedAt,
+      '@type': 'Article', headline: h1, description, datePublished: publishedAt, dateModified: modifiedAt,
       inLanguage: 'en', mainEntityOfPage: siteUrl + href,
       author: { '@type': 'Organization', name: 'RUNBACK', url: siteUrl + '/about' },
       publisher: { '@type': 'Organization', '@id': siteUrl + '/#organization', name: 'RUNBACK', url: siteUrl },
@@ -58,9 +73,9 @@ function Section({ title, children }: { title: string; children: ReactNode }) {
 
 function VideoFigure() {
   return <figure className="my-6 min-w-0 max-w-full">
-    <video controls playsInline preload="none" poster={imageBase + 'arrow-boss.webp'} className="block h-auto w-full max-w-full rounded-xl border border-white/15" aria-label="Arrow build projectile output from the tested run">
-      <source src="/videos/games/wanderburg/arrow-build/arrow-projectile-output.mp4" type="video/mp4" />
-      <track kind="captions" src={'data:text/vtt,' + encodeURIComponent('WEBVTT\n\n00:00:00.000 --> 00:00:03.019\n' + videoCaption)} srcLang="en" label="Gameplay captions" />
+    <video controls playsInline preload="none" poster={imageBase + 'arrow-v2-boss.webp'} className="block h-auto w-full max-w-full rounded-xl border border-white/15" aria-label="Setup 2 Archer Tower, Side Ballista and Turret Layer in combat">
+      <source src="/videos/games/wanderburg/arrow-build/arrow-v2-core-output.mp4" type="video/mp4" />
+      <track kind="captions" src={'data:text/vtt,' + encodeURIComponent('WEBVTT\n\n00:00:00.000 --> 00:00:04.018\n' + videoCaption)} srcLang="en" label="Gameplay captions" />
       Your browser does not support HTML video.
     </video>
     <figcaption className="mt-2 text-sm leading-6 text-[#aeb7bc]">{videoCaption}</figcaption>
@@ -72,12 +87,12 @@ export default function WanderburgArrowBuild() {
     config={wanderburgWikiConfig}
     activeHref="/games/wanderburg/builds"
     title={h1}
-    description="This tested Arrow setup used Archer Tower as the main ranged Module, with Huntress, Archer Crew and Electric Arrow."
+    description="Two Arrow setups were tested through full runs."
     publishedAt={publishedAt}
+    modifiedAt={modifiedAt}
     toc={toc}
     schema={schema}
-    label="Tested — Not Recommended"
-    labelTone="neutral"
+    label="Tested — Clear"
     footerNote=""
     breadcrumbItems={[
       { label: 'Home', href: '/' },
@@ -87,84 +102,77 @@ export default function WanderburgArrowBuild() {
     ]}
   >
     <article className="game-wiki-markdown min-w-0">
-      <p className="mt-6 leading-8 text-[#c7d0d5]">It produced a lot of projectiles, but the damage did not scale as well as expected. The build was comfortable against groups, but weaker against large enemies and bosses.</p>
-
-      <Section title="Quick Setup">
-        <p>The tested setup used:</p>
-        <ul className="list-disc space-y-1 pl-6">
-          <li><strong>Vehicle:</strong> Wanderturm</li>
-          <li><strong>Captain:</strong> Huntress</li>
-          <li><strong>Crew:</strong> Archer Crew</li>
-          <li><strong>Starter Module:</strong> Archer Tower</li>
-          <li><strong>Starter Artifact:</strong> Electric Arrow</li>
-        </ul>
-        <p>The final Module setup was:</p>
-        <p><strong>Archer Tower + Side Ballista + RAM + Dash</strong></p>
-        <BeginnerGuideFigure src={imageBase + 'arrow-loadout.webp'} alt="Tested Arrow build starting loadout in Wanderburg 0.9.14" caption="Tested Arrow setup with Wanderturm, Huntress, Archer Crew, Archer Tower and Electric Arrow." width={2068} height={1066} />
+      <Section title="Short Answer">
+        <p>The first produced plenty of projectiles but struggled with single-target damage. The second version was clearly stronger once <strong>Archer Tower, Side Ballista and Turret Layer</strong> were working together.</p>
+        <p>If you want to copy one of these setups first, use <strong>Setup 2</strong>.</p>
       </Section>
 
-      <Section title="Upgrade Archer Tower First">
-        <p>Archer Tower remained the main investment throughout the run.</p>
-        <p>The upgrade priority that felt best was:</p>
-        <ol className="list-decimal space-y-1 pl-6">
-          <li><strong>Auto Attack</strong></li>
-          <li><strong>Cooldown</strong></li>
-          <li><strong>Ability</strong></li>
-        </ol>
-        <p>Auto Attack upgrades helped the constant arrow output, while Cooldown became useful as the run progressed.</p>
-        <p>Active abilities still mattered in difficult fights, even though they were not the first upgrade priority.</p>
-        <BeginnerGuideFigure src={imageBase + 'archer-tower-upgrade.webp'} alt="Archer Tower Auto Attack Projectiles and More Damage upgrade choices" caption="An Archer Tower upgrade choice from the tested run." width={2074} height={1157} />
+      <Section title="Setup 1 vs Setup 2">
+        <div className="max-w-full overflow-x-auto rounded-xl border border-white/15">
+          <table aria-label="Arrow setup comparison" className="w-full min-w-[640px] border-collapse text-left text-sm leading-6">
+            <thead className="bg-[#192126] text-[#fff2df]">
+              <tr><th scope="col" aria-label="Comparison category" className="border-b border-white/20 px-4 py-3" /><th scope="col" className="border-b border-white/20 px-4 py-3">Setup 1</th><th scope="col" className="border-b border-white/20 px-4 py-3">Setup 2</th></tr>
+            </thead>
+            <tbody>{comparisonRows.map(([label, setup1, setup2]) => <tr key={label} className="border-b border-white/10 last:border-0">
+              <th scope="row" className="w-1/4 px-4 py-3 font-semibold text-[#fff2df]">{label}</th>
+              <td className="px-4 py-3">{setup1}</td>
+              <td className="px-4 py-3">{label === 'Overall' ? <strong>{setup2}</strong> : setup2}</td>
+            </tr>)}</tbody>
+          </table>
+        </div>
+        <p>Both setups completed full runs. The difference was how well the damage scaled once the build reached the middle and later parts of the run.</p>
+        <BeginnerGuideFigure src={imageBase + 'arrow-final-stats.webp'} alt="Setup 1 final configuration with Archer Tower, Side Ballista, RAM and Dash" caption="Setup 1 finished with Archer Tower, Side Ballista, RAM and Dash." width={2073} height={1165} />
       </Section>
 
-      <Section title="Side Ballista Was a Useful Addition">
-        <p>Side Ballista appeared naturally and was taken as the second ranged Module.</p>
-        <p>It added more arrow damage without changing the basic playstyle.</p>
-        <p>It was useful, but one run was not enough to call it mandatory.</p>
-        <p>Do not spend several rerolls trying to force it.</p>
-        <BeginnerGuideFigure src={imageBase + 'side-ballista-choice.webp'} alt="Side Ballista offered as a new Module during the Arrow run" caption="Side Ballista appeared naturally as the second ranged Module." width={2065} height={1165} />
-      </Section>
-
-      <Section title="Huntress Did Not Add Enough">
-        <p>Huntress increases auto-attack speed but also makes ability cooldowns longer.</p>
-        <p>In this run, the faster auto attacks did not feel strong enough to change the build.</p>
-        <p>The cooldown drawback was only minor, but Huntress still did not feel important enough to recommend based on this setup.</p>
-      </Section>
-
-      <Section title="Archer Crew Is Support">
-        <p>Archer Crew helped the ranged setup, but it was not a main upgrade target.</p>
-        <p>When Archer Tower had a useful upgrade available, improving the Module usually mattered more.</p>
-        <p>Treat Archer Crew as support rather than the core of the build.</p>
-      </Section>
-
-      <Section title="Electric Arrow Was Hard to Notice">
-        <p>Electric Arrow did not have a clear impact during the run.</p>
-        <p>Its effect was hard to judge against groups and did not feel useful against bosses.</p>
-        <p>The build produced many arrows, but projectile count alone did not solve the damage problem.</p>
-        <BeginnerGuideFigure src={imageBase + 'arrow-mid-run.webp'} alt="Mid-run Arrow Modules and stats" caption="Mid-run Arrow setup with Archer Tower and Side Ballista." width={2076} height={1165} />
-      </Section>
-
-      <Section title="Good Against Groups, Weaker Against Bosses">
-        <p>The build handled normal groups well enough and allowed most attention to stay on driving.</p>
-        <p>The bigger problem was single-target damage.</p>
-        <p>Large enemies were slower to kill, and boss damage felt weak compared with the amount of arrows on screen.</p>
-        <p>Active abilities helped, but the build still lacked strong single-target pressure.</p>
-        <BeginnerGuideFigure src={imageBase + 'arrow-boss.webp'} alt="Arrow build fighting The Dark Tower with many arrows on screen" caption="The Arrow setup produced many projectiles, but boss damage remained limited." width={2083} height={1168} />
+      <Section title="Why Setup 2 Was Stronger">
+        <p>Setup 1 could put a lot of arrows on screen, but that did not translate into strong single-target damage.</p>
+        <p>RAM and Dash helped cover some of its damage and mobility problems, while Electric Arrow was difficult to notice.</p>
+        <p>Setup 2 changed when <strong>Turret Layer</strong> joined Archer Tower and Side Ballista.</p>
+        <BeginnerGuideFigure src={imageBase + 'arrow-v2-loadout.webp'} alt="Wanderburg Arrow Build Setup 2 starting loadout with Archer Tower and Reset Lever" caption="Setup 2 started with Wanderturm, Huntress, Archer Crew, Archer Tower and Reset Lever." width={2057} height={1058} />
+        <p>Before that point, Archer Tower and Side Ballista could still feel slow when many enemies were on screen.</p>
+        <p>After Turret Layer came online, damage improved noticeably.</p>
         <VideoFigure />
+        <p>Archer Tower kept dealing automatic damage while moving, Side Ballista added another ranged source, and Turret Layer added sustained pressure in areas the vehicle had already passed through.</p>
+        <p>That gave the second setup much better mid-to-late-run scaling.</p>
       </Section>
 
-      <Section title="RAM and Dash Helped the Build">
-        <p>The final setup used RAM in the Front slot and Dash in the Back slot.</p>
-        <p>These were not part of the Arrow core.</p>
-        <p>They helped solve another problem: mobility.</p>
-        <p>On harder maps, the build felt uncomfortable early when movement and escape options were limited.</p>
-        <p>Dash made repositioning easier, while RAM gave another way to deal damage when the ranged setup was not enough.</p>
+      <Section title="Upgrade Priority">
+        <p>Most upgrade investment in Setup 2 went into <strong>Archer Tower</strong> and <strong>Turret Layer</strong>.</p>
+        <p>My preferred order was:</p>
+        <ol className="list-decimal space-y-1 pl-6"><li><strong>Auto Attack</strong></li><li><strong>Cooldown</strong></li><li><strong>Ability</strong></li></ol>
+        <p>This is not a fixed rule.</p>
+        <p>All three upgrade types felt useful on Archer Tower and Turret Layer.</p>
+        <p>Side Ballista received fewer upgrades because it could keep contributing without demanding as much attention, leaving more focus on driving.</p>
       </Section>
 
-      <Section title="Tested Result">
-        <p>This version of the Arrow build is <strong>not recommended as-is</strong>.</p>
-        <p>Archer Tower was the best part of the setup, and Side Ballista was a useful second ranged Module.</p>
-        <p>The build produced a high rate of fire, but single-target damage and mobility were not strong enough to make the full setup feel reliable.</p>
-        <BeginnerGuideFigure src={imageBase + 'arrow-final-stats.webp'} alt="Final Arrow setup with Archer Tower, Side Ballista, RAM, Dash and Archer Crew" caption="Final tested setup with Archer Tower, Side Ballista, RAM and Dash." width={2073} height={1165} />
+      <Section title="Artifact Choices">
+        <p><strong>Fast Quiver</strong> and <strong>Golden Bow</strong> felt more useful than Electric Arrow in the stronger run.</p>
+        <p>Electric Arrow did not stand out enough in Setup 1 to remain a priority pick.</p>
+        <p>Setup 2 also used an arrow slowing effect to help control enemies and compensate for weaker mobility.</p>
+        <p>Artifact choices can stay flexible. If rerolls are available, use them when the current options do not fit the build, but there is no need to force one exact Artifact every run.</p>
+      </Section>
+
+      <Section title="Huntress">
+        <p>Huntress was used in both tests.</p>
+        <p>Her faster auto attacks fit the idea of this build, but these runs did not compare her directly with other Captains.</p>
+        <p>Because of that, this page does not treat Huntress as the definitive best Captain for Arrow builds.</p>
+        <p>The biggest improvement between the two runs came from the Module setup, especially Turret Layer.</p>
+      </Section>
+
+      <Section title="Setup 2 in Combat">
+        <p>The second version completed a full run and felt noticeably stronger than Setup 1.</p>
+        <p>Before Turret Layer appeared, damage could still feel a little low.</p>
+        <p>Once the full Archer Tower + Side Ballista + Turret Layer core was together, enemies were cleared much faster and the build became more comfortable through the middle and later parts of the run.</p>
+        <BeginnerGuideFigure src={imageBase + 'arrow-v2-boss.webp'} alt="Wanderburg Archer Tower Side Ballista and Turret Layer Arrow build in combat" caption="Setup 2 during a full run after the Arrow core had come together." width={2047} height={1150} />
+      </Section>
+
+      <Section title="Final Verdict">
+        <p><strong>Setup 2 is the stronger version from these two tests.</strong></p>
+        <p>The core worth copying first is:</p>
+        <p><strong>Archer Tower + Side Ballista + Turret Layer</strong></p>
+        <p>Put most upgrade investment into Archer Tower and Turret Layer, while Side Ballista can keep adding ranged damage without needing the same level of attention.</p>
+        <p>Setup 1 showed that simply putting more arrows on screen was not enough.</p>
+        <p>Setup 2 worked better because it added another sustained damage source and scaled much more effectively once the full core was online.</p>
       </Section>
     </article>
   </GameWikiArticleLayout>;
