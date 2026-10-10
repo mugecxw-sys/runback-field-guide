@@ -1,3 +1,5 @@
+import { sephiriaArtifactFacts } from './sephiria-artifact-facts';
+
 export type SephiriaPatchNote = { version: string; text: string };
 
 export type SephiriaRecord = {
@@ -14,6 +16,10 @@ export type SephiriaRecord = {
   mechanicCurrent?: string | null;
   unlockCurrent?: string | null;
   upgradeIds?: string[];
+  artifactCategories?: string[];
+  artifactEffectLabel?: 'Selected effects' | 'Base effect';
+  currentValues?: { label: string; values: string[] }[];
+  effectsByLevel?: string[];
   patchHistory: SephiriaPatchNote[];
   relatedIds: string[];
 };
@@ -221,7 +227,7 @@ export const sephiriaArtifacts: SephiriaRecord[] = [
     patchHistory: [{ version: '1.0.33', text: 'Fixed Solar Blade bonus/application issues.' }],
   }),
   record('ART-45', 'Blacksmith’s Tongs', 'Artifact', { tags: ['artifact'] }),
-];
+].map((entry) => ({ ...entry, ...sephiriaArtifactFacts[entry.id] }));
 
 export const sephiriaTablets = [
   record('TBL-01', 'Nurture', 'Tablet', { patchHistory: [{ version: '1.0.19', text: 'Rarity changed from Advanced to Common.' }] }),
@@ -284,7 +290,7 @@ export const sephiriaWikiPages: SephiriaWikiPage[] = [
   { title: 'Sephiria Wiki', href: '/games/sephiria/wiki', summary: 'Browse weapons, Artifacts, systems and other Sephiria reference pages.', publishedAt, group: 'wiki' },
   { title: 'Weapons', href: '/games/sephiria/wiki/weapons', summary: 'Six weapon branches, combat mechanics, unlock routes and related upgrades.', publishedAt, group: 'category' },
   { title: 'Weapon Upgrades', href: '/games/sephiria/wiki/weapon-upgrades', summary: 'Weapon upgrade database entries with effects, mechanics and weapon relationships.', publishedAt, group: 'category' },
-  { title: 'Artifacts', href: '/games/sephiria/wiki/artifacts', summary: 'Artifact index and named version changes.', publishedAt, group: 'category' },
+  { title: 'Artifacts', href: '/games/sephiria/wiki/artifacts', summary: 'Browse Artifact effects, rarity, categories and current values.', publishedAt, group: 'category' },
   { title: 'Tablets', href: '/games/sephiria/wiki/tablets', summary: 'Tablet names and documented pattern or rarity changes.', publishedAt, group: 'category' },
   { title: 'Costumes', href: '/games/sephiria/wiki/costumes', summary: 'Costume index and documented version history.', publishedAt, group: 'category' },
   { title: 'Grimoires', href: '/games/sephiria/wiki/grimoires', summary: 'How Grimoires relate to Staff, MP and relevant stats.', publishedAt, group: 'category' },
