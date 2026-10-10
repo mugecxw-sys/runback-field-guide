@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import { GameWikiArticleLayout } from '@/components/game-wiki/game-wiki';
 import { SephiriaDatabaseIndex } from '@/components/game-wiki/sephiria-database-index';
 import { sephiriaWikiConfig } from '@/components/game-wiki/sephiria-config';
-import { TabletPatternGrid } from '@/components/game-wiki/tablet-pattern-grid';
 import {
   sephiriaArtifacts,
   sephiriaBosses,
@@ -103,8 +102,7 @@ function CategoryPage({ section }: { section: string }) {
   };
   return <>
     {section === 'hard-mode' && <><Subheading>Hard Mode Overview</Subheading><Paragraph>Hard Mode Elements: 18. Maximum Hard Mode Level: 60. The entries below are named elements.</Paragraph></>}
-    {section === 'tablets' && <TabletPatternGrid pattern={null} />}
-    <SephiriaDatabaseIndex title={pageTitle[section]} entries={section === 'artifacts' ? entries.map((entry) => ({ ...entry, patchHistory: [] })) : entries} relationEntries={section === 'weapons' ? sephiriaWeaponUpgrades : section === 'weapon-upgrades' ? sephiriaWeapons : []} filterTypes={section === 'bosses'} showPatchHistory={!['weapons', 'weapon-upgrades', 'artifacts'].includes(section)} countLabel={section === 'weapon-upgrades' || section === 'artifacts' ? 'entries' : undefined} />
+    <SephiriaDatabaseIndex title={pageTitle[section]} entries={section === 'artifacts' || section === 'tablets' ? entries.map((entry) => ({ ...entry, patchHistory: [] })) : entries} relationEntries={section === 'weapons' ? sephiriaWeaponUpgrades : section === 'weapon-upgrades' ? sephiriaWeapons : []} filterTypes={section === 'bosses'} showPatchHistory={!['weapons', 'weapon-upgrades', 'artifacts', 'tablets'].includes(section)} countLabel={['weapon-upgrades', 'artifacts', 'tablets'].includes(section) ? 'entries' : undefined} />
     {section === 'grimoires' && <>
       <Subheading>Grimoire System</Subheading><Paragraph>Staff and Grimoires are separate systems. Grimoires use active actions, MP is involved, and relevant stats include Grimoire Damage, Grimoire Haste and MP Cost.</Paragraph>
       <Subheading>Related Records</Subheading><Paragraph>Known related records: Tome of Mimicry, Rylie’s Pocket Watch, Academy Fountain Pen, Standards of Magic and Empty Hilt.</Paragraph>

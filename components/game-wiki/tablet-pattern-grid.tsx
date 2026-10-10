@@ -3,6 +3,7 @@ export type TabletPatternCell = {
   y: number;
   kind: 'origin' | 'positive' | 'negative' | 'neutral';
   value?: number;
+  label?: string;
 };
 
 export function TabletPatternGrid({ pattern, rotation = 0, label = 'Tablet pattern' }: { pattern?: TabletPatternCell[] | null; rotation?: 0 | 90 | 180 | 270; label?: string }) {
@@ -17,15 +18,16 @@ export function TabletPatternGrid({ pattern, rotation = 0, label = 'Tablet patte
     negative: 'border-[#ff8662]/60 bg-[#ff7043]/15 text-[#ffc0aa]',
     neutral: 'border-white/15 bg-white/[0.04] text-[#bdc6c5]',
   };
-  const cellDescription = pattern.map((cell) => `${cell.kind}${cell.value == null ? '' : ` ${cell.value > 0 ? '+' : ''}${cell.value}`} at ${cell.x}, ${cell.y}`).join('; ');
-  return <figure className="inline-block max-w-full">
-    <div aria-hidden="true" className="inline-grid max-w-full gap-1" style={{ gridTemplateColumns: `repeat(${width}, minmax(2.25rem, 3rem))`, transform: `rotate(${rotation}deg)` }}>
+  const cellDescription = pattern.map((cell) => `Row ${cell.y - minY + 1}, column ${cell.x - minX + 1}: ${cell.kind === 'origin' ? 'tablet' : cell.label ?? cell.value ?? 'affected'}`).join('; ');
+  const large = width > 7;
+  return <figure className="block min-w-0 max-w-full">
+    <div aria-hidden="true" className={`grid max-w-full ${large ? 'gap-px' : 'gap-1'}`} style={{ width: `${width * 3}rem`, gridTemplateColumns: `repeat(${width}, minmax(0, 1fr))`, transform: `rotate(${rotation}deg)` }}>
     {Array.from({ length: width * height }, (_, index) => {
       const x = index % width + minX, y = Math.floor(index / width) + minY;
       const cell = pattern.find((item) => item.x === x && item.y === y);
-      return <div key={`${x},${y}`} className={`flex aspect-square min-w-0 items-center justify-center border text-xs font-semibold ${cell ? colors[cell.kind] : 'border-transparent bg-transparent'}`}>{cell?.kind === 'origin' ? '●' : cell?.value ?? ''}</div>;
+      return <div key={`${x},${y}`} className={`flex aspect-square min-w-0 items-center justify-center border ${large ? 'text-[10px] sm:text-xs' : 'text-xs'} font-semibold ${cell ? colors[cell.kind] : 'border-transparent bg-transparent'}`}>{cell?.kind === 'origin' ? '●' : cell?.label ?? cell?.value ?? ''}</div>;
     })}
     </div>
-    <figcaption className="sr-only">{label}, rotated {rotation} degrees. {cellDescription}</figcaption>
+    <figcaption className="mt-2 text-xs text-[#bdc6c5]">● Tablet<span className="sr-only">. {label}. {cellDescription}</span></figcaption>
   </figure>;
 }
