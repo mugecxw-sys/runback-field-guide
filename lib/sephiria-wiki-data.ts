@@ -1,6 +1,7 @@
 import { sephiriaArtifactFacts } from './sephiria-artifact-facts';
 import { sephiriaTabletFacts } from './sephiria-tablet-facts';
 import { sephiriaCostumeFacts } from './sephiria-costume-facts';
+import { sephiriaBossFacts } from './sephiria-boss-facts';
 import type { TabletPatternCell } from '@/components/game-wiki/tablet-pattern-grid';
 
 export type SephiriaPatchNote = { version: string; text: string };
@@ -27,6 +28,7 @@ export type SephiriaRecord = {
   tabletPatternNote?: string | null;
   costumeEffectLabel?: 'Current Effect' | 'Selected effects';
   costumeSkins?: { name: string; unlockType: 'Default' | 'Purchase' | null }[];
+  bossChapters?: number[];
   patchHistory: SephiriaPatchNote[];
   relatedIds: string[];
 };
@@ -274,12 +276,9 @@ export const sephiriaHardModeElements = [
   record('HM-06', 'Proliferation', 'Hard Mode Element', { effectCurrent: 'More Normal Enemies appear.\n\n2 levels:\n+10%\n+25%' }),
 ];
 
-export const sephiriaBosses = [
-  record('BOS-01', 'Demonic Grimoire', 'Miniboss'),
-  record('BOS-02', 'Qliphoth', 'Boss'),
-  record('BOS-03', 'Askard', 'Boss'),
-  record('BOS-04', 'Pentaxis, the Guardian of the Library', 'Boss'),
-];
+export const sephiriaBosses: SephiriaRecord[] = sephiriaBossFacts.map(({ id, name, category, ...fields }) =>
+  record(id, name, category, fields),
+);
 
 export const sephiriaGrimoires = [
   record('GRI-01', 'Tome of Mimicry', 'Grimoire', {
