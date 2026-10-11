@@ -44,7 +44,7 @@ Permanent unlock progress grants separate rerolls for Module and Artifact choice
 
 Bosses are major progression encounters and drop at least **50 Silver**. During boss encounters, the camera zooms out slightly. Some larger enemies do not take percentage-based damage from boss explosions.
 
-Overtime changes the encounters after the main progression. Enemy stun resistance and the Grassland, Desert and Darkforest Overtime encounters have been adjusted; use the current in-game behavior when choosing how to approach them.
+Overtime changes the encounters after the main progression.
 
 ## Find a Guide
 

@@ -52,7 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ]),
     ...wanderburgWikiPages.map((page) => ({
       url: `${siteUrl}${page.href}`,
-      lastModified: page.publishedAt,
+      lastModified: page.updatedAt ?? page.publishedAt,
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     })),

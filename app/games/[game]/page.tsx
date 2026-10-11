@@ -12,19 +12,16 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const g = findLibrary((await params).game);
   if (!g) return {};
+  const description = g.slug === 'wanderburg'
+    ? 'Practical Wanderburg guides, builds, boss tips and current reference data for Early Access 0.9.14.'
+    : 'Practical ' + g.title + ' guides: quick answers, detailed routes and sources.';
   return {
     title: g.title + ' Guides | RUNBACK',
-    description:
-      'Practical ' +
-      g.title +
-      ' guides: quick answers, detailed routes and sources.',
+    description,
     alternates: { canonical: siteUrl + '/games/' + g.slug },
     openGraph: {
       title: g.title + ' Guides | RUNBACK',
-      description:
-        'Practical ' +
-        g.title +
-        ' guides: quick answers, detailed routes and sources.',
+      description,
       type: 'website',
       url: siteUrl + '/games/' + g.slug,
       siteName: 'RUNBACK',
@@ -32,10 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: 'summary',
       title: g.title + ' Guides | RUNBACK',
-      description:
-        'Practical ' +
-        g.title +
-        ' guides: quick answers, detailed routes and sources.',
+      description,
     },
   };
 }

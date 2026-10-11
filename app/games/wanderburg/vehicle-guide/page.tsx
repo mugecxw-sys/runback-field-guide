@@ -105,7 +105,7 @@ export default function WanderburgVehicleGuide() {
         </Section>
 
         <figure className="my-7 min-w-0 max-w-full">
-          <video controls playsInline preload="metadata" className="block h-auto w-full max-w-full rounded-xl border border-white/15" aria-label="Wanderturm, Tankenburg and Spiderburg handling comparison">
+          <video controls playsInline preload="none" poster={imageBase + 'guides/vehicle-guide/wanderturm-test.png'} className="block h-auto w-full max-w-full rounded-xl border border-white/15" aria-label="Wanderturm, Tankenburg and Spiderburg handling comparison">
             <source src="/videos/games/wanderburg/vehicle-guide/vehicle-handling-comparison.mp4" type="video/mp4" />
             <track kind="captions" src="data:text/vtt,WEBVTT%0A%0A00:00:00.000%20--%3E%2000:00:03.480%0AWanderturm%2C%20Tankenburg%20and%20Spiderburg%20handling%20compared." srcLang="en" label="Gameplay captions" />
             Your browser does not support HTML video.

@@ -74,7 +74,8 @@ function VideoFigure() {
       <video
         controls
         playsInline
-        preload="metadata"
+        preload="none"
+        poster={imageBase + 'friendly-units-mid-run.png'}
         className="block h-auto w-full max-w-full rounded-xl border border-white/15"
         aria-label="Running Shoes friendly units follow while boosting"
       >

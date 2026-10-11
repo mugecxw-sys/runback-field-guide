@@ -81,7 +81,8 @@ function VideoFigure() {
       <video
         controls
         playsInline
-        preload="metadata"
+        preload="none"
+        poster={imageBase + 'cannon-first-boss.png'}
         className="block h-auto w-full max-w-full rounded-xl border border-white/15"
         aria-label="FrontCannon positioning during the tested run"
       >

@@ -227,17 +227,17 @@
       {
         "id": "PUBLISH-2",
         "slug": "builds",
-        "title": "Wanderburg Best Builds Guide: 6 Meta & Fun Setups for Dominating Early Access",
+        "title": "Wanderburg Builds Guide (0.9.14)",
         "category": "Builds",
         "publishedAt": "2026-09-20T00:00:00.000Z",
-        "answer": "Below is our comprehensive build guide featuring the 6 most effective and fun setups currently dominating the meta.",
+        "updatedAt": "2026-10-10T00:00:00.000Z",
+        "answer": "Tested Wanderburg builds for Early Access 0.9.14, with practical setups for Cannon, RAM, Friendly Units, Magic and Arrow builds.",
         "steps": [
-          "The Heavy Artillery Cannon Build",
-          "The OP Turrets & Arrows Drive-By",
-          "The Drill Sergeant (Minion Army Build)",
-          "The Firestarter (Pyromaniac AoE Build)",
-          "Can't Touch This (Mine Layer Kite Build)",
-          "Speed Racer (Heavy Battering Ram Build)"
+          "Cannon Build",
+          "RAM Build",
+          "Friendly Units Build",
+          "Magic Build",
+          "Arrow Build"
         ],
         "mistakes": "",
         "versionNote": "",

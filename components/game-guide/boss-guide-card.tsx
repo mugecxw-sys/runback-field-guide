@@ -16,9 +16,10 @@ export type BossGuideCardProps = {
 };
 
 export function BossGuideCard({ name, watch, dodge, attack, image, imageAlt, imageCaption, imageWidth, imageHeight, video, videoPoster, videoCaption }: BossGuideCardProps) {
+  const id = name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   const captionTrack = 'data:text/vtt,WEBVTT%0A%0A00:00:00.000%20--%3E%2000:59:59.000%0A' + encodeURIComponent(videoCaption);
   return (
-    <article className="flex min-w-0 flex-col border border-[#b99256]/30 bg-[#17201d] p-4 shadow-[0_10px_25px_rgba(0,0,0,0.12)] sm:p-5">
+    <article id={id} className="flex min-w-0 scroll-mt-24 flex-col border border-[#b99256]/30 bg-[#17201d] p-4 shadow-[0_10px_25px_rgba(0,0,0,0.12)] sm:p-5">
       <h2 className="font-serif text-2xl font-semibold text-[#fff2df]">{name}</h2>
       <dl className="mt-4 grid gap-3 text-sm leading-6 sm:grid-cols-[4.5rem_minmax(0,1fr)]">
         <dt className="font-bold uppercase tracking-[0.12em] text-[#dca464]">Watch</dt><dd className="min-w-0 text-[#d4dcde]">{watch}</dd>

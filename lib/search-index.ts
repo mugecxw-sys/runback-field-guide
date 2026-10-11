@@ -27,7 +27,7 @@ export const searchIndex = [
     g.articles.map((a) => ({
       title: a.title,
       game: g.title,
-      kind: a.category,
+      kind: g.slug === 'wanderburg' && a.slug === 'reference' ? 'Guide' : a.category,
       href: '/games/' + g.slug + '/' + a.slug,
       summary: a.answer,
       text: a.steps.join(' '),
@@ -37,7 +37,7 @@ export const searchIndex = [
   ...wanderburgWikiPages.map((page) => ({
     title: page.title,
     game: 'Wanderburg',
-    kind: 'Wiki',
+    kind: page.kind,
     href: page.href,
     summary: page.summary,
     text: page.text,

@@ -79,7 +79,8 @@ function VideoFigure() {
       <video
         controls
         playsInline
-        preload="metadata"
+        preload="none"
+        poster={imageBase + 'ram-boost-hit.png'}
         className="block h-auto w-full max-w-full rounded-xl border border-white/15"
         aria-label="Boost in, land the RAM hit, and keep moving"
       >
