@@ -66,12 +66,13 @@ function SystemPage({ section }: { section: string }) {
     <Subheading>Hard Mode Overview</Subheading>
     <dl className="mt-3 grid gap-3 sm:grid-cols-2"><div className="border border-[#b99256]/25 bg-[#17201d] p-4"><dt className="text-xs uppercase tracking-wide text-[#b99256]">Hard Mode Elements</dt><dd className="mt-2 text-xl font-semibold text-[#fff2df]">18</dd></div><div className="border border-[#b99256]/25 bg-[#17201d] p-4"><dt className="text-xs uppercase tracking-wide text-[#b99256]">Maximum Hard Mode Level</dt><dd className="mt-2 text-xl font-semibold text-[#fff2df]">60</dd></div></dl>
     <Subheading>Named Elements</Subheading>
-    <SephiriaDatabaseIndex title="Hard Mode Elements" entries={sephiriaHardModeElements} />
+    <Paragraph>Hard Mode has 18 elements in total and a maximum level of 60. The reference below currently covers 6 named elements.</Paragraph>
+    <SephiriaDatabaseIndex title="Hard Mode Elements" entries={sephiriaHardModeElements} countLabel="entries" showPatchHistory={false} />
   </>;
   if (section === 'mystic-pot') return <>
     <Subheading>Conversion Rules</Subheading>
     <div className="mt-4 grid gap-3 sm:grid-cols-2"><div className="border border-[#b99256]/25 bg-[#17201d] p-5"><p className="font-semibold text-[#fff2df]">1 Artifact</p><p className="mt-2 text-sm leading-6 text-[#bdc6c5]">→ Different Artifact of the same rarity</p></div><div className="border border-[#b99256]/25 bg-[#17201d] p-5"><p className="font-semibold text-[#fff2df]">2 Artifacts</p><p className="mt-2 text-sm leading-6 text-[#bdc6c5]">→ 1 Artifact of higher rarity</p></div></div>
-    <Subheading>Patch History</Subheading><Paragraph>1.0.30 — The Mystic Pot now appears broken after all uses are consumed.</Paragraph>
+    <Subheading>After Use</Subheading><Paragraph>The Mystic Pot appears broken after all uses are consumed.</Paragraph>
   </>;
   if (section === 'side-bag') return <>
     <Subheading>Storage</Subheading><Paragraph>The Side Bag stores spare items. Items inside the Side Bag are inactive.</Paragraph>
@@ -82,7 +83,7 @@ function SystemPage({ section }: { section: string }) {
     <Subheading>Connection</Subheading><Paragraph>The Side Bag can be unlocked through Destiny Inscription.</Paragraph>
   </>;
   if (section === 'training-grounds') return <>
-    <Subheading>Access</Subheading><Paragraph>Comprehensive Training Grounds was added in Version 1.0.31. Enter through the Training Grounds entrance.</Paragraph>
+    <Subheading>Access</Subheading><Paragraph>Enter the Training Grounds through its entrance to test unlocked items and equipment.</Paragraph>
     <Subheading>Testing Items</Subheading><Paragraph>Open the inventory to take out and test items that have already been unlocked.</Paragraph>
   </>;
   if (section === 'chapters') return <>
@@ -98,11 +99,12 @@ function CategoryPage({ section }: { section: string }) {
   const pageTitle: Record<string, string> = {
     weapons: 'Weapon Index', 'weapon-upgrades': 'Weapon Upgrade Index', artifacts: 'Artifact Index',
     tablets: 'Tablet Index', costumes: 'Costume Index', bosses: 'Boss & Miniboss Index',
-    'hard-mode': 'Named Elements', grimoires: 'Grimoire Index',
+    'hard-mode': 'Named Elements', grimoires: 'Grimoire Reference',
   };
   return <>
-    {section === 'hard-mode' && <><Subheading>Hard Mode Overview</Subheading><Paragraph>Hard Mode Elements: 18. Maximum Hard Mode Level: 60. The entries below are named elements.</Paragraph></>}
-    <SephiriaDatabaseIndex title={pageTitle[section]} entries={['artifacts', 'tablets', 'costumes', 'bosses'].includes(section) ? entries.map((entry) => ({ ...entry, patchHistory: [] })) : entries} relationEntries={section === 'weapons' ? sephiriaWeaponUpgrades : section === 'weapon-upgrades' ? sephiriaWeapons : []} filterTypes={section === 'bosses'} showPatchHistory={!['weapons', 'weapon-upgrades', 'artifacts', 'tablets', 'costumes', 'bosses'].includes(section)} countLabel={['weapon-upgrades', 'artifacts', 'tablets', 'costumes', 'bosses'].includes(section) ? 'entries' : undefined} />
+    {section === 'hard-mode' && <><Subheading>Hard Mode Overview</Subheading><Paragraph>Hard Mode has 18 elements in total and a maximum level of 60. The reference below currently covers 6 named elements.</Paragraph></>}
+    {section === 'grimoires' && <Paragraph>A reference to Grimoire actions, relevant stats and selected related records.</Paragraph>}
+    <SephiriaDatabaseIndex title={pageTitle[section]} entries={entries.map((entry) => ({ ...entry, patchHistory: [] }))} relationEntries={section === 'weapons' ? sephiriaWeaponUpgrades.map((entry) => ({ ...entry, patchHistory: [] })) : section === 'weapon-upgrades' ? sephiriaWeapons : []} filterTypes={section === 'bosses'} showPatchHistory={false} countLabel={section === 'grimoires' ? 'entry' : section !== 'weapons' ? 'entries' : undefined} />
     {section === 'grimoires' && <>
       <Subheading>Grimoire System</Subheading><Paragraph>Staff and Grimoires are separate systems. Grimoires use active actions, MP is involved, and relevant stats include Grimoire Damage, Grimoire Haste and MP Cost.</Paragraph>
       <Subheading>Related Records</Subheading><Paragraph>Known related records: Tome of Mimicry, Rylie’s Pocket Watch, Academy Fountain Pen, Standards of Magic and Empty Hilt.</Paragraph>
@@ -124,8 +126,8 @@ function tocFor(section: string) {
   };
   if (databaseTitles[section]) return [databaseTitles[section]];
   if (section === 'hard-mode') return ['Hard Mode Overview', 'Named Elements'];
-  if (section === 'grimoires') return ['Grimoire Index', 'Grimoire System', 'Related Records'];
-  if (section === 'mystic-pot') return ['Conversion Rules', 'Patch History'];
+  if (section === 'grimoires') return ['Grimoire Reference', 'Grimoire System', 'Related Records'];
+  if (section === 'mystic-pot') return ['Conversion Rules', 'After Use'];
   if (section === 'side-bag') return ['Storage', 'Unlock'];
   if (section === 'destiny-inscription') return ['Overview', 'Connection'];
   if (section === 'training-grounds') return ['Access', 'Testing Items'];

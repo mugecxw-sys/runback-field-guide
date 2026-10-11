@@ -2,6 +2,7 @@ import { sephiriaArtifactFacts } from './sephiria-artifact-facts';
 import { sephiriaTabletFacts } from './sephiria-tablet-facts';
 import { sephiriaCostumeFacts } from './sephiria-costume-facts';
 import { sephiriaBossFacts } from './sephiria-boss-facts';
+import { sephiriaWeaponUpgradeFacts } from './sephiria-weapon-upgrade-facts';
 import type { TabletPatternCell } from '@/components/game-wiki/tablet-pattern-grid';
 
 export type SephiriaPatchNote = { version: string; text: string };
@@ -65,42 +66,43 @@ export const sephiriaWeapons = [
     tags: ['weapon', 'sword', 'shield', 'block', 'cleave'],
     weaponRole: 'Melee guarding and Cleave.',
     mechanicCurrent: 'Use Block to guard attacks and Cleave for your Special Attack.',
-    upgradeIds: ['WUP-02', 'WUP-03', 'WUP-04'],
   }),
   record('WPN-02', 'Greatsword', 'Weapon', {
     aliases: ['Great Sword'], tags: ['weapon', 'greatsword', 'whirlwind'],
     weaponRole: 'Melee attacks and charged Whirlwind.',
     mechanicCurrent: 'Whirlwind is a charged Special Attack. Upgrades can change its charge speed or replace the Special Attack.',
-    upgradeIds: ['WUP-05', 'WUP-12', 'WUP-13'],
   }),
   record('WPN-03', 'Crossbow', 'Weapon', {
     tags: ['weapon', 'ranged', 'reload', 'ammunition'],
     weaponRole: 'Ranged attacks with ammunition and Reload.',
     mechanicCurrent: 'The Crossbow uses ammunition and requires Reload. Its upgrade branches can modify ammunition or Special Attacks such as Ammo Compression.',
     unlockCurrent: 'Unlock through a Destiny Inscription quest.',
-    upgradeIds: ['WUP-06', 'WUP-17'],
   }),
   record('WPN-04', 'Dagger', 'Weapon', {
     tags: ['weapon', 'dagger', 'dash attack', 'parry', 'fury'],
     weaponRole: 'Melee Dash Attack, Parry and Fury.',
     mechanicCurrent: 'Dash Attack can chain into Special Attack: Parry or Special Attack: Fury.',
-    upgradeIds: ['WUP-18'],
   }),
   record('WPN-05', 'Blade', 'Weapon', {
     aliases: ['Katana'], tags: ['weapon', 'blade', 'sheath', 'unsheath'],
     weaponRole: 'Melee attacks alternating between sheathed and unsheathed states.',
     mechanicCurrent: 'Alternate between Sheath and Unsheath. Both actions have an invincibility window; upgrades can replace Sheath with another Special Attack.',
     unlockCurrent: 'Unlock through Destiny Inscription.',
-    upgradeIds: ['WUP-07'],
   }),
   record('WPN-06', 'Staff', 'Weapon', {
-    tags: ['weapon', 'staff'],
+    tags: ['weapon', 'staff', 'melee', 'riposte'],
+    weaponRole: 'Melee attacks with Riposte for simultaneous attack and defense.',
+    mechanicCurrent: 'Special Attack: Riposte can be used during Normal Attack. A Perfect Guard against an enemy attack during Riposte empowers its second strike.',
     unlockCurrent: 'Unlock through Destiny Inscription.',
-    upgradeIds: [],
   }),
-];
+].map((weapon) => ({
+  ...weapon,
+  upgradeIds: Object.entries(sephiriaWeaponUpgradeFacts)
+    .filter(([, upgrade]) => upgrade.relatedIds.includes(weapon.id))
+    .map(([id]) => id),
+}));
 
-export const sephiriaWeaponUpgrades = [
+export const sephiriaWeaponUpgrades: SephiriaRecord[] = [
   record('WUP-01', 'Glacial Blade', 'Weapon Upgrade', {
     tags: ['weapon upgrade', 'upgrade', 'frost relic'],
     patchHistory: [{ version: '1.0.19', text: 'Scabbard of Exorcism gained a smaller projectile while retaining 50% faster charging. This bonus multiplies with Frost Relic charge speed.' }],
@@ -209,7 +211,7 @@ export const sephiriaWeaponUpgrades = [
     weapon: 'Dagger', relatedIds: ['WPN-04'],
     patchHistory: [{ version: '1.0.19', text: 'Extra damage on Weapon Attack changed from 20% to 25% of Lightning Damage.' }],
   }),
-];
+].map((entry) => ({ ...entry, ...sephiriaWeaponUpgradeFacts[entry.id] }));
 
 const artifactNames = [
   'Frozen Egg', 'Devotion Insignia', 'Eternal Winter', 'Electro Chakram', 'Shield Earrings',
@@ -309,13 +311,13 @@ export const sephiriaWikiPages: SephiriaWikiPage[] = [
   { title: 'Artifacts', href: '/games/sephiria/wiki/artifacts', summary: 'Browse Artifact effects, rarity, categories and current values.', publishedAt, group: 'category' },
   { title: 'Tablets', href: '/games/sephiria/wiki/tablets', summary: 'Tablet effects and placement patterns.', publishedAt, group: 'category' },
   { title: 'Costumes', href: '/games/sephiria/wiki/costumes', summary: 'Costume effects, unlocks and skins.', publishedAt, group: 'category' },
-  { title: 'Grimoires', href: '/games/sephiria/wiki/grimoires', summary: 'How Grimoires relate to Staff, MP and relevant stats.', publishedAt, group: 'category' },
+  { title: 'Grimoires', href: '/games/sephiria/wiki/grimoires', summary: 'Grimoire system mechanics, relevant stats and selected related records.', publishedAt, group: 'category' },
   { title: 'Bosses', href: '/games/sephiria/wiki/bosses', summary: 'Named bosses and minibosses.', publishedAt, group: 'category' },
-  { title: 'Hard Mode', href: '/games/sephiria/wiki/hard-mode', summary: 'Hard Mode scope, maximum level and named elements.', publishedAt, group: 'category' },
-  { title: 'Mystic Pot', href: '/games/sephiria/wiki/mystic-pot', summary: 'Artifact exchange rules and the 1.0.30 change.', publishedAt, group: 'system' },
+  { title: 'Hard Mode', href: '/games/sephiria/wiki/hard-mode', summary: 'Hard Mode totals, maximum level and six named element reference entries.', publishedAt, group: 'category' },
+  { title: 'Mystic Pot', href: '/games/sephiria/wiki/mystic-pot', summary: 'Artifact exchange rules and current Mystic Pot behavior.', publishedAt, group: 'system' },
   { title: 'Side Bag', href: '/games/sephiria/wiki/side-bag', summary: 'Storage behavior and unlock connection.', publishedAt, group: 'system' },
   { title: 'Destiny Inscription', href: '/games/sephiria/wiki/destiny-inscription', summary: 'Progression system overview and Side Bag connection.', publishedAt, group: 'system' },
-  { title: 'Training Grounds', href: '/games/sephiria/wiki/training-grounds', summary: 'Version 1.0.31 training area and item testing.', publishedAt, group: 'system' },
+  { title: 'Training Grounds', href: '/games/sephiria/wiki/training-grounds', summary: 'Training area for testing unlocked items and equipment.', publishedAt, group: 'system' },
   { title: 'Chapters', href: '/games/sephiria/wiki/chapters', summary: 'Six-chapter overview and Chapter 6 additions.', publishedAt, group: 'system' },
 ];
 
