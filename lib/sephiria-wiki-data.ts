@@ -3,6 +3,7 @@ import { sephiriaTabletFacts } from './sephiria-tablet-facts';
 import { sephiriaCostumeFacts } from './sephiria-costume-facts';
 import { sephiriaBossFacts } from './sephiria-boss-facts';
 import { sephiriaWeaponUpgradeFacts } from './sephiria-weapon-upgrade-facts';
+import { sephiriaImageManifest, type SephiriaRecordImage } from './sephiria-image-manifest';
 import type { TabletPatternCell } from '@/components/game-wiki/tablet-pattern-grid';
 
 export type SephiriaPatchNote = { version: string; text: string };
@@ -12,6 +13,7 @@ export type SephiriaRecord = {
   slug: string;
   name: string;
   category: string;
+  image: SephiriaRecordImage | null;
   aliases: string[];
   tags: string[];
   effectCurrent: string | null;
@@ -59,6 +61,7 @@ const record = (
   patchHistory: [],
   relatedIds: [],
   ...extra,
+  image: sephiriaImageManifest[id] ?? null,
 });
 
 export const sephiriaWeapons = [

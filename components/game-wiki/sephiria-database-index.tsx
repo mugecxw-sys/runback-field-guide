@@ -4,6 +4,7 @@ import { useMemo, useState } from 'react';
 import { Gem, Search, Shield, Skull, Sparkles, Swords, UserRound, WandSparkles } from 'lucide-react';
 import type { SephiriaRecord } from '@/lib/sephiria-wiki-data';
 import { TabletPatternGrid } from './tablet-pattern-grid';
+import { SephiriaRecordImageView } from './sephiria-record-image';
 
 const icons = {
   weapon: Swords,
@@ -68,7 +69,7 @@ export function SephiriaDatabaseIndex({ title, entries, relationEntries = [], fi
           const relatedWeapon = isUpgrade ? entry.relatedIds.map((id) => relations.get(id)).find((item) => item?.category === 'Weapon') : undefined;
           const upgrades = isWeapon ? (entry.upgradeIds ?? []).map((id) => relations.get(id)).filter((item): item is SephiriaRecord => item?.category === 'Weapon Upgrade') : [];
           return <article key={entry.id} id={entry.slug} className={`min-w-0 border border-[#b99256]/25 bg-[#17201d] p-4${widePattern ? ' sm:col-span-2 xl:col-span-3' : ''}`}>
-            <div className="flex min-w-0 items-start gap-3"><span aria-hidden="true" className="flex h-9 w-9 shrink-0 items-center justify-center border border-[#b99256]/25 bg-[#101714] text-[#dca464]"><Icon className="h-4 w-4" /></span><div className="min-w-0"><p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#b99256]">{entry.category}</p><h3 className="mt-1 break-words font-serif text-lg font-semibold leading-tight text-[#fff2df]">{entry.name}</h3></div></div>
+            <div className="flex min-w-0 items-start gap-3"><SephiriaRecordImageView key={entry.image?.src ?? entry.id} image={entry.image} icon={Icon} /><div className="min-w-0"><p className="text-[10px] font-bold uppercase tracking-[0.14em] text-[#b99256]">{entry.category}</p><h3 className="mt-1 break-words font-serif text-lg font-semibold leading-tight text-[#fff2df]">{entry.name}</h3></div></div>
             {entry.aliases.length > 0 && <p className="mt-3 break-words text-sm text-[#bdc6c5]">Also called: {entry.aliases.join(', ')}</p>}
             {(entry.category === 'Boss' || entry.category === 'Miniboss') && !!entry.bossChapters?.length && <p className="mt-3 break-words text-sm text-[#bdc6c5]"><span className="font-semibold text-[#fff2df]">{entry.bossChapters.length === 1 ? 'Chapter' : 'Chapters'}: </span>{entry.bossChapters.join(', ')}</p>}
             {isArtifact && entry.rarity && <p className="mt-3 break-words text-sm text-[#bdc6c5]"><span className="font-semibold text-[#fff2df]">Rarity: </span>{entry.rarity}</p>}
