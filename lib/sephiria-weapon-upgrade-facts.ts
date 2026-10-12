@@ -26,7 +26,7 @@ export const sephiriaWeaponUpgradeFacts: Record<string, UpgradeFacts> = {
   'WUP-05': {
     weapon: 'Greatsword', relatedIds: ['WPN-02'],
     effectCurrent: 'Normal Attacks gradually increase Attack Speed, up to 35%; the bonus resets when you stop attacking. Bloodletting reduces Max HP to 50. At activation, excess Max HP grants +2% Normal Attack Damage per 10 points, and excess current HP grants +1% damage dealt per point. Received Damage Reduction: 25%. Converted current HP returns when Bloodletting ends.',
-    mechanicCurrent: 'Special Attack: Bloodletting replaces Reassemble. The blade extends for 8 seconds, allowing continuous Normal Attacks. MP cost: 25.',
+    mechanicCurrent: 'Special Attack: Bloodletting replaces Reassemble.',
   },
   'WUP-06': {
     weapon: 'Crossbow', relatedIds: ['WPN-03'],
