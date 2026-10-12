@@ -1,4 +1,5 @@
 import { siteUrl } from '@/lib/repo-guide-pages';
+import { GameDisclosure } from '@/components/game-disclosure';
 export type HubSection = {
   id: string;
   title: string;
@@ -53,6 +54,7 @@ export function GameHub({
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#aeb7bc]">
           {description}
         </p>
+        <GameDisclosure gameHref={href} position="hub" className="mt-3 max-w-3xl" />
         <nav
           aria-label="Guide categories"
           className="sticky top-0 z-20 -mx-5 mt-6 flex gap-2 overflow-x-auto border-y border-white/10 bg-[#111417]/95 px-5 py-3 backdrop-blur md:static md:mx-0 md:flex-wrap md:overflow-visible md:border-0 md:bg-transparent md:p-0"

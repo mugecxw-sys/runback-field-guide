@@ -3,6 +3,7 @@ import {
   type GameWikiLink,
 } from '@/components/game-wiki/game-wiki';
 import { repoGuidePages, siteUrl } from '@/lib/repo-guide-pages';
+import { GameDisclosure } from '@/components/game-disclosure';
 
 function guideLink(
   id: string,
@@ -203,6 +204,7 @@ export function RepoHub() {
             Current coverage: v0.4.4 · 4 levels · 29 enemies
           </p>
         </header>
+        <GameDisclosure gameHref="/games/repo" position="hub" className="mt-3 max-w-3xl" />
 
         <section aria-labelledby="solo-guides" className="mt-10 sm:mt-12">
           <SectionHeading id="solo-guides" title="Solo Guides" />

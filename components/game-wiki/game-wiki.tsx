@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import Image from 'next/image';
+import { GameDisclosure } from '@/components/game-disclosure';
 
 export type GameWikiLink = {
   href: string;
@@ -109,8 +110,9 @@ export function GameWikiShell({ config, activeHref, children }: { config: GameWi
   );
 }
 
-export function GameWikiHero({ eyebrow, title, description, version, image }: { eyebrow: string; title: string; description: string; version: string; image?: { src: string; alt: string } }) {
+export function GameWikiHero({ eyebrow, title, description, version, image, gameHref }: { eyebrow: string; title: string; description: string; version: string; image?: { src: string; alt: string }; gameHref?: string }) {
   return (
+    <>
     <section className="relative overflow-hidden border border-[#b99256]/35 bg-[#17201d] px-5 py-7 shadow-[0_12px_32px_rgba(0,0,0,0.16)] sm:px-8 sm:py-10">
       {image ? <Image src={image.src} alt={image.alt} fill sizes="100vw" className="absolute inset-0 h-full w-full object-cover opacity-25" /> : <div aria-hidden="true" className="absolute inset-0 bg-[radial-gradient(circle_at_80%_0%,rgba(185,146,86,0.16),transparent_32%),linear-gradient(135deg,rgba(255,112,67,0.08),transparent_45%)]" />}
       <div className="relative max-w-3xl">
@@ -120,6 +122,8 @@ export function GameWikiHero({ eyebrow, title, description, version, image }: { 
         <p className="mt-5 inline-flex border border-[#b99256]/35 bg-[#0f1513]/70 px-3 py-1.5 text-xs font-semibold tracking-wide text-[#f2d6ac]">{version}</p>
       </div>
     </section>
+    {gameHref && <GameDisclosure gameHref={gameHref} position="hub" className="mt-3 max-w-3xl" />}
+    </>
   );
 }
 
