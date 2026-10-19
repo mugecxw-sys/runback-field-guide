@@ -20,8 +20,8 @@ export function TabletPatternGrid({ pattern, rotation = 0, label = 'Tablet patte
   };
   const cellDescription = pattern.map((cell) => `Row ${cell.y - minY + 1}, column ${cell.x - minX + 1}: ${cell.kind === 'origin' ? 'tablet' : cell.label ?? cell.value ?? 'affected'}`).join('; ');
   const large = width > 7;
-  return <figure className="block min-w-0 max-w-full">
-    <div aria-hidden="true" className={`grid max-w-full ${large ? 'gap-px' : 'gap-1'}`} style={{ width: `${width * 3}rem`, gridTemplateColumns: `repeat(${width}, minmax(0, 1fr))`, transform: `rotate(${rotation}deg)` }}>
+  return <figure className="mx-auto block w-fit min-w-0 max-w-full">
+    <div aria-hidden="true" className={`mx-auto grid max-w-full ${large ? 'gap-px' : 'gap-1'}`} style={{ width: `calc(${width * 2.125}rem + ${(width - 1) * (large ? 1 : 4)}px)`, gridTemplateColumns: `repeat(${width}, minmax(0, 1fr))`, transform: `rotate(${rotation}deg)` }}>
     {Array.from({ length: width * height }, (_, index) => {
       const x = index % width + minX, y = Math.floor(index / width) + minY;
       const cell = pattern.find((item) => item.x === x && item.y === y);
