@@ -2,6 +2,7 @@ import { GameWikiCategoryCard, GameWikiHero, GameWikiShell } from './game-wiki';
 import { sephiriaWikiConfig } from './sephiria-config';
 import { sephiriaWikiPages } from '@/lib/sephiria-wiki-data';
 import { siteUrl } from '@/lib/repo-guide-pages';
+import { chapterOneGuide } from '@/lib/sephiria-chapter-one-guide';
 
 const categories = sephiriaWikiPages.filter((page) => page.group === 'category');
 const systems = sephiriaWikiPages.filter((page) => page.group === 'system');
@@ -44,6 +45,10 @@ export function SephiriaGameHub() {
       <dl className="mt-3 grid grid-cols-2 gap-x-5 gap-y-3 xl:grid-cols-4">
         {gameInfo.map(([label, value]) => <div key={label} className="min-w-0"><dt className="text-[11px] text-[var(--muted)]">{label}</dt><dd className="mt-1 break-words text-sm text-[var(--text)]">{value}</dd></div>)}
       </dl>
+    </section>
+    <section className="mt-9 border-t border-[var(--gold-border)]/25 pt-7" aria-labelledby="sephiria-guides">
+      <h2 id="sephiria-guides" className="font-serif text-2xl font-semibold text-[var(--heading)]">Sephiria Guides</h2>
+      <div className="mt-4 max-w-2xl"><GameWikiCategoryCard item={{ href: chapterOneGuide.href, label: 'Chapter 1 Clear Guide', description: 'Permanent progression, building a focused run and four boss fights from a Storm Cloud-focused Chapter 1 clear.', count: 'Beginner guide' }} /></div>
     </section>
     <section className="mt-9 border-t border-[var(--gold-border)]/25 pt-7">
       <h2 className="font-serif text-2xl font-semibold text-[var(--heading)]">Sephiria Wiki</h2>
