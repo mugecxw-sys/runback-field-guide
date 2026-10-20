@@ -80,14 +80,14 @@ function crewImage(entry: CrewEntry) {
 function CrewDatabase() {
   return (
     <>
-      <section id="crew-database" aria-labelledby="crew-database-title" className="mt-8 scroll-mt-24 border border-[#b99256]/30 bg-[#17201d] p-4 sm:p-6">
-        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#dca464]">CREW DATABASE</p>
-        <h2 id="crew-database-title" className="mt-2 font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">Crew Database</h2>
+      <section id="crew-database" aria-labelledby="crew-database-title" className="mt-8 scroll-mt-24 border border-[var(--gold-border)]/30 bg-[var(--surface)] p-4 sm:p-6">
+        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--gold-label)]">CREW DATABASE</p>
+        <h2 id="crew-database-title" className="mt-2 font-serif text-2xl font-semibold text-[var(--heading)] sm:text-3xl">Crew Database</h2>
         <div className="mt-4 flex flex-wrap gap-2 text-xs font-semibold">
-          <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#fff2df]">{crew.length} Crew</span>
-          <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#fff2df]">Early Access 0.9.14</span>
+          <span className="border border-[var(--gold-border)]/35 px-3 py-1.5 text-[var(--heading)]">{crew.length} Crew</span>
+          <span className="border border-[var(--gold-border)]/35 px-3 py-1.5 text-[var(--heading)]">Early Access 0.9.14</span>
         </div>
-        <figure className="mt-6 max-w-[955px] border border-white/10 bg-[#17201d] p-3">
+        <figure className="mt-6 max-w-[955px] border border-[var(--neutral-edge)]/10 bg-[var(--surface)] p-3">
           <Image
             src="/images/games/wanderburg/crew/crew-list-0.9.14.png"
             alt="Wanderburg 0.9.14 Crew selection showing all six Crew"
@@ -95,22 +95,22 @@ function CrewDatabase() {
             height={280}
             className="h-auto max-w-full"
           />
-          <figcaption className="mt-3 text-xs leading-5 text-[#aeb7bc]">All six Crew visible in Wanderburg Early Access 0.9.14.</figcaption>
+          <figcaption className="mt-3 text-xs leading-5 text-[var(--muted)]">All six Crew visible in Wanderburg Early Access 0.9.14.</figcaption>
         </figure>
       </section>
       <div className="mt-5 grid min-w-0 gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {crew.map((entry) => <WikiEntityCard key={entry.name} href={`#${slugify(entry.name)}`} name={entry.name} category="Crew" summary={entry.effect} image={crewImage(entry)} />)}
       </div>
       <section id="crew-details" aria-labelledby="crew-details-title" className="mt-12">
-        <h2 id="crew-details-title" className="scroll-mt-24 font-serif text-3xl font-semibold text-[#fff2df]">Crew Details</h2>
+        <h2 id="crew-details-title" className="scroll-mt-24 font-serif text-3xl font-semibold text-[var(--heading)]">Crew Details</h2>
         <div className="mt-5">
           {crew.map((entry) => <WikiEntitySection key={entry.name} id={slugify(entry.name)} name={entry.name} category="Crew" image={crewImage(entry)}>
             <WikiDataBlock title="Crew Data" rows={[
               { label: 'Effect', value: entry.effect },
               ...(entry.cooldown ? [{ label: 'Auto cooldown', value: entry.cooldown }] : []),
             ]} />
-            <p className="leading-7 text-[#c7d0d5]">{entry.note}</p>
-            <a href="#crew-database" className="inline-block text-xs font-semibold text-[#ff9a7a] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Back to Crew Database ↑</a>
+            <p className="leading-7 text-[var(--body)]">{entry.note}</p>
+            <a href="#crew-database" className="inline-block text-xs font-semibold text-[var(--orange-hover)] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-text)]">Back to Crew Database ↑</a>
           </WikiEntitySection>)}
         </div>
       </section>
@@ -148,7 +148,7 @@ export default function WanderburgCrew() {
       toc={toc}
       schema={schema}
     >
-      <p className="mt-6 leading-7 text-[#c7d0d5]">Crew provide distinct support during a Wanderburg run, from attacks to repairs and Gold generation. This reference covers the six Crew shown in the Early Access 0.9.14 client.</p>
+      <p className="mt-6 leading-7 text-[var(--body)]">Crew provide distinct support during a Wanderburg run, from attacks to repairs and Gold generation. This reference covers the six Crew shown in the Early Access 0.9.14 client.</p>
       <CrewDatabase />
     </GameWikiArticleLayout>
   );

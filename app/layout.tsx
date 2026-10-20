@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import { siteUrl } from '@/lib/repo-guide-pages';
 import './globals.css';
 import { SiteHeader } from '@/components/site-header';
+import { themeBootstrap } from '@/lib/theme';
 
 const googleAnalyticsId = 'G-WV8NR26RYN';
 const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] });
@@ -33,8 +34,9 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
+        <script dangerouslySetInnerHTML={{ __html: themeBootstrap }} />
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}

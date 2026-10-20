@@ -65,7 +65,7 @@ const schema = {
 
 function Section({ title, children }: { title: string; children: ReactNode }) {
   const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  return <section aria-labelledby={id} className="mt-9"><h2 id={id} className="scroll-mt-24 font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">{title}</h2><div className="mt-4 space-y-4 leading-8 text-[#c7d0d5]">{children}</div></section>;
+  return <section aria-labelledby={id} className="mt-9"><h2 id={id} className="scroll-mt-24 font-serif text-2xl font-semibold text-[var(--heading)] sm:text-3xl">{title}</h2><div className="mt-4 space-y-4 leading-8 text-[var(--body)]">{children}</div></section>;
 }
 
 function VideoFigure() {
@@ -76,14 +76,14 @@ function VideoFigure() {
         playsInline
         preload="none"
         poster={imageBase + 'magic-boss.webp'}
-        className="block h-auto w-full max-w-full rounded-xl border border-white/15"
+        className="block h-auto w-full max-w-full rounded-xl border border-[var(--neutral-edge)]/15"
         aria-label="Lightning Mage can hit multiple targets while you keep moving"
       >
         <source src="/videos/games/wanderburg/magic-build/lightning-mage-multi-target.mp4" type="video/mp4" />
         <track kind="captions" src="data:text/vtt,WEBVTT%0A%0A00:00:00.000%20--%3E%2000:00:04.018%0ALightning%20Mage%20can%20hit%20multiple%20targets%20while%20you%20keep%20moving." srcLang="en" label="Gameplay captions" />
         Your browser does not support HTML video.
       </video>
-      <figcaption className="mt-2 text-sm leading-6 text-[#aeb7bc]">Lightning Mage can hit multiple targets while you keep moving.</figcaption>
+      <figcaption className="mt-2 text-sm leading-6 text-[var(--muted)]">Lightning Mage can hit multiple targets while you keep moving.</figcaption>
     </figure>
   );
 }
@@ -109,10 +109,10 @@ export default function WanderburgMagicBuild() {
       ]}
     >
       <article className="game-wiki-markdown min-w-0">
-        <p className="mt-6 leading-8 text-[#c7d0d5]">This build uses <strong>Lightning Mage</strong> as the main damage core.</p>
-        <p className="mt-4 leading-8 text-[#c7d0d5]">Most of the run is automatic: keep driving, let Lightning Mage handle groups, and use the active ability when the screen gets crowded.</p>
-        <p className="mt-4 leading-8 text-[#c7d0d5]">The tested setup used:</p>
-        <ul className="mt-4 list-disc space-y-1 pl-6 leading-8 text-[#c7d0d5]">
+        <p className="mt-6 leading-8 text-[var(--body)]">This build uses <strong>Lightning Mage</strong> as the main damage core.</p>
+        <p className="mt-4 leading-8 text-[var(--body)]">Most of the run is automatic: keep driving, let Lightning Mage handle groups, and use the active ability when the screen gets crowded.</p>
+        <p className="mt-4 leading-8 text-[var(--body)]">The tested setup used:</p>
+        <ul className="mt-4 list-disc space-y-1 pl-6 leading-8 text-[var(--body)]">
           <li><strong>Vehicle:</strong> Wanderturm</li>
           <li><strong>Captain:</strong> Norbert The Normal</li>
           <li><strong>Crew:</strong> Wizard Crew</li>

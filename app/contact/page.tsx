@@ -9,48 +9,48 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-[#111417] px-5 py-10 text-[#f1f3f4] sm:px-10 lg:px-16">
+    <main className="min-h-screen bg-[var(--page-bg)] px-5 py-10 text-[var(--page-text)] sm:px-10 lg:px-16">
       <div className="mx-auto max-w-3xl">
         <a
           href="/"
-          className="font-mono text-xs font-bold tracking-[0.2em] text-[#ff8662]"
+          className="font-mono text-xs font-bold tracking-[0.2em] text-[var(--orange-text)]"
         >
           ← RUNBACK
         </a>
-        <p className="mt-12 text-xs font-bold uppercase tracking-[0.2em] text-[#74818a]">
+        <p className="mt-12 text-xs font-bold uppercase tracking-[0.2em] text-[var(--quiet)]">
           Contact RUNBACK
         </p>
         <h1 className="mt-3 text-4xl font-semibold tracking-[-0.04em]">
           Contact RUNBACK
         </h1>
-        <p className="mt-5 text-base leading-relaxed text-[#aeb7bc]">
+        <p className="mt-5 text-base leading-relaxed text-[var(--muted)]">
           Have a game you want us to cover, found something wrong in one of our
           guides, or have a question we have not answered yet? You can contact
           RUNBACK directly.
         </p>
         <a
           href="mailto:contact@roguelikegame.org"
-          className="mt-7 inline-flex rounded-lg border border-[#ff8662]/50 bg-[#ff7043]/[0.07] px-5 py-3 text-sm font-semibold text-[#ff9a7a] transition hover:border-[#ff8662] hover:text-white"
+          className="mt-7 inline-flex rounded-lg border border-[var(--orange-text)]/50 bg-[var(--orange)]/[0.07] px-5 py-3 text-sm font-semibold text-[var(--orange-hover)] transition hover:border-[var(--orange-text)] hover:text-[var(--text-white)]"
         >
           Email RUNBACK
         </a>
-        <p className="mt-3 text-sm text-[#aeb7bc]">
+        <p className="mt-3 text-sm text-[var(--muted)]">
           <a
             href="mailto:contact@roguelikegame.org"
-            className="text-[#ff9a7a] underline underline-offset-4 hover:text-white"
+            className="text-[var(--orange-hover)] underline underline-offset-4 hover:text-[var(--text-white)]"
           >
             contact@roguelikegame.org
           </a>
         </p>
 
-        <div className="mt-10 space-y-8 text-sm leading-7 text-[#c7ced3]">
+        <div className="mt-10 space-y-8 text-sm leading-7 text-[var(--text-soft)]">
           <section>
-            <h2 className="text-lg font-semibold text-white">
+            <h2 className="text-lg font-semibold text-[var(--text-white)]">
               What can you contact us about?
             </h2>
           </section>
           <section>
-            <h3 className="text-base font-semibold text-white">Suggest a Game</h3>
+            <h3 className="text-base font-semibold text-[var(--text-white)]">Suggest a Game</h3>
             <p className="mt-2">
               Playing a roguelike or roguelite that you think deserves better
               guides? Send us the game name and tell us what kind of information
@@ -58,7 +58,7 @@ export default function ContactPage() {
             </p>
           </section>
           <section>
-            <h3 className="text-base font-semibold text-white">Request a Guide</h3>
+            <h3 className="text-base font-semibold text-[var(--text-white)]">Request a Guide</h3>
             <p className="mt-2">
               You can suggest a specific guide you would like to see, including:
             </p>
@@ -80,7 +80,7 @@ export default function ContactPage() {
             </p>
           </section>
           <section>
-            <h3 className="text-base font-semibold text-white">Report an Error</h3>
+            <h3 className="text-base font-semibold text-[var(--text-white)]">Report an Error</h3>
             <p className="mt-2">
               If something in a RUNBACK guide is incorrect, outdated, or unclear,
               please tell us.
@@ -98,7 +98,7 @@ export default function ContactPage() {
             </p>
           </section>
           <section>
-            <h3 className="text-base font-semibold text-white">
+            <h3 className="text-base font-semibold text-[var(--text-white)]">
               Share Gameplay Information
             </h3>
             <p className="mt-2">
@@ -112,7 +112,7 @@ export default function ContactPage() {
             </p>
           </section>
           <section>
-            <h3 className="text-base font-semibold text-white">Other Requests</h3>
+            <h3 className="text-base font-semibold text-[var(--text-white)]">Other Requests</h3>
             <p className="mt-2">You can also contact us about:</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>website feedback</li>
@@ -124,7 +124,7 @@ export default function ContactPage() {
             </ul>
           </section>
           <section>
-            <h2 className="text-lg font-semibold text-white">Before you email</h2>
+            <h2 className="text-lg font-semibold text-[var(--text-white)]">Before you email</h2>
             <p className="mt-2">
               For guide corrections or gameplay questions, including the exact
               RUNBACK page URL makes it much easier for us to understand the
@@ -132,20 +132,20 @@ export default function ContactPage() {
             </p>
             <a
               href="mailto:contact@roguelikegame.org"
-              className="mt-3 inline-block text-[#ff9a7a] underline underline-offset-4 hover:text-white"
+              className="mt-3 inline-block text-[var(--orange-hover)] underline underline-offset-4 hover:text-[var(--text-white)]"
             >
               contact@roguelikegame.org
             </a>
           </section>
         </div>
 
-        <footer className="mt-12 flex flex-wrap gap-5 border-t border-white/[0.08] pt-6 text-xs text-[#74818a]">
-          <a href="/about" className="text-[#ff8662] hover:text-white">About</a>
-          <a href="/editorial" className="text-[#ff8662] hover:text-white">
+        <footer className="mt-12 flex flex-wrap gap-5 border-t border-[var(--neutral-edge)]/[0.08] pt-6 text-xs text-[var(--quiet)]">
+          <a href="/about" className="text-[var(--orange-text)] hover:text-[var(--text-white)]">About</a>
+          <a href="/editorial" className="text-[var(--orange-text)] hover:text-[var(--text-white)]">
             Editorial policy
           </a>
-          <a href="/contact" className="text-[#ff8662] hover:text-white">Contact</a>
-          <a href="/privacy" className="text-[#ff8662] hover:text-white">Privacy</a>
+          <a href="/contact" className="text-[var(--orange-text)] hover:text-[var(--text-white)]">Contact</a>
+          <a href="/privacy" className="text-[var(--orange-text)] hover:text-[var(--text-white)]">Privacy</a>
         </footer>
       </div>
     </main>

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import { ArrowRight, ArrowUpRight, RotateCcw, Search } from 'lucide-react';
 import { gameLibraries } from '@/lib/game-catalog';
 import styles from './homepage-prototype.module.css';
+import { ThemeSwitcher } from './theme-switcher';
 
 type HomeGuide = {
   href: string;
@@ -46,11 +47,12 @@ export function HomepagePrototype({ featured, latest }: { featured: HomeGuide[];
             <a href="/#game-library">Games</a>
             <a href="/#latest">Latest</a>
             <a href="/search#search-input" className={styles.search} aria-label="Search guides"><Search size={21} strokeWidth={1.8} aria-hidden="true" /></a>
+            <ThemeSwitcher />
           </nav>
         </div>
       </header>
       <main className={styles.main}>
-        <section className={styles.hero} aria-labelledby="home-title">
+        <section className={`${styles.hero} theme-image-panel`} aria-labelledby="home-title">
           <Image src="/images/home-prototype/hero.webp" alt="" fill priority sizes="(max-width: 1440px) 100vw, 1320px" className={styles.heroImage} />
           <div className={styles.heroShade} />
           <div className={styles.heroContent}>

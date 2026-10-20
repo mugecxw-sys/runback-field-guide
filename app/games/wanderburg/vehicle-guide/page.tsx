@@ -55,7 +55,7 @@ const schema = {
 
 function Section({ title, children }: { title: string; children: ReactNode }) {
   const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  return <section aria-labelledby={id} className="mt-9"><h2 id={id} className="scroll-mt-24 font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">{title}</h2><div className="mt-4 space-y-4 leading-8 text-[#c7d0d5]">{children}</div></section>;
+  return <section aria-labelledby={id} className="mt-9"><h2 id={id} className="scroll-mt-24 font-serif text-2xl font-semibold text-[var(--heading)] sm:text-3xl">{title}</h2><div className="mt-4 space-y-4 leading-8 text-[var(--body)]">{children}</div></section>;
 }
 
 function VehicleImages({ vehicle, detailCaption, testCaption, detailSize, testSize }: {
@@ -88,15 +88,15 @@ export default function WanderburgVehicleGuide() {
       footerNote=""
     >
       <article className="game-wiki-markdown min-w-0">
-        <p className="mt-6 leading-8 text-[#c7d0d5]">Wanderburg has three current Vehicles, and they feel noticeably different to drive.</p>
-        <p className="mt-4 leading-8 text-[#c7d0d5]">For the comparison, all three used the same basic setup:</p>
-        <ul className="mt-4 list-disc space-y-1 pl-6 leading-8 text-[#c7d0d5]">
+        <p className="mt-6 leading-8 text-[var(--body)]">Wanderburg has three current Vehicles, and they feel noticeably different to drive.</p>
+        <p className="mt-4 leading-8 text-[var(--body)]">For the comparison, all three used the same basic setup:</p>
+        <ul className="mt-4 list-disc space-y-1 pl-6 leading-8 text-[var(--body)]">
           <li><strong>Captain:</strong> Norbert The Normal</li>
           <li><strong>Crew:</strong> Archer Crew</li>
           <li><strong>Starter Module:</strong> Archer Tower</li>
           <li><strong>Starter Artifact:</strong> Repair Wrench</li>
         </ul>
-        <p className="mt-4 leading-8 text-[#c7d0d5]">The tests were short runs focused on handling, positioning and the first couple of bosses — not full-build power.</p>
+        <p className="mt-4 leading-8 text-[var(--body)]">The tests were short runs focused on handling, positioning and the first couple of bosses — not full-build power.</p>
 
         <Section title="Quick Answer">
           <p><strong>Wanderturm:</strong> pick it when you want a balanced slot layout and have not decided on a specific build yet.</p>
@@ -105,12 +105,12 @@ export default function WanderburgVehicleGuide() {
         </Section>
 
         <figure className="my-7 min-w-0 max-w-full">
-          <video controls playsInline preload="none" poster={imageBase + 'guides/vehicle-guide/wanderturm-test.png'} className="block h-auto w-full max-w-full rounded-xl border border-white/15" aria-label="Wanderturm, Tankenburg and Spiderburg handling comparison">
+          <video controls playsInline preload="none" poster={imageBase + 'guides/vehicle-guide/wanderturm-test.png'} className="block h-auto w-full max-w-full rounded-xl border border-[var(--neutral-edge)]/15" aria-label="Wanderturm, Tankenburg and Spiderburg handling comparison">
             <source src="/videos/games/wanderburg/vehicle-guide/vehicle-handling-comparison.mp4" type="video/mp4" />
             <track kind="captions" src="data:text/vtt,WEBVTT%0A%0A00:00:00.000%20--%3E%2000:00:03.480%0AWanderturm%2C%20Tankenburg%20and%20Spiderburg%20handling%20compared." srcLang="en" label="Gameplay captions" />
             Your browser does not support HTML video.
           </video>
-          <figcaption className="mt-2 text-sm leading-6 text-[#aeb7bc]">Wanderturm, Tankenburg and Spiderburg handling compared under the same basic setup.</figcaption>
+          <figcaption className="mt-2 text-sm leading-6 text-[var(--muted)]">Wanderturm, Tankenburg and Spiderburg handling compared under the same basic setup.</figcaption>
         </figure>
 
         <Section title="Wanderturm — The Flexible Choice">
@@ -173,7 +173,7 @@ export default function WanderburgVehicleGuide() {
           <p>The useful question is simpler:</p>
           <p><strong>which slot layout and driving style match what you want to do this run?</strong></p>
         </Section>
-        <nav aria-label="Related Wanderburg guides" className="mt-10 flex flex-wrap gap-4 border-t border-white/10 pt-6 text-sm">
+        <nav aria-label="Related Wanderburg guides" className="mt-10 flex flex-wrap gap-4 border-t border-[var(--neutral-edge)]/10 pt-6 text-sm">
           <a href="/games/wanderburg/beginner-guide">Beginner Guide</a>
           <a href="/games/wanderburg/builds">Builds</a>
           <a href="/games/wanderburg/wiki/vehicles">Vehicles Wiki</a>

@@ -1,6 +1,7 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
+@import './theme.css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -13,25 +14,25 @@
   --radius-lg: 0.8rem;
 }
 
-:root { --background: oklch(0.16 0.012 245); --foreground: oklch(0.96 0.008 240); --border: oklch(1 0 0 / 10%); }
+:root { --background: var(--page-bg); --foreground: var(--text); --border: color-mix(in srgb, var(--neutral-edge) 10%, transparent); }
 * { box-sizing: border-box; }
-html { background: #111417; }
-body { margin: 0; min-width: 320px; background: #111417; font-family: var(--font-geist-sans), Arial, sans-serif; }
+html { background: var(--page-bg); }
+body { color: var(--text); margin: 0; min-width: 320px; background: var(--page-bg); font-family: var(--font-geist-sans), Arial, sans-serif; }
 button, input { font: inherit; }
 button { cursor: pointer; }
-::selection { background: #ff7043; color: #111417; }
+::selection { background: var(--orange); color: var(--page-bg); }
 
 .game-wiki-markdown h2 {
-  border-top: 1px solid color-mix(in srgb, #b99256 26%, transparent);
+  border-top: 1px solid color-mix(in srgb, var(--gold) 26%, transparent);
   padding-top: 1.5rem;
   font-family: Georgia, 'Times New Roman', serif;
-  color: #fff2df;
+  color: var(--heading);
 }
-.game-wiki-markdown h3 { color: #f2d6ac; }
+.game-wiki-markdown h3 { color: var(--gold-text); }
 .game-wiki-markdown blockquote {
-  background: color-mix(in srgb, #b99256 7%, transparent);
+  background: color-mix(in srgb, var(--gold) 7%, transparent);
   padding: 0.9rem 1rem;
 }
-.game-wiki-markdown table { background: #141c19; }
-.game-wiki-markdown tbody tr:nth-child(even) { background: color-mix(in srgb, #fff 2%, transparent); }
-.game-wiki-markdown a:focus-visible { outline: 2px solid #ff8662; outline-offset: 2px; }
+.game-wiki-markdown table { background: var(--table-surface); }
+.game-wiki-markdown tbody tr:nth-child(even) { background: color-mix(in srgb, var(--neutral-wash) 2%, transparent); }
+.game-wiki-markdown a:focus-visible { outline: 2px solid var(--orange-text); outline-offset: 2px; }

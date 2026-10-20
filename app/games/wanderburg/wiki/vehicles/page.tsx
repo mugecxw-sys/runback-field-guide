@@ -77,15 +77,15 @@ function slotSummary(vehicle: Vehicle) {
 function VehicleDatabase() {
   return (
     <>
-      <p className="mt-6 leading-7 text-[#c7d0d5]">This page covers the 3 Vehicles available in Wanderburg Early Access 0.9.14, including their Module slots, core mechanics and current in-game characteristics.</p>
-      <section id="vehicle-database" aria-labelledby="vehicle-database-title" className="mt-8 scroll-mt-24 border border-[#b99256]/30 bg-[#17201d] p-4 sm:p-6">
-        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#dca464]">VEHICLE DATABASE</p>
-        <h2 id="vehicle-database-title" className="mt-2 font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">Vehicle Database</h2>
+      <p className="mt-6 leading-7 text-[var(--body)]">This page covers the 3 Vehicles available in Wanderburg Early Access 0.9.14, including their Module slots, core mechanics and current in-game characteristics.</p>
+      <section id="vehicle-database" aria-labelledby="vehicle-database-title" className="mt-8 scroll-mt-24 border border-[var(--gold-border)]/30 bg-[var(--surface)] p-4 sm:p-6">
+        <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--gold-label)]">VEHICLE DATABASE</p>
+        <h2 id="vehicle-database-title" className="mt-2 font-serif text-2xl font-semibold text-[var(--heading)] sm:text-3xl">Vehicle Database</h2>
         <div className="mt-4 flex flex-wrap gap-2 text-xs font-semibold">
-          <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#fff2df]">{vehicles.length} Vehicles</span>
-          <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#fff2df]">Early Access 0.9.14</span>
+          <span className="border border-[var(--gold-border)]/35 px-3 py-1.5 text-[var(--heading)]">{vehicles.length} Vehicles</span>
+          <span className="border border-[var(--gold-border)]/35 px-3 py-1.5 text-[var(--heading)]">Early Access 0.9.14</span>
         </div>
-        <figure className="mt-6 max-w-[954px] border border-white/10 bg-[#17201d] p-3">
+        <figure className="mt-6 max-w-[954px] border border-[var(--neutral-edge)]/10 bg-[var(--surface)] p-3">
           <Image
             src="/images/games/wanderburg/vehicles/vehicles-list-0.9.14.png"
             alt="Wanderburg 0.9.14 Vehicle selection showing Spiderburg, Tankenburg and Wanderturm"
@@ -93,21 +93,21 @@ function VehicleDatabase() {
             height={226}
             className="h-auto max-w-full"
           />
-          <figcaption className="mt-3 text-xs leading-5 text-[#aeb7bc]">All 3 Vehicles available in Wanderburg Early Access 0.9.14.</figcaption>
+          <figcaption className="mt-3 text-xs leading-5 text-[var(--muted)]">All 3 Vehicles available in Wanderburg Early Access 0.9.14.</figcaption>
         </figure>
       </section>
       <div className="mt-5 grid min-w-0 gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {vehicles.map((vehicle) => <WikiEntityCard key={vehicle.name} href={`#${slugify(vehicle.name)}`} name={vehicle.name} category="Vehicle" summary={slotSummary(vehicle)} image={vehicleImage(vehicle)} />)}
       </div>
       <section id="vehicle-details" aria-labelledby="vehicle-details-title" className="mt-12">
-        <h2 id="vehicle-details-title" className="scroll-mt-24 font-serif text-3xl font-semibold text-[#fff2df]">Vehicle Details</h2>
+        <h2 id="vehicle-details-title" className="scroll-mt-24 font-serif text-3xl font-semibold text-[var(--heading)]">Vehicle Details</h2>
         <div className="mt-5">
           {vehicles.map((vehicle) => <WikiEntitySection key={vehicle.name} id={slugify(vehicle.name)} name={vehicle.name} category="Vehicle" image={vehicleImage(vehicle)}>
             <WikiDataBlock title="Module Slots" rows={vehicle.slots.map(({ position, count }) => ({ label: position, value: count }))} />
             <WikiDataBlock title="Vehicle" rows={[{ label: 'Characteristic', value: vehicle.characteristic }]} />
-            <p className="leading-7 text-[#c7d0d5]">{vehicle.description}</p>
-            <p className="leading-7 text-[#c7d0d5]">{vehicle.use}</p>
-            <a href="#vehicle-database" className="inline-block text-xs font-semibold text-[#ff9a7a] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Back to Vehicle Database ↑</a>
+            <p className="leading-7 text-[var(--body)]">{vehicle.description}</p>
+            <p className="leading-7 text-[var(--body)]">{vehicle.use}</p>
+            <a href="#vehicle-database" className="inline-block text-xs font-semibold text-[var(--orange-hover)] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-text)]">Back to Vehicle Database ↑</a>
           </WikiEntitySection>)}
         </div>
       </section>

@@ -65,7 +65,7 @@ const schema = {
 
 function Section({ title, children }: { title: string; children: ReactNode }) {
   const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  return <section aria-labelledby={id} className="mt-9"><h2 id={id} className="scroll-mt-24 font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">{title}</h2><div className="mt-4 space-y-4 leading-8 text-[#c7d0d5]">{children}</div></section>;
+  return <section aria-labelledby={id} className="mt-9"><h2 id={id} className="scroll-mt-24 font-serif text-2xl font-semibold text-[var(--heading)] sm:text-3xl">{title}</h2><div className="mt-4 space-y-4 leading-8 text-[var(--body)]">{children}</div></section>;
 }
 
 function VideoFigure() {
@@ -76,14 +76,14 @@ function VideoFigure() {
         playsInline
         preload="none"
         poster={imageBase + 'friendly-units-mid-run.png'}
-        className="block h-auto w-full max-w-full rounded-xl border border-white/15"
+        className="block h-auto w-full max-w-full rounded-xl border border-[var(--neutral-edge)]/15"
         aria-label="Running Shoes friendly units follow while boosting"
       >
         <source src="/videos/games/wanderburg/friendly-units-build/running-shoes.mp4" type="video/mp4" />
         <track kind="captions" src="data:text/vtt,WEBVTT%0A%0A00:00:00.000%20--%3E%2000:00:04.900%0AFriendly%20units%20follow%20Wanderturm%20and%20accelerate%20when%20it%20Boosts." srcLang="en" label="Gameplay captions" />
         Your browser does not support HTML video.
       </video>
-      <figcaption className="mt-2 text-sm leading-6 text-[#aeb7bc]">
+      <figcaption className="mt-2 text-sm leading-6 text-[var(--muted)]">
         Running Shoes helps friendly units accelerate with the vehicle while boosting.
       </figcaption>
     </figure>
@@ -105,17 +105,17 @@ export default function WanderburgFriendlyUnitsBuild() {
       footerNote=""
     >
       <article className="game-wiki-markdown min-w-0">
-        <p className="mt-6 leading-8 text-[#c7d0d5]">This build lets the army do most of the fighting while you drive.</p>
-        <p className="mt-4 leading-8 text-[#c7d0d5]">The cleared run used:</p>
-        <ul className="mt-4 list-disc space-y-1 pl-6 leading-8 text-[#c7d0d5]">
+        <p className="mt-6 leading-8 text-[var(--body)]">This build lets the army do most of the fighting while you drive.</p>
+        <p className="mt-4 leading-8 text-[var(--body)]">The cleared run used:</p>
+        <ul className="mt-4 list-disc space-y-1 pl-6 leading-8 text-[var(--body)]">
           <li><strong>Vehicle:</strong> Wanderturm</li>
           <li><strong>Captain:</strong> Empress</li>
           <li><strong>Crew:</strong> Carpenters</li>
           <li><strong>Starter Module:</strong> Front Barracks</li>
           <li><strong>Starter Artifact:</strong> Running Shoes</li>
         </ul>
-        <p className="mt-4 leading-8 text-[#c7d0d5]">The core is:</p>
-        <p className="mt-4 leading-8 text-[#c7d0d5]"><strong>Front Barracks + Side Barracks + Empress</strong></p>
+        <p className="mt-4 leading-8 text-[var(--body)]">The core is:</p>
+        <p className="mt-4 leading-8 text-[var(--body)]"><strong>Front Barracks + Side Barracks + Empress</strong></p>
 
         <Section title="Quick Setup">
           <p>Prioritize:</p>

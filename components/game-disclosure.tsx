@@ -12,9 +12,9 @@ export function gameDisclosureFor(gameHref: string) {
 export function GameDisclosure({ gameHref, position, className = '' }: { gameHref: string; position: 'hub' | 'footer'; className?: string }) {
   const text = gameDisclosureFor(gameHref);
   if (!text) return null;
-  return <p data-fan-disclosure="game" data-disclosure-position={position} className={`text-xs leading-5 text-[#aeb7bc] ${className}`}>{text}</p>;
+  return <p data-fan-disclosure="game" data-disclosure-position={position} className={`text-xs leading-5 text-[var(--muted)] ${className}`}>{text}</p>;
 }
 
 export function AboutDisclosure() {
-  return <p data-fan-disclosure="about" data-disclosure-position="about" className="mt-8 text-xs leading-5 text-[#aeb7bc]">{aboutDisclosure}</p>;
+  return <p data-fan-disclosure="about" data-disclosure-position="about" className="mt-8 text-xs leading-5 text-[var(--muted)]">{aboutDisclosure}</p>;
 }

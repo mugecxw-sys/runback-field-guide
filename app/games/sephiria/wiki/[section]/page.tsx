@@ -41,17 +41,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 const h2Id = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
 function Subheading({ children }: { children: string }) {
-  return <h2 id={h2Id(children)} className="mt-7 border-t border-[#b99256]/25 pt-6 font-serif text-2xl font-semibold text-[#fff2df]">{children}</h2>;
+  return <h2 id={h2Id(children)} className="mt-7 border-t border-[var(--gold-border)]/25 pt-6 font-serif text-2xl font-semibold text-[var(--heading)]">{children}</h2>;
 }
 
 function Paragraph({ children }: { children: string }) {
-  return <p className="mt-3 max-w-3xl text-sm leading-6 text-[#bdc6c5]">{children}</p>;
+  return <p className="mt-3 max-w-3xl text-sm leading-6 text-[var(--secondary)]">{children}</p>;
 }
 
 function SystemPage({ section }: { section: string }) {
   if (section === 'grimoires') return <>
     <Subheading>Grimoire System</Subheading>
-    <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-6 text-[#e1e6e8]"><li>Staff and Grimoires are separate systems.</li><li>Grimoires use active actions.</li><li>MP is involved.</li><li>Relevant stats include Grimoire Damage, Grimoire Haste and MP Cost.</li></ul>
+    <ul className="mt-3 list-disc space-y-2 pl-5 text-sm leading-6 text-[var(--text)]"><li>Staff and Grimoires are separate systems.</li><li>Grimoires use active actions.</li><li>MP is involved.</li><li>Relevant stats include Grimoire Damage, Grimoire Haste and MP Cost.</li></ul>
     <Subheading>Related Records</Subheading>
     <Paragraph>Known records connected to Grimoires include Tome of Mimicry, Rylie’s Pocket Watch, Academy Fountain Pen, Standards of Magic and Empty Hilt.</Paragraph>
     <ul className="mt-3 flex flex-wrap gap-2">{[
@@ -60,18 +60,18 @@ function SystemPage({ section }: { section: string }) {
       ['Academy Fountain Pen', '/games/sephiria/wiki/artifacts#academy-fountain-pen'],
       ['Standards of Magic', '/games/sephiria/wiki/artifacts#standards-of-magic'],
       ['Empty Hilt', '/games/sephiria/wiki/artifacts#empty-hilt'],
-    ].map(([name, href]) => <li key={name} className="border border-[#b99256]/25 bg-[#17201d] px-3 py-2 text-sm text-[#fff2df]"><a href={href} className="hover:text-[#ff9a7a]">{name}</a></li>)}</ul>
+    ].map(([name, href]) => <li key={name} className="border border-[var(--gold-border)]/25 bg-[var(--surface)] px-3 py-2 text-sm text-[var(--heading)]"><a href={href} className="hover:text-[var(--orange-hover)]">{name}</a></li>)}</ul>
   </>;
   if (section === 'hard-mode') return <>
     <Subheading>Hard Mode Overview</Subheading>
-    <dl className="mt-3 grid gap-3 sm:grid-cols-2"><div className="border border-[#b99256]/25 bg-[#17201d] p-4"><dt className="text-xs uppercase tracking-wide text-[#b99256]">Hard Mode Elements</dt><dd className="mt-2 text-xl font-semibold text-[#fff2df]">18</dd></div><div className="border border-[#b99256]/25 bg-[#17201d] p-4"><dt className="text-xs uppercase tracking-wide text-[#b99256]">Maximum Hard Mode Level</dt><dd className="mt-2 text-xl font-semibold text-[#fff2df]">60</dd></div></dl>
+    <dl className="mt-3 grid gap-3 sm:grid-cols-2"><div className="border border-[var(--gold-border)]/25 bg-[var(--surface)] p-4"><dt className="text-xs uppercase tracking-wide text-[var(--gold)]">Hard Mode Elements</dt><dd className="mt-2 text-xl font-semibold text-[var(--heading)]">18</dd></div><div className="border border-[var(--gold-border)]/25 bg-[var(--surface)] p-4"><dt className="text-xs uppercase tracking-wide text-[var(--gold)]">Maximum Hard Mode Level</dt><dd className="mt-2 text-xl font-semibold text-[var(--heading)]">60</dd></div></dl>
     <Subheading>Named Elements</Subheading>
     <Paragraph>Hard Mode has 18 elements in total and a maximum level of 60. The reference below currently covers 6 named elements.</Paragraph>
     <SephiriaDatabaseIndex title="Hard Mode Elements" entries={sephiriaHardModeElements} countLabel="entries" showPatchHistory={false} />
   </>;
   if (section === 'mystic-pot') return <>
     <Subheading>Conversion Rules</Subheading>
-    <div className="mt-4 grid gap-3 sm:grid-cols-2"><div className="border border-[#b99256]/25 bg-[#17201d] p-5"><p className="font-semibold text-[#fff2df]">1 Artifact</p><p className="mt-2 text-sm leading-6 text-[#bdc6c5]">→ Different Artifact of the same rarity</p></div><div className="border border-[#b99256]/25 bg-[#17201d] p-5"><p className="font-semibold text-[#fff2df]">2 Artifacts</p><p className="mt-2 text-sm leading-6 text-[#bdc6c5]">→ 1 Artifact of higher rarity</p></div></div>
+    <div className="mt-4 grid gap-3 sm:grid-cols-2"><div className="border border-[var(--gold-border)]/25 bg-[var(--surface)] p-5"><p className="font-semibold text-[var(--heading)]">1 Artifact</p><p className="mt-2 text-sm leading-6 text-[var(--secondary)]">→ Different Artifact of the same rarity</p></div><div className="border border-[var(--gold-border)]/25 bg-[var(--surface)] p-5"><p className="font-semibold text-[var(--heading)]">2 Artifacts</p><p className="mt-2 text-sm leading-6 text-[var(--secondary)]">→ 1 Artifact of higher rarity</p></div></div>
     <Subheading>After Use</Subheading><Paragraph>The Mystic Pot appears broken after all uses are consumed.</Paragraph>
   </>;
   if (section === 'side-bag') return <>
@@ -114,7 +114,7 @@ function CategoryPage({ section }: { section: string }) {
         ['Academy Fountain Pen', '/games/sephiria/wiki/artifacts#academy-fountain-pen'],
         ['Standards of Magic', '/games/sephiria/wiki/artifacts#standards-of-magic'],
         ['Empty Hilt', '/games/sephiria/wiki/artifacts#empty-hilt'],
-      ].map(([name, href]) => <li key={name} className="border border-[#b99256]/25 bg-[#17201d] px-3 py-2 text-sm text-[#fff2df]"><a href={href} className="hover:text-[#ff9a7a]">{name}</a></li>)}</ul>
+      ].map(([name, href]) => <li key={name} className="border border-[var(--gold-border)]/25 bg-[var(--surface)] px-3 py-2 text-sm text-[var(--heading)]"><a href={href} className="hover:text-[var(--orange-hover)]">{name}</a></li>)}</ul>
     </>}
   </>;
 }

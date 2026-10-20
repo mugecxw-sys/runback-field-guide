@@ -54,7 +54,7 @@ function Inline({ text }: { text: string }) {
   const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*|\[[^\]]+\]\([^)]*\))/g);
   return parts.map((part, index) => {
     const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
-    if (link) return <a key={index} href={link[2]} className="text-[#ff9a7a] underline underline-offset-4">{link[1]}</a>;
+    if (link) return <a key={index} href={link[2]} className="text-[var(--orange-hover)] underline underline-offset-4">{link[1]}</a>;
     if (part.startsWith('**') && part.endsWith('**')) return <strong key={index}>{part.slice(2, -2)}</strong>;
     if (part.startsWith('*') && part.endsWith('*')) return <em key={index}>{part.slice(1, -1)}</em>;
     return part;
@@ -135,7 +135,7 @@ function MarkdownContent({ lines, nested = false, idPrefix = '', showRosterScree
   while (index < lines.length) {
     const line = lines[index];
     if (!line) { index += 1; continue; }
-    if (line === '---') { blocks.push(<hr key={index} className="mt-10 border-white/15" />); index += 1; continue; }
+    if (line === '---') { blocks.push(<hr key={index} className="mt-10 border-[var(--neutral-edge)]/15" />); index += 1; continue; }
     const headingMatch = line.match(/^(#{1,3}) (.+)$/);
     if (headingMatch) {
       const heading = headingMatch[2];
@@ -148,7 +148,7 @@ function MarkdownContent({ lines, nested = false, idPrefix = '', showRosterScree
     if (line.startsWith('> ')) {
       const quotes: string[] = [];
       while (lines[index]?.startsWith('> ')) { quotes.push(lines[index].slice(2).replace(/\\$/, '')); index += 1; }
-      blocks.push(<blockquote key={index} className="mt-5 border-l-2 border-[#ff8662] pl-4 leading-7 text-[#c7d0d5]">{quotes.map((quote, quoteIndex) => <span key={quoteIndex}><Inline text={quote} />{quoteIndex < quotes.length - 1 && <br />}</span>)}</blockquote>);
+      blocks.push(<blockquote key={index} className="mt-5 border-l-2 border-[var(--orange-text)] pl-4 leading-7 text-[var(--body)]">{quotes.map((quote, quoteIndex) => <span key={quoteIndex}><Inline text={quote} />{quoteIndex < quotes.length - 1 && <br />}</span>)}</blockquote>);
       continue;
     }
     if (line.startsWith('|') && /^\|[-| :]+\|$/.test(lines[index + 1] ?? '')) {
@@ -156,9 +156,9 @@ function MarkdownContent({ lines, nested = false, idPrefix = '', showRosterScree
       index += 2;
       const rows: string[][] = [];
       while (lines[index]?.startsWith('|')) { rows.push(cells(lines[index])); index += 1; }
-      blocks.push(<div key={index} className="mt-5 max-w-full overflow-x-auto rounded-xl border border-white/15"><table className="min-w-[850px] border-collapse text-left text-sm leading-6"><thead className="bg-[#192126]"><tr>{header.map((cell) => <th key={cell} scope="col" className="border-b border-white/20 px-4 py-3 font-semibold"><Inline text={cell} /></th>)}</tr></thead><tbody>{rows.map((row, rowIndex) => <tr key={rowIndex} className="border-b border-white/10 last:border-0">{row.map((cell, cellIndex) => cellIndex === 0 ? <th key={cellIndex} scope="row" className="whitespace-nowrap px-4 py-3 text-left font-medium"><Inline text={cell} /></th> : <td key={cellIndex} className="px-4 py-3 text-[#c7d0d5]"><Inline text={cell} /></td>)}</tr>)}</tbody></table></div>);
+      blocks.push(<div key={index} className="mt-5 max-w-full overflow-x-auto rounded-xl border border-[var(--neutral-edge)]/15"><table className="min-w-[850px] border-collapse text-left text-sm leading-6"><thead className="bg-[var(--surface-raised)]"><tr>{header.map((cell) => <th key={cell} scope="col" className="border-b border-[var(--neutral-edge)]/20 px-4 py-3 font-semibold"><Inline text={cell} /></th>)}</tr></thead><tbody>{rows.map((row, rowIndex) => <tr key={rowIndex} className="border-b border-[var(--neutral-edge)]/10 last:border-0">{row.map((cell, cellIndex) => cellIndex === 0 ? <th key={cellIndex} scope="row" className="whitespace-nowrap px-4 py-3 text-left font-medium"><Inline text={cell} /></th> : <td key={cellIndex} className="px-4 py-3 text-[var(--body)]"><Inline text={cell} /></td>)}</tr>)}</tbody></table></div>);
       if (showRosterScreenshot && header[0] === 'Artifact' && header[1] === 'Effect') {
-        blocks.push(<figure key="artifacts-list" className="my-6 max-w-[924px]"><Image src="/images/games/wanderburg/artifacts/artifacts-list-0.9.14.png" alt="Wanderburg 0.9.14 Starter Artifact selection showing 21 artifacts" width={924} height={486} className="h-auto max-w-full rounded-xl border border-white/15" /><figcaption className="mt-2 text-sm text-[#aeb7bc]">All 21 Starter Artifacts visible in Wanderburg Early Access 0.9.14.</figcaption></figure>);
+        blocks.push(<figure key="artifacts-list" className="my-6 max-w-[924px]"><Image src="/images/games/wanderburg/artifacts/artifacts-list-0.9.14.png" alt="Wanderburg 0.9.14 Starter Artifact selection showing 21 artifacts" width={924} height={486} className="h-auto max-w-full rounded-xl border border-[var(--neutral-edge)]/15" /><figcaption className="mt-2 text-sm text-[var(--muted)]">All 21 Starter Artifacts visible in Wanderburg Early Access 0.9.14.</figcaption></figure>);
       }
       continue;
     }
@@ -174,7 +174,7 @@ function MarkdownContent({ lines, nested = false, idPrefix = '', showRosterScree
       blocks.push(<ol key={index} className="mt-5 list-decimal space-y-2 pl-6 leading-7">{items.map((item) => <li key={item}><Inline text={item} /></li>)}</ol>);
       continue;
     }
-    blocks.push(<p key={index} className="mt-5 leading-8 text-[#c7d0d5]"><Inline text={line} /></p>);
+    blocks.push(<p key={index} className="mt-5 leading-8 text-[var(--body)]"><Inline text={line} /></p>);
     index += 1;
   }
   return <>{blocks}</>;
@@ -182,37 +182,37 @@ function MarkdownContent({ lines, nested = false, idPrefix = '', showRosterScree
 
 function ArtifactDatabase() {
   return <>
-    <section id="artifact-database" aria-labelledby="artifact-database-title" className="mt-8 scroll-mt-24 border border-[#b99256]/30 bg-[#17201d] p-4 sm:p-6">
-      <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#dca464]">ARTIFACT DATABASE</p>
-      <h2 id="artifact-database-title" className="mt-2 font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">Artifact Database</h2>
+    <section id="artifact-database" aria-labelledby="artifact-database-title" className="mt-8 scroll-mt-24 border border-[var(--gold-border)]/30 bg-[var(--surface)] p-4 sm:p-6">
+      <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--gold-label)]">ARTIFACT DATABASE</p>
+      <h2 id="artifact-database-title" className="mt-2 font-serif text-2xl font-semibold text-[var(--heading)] sm:text-3xl">Artifact Database</h2>
       <div className="mt-4 flex flex-wrap gap-2 text-xs font-semibold">
-        <span className="border border-[#b99256]/35 px-3 py-1.5 text-[#fff2df]">{artifacts.length} Starter Artifacts</span>
+        <span className="border border-[var(--gold-border)]/35 px-3 py-1.5 text-[var(--heading)]">{artifacts.length} Starter Artifacts</span>
       </div>
-      <p className="mt-5 text-sm leading-6 text-[#c7d0d5]">The in-game menu is labeled “Starter Artifact.” This list covers its 21 visible choices, not every Artifact that may appear elsewhere.</p>
+      <p className="mt-5 text-sm leading-6 text-[var(--body)]">The in-game menu is labeled “Starter Artifact.” This list covers its 21 visible choices, not every Artifact that may appear elsewhere.</p>
     </section>
     <div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
       {artifacts.map((entry) => <WikiEntityCard key={entry.name} href={'#' + slugify(entry.name)} name={entry.name} category="Starter Artifact" summary={entry.effect} image={artifactImage(entry)} />)}
     </div>
-    <details className="mt-10 border-y border-[#b99256]/25 py-4">
-      <summary className="cursor-pointer font-serif text-lg font-semibold text-[#f2d6ac] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Current Starter Artifact List</summary>
+    <details className="mt-10 border-y border-[var(--gold-border)]/25 py-4">
+      <summary className="cursor-pointer font-serif text-lg font-semibold text-[var(--gold-text)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-text)]">Current Starter Artifact List</summary>
       <div className="game-wiki-markdown pb-6"><MarkdownContent lines={referenceLines} showRosterScreenshot /></div>
     </details>
     <section aria-labelledby="artifact-details" className="mt-12">
-      <h2 id="artifact-details" className="scroll-mt-24 font-serif text-3xl font-semibold text-[#fff2df]">Artifact Details</h2>
+      <h2 id="artifact-details" className="scroll-mt-24 font-serif text-3xl font-semibold text-[var(--heading)]">Artifact Details</h2>
       <div className="mt-5">
         {artifacts.map((entry) => <WikiEntitySection key={entry.name} id={slugify(entry.name)} name={entry.name} category="Starter Artifact">
           <WikiDataBlock title="Artifact Data" rows={[
             { label: 'Effect', value: entry.effect },
           ]} />
-          {entry.notes.some((line) => line.trim()) && <div className="border-t border-white/10 pt-4">
-            <h3 className="text-xs font-bold uppercase tracking-[0.14em] text-[#dca464]">Notes</h3>
+          {entry.notes.some((line) => line.trim()) && <div className="border-t border-[var(--neutral-edge)]/10 pt-4">
+            <h3 className="text-xs font-bold uppercase tracking-[0.14em] text-[var(--gold-label)]">Notes</h3>
             <div className="game-wiki-markdown text-sm"><MarkdownContent lines={entry.notes} nested idPrefix={slugify(entry.name)} /></div>
           </div>}
-          <figure className="min-w-0 self-start border border-white/10 bg-[#17201d] p-3">
+          <figure className="min-w-0 self-start border border-[var(--neutral-edge)]/10 bg-[var(--surface)] p-3">
             <Image src={artifactImage(entry).src} alt={artifactImage(entry).alt} width={entry.image.width} height={entry.image.height} loading="lazy" className="h-auto max-w-full" />
-            <figcaption className="mt-3 text-xs leading-5 text-[#aeb7bc]">{entry.name} in Wanderburg Early Access 0.9.14.</figcaption>
+            <figcaption className="mt-3 text-xs leading-5 text-[var(--muted)]">{entry.name} in Wanderburg Early Access 0.9.14.</figcaption>
           </figure>
-          <a href="#artifact-database" className="inline-block text-xs font-semibold text-[#ff9a7a] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]">Back to Artifact Database ↑</a>
+          <a href="#artifact-database" className="inline-block text-xs font-semibold text-[var(--orange-hover)] underline underline-offset-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-text)]">Back to Artifact Database ↑</a>
         </WikiEntitySection>)}
       </div>
     </section>

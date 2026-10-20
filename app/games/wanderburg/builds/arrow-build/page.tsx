@@ -68,17 +68,17 @@ const schema = {
 
 function Section({ title, children }: { title: string; children: ReactNode }) {
   const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  return <section aria-labelledby={id} className="mt-9"><h2 id={id} className="scroll-mt-24 font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">{title}</h2><div className="mt-4 space-y-4 leading-8 text-[#c7d0d5]">{children}</div></section>;
+  return <section aria-labelledby={id} className="mt-9"><h2 id={id} className="scroll-mt-24 font-serif text-2xl font-semibold text-[var(--heading)] sm:text-3xl">{title}</h2><div className="mt-4 space-y-4 leading-8 text-[var(--body)]">{children}</div></section>;
 }
 
 function VideoFigure() {
   return <figure className="my-6 min-w-0 max-w-full">
-    <video controls playsInline preload="none" poster={imageBase + 'arrow-v2-boss.webp'} className="block h-auto w-full max-w-full rounded-xl border border-white/15" aria-label="Setup 2 Archer Tower, Side Ballista and Turret Layer in combat">
+    <video controls playsInline preload="none" poster={imageBase + 'arrow-v2-boss.webp'} className="block h-auto w-full max-w-full rounded-xl border border-[var(--neutral-edge)]/15" aria-label="Setup 2 Archer Tower, Side Ballista and Turret Layer in combat">
       <source src="/videos/games/wanderburg/arrow-build/arrow-v2-core-output.mp4" type="video/mp4" />
       <track kind="captions" src={'data:text/vtt,' + encodeURIComponent('WEBVTT\n\n00:00:00.000 --> 00:00:04.018\n' + videoCaption)} srcLang="en" label="Gameplay captions" />
       Your browser does not support HTML video.
     </video>
-    <figcaption className="mt-2 text-sm leading-6 text-[#aeb7bc]">{videoCaption}</figcaption>
+    <figcaption className="mt-2 text-sm leading-6 text-[var(--muted)]">{videoCaption}</figcaption>
   </figure>;
 }
 
@@ -108,13 +108,13 @@ export default function WanderburgArrowBuild() {
       </Section>
 
       <Section title="Setup 1 vs Setup 2">
-        <div className="max-w-full overflow-x-auto rounded-xl border border-white/15">
+        <div className="max-w-full overflow-x-auto rounded-xl border border-[var(--neutral-edge)]/15">
           <table aria-label="Arrow setup comparison" className="w-full min-w-[640px] border-collapse text-left text-sm leading-6">
-            <thead className="bg-[#192126] text-[#fff2df]">
-              <tr><th scope="col" aria-label="Comparison category" className="border-b border-white/20 px-4 py-3" /><th scope="col" className="border-b border-white/20 px-4 py-3">Setup 1</th><th scope="col" className="border-b border-white/20 px-4 py-3">Setup 2</th></tr>
+            <thead className="bg-[var(--surface-raised)] text-[var(--heading)]">
+              <tr><th scope="col" aria-label="Comparison category" className="border-b border-[var(--neutral-edge)]/20 px-4 py-3" /><th scope="col" className="border-b border-[var(--neutral-edge)]/20 px-4 py-3">Setup 1</th><th scope="col" className="border-b border-[var(--neutral-edge)]/20 px-4 py-3">Setup 2</th></tr>
             </thead>
-            <tbody>{comparisonRows.map(([label, setup1, setup2]) => <tr key={label} className="border-b border-white/10 last:border-0">
-              <th scope="row" className="w-1/4 px-4 py-3 font-semibold text-[#fff2df]">{label}</th>
+            <tbody>{comparisonRows.map(([label, setup1, setup2]) => <tr key={label} className="border-b border-[var(--neutral-edge)]/10 last:border-0">
+              <th scope="row" className="w-1/4 px-4 py-3 font-semibold text-[var(--heading)]">{label}</th>
               <td className="px-4 py-3">{setup1}</td>
               <td className="px-4 py-3">{label === 'Overall' ? <strong>{setup2}</strong> : setup2}</td>
             </tr>)}</tbody>

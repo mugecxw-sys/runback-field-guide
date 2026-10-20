@@ -38,10 +38,10 @@ export default function WanderburgModsPage() {
       coverage="Mods & Tools"
       footerNote="RUNBACK tools are in development"
     >
-      <section id="mods-tools" className="mt-8 border border-[#b99256]/25 bg-[#17201d] p-5 sm:p-6">
-        <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#dca464]">MODS &amp; TOOLS</p>
-        <h2 className="mt-3 font-serif text-2xl font-semibold text-[#fff2df]">In Development</h2>
-        <p className="mt-4 max-w-2xl leading-7 text-[#bdc6c5]">
+      <section id="mods-tools" className="mt-8 border border-[var(--gold-border)]/25 bg-[var(--surface)] p-5 sm:p-6">
+        <p className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--gold-label)]">MODS &amp; TOOLS</p>
+        <h2 className="mt-3 font-serif text-2xl font-semibold text-[var(--heading)]">In Development</h2>
+        <p className="mt-4 max-w-2xl leading-7 text-[var(--secondary)]">
           The first RUNBACK Wanderburg tools are currently being developed and tested. Downloads will only be listed here after they have been packaged and verified against the supported game version.
         </p>
       </section>

@@ -98,19 +98,19 @@ function GuideCard({
   return (
     <a
       href={item.href}
-      className={`flex min-w-0 flex-col border border-[#b99256]/25 bg-[#17201d] hover:border-[#ff8662]/70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662] ${compact ? 'p-4' : 'p-5 sm:p-6'}`}
+      className={`flex min-w-0 flex-col border border-[var(--gold-border)]/25 bg-[var(--surface)] hover:border-[var(--orange-text)]/70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-text)] ${compact ? 'p-4' : 'p-5 sm:p-6'}`}
     >
       <h3
-        className={`font-serif font-semibold leading-snug text-[#fff2df] ${compact ? 'text-lg' : 'text-2xl'}`}
+        className={`font-serif font-semibold leading-snug text-[var(--heading)] ${compact ? 'text-lg' : 'text-2xl'}`}
       >
         {item.label}
       </h3>
       <p
-        className={`text-sm leading-6 text-[#c4cfca] ${compact ? 'mb-4 mt-2' : 'mb-6 mt-3'}`}
+        className={`text-sm leading-6 text-[var(--body-soft)] ${compact ? 'mb-4 mt-2' : 'mb-6 mt-3'}`}
       >
         {item.description}
       </p>
-      <span className="mt-auto text-sm text-[#dca464]">
+      <span className="mt-auto text-sm text-[var(--gold-label)]">
         Read guide <span aria-hidden="true">→</span>
       </span>
     </a>
@@ -127,12 +127,12 @@ function SectionHeading({
   description?: string;
 }) {
   return (
-    <div className="border-b border-[#b99256]/25 pb-4">
-      <h2 id={id} className="font-serif text-3xl font-semibold text-[#fff2df]">
+    <div className="border-b border-[var(--gold-border)]/25 pb-4">
+      <h2 id={id} className="font-serif text-3xl font-semibold text-[var(--heading)]">
         {title}
       </h2>
       {description && (
-        <p className="mt-2 max-w-2xl text-sm leading-6 text-[#aeb7bc]">
+        <p className="mt-2 max-w-2xl text-sm leading-6 text-[var(--muted)]">
           {description}
         </p>
       )}
@@ -156,7 +156,7 @@ export function RepoHub() {
   };
 
   return (
-    <main className="min-h-screen bg-[#101714] px-5 py-8 text-[#e1e6e8] sm:py-10">
+    <main className="min-h-screen bg-[var(--wiki-page-bg)] px-5 py-8 text-[var(--text)] sm:py-10">
       <div className="mx-auto max-w-6xl">
         <script
           type="application/ld+json"
@@ -166,41 +166,41 @@ export function RepoHub() {
         />
         <nav
           aria-label="Breadcrumb"
-          className="flex gap-2 text-sm text-[#aeb7bc]"
+          className="flex gap-2 text-sm text-[var(--muted)]"
         >
-          <a href="/" className="hover:text-[#ff9a7a]">
+          <a href="/" className="hover:text-[var(--orange-hover)]">
             Home
           </a>
           <span aria-hidden="true">›</span>
           <span aria-current="page">R.E.P.O.</span>
         </nav>
 
-        <header className="border-b border-[#b99256]/25 pb-9 pt-10 sm:pb-12">
-          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[#dca464]">
+        <header className="border-b border-[var(--gold-border)]/25 pb-9 pt-10 sm:pb-12">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--gold-label)]">
             RUNBACK FIELD GUIDE
           </p>
-          <h1 className="mt-3 font-serif text-4xl font-semibold leading-tight tracking-tight text-[#fff2df] sm:text-5xl">
+          <h1 className="mt-3 font-serif text-4xl font-semibold leading-tight tracking-tight text-[var(--heading)] sm:text-5xl">
             R.E.P.O. Wiki & Guides
           </h1>
-          <p className="mt-5 max-w-2xl text-lg leading-8 text-[#c4cfca]">
+          <p className="mt-5 max-w-2xl text-lg leading-8 text-[var(--body-soft)]">
             Use the Wiki for enemies, equipment and game mechanics. Dedicated
             Solo Guides are in development for surviving and progressing alone.
           </p>
           <div className="mt-5 flex flex-wrap gap-x-6 gap-y-3 text-sm">
             <a
               href="#solo-guides"
-              className="text-[#dca464] hover:text-[#ff9a7a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]"
+              className="text-[var(--gold-label)] hover:text-[var(--orange-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-text)]"
             >
               Solo Guides <span aria-hidden="true">→</span>
             </a>
             <a
               href="#wiki"
-              className="text-[#dca464] hover:text-[#ff9a7a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]"
+              className="text-[var(--gold-label)] hover:text-[var(--orange-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-text)]"
             >
               Browse Wiki <span aria-hidden="true">→</span>
             </a>
           </div>
-          <p className="mt-5 text-xs leading-6 text-[#aeb7bc] sm:text-sm">
+          <p className="mt-5 text-xs leading-6 text-[var(--muted)] sm:text-sm">
             Current coverage: v0.4.4 · 4 levels · 29 enemies
           </p>
         </header>
@@ -216,14 +216,14 @@ export function RepoHub() {
             </div>
           ) : (
             <div className="mt-4 max-w-2xl text-sm leading-6">
-              <p className="text-[#c4cfca]">
+              <p className="text-[var(--body-soft)]">
                 Playing R.E.P.O. alone? Dedicated solo guides are being built
                 around survival, upgrades, equipment, enemies and long-run
                 progression.
               </p>
               <a
                 href="#essential-guides"
-                className="mt-3 inline-block text-[#dca464] hover:text-[#ff9a7a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]"
+                className="mt-3 inline-block text-[var(--gold-label)] hover:text-[var(--orange-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-text)]"
               >
                 New to the game? Start with Essential Guides{' '}
                 <span aria-hidden="true">→</span>
@@ -278,26 +278,26 @@ export function RepoHub() {
         {patchNotes && (
           <section
             aria-labelledby="updates"
-            className="mt-10 flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border-y border-[#b99256]/25 py-5 sm:mt-12"
+            className="mt-10 flex flex-wrap items-center justify-between gap-x-6 gap-y-3 border-y border-[var(--gold-border)]/25 py-5 sm:mt-12"
           >
             <div>
-              <h2 id="updates" className="text-sm font-semibold text-[#fff2df]">
+              <h2 id="updates" className="text-sm font-semibold text-[var(--heading)]">
                 Updates
               </h2>
-              <p className="mt-1 text-sm text-[#aeb7bc]">
+              <p className="mt-1 text-sm text-[var(--muted)]">
                 Latest covered update: v0.4.4
               </p>
             </div>
             <a
               href={'/guides/' + patchNotes.slug}
-              className="text-sm text-[#dca464] hover:text-[#ff9a7a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]"
+              className="text-sm text-[var(--gold-label)] hover:text-[var(--orange-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-text)]"
             >
               Read patch notes <span aria-hidden="true">→</span>
             </a>
           </section>
         )}
 
-        <footer className="mt-10 flex flex-wrap gap-5 py-6 text-sm text-[#aeb7bc]">
+        <footer className="mt-10 flex flex-wrap gap-5 py-6 text-sm text-[var(--muted)]">
           <a href="/about">About</a>
           <a href="/editorial">Editorial policy</a>
           <a href="/contact">Contact</a>

@@ -32,7 +32,7 @@ function Inline({ text }: { text: string }) {
   const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]*\))/g);
   return parts.map((part, index) => {
     const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
-    if (link) return <a key={index} href={link[2]} className="text-[#ff9a7a] underline underline-offset-4">{link[1]}</a>;
+    if (link) return <a key={index} href={link[2]} className="text-[var(--orange-hover)] underline underline-offset-4">{link[1]}</a>;
     if (part.startsWith('**') && part.endsWith('**')) return <strong key={index}>{part.slice(2, -2)}</strong>;
     return part;
   });
@@ -62,7 +62,7 @@ function MarkdownBody() {
       continue;
     }
     if (line.startsWith('> ')) {
-      blocks.push(<blockquote key={index} className="mt-5 border-l-2 border-[#ff8662] pl-4 leading-7 text-[#c7d0d5]"><Inline text={line.slice(2)} /></blockquote>);
+      blocks.push(<blockquote key={index} className="mt-5 border-l-2 border-[var(--orange-text)] pl-4 leading-7 text-[var(--body)]"><Inline text={line.slice(2)} /></blockquote>);
       index += 1;
       continue;
     }
@@ -70,7 +70,7 @@ function MarkdownBody() {
     if (image) {
       const asset = images[image[1] as keyof typeof images];
       const caption = lines[index + 2]?.match(/^\*(.+)\*$/)?.[1];
-      if (asset) blocks.push(<figure key={index} className="mt-6">{/* oxlint-disable-next-line next/no-img-element */}<img src={'/images/brotato/golem/' + image[1]} alt={asset.alt} width={asset.width} height={asset.height} loading="lazy" decoding="async" className="h-auto w-full rounded-xl" />{caption && <figcaption className="mt-3 text-sm leading-6 text-[#aeb7bc]">{caption}</figcaption>}</figure>);
+      if (asset) blocks.push(<figure key={index} className="mt-6">{/* oxlint-disable-next-line next/no-img-element */}<img src={'/images/brotato/golem/' + image[1]} alt={asset.alt} width={asset.width} height={asset.height} loading="lazy" decoding="async" className="h-auto w-full rounded-xl" />{caption && <figcaption className="mt-3 text-sm leading-6 text-[var(--muted)]">{caption}</figcaption>}</figure>);
       index += caption ? 3 : 1;
       continue;
     }
@@ -79,7 +79,7 @@ function MarkdownBody() {
       index += 2;
       const rows: string[][] = [];
       while (lines[index]?.startsWith('|')) { rows.push(cells(lines[index])); index += 1; }
-      blocks.push(<div key={index} className="mt-5 overflow-x-auto"><table className="min-w-full border-collapse text-left text-sm leading-6"><thead><tr>{header.map(cell => <th key={cell} className="border-b border-white/20 px-3 py-2 font-semibold"><Inline text={cell} /></th>)}</tr></thead><tbody>{rows.map((row, rowIndex) => <tr key={rowIndex}>{row.map((cell, cellIndex) => <td key={cellIndex} className="border-b border-white/10 px-3 py-2 text-[#c7d0d5]"><Inline text={cell} /></td>)}</tr>)}</tbody></table></div>);
+      blocks.push(<div key={index} className="mt-5 overflow-x-auto"><table className="min-w-full border-collapse text-left text-sm leading-6"><thead><tr>{header.map(cell => <th key={cell} className="border-b border-[var(--neutral-edge)]/20 px-3 py-2 font-semibold"><Inline text={cell} /></th>)}</tr></thead><tbody>{rows.map((row, rowIndex) => <tr key={rowIndex}>{row.map((cell, cellIndex) => <td key={cellIndex} className="border-b border-[var(--neutral-edge)]/10 px-3 py-2 text-[var(--body)]"><Inline text={cell} /></td>)}</tr>)}</tbody></table></div>);
       continue;
     }
     if (line.startsWith('- ')) {
@@ -88,7 +88,7 @@ function MarkdownBody() {
       blocks.push(<ul key={index} className="mt-5 list-disc space-y-2 pl-6 leading-7">{items.map(item => <li key={item}><Inline text={item} /></li>)}</ul>);
       continue;
     }
-    blocks.push(<p key={index} className="mt-5 leading-8 text-[#c7d0d5]"><Inline text={line} /></p>);
+    blocks.push(<p key={index} className="mt-5 leading-8 text-[var(--body)]"><Inline text={line} /></p>);
     index += 1;
   }
   return <>{blocks}</>;
@@ -115,12 +115,12 @@ export default function GolemGuide() {
       },
     ],
   };
-  return <main className="min-h-screen px-5 py-8 text-[#e1e6e8]"><article className="mx-auto max-w-3xl">
+  return <main className="min-h-screen px-5 py-8 text-[var(--text)]"><article className="mx-auto max-w-3xl">
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
-    <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[#aeb7bc]"><a href="/">Home</a><span>›</span><a href="/games/brotato">Brotato</a><span>›</span><span aria-current="page">{h1}</span></nav>
+    <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[var(--muted)]"><a href="/">Home</a><span>›</span><a href="/games/brotato">Brotato</a><span>›</span><span aria-current="page">{h1}</span></nav>
     <h1 className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl">{h1}</h1>
-    <p className="mt-4 text-xs text-[#aeb7bc]">By RUNBACK · Published <time dateTime={publishedAt}>2026-09-18</time></p>
-    <aside className="mt-5 rounded-xl border border-white/15 bg-[#192126] p-5 text-sm leading-7 text-[#c7d0d5]">This Danger 0 Rock-start run reached Wave 12 without clearing. Wave 3 and Wave 8 are snapshots, not Wave 12 final stats. Golem&apos;s below-50%-HP passive activated naturally and felt slight in this run.</aside>
+    <p className="mt-4 text-xs text-[var(--muted)]">By RUNBACK · Published <time dateTime={publishedAt}>2026-09-18</time></p>
+    <aside className="mt-5 rounded-xl border border-[var(--neutral-edge)]/15 bg-[var(--surface-raised)] p-5 text-sm leading-7 text-[var(--body)]">This Danger 0 Rock-start run reached Wave 12 without clearing. Wave 3 and Wave 8 are snapshots, not Wave 12 final stats. Golem&apos;s below-50%-HP passive activated naturally and felt slight in this run.</aside>
     <MarkdownBody />
   </article></main>;
 }

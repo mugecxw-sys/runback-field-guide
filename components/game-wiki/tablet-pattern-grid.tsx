@@ -13,10 +13,10 @@ export function TabletPatternGrid({ pattern, rotation = 0, label = 'Tablet patte
   const minX = Math.min(...xs), maxX = Math.max(...xs), minY = Math.min(...ys), maxY = Math.max(...ys);
   const width = maxX - minX + 1, height = maxY - minY + 1;
   const colors = {
-    origin: 'border-[#e5c17e] bg-[#dca464]/25 text-[#fff2df]',
-    positive: 'border-[#79c7a0]/60 bg-[#79c7a0]/15 text-[#c4efd2]',
-    negative: 'border-[#ff8662]/60 bg-[#ff7043]/15 text-[#ffc0aa]',
-    neutral: 'border-white/15 bg-white/[0.04] text-[#bdc6c5]',
+    origin: 'border-[var(--gold-detail)] bg-[var(--gold-label)]/25 text-[var(--heading)]',
+    positive: 'border-[var(--success)]/60 bg-[var(--success)]/15 text-[var(--success-bright)]',
+    negative: 'border-[var(--orange-text)]/60 bg-[var(--orange)]/15 text-[var(--orange-soft)]',
+    neutral: 'border-[var(--neutral-edge)]/15 bg-[var(--neutral-wash)]/[0.04] text-[var(--secondary)]',
   };
   const cellDescription = pattern.map((cell) => `Row ${cell.y - minY + 1}, column ${cell.x - minX + 1}: ${cell.kind === 'origin' ? 'tablet' : cell.label ?? cell.value ?? 'affected'}`).join('; ');
   const large = width > 7;
@@ -28,6 +28,6 @@ export function TabletPatternGrid({ pattern, rotation = 0, label = 'Tablet patte
       return <div key={`${x},${y}`} className={`flex aspect-square min-w-0 items-center justify-center border ${large ? 'text-[10px] sm:text-xs' : 'text-xs'} font-semibold ${cell ? colors[cell.kind] : 'border-transparent bg-transparent'}`}>{cell?.kind === 'origin' ? '●' : cell?.label ?? cell?.value ?? ''}</div>;
     })}
     </div>
-    <figcaption className="mt-2 text-xs text-[#bdc6c5]">● Tablet<span className="sr-only">. {label}. {cellDescription}</span></figcaption>
+    <figcaption className="mt-2 text-xs text-[var(--secondary)]">● Tablet<span className="sr-only">. {label}. {cellDescription}</span></figcaption>
   </figure>;
 }

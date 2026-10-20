@@ -11,7 +11,7 @@ type Props = { searchParams: Promise<{ q?: string }> };
 export default async function SearchPage({ searchParams }: Props) {
   const { q } = await searchParams;
   return (
-    <main className="mx-auto min-h-screen max-w-6xl px-5 py-10 text-[#e1e6e8]">
+    <main className="mx-auto min-h-screen max-w-6xl px-5 py-10 text-[var(--text)]">
       <h1 className="text-4xl font-semibold">Find your next answer</h1>
       <GlobalSearch initialQuery={q} />
     </main>

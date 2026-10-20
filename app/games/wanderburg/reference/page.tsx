@@ -34,7 +34,7 @@ function Inline({ text }: { text: string }) {
   const parts = text.split(/(\*\*[^*]+\*\*|\[[^\]]+\]\([^)]*\))/g);
   return parts.map((part, index) => {
     const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
-    if (link) return <a key={index} href={link[2]} className="text-[#ff9a7a] underline underline-offset-4">{link[1]}</a>;
+    if (link) return <a key={index} href={link[2]} className="text-[var(--orange-hover)] underline underline-offset-4">{link[1]}</a>;
     if (part.startsWith('**') && part.endsWith('**')) return <strong key={index}>{part.slice(2, -2)}</strong>;
     return part;
   });
@@ -67,7 +67,7 @@ function MarkdownBody() {
       continue;
     }
     if (line.startsWith('> ')) {
-      blocks.push(<blockquote key={index} className="mt-5 border-l-2 border-[#ff8662] pl-4 leading-7 text-[#c7d0d5]"><Inline text={line.slice(2)} /></blockquote>);
+      blocks.push(<blockquote key={index} className="mt-5 border-l-2 border-[var(--orange-text)] pl-4 leading-7 text-[var(--body)]"><Inline text={line.slice(2)} /></blockquote>);
       index += 1;
       continue;
     }
@@ -78,7 +78,7 @@ function MarkdownBody() {
         index += 1;
       }
       const header = rows[0] ?? [];
-      blocks.push(<div key={index} className="mt-6 max-w-full overflow-x-auto rounded-xl border border-white/15"><table className="min-w-full text-left text-sm"><thead className="bg-[#192126]"><tr>{header.map((cell) => <th key={cell} scope="col" className="whitespace-nowrap p-4">{cell}</th>)}</tr></thead><tbody>{rows.slice(1).map((row, rowIndex) => <tr key={rowIndex} className="border-t border-white/10">{row.map((cell, cellIndex) => cellIndex === 0 ? <th key={cellIndex} scope="row" className="whitespace-nowrap p-4 font-medium">{cell}</th> : <td key={cellIndex} className="whitespace-nowrap p-4">{cell}</td>)}</tr>)}</tbody></table></div>);
+      blocks.push(<div key={index} className="mt-6 max-w-full overflow-x-auto rounded-xl border border-[var(--neutral-edge)]/15"><table className="min-w-full text-left text-sm"><thead className="bg-[var(--surface-raised)]"><tr>{header.map((cell) => <th key={cell} scope="col" className="whitespace-nowrap p-4">{cell}</th>)}</tr></thead><tbody>{rows.slice(1).map((row, rowIndex) => <tr key={rowIndex} className="border-t border-[var(--neutral-edge)]/10">{row.map((cell, cellIndex) => cellIndex === 0 ? <th key={cellIndex} scope="row" className="whitespace-nowrap p-4 font-medium">{cell}</th> : <td key={cellIndex} className="whitespace-nowrap p-4">{cell}</td>)}</tr>)}</tbody></table></div>);
       continue;
     }
     if (line.startsWith('- ')) {
@@ -90,7 +90,7 @@ function MarkdownBody() {
       blocks.push(<ul key={index} className="mt-5 list-disc space-y-2 pl-6 leading-7">{items.map((item) => <li key={item}><Inline text={item} /></li>)}</ul>);
       continue;
     }
-    blocks.push(<p key={index} className="mt-5 leading-8 text-[#c7d0d5]"><Inline text={line} /></p>);
+    blocks.push(<p key={index} className="mt-5 leading-8 text-[var(--body)]"><Inline text={line} /></p>);
     index += 1;
   }
   return <>{blocks}</>;

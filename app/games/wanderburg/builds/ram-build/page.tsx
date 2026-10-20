@@ -70,7 +70,7 @@ const schema = {
 
 function Section({ title, children }: { title: string; children: ReactNode }) {
   const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  return <section aria-labelledby={id} className="mt-9"><h2 id={id} className="scroll-mt-24 font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">{title}</h2><div className="mt-4 space-y-4 leading-8 text-[#c7d0d5]">{children}</div></section>;
+  return <section aria-labelledby={id} className="mt-9"><h2 id={id} className="scroll-mt-24 font-serif text-2xl font-semibold text-[var(--heading)] sm:text-3xl">{title}</h2><div className="mt-4 space-y-4 leading-8 text-[var(--body)]">{children}</div></section>;
 }
 
 function VideoFigure() {
@@ -81,15 +81,15 @@ function VideoFigure() {
         playsInline
         preload="none"
         poster={imageBase + 'ram-boost-hit.png'}
-        className="block h-auto w-full max-w-full rounded-xl border border-white/15"
+        className="block h-auto w-full max-w-full rounded-xl border border-[var(--neutral-edge)]/15"
         aria-label="Boost in, land the RAM hit, and keep moving"
       >
         <source src="/videos/games/wanderburg/ram-build/ram-hit-and-run.mp4" type="video/mp4" />
         <track kind="captions" src="data:text/vtt,WEBVTT%0A%0A00:00:00.000%20--%3E%2000:00:06.000%0ALine%20up.%20Boost%20in.%20Hit%20the%20target.%20Keep%20moving%20away." srcLang="en" label="Gameplay captions" />
         Your browser does not support HTML video.
       </video>
-      <figcaption className="mt-2 text-sm leading-6 text-[#aeb7bc]">
-        <strong className="font-medium text-[#c7d0d5]">Boost in, land the RAM hit, and keep moving instead of staying beside the target.</strong>
+      <figcaption className="mt-2 text-sm leading-6 text-[var(--muted)]">
+        <strong className="font-medium text-[var(--body)]">Boost in, land the RAM hit, and keep moving instead of staying beside the target.</strong>
       </figcaption>
     </figure>
   );
@@ -110,12 +110,12 @@ export default function WanderburgRamBuild() {
       footerNote=""
     >
       <article className="game-wiki-markdown min-w-0">
-        <p className="mt-6 leading-8 text-[#c7d0d5]">This RAM build uses a hit-and-run setup. Do not stay beside the target. The tested pattern was <strong className="text-[#fff2df]">line up → Boost → hit → keep moving → reset</strong>.</p>
-        <p className="mt-4 leading-8 text-[#c7d0d5]">The tested Early Access 0.9.14 run used Spiderburg, Duelist, Carpenters, starter RAM and Bumper. It cleared successfully.</p>
-        <p className="mt-4 leading-8 text-[#c7d0d5]">Duelist adds <strong className="text-[#fff2df]">50% melee damage while boosting</strong>, but also makes you take <strong className="text-[#fff2df]">20% more damage while boosting</strong>. That trade-off rewards a clear line into the target and a quick exit, not spending the whole fight in enemy range.</p>
+        <p className="mt-6 leading-8 text-[var(--body)]">This RAM build uses a hit-and-run setup. Do not stay beside the target. The tested pattern was <strong className="text-[var(--heading)]">line up → Boost → hit → keep moving → reset</strong>.</p>
+        <p className="mt-4 leading-8 text-[var(--body)]">The tested Early Access 0.9.14 run used Spiderburg, Duelist, Carpenters, starter RAM and Bumper. It cleared successfully.</p>
+        <p className="mt-4 leading-8 text-[var(--body)]">Duelist adds <strong className="text-[var(--heading)]">50% melee damage while boosting</strong>, but also makes you take <strong className="text-[var(--heading)]">20% more damage while boosting</strong>. That trade-off rewards a clear line into the target and a quick exit, not spending the whole fight in enemy range.</p>
 
         <Section title="Quick Setup">
-          <p>Build around <strong className="text-[#fff2df]">RAM + Boost speed + support damage</strong>. RAM creates the impact moments; other Modules keep contributing while you reposition.</p>
+          <p>Build around <strong className="text-[var(--heading)]">RAM + Boost speed + support damage</strong>. RAM creates the impact moments; other Modules keep contributing while you reposition.</p>
           <p>RAM by itself did not feel comfortable as the only early damage source. Plan for another damage source while RAM is cooling down, and treat the collision as one part of the setup rather than a move to repeat continuously.</p>
           <BeginnerGuideFigure src={imageBase + 'ram-loadout.png'} alt="Wanderburg RAM build starting loadout with Spiderburg and Duelist" caption="Tested RAM setup with Spiderburg, Duelist, Carpenters, RAM and Bumper." width={2553} height={1321} />
         </Section>
@@ -135,7 +135,7 @@ export default function WanderburgRamBuild() {
 
         <Section title="Upgrade RAM for the Next Hit">
           <p>The first RAM upgrade offered cooldown, ability and auto-attack choices. Cooldown was selected because another strong collision opportunity fit the tested play pattern better than staying close to deal auto-attack damage.</p>
-          <ol className="list-decimal space-y-1 pl-6"><li><strong className="text-[#fff2df]">RAM cooldown</strong></li><li><strong className="text-[#fff2df]">RAM ability</strong></li><li><strong className="text-[#fff2df]">Auto attack when the option makes sense</strong></li></ol>
+          <ol className="list-decimal space-y-1 pl-6"><li><strong className="text-[var(--heading)]">RAM cooldown</strong></li><li><strong className="text-[var(--heading)]">RAM ability</strong></li><li><strong className="text-[var(--heading)]">Auto attack when the option makes sense</strong></li></ol>
           <p>Auto attack was a lower priority in this run. Do not pass up every useful secondary upgrade just to stack RAM.</p>
         </Section>
 

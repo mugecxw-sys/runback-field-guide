@@ -29,7 +29,7 @@ function Dossier({ enemy }: { enemy: RepoEnemy }) {
             ],
           ].map(([label, value]) => (
             <div key={label}>
-              <dt className="text-sm font-semibold text-[#9fd7ba]">{label}</dt>
+              <dt className="text-sm font-semibold text-[var(--success-text)]">{label}</dt>
               <dd className="mt-1 leading-7">{value}</dd>
             </div>
           ))}
@@ -38,7 +38,7 @@ function Dossier({ enemy }: { enemy: RepoEnemy }) {
           href={enemy.source}
           target="_blank"
           rel="noreferrer"
-          className="mt-4 block text-sm text-[#ff9a7a] underline"
+          className="mt-4 block text-sm text-[var(--orange-hover)] underline"
         >
           Image and research credit ↗
         </a>
@@ -74,7 +74,7 @@ export function EnemyIndex() {
             type="search"
             value={query}
             onChange={(event) => setQuery(event.target.value)}
-            className="mt-2 w-full rounded-lg border border-white/20 bg-[#192126] p-3"
+            className="mt-2 w-full rounded-lg border border-[var(--neutral-edge)]/20 bg-[var(--surface-raised)] p-3"
           />
         </label>
         <label className="text-sm">
@@ -82,7 +82,7 @@ export function EnemyIndex() {
           <select
             value={tier}
             onChange={(event) => setTier(event.target.value)}
-            className="mt-2 block rounded-lg border border-white/20 bg-[#192126] p-3"
+            className="mt-2 block rounded-lg border border-[var(--neutral-edge)]/20 bg-[var(--surface-raised)] p-3"
           >
             {['ALL', 'DL1', 'DL2', 'DL2*', 'DL3'].map((item) => (
               <option key={item}>{item}</option>
@@ -91,7 +91,7 @@ export function EnemyIndex() {
         </label>
       </div>
       <output
-        className="mt-4 block text-sm text-[#aeb7bc]"
+        className="mt-4 block text-sm text-[var(--muted)]"
         aria-live="polite"
         aria-atomic="true"
       >
@@ -102,17 +102,17 @@ export function EnemyIndex() {
           <details
             id={enemy.id}
             key={enemy.id}
-            className="group scroll-mt-6 overflow-hidden rounded-xl border border-white/10 bg-[#192126]"
+            className="group scroll-mt-6 overflow-hidden rounded-xl border border-[var(--neutral-edge)]/10 bg-[var(--surface-raised)]"
           >
             <summary className="cursor-pointer list-none p-5 md:hidden">
               <span className="flex items-center justify-between gap-4">
                 <span>
                   <strong className="block text-lg">{enemy.name}</strong>
-                  <span className="mt-1 block text-sm text-[#aeb7bc]">
+                  <span className="mt-1 block text-sm text-[var(--muted)]">
                     {enemy.trigger}
                   </span>
                 </span>
-                <span className="shrink-0 text-sm text-[#ff9a7a]">
+                <span className="shrink-0 text-sm text-[var(--orange-hover)]">
                   Open dossier
                 </span>
               </span>

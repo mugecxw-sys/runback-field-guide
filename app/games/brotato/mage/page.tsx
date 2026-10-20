@@ -50,7 +50,7 @@ function Inline({ text }: { text: string }) {
     const link = part.match(/^\[([^\]]+)\]\(([^\)]+)\)$/);
     if (link) {
       return (
-        <a key={index} href={link[2]} className="text-[#ff9a7a] underline underline-offset-4">
+        <a key={index} href={link[2]} className="text-[var(--orange-hover)] underline underline-offset-4">
           {link[1]}
         </a>
       );
@@ -84,7 +84,7 @@ function MarkdownBody() {
     }
     if (line.startsWith('> ')) {
       blocks.push(
-        <section key={index} className="mt-6 rounded-xl border border-[#ff7043]/30 bg-[#ff7043]/[0.07] p-5 leading-7">
+        <section key={index} className="mt-6 rounded-xl border border-[var(--orange)]/30 bg-[var(--orange)]/[0.07] p-5 leading-7">
           <Inline text={line.slice(2)} />
         </section>,
       );
@@ -99,7 +99,7 @@ function MarkdownBody() {
         blocks.push(
           <figure key={index} className="mt-6">
             <img src={'/images/brotato/mage/' + image[2]} alt={asset.alt} width={asset.width} height={asset.height} loading="lazy" decoding="async" className="h-auto w-full rounded-xl" />
-            {caption && <figcaption className="mt-3 text-sm leading-6 text-[#aeb7bc]">{caption}</figcaption>}
+            {caption && <figcaption className="mt-3 text-sm leading-6 text-[var(--muted)]">{caption}</figcaption>}
           </figure>,
         );
       }
@@ -117,10 +117,10 @@ function MarkdownBody() {
       const header = rows[0] ?? [];
       const body = rows.slice(1);
       blocks.push(
-        <div key={index} className="mt-6 overflow-x-auto rounded-xl border border-white/15">
+        <div key={index} className="mt-6 overflow-x-auto rounded-xl border border-[var(--neutral-edge)]/15">
           <table className="w-full text-left text-sm">
-            <thead className="bg-[#192126]"><tr>{header.map((cell) => <th key={cell} scope="col" className="p-4">{cell}</th>)}</tr></thead>
-            <tbody>{body.map((row, rowIndex) => <tr key={rowIndex} className="border-t border-white/10">{row.map((cell, cellIndex) => cellIndex === 0 ? <th key={cellIndex} scope="row" className="p-4 font-medium">{cell}</th> : <td key={cellIndex} className="p-4">{cell}</td>)}</tr>)}</tbody>
+            <thead className="bg-[var(--surface-raised)]"><tr>{header.map((cell) => <th key={cell} scope="col" className="p-4">{cell}</th>)}</tr></thead>
+            <tbody>{body.map((row, rowIndex) => <tr key={rowIndex} className="border-t border-[var(--neutral-edge)]/10">{row.map((cell, cellIndex) => cellIndex === 0 ? <th key={cellIndex} scope="row" className="p-4 font-medium">{cell}</th> : <td key={cellIndex} className="p-4">{cell}</td>)}</tr>)}</tbody>
           </table>
         </div>,
       );
@@ -135,7 +135,7 @@ function MarkdownBody() {
       blocks.push(<ul key={index} className="mt-5 list-disc space-y-2 pl-6 leading-7">{items.map((item) => <li key={item}><Inline text={item} /></li>)}</ul>);
       continue;
     }
-    blocks.push(<p key={index} className="mt-5 leading-8 text-[#c7d0d5]"><Inline text={line} /></p>);
+    blocks.push(<p key={index} className="mt-5 leading-8 text-[var(--body)]"><Inline text={line} /></p>);
     index += 1;
   }
   return <>{blocks}</>;
@@ -167,13 +167,13 @@ export default function MageGuide() {
     ],
   };
   return (
-    <main className="min-h-screen px-5 py-8 text-[#e1e6e8]">
+    <main className="min-h-screen px-5 py-8 text-[var(--text)]">
       <article className="mx-auto max-w-3xl">
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
-        <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[#aeb7bc]"><a href="/">Home</a><span>›</span><a href="/games/brotato">Brotato</a><span>›</span><span aria-current="page">{title}</span></nav>
+        <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[var(--muted)]"><a href="/">Home</a><span>›</span><a href="/games/brotato">Brotato</a><span>›</span><span aria-current="page">{title}</span></nav>
         <h1 className="mt-6 text-3xl font-semibold leading-tight sm:text-4xl">{title}</h1>
-        <p className="mt-4 text-xs text-[#aeb7bc]">By RUNBACK · Published <time dateTime={publishedAt}>2026-09-16</time></p>
-        <aside className="mt-5 rounded-xl border border-white/15 bg-[#192126] p-5 text-sm leading-7 text-[#c7d0d5]">
+        <p className="mt-4 text-xs text-[var(--muted)]">By RUNBACK · Published <time dateTime={publishedAt}>2026-09-16</time></p>
+        <aside className="mt-5 rounded-xl border border-[var(--neutral-edge)]/15 bg-[var(--surface-raised)] p-5 text-sm leading-7 text-[var(--body)]">
           The run observations below come from one Danger 0 attempt. Mage and Taser mechanics are described separately from that run.
         </aside>
         <MarkdownBody />

@@ -126,7 +126,7 @@ function Inline({ text }: { text: string }) {
   const parts = text.split(/(\*\*[^*]+\*\*|\*[^*]+\*|\[[^\]]+\]\([^)]*\)|<br>)/g);
   return parts.map((part, index) => {
     const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
-    if (link) return <a key={index} href={link[2]} className="text-[#ff9a7a] underline underline-offset-4">{link[1]}</a>;
+    if (link) return <a key={index} href={link[2]} className="text-[var(--orange-hover)] underline underline-offset-4">{link[1]}</a>;
     if (part === '<br>') return <br key={index} />;
     if (part.startsWith('**') && part.endsWith('**')) return <strong key={index}>{part.slice(2, -2)}</strong>;
     if (part.startsWith('*') && part.endsWith('*')) return <em key={index}>{part.slice(1, -1)}</em>;
@@ -148,7 +148,7 @@ function MarkdownBody() {
     if (line === '<!-- TESTED_BUILDS_CARDS -->') {
       blocks.push(<section key={index} aria-labelledby="tested-builds">
         <h2 id="tested-builds" className="mt-10 scroll-mt-24 text-2xl font-semibold">Tested Builds</h2>
-        <p className="mt-5 leading-8 text-[#c7d0d5]">These builds were played in the 0.9.14 client. Results are listed on each card.</p>
+        <p className="mt-5 leading-8 text-[var(--body)]">These builds were played in the 0.9.14 client. Results are listed on each card.</p>
         <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
           {testedBuilds.map(build => <TestedBuildCard key={build.href} {...build} />)}
         </div>
@@ -167,7 +167,7 @@ function MarkdownBody() {
       continue;
     }
     if (line === '---') {
-      blocks.push(<hr key={index} className="mt-10 border-white/15" />);
+      blocks.push(<hr key={index} className="mt-10 border-[var(--neutral-edge)]/15" />);
       index += 1;
       continue;
     }
@@ -184,7 +184,7 @@ function MarkdownBody() {
       continue;
     }
     if (line.startsWith('> ')) {
-      blocks.push(<blockquote key={index} className="mt-5 border-l-2 border-[#ff8662] pl-4 leading-7 text-[#c7d0d5]"><Inline text={line.slice(2)} /></blockquote>);
+      blocks.push(<blockquote key={index} className="mt-5 border-l-2 border-[var(--orange-text)] pl-4 leading-7 text-[var(--body)]"><Inline text={line.slice(2)} /></blockquote>);
       index += 1;
       continue;
     }
@@ -193,7 +193,7 @@ function MarkdownBody() {
       index += 2;
       const rows: string[][] = [];
       while (lines[index]?.startsWith('|')) { rows.push(cells(lines[index])); index += 1; }
-      blocks.push(<div key={index} className="mt-5 overflow-x-auto rounded-xl border border-white/15"><table className="min-w-full border-collapse text-left text-sm leading-6"><thead className="bg-[#192126]"><tr>{header.map(cell => <th key={cell} scope="col" className="whitespace-nowrap border-b border-white/20 px-4 py-3 font-semibold"><Inline text={cell} /></th>)}</tr></thead><tbody>{rows.map((row, rowIndex) => <tr key={rowIndex} className="border-b border-white/10 last:border-0">{row.map((cell, cellIndex) => cellIndex === 0 ? <th key={cellIndex} scope="row" className="whitespace-nowrap px-4 py-3 text-left font-medium"><Inline text={cell} /></th> : <td key={cellIndex} className="min-w-72 px-4 py-3 text-[#c7d0d5]"><Inline text={cell} /></td>)}</tr>)}</tbody></table></div>);
+      blocks.push(<div key={index} className="mt-5 overflow-x-auto rounded-xl border border-[var(--neutral-edge)]/15"><table className="min-w-full border-collapse text-left text-sm leading-6"><thead className="bg-[var(--surface-raised)]"><tr>{header.map(cell => <th key={cell} scope="col" className="whitespace-nowrap border-b border-[var(--neutral-edge)]/20 px-4 py-3 font-semibold"><Inline text={cell} /></th>)}</tr></thead><tbody>{rows.map((row, rowIndex) => <tr key={rowIndex} className="border-b border-[var(--neutral-edge)]/10 last:border-0">{row.map((cell, cellIndex) => cellIndex === 0 ? <th key={cellIndex} scope="row" className="whitespace-nowrap px-4 py-3 text-left font-medium"><Inline text={cell} /></th> : <td key={cellIndex} className="min-w-72 px-4 py-3 text-[var(--body)]"><Inline text={cell} /></td>)}</tr>)}</tbody></table></div>);
       continue;
     }
     if (line.startsWith('- ')) {
@@ -202,7 +202,7 @@ function MarkdownBody() {
       blocks.push(<ul key={index} className="mt-5 list-disc space-y-2 pl-6 leading-7">{items.map(item => <li key={item}><Inline text={item} /></li>)}</ul>);
       continue;
     }
-    blocks.push(<p key={index} className="mt-5 leading-8 text-[#c7d0d5]"><Inline text={line} /></p>);
+    blocks.push(<p key={index} className="mt-5 leading-8 text-[var(--body)]"><Inline text={line} /></p>);
     index += 1;
   }
   return <>{blocks}</>;

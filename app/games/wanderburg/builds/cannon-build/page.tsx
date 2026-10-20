@@ -72,7 +72,7 @@ const schema = {
 
 function Section({ title, children }: { title: string; children: ReactNode }) {
   const id = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-  return <section aria-labelledby={id} className="mt-9"><h2 id={id} className="scroll-mt-24 font-serif text-2xl font-semibold text-[#fff2df] sm:text-3xl">{title}</h2><div className="mt-4 space-y-4 leading-8 text-[#c7d0d5]">{children}</div></section>;
+  return <section aria-labelledby={id} className="mt-9"><h2 id={id} className="scroll-mt-24 font-serif text-2xl font-semibold text-[var(--heading)] sm:text-3xl">{title}</h2><div className="mt-4 space-y-4 leading-8 text-[var(--body)]">{children}</div></section>;
 }
 
 function VideoFigure() {
@@ -83,15 +83,15 @@ function VideoFigure() {
         playsInline
         preload="none"
         poster={imageBase + 'cannon-first-boss.png'}
-        className="block h-auto w-full max-w-full rounded-xl border border-white/15"
+        className="block h-auto w-full max-w-full rounded-xl border border-[var(--neutral-edge)]/15"
         aria-label="FrontCannon positioning during the tested run"
       >
         <source src="/videos/games/wanderburg/cannon-build/frontcannon-positioning.mp4" type="video/mp4" />
         <track kind="captions" src="data:text/vtt,WEBVTT%0A%0A00:00:00.000%20--%3E%2000:00:02.857%0AGameplay%20audio." srcLang="en" label="Gameplay audio" />
         Your browser does not support HTML video.
       </video>
-      <figcaption className="mt-2 text-sm leading-6 text-[#aeb7bc]">
-        <strong className="font-medium text-[#c7d0d5]">FrontCannon positioning during the tested run.</strong>{' '}
+      <figcaption className="mt-2 text-sm leading-6 text-[var(--muted)]">
+        <strong className="font-medium text-[var(--body)]">FrontCannon positioning during the tested run.</strong>{' '}
         Line up the vehicle before firing instead of using the ability as soon as it is ready.
       </figcaption>
     </figure>
@@ -113,11 +113,11 @@ export default function WanderburgCannonBuild() {
       footerNote=""
     >
       <article className="game-wiki-markdown min-w-0">
-        <p className="mt-6 leading-8 text-[#c7d0d5]">Build around one strong Cannon rather than filling every slot with another Cannon.</p>
-        <p className="mt-4 leading-8 text-[#c7d0d5]">The tested Tankenburg run used Patchy The Pirate, Canoneer Crew, starter Cannon and Repair Wrench. The tested run cleared successfully.</p>
+        <p className="mt-6 leading-8 text-[var(--body)]">Build around one strong Cannon rather than filling every slot with another Cannon.</p>
+        <p className="mt-4 leading-8 text-[var(--body)]">The tested Tankenburg run used Patchy The Pirate, Canoneer Crew, starter Cannon and Repair Wrench. The tested run cleared successfully.</p>
 
         <Section title="Quick Setup">
-          <p>Prioritize <strong className="text-[#fff2df]">Cannon → Canoneer Crew → FrontCannon → optional Cannon Tower</strong>.</p>
+          <p>Prioritize <strong className="text-[var(--heading)]">Cannon → Canoneer Crew → FrontCannon → optional Cannon Tower</strong>.</p>
           <p>Do not spend rerolls trying to force a full Cannon loadout.</p>
           <BeginnerGuideFigure src={imageBase + 'cannon-loadout.png'} alt="Wanderburg Cannon build starting loadout with Tankenburg and Patchy The Pirate" caption="Tested Cannon setup with Tankenburg, Patchy The Pirate, Canoneer Crew, Cannon and Repair Wrench." width={2563} height={1318} />
         </Section>
@@ -125,7 +125,7 @@ export default function WanderburgCannonBuild() {
         <Section title="Upgrade the Cannon Core First">
           <p>The starting Cannon is strong enough for the early game. Upgrade the parts already doing damage before filling slots.</p>
           <p>One early upgrade choice in the tested run offered:</p>
-          <ul className="list-disc space-y-1 pl-6"><li>Cannon ability damage: <strong className="text-[#fff2df]">30 → 40</strong></li><li>Canoneer Crew auto damage: <strong className="text-[#fff2df]">10 → 18</strong></li><li>Cannon ability cooldown: <strong className="text-[#fff2df]">15s → 13s</strong></li><li>Cannon auto cooldown: <strong className="text-[#fff2df]">3.0s → 2.6s</strong></li></ul>
+          <ul className="list-disc space-y-1 pl-6"><li>Cannon ability damage: <strong className="text-[var(--heading)]">30 → 40</strong></li><li>Canoneer Crew auto damage: <strong className="text-[var(--heading)]">10 → 18</strong></li><li>Cannon ability cooldown: <strong className="text-[var(--heading)]">15s → 13s</strong></li><li>Cannon auto cooldown: <strong className="text-[var(--heading)]">3.0s → 2.6s</strong></li></ul>
           <p>Canoneer Crew damage was taken. Its automatic damage kept contributing while attention stayed on driving and positioning. You do not need to spread upgrades evenly across every Module.</p>
           <BeginnerGuideFigure src={imageBase + 'cannon-first-upgrade.png'} alt="Wanderburg Cannon and Canoneer Crew early upgrade choices" caption="An early upgrade choice from the tested Cannon run." width={2026} height={1129} />
         </Section>
@@ -161,7 +161,7 @@ export default function WanderburgCannonBuild() {
         </Section>
 
         <Section title="Upgrade Priority">
-          <ol className="list-decimal space-y-1 pl-6"><li><strong className="text-[#fff2df]">Cannon</strong></li><li><strong className="text-[#fff2df]">Canoneer Crew</strong></li><li><strong className="text-[#fff2df]">FrontCannon</strong></li><li><strong className="text-[#fff2df]">Cannon Tower if it appears naturally</strong></li><li><strong className="text-[#fff2df]">Flexible final slot</strong></li></ol>
+          <ol className="list-decimal space-y-1 pl-6"><li><strong className="text-[var(--heading)]">Cannon</strong></li><li><strong className="text-[var(--heading)]">Canoneer Crew</strong></li><li><strong className="text-[var(--heading)]">FrontCannon</strong></li><li><strong className="text-[var(--heading)]">Cannon Tower if it appears naturally</strong></li><li><strong className="text-[var(--heading)]">Flexible final slot</strong></li></ol>
           <p>Upgrading your Cannon or Crew is usually better than spending several rerolls to force a perfect-looking loadout.</p>
         </Section>
 

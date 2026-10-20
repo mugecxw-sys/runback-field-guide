@@ -134,7 +134,7 @@ export function ArticleView({
       <section key={id} id={id} className="mt-9 scroll-mt-6">
         <h2 className="text-2xl font-semibold">{s.heading}</h2>
         {s.paragraphs.map((p, i) => (
-          <p key={i} className="mt-4 leading-8 text-[#c7d0d5]">
+          <p key={i} className="mt-4 leading-8 text-[var(--body)]">
             {render(p)}
           </p>
         ))}
@@ -149,16 +149,16 @@ export function ArticleView({
               decoding="async"
               className="h-auto w-full rounded-xl"
             />
-            <figcaption className="mt-3 text-sm leading-6 text-[#aeb7bc]">
+            <figcaption className="mt-3 text-sm leading-6 text-[var(--muted)]">
               {s.image.caption}
             </figcaption>
           </figure>
         )}
         {s.rows && (
-          <div className="mt-5 overflow-x-auto rounded-xl border border-white/15">
+          <div className="mt-5 overflow-x-auto rounded-xl border border-[var(--neutral-edge)]/15">
             <table className="w-full text-left text-sm">
               <caption className="sr-only">{s.heading}</caption>
-              <thead className="bg-[#192126]">
+              <thead className="bg-[var(--surface-raised)]">
                 <tr>
                   {s.columns?.map((c) => (
                     <th key={c} scope="col" className="p-4">
@@ -169,7 +169,7 @@ export function ArticleView({
               </thead>
               <tbody>
                 {s.rows.map((r, i) => (
-                  <tr key={i} className="border-t border-white/10">
+                  <tr key={i} className="border-t border-[var(--neutral-edge)]/10">
                     {r.map((c, j) =>
                       j === 0 ? (
                         <th
@@ -193,7 +193,7 @@ export function ArticleView({
         )}
         {s.source && (
           <a
-            className="mt-4 block text-sm text-[#ff9a7a] underline"
+            className="mt-4 block text-sm text-[var(--orange-hover)] underline"
             href={s.source.href}
           >
             {s.source.label} ↗
@@ -203,7 +203,7 @@ export function ArticleView({
     );
   }
   return (
-    <main className="min-h-screen px-5 py-8 text-[#e1e6e8]">
+    <main className="min-h-screen px-5 py-8 text-[var(--text)]">
       <article className="mx-auto max-w-3xl">
         <script
           type="application/ld+json"
@@ -213,7 +213,7 @@ export function ArticleView({
         />
         <nav
           aria-label="Breadcrumb"
-          className="flex flex-wrap gap-2 text-sm text-[#aeb7bc]"
+          className="flex flex-wrap gap-2 text-sm text-[var(--muted)]"
         >
           <a href="/">Home</a>
           <span>›</span>
@@ -227,14 +227,14 @@ export function ArticleView({
         <section
           id="quick-answer"
           aria-label="30-second answer"
-          className="mt-6 rounded-xl border border-[#ff7043]/30 bg-[#ff7043]/[0.07] p-5"
+          className="mt-6 rounded-xl border border-[var(--orange)]/30 bg-[var(--orange)]/[0.07] p-5"
         >
-          <h2 className="text-sm font-bold uppercase tracking-widest text-[#ff9a7a]">
+          <h2 className="text-sm font-bold uppercase tracking-widest text-[var(--orange-hover)]">
             30-second answer
           </h2>
           <p className="mt-3 leading-7">{render(a.answer)}</p>
         </section>
-        <p className="mt-4 text-xs text-[#aeb7bc]">
+        <p className="mt-4 text-xs text-[var(--muted)]">
           By RUNBACK · Published{' '}
           <time dateTime={date}>{date.slice(0, 10)}</time>
           {modified && (
@@ -244,13 +244,13 @@ export function ArticleView({
             </>
           )}
         </p>
-        <details className="mt-5 rounded-lg border border-white/15 p-4">
+        <details className="mt-5 rounded-lg border border-[var(--neutral-edge)]/15 p-4">
           <summary className="cursor-pointer text-sm font-semibold">
             On this page
           </summary>
           <nav
             aria-label="On this page"
-            className="mt-4 flex flex-col gap-3 text-sm text-[#ff9a7a]"
+            className="mt-4 flex flex-col gap-3 text-sm text-[var(--orange-hover)]"
           >
             {sections.map((s) => (
               <a key={s.id} href={'#' + s.id}>
@@ -260,7 +260,7 @@ export function ArticleView({
           </nav>
         </details>
         {a.lead && (
-          <p className="mt-6 leading-8 text-[#c7d0d5]">{render(a.lead)}</p>
+          <p className="mt-6 leading-8 text-[var(--body)]">{render(a.lead)}</p>
         )}
         {extra
           .filter((s) => s.heading === 'Quick Facts')
@@ -274,7 +274,7 @@ export function ArticleView({
                 return (
                   <section
                     key={i}
-                    className="rounded-xl border border-white/10 bg-[#192126] p-5"
+                    className="rounded-xl border border-[var(--neutral-edge)]/10 bg-[var(--surface-raised)] p-5"
                   >
                     <h3 className="text-lg font-semibold">
                       {faq?.question ?? `Question ${i + 1}`}
@@ -285,11 +285,11 @@ export function ArticleView({
               })}
             </div>
           ) : (
-            <ol className="mt-5 list-decimal space-y-4 pl-8 marker:font-mono marker:text-[#ff9a7a]">
+            <ol className="mt-5 list-decimal space-y-4 pl-8 marker:font-mono marker:text-[var(--orange-hover)]">
               {a.steps.map((s, i) => (
                 <li
                   key={i}
-                  className="rounded-xl border border-white/10 bg-[#192126] p-5 pl-6"
+                  className="rounded-xl border border-[var(--neutral-edge)]/10 bg-[var(--surface-raised)] p-5 pl-6"
                 >
                   <p className="leading-7">{render(s)}</p>
                 </li>
@@ -311,18 +311,18 @@ export function ArticleView({
           <h2 className="text-2xl font-semibold">{labels.mistakes}</h2>
           <p className="mt-4 leading-7">{render(a.mistakes)}</p>
         </section>
-        <section className="mt-8 rounded-xl border border-[#79c7a0]/25 p-5">
-          <h2 className="font-semibold text-[#9fd7ba]">Version and scope</h2>
+        <section className="mt-8 rounded-xl border border-[var(--success)]/25 p-5">
+          <h2 className="font-semibold text-[var(--success-text)]">Version and scope</h2>
           <p className="mt-3 leading-7">{render(a.versionNote)}</p>
         </section>
-        <section id="sources" className="mt-10 border-t border-white/10 pt-6">
+        <section id="sources" className="mt-10 border-t border-[var(--neutral-edge)]/10 pt-6">
           <h2 className="text-xl font-semibold">Sources and further reading</h2>
           <ul className="mt-4 space-y-3">
             {a.sources.map((s) => (
               <li key={s.href}>
                 <a
                   href={s.href}
-                  className="break-words text-sm text-[#ff9a7a] underline underline-offset-4"
+                  className="break-words text-sm text-[var(--orange-hover)] underline underline-offset-4"
                 >
                   {s.label} ↗
                 </a>
@@ -333,7 +333,7 @@ export function ArticleView({
         <nav
           id="related"
           aria-label="Related Guides"
-          className="mt-10 border-t border-white/10 pt-6"
+          className="mt-10 border-t border-[var(--neutral-edge)]/10 pt-6"
         >
           <h2 className="text-2xl font-semibold">Related Guides</h2>
           <div className="mt-5 grid gap-4 sm:grid-cols-2">
@@ -341,17 +341,17 @@ export function ArticleView({
               <a
                 key={r.href}
                 href={r.href}
-                className="rounded-xl border border-white/10 p-4 leading-6 hover:border-[#ff8662]"
+                className="rounded-xl border border-[var(--neutral-edge)]/10 p-4 leading-6 hover:border-[var(--orange-text)]"
               >
                 {r.title} →
               </a>
             ))}
           </div>
-          <a href={hub} className="mt-6 block text-[#ff9a7a]">
+          <a href={hub} className="mt-6 block text-[var(--orange-hover)]">
             All {game} guides →
           </a>
         </nav>
-        <footer className="mt-12 flex flex-wrap gap-5 border-t border-white/10 pt-6 text-sm text-[#aeb7bc]">
+        <footer className="mt-12 flex flex-wrap gap-5 border-t border-[var(--neutral-edge)]/10 pt-6 text-sm text-[var(--muted)]">
           <a href="/about">About</a>
           <a href="/editorial">Editorial policy</a>
           <a href="/contact">Contact</a>

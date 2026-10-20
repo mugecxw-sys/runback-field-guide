@@ -75,7 +75,7 @@ export function UpgradePlanner() {
     [recommendation],
   );
   return (
-    <main className="min-h-screen px-5 py-10 text-[#e1e6e8]">
+    <main className="min-h-screen px-5 py-10 text-[var(--text)]">
       <div className="mx-auto max-w-3xl">
         <script
           type="application/ld+json"
@@ -117,14 +117,14 @@ export function UpgradePlanner() {
             }).replace(/</g, '\\u003c'),
           }}
         />
-        <nav aria-label="Breadcrumb" className="text-sm text-[#aeb7bc]">
+        <nav aria-label="Breadcrumb" className="text-sm text-[var(--muted)]">
           <a href="/">Home</a> › <a href="/games/repo">R.E.P.O.</a>{' '}
           › <span>Upgrade planner</span>
         </nav>
         <h1 className="mt-7 text-4xl font-semibold">
           R.E.P.O. upgrade planner
         </h1>
-        <p className="mt-4 max-w-2xl leading-7 text-[#aeb7bc]">
+        <p className="mt-4 max-w-2xl leading-7 text-[var(--muted)]">
           Choose the bottleneck that ended the last run. The planner returns a
           priority, a fallback, and one check for the next attempt. It does not
           assume a specific shop roll or fixed price.
@@ -135,14 +135,14 @@ export function UpgradePlanner() {
             setRecommendation({ crew, role, failure });
           }}
           aria-label="Planner inputs"
-          className="mt-8 grid gap-5 rounded-xl border border-white/10 bg-[#192126] p-5 sm:grid-cols-3"
+          className="mt-8 grid gap-5 rounded-xl border border-[var(--neutral-edge)]/10 bg-[var(--surface-raised)] p-5 sm:grid-cols-3"
         >
           <label className="text-sm">
             Crew size
             <select
               value={crew}
               onChange={(e) => setCrew(e.target.value)}
-              className="mt-2 w-full rounded-lg border border-white/20 bg-[#111417] p-3"
+              className="mt-2 w-full rounded-lg border border-[var(--neutral-edge)]/20 bg-[var(--page-bg)] p-3"
             >
               {[1, 2, 3, 4, 5, 6].map((n) => (
                 <option key={n}>{n}</option>
@@ -154,7 +154,7 @@ export function UpgradePlanner() {
             <select
               value={role}
               onChange={(e) => setRole(e.target.value as keyof typeof roles)}
-              className="mt-2 w-full rounded-lg border border-white/20 bg-[#111417] p-3"
+              className="mt-2 w-full rounded-lg border border-[var(--neutral-edge)]/20 bg-[var(--page-bg)] p-3"
             >
               <option value="carrier">Carrier</option>
               <option value="scout">Scout / navigator</option>
@@ -167,7 +167,7 @@ export function UpgradePlanner() {
             <select
               value={failure}
               onChange={(e) => setFailure(e.target.value as keyof typeof plans)}
-              className="mt-2 w-full rounded-lg border border-white/20 bg-[#111417] p-3"
+              className="mt-2 w-full rounded-lg border border-[var(--neutral-edge)]/20 bg-[var(--page-bg)] p-3"
             >
               <option value="carrying">Heavy or slow carry</option>
               <option value="stamina">Stamina ran out</option>
@@ -180,7 +180,7 @@ export function UpgradePlanner() {
           <div className="sm:col-span-3">
             <button
               type="submit"
-              className="rounded-lg bg-[#ff7043] px-5 py-3 font-semibold text-[#111417] hover:bg-[#ff9a7a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ff8662]"
+              className="rounded-lg bg-[var(--orange)] px-5 py-3 font-semibold text-[var(--page-bg)] hover:bg-[var(--orange-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-text)]"
             >
               Recommend
             </button>
@@ -188,9 +188,9 @@ export function UpgradePlanner() {
         </form>
         <section
           aria-live="polite"
-          className="mt-6 rounded-xl border border-[#ff7043]/30 bg-[#ff7043]/[0.06] p-6"
+          className="mt-6 rounded-xl border border-[var(--orange)]/30 bg-[var(--orange)]/[0.06] p-6"
         >
-          <p className="text-sm font-bold uppercase tracking-widest text-[#ff9a7a]">
+          <p className="text-sm font-bold uppercase tracking-widest text-[var(--orange-hover)]">
             {recommendation
               ? `Recommendation for ${recommendation.crew} player${recommendation.crew === '1' ? '' : 's'}`
               : 'Recommendation'}
@@ -198,51 +198,51 @@ export function UpgradePlanner() {
           {plan && recommendation ? (
             <dl className="mt-5 space-y-5">
               <div>
-                <dt className="text-sm text-[#9fd7ba]">Primary priority</dt>
+                <dt className="text-sm text-[var(--success-text)]">Primary priority</dt>
                 <dd className="mt-1 text-xl font-semibold">{plan.primary}</dd>
               </div>
               <div>
-                <dt className="text-sm text-[#9fd7ba]">Fallback</dt>
+                <dt className="text-sm text-[var(--success-text)]">Fallback</dt>
                 <dd className="mt-1 leading-7">{plan.fallback}</dd>
               </div>
               <div>
-                <dt className="text-sm text-[#9fd7ba]">Why</dt>
+                <dt className="text-sm text-[var(--success-text)]">Why</dt>
                 <dd className="mt-1 leading-7">
                   {plan.why} {roles[recommendation.role]}{' '}
                   {crewAdvice(recommendation.crew)}
                 </dd>
               </div>
               <div>
-                <dt className="text-sm text-[#9fd7ba]">Next-run check</dt>
+                <dt className="text-sm text-[var(--success-text)]">Next-run check</dt>
                 <dd className="mt-1 leading-7">{plan.check}</dd>
               </div>
             </dl>
           ) : (
-            <p className="mt-4 leading-7 text-[#c7d0d5]">
+            <p className="mt-4 leading-7 text-[var(--body)]">
               Choose the crew, role, and last-run failure, then select Recommend.
             </p>
           )}
         </section>
-        <aside className="mt-6 rounded-xl border border-white/10 p-5 text-sm leading-6 text-[#aeb7bc]">
+        <aside className="mt-6 rounded-xl border border-[var(--neutral-edge)]/10 p-5 text-sm leading-6 text-[var(--muted)]">
           If the recommended category is not on the shelf, use the fallback or
           save. Change one variable at a time, and always read the current item
           description.
         </aside>
         <nav
           aria-label="Related guides"
-          className="mt-9 border-t border-white/10 pt-6"
+          className="mt-9 border-t border-[var(--neutral-edge)]/10 pt-6"
         >
           <h2 className="text-xl font-semibold">Related Guides</h2>
           <div className="mt-4 grid gap-3 sm:grid-cols-2">
             <a
               href="/guides/upgrade-priority"
-              className="rounded-lg border border-white/10 p-4"
+              className="rounded-lg border border-[var(--neutral-edge)]/10 p-4"
             >
               Upgrade priority →
             </a>
             <a
               href="/games/repo"
-              className="rounded-lg border border-white/10 p-4"
+              className="rounded-lg border border-[var(--neutral-edge)]/10 p-4"
             >
               All R.E.P.O. guides →
             </a>

@@ -15,13 +15,13 @@ function ResultCard({ item }: { item: (typeof searchIndex)[number] }) {
   return (
     <a
       href={item.href}
-      className="rounded-xl border border-white/10 p-5 hover:border-[#ff8662]"
+      className="rounded-xl border border-[var(--neutral-edge)]/10 p-5 hover:border-[var(--orange-text)]"
     >
-      <p className="text-sm text-[#9fd7ba]">
+      <p className="text-sm text-[var(--success-text)]">
         {item.game} · {item.kind}
       </p>
       <h2 className="mt-2 text-lg font-semibold">{item.title}</h2>
-      <p className="mt-3 text-sm leading-6 text-[#aeb7bc]">{item.summary}</p>
+      <p className="mt-3 text-sm leading-6 text-[var(--muted)]">{item.summary}</p>
     </a>
   );
 }
@@ -45,7 +45,7 @@ export function GlobalSearch({ initialQuery = '' }: { initialQuery?: string }) {
   );
   return (
     <section>
-      <p className="mt-4 text-sm text-[#aeb7bc]">
+      <p className="mt-4 text-sm text-[var(--muted)]">
         {libraryStatistics.searchableEntryCount} Searchable Guide &amp; Reference Entries ·{' '}
         {libraryStatistics.gameCount} Games · {libraryStatistics.enemyCount} Enemies
       </p>
@@ -60,7 +60,7 @@ export function GlobalSearch({ initialQuery = '' }: { initialQuery?: string }) {
             value={query}
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Game, boss, build, item, map, unlock…"
-            className="w-full rounded-lg border border-white/20 bg-[#192126] p-3"
+            className="w-full rounded-lg border border-[var(--neutral-edge)]/20 bg-[var(--surface-raised)] p-3"
           />
         </div>
         <div>
@@ -71,7 +71,7 @@ export function GlobalSearch({ initialQuery = '' }: { initialQuery?: string }) {
             id="game-filter"
             value={game}
             onChange={(event) => setGame(event.target.value)}
-            className="w-full rounded-lg border border-white/20 bg-[#192126] p-3"
+            className="w-full rounded-lg border border-[var(--neutral-edge)]/20 bg-[var(--surface-raised)] p-3"
           >
             <option>All games</option>
             {gameLibraries.map((item) => (
@@ -81,7 +81,7 @@ export function GlobalSearch({ initialQuery = '' }: { initialQuery?: string }) {
         </div>
       </div>
       <output
-        className="my-5 block text-sm text-[#aeb7bc]"
+        className="my-5 block text-sm text-[var(--muted)]"
         aria-live="polite"
         aria-atomic="true"
       >
@@ -113,7 +113,7 @@ export function GlobalSearch({ initialQuery = '' }: { initialQuery?: string }) {
             <h2 id="popular-title" className="text-xl font-semibold">
               Popular starting points
             </h2>
-            <p className="mt-2 text-sm text-[#aeb7bc]">
+            <p className="mt-2 text-sm text-[var(--muted)]">
               Editor picks, not a traffic ranking.
             </p>
             <div className="mt-4 grid gap-4">
