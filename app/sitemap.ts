@@ -14,6 +14,7 @@ import { wanderburgWikiPages } from '@/lib/wanderburg-wiki-pages';
 import { sephiriaWikiPages } from '@/lib/sephiria-wiki-data';
 import { chapterOneGuide } from '@/lib/sephiria-chapter-one-guide';
 import { chapterTwoGuide } from '@/lib/sephiria-chapter-two-guide';
+import { chapterThreeGuide } from '@/lib/sephiria-chapter-three-guide';
 
 const latestDate = (dates: string[], fallback: string) =>
   dates.reduce((latest, date) => (date > latest ? date : latest), fallback);
@@ -34,6 +35,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: siteUrl + chapterOneGuide.href, changeFrequency: 'monthly', priority: 0.8 },
     { url: siteUrl + chapterTwoGuide.href, changeFrequency: 'monthly', priority: 0.8 },
+    { url: siteUrl + chapterThreeGuide.href, changeFrequency: 'monthly', priority: 0.8 },
     {
       url: `${siteUrl}/games/repo/enemies`,
       lastModified: '2026-09-09T00:00:00.000Z',

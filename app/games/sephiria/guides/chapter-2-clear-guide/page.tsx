@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { GameWikiShell } from '@/components/game-wiki/game-wiki';
 import { sephiriaWikiConfig } from '@/components/game-wiki/sephiria-config';
 import { chapterOneGuide } from '@/lib/sephiria-chapter-one-guide';
+import { chapterThreeGuide } from '@/lib/sephiria-chapter-three-guide';
 import { chapterTwoGuide as guide } from '@/lib/sephiria-chapter-two-guide';
 import { siteUrl } from '@/lib/repo-guide-pages';
 
@@ -264,6 +265,7 @@ export default function ChapterTwoClearGuide() {
         <div className="grid gap-3 sm:grid-cols-2">
           <a href="/games/sephiria" className="border border-[var(--gold-border)]/30 bg-[var(--surface)] p-4 transition-colors hover:border-[var(--gold-border)]"><span className="font-serif text-lg font-semibold text-[var(--heading)]">Sephiria Hub</span><span className="mt-2 block text-sm leading-6 text-[var(--body-soft)]">Browse the game guide and current Sephiria reference pages.</span></a>
           <a href={chapterOneGuide.href} className="border border-[var(--gold-border)]/30 bg-[var(--surface)] p-4 transition-colors hover:border-[var(--gold-border)]"><span className="font-serif text-lg font-semibold text-[var(--heading)]">Chapter 1 Clear Guide</span><span className="mt-2 block text-sm leading-6 text-[var(--body-soft)]">Learn the beginner loop and see the first chapter clear example.</span></a>
+          <a href={chapterThreeGuide.href} className="border border-[var(--gold-border)]/30 bg-[var(--surface)] p-4 transition-colors hover:border-[var(--gold-border)]"><span className="font-serif text-lg font-semibold text-[var(--heading)]">Chapter 3 Guide – The Tree</span><span className="mt-2 block text-sm leading-6 text-[var(--body-soft)]">Finish the required runs and story conversations, then return to the Tree.</span></a>
         </div>
       </Section>
     </article>
