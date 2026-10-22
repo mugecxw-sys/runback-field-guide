@@ -3,6 +3,7 @@ import { sephiriaWikiConfig } from './sephiria-config';
 import { sephiriaWikiPages } from '@/lib/sephiria-wiki-data';
 import { siteUrl } from '@/lib/repo-guide-pages';
 import { chapterOneGuide } from '@/lib/sephiria-chapter-one-guide';
+import { chapterTwoGuide } from '@/lib/sephiria-chapter-two-guide';
 
 const categories = sephiriaWikiPages.filter((page) => page.group === 'category');
 const systems = sephiriaWikiPages.filter((page) => page.group === 'system');
@@ -48,7 +49,10 @@ export function SephiriaGameHub() {
     </section>
     <section className="mt-9 border-t border-[var(--gold-border)]/25 pt-7" aria-labelledby="sephiria-guides">
       <h2 id="sephiria-guides" className="font-serif text-2xl font-semibold text-[var(--heading)]">Sephiria Guides</h2>
-      <div className="mt-4 max-w-2xl"><GameWikiCategoryCard item={{ href: chapterOneGuide.href, label: 'Chapter 1 Clear Guide', description: 'Permanent progression, building a focused run and four boss fights from a Storm Cloud-focused Chapter 1 clear.', count: 'Beginner guide' }} /></div>
+      <div className="mt-4 grid max-w-4xl gap-4 sm:grid-cols-2">
+        <GameWikiCategoryCard item={{ href: chapterOneGuide.href, label: 'Chapter 1 Clear Guide', description: 'Permanent progression, building a focused run and four boss fights from a Storm Cloud-focused Chapter 1 clear.', count: 'Beginner guide' }} />
+        <GameWikiCategoryCard item={{ href: chapterTwoGuide.href, label: 'Chapter 2 Clear Guide', description: 'Build progression, four boss finish clips, the final build and damage from one recorded clear.', count: 'Clear run guide' }} />
+      </div>
     </section>
     <section className="mt-9 border-t border-[var(--gold-border)]/25 pt-7">
       <h2 className="font-serif text-2xl font-semibold text-[var(--heading)]">Sephiria Wiki</h2>
