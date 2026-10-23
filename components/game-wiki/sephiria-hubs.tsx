@@ -5,6 +5,7 @@ import { siteUrl } from '@/lib/repo-guide-pages';
 import { chapterOneGuide } from '@/lib/sephiria-chapter-one-guide';
 import { chapterTwoGuide } from '@/lib/sephiria-chapter-two-guide';
 import { chapterThreeGuide } from '@/lib/sephiria-chapter-three-guide';
+import { chapterFourGuide } from '@/lib/sephiria-chapter-four-guide';
 
 const categories = sephiriaWikiPages.filter((page) => page.group === 'category');
 const systems = sephiriaWikiPages.filter((page) => page.group === 'system');
@@ -54,6 +55,7 @@ export function SephiriaGameHub() {
         <GameWikiCategoryCard item={{ href: chapterOneGuide.href, label: 'Chapter 1 Clear Guide', description: 'Permanent progression, building a focused run and four boss fights from a Storm Cloud-focused Chapter 1 clear.', count: 'Beginner guide' }} />
         <GameWikiCategoryCard item={{ href: chapterTwoGuide.href, label: 'Chapter 2 Clear Guide', description: 'Build progression, four boss finish clips, the final build and damage from one recorded clear.', count: 'Clear run guide' }} />
         <GameWikiCategoryCard item={{ href: chapterThreeGuide.href, label: 'Chapter 3 Guide – The Tree', description: 'Complete the Chapter 3 quest, finish the required runs, talk to the three animals, and return to the Tree.', count: 'Quest guide' }} />
+        <GameWikiCategoryCard item={{ href: chapterFourGuide.href, label: 'Chapter 4 Guide – Fragment', description: 'Complete the three Destiny Fragment quests, seal the Tree of Qliphoth, and finish the final Chapter 4 run.', count: 'Quest guide' }} />
       </div>
     </section>
     <section className="mt-9 border-t border-[var(--gold-border)]/25 pt-7">

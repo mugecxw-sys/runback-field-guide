@@ -6,6 +6,7 @@ import { sephiriaWikiConfig } from '@/components/game-wiki/sephiria-config';
 import { chapterOneGuide } from '@/lib/sephiria-chapter-one-guide';
 import { chapterTwoGuide } from '@/lib/sephiria-chapter-two-guide';
 import { chapterThreeGuide as guide } from '@/lib/sephiria-chapter-three-guide';
+import { chapterFourGuide } from '@/lib/sephiria-chapter-four-guide';
 import { siteUrl } from '@/lib/repo-guide-pages';
 
 const imageRoot = '/images/games/sephiria/chapter-3/';
@@ -152,6 +153,7 @@ export default function ChapterThreeGuide() {
           <GameWikiCategoryCard item={{ href: '/games/sephiria', label: 'Sephiria Hub', description: 'Browse the Sephiria guides and current reference pages.' }} />
           <GameWikiCategoryCard item={{ href: chapterOneGuide.href, label: 'Chapter 1 Clear Guide', description: 'Learn the beginner loop and see the first chapter clear example.' }} />
           <GameWikiCategoryCard item={{ href: chapterTwoGuide.href, label: 'Chapter 2 Clear Guide', description: 'Follow the build progression and boss encounters from a recorded clear.' }} />
+          <GameWikiCategoryCard item={{ href: chapterFourGuide.href, label: 'Chapter 4 Guide – Fragment', description: 'Recover the three Destiny Fragments and follow the seal objectives to finish Chapter 4.' }} />
         </div>
       </Section>
     </article>
