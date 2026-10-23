@@ -71,7 +71,7 @@ export const sephiriaWeaponUpgradeFacts: Record<string, UpgradeFacts> = {
   'WUP-14': {
     weapon: 'Greatsword', relatedIds: ['WPN-02'],
     effectCurrent: 'Normal Attack damage increases by 20%, but Dash Attack can no longer be used.',
-    mechanicCurrent: 'Normal Attack Damage is added to Special Attack damage.',
+    mechanicCurrent: 'Special Attack is replaced by Leaf Explosion. Leaf Explosion adds Normal Attack Damage to its damage.',
   },
   'WUP-15': {
     weapon: 'Greatsword', relatedIds: ['WPN-02'],

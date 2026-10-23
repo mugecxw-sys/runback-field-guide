@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { GameWikiArticleLayout } from '@/components/game-wiki/game-wiki';
+import { SephiriaWeaponTree } from '@/components/game-wiki/sephiria-weapon-tree';
 import { SephiriaDatabaseIndex } from '@/components/game-wiki/sephiria-database-index';
 import { sephiriaWikiConfig } from '@/components/game-wiki/sephiria-config';
 import {
@@ -33,10 +34,13 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const page = byPath.get((await params).section);
   if (!page || (page.group !== 'category' && page.group !== 'system')) return {};
-  const title = `Sephiria ${page.title} | RUNBACK`;
+  const title = page.href.endsWith('/weapon-upgrades') ? 'Sephiria Weapon Upgrade Tree & Upgrade Paths | RUNBACK' : `Sephiria ${page.title} | RUNBACK`;
+  const description = page.href.endsWith('/weapon-upgrades') ? weaponTreeDescription : page.summary;
   const canonical = `${siteUrl}${page.href}`;
-  return { title, description: page.summary, alternates: { canonical }, openGraph: { title, description: page.summary, type: 'article', url: canonical, siteName: 'RUNBACK' } };
+  return { title, description, alternates: { canonical }, openGraph: { title, description, type: 'article', url: canonical, siteName: 'RUNBACK' } };
 }
+
+const weaponTreeDescription = 'Explore the upgrade paths for all six weapons, from first to second upgrades, with effects and mechanics for each branch.';
 
 const h2Id = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 
@@ -94,10 +98,11 @@ function SystemPage({ section }: { section: string }) {
 }
 
 function CategoryPage({ section }: { section: string }) {
+  if (section === 'weapon-upgrades') return <SephiriaWeaponTree />;
   const entries = categories.get(section);
   if (!entries) return <SystemPage section={section} />;
   const pageTitle: Record<string, string> = {
-    weapons: 'Weapon Index', 'weapon-upgrades': 'Weapon Upgrade Index', artifacts: 'Artifact Index',
+    weapons: 'Weapon Index', 'weapon-upgrades': 'Weapon Upgrade Tree', artifacts: 'Artifact Index',
     tablets: 'Tablet Index', costumes: 'Costume Index', bosses: 'Boss & Miniboss Index',
     'hard-mode': 'Named Elements', grimoires: 'Grimoire Reference',
   };
@@ -121,7 +126,7 @@ function CategoryPage({ section }: { section: string }) {
 
 function tocFor(section: string) {
   const databaseTitles: Record<string, string> = {
-    weapons: 'Weapon Index', 'weapon-upgrades': 'Weapon Upgrade Index', artifacts: 'Artifact Index',
+    weapons: 'Weapon Index', 'weapon-upgrades': 'Weapon Upgrade Tree', artifacts: 'Artifact Index',
     tablets: 'Tablet Index', costumes: 'Costume Index', bosses: 'Boss & Miniboss Index',
   };
   if (databaseTitles[section]) return [databaseTitles[section]];
@@ -139,10 +144,11 @@ export default async function SephiriaWikiSectionPage({ params }: Props) {
   const section = (await params).section;
   const page = byPath.get(section);
   if (!page || (page.group !== 'category' && page.group !== 'system')) notFound();
-  const title = `Sephiria ${page.title}`;
+  const title = section === 'weapon-upgrades' ? 'Sephiria Weapon Upgrade Tree' : `Sephiria ${page.title}`;
+  const description = section === 'weapon-upgrades' ? weaponTreeDescription : page.summary;
   const url = `${siteUrl}${page.href}`;
   const schema = { '@context': 'https://schema.org', '@graph': [
-    { '@type': 'CollectionPage', headline: title, description: page.summary, datePublished: page.publishedAt, author: { '@type': 'Organization', name: 'RUNBACK' }, publisher: { '@type': 'Organization', name: 'RUNBACK' }, mainEntityOfPage: url, url },
+    { '@type': 'CollectionPage', headline: title, description, datePublished: page.publishedAt, author: { '@type': 'Organization', name: 'RUNBACK' }, publisher: { '@type': 'Organization', name: 'RUNBACK' }, mainEntityOfPage: url, url },
     { '@type': 'BreadcrumbList', itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: siteUrl },
       { '@type': 'ListItem', position: 2, name: 'Sephiria', item: `${siteUrl}/games/sephiria` },
@@ -151,7 +157,7 @@ export default async function SephiriaWikiSectionPage({ params }: Props) {
     ] },
   ] };
   const isSystem = page.group === 'system';
-  return <GameWikiArticleLayout config={sephiriaWikiConfig} activeHref={page.href} title={title} description={page.summary} toc={tocFor(section)} schema={schema} label="Wiki" labelTone="neutral" footerNote="">
+  return <GameWikiArticleLayout config={sephiriaWikiConfig} activeHref={page.href} title={title} description={description} toc={tocFor(section)} schema={schema} label="Wiki" labelTone="neutral" footerNote="">
     <div className="game-wiki-markdown mt-6 min-w-0 overflow-wrap-anywhere">
       {isSystem ? <SystemPage section={section} /> : <CategoryPage section={section} />}
     </div>

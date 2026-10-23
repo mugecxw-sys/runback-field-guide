@@ -1,0 +1,50 @@
+.tree { margin-top: 1.75rem; min-width: 0; }
+.search { display: flex; align-items: center; gap: .65rem; border: 1px solid var(--gold-border); padding: .8rem 1rem; background: var(--surface); color: var(--gold-label); }
+.search input { width: 100%; min-width: 0; color: var(--heading); background: transparent; outline: none; font-size: .95rem; }
+.search:focus-within { outline: 2px solid var(--gold-label); outline-offset: 3px; }
+.tabs { display: flex; gap: .35rem; overflow-x: auto; margin: 1.15rem 0 1.5rem; padding: .25rem .1rem .65rem; scrollbar-width: thin; }
+.tab { flex-shrink: 0; border: 1px solid var(--gold-border); padding: .6rem .8rem; color: var(--secondary); font-size: .8rem; font-weight: 600; white-space: nowrap; cursor: pointer; }
+.tab[aria-selected=true] { background: var(--gold-label); color: var(--wiki-page-bg); border-color: var(--gold-label); }
+.tab:focus-visible, .nodeButton:focus-visible, .branchToggle:focus-visible { outline: 2px solid var(--gold-label); outline-offset: 3px; }
+.panel { min-width: 0; }
+.root { position: relative; display: flex; align-items: center; gap: 1rem; min-width: 0; border: 1px solid var(--gold-border); padding: 1.25rem; background: var(--surface); scroll-margin-top: 7rem; }
+.root::after { content: ''; position: absolute; bottom: -1.15rem; height: 1.15rem; left: 50%; width: 1px; background: var(--gold-border); }
+.root h2 { margin: .2rem 0; font-family: var(--font-serif), Georgia, serif; font-size: 1.65rem; line-height: 1.2; font-weight: 600; color: var(--heading); }
+.stage { display: block; color: var(--gold-label); font-size: .6rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; line-height: 1.5; }
+.counts { margin-top: .55rem; font-size: .8rem; color: var(--secondary); line-height: 1.6; }
+.counts span { display: block; }
+.hint { position: relative; margin: 1.8rem 0 1rem; color: var(--secondary); font-size: .8rem; line-height: 1.7; }
+.branches { display: grid; gap: 1.15rem; min-width: 0; }
+.branch { position: relative; border: 1px solid var(--gold-border); padding: .8rem; min-width: 0; background: var(--surface); align-self: start; }
+.node { min-width: 0; scroll-margin-top: 7rem; }
+.nodeButton { display: flex; align-items: center; width: 100%; gap: .65rem; padding: .5rem; min-width: 0; text-align: left; cursor: pointer; color: var(--heading); border: 1px solid transparent; }
+.nodeButton:hover { border-color: var(--gold-border); }
+.nodeButton[aria-expanded=true] { background: var(--wiki-page-bg); }
+.nodeLabel { min-width: 0; flex: 1; }
+.nodeName { display: block; margin-top: .2rem; font-family: var(--font-serif), Georgia, serif; font-size: 1rem; font-weight: 600; line-height: 1.35; word-break: normal; overflow-wrap: normal; }
+.chevron { width: 14px; height: 14px; flex-shrink: 0; color: var(--gold-label); }
+.rotated { transform: rotate(180deg); }
+.nodeDetails { padding: .8rem .5rem; border-top: 1px solid var(--gold-border); color: var(--text); font-size: .85rem; line-height: 1.7; }
+.nodeDetails div + div { margin-top: .8rem; }
+.nodeDetails h4 { color: var(--gold-label); font-size: .65rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.nodeDetails p { white-space: pre-line; margin-top: .25rem; word-break: normal; overflow-wrap: normal; }
+.branchToggle { display: flex; align-items: center; justify-content: space-between; gap: .4rem; width: 100%; margin-top: .5rem; padding: .6rem .5rem; color: var(--secondary); font-size: .75rem; cursor: pointer; border-top: 1px solid var(--gold-border); }
+.children { position: relative; display: grid; gap: .55rem; margin: .8rem 0 0 .6rem; padding-left: .85rem; border-left: 1px solid var(--gold-border); }
+.children > .node { position: relative; background: var(--wiki-page-bg); border: 1px solid var(--gold-border); }
+.children > .node::before { content: ''; position: absolute; top: 2rem; left: -.9rem; width: .85rem; height: 1px; background: var(--gold-border); }
+.children .nodeButton { padding: .6rem; }
+.children .nodeName { font-size: .95rem; }
+.children .stage { font-size: .55rem; }
+.children .nodeDetails { padding: .7rem; }
+.results { display: grid; gap: 1rem; }
+.resultHeading h2 { font-family: var(--font-serif), Georgia, serif; font-size: 1.5rem; color: var(--heading); }
+.resultHeading output { display: block; font-size: .85rem; color: var(--secondary); margin-top: .3rem; }
+.searchResult { border: 1px solid var(--gold-border); padding: 1rem; background: var(--surface); min-width: 0; }
+.path { margin-bottom: .7rem; font-size: .75rem; line-height: 1.8; color: var(--secondary); word-break: normal; overflow-wrap: normal; }
+.path strong { font-weight: 500; color: var(--heading); }
+@media (min-width: 640px) {
+  .branches { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+  .branchToggle { cursor: default; }
+  .branchToggle .chevron { display: none; }
+}
+@media (prefers-reduced-motion: no-preference) { .chevron { transition: transform .12s; } }
