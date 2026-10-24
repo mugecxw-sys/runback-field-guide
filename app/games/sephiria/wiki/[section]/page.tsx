@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import { GameWikiArticleLayout } from '@/components/game-wiki/game-wiki';
 import { SephiriaWeaponTree } from '@/components/game-wiki/sephiria-weapon-tree';
 import { SephiriaDatabaseIndex } from '@/components/game-wiki/sephiria-database-index';
+import { SephiriaItemsDatabase } from '@/components/game-wiki/sephiria-items-database';
 import { sephiriaWikiConfig } from '@/components/game-wiki/sephiria-config';
 import {
   sephiriaArtifacts,
@@ -34,7 +35,11 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const page = byPath.get((await params).section);
   if (!page || (page.group !== 'category' && page.group !== 'system')) return {};
-  const title = page.href.endsWith('/weapon-upgrades') ? 'Sephiria Weapon Upgrade Tree & Upgrade Paths | RUNBACK' : `Sephiria ${page.title} | RUNBACK`;
+  const title = page.href.endsWith('/weapon-upgrades')
+    ? 'Sephiria Weapon Upgrade Tree & Upgrade Paths | RUNBACK'
+    : page.href.endsWith('/items')
+      ? 'Sephiria Items Database | RUNBACK'
+      : `Sephiria ${page.title} | RUNBACK`;
   const description = page.href.endsWith('/weapon-upgrades') ? weaponTreeDescription : page.summary;
   const canonical = `${siteUrl}${page.href}`;
   return { title, description, alternates: { canonical }, openGraph: { title, description, type: 'article', url: canonical, siteName: 'RUNBACK' } };
@@ -99,10 +104,11 @@ function SystemPage({ section }: { section: string }) {
 
 function CategoryPage({ section }: { section: string }) {
   if (section === 'weapon-upgrades') return <SephiriaWeaponTree />;
+  if (section === 'items') return <SephiriaItemsDatabase />;
   const entries = categories.get(section);
   if (!entries) return <SystemPage section={section} />;
   const pageTitle: Record<string, string> = {
-    weapons: 'Weapon Index', 'weapon-upgrades': 'Weapon Upgrade Tree', artifacts: 'Artifact Index',
+    weapons: 'Weapon Index', 'weapon-upgrades': 'Weapon Upgrade Tree', items: 'Browse Items', artifacts: 'Artifact Index',
     tablets: 'Tablet Index', costumes: 'Costume Index', bosses: 'Boss & Miniboss Index',
     'hard-mode': 'Named Elements', grimoires: 'Grimoire Reference',
   };
@@ -144,7 +150,11 @@ export default async function SephiriaWikiSectionPage({ params }: Props) {
   const section = (await params).section;
   const page = byPath.get(section);
   if (!page || (page.group !== 'category' && page.group !== 'system')) notFound();
-  const title = section === 'weapon-upgrades' ? 'Sephiria Weapon Upgrade Tree' : `Sephiria ${page.title}`;
+  const title = section === 'weapon-upgrades'
+    ? 'Sephiria Weapon Upgrade Tree'
+    : section === 'items'
+      ? 'Sephiria Items Database'
+      : `Sephiria ${page.title}`;
   const description = section === 'weapon-upgrades' ? weaponTreeDescription : page.summary;
   const url = `${siteUrl}${page.href}`;
   const schema = { '@context': 'https://schema.org', '@graph': [

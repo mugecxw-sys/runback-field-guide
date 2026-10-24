@@ -311,6 +311,7 @@ export const sephiriaWikiPages: SephiriaWikiPage[] = [
   { title: 'Sephiria Wiki', href: '/games/sephiria/wiki', summary: 'Browse weapons, Artifacts, systems and other Sephiria reference pages.', publishedAt, group: 'wiki' },
   { title: 'Weapons', href: '/games/sephiria/wiki/weapons', summary: 'Six weapon branches, combat mechanics, unlock routes and related upgrades.', publishedAt, group: 'category' },
   { title: 'Weapon Upgrades', href: '/games/sephiria/wiki/weapon-upgrades', summary: 'Weapon upgrade database entries with effects, mechanics and weapon relationships.', publishedAt, group: 'category' },
+  { title: 'Items', href: '/games/sephiria/wiki/items', summary: 'Browse all 419 public items by type, base rarity, Bond status and category.', publishedAt, group: 'category' },
   { title: 'Artifacts', href: '/games/sephiria/wiki/artifacts', summary: 'Browse Artifact effects, rarity, categories and current values.', publishedAt, group: 'category' },
   { title: 'Tablets', href: '/games/sephiria/wiki/tablets', summary: 'Tablet effects and placement patterns.', publishedAt, group: 'category' },
   { title: 'Costumes', href: '/games/sephiria/wiki/costumes', summary: 'Costume effects, unlocks and skins.', publishedAt, group: 'category' },

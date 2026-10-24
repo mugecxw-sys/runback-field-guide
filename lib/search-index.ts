@@ -4,6 +4,7 @@ import { repoGuidePages, guidePublishedAt, guideSortDate } from './repo-guide-pa
 import { repoEnemies } from './repo-enemies';
 import { wanderburgWikiPages } from './wanderburg-wiki-pages';
 import { sephiriaAllRecords, sephiriaWikiPages } from './sephiria-wiki-data';
+import sephiriaItemsSearchIndex from './sephiria-items-search-index.json';
 export const searchIndex = [
   ...gameLibraries.map((g) => ({
     title: g.title,
@@ -52,7 +53,16 @@ export const searchIndex = [
     text: page.title,
     date: page.publishedAt,
   })),
-  ...sephiriaAllRecords.map((entry) => {
+  ...sephiriaItemsSearchIndex.map((entry) => ({
+    title: entry.name,
+    game: 'Sephiria',
+    kind: entry.kind,
+    href: `/games/sephiria/wiki/items?item=${encodeURIComponent(entry.slug)}`,
+    summary: [entry.kind, ...entry.categories].join(' · '),
+    text: [entry.description, entry.effect, ...entry.categories].filter(Boolean).join(' '),
+    date: '2026-10-24T00:00:00.000Z',
+  })),
+  ...sephiriaAllRecords.filter((entry) => entry.category !== 'Artifact' && entry.category !== 'Tablet').map((entry) => {
     const categoryPath: Record<string, string> = {
       Weapon: 'weapons', 'Weapon Upgrade': 'weapon-upgrades', Artifact: 'artifacts',
       Tablet: 'tablets', Costume: 'costumes', 'Hard Mode Element': 'hard-mode',
