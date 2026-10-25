@@ -1,0 +1,882 @@
+{
+  "buildId": "SNS-04",
+  "gameVersion": "1.0.33",
+  "columns": 6,
+  "activeSlots": 33,
+  "artifactCount": 28,
+  "tabletCount": 5,
+  "comboCounts": [
+    {
+      "name": "Sturdy",
+      "count": 10
+    },
+    {
+      "name": "Precision",
+      "count": 8
+    },
+    {
+      "name": "Wind Song",
+      "count": 10
+    }
+  ],
+  "coreTargets": [
+    {
+      "name": "Mystical Pendulum",
+      "effectiveLevel": 5
+    },
+    {
+      "name": "Crown of Humility",
+      "effectiveLevel": 4
+    },
+    {
+      "name": "Begonia Sachet",
+      "effectiveLevel": 2
+    },
+    {
+      "name": "Silver Plate",
+      "effectiveLevel": 3
+    },
+    {
+      "name": "Valter’s Work Monocle",
+      "effectiveLevel": 3
+    }
+  ],
+  "cells": [
+    {
+      "slot": 0,
+      "itemId": 1000,
+      "name": "Charm of Strength",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-412fc9671f0bf927.webp",
+        "width": 9,
+        "height": 14
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 1,
+      "itemId": 1086,
+      "name": "Silver Plate",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-6dc9a3ae9aad7a2c.webp",
+        "width": 26,
+        "height": 17
+      },
+      "rawLevel": 3,
+      "baseLevel": 1,
+      "tabletBonus": 2,
+      "effectiveLevel": 3,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": [
+        {
+          "name": "Brilliance",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "itemId": 2042,
+      "name": "Brilliance",
+      "kind": "Tablet",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-107f483ecdc067ad.webp",
+        "width": 24,
+        "height": 20
+      },
+      "rotation": "LEFT",
+      "patterns": [
+        "HORIZONTAL 1",
+        "UP 2",
+        "DOWN 2"
+      ],
+      "affectedArtifacts": [
+        {
+          "slot": 1,
+          "name": "Silver Plate",
+          "bonus": 2
+        },
+        {
+          "slot": 3,
+          "name": "Valter’s Work Monocle",
+          "bonus": 2
+        },
+        {
+          "slot": 8,
+          "name": "Yakumo Short Blade",
+          "bonus": 1
+        },
+        {
+          "slot": 14,
+          "name": "Wings",
+          "bonus": 1
+        },
+        {
+          "slot": 20,
+          "name": "Golden Cloak",
+          "bonus": 1
+        },
+        {
+          "slot": 26,
+          "name": "Thorn Charm",
+          "bonus": 1
+        },
+        {
+          "slot": 32,
+          "name": "Wanderer's Necklace",
+          "bonus": 1
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "itemId": 1191,
+      "name": "Valter’s Work Monocle",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-fe3773f4a62a3b74.webp",
+        "width": 26,
+        "height": 23
+      },
+      "rawLevel": 3,
+      "baseLevel": 1,
+      "tabletBonus": 2,
+      "effectiveLevel": 3,
+      "categories": [
+        "Precision"
+      ],
+      "contributors": [
+        {
+          "name": "Brilliance",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "itemId": 1293,
+      "name": "Snow Mountain Long-eared Bat",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-a011c036fc537503.webp",
+        "width": 20,
+        "height": 22
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Glacier",
+        "Wind Song"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 5,
+      "itemId": 1262,
+      "name": "Mystical Pendulum",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-cc41221383f303c0.webp",
+        "width": 18,
+        "height": 19
+      },
+      "rawLevel": 6,
+      "baseLevel": 1,
+      "tabletBonus": 5,
+      "effectiveLevel": 5,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": [
+        {
+          "name": "Conviction",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "itemId": 1010,
+      "name": "Shield Training Manual",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-efab41a1712aaabe.webp",
+        "width": 18,
+        "height": 20
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 7,
+      "itemId": 1008,
+      "name": "Wind Sheet Music",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-bdef80c494e4c63b.webp",
+        "width": 22,
+        "height": 20
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Wind Song"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 8,
+      "itemId": 1049,
+      "name": "Yakumo Short Blade",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-53967eff28b98e6e.webp",
+        "width": 27,
+        "height": 28
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": [
+        {
+          "name": "Brilliance",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 9,
+      "itemId": 1109,
+      "name": "Tainted Bandage",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-05c564ceeea0f46a.webp",
+        "width": 26,
+        "height": 23
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Precision"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 10,
+      "itemId": 1173,
+      "name": "Scythe of Berut",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-e52a8ffcdb40d2c6.webp",
+        "width": 25,
+        "height": 26
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Precision"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 11,
+      "itemId": 2051,
+      "name": "Conviction",
+      "kind": "Tablet",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-e4bd1b5a8ab974bb.webp",
+        "width": 18,
+        "height": 24
+      },
+      "rotation": "UP",
+      "patterns": [
+        "UP 5"
+      ],
+      "affectedArtifacts": [
+        {
+          "slot": 5,
+          "name": "Mystical Pendulum",
+          "bonus": 5
+        }
+      ]
+    },
+    {
+      "slot": 12,
+      "itemId": 1092,
+      "name": "Pinwheel",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-242cafa87fb2b742.webp",
+        "width": 18,
+        "height": 25
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Wind Song",
+        "Shadow"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 13,
+      "itemId": 1034,
+      "name": "Shieldmate",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-ad8a8c9fdc5ad6ad.webp",
+        "width": 20,
+        "height": 24
+      },
+      "rawLevel": 3,
+      "baseLevel": 1,
+      "tabletBonus": 2,
+      "effectiveLevel": 3,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": [
+        {
+          "name": "Rally",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "slot": 14,
+      "itemId": 1143,
+      "name": "Wings",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-f5970a58bdfc2325.webp",
+        "width": 25,
+        "height": 25
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Wind Song"
+      ],
+      "contributors": [
+        {
+          "name": "Brilliance",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 15,
+      "itemId": 1249,
+      "name": "Tactical Manual",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-44610202a9cab17d.webp",
+        "width": 18,
+        "height": 20
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Companion",
+        "Precision"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 16,
+      "itemId": 1274,
+      "name": "Faultfinder Needle",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-ea7cbd6f537c56ad.webp",
+        "width": 19,
+        "height": 19
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Precision"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 17,
+      "itemId": 1036,
+      "name": "Warrior Seal",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-bd3f139c1bd41483.webp",
+        "width": 18,
+        "height": 24
+      },
+      "rawLevel": 3,
+      "baseLevel": 1,
+      "tabletBonus": 2,
+      "effectiveLevel": 3,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": [
+        {
+          "name": "Compression",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "slot": 18,
+      "itemId": 1080,
+      "name": "Crown of Humility",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-0904986d68cf7c9a.webp",
+        "width": 22,
+        "height": 12
+      },
+      "rawLevel": 4,
+      "baseLevel": 1,
+      "tabletBonus": 3,
+      "effectiveLevel": 4,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        },
+        {
+          "name": "Rally",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "slot": 19,
+      "itemId": 2052,
+      "name": "Rally",
+      "kind": "Tablet",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-a99df31926839c08.webp",
+        "width": 22,
+        "height": 22
+      },
+      "rotation": "UP",
+      "patterns": [
+        "UP 2",
+        "LEFT 2"
+      ],
+      "affectedArtifacts": [
+        {
+          "slot": 13,
+          "name": "Shieldmate",
+          "bonus": 2
+        },
+        {
+          "slot": 18,
+          "name": "Crown of Humility",
+          "bonus": 2
+        }
+      ]
+    },
+    {
+      "slot": 20,
+      "itemId": 1149,
+      "name": "Golden Cloak",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-b1cd73ee57213d99.webp",
+        "width": 24,
+        "height": 20
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Wind Song"
+      ],
+      "contributors": [
+        {
+          "name": "Brilliance",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 21,
+      "itemId": 1016,
+      "name": "Red Mist",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-2c2ed5e9dad112ef.webp",
+        "width": 12,
+        "height": 11
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Precision"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 22,
+      "itemId": 1018,
+      "name": "Warm Stone",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-ed8274fd12a70032.webp",
+        "width": 16,
+        "height": 18
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Precision"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 23,
+      "itemId": 1218,
+      "name": "Begonia Sachet",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-ee00289cde2dcc65.webp",
+        "width": 19,
+        "height": 19
+      },
+      "rawLevel": 4,
+      "baseLevel": 1,
+      "tabletBonus": 3,
+      "effectiveLevel": 2,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": [
+        {
+          "name": "Compression",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "slot": 24,
+      "itemId": 2003,
+      "name": "Miracle",
+      "kind": "Tablet",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-709c2252fd6ee6fe.webp",
+        "width": 24,
+        "height": 24
+      },
+      "rotation": "UP",
+      "patterns": [
+        "HORIZONTAL 1",
+        "VERTICAL 1"
+      ],
+      "affectedArtifacts": [
+        {
+          "slot": 0,
+          "name": "Charm of Strength",
+          "bonus": 1
+        },
+        {
+          "slot": 6,
+          "name": "Shield Training Manual",
+          "bonus": 1
+        },
+        {
+          "slot": 12,
+          "name": "Pinwheel",
+          "bonus": 1
+        },
+        {
+          "slot": 18,
+          "name": "Crown of Humility",
+          "bonus": 1
+        },
+        {
+          "slot": 25,
+          "name": "Clear Cube",
+          "bonus": 1
+        },
+        {
+          "slot": 26,
+          "name": "Thorn Charm",
+          "bonus": 1
+        },
+        {
+          "slot": 27,
+          "name": "Silver Bracelet",
+          "bonus": 1
+        },
+        {
+          "slot": 28,
+          "name": "Sheet Music 'The Typhoon'",
+          "bonus": 1
+        },
+        {
+          "slot": 30,
+          "name": "Sheet Music 'Galaxy'",
+          "bonus": 1
+        }
+      ]
+    },
+    {
+      "slot": 25,
+      "itemId": 1189,
+      "name": "Clear Cube",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-88311abe344ab0c1.webp",
+        "width": 15,
+        "height": 16
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Wind Song"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 26,
+      "itemId": 1028,
+      "name": "Thorn Charm",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-29cec38b95ff2dfb.webp",
+        "width": 20,
+        "height": 22
+      },
+      "rawLevel": 3,
+      "baseLevel": 1,
+      "tabletBonus": 2,
+      "effectiveLevel": 3,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        },
+        {
+          "name": "Brilliance",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 27,
+      "itemId": 1194,
+      "name": "Silver Bracelet",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-f252358efd022bf2.webp",
+        "width": 18,
+        "height": 20
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Wind Song"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 28,
+      "itemId": 1245,
+      "name": "Sheet Music 'The Typhoon'",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-391c56bf1caf9d19.webp",
+        "width": 21,
+        "height": 21
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Storm Cloud",
+        "Wind Song"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 29,
+      "itemId": 2046,
+      "name": "Compression",
+      "kind": "Tablet",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-05ebc69a58f80490.webp",
+        "width": 16,
+        "height": 18
+      },
+      "rotation": "UP",
+      "patterns": [
+        "UP 3",
+        "UPUP 2",
+        "UPUPUP 1"
+      ],
+      "affectedArtifacts": [
+        {
+          "slot": 17,
+          "name": "Warrior Seal",
+          "bonus": 2
+        },
+        {
+          "slot": 23,
+          "name": "Begonia Sachet",
+          "bonus": 3
+        }
+      ]
+    },
+    {
+      "slot": 30,
+      "itemId": 1251,
+      "name": "Sheet Music 'Galaxy'",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-788a1f2ba1f97935.webp",
+        "width": 23,
+        "height": 21
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Planet",
+        "Wind Song"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 31,
+      "itemId": 1025,
+      "name": "Golden Crown of Arrogance",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-631cf470fdcab811.webp",
+        "width": 22,
+        "height": 16
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Precision"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 32,
+      "itemId": 1275,
+      "name": "Wanderer's Necklace",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-e9ca2c52ac182ed3.webp",
+        "width": 16,
+        "height": 20
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Wind Song"
+      ],
+      "contributors": [
+        {
+          "name": "Brilliance",
+          "value": 1
+        }
+      ]
+    }
+  ]
+}

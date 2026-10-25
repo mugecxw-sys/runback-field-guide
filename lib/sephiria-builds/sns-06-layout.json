@@ -1,0 +1,873 @@
+{
+  "buildId": "SNS-06",
+  "gameVersion": "1.0.33",
+  "columns": 6,
+  "activeSlots": 33,
+  "artifactCount": 28,
+  "tabletCount": 5,
+  "comboCounts": [
+    {
+      "name": "Storm Cloud",
+      "count": 8
+    },
+    {
+      "name": "Magitech",
+      "count": 10
+    },
+    {
+      "name": "Sturdy",
+      "count": 9
+    }
+  ],
+  "coreTargets": [
+    {
+      "name": "Lightning Rod",
+      "effectiveLevel": 5
+    },
+    {
+      "name": "Charm of Lightning",
+      "effectiveLevel": 4
+    },
+    {
+      "name": "Thunder's Earring",
+      "effectiveLevel": 4
+    },
+    {
+      "name": "Topaz Badge",
+      "effectiveLevel": 3
+    },
+    {
+      "name": "Blue Wrist Guard",
+      "effectiveLevel": 3
+    }
+  ],
+  "cells": [
+    {
+      "slot": 0,
+      "itemId": 1141,
+      "name": "Lightning-Struck Branch",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-b806ceb992314500.webp",
+        "width": 15,
+        "height": 21
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Magitech"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 1,
+      "itemId": 1298,
+      "name": "Topaz Badge",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-131ca205aa210307.webp",
+        "width": 17,
+        "height": 20
+      },
+      "rawLevel": 3,
+      "baseLevel": 1,
+      "tabletBonus": 2,
+      "effectiveLevel": 3,
+      "categories": [],
+      "contributors": [
+        {
+          "name": "Brilliance",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "slot": 2,
+      "itemId": 2042,
+      "name": "Brilliance",
+      "kind": "Tablet",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-107f483ecdc067ad.webp",
+        "width": 24,
+        "height": 20
+      },
+      "rotation": "LEFT",
+      "patterns": [
+        "HORIZONTAL 1",
+        "UP 2",
+        "DOWN 2"
+      ],
+      "affectedArtifacts": [
+        {
+          "slot": 1,
+          "name": "Topaz Badge",
+          "bonus": 2
+        },
+        {
+          "slot": 3,
+          "name": "Blue Wrist Guard",
+          "bonus": 2
+        },
+        {
+          "slot": 8,
+          "name": "Kirin's Horn",
+          "bonus": 1
+        },
+        {
+          "slot": 14,
+          "name": "Zap Bug",
+          "bonus": 1
+        },
+        {
+          "slot": 20,
+          "name": "Thunderous Steps",
+          "bonus": 1
+        },
+        {
+          "slot": 26,
+          "name": "Electro Chakram",
+          "bonus": 1
+        },
+        {
+          "slot": 32,
+          "name": "Lightning Stone",
+          "bonus": 1
+        }
+      ]
+    },
+    {
+      "slot": 3,
+      "itemId": 1221,
+      "name": "Blue Wrist Guard",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-2b07459fd2bba5e7.webp",
+        "width": 23,
+        "height": 24
+      },
+      "rawLevel": 3,
+      "baseLevel": 1,
+      "tabletBonus": 2,
+      "effectiveLevel": 3,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": [
+        {
+          "name": "Brilliance",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "slot": 4,
+      "itemId": 1065,
+      "name": "Model Mast",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-5dc4c9230e85acd3.webp",
+        "width": 24,
+        "height": 20
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Storm Cloud"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 5,
+      "itemId": 1113,
+      "name": "Lightning Rod",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-4bedd5ba8dcd9b77.webp",
+        "width": 19,
+        "height": 27
+      },
+      "rawLevel": 6,
+      "baseLevel": 1,
+      "tabletBonus": 5,
+      "effectiveLevel": 5,
+      "categories": [
+        "Storm Cloud"
+      ],
+      "contributors": [
+        {
+          "name": "Conviction",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "slot": 6,
+      "itemId": 1159,
+      "name": "Firefly",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-ebdc3290b4a656f6.webp",
+        "width": 13,
+        "height": 16
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Magitech"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 7,
+      "itemId": 1068,
+      "name": "Sapote Fruit",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-efe3ee1e53617df0.webp",
+        "width": 24,
+        "height": 16
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Storm Cloud"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 8,
+      "itemId": 1170,
+      "name": "Kirin's Horn",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-8a4b3c6f24d22804.webp",
+        "width": 16,
+        "height": 18
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Magitech"
+      ],
+      "contributors": [
+        {
+          "name": "Brilliance",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 9,
+      "itemId": 1010,
+      "name": "Shield Training Manual",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-efab41a1712aaabe.webp",
+        "width": 18,
+        "height": 20
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 10,
+      "itemId": 1086,
+      "name": "Silver Plate",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-6dc9a3ae9aad7a2c.webp",
+        "width": 26,
+        "height": 17
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 11,
+      "itemId": 2051,
+      "name": "Conviction",
+      "kind": "Tablet",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-e4bd1b5a8ab974bb.webp",
+        "width": 18,
+        "height": 24
+      },
+      "rotation": "UP",
+      "patterns": [
+        "UP 5"
+      ],
+      "affectedArtifacts": [
+        {
+          "slot": 5,
+          "name": "Lightning Rod",
+          "bonus": 5
+        }
+      ]
+    },
+    {
+      "slot": 12,
+      "itemId": 1200,
+      "name": "Ahmad’s Spirit Powder",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-fb288890b7f5ff81.webp",
+        "width": 16,
+        "height": 19
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Companion",
+        "Magitech"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 13,
+      "itemId": 1034,
+      "name": "Shieldmate",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-ad8a8c9fdc5ad6ad.webp",
+        "width": 20,
+        "height": 24
+      },
+      "rawLevel": 3,
+      "baseLevel": 1,
+      "tabletBonus": 2,
+      "effectiveLevel": 3,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": [
+        {
+          "name": "Rally",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "slot": 14,
+      "itemId": 1238,
+      "name": "Zap Bug",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-1454e01d0a5e9fd3.webp",
+        "width": 18,
+        "height": 14
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Magitech"
+      ],
+      "contributors": [
+        {
+          "name": "Brilliance",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 15,
+      "itemId": 1000,
+      "name": "Charm of Strength",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-412fc9671f0bf927.webp",
+        "width": 9,
+        "height": 14
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 16,
+      "itemId": 1028,
+      "name": "Thorn Charm",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-29cec38b95ff2dfb.webp",
+        "width": 20,
+        "height": 22
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 17,
+      "itemId": 1167,
+      "name": "Thunderstorm Tracking Compass",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-caa3d0cbcdbaa433.webp",
+        "width": 17,
+        "height": 23
+      },
+      "rawLevel": 3,
+      "baseLevel": 1,
+      "tabletBonus": 2,
+      "effectiveLevel": 3,
+      "categories": [
+        "Magitech"
+      ],
+      "contributors": [
+        {
+          "name": "Compression",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "slot": 18,
+      "itemId": 1272,
+      "name": "Charm of Lightning",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-1efbb7debc9c1a2b.webp",
+        "width": 11,
+        "height": 15
+      },
+      "rawLevel": 4,
+      "baseLevel": 1,
+      "tabletBonus": 3,
+      "effectiveLevel": 4,
+      "categories": [
+        "Magitech"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        },
+        {
+          "name": "Rally",
+          "value": 2
+        }
+      ]
+    },
+    {
+      "slot": 19,
+      "itemId": 2052,
+      "name": "Rally",
+      "kind": "Tablet",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-a99df31926839c08.webp",
+        "width": 22,
+        "height": 22
+      },
+      "rotation": "UP",
+      "patterns": [
+        "UP 2",
+        "LEFT 2"
+      ],
+      "affectedArtifacts": [
+        {
+          "slot": 13,
+          "name": "Shieldmate",
+          "bonus": 2
+        },
+        {
+          "slot": 18,
+          "name": "Charm of Lightning",
+          "bonus": 2
+        }
+      ]
+    },
+    {
+      "slot": 20,
+      "itemId": 1260,
+      "name": "Thunderous Steps",
+      "kind": "Artifact",
+      "image": null,
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Magitech"
+      ],
+      "contributors": [
+        {
+          "name": "Brilliance",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 21,
+      "itemId": 1036,
+      "name": "Warrior Seal",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-bd3f139c1bd41483.webp",
+        "width": 18,
+        "height": 24
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 22,
+      "itemId": 1049,
+      "name": "Yakumo Short Blade",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-53967eff28b98e6e.webp",
+        "width": 27,
+        "height": 28
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 23,
+      "itemId": 1239,
+      "name": "Thunder's Earring",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-71ec4f09f5f25bcd.webp",
+        "width": 18,
+        "height": 17
+      },
+      "rawLevel": 4,
+      "baseLevel": 1,
+      "tabletBonus": 3,
+      "effectiveLevel": 4,
+      "categories": [
+        "Magitech"
+      ],
+      "contributors": [
+        {
+          "name": "Compression",
+          "value": 3
+        }
+      ]
+    },
+    {
+      "slot": 24,
+      "itemId": 2003,
+      "name": "Miracle",
+      "kind": "Tablet",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-709c2252fd6ee6fe.webp",
+        "width": 24,
+        "height": 24
+      },
+      "rotation": "UP",
+      "patterns": [
+        "HORIZONTAL 1",
+        "VERTICAL 1"
+      ],
+      "affectedArtifacts": [
+        {
+          "slot": 0,
+          "name": "Lightning-Struck Branch",
+          "bonus": 1
+        },
+        {
+          "slot": 6,
+          "name": "Firefly",
+          "bonus": 1
+        },
+        {
+          "slot": 12,
+          "name": "Ahmad’s Spirit Powder",
+          "bonus": 1
+        },
+        {
+          "slot": 18,
+          "name": "Charm of Lightning",
+          "bonus": 1
+        },
+        {
+          "slot": 25,
+          "name": "Stone Flower",
+          "bonus": 1
+        },
+        {
+          "slot": 26,
+          "name": "Electro Chakram",
+          "bonus": 1
+        },
+        {
+          "slot": 27,
+          "name": "Ruby Brooch",
+          "bonus": 1
+        },
+        {
+          "slot": 28,
+          "name": "Sharp Acorn",
+          "bonus": 1
+        },
+        {
+          "slot": 30,
+          "name": "Cloud Bottle",
+          "bonus": 1
+        }
+      ]
+    },
+    {
+      "slot": 25,
+      "itemId": 1066,
+      "name": "Stone Flower",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-2a35f09568fbc06e.webp",
+        "width": 18,
+        "height": 18
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Storm Cloud"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 26,
+      "itemId": 1013,
+      "name": "Electro Chakram",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-010a5969d371f783.webp",
+        "width": 20,
+        "height": 24
+      },
+      "rawLevel": 3,
+      "baseLevel": 1,
+      "tabletBonus": 2,
+      "effectiveLevel": 3,
+      "categories": [
+        "Magitech"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        },
+        {
+          "name": "Brilliance",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 27,
+      "itemId": 1187,
+      "name": "Ruby Brooch",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-f4ad576b409ac481.webp",
+        "width": 22,
+        "height": 20
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Storm Cloud",
+        "Ember"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 28,
+      "itemId": 1070,
+      "name": "Sharp Acorn",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-b4e1da4b94ebe532.webp",
+        "width": 13,
+        "height": 19
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Storm Cloud"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 29,
+      "itemId": 2046,
+      "name": "Compression",
+      "kind": "Tablet",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-05ebc69a58f80490.webp",
+        "width": 16,
+        "height": 18
+      },
+      "rotation": "UP",
+      "patterns": [
+        "UP 3",
+        "UPUP 2",
+        "UPUPUP 1"
+      ],
+      "affectedArtifacts": [
+        {
+          "slot": 17,
+          "name": "Thunderstorm Tracking Compass",
+          "bonus": 2
+        },
+        {
+          "slot": 23,
+          "name": "Thunder's Earring",
+          "bonus": 3
+        }
+      ]
+    },
+    {
+      "slot": 30,
+      "itemId": 1035,
+      "name": "Cloud Bottle",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-2b08f4d92b7261dd.webp",
+        "width": 16,
+        "height": 18
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Storm Cloud"
+      ],
+      "contributors": [
+        {
+          "name": "Miracle",
+          "value": 1
+        }
+      ]
+    },
+    {
+      "slot": 31,
+      "itemId": 1050,
+      "name": "Radiating Charm",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-41cf032a2a85d26f.webp",
+        "width": 18,
+        "height": 22
+      },
+      "rawLevel": 1,
+      "baseLevel": 1,
+      "tabletBonus": 0,
+      "effectiveLevel": 1,
+      "categories": [
+        "Sturdy"
+      ],
+      "contributors": []
+    },
+    {
+      "slot": 32,
+      "itemId": 1055,
+      "name": "Lightning Stone",
+      "kind": "Artifact",
+      "image": {
+        "src": "/images/games/sephiria/wiki/items/item-540c78f1fbb5530d.webp",
+        "width": 17,
+        "height": 21
+      },
+      "rawLevel": 2,
+      "baseLevel": 1,
+      "tabletBonus": 1,
+      "effectiveLevel": 2,
+      "categories": [
+        "Storm Cloud"
+      ],
+      "contributors": [
+        {
+          "name": "Brilliance",
+          "value": 1
+        }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import layout from '@/lib/sephiria-builds/sns-01-layout.json';
+import sns01Layout from '@/lib/sephiria-builds/sns-01-layout.json';
 import styles from './sephiria-build-layout.module.css';
 
 const directionArrows: Record<string, string> = {
@@ -12,11 +12,45 @@ const directionArrows: Record<string, string> = {
   RIGHT: '→',
 };
 
+export type BuildLayoutData = {
+  buildId: string;
+  columns: number;
+  activeSlots: number;
+  artifactCount: number;
+  tabletCount: number;
+  comboCounts: { name: string; count: number }[];
+  coreTargets: { name: string; effectiveLevel: number }[];
+  cells: {
+    slot: number;
+    itemId: number;
+    name: string;
+    kind: 'Artifact' | 'Tablet';
+    image: { src: string; width: number; height: number } | null;
+    effectiveLevel?: number;
+    rawLevel?: number;
+    tabletBonus?: number;
+    categories?: string[];
+    rotation?: string;
+    patterns?: string[];
+    affectedArtifacts?: { slot: number; name: string; bonus: number }[];
+    contributors?: { name: string; value: number }[];
+    requirement?: string;
+  }[];
+};
+
+const defaultLayout = sns01Layout as unknown as BuildLayoutData;
+
 function signed(value: number) {
   return `${value >= 0 ? '+' : '−'}${Math.abs(value)}`;
 }
 
-export function SephiriaBuildLayout() {
+export function SephiriaBuildLayout({
+  layoutData = defaultLayout,
+}: {
+  layoutData?: BuildLayoutData;
+}) {
+  const layout = layoutData;
+  const detailId = `${layout.buildId.toLowerCase()}-layout-details`;
   const [selectedSlot, setSelectedSlot] = useState<number | null>(null);
   const detailsRef = useRef<HTMLElement>(null);
   const selected = layout.cells.find((cell) => cell.slot === selectedSlot);
@@ -35,7 +69,7 @@ export function SephiriaBuildLayout() {
 
   return (
     <div className={styles.layout}>
-      <fieldset className={styles.grid} aria-label="SNS-01 inventory layout">
+      <fieldset className={styles.grid} aria-label={`${layout.buildId} inventory layout`}>
         {layout.cells.map((cell) => (
           <button
             key={cell.slot}
@@ -43,7 +77,7 @@ export function SephiriaBuildLayout() {
             className={`${styles.cell} ${cell.kind === 'Tablet' ? styles.tablet : ''} ${selectedSlot === cell.slot ? styles.selected : ''}`}
             aria-label={`${cell.name}, ${cell.kind === 'Tablet' ? `Tablet, facing ${cell.rotation?.toLowerCase()}` : `Lv${cell.effectiveLevel}`}`}
             aria-expanded={selectedSlot === cell.slot}
-            aria-controls="sns01-layout-details"
+            aria-controls={detailId}
             title={
               cell.kind === 'Artifact'
                 ? `${cell.name} · Base Lv1 ${signed(cell.tabletBonus ?? 0)} Tablet → Lv${cell.effectiveLevel}\nCombo: ${cell.categories?.join(', ')}`
@@ -51,14 +85,18 @@ export function SephiriaBuildLayout() {
             }
             onClick={() => setSelectedSlot(cell.slot)}
           >
-            <Image
-              src={cell.image.src}
-              alt=""
-              width={cell.image.width}
-              height={cell.image.height}
-              className={styles.icon}
-              unoptimized
-            />
+            {cell.image ? (
+              <Image
+                src={cell.image.src}
+                alt=""
+                width={cell.image.width}
+                height={cell.image.height}
+                className={styles.icon}
+                unoptimized
+              />
+            ) : (
+              <span className={`${styles.icon} grid place-items-center text-[var(--muted)]`} aria-hidden="true">◇</span>
+            )}
             <span className={styles.name}>{cell.name}</span>
             <span className={styles.level}>
               {cell.kind === 'Tablet'
@@ -110,7 +148,7 @@ export function SephiriaBuildLayout() {
 
       {selected && (
         <section
-          id="sns01-layout-details"
+          id={detailId}
           ref={detailsRef}
           className={styles.details}
           aria-live="polite"
