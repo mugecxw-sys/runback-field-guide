@@ -1,0 +1,4281 @@
+{
+  "schemaVersion": "tablet-rules-public/1",
+  "gameVersion": "1.0.33",
+  "columns": 6,
+  "coordinateSystem": {
+    "rowIncreases": "DOWN",
+    "columnIncreases": "RIGHT",
+    "slotIndex": "row * 6 + column"
+  },
+  "ruleRecords": [
+    {
+      "id": 2000,
+      "name": "Oppression",
+      "rarity": "Advanced",
+      "image": "images/items/item-2000-oppression.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "DISABLE_ARTIFACT",
+          "value": null,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2001,
+      "name": "Hope",
+      "rarity": "Common",
+      "image": "images/items/item-2001-hope.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2002,
+      "name": "Surge",
+      "rarity": "Advanced",
+      "image": "images/items/item-2002-surge.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "IGNORE_ARTIFACT_CONSTRAINTS",
+          "value": null,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2003,
+      "name": "Miracle",
+      "rarity": "Legendary",
+      "image": "images/items/item-2003-miracle.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "LINE_THROUGH_ORIGIN",
+            "keyword": "HORIZONTAL",
+            "axis": "ROW",
+            "excludeOrigin": true
+          },
+          "patternFamily": "LINE_THROUGH_ORIGIN"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "LINE_THROUGH_ORIGIN",
+            "keyword": "VERTICAL",
+            "axis": "COLUMN",
+            "excludeOrigin": true
+          },
+          "patternFamily": "LINE_THROUGH_ORIGIN"
+        }
+      ]
+    },
+    {
+      "id": 2004,
+      "name": "Transference",
+      "rarity": "Advanced",
+      "image": "images/items/item-2004-transference.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "LINE_THROUGH_ORIGIN",
+            "keyword": "HORIZONTAL",
+            "axis": "ROW",
+            "excludeOrigin": true
+          },
+          "patternFamily": "LINE_THROUGH_ORIGIN"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "LINE_THROUGH_ORIGIN",
+            "keyword": "VERTICAL",
+            "axis": "COLUMN",
+            "excludeOrigin": true
+          },
+          "patternFamily": "LINE_THROUGH_ORIGIN"
+        }
+      ]
+    },
+    {
+      "id": 2005,
+      "name": "Exploitation",
+      "rarity": "Common",
+      "image": "images/items/item-2005-exploitation.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2006,
+      "name": "Cohesion",
+      "rarity": "Advanced",
+      "image": "images/items/item-2006-cohesion.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "LINE_THROUGH_ORIGIN",
+            "keyword": "HORIZONTAL",
+            "axis": "ROW",
+            "excludeOrigin": true
+          },
+          "patternFamily": "LINE_THROUGH_ORIGIN"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 3,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2007,
+      "name": "Good Will",
+      "rarity": "Common",
+      "image": "images/items/item-2007-good-will.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "POSITION_BASED",
+        "checks": [
+          {
+            "type": "PLACED",
+            "pattern": {
+              "type": "GRID_EDGE",
+              "keyword": "BOTTOM",
+              "edge": "BOTTOM",
+              "selection": {
+                "basis": "linear_active_slot_indices",
+                "mode": "LAST_N_SLOTS",
+                "count": 6
+              }
+            },
+            "patternFamily": "GRID_EDGE"
+          }
+        ],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALL_ITEM_CRITERIA_AND_ANY_PLACED_MATCH",
+          "requiresOwnPositionInMarkedCells": true
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2008,
+      "name": "Justice",
+      "rarity": "Advanced",
+      "image": "images/items/item-2008-justice.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "POSITION_BASED",
+        "checks": [
+          {
+            "type": "PLACED",
+            "pattern": {
+              "type": "GRID_EDGE",
+              "keyword": "LEFTEND",
+              "edge": "LEFT"
+            },
+            "patternFamily": "GRID_EDGE"
+          },
+          {
+            "type": "PLACED",
+            "pattern": {
+              "type": "GRID_EDGE",
+              "keyword": "RIGHTEND",
+              "edge": "RIGHT"
+            },
+            "patternFamily": "GRID_EDGE"
+          }
+        ],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALL_ITEM_CRITERIA_AND_ANY_PLACED_MATCH",
+          "requiresOwnPositionInMarkedCells": true
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "LINE_THROUGH_ORIGIN",
+            "keyword": "VERTICAL",
+            "axis": "COLUMN",
+            "excludeOrigin": true
+          },
+          "patternFamily": "LINE_THROUGH_ORIGIN"
+        }
+      ]
+    },
+    {
+      "id": 2009,
+      "name": "Unity",
+      "rarity": "Common",
+      "image": "images/items/item-2009-unity.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2010,
+      "name": "Destiny",
+      "rarity": "Common",
+      "image": "images/items/item-2010-destiny.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2011,
+      "name": "Chivalry",
+      "rarity": "Common",
+      "image": "images/items/item-2011-chivalry.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "KNIGHTUPLEFT",
+            "vector": {
+              "row": -2,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2012,
+      "name": "Wit",
+      "rarity": "Common",
+      "image": "images/items/item-2012-wit.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2013,
+      "name": "Gaze",
+      "rarity": "Common",
+      "image": "images/items/item-2013-gaze.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIADOWNRIGHT",
+            "vector": {
+              "row": 1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2014,
+      "name": "Pulsation",
+      "rarity": "Advanced",
+      "image": "images/items/item-2014-pulsation.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UPUP",
+            "vector": {
+              "row": -2,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2015,
+      "name": "Nurture",
+      "rarity": "Common",
+      "image": "images/items/item-2015-nurture.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPRIGHT",
+            "vector": {
+              "row": -1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWNDOWN",
+            "vector": {
+              "row": 2,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2016,
+      "name": "Shade",
+      "rarity": "Rare",
+      "image": "images/items/item-2016-shade.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "POSITION_BASED",
+        "checks": [
+          {
+            "type": "PLACED",
+            "pattern": {
+              "type": "GRID_EDGE",
+              "keyword": "TOP",
+              "edge": "TOP"
+            },
+            "patternFamily": "GRID_EDGE"
+          }
+        ],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALL_ITEM_CRITERIA_AND_ANY_PLACED_MATCH",
+          "requiresOwnPositionInMarkedCells": true
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "GRID_EDGE",
+            "keyword": "BOTTOM",
+            "edge": "BOTTOM",
+            "selection": {
+              "basis": "linear_active_slot_indices",
+              "mode": "LAST_N_SLOTS",
+              "count": 6
+            }
+          },
+          "patternFamily": "GRID_EDGE"
+        }
+      ]
+    },
+    {
+      "id": 2017,
+      "name": "Binary Star",
+      "rarity": "Advanced",
+      "image": "images/items/item-2017-binary-star.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UPUP",
+            "vector": {
+              "row": -2,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWNDOWN",
+            "vector": {
+              "row": 2,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2018,
+      "name": "Link",
+      "rarity": "Rare",
+      "image": "images/items/item-2018-link.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "IGNORE_ARTIFACT_CONSTRAINTS",
+          "value": null,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2019,
+      "name": "Competition",
+      "rarity": "Advanced",
+      "image": "images/items/item-2019-competition.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 3,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2020,
+      "name": "Desire",
+      "rarity": "Advanced",
+      "image": "images/items/item-2020-desire.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2021,
+      "name": "Advent",
+      "rarity": "Common",
+      "image": "images/items/item-2021-advent.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UPUP",
+            "vector": {
+              "row": -2,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWNDOWN",
+            "vector": {
+              "row": 2,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2022,
+      "name": "Vigilance",
+      "rarity": "Legendary",
+      "image": "images/items/item-2022-vigilance.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "GRID_EDGE",
+            "keyword": "TOP",
+            "edge": "TOP"
+          },
+          "patternFamily": "GRID_EDGE"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "GRID_EDGE",
+            "keyword": "BOTTOM",
+            "edge": "BOTTOM",
+            "selection": {
+              "basis": "linear_active_slot_indices",
+              "mode": "LAST_N_SLOTS",
+              "count": 6
+            }
+          },
+          "patternFamily": "GRID_EDGE"
+        }
+      ]
+    },
+    {
+      "id": 2023,
+      "name": "Wave",
+      "rarity": "Advanced",
+      "image": "images/items/item-2023-wave.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 3,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPRIGHT",
+            "vector": {
+              "row": -1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2024,
+      "name": "Trick",
+      "rarity": "Common",
+      "image": "images/items/item-2024-trick.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPRIGHT",
+            "vector": {
+              "row": -1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2025,
+      "name": "Dedication",
+      "rarity": "Advanced",
+      "image": "images/items/item-2025-dedication.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPRIGHT",
+            "vector": {
+              "row": -1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIADOWNLEFT",
+            "vector": {
+              "row": 1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIADOWNRIGHT",
+            "vector": {
+              "row": 1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2026,
+      "name": "Cheers",
+      "rarity": "Common",
+      "image": "images/items/item-2026-cheers.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2027,
+      "name": "Harvest",
+      "rarity": "Advanced",
+      "image": "images/items/item-2027-harvest.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2028,
+      "name": "Advance",
+      "rarity": "Advanced",
+      "image": "images/items/item-2028-advance.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UPUP",
+            "vector": {
+              "row": -2,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UPUPUP",
+            "vector": {
+              "row": -3,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2029,
+      "name": "Foundation",
+      "rarity": "Rare",
+      "image": "images/items/item-2029-foundation.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "LINE_THROUGH_ORIGIN",
+            "keyword": "HORIZONTAL",
+            "axis": "ROW",
+            "excludeOrigin": true
+          },
+          "patternFamily": "LINE_THROUGH_ORIGIN"
+        }
+      ]
+    },
+    {
+      "id": 2030,
+      "name": "Distribution",
+      "rarity": "Advanced",
+      "image": "images/items/item-2030-distribution.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2031,
+      "name": "Preparation",
+      "rarity": "Advanced",
+      "image": "images/items/item-2031-preparation.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIADOWNRIGHT",
+            "vector": {
+              "row": 1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2032,
+      "name": "Entrance",
+      "rarity": "Advanced",
+      "image": "images/items/item-2032-entrance.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPRIGHT",
+            "vector": {
+              "row": -1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2033,
+      "name": "Daydream",
+      "rarity": "Legendary",
+      "image": "images/items/item-2033-daydream.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPRIGHT",
+            "vector": {
+              "row": -1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIADOWNRIGHT",
+            "vector": {
+              "row": 1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIADOWNLEFT",
+            "vector": {
+              "row": 1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2034,
+      "name": "Oaths",
+      "rarity": "Rare",
+      "image": "images/items/item-2034-oaths.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UPUP",
+            "vector": {
+              "row": -2,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2035,
+      "name": "Thorns",
+      "rarity": "Legendary",
+      "image": "images/items/item-2035-thorns.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPRIGHT",
+            "vector": {
+              "row": -1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIADOWNRIGHT",
+            "vector": {
+              "row": 1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIADOWNLEFT",
+            "vector": {
+              "row": 1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2036,
+      "name": "Junction",
+      "rarity": "Rare",
+      "image": "images/items/item-2036-junction.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UPUP",
+            "vector": {
+              "row": -2,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UPUPUP",
+            "vector": {
+              "row": -3,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHTRIGHT",
+            "vector": {
+              "row": 0,
+              "column": 2
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHTRIGHTRIGHT",
+            "vector": {
+              "row": 0,
+              "column": 3
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2037,
+      "name": "Rebellion",
+      "rarity": "Rare",
+      "image": "images/items/item-2037-rebellion.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "DIRECTION_RAY",
+            "keyword": "RIGHT_RISING",
+            "vector": {
+              "row": -1,
+              "column": 1
+            },
+            "includeOrigin": false
+          },
+          "patternFamily": "DIAGONAL_RAY"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "DIRECTION_RAY",
+            "keyword": "LEFT_FALLING",
+            "vector": {
+              "row": 1,
+              "column": -1
+            },
+            "includeOrigin": false
+          },
+          "patternFamily": "DIAGONAL_RAY"
+        }
+      ]
+    },
+    {
+      "id": 2038,
+      "name": "Three-Headed",
+      "rarity": "Advanced",
+      "image": "images/items/item-2038-three-headed.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2039,
+      "name": "Past",
+      "rarity": "Advanced",
+      "image": "images/items/item-2039-past.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPRIGHT",
+            "vector": {
+              "row": -1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2040,
+      "name": "Future",
+      "rarity": "Advanced",
+      "image": "images/items/item-2040-future.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPRIGHT",
+            "vector": {
+              "row": -1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2041,
+      "name": "Stack",
+      "rarity": "Advanced",
+      "image": "images/items/item-2041-stack.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "KNIGHTUPLEFT",
+            "vector": {
+              "row": -2,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UPUP",
+            "vector": {
+              "row": -2,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2042,
+      "name": "Brilliance",
+      "rarity": "Legendary",
+      "image": "images/items/item-2042-brilliance.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "LINE_THROUGH_ORIGIN",
+            "keyword": "HORIZONTAL",
+            "axis": "ROW",
+            "excludeOrigin": true
+          },
+          "patternFamily": "LINE_THROUGH_ORIGIN"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2043,
+      "name": "Handshake",
+      "rarity": "Common",
+      "image": "images/items/item-2043-handshake.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2044,
+      "name": "Approximation",
+      "rarity": "Common",
+      "image": "images/items/item-2044-approximation.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2045,
+      "name": "Power",
+      "rarity": "Rare",
+      "image": "images/items/item-2045-power.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 3,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2046,
+      "name": "Compression",
+      "rarity": "Legendary",
+      "image": "images/items/item-2046-compression.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 3,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UPUP",
+            "vector": {
+              "row": -2,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UPUPUP",
+            "vector": {
+              "row": -3,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2047,
+      "name": "Dry",
+      "rarity": "Common",
+      "image": "images/items/item-2047-dry.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2048,
+      "name": "Simultaneity",
+      "rarity": "Rare",
+      "image": "images/items/item-2048-simultaneity.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "LINE_THROUGH_ORIGIN",
+            "keyword": "VERTICAL",
+            "axis": "COLUMN",
+            "excludeOrigin": true
+          },
+          "patternFamily": "LINE_THROUGH_ORIGIN"
+        }
+      ]
+    },
+    {
+      "id": 2049,
+      "name": "Disconnection",
+      "rarity": "Rare",
+      "image": "images/items/item-2049-disconnection.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 3,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 3,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2050,
+      "name": "Exit",
+      "rarity": "Advanced",
+      "image": "images/items/item-2050-exit.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIADOWNLEFT",
+            "vector": {
+              "row": 1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIADOWNRIGHT",
+            "vector": {
+              "row": 1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2051,
+      "name": "Conviction",
+      "rarity": "Legendary",
+      "image": "images/items/item-2051-conviction.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 5,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2052,
+      "name": "Rally",
+      "rarity": "Advanced",
+      "image": "images/items/item-2052-rally.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2053,
+      "name": "Progress",
+      "rarity": "Advanced",
+      "image": "images/items/item-2053-progress.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2054,
+      "name": "Peace",
+      "rarity": "Legendary",
+      "image": "images/items/item-2054-peace.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 3,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 3,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2055,
+      "name": "Courage",
+      "rarity": "Legendary",
+      "image": "images/items/item-2055-courage.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "DIRECTION_RAY",
+            "keyword": "LEFT_RISING",
+            "vector": {
+              "row": -1,
+              "column": -1
+            },
+            "includeOrigin": false
+          },
+          "patternFamily": "DIAGONAL_RAY"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "DIRECTION_RAY",
+            "keyword": "RIGHT_FALLING",
+            "vector": {
+              "row": 1,
+              "column": 1
+            },
+            "includeOrigin": false
+          },
+          "patternFamily": "DIAGONAL_RAY"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPRIGHT",
+            "vector": {
+              "row": -1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIADOWNLEFT",
+            "vector": {
+              "row": 1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2056,
+      "name": "Hospitality",
+      "rarity": "Legendary",
+      "image": "images/items/item-2056-hospitality.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "IGNORE_ARTIFACT_CONSTRAINTS",
+          "value": null,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "IGNORE_ARTIFACT_CONSTRAINTS",
+          "value": null,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2057,
+      "name": "Honor",
+      "rarity": "Advanced",
+      "image": "images/items/item-2057-honor.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "KNIGHTUPLEFT",
+            "vector": {
+              "row": -2,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2058,
+      "name": "Last Stand",
+      "rarity": "Rare",
+      "image": "images/items/item-2058-last-stand.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 5,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2059,
+      "name": "Flag",
+      "rarity": "Rare",
+      "image": "images/items/item-2059-flag.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "POSITION_BASED",
+        "checks": [
+          {
+            "type": "PLACED",
+            "pattern": {
+              "type": "GRID_EDGE",
+              "keyword": "LEFTEND",
+              "edge": "LEFT"
+            },
+            "patternFamily": "GRID_EDGE"
+          }
+        ],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALL_ITEM_CRITERIA_AND_ANY_PLACED_MATCH",
+          "requiresOwnPositionInMarkedCells": true
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "UP",
+            "vector": {
+              "row": -1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DOWN",
+            "vector": {
+              "row": 1,
+              "column": 0
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHTRIGHT",
+            "vector": {
+              "row": 0,
+              "column": 2
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 3,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHTRIGHTRIGHT",
+            "vector": {
+              "row": 0,
+              "column": 3
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2060,
+      "name": "Defensive Move",
+      "rarity": "Rare",
+      "image": "images/items/item-2060-defensive-move.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPRIGHT",
+            "vector": {
+              "row": -1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 2,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIADOWNLEFT",
+            "vector": {
+              "row": 1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIADOWNRIGHT",
+            "vector": {
+              "row": 1,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "LEFT",
+            "vector": {
+              "row": 0,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "RIGHT",
+            "vector": {
+              "row": 0,
+              "column": 1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2061,
+      "name": "Wedge",
+      "rarity": "Rare",
+      "image": "images/items/item-2061-wedge.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 3,
+          "pattern": {
+            "type": "RELATIVE_OFFSET",
+            "keyword": "DIAUPLEFT",
+            "vector": {
+              "row": -1,
+              "column": -1
+            }
+          },
+          "patternFamily": "RELATIVE_OFFSET"
+        }
+      ]
+    },
+    {
+      "id": 2098,
+      "name": "Hell",
+      "rarity": "Eternal",
+      "image": "images/items/item-2098-hell.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -9,
+          "pattern": {
+            "type": "GRID_PARITY",
+            "keyword": "CHECKERBOARD2",
+            "parity": "OPPOSITE_ORIGIN",
+            "excludeOrigin": true
+          },
+          "patternFamily": "GRID_PARITY"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -9,
+          "pattern": {
+            "type": "GRID_PARITY",
+            "keyword": "CHECKERBOARD",
+            "parity": "SAME_AS_ORIGIN",
+            "excludeOrigin": true
+          },
+          "patternFamily": "GRID_PARITY"
+        }
+      ]
+    },
+    {
+      "id": 2099,
+      "name": "Heaven",
+      "rarity": "Eternal",
+      "image": "images/items/item-2099-heaven.webp",
+      "rotation": {
+        "canRotate": false,
+        "defaultDirection": "UP",
+        "rotationMode": "NON_ROTATABLE",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 9,
+          "pattern": {
+            "type": "GRID_PARITY",
+            "keyword": "CHECKERBOARD2",
+            "parity": "OPPOSITE_ORIGIN",
+            "excludeOrigin": true
+          },
+          "patternFamily": "GRID_PARITY"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 9,
+          "pattern": {
+            "type": "GRID_PARITY",
+            "keyword": "CHECKERBOARD",
+            "parity": "SAME_AS_ORIGIN",
+            "excludeOrigin": true
+          },
+          "patternFamily": "GRID_PARITY"
+        }
+      ]
+    },
+    {
+      "id": 2100,
+      "name": "Requital",
+      "rarity": "Eternal",
+      "image": "images/items/item-2100-requital.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 3,
+          "pattern": {
+            "type": "LINE_THROUGH_ORIGIN",
+            "keyword": "HORIZONTAL",
+            "axis": "ROW",
+            "excludeOrigin": true
+          },
+          "patternFamily": "LINE_THROUGH_ORIGIN"
+        }
+      ]
+    },
+    {
+      "id": 12000,
+      "name": "Curse",
+      "rarity": "Legendary",
+      "image": "images/items/item-12000-curse.webp",
+      "rotation": {
+        "canRotate": true,
+        "defaultDirection": "UP",
+        "rotationMode": "CLIENT_QUARTER_TURN_TRANSFORM",
+        "rotationCycle": [
+          "UP",
+          "LEFT",
+          "DOWN",
+          "RIGHT"
+        ],
+        "rotatesConditionRange": true,
+        "rotatesEffectRange": true
+      },
+      "activation": {
+        "type": "ALWAYS_ACTIVE",
+        "checks": [],
+        "rotatesWithTablet": true,
+        "predicate": {
+          "operator": "ALWAYS",
+          "requiresOwnPositionInMarkedCells": false
+        }
+      },
+      "effects": [
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": 1,
+          "pattern": {
+            "type": "GRID_PARITY",
+            "keyword": "CHECKERBOARD2",
+            "parity": "OPPOSITE_ORIGIN",
+            "excludeOrigin": true
+          },
+          "patternFamily": "GRID_PARITY"
+        },
+        {
+          "effectType": "ADD_ARTIFACT_LEVEL",
+          "value": -1,
+          "pattern": {
+            "type": "GRID_PARITY",
+            "keyword": "CHECKERBOARD",
+            "parity": "SAME_AS_ORIGIN",
+            "excludeOrigin": true
+          },
+          "patternFamily": "GRID_PARITY"
+        }
+      ]
+    }
+  ]
+}

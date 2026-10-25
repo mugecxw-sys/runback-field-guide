@@ -1,0 +1,2471 @@
+{
+  "gameVersion": "1.0.33",
+  "grid": {
+    "columns": 6
+  },
+  "ruleRecords": [
+    {
+      "id": 1000,
+      "name": "Charm of Strength",
+      "image": "images/items/item-1000-charm-of-strength.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1001,
+      "name": "Charm of Skill",
+      "image": "images/items/item-1001-charm-of-skill.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 1002,
+      "name": "Charm of Intelligence",
+      "image": "images/items/item-1002-charm-of-intelligence.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1004,
+      "name": "Broken Root",
+      "image": "images/items/item-1004-broken-root.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1005,
+      "name": "Heart-Shaped Carrot",
+      "image": "images/items/item-1005-heart-shaped-carrot.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1008,
+      "name": "Wind Sheet Music",
+      "image": "images/items/item-1008-wind-sheet-music.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1009,
+      "name": "Sword Training Manual",
+      "image": "images/items/item-1009-sword-training-manual.webp",
+      "maxLevel": 3,
+      "constraints": [
+        {
+          "type": "TOP_ROW",
+          "scope": "PLACEMENT",
+          "parameters": {
+            "columns": 6,
+            "predicate": "row == 0"
+          },
+          "ignoreableByTablet": true,
+          "evaluationMode": "STATIC_GRID"
+        }
+      ]
+    },
+    {
+      "id": 1010,
+      "name": "Shield Training Manual",
+      "image": "images/items/item-1010-shield-training-manual.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 1011,
+      "name": "Windgrass Scarf",
+      "image": "images/items/item-1011-windgrass-scarf.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1012,
+      "name": "Keel Fragment",
+      "image": "images/items/item-1012-keel-fragment.webp",
+      "maxLevel": 4,
+      "constraints": [
+        {
+          "type": "OUTLINED_SLOTS",
+          "scope": "PLACEMENT",
+          "parameters": {
+            "columns": 6,
+            "predicate": "column == 0 || row == 0 || column == columns - 1 || slot >= capacity - columns"
+          },
+          "ignoreableByTablet": true,
+          "evaluationMode": "STATIC_GRID"
+        }
+      ]
+    },
+    {
+      "id": 1013,
+      "name": "Electro Chakram",
+      "image": "images/items/item-1013-electro-chakram.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1014,
+      "name": "Scabbard of Exorcism",
+      "image": "images/items/item-1014-scabbard-of-exorcism.webp",
+      "maxLevel": 7,
+      "constraints": [
+        {
+          "type": "OUTLINED_SLOTS",
+          "scope": "PLACEMENT",
+          "parameters": {
+            "columns": 6,
+            "predicate": "column == 0 || row == 0 || column == columns - 1 || slot >= capacity - columns"
+          },
+          "ignoreableByTablet": true,
+          "evaluationMode": "STATIC_GRID"
+        }
+      ]
+    },
+    {
+      "id": 1015,
+      "name": "Blue Planet",
+      "image": "images/items/item-1015-blue-planet.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1016,
+      "name": "Red Mist",
+      "image": "images/items/item-1016-red-mist.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1017,
+      "name": "Shield Earrings",
+      "image": "images/items/item-1017-shield-earrings.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1018,
+      "name": "Warm Stone",
+      "image": "images/items/item-1018-warm-stone.webp",
+      "maxLevel": 4,
+      "constraints": [
+        {
+          "type": "INNER_SLOTS",
+          "scope": "PLACEMENT",
+          "parameters": {
+            "columns": 6,
+            "predicate": "column > 0 && row > 0 && column < columns - 1 && slot + columns + 1 < capacity"
+          },
+          "ignoreableByTablet": true,
+          "evaluationMode": "STATIC_GRID"
+        }
+      ]
+    },
+    {
+      "id": 1021,
+      "name": "Dull Bell",
+      "image": "images/items/item-1021-dull-bell.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1023,
+      "name": "Dried Flower",
+      "image": "images/items/item-1023-dried-flower.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1025,
+      "name": "Golden Crown of Arrogance",
+      "image": "images/items/item-1025-golden-crown-of-arrogance.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1026,
+      "name": "Simple Contract",
+      "image": "images/items/item-1026-simple-contract.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1027,
+      "name": "Cold Lock",
+      "image": "images/items/item-1027-cold-lock.webp",
+      "maxLevel": 5,
+      "constraints": [
+        {
+          "type": "BOTH_ADJACENT_SLOTS_EMPTY",
+          "scope": "ADJACENCY",
+          "parameters": {
+            "columns": 6,
+            "directions": [
+              "LEFT",
+              "RIGHT"
+            ],
+            "occupiedKinds": [
+              "ARTIFACT",
+              "CONSUMABLE",
+              "ITEM",
+              "GRIMOIRE"
+            ],
+            "boundaryPolicy": "FAIL_IF_EITHER_NEIGHBOR_IS_NOT_ACTIVE"
+          },
+          "ignoreableByTablet": true,
+          "evaluationMode": "STATIC_GRID"
+        }
+      ]
+    },
+    {
+      "id": 1028,
+      "name": "Thorn Charm",
+      "image": "images/items/item-1028-thorn-charm.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1029,
+      "name": "Golden Handbell",
+      "image": "images/items/item-1029-golden-handbell.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1030,
+      "name": "Multipurpose Belt",
+      "image": "images/items/item-1030-multipurpose-belt.webp",
+      "maxLevel": 4,
+      "constraints": [
+        {
+          "type": "BOTTOM_SLOTS",
+          "scope": "PLACEMENT",
+          "parameters": {
+            "columns": 6,
+            "slotCount": 6,
+            "predicate": "slot >= capacity - slotCount"
+          },
+          "ignoreableByTablet": true,
+          "evaluationMode": "STATIC_GRID"
+        }
+      ]
+    },
+    {
+      "id": 1031,
+      "name": "Endoditte’s Paperweight",
+      "image": "images/items/item-1031-endodittes-paperweight.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1032,
+      "name": "Red Snake Eyes",
+      "image": "images/items/item-1032-red-snake-eyes.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1033,
+      "name": "Sword Earrings",
+      "image": "images/items/item-1033-sword-earrings.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1034,
+      "name": "Shieldmate",
+      "image": "images/items/item-1034-shieldmate.webp",
+      "maxLevel": 7,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "SWORD_AND_SHIELD"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1035,
+      "name": "Cloud Bottle",
+      "image": "images/items/item-1035-cloud-bottle.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1036,
+      "name": "Warrior Seal",
+      "image": "images/items/item-1036-warrior-seal.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1040,
+      "name": "White Branch",
+      "image": "images/items/item-1040-white-branch.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1048,
+      "name": "Magic Carrot",
+      "image": "images/items/item-1048-magic-carrot.webp",
+      "maxLevel": 5,
+      "constraints": [
+        {
+          "type": "TOP_ROW",
+          "scope": "PLACEMENT",
+          "parameters": {
+            "columns": 6,
+            "predicate": "row == 0"
+          },
+          "ignoreableByTablet": true,
+          "evaluationMode": "STATIC_GRID"
+        }
+      ]
+    },
+    {
+      "id": 1049,
+      "name": "Yakumo Short Blade",
+      "image": "images/items/item-1049-yakumo-short-blade.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1050,
+      "name": "Radiating Charm",
+      "image": "images/items/item-1050-radiating-charm.webp",
+      "maxLevel": 5,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "SWORD_AND_SHIELD"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1051,
+      "name": "Riposte Blade Fragment",
+      "image": "images/items/item-1051-riposte-blade-fragment.webp",
+      "maxLevel": 6,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "SWORD_AND_SHIELD"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1053,
+      "name": "Shield Bag",
+      "image": "images/items/item-1053-shield-bag.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1055,
+      "name": "Lightning Stone",
+      "image": "images/items/item-1055-lightning-stone.webp",
+      "maxLevel": 7,
+      "constraints": []
+    },
+    {
+      "id": 1056,
+      "name": "Bronze Mirror Fragment",
+      "image": "images/items/item-1056-bronze-mirror-fragment.webp",
+      "maxLevel": 4,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "GREAT_SWORD"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1058,
+      "name": "Library Minute Hand Miniature",
+      "image": "images/items/item-1058-library-minute-hand-miniature.webp",
+      "maxLevel": 3,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "DAGGER"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1060,
+      "name": "Seren’s Rushed Letter",
+      "image": "images/items/item-1060-serens-rushed-letter.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1062,
+      "name": "Bicorn Pipe",
+      "image": "images/items/item-1062-bicorn-pipe.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1063,
+      "name": "Tiny Magic Conch",
+      "image": "images/items/item-1063-tiny-magic-conch.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1064,
+      "name": "Mage's Coin",
+      "image": "images/items/item-1064-mage-s-coin.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1065,
+      "name": "Model Mast",
+      "image": "images/items/item-1065-model-mast.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1066,
+      "name": "Stone Flower",
+      "image": "images/items/item-1066-stone-flower.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 1067,
+      "name": "Chalcedony Key",
+      "image": "images/items/item-1067-chalcedony-key.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1068,
+      "name": "Sapote Fruit",
+      "image": "images/items/item-1068-sapote-fruit.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1069,
+      "name": "Ray’s Star Fragment",
+      "image": "images/items/item-1069-rays-star-fragment.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1070,
+      "name": "Sharp Acorn",
+      "image": "images/items/item-1070-sharp-acorn.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1071,
+      "name": "Mini Ballista",
+      "image": "images/items/item-1071-mini-ballista.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1072,
+      "name": "Leaf Bird Leather",
+      "image": "images/items/item-1072-leaf-bird-leather.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1073,
+      "name": "Mouse Mage’s Pendant",
+      "image": "images/items/item-1073-mouse-mages-pendant.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 1074,
+      "name": "Zappy Custard Pastry",
+      "image": "images/items/item-1074-zappy-custard-pastry.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1075,
+      "name": "Empty Hilt",
+      "image": "images/items/item-1075-empty-hilt.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1076,
+      "name": "Standards of Magic",
+      "image": "images/items/item-1076-standards-of-magic.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1077,
+      "name": "Broken Sapphire",
+      "image": "images/items/item-1077-broken-sapphire.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1078,
+      "name": "Artificial Fairy, Iphiel",
+      "image": "images/items/item-1078-artificial-fairy-iphiel.webp",
+      "maxLevel": 6,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "SWORD_AND_SHIELD"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1079,
+      "name": "Sharp Flint",
+      "image": "images/items/item-1079-sharp-flint.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1080,
+      "name": "Crown of Humility",
+      "image": "images/items/item-1080-crown-of-humility.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1081,
+      "name": "Model Beak",
+      "image": "images/items/item-1081-model-beak.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1082,
+      "name": "Compression Bandage",
+      "image": "images/items/item-1082-compression-bandage.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1083,
+      "name": "Charm of Aspiration",
+      "image": "images/items/item-1083-charm-of-aspiration.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1085,
+      "name": "Blue Ring",
+      "image": "images/items/item-1085-blue-ring.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1086,
+      "name": "Silver Plate",
+      "image": "images/items/item-1086-silver-plate.webp",
+      "maxLevel": 3,
+      "constraints": [
+        {
+          "type": "BOTTOM_SLOTS",
+          "scope": "PLACEMENT",
+          "parameters": {
+            "columns": 6,
+            "slotCount": 6,
+            "predicate": "slot >= capacity - slotCount"
+          },
+          "ignoreableByTablet": true,
+          "evaluationMode": "STATIC_GRID"
+        }
+      ]
+    },
+    {
+      "id": 1087,
+      "name": "Kriton’s Seal",
+      "image": "images/items/item-1087-kritons-seal.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1088,
+      "name": "Green Sawblade",
+      "image": "images/items/item-1088-green-sawblade.webp",
+      "maxLevel": 1,
+      "constraints": []
+    },
+    {
+      "id": 1089,
+      "name": "Pearl Dust",
+      "image": "images/items/item-1089-pearl-dust.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1090,
+      "name": "Slim Cushion",
+      "image": "images/items/item-1090-slim-cushion.webp",
+      "maxLevel": 7,
+      "constraints": []
+    },
+    {
+      "id": 1091,
+      "name": "Ebony Scale",
+      "image": "images/items/item-1091-ebony-scale.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1092,
+      "name": "Pinwheel",
+      "image": "images/items/item-1092-pinwheel.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1093,
+      "name": "Thorn Bush",
+      "image": "images/items/item-1093-thorn-bush.webp",
+      "maxLevel": 5,
+      "constraints": [
+        {
+          "type": "INNER_SLOTS",
+          "scope": "PLACEMENT",
+          "parameters": {
+            "columns": 6,
+            "predicate": "column > 0 && row > 0 && column < columns - 1 && slot + columns + 1 < capacity"
+          },
+          "ignoreableByTablet": true,
+          "evaluationMode": "STATIC_GRID"
+        }
+      ]
+    },
+    {
+      "id": 1094,
+      "name": "Amber",
+      "image": "images/items/item-1094-amber.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1095,
+      "name": "Broken Mirror",
+      "image": "images/items/item-1095-broken-mirror.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 1098,
+      "name": "Magic Bucket",
+      "image": "images/items/item-1098-magic-bucket.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1099,
+      "name": "Magic Bucket Full of Water",
+      "image": "images/items/item-1099-magic-bucket-full-of-water.webp",
+      "maxLevel": 1,
+      "constraints": []
+    },
+    {
+      "id": 1100,
+      "name": "Dragoncense",
+      "image": "images/items/item-1100-dragoncense.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1101,
+      "name": "Ohia Lehua",
+      "image": "images/items/item-1101-ohia-lehua.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1102,
+      "name": "Oak Tree Coal",
+      "image": "images/items/item-1102-oak-tree-coal.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1104,
+      "name": "Fretted Clay Tablet",
+      "image": "images/items/item-1104-fretted-clay-tablet.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1105,
+      "name": "Yellow Planet",
+      "image": "images/items/item-1105-yellow-planet.webp",
+      "maxLevel": 7,
+      "constraints": []
+    },
+    {
+      "id": 1106,
+      "name": "Red Planet",
+      "image": "images/items/item-1106-red-planet.webp",
+      "maxLevel": 7,
+      "constraints": []
+    },
+    {
+      "id": 1107,
+      "name": "Sky Blue Planet",
+      "image": "images/items/item-1107-sky-blue-planet.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1108,
+      "name": "Giant Telescope",
+      "image": "images/items/item-1108-giant-telescope.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 1109,
+      "name": "Tainted Bandage",
+      "image": "images/items/item-1109-tainted-bandage.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1111,
+      "name": "Discarded Golden Ring",
+      "image": "images/items/item-1111-discarded-golden-ring.webp",
+      "maxLevel": 3,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "GREAT_SWORD"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1112,
+      "name": "Absolute Ring",
+      "image": "images/items/item-1112-absolute-ring.webp",
+      "maxLevel": 3,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "GREAT_SWORD"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1113,
+      "name": "Lightning Rod",
+      "image": "images/items/item-1113-lightning-rod.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1114,
+      "name": "Balisong",
+      "image": "images/items/item-1114-balisong.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1115,
+      "name": "Orb of Yearning",
+      "image": "images/items/item-1115-orb-of-yearning.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1117,
+      "name": "Tuning Fork",
+      "image": "images/items/item-1117-tuning-fork.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1118,
+      "name": "White Eggshell",
+      "image": "images/items/item-1118-white-eggshell.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1119,
+      "name": "White Crust Bread",
+      "image": "images/items/item-1119-white-crust-bread.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1120,
+      "name": "Blood Stone Ring",
+      "image": "images/items/item-1120-blood-stone-ring.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1121,
+      "name": "Neutralizer Noir",
+      "image": "images/items/item-1121-neutralizer-noir.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1122,
+      "name": "Pouch of Black Tea",
+      "image": "images/items/item-1122-pouch-of-black-tea.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1123,
+      "name": "Star Ruby",
+      "image": "images/items/item-1123-star-ruby.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1124,
+      "name": "Star Aquamarine",
+      "image": "images/items/item-1124-star-aquamarine.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1125,
+      "name": "Helena’s Model Stairway",
+      "image": "images/items/item-1125-helenas-model-stairway.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1126,
+      "name": "Golden Maple Leaf",
+      "image": "images/items/item-1126-golden-maple-leaf.webp",
+      "maxLevel": 1,
+      "constraints": []
+    },
+    {
+      "id": 1128,
+      "name": "Ball of Red Yarn",
+      "image": "images/items/item-1128-ball-of-red-yarn.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1129,
+      "name": "Cloud Seed Arrowhead",
+      "image": "images/items/item-1129-cloud-seed-arrowhead.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1130,
+      "name": "Alfonso’s Horn",
+      "image": "images/items/item-1130-alfonsos-horn.webp",
+      "maxLevel": 8,
+      "constraints": []
+    },
+    {
+      "id": 1132,
+      "name": "Green Ink Bottle",
+      "image": "images/items/item-1132-green-ink-bottle.webp",
+      "maxLevel": 4,
+      "constraints": [
+        {
+          "type": "OUTLINED_SLOTS",
+          "scope": "PLACEMENT",
+          "parameters": {
+            "columns": 6,
+            "predicate": "column == 0 || row == 0 || column == columns - 1 || slot >= capacity - columns"
+          },
+          "ignoreableByTablet": true,
+          "evaluationMode": "STATIC_GRID"
+        }
+      ]
+    },
+    {
+      "id": 1137,
+      "name": "Voluspa",
+      "image": "images/items/item-1137-voluspa.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1138,
+      "name": "Water Bag",
+      "image": "images/items/item-1138-water-bag.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1139,
+      "name": "Ice Vine",
+      "image": "images/items/item-1139-ice-vine.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1140,
+      "name": "Banner of Encouragement",
+      "image": "images/items/item-1140-banner-of-encouragement.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1141,
+      "name": "Lightning-Struck Branch",
+      "image": "images/items/item-1141-lightning-struck-branch.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1142,
+      "name": "Processed Wood",
+      "image": "images/items/item-1142-processed-wood.webp",
+      "maxLevel": 1,
+      "constraints": []
+    },
+    {
+      "id": 1143,
+      "name": "Wings",
+      "image": "images/items/item-1143-wings.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1144,
+      "name": "Scale of Conflict",
+      "image": "images/items/item-1144-scale-of-conflict.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1145,
+      "name": "Blue Claw",
+      "image": "images/items/item-1145-blue-claw.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1146,
+      "name": "Cintamani Stone",
+      "image": "images/items/item-1146-cintamani-stone.webp",
+      "maxLevel": 1,
+      "constraints": []
+    },
+    {
+      "id": 1147,
+      "name": "Rainbow Feather",
+      "image": "images/items/item-1147-rainbow-feather.webp",
+      "maxLevel": 3,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "DAGGER"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1149,
+      "name": "Golden Cloak",
+      "image": "images/items/item-1149-golden-cloak.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1150,
+      "name": "Frozen Egg",
+      "image": "images/items/item-1150-frozen-egg.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1151,
+      "name": "Pointed Club",
+      "image": "images/items/item-1151-pointed-club.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1152,
+      "name": "Kunai",
+      "image": "images/items/item-1152-kunai.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1153,
+      "name": "Flame Herb Root",
+      "image": "images/items/item-1153-flame-herb-root.webp",
+      "maxLevel": 3,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "DAGGER"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1154,
+      "name": "Toxic Spore Pouch",
+      "image": "images/items/item-1154-toxic-spore-pouch.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1155,
+      "name": "Six-leaf Clover",
+      "image": "images/items/item-1155-six-leaf-clover.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1156,
+      "name": "Glass Hammer",
+      "image": "images/items/item-1156-glass-hammer.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1157,
+      "name": "Bunnyville Guard Helmet",
+      "image": "images/items/item-1157-bunnyville-guard-helmet.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1158,
+      "name": "Enhancement Potion Cap",
+      "image": "images/items/item-1158-enhancement-potion-cap.webp",
+      "maxLevel": 1,
+      "constraints": []
+    },
+    {
+      "id": 1159,
+      "name": "Firefly",
+      "image": "images/items/item-1159-firefly.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1160,
+      "name": "Green Gi",
+      "image": "images/items/item-1160-green-gi.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1161,
+      "name": "Crabapple Fruit",
+      "image": "images/items/item-1161-crabapple-fruit.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1162,
+      "name": "Captivating Lure",
+      "image": "images/items/item-1162-captivating-lure.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1163,
+      "name": "Magic Glasses",
+      "image": "images/items/item-1163-magic-glasses.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1164,
+      "name": "Straw Doll",
+      "image": "images/items/item-1164-straw-doll.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1165,
+      "name": "Rylie’s Pocket Watch",
+      "image": "images/items/item-1165-rylies-pocket-watch.webp",
+      "maxLevel": 3,
+      "constraints": [
+        {
+          "type": "BOTTOM_SLOTS",
+          "scope": "PLACEMENT",
+          "parameters": {
+            "columns": 6,
+            "slotCount": 6,
+            "predicate": "slot >= capacity - slotCount"
+          },
+          "ignoreableByTablet": true,
+          "evaluationMode": "STATIC_GRID"
+        }
+      ]
+    },
+    {
+      "id": 1166,
+      "name": "Jeweled Armor",
+      "image": "images/items/item-1166-jeweled-armor.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1167,
+      "name": "Thunderstorm Tracking Compass",
+      "image": "images/items/item-1167-thunderstorm-tracking-compass.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1168,
+      "name": "Glowing Hourglass",
+      "image": "images/items/item-1168-glowing-hourglass.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1169,
+      "name": "Battle Mage’s Gloves",
+      "image": "images/items/item-1169-battle-mages-gloves.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1170,
+      "name": "Kirin's Horn",
+      "image": "images/items/item-1170-kirin-s-horn.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1171,
+      "name": "Blood of Obrus",
+      "image": "images/items/item-1171-blood-of-obrus.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1172,
+      "name": "Pallas’s Cards",
+      "image": "images/items/item-1172-pallass-cards.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1173,
+      "name": "Scythe of Berut",
+      "image": "images/items/item-1173-scythe-of-berut.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1175,
+      "name": "Frostium Ring",
+      "image": "images/items/item-1175-frostium-ring.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1176,
+      "name": "Snowflake Necklace",
+      "image": "images/items/item-1176-snowflake-necklace.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1177,
+      "name": "Fluffy Fur Gloves",
+      "image": "images/items/item-1177-fluffy-fur-gloves.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1178,
+      "name": "Echo of the Glacier",
+      "image": "images/items/item-1178-echo-of-the-glacier.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1179,
+      "name": "Ice Wings",
+      "image": "images/items/item-1179-ice-wings.webp",
+      "maxLevel": 7,
+      "constraints": []
+    },
+    {
+      "id": 1180,
+      "name": "Feet of the Ice Gull",
+      "image": "images/items/item-1180-feet-of-the-ice-gull.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1181,
+      "name": "Agma Projection Sword No. 190, 191",
+      "image": "images/items/item-1181-agma-projection-sword-no-190-191.webp",
+      "maxLevel": 8,
+      "constraints": []
+    },
+    {
+      "id": 1182,
+      "name": "Oink Shaman’s Necklace",
+      "image": "images/items/item-1182-oink-shamans-necklace.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1183,
+      "name": "Scrap of Red Cloth",
+      "image": "images/items/item-1183-scrap-of-red-cloth.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1185,
+      "name": "Flaming Eye Patch",
+      "image": "images/items/item-1185-flaming-eye-patch.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1186,
+      "name": "White Cape",
+      "image": "images/items/item-1186-white-cape.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1187,
+      "name": "Ruby Brooch",
+      "image": "images/items/item-1187-ruby-brooch.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1188,
+      "name": "Bloodstone Earrings",
+      "image": "images/items/item-1188-bloodstone-earrings.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1189,
+      "name": "Clear Cube",
+      "image": "images/items/item-1189-clear-cube.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1190,
+      "name": "Pan Lid",
+      "image": "images/items/item-1190-pan-lid.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1191,
+      "name": "Valter’s Work Monocle",
+      "image": "images/items/item-1191-valters-work-monocle.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1192,
+      "name": "Spiny Shell",
+      "image": "images/items/item-1192-spiny-shell.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1193,
+      "name": "Solis Fracto",
+      "image": "images/items/item-1193-solis-fracto.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1194,
+      "name": "Silver Bracelet",
+      "image": "images/items/item-1194-silver-bracelet.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1195,
+      "name": "Kaleidoscope",
+      "image": "images/items/item-1195-kaleidoscope.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1196,
+      "name": "Vital Touch",
+      "image": "images/items/item-1196-vital-touch.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1197,
+      "name": "Hiring Crest “Collin”",
+      "image": "images/items/item-1197-hiring-crest-collin.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1198,
+      "name": "Heita’s Spirit Powder",
+      "image": "images/items/item-1198-heitas-spirit-powder.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1199,
+      "name": "Tero’s Spirit Powder",
+      "image": "images/items/item-1199-teros-spirit-powder.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1200,
+      "name": "Ahmad’s Spirit Powder",
+      "image": "images/items/item-1200-ahmads-spirit-powder.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1202,
+      "name": "Mining Supervisor Armband",
+      "image": "images/items/item-1202-mining-supervisor-armband.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1208,
+      "name": "Blizzard Hammer",
+      "image": "images/items/item-1208-blizzard-hammer.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1209,
+      "name": "Frozen Heart",
+      "image": "images/items/item-1209-frozen-heart.webp",
+      "maxLevel": 8,
+      "constraints": []
+    },
+    {
+      "id": 1210,
+      "name": "Ice Star",
+      "image": "images/items/item-1210-ice-star.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1211,
+      "name": "Flame Bug",
+      "image": "images/items/item-1211-flame-bug.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1212,
+      "name": "Ice Bug",
+      "image": "images/items/item-1212-ice-bug.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1213,
+      "name": "Magma Bead",
+      "image": "images/items/item-1213-magma-bead.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1214,
+      "name": "Phoenix Wing",
+      "image": "images/items/item-1214-phoenix-wing.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1215,
+      "name": "Cloth Armor",
+      "image": "images/items/item-1215-cloth-armor.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 1216,
+      "name": "Academy Brigandine",
+      "image": "images/items/item-1216-academy-brigandine.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1217,
+      "name": "Lizard Plate Armor",
+      "image": "images/items/item-1217-lizard-plate-armor.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1218,
+      "name": "Begonia Sachet",
+      "image": "images/items/item-1218-begonia-sachet.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 1220,
+      "name": "White Planet",
+      "image": "images/items/item-1220-white-planet.webp",
+      "maxLevel": 8,
+      "constraints": []
+    },
+    {
+      "id": 1221,
+      "name": "Blue Wrist Guard",
+      "image": "images/items/item-1221-blue-wrist-guard.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1223,
+      "name": "Crossbow Quiver",
+      "image": "images/items/item-1223-crossbow-quiver.webp",
+      "maxLevel": 4,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "CROSSBOW"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1224,
+      "name": "Reloading Wooden Crate",
+      "image": "images/items/item-1224-reloading-wooden-crate.webp",
+      "maxLevel": 5,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "CROSSBOW"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1225,
+      "name": "Brass Mirror Fragment",
+      "image": "images/items/item-1225-brass-mirror-fragment.webp",
+      "maxLevel": 4,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "CROSSBOW"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1227,
+      "name": "Lantern",
+      "image": "images/items/item-1227-lantern.webp",
+      "maxLevel": 1,
+      "constraints": []
+    },
+    {
+      "id": 1228,
+      "name": "Meditation Book",
+      "image": "images/items/item-1228-meditation-book.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1229,
+      "name": "Ancient Anvil",
+      "image": "images/items/item-1229-ancient-anvil.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1230,
+      "name": "Crimson Sunset",
+      "image": "images/items/item-1230-crimson-sunset.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1231,
+      "name": "Eternal Furnace",
+      "image": "images/items/item-1231-eternal-furnace.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1232,
+      "name": "Solis Parvo",
+      "image": "images/items/item-1232-solis-parvo.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1233,
+      "name": "Solis Decussa",
+      "image": "images/items/item-1233-solis-decussa.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1234,
+      "name": "Hand Mirror",
+      "image": "images/items/item-1234-hand-mirror.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1235,
+      "name": "Thrust Manual",
+      "image": "images/items/item-1235-thrust-manual.webp",
+      "maxLevel": 1,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "KATANA"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1236,
+      "name": "Meteorite Earrings",
+      "image": "images/items/item-1236-meteorite-earrings.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1237,
+      "name": "Meteorite Pauldrons",
+      "image": "images/items/item-1237-meteorite-pauldrons.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1238,
+      "name": "Zap Bug",
+      "image": "images/items/item-1238-zap-bug.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1239,
+      "name": "Thunder's Earring",
+      "image": "images/items/item-1239-thunder-s-earring.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1240,
+      "name": "Solis Dekri",
+      "image": "images/items/item-1240-solis-dekri.webp",
+      "maxLevel": 7,
+      "constraints": []
+    },
+    {
+      "id": 1241,
+      "name": "Dark Planet",
+      "image": "images/items/item-1241-dark-planet.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1242,
+      "name": "Ashen Planet",
+      "image": "images/items/item-1242-ashen-planet.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1243,
+      "name": "Icebound Tejas",
+      "image": "images/items/item-1243-icebound-tejas.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1244,
+      "name": "Thunderfrost Butterfly",
+      "image": "images/items/item-1244-thunderfrost-butterfly.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1245,
+      "name": "Sheet Music 'The Typhoon'",
+      "image": "images/items/item-1245-sheet-music-the-typhoon.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1246,
+      "name": "Rock Elephant",
+      "image": "images/items/item-1246-rock-elephant.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1247,
+      "name": "Frozen Bow",
+      "image": "images/items/item-1247-frozen-bow.webp",
+      "maxLevel": 6,
+      "constraints": []
+    },
+    {
+      "id": 1248,
+      "name": "Droplet of Plitvice",
+      "image": "images/items/item-1248-droplet-of-plitvice.webp",
+      "maxLevel": 1,
+      "constraints": []
+    },
+    {
+      "id": 1249,
+      "name": "Tactical Manual",
+      "image": "images/items/item-1249-tactical-manual.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1250,
+      "name": "Shimmering Eye",
+      "image": "images/items/item-1250-shimmering-eye.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1251,
+      "name": "Sheet Music 'Galaxy'",
+      "image": "images/items/item-1251-sheet-music-galaxy.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1252,
+      "name": "Cloak of Verdant Spirit",
+      "image": "images/items/item-1252-cloak-of-verdant-spirit.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1258,
+      "name": "White Paper",
+      "image": "images/items/item-1258-white-paper.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 1259,
+      "name": "Eternal Eclipse",
+      "image": "images/items/item-1259-eternal-eclipse.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1262,
+      "name": "Mystical Pendulum",
+      "image": "images/items/item-1262-mystical-pendulum.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1263,
+      "name": "Flux Coupler Mk.2",
+      "image": "images/items/item-1263-flux-coupler-mk-2.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1264,
+      "name": "Devotion Insignia",
+      "image": "images/items/item-1264-devotion-insignia.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1265,
+      "name": "Protection of Nature",
+      "image": "images/items/item-1265-protection-of-nature.webp",
+      "maxLevel": 1,
+      "constraints": []
+    },
+    {
+      "id": 1267,
+      "name": "Impact Amplifier",
+      "image": "images/items/item-1267-impact-amplifier.webp",
+      "maxLevel": 15,
+      "constraints": []
+    },
+    {
+      "id": 1268,
+      "name": "Eternal Winter",
+      "image": "images/items/item-1268-eternal-winter.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1270,
+      "name": "Crystal of Harmony",
+      "image": "images/items/item-1270-crystal-of-harmony.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 1271,
+      "name": "Lucky Medal",
+      "image": "images/items/item-1271-lucky-medal.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1272,
+      "name": "Charm of Lightning",
+      "image": "images/items/item-1272-charm-of-lightning.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1273,
+      "name": "Bucket of Plump Berries",
+      "image": "images/items/item-1273-bucket-of-plump-berries.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 1274,
+      "name": "Faultfinder Needle",
+      "image": "images/items/item-1274-faultfinder-needle.webp",
+      "maxLevel": 7,
+      "constraints": []
+    },
+    {
+      "id": 1275,
+      "name": "Wanderer's Necklace",
+      "image": "images/items/item-1275-wanderer-s-necklace.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1276,
+      "name": "Beast's Heart",
+      "image": "images/items/item-1276-beast-s-heart.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1277,
+      "name": "Multicolored Candy Glass Jar",
+      "image": "images/items/item-1277-multicolored-candy-glass-jar.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1278,
+      "name": "Stone Spindle Whorl",
+      "image": "images/items/item-1278-stone-spindle-whorl.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1279,
+      "name": "Battle Bracelet of Lerid",
+      "image": "images/items/item-1279-battle-bracelet-of-lerid.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1282,
+      "name": "Lunch Box",
+      "image": "images/items/item-1282-lunch-box.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1283,
+      "name": "Amulet of Courage",
+      "image": "images/items/item-1283-amulet-of-courage.webp",
+      "maxLevel": 3,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "GREAT_SWORD"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1285,
+      "name": "Elastic Band",
+      "image": "images/items/item-1285-elastic-band.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1286,
+      "name": "Log",
+      "image": "images/items/item-1286-log.webp",
+      "maxLevel": 1,
+      "constraints": []
+    },
+    {
+      "id": 1287,
+      "name": "Counterattack Bracelet",
+      "image": "images/items/item-1287-counterattack-bracelet.webp",
+      "maxLevel": 3,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "STAFF"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1288,
+      "name": "Riposte Staff Fragment",
+      "image": "images/items/item-1288-riposte-staff-fragment.webp",
+      "maxLevel": 6,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "STAFF"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1289,
+      "name": "Golden Needle of the North",
+      "image": "images/items/item-1289-golden-needle-of-the-north.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1291,
+      "name": "Academy Fountain Pen",
+      "image": "images/items/item-1291-academy-fountain-pen.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1292,
+      "name": "Jolow's Watering Can",
+      "image": "images/items/item-1292-jolow-s-watering-can.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1293,
+      "name": "Snow Mountain Long-eared Bat",
+      "image": "images/items/item-1293-snow-mountain-long-eared-bat.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1294,
+      "name": "Plasma Helmet",
+      "image": "images/items/item-1294-plasma-helmet.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1295,
+      "name": "Red Planet Observation Log",
+      "image": "images/items/item-1295-red-planet-observation-log.webp",
+      "maxLevel": 1,
+      "constraints": []
+    },
+    {
+      "id": 1296,
+      "name": "Water Spirit",
+      "image": "images/items/item-1296-water-spirit.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1297,
+      "name": "Garnet Badge",
+      "image": "images/items/item-1297-garnet-badge.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1298,
+      "name": "Topaz Badge",
+      "image": "images/items/item-1298-topaz-badge.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1299,
+      "name": "Diamond Badge",
+      "image": "images/items/item-1299-diamond-badge.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1300,
+      "name": "Angry Potato",
+      "image": "images/items/item-1300-angry-potato.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1301,
+      "name": "Traveler's Blessing",
+      "image": "images/items/item-1301-traveler-s-blessing.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1302,
+      "name": "Alchemist's Flask",
+      "image": "images/items/item-1302-alchemist-s-flask.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1303,
+      "name": "Guillotine of Bitter Cold",
+      "image": "images/items/item-1303-guillotine-of-bitter-cold.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1304,
+      "name": "Heavy Heart",
+      "image": "images/items/item-1304-heavy-heart.webp",
+      "maxLevel": 1,
+      "constraints": []
+    },
+    {
+      "id": 1305,
+      "name": "Red Mushroom",
+      "image": "images/items/item-1305-red-mushroom.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1306,
+      "name": "Whirlwind Stone",
+      "image": "images/items/item-1306-whirlwind-stone.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1307,
+      "name": "Tome of Transmutation - Fire",
+      "image": "images/items/item-1307-tome-of-transmutation-tag-text-elemental-fire.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1308,
+      "name": "Tome of Transmutation - Ice",
+      "image": "images/items/item-1308-tome-of-transmutation-tag-text-elemental-ice.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1309,
+      "name": "Tome of Transmutation - Lightning",
+      "image": "images/items/item-1309-tome-of-transmutation-tag-text-elemental-lightning.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1310,
+      "name": "Cursed Letter",
+      "image": "images/items/item-1310-cursed-letter.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 1311,
+      "name": "Sun of the Archives",
+      "image": "images/items/item-1311-sun-of-the-archives.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1313,
+      "name": "Faded Shield Crest",
+      "image": "images/items/item-1313-faded-shield-crest.webp",
+      "maxLevel": 3,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "SWORD_AND_SHIELD"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1314,
+      "name": "Crest of the Iron Wall",
+      "image": "images/items/item-1314-crest-of-the-iron-wall.webp",
+      "maxLevel": 3,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "SWORD_AND_SHIELD"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1315,
+      "name": "Rusty Tsuba",
+      "image": "images/items/item-1315-rusty-tsuba.webp",
+      "maxLevel": 3,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "KATANA"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1316,
+      "name": "Master's Tsuba",
+      "image": "images/items/item-1316-master-s-tsuba.webp",
+      "maxLevel": 3,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "KATANA"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1317,
+      "name": "Trainee Duelist's Epaulette",
+      "image": "images/items/item-1317-trainee-duelist-s-epaulette.webp",
+      "maxLevel": 1,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "DAGGER"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1318,
+      "name": "Duelist's Epaulette",
+      "image": "images/items/item-1318-duelist-s-epaulette.webp",
+      "maxLevel": 1,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "DAGGER"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1319,
+      "name": "Dull Resonance Stone",
+      "image": "images/items/item-1319-dull-resonance-stone.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1320,
+      "name": "Resonance Stone",
+      "image": "images/items/item-1320-resonance-stone.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1321,
+      "name": "Midday Whetstone",
+      "image": "images/items/item-1321-midday-whetstone.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 1322,
+      "name": "Meteorite Mirror",
+      "image": "images/items/item-1322-meteorite-mirror.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 1323,
+      "name": "Stiff Crank",
+      "image": "images/items/item-1323-stiff-crank.webp",
+      "maxLevel": 2,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "CROSSBOW"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1324,
+      "name": "Marksman's Crank",
+      "image": "images/items/item-1324-marksman-s-crank.webp",
+      "maxLevel": 2,
+      "constraints": [
+        {
+          "type": "WEAPON_IS",
+          "scope": "WEAPON",
+          "parameters": {
+            "weapon": "CROSSBOW"
+          },
+          "ignoreableByTablet": false,
+          "evaluationMode": "STATIC_CONTEXT"
+        }
+      ]
+    },
+    {
+      "id": 1325,
+      "name": "Blacksmith's Tongs",
+      "image": "images/items/item-1325-blacksmith-s-tongs.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 3000,
+      "name": "Air Bolt",
+      "image": "images/items/item-3000-air-bolt.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 3002,
+      "name": "Fire Bolt",
+      "image": "images/items/item-3002-fire-bolt.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 3011,
+      "name": "Lightning Arrow",
+      "image": "images/items/item-3011-lightning-arrow.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 3012,
+      "name": "Fire Arrow",
+      "image": "images/items/item-3012-fire-arrow.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 3013,
+      "name": "Fire Circus",
+      "image": "images/items/item-3013-fire-circus.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 3015,
+      "name": "Stone Wave",
+      "image": "images/items/item-3015-stone-wave.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 3016,
+      "name": "Rock Oink",
+      "image": "images/items/item-3016-rock-oink.webp",
+      "maxLevel": 1,
+      "constraints": []
+    },
+    {
+      "id": 3017,
+      "name": "Water Bolt",
+      "image": "images/items/item-3017-water-bolt.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 3018,
+      "name": "Sharp Eye",
+      "image": "images/items/item-3018-sharp-eye.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 3019,
+      "name": "Haste",
+      "image": "images/items/item-3019-haste.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 3020,
+      "name": "Frost Dagger",
+      "image": "images/items/item-3020-frost-dagger.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 3022,
+      "name": "Meteor Shower",
+      "image": "images/items/item-3022-meteor-shower.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 3023,
+      "name": "Rain of Arrows",
+      "image": "images/items/item-3023-rain-of-arrows.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 3027,
+      "name": "Ice Bolt",
+      "image": "images/items/item-3027-ice-bolt.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 3028,
+      "name": "Thunder Armor",
+      "image": "images/items/item-3028-thunder-armor.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 3030,
+      "name": "Smoke Screen",
+      "image": "images/items/item-3030-smoke-screen.webp",
+      "maxLevel": 1,
+      "constraints": []
+    },
+    {
+      "id": 3031,
+      "name": "Blessing",
+      "image": "images/items/item-3031-blessing.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 3032,
+      "name": "Great Blessing",
+      "image": "images/items/item-3032-great-blessing.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 3033,
+      "name": "Shield",
+      "image": "images/items/item-3033-shield.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 3034,
+      "name": "Lightning Boomerang",
+      "image": "images/items/item-3034-lightning-boomerang.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 3035,
+      "name": "Fire Circus",
+      "image": "images/items/item-3035-fire-circus.webp",
+      "maxLevel": 4,
+      "constraints": []
+    },
+    {
+      "id": 3036,
+      "name": "Judgment of Thunder",
+      "image": "images/items/item-3036-judgment-of-thunder.webp",
+      "maxLevel": 5,
+      "constraints": []
+    },
+    {
+      "id": 5000,
+      "name": "Warning Letter",
+      "image": "images/items/item-5000-warning-letter.webp",
+      "maxLevel": 2,
+      "constraints": []
+    },
+    {
+      "id": 5001,
+      "name": "Companion Token 'Isaac'",
+      "image": "images/items/item-5001-companion-token-isaac.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 5002,
+      "name": "Companion Token 'Khakha'",
+      "image": "images/items/item-5002-companion-token-khakha.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 5003,
+      "name": "Companion Token 'Maru'",
+      "image": "images/items/item-5003-companion-token-maru.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 5004,
+      "name": "Companion Token 'Aiba'",
+      "image": "images/items/item-5004-companion-token-aiba.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 5005,
+      "name": "Companion Token 'Kenny'",
+      "image": "images/items/item-5005-companion-token-kenny.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 5006,
+      "name": "Companion Token 'Pillix'",
+      "image": "images/items/item-5006-companion-token-pillix.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 5007,
+      "name": "Companion Token 'Rolf'",
+      "image": "images/items/item-5007-companion-token-rolf.webp",
+      "maxLevel": 3,
+      "constraints": []
+    },
+    {
+      "id": 5008,
+      "name": "Companion Token 'Thunder'",
+      "image": "images/items/item-5008-companion-token-thunder.webp",
+      "maxLevel": 3,
+      "constraints": []
+    }
+  ]
+}

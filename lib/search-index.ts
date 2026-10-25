@@ -47,7 +47,7 @@ export const searchIndex = [
   ...sephiriaWikiPages.filter((page) => page.group !== 'game').map((page) => ({
     title: page.title,
     game: 'Sephiria',
-    kind: page.group === 'game' ? 'Game' : page.group === 'wiki' ? 'Wiki' : page.group === 'category' ? 'Category' : 'System',
+    kind: page.group === 'game' ? 'Game' : page.group === 'wiki' ? 'Wiki' : page.group === 'category' ? 'Category' : page.group === 'tool' ? 'Tool' : 'System',
     href: page.href,
     summary: page.summary,
     text: page.title,

@@ -1,0 +1,389 @@
+{
+  "gameVersion": "1.0.33",
+  "categoryFixtures": [
+    {
+      "comboId": "academy",
+      "category": "Academy",
+      "artifactItemId": 1064,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "comboId": "alchemy",
+      "category": "Alchemy",
+      "artifactItemId": 1158,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "comboId": "companion",
+      "category": "Companion",
+      "artifactItemId": 1026,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "comboId": "curse",
+      "category": "Curse",
+      "artifactItemId": 1121,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "comboId": "elemental",
+      "category": "Elemental",
+      "artifactItemId": 1048,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "comboId": "ember",
+      "category": "Ember",
+      "artifactItemId": 1032,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "comboId": "frost-relic",
+      "category": "Frost Relic",
+      "artifactItemId": 1014,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "comboId": "glacier",
+      "category": "Glacier",
+      "artifactItemId": 1002,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "comboId": "guardian",
+      "category": "Guardian",
+      "artifactItemId": 1060,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "comboId": "lake",
+      "category": "Lake",
+      "artifactItemId": 1004,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "comboId": "magitech",
+      "category": "Magitech",
+      "artifactItemId": 1013,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "comboId": "mystic",
+      "category": "Mystic",
+      "artifactItemId": 1012,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "comboId": "negotiation",
+      "category": "Negotiation",
+      "artifactItemId": 1087,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "comboId": "planet",
+      "category": "Planet",
+      "artifactItemId": 1015,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "comboId": "precision",
+      "category": "Precision",
+      "artifactItemId": 1016,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "comboId": "shadow",
+      "category": "Shadow",
+      "artifactItemId": 1001,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "comboId": "solar-blade",
+      "category": "Solar Blade",
+      "artifactItemId": 1259,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "comboId": "storm-cloud",
+      "category": "Storm Cloud",
+      "artifactItemId": 1035,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "comboId": "sturdy",
+      "category": "Sturdy",
+      "artifactItemId": 1000,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "comboId": "wind-song",
+      "category": "Wind Song",
+      "artifactItemId": 1008,
+      "counts": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "multiCategorySamples": [
+    {
+      "itemId": 1187,
+      "name": "Ruby Brooch",
+      "categories": [
+        "Storm Cloud",
+        "Ember"
+      ]
+    },
+    {
+      "itemId": 1071,
+      "name": "Mini Ballista",
+      "categories": [
+        "Companion",
+        "Storm Cloud"
+      ]
+    },
+    {
+      "itemId": 1244,
+      "name": "Thunderfrost Butterfly",
+      "categories": [
+        "Storm Cloud",
+        "Glacier"
+      ]
+    },
+    {
+      "itemId": 1245,
+      "name": "Sheet Music 'The Typhoon'",
+      "categories": [
+        "Storm Cloud",
+        "Wind Song"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,465 @@
+{
+  "gameVersion": "1.0.33",
+  "rules": [
+    {
+      "id": "academy",
+      "name": "Academy",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Cooldown recovery +12"
+        },
+        {
+          "count": 4,
+          "effect": "Grimoire MP cost reduction +15%"
+        },
+        {
+          "count": 6,
+          "effect": "Cooldown recovery +16"
+        },
+        {
+          "count": 8,
+          "effect": "Cooldown recovery +20"
+        },
+        {
+          "count": 10,
+          "effect": "Grimoire damage +15%; MP regeneration +8"
+        }
+      ]
+    },
+    {
+      "id": "alchemy",
+      "name": "Alchemy",
+      "thresholds": [
+        {
+          "count": 1,
+          "effect": "Potion slots +1"
+        },
+        {
+          "count": 2,
+          "effect": "Potion slots +1"
+        },
+        {
+          "count": 3,
+          "effect": "Creates 1 random Common–Rare potion at 3 or more Alchemy artifacts."
+        }
+      ]
+    },
+    {
+      "id": "companion",
+      "name": "Companion",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Companion damage +6%"
+        },
+        {
+          "count": 4,
+          "effect": "Companion damage +8%"
+        },
+        {
+          "count": 6,
+          "effect": "Companion damage +10%; Companion defense +15"
+        },
+        {
+          "count": 8,
+          "effect": "Companion damage +12%; Companion defense +20"
+        },
+        {
+          "count": 10,
+          "effect": "Companion damage +20%; Companion revive speed +40%"
+        }
+      ]
+    },
+    {
+      "id": "curse",
+      "name": "Curse",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Debuff damage +10%; Move speed +7%"
+        },
+        {
+          "count": 4,
+          "effect": "Debuff damage +15%"
+        }
+      ]
+    },
+    {
+      "id": "elemental",
+      "name": "Elemental",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Highest elemental damage +5"
+        },
+        {
+          "count": 4,
+          "effect": "Highest elemental damage +6"
+        },
+        {
+          "count": 6,
+          "effect": "Physical damage amplification +10%; Fire damage amplification +10%; Ice damage amplification +10%; Lightning damage amplification +10%"
+        }
+      ]
+    },
+    {
+      "id": "ember",
+      "name": "Ember",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Flame Touch: Fire damage hits inflict Burn (excluding Burn damage), with a 2 s cooldown."
+        },
+        {
+          "count": 4,
+          "effect": "Fire damage +6"
+        },
+        {
+          "count": 6,
+          "effect": "Flame Touch cooldown haste +150%."
+        },
+        {
+          "count": 8,
+          "effect": "Fire damage +8"
+        },
+        {
+          "count": 10,
+          "effect": "Burn evolves."
+        }
+      ]
+    },
+    {
+      "id": "frost-relic",
+      "name": "Frost Relic",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Charging Charm bonus +6%"
+        },
+        {
+          "count": 4,
+          "effect": "Charging Charm bonus +8%"
+        },
+        {
+          "count": 6,
+          "effect": "Frost Relic damage +6%"
+        },
+        {
+          "count": 8,
+          "effect": "Frost Relic damage +8%"
+        },
+        {
+          "count": 10,
+          "effect": "Charging Charm amplification +1"
+        }
+      ]
+    },
+    {
+      "id": "glacier",
+      "name": "Glacier",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Frost Touch: Ice damage hits inflict Frostbite (excluding debuff damage), with a 2 s cooldown."
+        },
+        {
+          "count": 4,
+          "effect": "Ice damage +6"
+        },
+        {
+          "count": 6,
+          "effect": "Frost Touch cooldown haste +150%."
+        },
+        {
+          "count": 8,
+          "effect": "Ice damage +8"
+        },
+        {
+          "count": 10,
+          "effect": "Freeze threshold -1"
+        }
+      ]
+    },
+    {
+      "id": "guardian",
+      "name": "Guardian",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Defense +6"
+        },
+        {
+          "count": 4,
+          "effect": "Defense +7"
+        },
+        {
+          "count": 6,
+          "effect": "Defense +8"
+        },
+        {
+          "count": 8,
+          "effect": "Defense +10"
+        },
+        {
+          "count": 10,
+          "effect": "Defense +12; Defense ignored +5%"
+        }
+      ]
+    },
+    {
+      "id": "lake",
+      "name": "Lake",
+      "thresholds": [
+        {
+          "count": 3,
+          "effect": "Max MP +20; MP regeneration +5"
+        },
+        {
+          "count": 6,
+          "effect": "Max MP +30; MP skill damage +10%"
+        },
+        {
+          "count": 9,
+          "effect": "Max MP +40; MP skill damage +25%"
+        }
+      ]
+    },
+    {
+      "id": "magitech",
+      "name": "Magitech",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Shock Touch: Lightning damage hits inflict Electrocution (excluding debuff damage), with a 2 s cooldown."
+        },
+        {
+          "count": 4,
+          "effect": "Lightning damage +6"
+        },
+        {
+          "count": 6,
+          "effect": "Shock Touch cooldown haste +150%."
+        },
+        {
+          "count": 8,
+          "effect": "Lightning damage +8"
+        },
+        {
+          "count": 10,
+          "effect": "Electrocution quickness -1 s"
+        }
+      ]
+    },
+    {
+      "id": "mystic",
+      "name": "Mystic",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Applies 1 fixed engraving to a random inventory slot."
+        },
+        {
+          "count": 4,
+          "effect": "Applies 2 fixed engravings to random inventory slots."
+        }
+      ]
+    },
+    {
+      "id": "negotiation",
+      "name": "Negotiation",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Negotiation +10; Leaf drop rate +15%"
+        },
+        {
+          "count": 4,
+          "effect": "Negotiation +15; Gold Hand +1%"
+        }
+      ]
+    },
+    {
+      "id": "planet",
+      "name": "Planet",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Planet damage +8%"
+        },
+        {
+          "count": 4,
+          "effect": "Planet damage +10%"
+        },
+        {
+          "count": 6,
+          "effect": "Planet damage +12%"
+        },
+        {
+          "count": 8,
+          "effect": "Planet damage +14%"
+        },
+        {
+          "count": 10,
+          "effect": "Planet damage +16%; Planet attack speed +12%"
+        }
+      ]
+    },
+    {
+      "id": "precision",
+      "name": "Precision",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Critical Chance +4%"
+        },
+        {
+          "count": 4,
+          "effect": "Critical Chance +6%"
+        },
+        {
+          "count": 6,
+          "effect": "Critical Chance +8%"
+        },
+        {
+          "count": 8,
+          "effect": "Critical Chance +10%"
+        },
+        {
+          "count": 10,
+          "effect": "Critical Damage +30%"
+        }
+      ]
+    },
+    {
+      "id": "shadow",
+      "name": "Shadow",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Evasion +4"
+        },
+        {
+          "count": 4,
+          "effect": "Evasion +5"
+        },
+        {
+          "count": 6,
+          "effect": "Evasion +6"
+        },
+        {
+          "count": 8,
+          "effect": "Evasion +8"
+        },
+        {
+          "count": 10,
+          "effect": "Evasion +10"
+        }
+      ]
+    },
+    {
+      "id": "solar-blade",
+      "name": "Solar Blade",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Weapon direct attacks and magic hits throw a Flame Sword for 115% Fire damage (20 s recharge)."
+        },
+        {
+          "count": 4,
+          "effect": "Flame Sword damage +6%"
+        },
+        {
+          "count": 6,
+          "effect": "Flame Sword damage +8%; Flame Sword limit +1"
+        },
+        {
+          "count": 8,
+          "effect": "Flame Sword damage +10%; Flame Sword limit +2"
+        },
+        {
+          "count": 10,
+          "effect": "Flame Sword damage +12%; Flame Sword limit +6"
+        }
+      ]
+    },
+    {
+      "id": "storm-cloud",
+      "name": "Storm Cloud",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Summons a Storm Cloud that strikes nearby enemies with lightning every 1 s (110% Lightning damage) and restores 5% capacity every 5 s during combat."
+        },
+        {
+          "count": 4,
+          "effect": "Minimum Storm Cloud value +8"
+        },
+        {
+          "count": 6,
+          "effect": "Minimum Storm Cloud value +12"
+        },
+        {
+          "count": 8,
+          "effect": "Minimum Storm Cloud value +16; Big Cloud form activates."
+        },
+        {
+          "count": 10,
+          "effect": "Minimum Storm Cloud value +20; Storm Cloud multishot +2"
+        }
+      ]
+    },
+    {
+      "id": "sturdy",
+      "name": "Sturdy",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Physical damage +2"
+        },
+        {
+          "count": 4,
+          "effect": "Physical damage +4"
+        },
+        {
+          "count": 6,
+          "effect": "Physical damage +6"
+        },
+        {
+          "count": 8,
+          "effect": "Physical damage +8"
+        },
+        {
+          "count": 10,
+          "effect": "Physical damage amplification +15%"
+        }
+      ]
+    },
+    {
+      "id": "wind-song",
+      "name": "Wind Song",
+      "thresholds": [
+        {
+          "count": 2,
+          "effect": "Attack Speed +8%"
+        },
+        {
+          "count": 4,
+          "effect": "Attack Speed +12%"
+        },
+        {
+          "count": 6,
+          "effect": "Attack Speed +16%"
+        },
+        {
+          "count": 8,
+          "effect": "Attack Speed +20%"
+        },
+        {
+          "count": 10,
+          "effect": "Final weapon damage +15%; Dash count +1"
+        }
+      ]
+    }
+  ]
+}

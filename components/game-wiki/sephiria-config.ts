@@ -3,6 +3,7 @@ import { sephiriaWikiPages } from '@/lib/sephiria-wiki-data';
 
 const categories = sephiriaWikiPages.filter((page) => page.group === 'category');
 const systems = sephiriaWikiPages.filter((page) => page.group === 'system');
+const tools = sephiriaWikiPages.filter((page) => page.group === 'tool');
 
 export const sephiriaWikiConfig: GameWikiConfig = {
   gameName: 'Sephiria',
@@ -14,5 +15,6 @@ export const sephiriaWikiConfig: GameWikiConfig = {
     { label: 'START', links: [{ href: '/games/sephiria', label: 'Overview' }, { href: '/games/sephiria/wiki', label: 'Wiki Home' }] },
     { label: 'DATABASE', links: categories.map(({ title, href }) => ({ href, label: title })) },
     { label: 'SYSTEMS', links: systems.map(({ title, href }) => ({ href, label: title })) },
+    { label: 'TOOLS', links: tools.map(({ title, href }) => ({ href, label: title })) },
   ],
 };

@@ -1,0 +1,352 @@
+.plannerLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(21rem, 0.95fr);
+  align-items: start;
+  gap: 1rem;
+}
+
+.plannerGrid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: clamp(0.3rem, 1vw, 0.6rem);
+}
+
+.gridCellWrap {
+  position: relative;
+  z-index: 0;
+  min-width: 0;
+  aspect-ratio: 1 / 1.08;
+}
+
+.gridCellWrap[data-selected='true'] {
+  z-index: 20;
+}
+
+.gridCell {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  aspect-ratio: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.15rem;
+  overflow: hidden;
+  border: 1px solid rgb(201 169 111 / 27%);
+  background: linear-gradient(145deg, rgb(29 34 39 / 94%), rgb(20 23 27 / 96%));
+  color: var(--text);
+  transition: border-color 120ms ease, background-color 120ms ease, opacity 120ms ease;
+}
+
+.gridCell > * {
+  pointer-events: none;
+}
+
+.gridCell:not(:disabled):hover {
+  border-color: rgb(244 178 104 / 75%);
+  background-color: rgb(102 70 43 / 24%);
+}
+
+.gridCell:focus-visible {
+  z-index: 2;
+  outline: 2px solid var(--orange-text);
+  outline-offset: 2px;
+}
+
+.gridCell[data-effect='true'] {
+  background-image: linear-gradient(145deg, rgb(177 139 83 / 26%), rgb(93 74 49 / 20%));
+}
+
+.gridCell[data-condition='true'] {
+  border-style: dashed;
+  border-color: rgb(129 187 192 / 82%);
+}
+
+.gridCell[data-condition='true'][data-effect='true'] {
+  box-shadow: inset 0 0 0 2px rgb(203 171 112 / 58%);
+}
+
+.gridCell[data-move-target='true'] {
+  box-shadow: inset 0 0 0 1px rgb(160 196 164 / 48%);
+}
+
+.gridCell[data-move-target='true'] .gridEmptyMark {
+  border-color: rgb(160 196 164 / 52%);
+  color: rgb(173 211 177 / 75%);
+}
+
+.gridCell[data-selected='true'] {
+  border-color: var(--orange-text);
+  box-shadow: 0 0 0 2px rgb(238 135 80 / 35%);
+}
+
+.gridCell[data-locked='true'] {
+  border-color: rgb(147 154 159 / 13%);
+  background: repeating-linear-gradient(135deg, rgb(61 67 72 / 29%) 0 7px, rgb(42 47 51 / 25%) 7px 14px);
+  color: rgb(171 177 181 / 42%);
+  cursor: not-allowed;
+}
+
+.actionPopover {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  width: max-content;
+  min-width: 0;
+  max-width: calc(100vw - 16px);
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem;
+  box-sizing: border-box;
+  margin: 0;
+  border: 1px solid rgb(201 169 111 / 52%);
+  background: var(--surface);
+  padding: 0.3rem;
+  color: var(--text);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 42%);
+}
+
+.actionPopover[data-side='below'] {
+  top: calc(100% + 0.35rem);
+}
+
+.actionPopover[data-side='above'] {
+  bottom: calc(100% + 0.35rem);
+}
+
+.actionPopover[data-align='left'] {
+  left: 0;
+}
+
+.actionPopover[data-align='right'] {
+  right: 0;
+}
+
+.actionPopover[data-align='center'] {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.actionPrompt {
+  flex-basis: 100%;
+  padding: 0.1rem 0.3rem 0.15rem;
+  color: var(--gold-label);
+  font-size: 0.7rem;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.actionButton {
+  display: inline-flex;
+  min-height: 2.75rem;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  border: 1px solid rgb(201 169 111 / 32%);
+  background: var(--surface-inset);
+  padding: 0 0.55rem;
+  color: var(--secondary);
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.actionButton:hover,
+.actionButton:focus-visible {
+  border-color: rgb(244 178 104 / 75%);
+  background: var(--surface);
+}
+
+.actionButton:focus-visible {
+  outline: 2px solid var(--orange-text);
+  outline-offset: 2px;
+}
+
+.removeAction {
+  border-color: rgb(190 24 93 / 42%);
+  color: var(--text);
+}
+
+.removeAction:hover,
+.removeAction:focus-visible {
+  border-color: rgb(251 113 133 / 72%);
+  background: rgb(190 24 93 / 14%);
+}
+
+.rotateAction {
+  color: var(--gold-label);
+}
+
+.gridImage {
+  width: min(64%, 3.4rem);
+  height: min(64%, 3.4rem);
+  object-fit: contain;
+  filter: drop-shadow(0 2px 5px rgb(0 0 0 / 45%));
+}
+
+.gridEmptyMark {
+  display: grid;
+  width: 1.4rem;
+  height: 1.4rem;
+  place-items: center;
+  border: 1px solid rgb(201 169 111 / 27%);
+  border-radius: 999px;
+  color: rgb(201 169 111 / 48%);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.gridSlotLabel {
+  position: absolute;
+  bottom: 0.18rem;
+  left: 0.28rem;
+  color: var(--muted);
+  font-size: clamp(0.52rem, 0.75vw, 0.66rem);
+  line-height: 1;
+}
+
+.gridLevelBadge {
+  position: absolute;
+  top: 0.16rem;
+  right: 0.18rem;
+  max-width: 72%;
+  overflow: hidden;
+  border: 1px solid rgb(201 169 111 / 28%);
+  background: rgb(15 18 21 / 86%);
+  padding: 0.1rem 0.22rem;
+  color: var(--gold-label);
+  font-size: clamp(0.48rem, 0.72vw, 0.62rem);
+  font-weight: 700;
+  line-height: 1.1;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.gridInactiveBadge {
+  position: absolute;
+  top: 0.16rem;
+  left: 0.2rem;
+  display: grid;
+  width: 1rem;
+  height: 1rem;
+  place-items: center;
+  border-radius: 999px;
+  background: rgb(147 72 49 / 90%);
+  color: #fff4e8;
+  font-size: 0.65rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.tabletDirection {
+  position: absolute;
+  right: 0.2rem;
+  bottom: 0.15rem;
+  color: var(--gold-bright);
+  font-size: clamp(0.72rem, 1vw, 0.9rem);
+  font-weight: 800;
+  line-height: 1;
+  text-shadow: 0 1px 3px rgb(0 0 0 / 85%);
+}
+
+.pickerScroll {
+  max-height: min(65rem, 76vh);
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+
+.pickerGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.pickerCard {
+  display: flex;
+  min-width: 0;
+  align-items: flex-start;
+  gap: 0.6rem;
+  border: 1px solid rgb(201 169 111 / 22%);
+  background: var(--surface-inset);
+  color: var(--text);
+  padding: 0.55rem;
+  text-align: left;
+  transition: border-color 120ms ease, background-color 120ms ease;
+}
+
+.pickerCard:hover,
+.pickerCard:focus-visible {
+  border-color: rgb(244 178 104 / 75%);
+  background: var(--surface);
+  outline: none;
+}
+
+.pickerCard[data-selected='true'] {
+  border-color: var(--orange-text);
+  background: color-mix(in srgb, var(--orange) 12%, var(--surface-inset));
+}
+
+.pickerImage {
+  flex: 0 0 auto;
+  width: 2.25rem;
+  height: 2.25rem;
+  object-fit: contain;
+}
+
+.pickerCardText {
+  min-width: 0;
+}
+
+@media (max-width: 920px) {
+  .plannerLayout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .pickerScroll {
+    max-height: 52rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .plannerGrid {
+    gap: 0.26rem;
+  }
+
+  .gridCellWrap {
+    aspect-ratio: 1 / 1.12;
+  }
+
+  .gridImage {
+    width: 72%;
+    height: 62%;
+  }
+
+  .gridSlotLabel {
+    bottom: 0.14rem;
+    left: 0.18rem;
+  }
+
+  .gridLevelBadge {
+    top: 0.1rem;
+    right: 0.1rem;
+    padding: 0.08rem 0.15rem;
+  }
+
+  .pickerGrid {
+    gap: 0.4rem;
+  }
+
+  .pickerCard {
+    gap: 0.45rem;
+    padding: 0.42rem;
+  }
+
+  .pickerImage {
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+}

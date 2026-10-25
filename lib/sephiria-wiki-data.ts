@@ -303,12 +303,13 @@ export const sephiriaAllRecords: SephiriaRecord[] = [
   ...sephiriaGrimoires,
 ];
 
-export type SephiriaWikiPage = { title: string; href: string; summary: string; publishedAt: string; group: 'wiki' | 'category' | 'system' | 'game' };
+export type SephiriaWikiPage = { title: string; href: string; summary: string; publishedAt: string; group: 'wiki' | 'category' | 'system' | 'tool' | 'game' };
 const publishedAt = '2026-09-26T00:00:00.000Z';
 
 export const sephiriaWikiPages: SephiriaWikiPage[] = [
   { title: 'Sephiria', href: '/games/sephiria', summary: 'Game overview and entry to the Sephiria Wiki.', publishedAt, group: 'game' },
   { title: 'Sephiria Wiki', href: '/games/sephiria/wiki', summary: 'Browse weapons, Artifacts, systems and other Sephiria reference pages.', publishedAt, group: 'wiki' },
+  { title: 'Bag & Tablet Planner', href: '/games/sephiria/tools/bag-planner', summary: 'Plan Artifact and Tablet placement, levels and restrictions across a 24–42 slot bag.', publishedAt, group: 'tool' },
   { title: 'Weapons', href: '/games/sephiria/wiki/weapons', summary: 'Six weapon branches, combat mechanics, unlock routes and related upgrades.', publishedAt, group: 'category' },
   { title: 'Weapon Upgrades', href: '/games/sephiria/wiki/weapon-upgrades', summary: 'Weapon upgrade database entries with effects, mechanics and weapon relationships.', publishedAt, group: 'category' },
   { title: 'Items', href: '/games/sephiria/wiki/items', summary: 'Browse all 419 public items by type, base rarity, Bond status and category.', publishedAt, group: 'category' },

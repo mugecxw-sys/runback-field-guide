@@ -1,0 +1,102 @@
+{
+  "gameVersion": "1.0.33",
+  "schemaVersion": 1,
+  "fixtures": [
+    {
+      "id": "ordinary-artifact-level-one",
+      "capacity": 33,
+      "weapon": "SWORD_AND_SHIELD",
+      "placements": [{ "slot": 0, "itemId": 1000 }],
+      "expected": { "artifacts": [{ "itemId": 1000, "slot": 0, "finalState": "ACTIVE", "rawLevel": 1, "effectiveLevel": 1, "tabletLevelDelta": 0 }] }
+    },
+    {
+      "id": "tablet-plus-two",
+      "capacity": 33,
+      "weapon": "SWORD_AND_SHIELD",
+      "placements": [{ "slot": 12, "itemId": 1000 }, { "slot": 18, "itemId": 2018 }],
+      "expected": { "artifacts": [{ "itemId": 1000, "slot": 12, "finalState": "ACTIVE", "rawLevel": 3, "effectiveLevel": 3, "tabletLevelDelta": 2 }] }
+    },
+    {
+      "id": "plus-five-minus-one-with-ignore",
+      "capacity": 33,
+      "weapon": "SWORD_AND_SHIELD",
+      "placements": [
+        { "slot": 13, "itemId": 1009 },
+        { "slot": 19, "itemId": 2051 },
+        { "slot": 20, "itemId": 2019 },
+        { "slot": 14, "itemId": 2002, "rotation": "DOWN" }
+      ],
+      "expected": { "artifacts": [{ "itemId": 1009, "slot": 13, "finalState": "ACTIVE", "rawLevel": 5, "effectiveLevel": 3, "tabletLevelDelta": 4, "ignoreConstraints": true, "ignoredConstraintTypes": ["TOP_ROW"] }] }
+    },
+    {
+      "id": "raw-level-below-one",
+      "capacity": 33,
+      "weapon": "SWORD_AND_SHIELD",
+      "placements": [{ "slot": 12, "itemId": 1000 }, { "slot": 13, "itemId": 2006 }, { "slot": 19, "itemId": 2019 }],
+      "expected": { "artifacts": [{ "itemId": 1000, "slot": 12, "finalState": "INACTIVE_BY_LEVEL", "rawLevel": -1, "effectiveLevel": -1, "tabletLevelDelta": -2 }] }
+    },
+    {
+      "id": "tablet-disable",
+      "capacity": 33,
+      "weapon": "SWORD_AND_SHIELD",
+      "placements": [{ "slot": 13, "itemId": 1000 }, { "slot": 12, "itemId": 2000 }],
+      "expected": { "artifacts": [{ "itemId": 1000, "slot": 13, "finalState": "INACTIVE_BY_TABLET_DISABLE", "rawLevel": 1, "effectiveLevel": 1, "disabled": true }] }
+    },
+    {
+      "id": "placement-requirement-fails",
+      "capacity": 33,
+      "weapon": "SWORD_AND_SHIELD",
+      "placements": [{ "slot": 8, "itemId": 1009 }],
+      "expected": { "artifacts": [{ "itemId": 1009, "slot": 8, "finalState": "INACTIVE_BY_CONSTRAINT", "rawLevel": 1, "effectiveLevel": 1, "failedConstraintTypes": ["TOP_ROW"] }] }
+    },
+    {
+      "id": "placement-failure-covered-by-ignore",
+      "capacity": 33,
+      "weapon": "SWORD_AND_SHIELD",
+      "placements": [{ "slot": 8, "itemId": 1009 }, { "slot": 7, "itemId": 2002 }],
+      "expected": { "artifacts": [{ "itemId": 1009, "slot": 8, "finalState": "ACTIVE", "rawLevel": 1, "effectiveLevel": 1, "ignoreConstraints": true, "ignoredConstraintTypes": ["TOP_ROW"] }] }
+    },
+    {
+      "id": "weapon-failure-is-not-ignored",
+      "capacity": 33,
+      "weapon": "SWORD_AND_SHIELD",
+      "placements": [{ "slot": 13, "itemId": 1287 }, { "slot": 12, "itemId": 2002 }],
+      "expected": { "artifacts": [{ "itemId": 1287, "slot": 13, "finalState": "INACTIVE_BY_CONSTRAINT", "rawLevel": 1, "effectiveLevel": 1, "ignoreConstraints": true, "failedConstraintTypes": ["WEAPON_IS"] }] }
+    },
+    {
+      "id": "position-tablet-activation-fails-and-applies-no-effect",
+      "capacity": 33,
+      "weapon": "SWORD_AND_SHIELD",
+      "placements": [{ "slot": 1, "itemId": 1000 }, { "slot": 0, "itemId": 2007 }],
+      "expected": {
+        "artifacts": [{ "itemId": 1000, "slot": 1, "finalState": "ACTIVE", "rawLevel": 1, "effectiveLevel": 1, "tabletLevelDelta": 0 }],
+        "tablets": [{ "itemId": 2007, "slot": 0, "finalState": "INACTIVE", "effectCellsApplied": 0 }]
+      }
+    },
+    {
+      "id": "position-tablet-activation-passes",
+      "capacity": 33,
+      "weapon": "SWORD_AND_SHIELD",
+      "placements": [{ "slot": 32, "itemId": 1000 }, { "slot": 31, "itemId": 2007 }],
+      "expected": {
+        "artifacts": [{ "itemId": 1000, "slot": 32, "finalState": "ACTIVE", "rawLevel": 2, "effectiveLevel": 2, "tabletLevelDelta": 1 }],
+        "tablets": [{ "itemId": 2007, "slot": 31, "finalState": "ACTIVE", "effectCellsApplied": 2 }]
+      }
+    },
+    {
+      "id": "disable-wins-over-ignore",
+      "capacity": 33,
+      "weapon": "SWORD_AND_SHIELD",
+      "placements": [{ "slot": 13, "itemId": 1009 }, { "slot": 12, "itemId": 2000 }, { "slot": 19, "itemId": 2002, "rotation": "LEFT" }],
+      "expected": { "artifacts": [{ "itemId": 1009, "slot": 13, "finalState": "INACTIVE_BY_TABLET_DISABLE", "rawLevel": 1, "effectiveLevel": 1, "disabled": true, "ignoreConstraints": true }] }
+    },
+    {
+      "id": "additive-contributors-kept-separate",
+      "capacity": 33,
+      "weapon": "SWORD_AND_SHIELD",
+      "placements": [{ "slot": 13, "itemId": 1009 }, { "slot": 19, "itemId": 2051 }, { "slot": 20, "itemId": 2019 }, { "slot": 14, "itemId": 2002, "rotation": "DOWN" }],
+      "expected": { "artifacts": [{ "itemId": 1009, "slot": 13, "finalState": "ACTIVE", "rawLevel": 5, "effectiveLevel": 3, "tabletLevelDelta": 4, "contributorTabletIds": [2002, 2019, 2051], "ignoreConstraints": true }] }
+    }
+  ],
+  "gridCapacities": [24, 25, 30, 31, 33, 36, 42]
+}
