@@ -13,6 +13,7 @@ export type GameWikiLink = {
 export type GameWikiNavigationSection = {
   label: string;
   links: GameWikiLink[];
+  groups?: { label: string; links: GameWikiLink[] }[];
 };
 
 export type GameWikiConfig = {
@@ -27,6 +28,15 @@ export type GameWikiConfig = {
 
 function SectionLabel({ children }: { children: ReactNode }) {
   return <p className="mb-2 mt-6 text-[11px] font-bold tracking-[0.18em] text-[var(--gold)]">{children}</p>;
+}
+
+function NavigationGroups({ groups, activeHref }: { groups: NonNullable<GameWikiNavigationSection['groups']>; activeHref: string }) {
+  return <div className="space-y-1">{groups.map((group) => group.links.length ? (
+    <details key={group.label} open data-weapon-group={group.label}>
+      <summary className={`cursor-pointer px-2 py-1.5 text-sm ${group.links.some((item) => item.href === activeHref) ? 'font-semibold text-[var(--gold-text)]' : 'text-[var(--secondary)]'}`}>{group.label}</summary>
+      <div className="ml-3">{group.links.map((item) => <a key={item.href} href={item.href} aria-current={item.href === activeHref ? 'page' : undefined} className="block border-l-2 px-3 py-2 text-sm text-[var(--secondary)] hover:text-[var(--heading)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--orange-text)]" style={{ borderLeftColor: item.href === activeHref ? 'var(--orange-text)' : 'transparent' }}>{item.label}</a>)}</div>
+    </details>
+  ) : <div key={group.label} data-weapon-group={group.label} className="px-2 py-1.5 text-sm text-[var(--secondary)]">{group.label}<span style={{ marginLeft: '0.5rem' }} className="text-[10px] text-[var(--muted)]">Coming Soon</span></div>)}</div>;
 }
 
 export function GameWikiSidebar({ config, activeHref }: { config: GameWikiConfig; activeHref: string }) {
@@ -51,8 +61,13 @@ export function GameWikiSidebar({ config, activeHref }: { config: GameWikiConfig
     <nav aria-label={`${config.gameName} navigation`} className="text-[var(--text)]">
       <p className="font-serif text-lg font-semibold tracking-wide text-[var(--heading)]">{config.gameName}</p>
       <p className="mt-1 text-xs text-[var(--gold-muted)]">{config.version}</p>
-      {config.navigationSections.map((section) => (
-        <div key={section.label}>
+      {config.navigationSections.map((section) => section.groups ? (
+        <details key={section.label} open data-navigation-section={section.label}>
+          <summary className="mb-2 mt-6 cursor-pointer text-[11px] font-bold tracking-[0.18em] text-[var(--gold)]">{section.label}</summary>
+          <NavigationGroups groups={section.groups} activeHref={activeHref} />
+        </details>
+      ) : (
+        <div key={section.label} data-navigation-section={section.label}>
           <SectionLabel>{section.label}</SectionLabel>
           <div>{section.links.map(link)}</div>
         </div>
@@ -77,6 +92,7 @@ export function GameWikiSidebar({ config, activeHref }: { config: GameWikiConfig
 
 export function GameWikiMobileNav({ config, activeHref }: { config: GameWikiConfig; activeHref: string }) {
   const links = config.navigationSections.flatMap((section) => section.links);
+  const grouped = config.navigationSections.some((section) => section.groups);
   return (
     <details className="mb-6 border border-[var(--gold-border)]/30 bg-[var(--surface)] lg:hidden">
       <summary className="flex cursor-pointer list-none items-center justify-between gap-3 px-4 py-3 text-sm font-semibold text-[var(--heading)] marker:content-none">
@@ -84,7 +100,7 @@ export function GameWikiMobileNav({ config, activeHref }: { config: GameWikiConf
         <span className="text-xs font-medium tracking-wide text-[var(--gold-label)]">Browse {config.gameName}</span>
       </summary>
       <nav aria-label={`${config.gameName} navigation`} className="grid border-t border-[var(--neutral-edge)]/10 p-2 sm:grid-cols-2">
-        {links.map((item) => (
+        {grouped ? config.navigationSections.map((section) => <div key={section.label} data-navigation-section={section.label} className="sm:col-span-2"><SectionLabel>{section.label}</SectionLabel>{section.groups ? <NavigationGroups groups={section.groups} activeHref={activeHref} /> : section.links.map((item) => <a key={item.href} href={item.href} aria-current={item.href === activeHref ? 'page' : undefined} className="block px-3 py-2 text-sm text-[var(--secondary)] hover:text-[var(--heading)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--orange-text)]">{item.label}</a>)}</div>) : links.map((item) => (
           <a
             key={item.href}
             href={item.href}

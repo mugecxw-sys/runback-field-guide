@@ -6,6 +6,7 @@ import { chapterOneGuide } from '@/lib/sephiria-chapter-one-guide';
 import { chapterTwoGuide } from '@/lib/sephiria-chapter-two-guide';
 import { chapterThreeGuide } from '@/lib/sephiria-chapter-three-guide';
 import { chapterFourGuide } from '@/lib/sephiria-chapter-four-guide';
+import { weaponBuildGroups } from '@/lib/sephiria-build-navigation';
 
 const categories = sephiriaWikiPages.filter((page) => page.group === 'category');
 const systems = sephiriaWikiPages.filter((page) => page.group === 'system');
@@ -41,6 +42,10 @@ export function SephiriaGameHub() {
   return <GameWikiShell config={sephiriaWikiConfig} activeHref={url.replace(siteUrl, '')}>
     <Schema title="Sephiria | RUNBACK" url={url} description={description} />
     <GameWikiHero eyebrow="RUNBACK GAME GUIDE" title={title} description={description} version="Full Release · July 31, 2026" gameHref={sephiriaWikiConfig.hubHref} />
+    <section className="mt-8" aria-labelledby="sephiria-builds">
+      <h2 id="sephiria-builds" className="font-serif text-2xl font-semibold text-[var(--heading)]">Sephiria Builds</h2>
+      <div className="mt-4 grid max-w-4xl gap-4 sm:grid-cols-2">{weaponBuildGroups.flatMap((group) => group.builds.map((build) => <GameWikiCategoryCard key={build.href} item={{ href: build.href, label: build.title, count: group.name, description: `${build.weaponRoute.join(' → ')} · ${build.finalBuild.join(' · ')}` }} />))}</div>
+    </section>
     <section className="mt-8 grid gap-3 sm:grid-cols-2 xl:grid-cols-4" aria-label="Sephiria key stats">
       {facts.map(([label, value]) => <div key={label} className="min-w-0 border border-[var(--gold-border)]/25 bg-[var(--surface)] p-4"><p className="text-[11px] font-bold uppercase tracking-[0.14em] text-[var(--gold)]">{label}</p><p className="mt-2 break-words text-sm leading-6 text-[var(--heading)]">{value}</p></div>)}
     </section>
