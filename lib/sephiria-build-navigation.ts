@@ -52,6 +52,11 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
             detail:
               'I would start with the core pieces, then their important levels, then Sturdy 10 / Wind Song 10 / Precision 8. The finished layout is a goal to work toward as items appear, rather than something to copy from the opening room.',
           },
+          {
+            title: 'My experience before Hard Mode',
+            detail:
+              'Before Hard Mode, I found this build comfortably strong. I did fail the final boss in this run, but that was mostly down to my own positioning rather than the build lacking damage. I would not judge the build’s strength by that failed attempt.',
+          },
         ],
       },
     ],

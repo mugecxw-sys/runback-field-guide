@@ -6,6 +6,7 @@ import {
   SephiriaBuildSidebar,
 } from '@/components/game-wiki/sephiria-build-sidebar';
 import { weaponBuildGroups } from '@/lib/sephiria-build-navigation';
+import { SephiriaBuildLayout } from '@/components/game-wiki/sephiria-build-layout';
 import { sephiriaImageManifest } from '@/lib/sephiria-image-manifest';
 import { siteUrl } from '@/lib/repo-guide-pages';
 
@@ -298,13 +299,6 @@ const relatedGuides = [
     title: 'Weapon Upgrade Tree',
   },
 ];
-
-const layoutPreviewColumns = 6;
-const layoutPreviewRows = 4;
-const layoutPreviewCells = Array.from(
-  { length: layoutPreviewColumns * layoutPreviewRows },
-  (_, index) => index,
-);
 
 export const metadata: Metadata = {
   title: seoTitle,
@@ -853,85 +847,32 @@ export default function SephiriaSwordAndShieldBuildPage() {
             </PageSection>
 
             <PageSection id="build-layout" number="06" title="Build Layout">
-              <div
-                className="grid max-w-[760px] gap-4 sm:items-start"
-                style={{
-                  maxWidth: '760px',
-                  gridTemplateColumns:
-                    'repeat(auto-fit, minmax(min(100%, 17rem), 1fr))',
-                }}
-              >
-                <div
-                  aria-label="Unassigned backpack layout preview"
-                  className="grid gap-1.5"
-                  style={{
-                    maxWidth: '22rem',
-                    gridTemplateColumns: 'repeat(6, minmax(0, 1fr))',
-                  }}
-                >
-                  {layoutPreviewCells.map((cell) => (
-                    <div
-                      key={cell}
-                      aria-hidden="true"
-                      className="flex aspect-square min-w-0 items-center justify-center border border-[var(--gold-border)]/25 bg-[var(--surface)] text-[var(--muted)]"
-                    >
-                      <span className="text-sm leading-none">·</span>
-                    </div>
-                  ))}
-                </div>
-                <aside className="border border-[var(--gold-border)]/25 bg-[var(--surface)] p-4">
-                  <p className="text-sm leading-6 text-[var(--body-soft)]">
-                    Artifacts start at Lv1. Tablet effects raise their effective
-                    levels.
-                  </p>
-                  <div className="mt-4 space-y-3 border-t border-[var(--neutral-edge)]/10 pt-4 text-sm">
-                    <div className="flex items-center gap-3">
-                      <span
-                        aria-hidden="true"
-                        className="flex h-8 w-8 items-center justify-center border border-[var(--gold-border)]/35 bg-[var(--surface-inset)] font-semibold text-[var(--gold-text)]"
-                      >
-                        ◇
-                      </span>
-                      <span className="text-[var(--secondary)]">Artifact</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <span
-                        aria-hidden="true"
-                        className="flex h-8 w-8 items-center justify-center border border-[var(--orange-text)]/40 bg-[var(--surface-inset)] font-semibold text-[var(--orange-text)]"
-                      >
-                        ▤
-                      </span>
-                      <span className="text-[var(--secondary)]">Tablet</span>
-                    </div>
-                  </div>
-                  <p className="mt-4 border-t border-[var(--neutral-edge)]/10 pt-3 text-xs leading-5 text-[var(--muted)]">
-                    This compact grid shows the six-column bag shape. Artifact
-                    and Tablet slot assignments are not included here.
-                  </p>
-                </aside>
-              </div>
+              <SephiriaBuildLayout />
             </PageSection>
 
             <PageSection id="gameplay-demo" number="07" title="Gameplay Demo">
               <div className="max-w-[640px]">
-                <div
-                  aria-label="Gameplay video placeholder"
-                  className="flex aspect-video w-full items-center justify-center border border-dashed border-[var(--gold-border)]/45 bg-[var(--surface)] p-4 text-center"
+                <video
+                  controls
+                  playsInline
+                  preload="none"
+                  aria-label="SNS-01 gameplay demo"
+                  className="block aspect-video w-full border border-[var(--gold-border)]/25 bg-[var(--surface-inset)]"
                 >
-                  <div>
-                    <span
-                      aria-hidden="true"
-                      className="mx-auto flex h-10 w-10 items-center justify-center border border-[var(--gold-border)]/35 bg-[var(--surface-inset)] text-lg text-[var(--gold-text)]"
-                    >
-                      ▶
-                    </span>
-                    <p className="mt-3 text-sm font-semibold text-[var(--heading)]">
-                      Gameplay video coming after the final recorded run.
-                    </p>
-                  </div>
-                </div>
+                  <source
+                    src="/videos/games/sephiria/builds/sword-and-shield/grip-of-fear-cleave-build/gameplay-demo.mp4"
+                    type="video/mp4"
+                  />
+                  <track
+                    kind="captions"
+                    src="/videos/games/sephiria/builds/sword-and-shield/grip-of-fear-cleave-build/gameplay-context.vtt"
+                    srcLang="en"
+                    label="Gameplay context"
+                  />
+                  Your browser does not support this video.
+                </video>
                 <p className="mt-3 text-sm leading-6 text-[var(--body-soft)]">
-                  See how the build plays in a real run.
+                  A short gameplay clip showing the build in an actual run.
                 </p>
               </div>
             </PageSection>

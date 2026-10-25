@@ -1,0 +1,256 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 16px;
+  max-width: 760px;
+  align-items: start;
+}
+
+.grid {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 4px;
+}
+
+.cell,
+.locked {
+  min-width: 0;
+  min-height: 87px;
+  border: 1px solid color-mix(in srgb, var(--gold-border) 35%, transparent);
+  background: var(--surface);
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3px;
+  padding: 6px 2px 5px;
+  color: var(--heading);
+  cursor: pointer;
+}
+
+.cell:hover,
+.cell:focus-visible,
+.selected {
+  outline: 2px solid var(--orange-text);
+  outline-offset: 1px;
+}
+
+.tablet {
+  border-color: color-mix(in srgb, var(--orange-text) 60%, transparent);
+  background: color-mix(in srgb, var(--orange-text) 7%, var(--surface));
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  image-rendering: pixelated;
+}
+
+.name {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  font-size: 9px;
+  line-height: 11px;
+  min-height: 22px;
+}
+
+.level {
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 700;
+  color: var(--gold-text);
+}
+
+.tablet .level,
+.tabletLabel {
+  color: var(--orange-text);
+}
+
+.locked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-style: dashed;
+  background: var(--surface-inset);
+  color: var(--muted);
+  opacity: 0.45;
+}
+
+.summary,
+.details {
+  border: 1px solid color-mix(in srgb, var(--gold-border) 25%, transparent);
+  background: var(--surface);
+  padding: 16px;
+  color: var(--body-soft);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.summary {
+  order: 1;
+}
+
+.legend,
+.combos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+}
+
+.legend {
+  color: var(--gold-text);
+}
+
+.intro {
+  margin-top: 10px;
+}
+
+.summary h3,
+.details h3 {
+  color: var(--heading);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.summary h3 {
+  margin-top: 18px;
+  margin-bottom: 8px;
+}
+
+.combos span {
+  border: 1px solid color-mix(in srgb, var(--gold-border) 25%, transparent);
+  padding: 3px 7px;
+  color: var(--gold-text);
+}
+
+.targets,
+.contributors,
+.affected,
+.patterns {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.targets li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 5px 0;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--gold-border) 13%, transparent);
+}
+
+.targets strong {
+  white-space: nowrap;
+  color: var(--gold-text);
+}
+
+.hint {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.details {
+  order: 2;
+  grid-column: 1 / -1;
+}
+
+.detailHeading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.detailHeading button {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  color: var(--heading);
+  font-size: 20px;
+  border: 1px solid color-mix(in srgb, var(--gold-border) 25%, transparent);
+}
+
+.detailHeading button:focus-visible {
+  outline: 2px solid var(--orange-text);
+}
+
+.equation {
+  color: var(--heading);
+  margin-bottom: 6px;
+}
+
+.equation span {
+  color: var(--body-soft);
+}
+
+.contributors {
+  margin-top: 8px;
+}
+
+.contributors li,
+.affected li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.contributors strong,
+.affected strong {
+  color: var(--gold-text);
+}
+
+.details h4 {
+  margin: 12px 0 5px;
+  color: var(--heading);
+  font-weight: 600;
+}
+
+.affected {
+  columns: 2;
+  column-gap: 24px;
+}
+
+.affected li {
+  break-inside: avoid;
+}
+
+.requirement {
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid color-mix(in srgb, var(--gold-border) 20%, transparent);
+  color: var(--orange-text);
+}
+
+@media (max-width: 640px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .affected {
+    columns: 1;
+  }
+
+  .summary {
+    order: 2;
+  }
+
+  .details {
+    order: 1;
+  }
+}
