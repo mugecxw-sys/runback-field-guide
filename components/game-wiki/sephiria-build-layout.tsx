@@ -14,6 +14,7 @@ const directionArrows: Record<string, string> = {
 
 export type BuildLayoutData = {
   buildId: string;
+  label?: string;
   columns: number;
   activeSlots: number;
   artifactCount: number;
@@ -69,7 +70,7 @@ export function SephiriaBuildLayout({
 
   return (
     <div className={styles.layout}>
-      <fieldset className={styles.grid} aria-label={`${layout.buildId} inventory layout`}>
+      <fieldset className={styles.grid} aria-label={`${layout.label ?? layout.buildId} inventory layout`}>
         {layout.cells.map((cell) => (
           <button
             key={cell.slot}

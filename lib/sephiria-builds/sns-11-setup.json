@@ -1,0 +1,22 @@
+{
+  "weapon": "Default Sword & Shield",
+  "upgrade1": "Frost Shard",
+  "upgrade2": "Blizzard's Eve",
+  "costume": "Wizard Bunny",
+  "talents": [
+    "Survival 10",
+    "Wrath 20"
+  ],
+  "startingItem": "Shieldmate",
+  "startingItemImage": {
+    "src": "/images/games/sephiria/wiki/items/item-ad8a8c9fdc5ad6ad.webp",
+    "width": 20,
+    "height": 24
+  },
+  "fruitSkewer": [
+    "Adaptive ×1",
+    "Sturdy ×3",
+    "Wind Song ×1",
+    "Precision ×1"
+  ]
+}

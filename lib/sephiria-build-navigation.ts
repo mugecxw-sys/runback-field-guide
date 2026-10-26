@@ -87,6 +87,18 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           { title: 'Fun, but not one of my stronger setups', detail: 'This feels more like a fun build than a particularly strong one. Against bosses with large health pools, I had to use Special Attack very frequently to keep the damage going, and that put too much pressure on the build’s Storm Cloud resource. The damage is usable, but the resource pressure becomes noticeable in longer fights. I would treat this as an entertaining setup rather than one of the stronger Sword & Shield builds.' },
         ],
       },
+      {
+        title: "Blizzard's Eve Frost Hammer Build",
+        href: '/games/sephiria/builds/sword-and-shield/blizzards-eve-build',
+        weaponRoute: ['Default Sword & Shield', 'Frost Shard', "Blizzard's Eve"],
+        finalBuild: ['Frost Relic 10', 'Glacier 8', 'Precision 7'],
+        fieldNotes: [
+          { title: 'Keep attacking normally when it is safe.', detail: '' },
+          { title: "Consume Dash Count regularly to trigger Blizzard's Eve.", detail: '' },
+          { title: 'Use Frozen Bow during ranged damage windows.', detail: '' },
+          { title: 'Keep Frostbite active so automatic ice projectiles continue contributing damage.', detail: '' },
+        ],
+      },
     ],
   },
   { name: 'Greatsword', imageKey: 'WPN-02', builds: [] },

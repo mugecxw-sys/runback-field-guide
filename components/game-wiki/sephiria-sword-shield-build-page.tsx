@@ -18,7 +18,7 @@ const layoutByBuild = {
   'SNS-06': sns06Layout as BuildLayoutData,
 };
 
-function PageSection({
+export function PageSection({
   id,
   number,
   title,
@@ -49,7 +49,7 @@ function PageSection({
   );
 }
 
-function Card({ children }: { children: ReactNode }) {
+export function Card({ children }: { children: ReactNode }) {
   return (
     <div className="min-w-0 border border-[var(--gold-border)]/25 bg-[var(--surface)] p-4">
       {children}
@@ -57,7 +57,7 @@ function Card({ children }: { children: ReactNode }) {
   );
 }
 
-function LocalGameImage({ image, size = 44 }: { image: LocalBuildImage; size?: number }) {
+export function LocalGameImage({ image, size = 44 }: { image: LocalBuildImage; size?: number }) {
   return (
     <span
       aria-hidden="true"
@@ -88,16 +88,44 @@ function SnapshotField({ label, children }: { label: string; children: ReactNode
   );
 }
 
+export function SephiriaBuildVideo({
+  videoPath,
+  title,
+  caption,
+  poster,
+}: {
+  videoPath: string;
+  title: string;
+  caption: string;
+  poster?: string;
+}) {
+  return (
+    <div className="max-w-[640px]">
+      <video controls playsInline preload="none" poster={poster} aria-label={title} className="block aspect-video w-full border border-[var(--gold-border)]/25 bg-[var(--surface-inset)]">
+        <source src={videoPath} type="video/mp4" />
+        <track kind="captions" src={videoPath.replace('gameplay-demo.mp4', 'gameplay-context.vtt')} srcLang="en" label="Gameplay context" />
+        Your browser does not support this video.
+      </video>
+      <p className="mt-3 text-sm leading-6 text-[var(--body-soft)]">{caption}</p>
+    </div>
+  );
+}
+
 export function SephiriaSwordShieldBuildPage({
   data,
+  layoutData,
+  children,
 }: {
   data: SephiriaSwordShieldBuildPageData;
+  layoutData?: BuildLayoutData;
+  children?: ReactNode;
 }) {
   const currentGroup = weaponBuildGroups.find((group) =>
     group.builds.some((build) => build.href === data.href),
   );
   if (!currentGroup) throw new Error(`Missing Weapon Builds navigation for ${data.buildId}`);
-  const layout = layoutByBuild[data.buildId];
+  const layout = layoutData ?? layoutByBuild[data.buildId as keyof typeof layoutByBuild];
+  if (!layout) throw new Error(`Missing build layout for ${data.buildId}`);
   const breadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -187,15 +215,16 @@ export function SephiriaSwordShieldBuildPage({
             <header className="mt-8 grid min-w-0 gap-5 border border-[var(--gold-border)]/35 bg-[var(--surface)] p-5 sm:p-8" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 24rem), 1fr))' }}>
               <div className="min-w-0">
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--gold-label)]">RUNBACK FIELD GUIDE / SEPHIRIA</p>
-                <h1 className="mt-3 break-words font-serif text-3xl font-semibold leading-tight tracking-tight text-[var(--heading)] sm:text-5xl">Sephiria Sword &amp; Shield Build</h1>
+                <h1 className="mt-3 break-words font-serif text-3xl font-semibold leading-tight tracking-tight text-[var(--heading)] sm:text-5xl">{data.h1 ?? 'Sephiria Sword & Shield Build'}</h1>
                 <p className="mt-3 font-serif text-xl font-semibold text-[var(--gold-text)] sm:text-2xl">{data.subtitle}</p>
                 <p className="mt-5 max-w-3xl text-sm leading-7 text-[var(--body-soft)] sm:text-base">{data.intro}</p>
+                {data.introDetail && <p className="mt-3 max-w-3xl text-sm leading-7 text-[var(--body-soft)] sm:text-base">{data.introDetail}</p>}
               </div>
               <aside aria-label="Build Snapshot" className="min-w-0 border border-[var(--gold-border)]/25 bg-[var(--surface-inset)] p-4 sm:p-5">
                 <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[var(--gold-label)]">Build Snapshot</p>
                 <dl className="mt-4 grid gap-2">
-                  <SnapshotField label="Build ID">{data.buildId}</SnapshotField>
-                  <SnapshotField label="Costume"><span className="inline-flex items-center gap-2"><LocalGameImage image={data.costumeImage} size={36} />White Rabbit</span></SnapshotField>
+                  {!data.hideBuildId && <SnapshotField label="Build ID">{data.buildId}</SnapshotField>}
+                  <SnapshotField label="Costume"><span className="inline-flex items-center gap-2"><LocalGameImage image={data.costumeImage} size={36} />{data.costumeName ?? 'White Rabbit'}</span></SnapshotField>
                   <SnapshotField label="Weapon Route">
                     <span className="flex flex-wrap items-center gap-1.5">
                       {data.weaponRoute.map((step, index) => <span key={step.label} className="inline-flex items-center gap-1.5">{index > 0 && <span aria-hidden="true" className="text-[var(--muted)]">→</span>}<span className="inline-flex items-center gap-1"><LocalGameImage image={step.image} size={32} />{step.label}</span></span>)}
@@ -207,6 +236,7 @@ export function SephiriaSwordShieldBuildPage({
               </aside>
             </header>
 
+            {children ?? <>
             <PageSection id="before-the-run" number="01" title="Before the Run">
               <div className="grid gap-3 sm:grid-cols-3">
                 {data.setup.map((card) => (
@@ -266,14 +296,7 @@ export function SephiriaSwordShieldBuildPage({
             </PageSection>
 
             <PageSection id="gameplay-demo" number="07" title="Gameplay Demo">
-              <div className="max-w-[640px]">
-                <video controls playsInline preload="none" aria-label={`${data.buildId} gameplay demo`} className="block aspect-video w-full border border-[var(--gold-border)]/25 bg-[var(--surface-inset)]">
-                  <source src={data.videoPath} type="video/mp4" />
-                  <track kind="captions" src={`${data.videoPath.replace('gameplay-demo.mp4', 'gameplay-context.vtt')}`} srcLang="en" label="Gameplay context" />
-                  Your browser does not support this video.
-                </video>
-                <p className="mt-3 text-sm leading-6 text-[var(--body-soft)]">A short gameplay clip showing the build in an actual run.</p>
-              </div>
+              <SephiriaBuildVideo videoPath={data.videoPath} title={`${data.buildId} gameplay demo`} caption="A short gameplay clip showing the build in an actual run." />
             </PageSection>
 
             <PageSection id="related-guides" number="08" title="Related Guides">
@@ -286,6 +309,7 @@ export function SephiriaSwordShieldBuildPage({
                 ))}
               </div>
             </PageSection>
+            </>}
           </article>
         </div>
       </div>

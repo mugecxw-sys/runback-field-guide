@@ -10,7 +10,12 @@ export type LocalBuildImage = {
 };
 
 export type SephiriaSwordShieldBuildPageData = {
-  buildId: 'SNS-04' | 'SNS-06';
+  buildId: 'SNS-04' | 'SNS-06' | 'SNS-11';
+  seoTitle?: string;
+  h1?: string;
+  introDetail?: string;
+  costumeName?: string;
+  hideBuildId?: boolean;
   href: string;
   subtitle: string;
   description: string;
@@ -217,7 +222,7 @@ export const sns06Page: SephiriaSwordShieldBuildPageData = {
 
 export function buildPageMetadata(data: SephiriaSwordShieldBuildPageData) {
   const canonical = `${siteUrl}${data.href}`;
-  const title = `Sephiria Sword & Shield Build: ${data.subtitle} | RUNBACK`;
+  const title = data.seoTitle ?? `Sephiria Sword & Shield Build: ${data.subtitle} | RUNBACK`;
   return {
     title,
     description: data.description,
