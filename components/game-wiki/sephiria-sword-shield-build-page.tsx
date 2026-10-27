@@ -5,7 +5,7 @@ import {
   SephiriaBuildSidebar,
 } from '@/components/game-wiki/sephiria-build-sidebar';
 import { SephiriaBuildLayout } from '@/components/game-wiki/sephiria-build-layout';
-import { weaponBuildGroups } from '@/lib/sephiria-build-navigation';
+import { listedWeaponBuildGroups, weaponBuildGroups } from '@/lib/sephiria-build-navigation';
 import { sephiriaImageManifest } from '@/lib/sephiria-image-manifest';
 import type { LocalBuildImage, SephiriaSwordShieldBuildPageData } from '@/lib/sephiria-builds/sword-and-shield-pages';
 import sns06Layout from '@/lib/sephiria-builds/sns-06-layout.json';
@@ -135,7 +135,7 @@ export function SephiriaSwordShieldBuildPage({
     ],
   };
 
-  const weaponOptions = weaponBuildGroups.map((group) => {
+  const weaponOptions = listedWeaponBuildGroups.map((group) => {
     const image = sephiriaImageManifest[group.imageKey];
     if (!image) throw new Error(`Missing local weapon category image ${group.imageKey}`);
     return {
@@ -198,14 +198,15 @@ export function SephiriaSwordShieldBuildPage({
             <section aria-labelledby="weapon-build-list-heading" className="mt-6">
               <h2 id="weapon-build-list-heading" className="mb-3 font-serif text-2xl font-semibold text-[var(--heading)]">Sword &amp; Shield Builds</h2>
               <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 22rem), 1fr))' }}>
-                {currentGroup.builds.map((build) => (
+                {currentGroup.builds.filter((build) => build.listed !== false).map((build) => (
                   <a key={build.href} href={build.href} aria-current={build.href === data.href ? 'page' : undefined} className="min-w-0 border border-[var(--orange-text)]/60 bg-[var(--surface)] p-4 hover:border-[var(--orange-text)]">
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <h3 className="font-serif text-lg font-semibold text-[var(--heading)]">{build.title}</h3>
                       {build.href === data.href && <span className="text-[10px] font-bold uppercase tracking-wide text-[var(--orange-text)]">Current</span>}
                     </div>
                     <p className="mt-2 text-sm leading-6 text-[var(--body-soft)]"><span className="font-semibold text-[var(--heading)]">Weapon Route:</span> {build.weaponRoute.join(' → ')}</p>
-                    <p className="mt-1 text-sm leading-6 text-[var(--body-soft)]"><span className="font-semibold text-[var(--heading)]">Final Build:</span> {build.finalBuild.join(' · ')}</p>
+                    <p className="mt-1 text-sm leading-6 text-[var(--body-soft)]"><span className="font-semibold text-[var(--heading)]">{build.comboLabel ?? 'Final Build'}:</span> {build.finalBuild.join(' · ')}</p>
+                    {build.style && <p className="mt-1 text-sm leading-6 text-[var(--body-soft)]"><span className="font-semibold text-[var(--heading)]">Style:</span> {build.style}</p>}
                   </a>
                 ))}
               </div>
@@ -224,44 +225,49 @@ export function SephiriaSwordShieldBuildPage({
                 <dl className="mt-4 grid gap-2">
                   {!data.hideBuildId && <SnapshotField label="Build ID">{data.buildId}</SnapshotField>}
                   <SnapshotField label="Costume"><span className="inline-flex items-center gap-2"><LocalGameImage image={data.costumeImage} size={36} />{data.costumeName ?? 'White Rabbit'}</span></SnapshotField>
+                  {data.costumeEffects && <SnapshotField label="Costume Effects"><span className="grid gap-1">{data.costumeEffects.map((effect) => <span key={effect}>{effect}</span>)}</span></SnapshotField>}
+                  {data.weaponName && <SnapshotField label="Weapon">{data.weaponName}</SnapshotField>}
                   <SnapshotField label="Weapon Route">
                     <span className="flex flex-wrap items-center gap-1.5">
                       {data.weaponRoute.map((step, index) => <span key={step.label} className="inline-flex items-center gap-1.5">{index > 0 && <span aria-hidden="true" className="text-[var(--muted)]">→</span>}<span className="inline-flex items-center gap-1"><LocalGameImage image={step.image} size={32} />{step.label}</span></span>)}
                     </span>
                   </SnapshotField>
-                  <SnapshotField label="Final Build"><span className="flex flex-wrap gap-x-2 gap-y-1">{layout ? layout.comboCounts.map((combo) => <span key={combo.name}>{combo.name} {combo.count}</span>) : currentBuild.finalBuild.map((combo) => <span key={combo}>{combo}</span>)}</span></SnapshotField>
-                  <SnapshotField label="Main Damage"><span className="font-semibold text-[var(--orange-text)]">{data.mainDamage}</span></SnapshotField>
+                  <SnapshotField label={data.comboLabel ?? "Final Build"}><span className="flex flex-wrap gap-x-2 gap-y-1">{layout ? layout.comboCounts.map((combo) => <span key={combo.name}>{combo.name} {combo.count}</span>) : currentBuild.finalBuild.map((combo) => <span key={combo}>{combo}</span>)}</span></SnapshotField>
+                  {data.coreEngine ? <SnapshotField label="Core Engine">{data.coreEngine}</SnapshotField> : <SnapshotField label="Main Damage"><span className="font-semibold text-[var(--orange-text)]">{data.mainDamage}</span></SnapshotField>}
+                  {data.buildStyle && <SnapshotField label="Build Style">{data.buildStyle}</SnapshotField>}
                 </dl>
               </aside>
             </header>
 
             {children ?? <>
             <PageSection id="before-the-run" number="01" title="Before the Run">
-              <div className="grid gap-3 sm:grid-cols-3">
+              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
                 {data.setup.map((card) => (
                   <Card key={card.title}>
                     <h3 className="font-serif text-lg font-semibold text-[var(--heading)]">{card.title}</h3>
+                    {card.fruits && <ul className="mt-3 space-y-3">{card.fruits.map(fruit => <li key={fruit.category} className="flex items-center gap-3">
+                      <LocalGameImage image={fruit.image} size={40} />
+                      <div><p className="font-semibold text-[var(--heading)]">{fruit.fruit} ×{fruit.quantity}</p><p className="text-sm text-[var(--muted)]">{fruit.category}</p></div>
+                    </li>)}</ul>}
                     <div className="mt-3 flex items-start gap-3">
                       {card.image && <LocalGameImage image={card.image} size={44} />}
                       <ul className="space-y-1 text-sm leading-6 text-[var(--body-soft)]">{card.lines.map((line) => <li key={line}>{line}</li>)}</ul>
                     </div>
+                    {card.description && <p className="mt-3 text-sm leading-6 text-[var(--body-soft)]">{card.description}</p>}
                   </Card>
                 ))}
               </div>
             </PageSection>
 
             <PageSection id="core-items" number="02" title="Core Items">
-              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-                {data.coreItems.map((item) => (
-                  <Card key={item.name}>
-                    <div className="flex min-w-0 items-center gap-3">
-                      <LocalGameImage image={item.image} size={44} />
-                      <div className="min-w-0"><h3 className="break-words font-semibold leading-6 text-[var(--heading)]">{item.name}</h3><p className="text-sm text-[var(--gold-text)]">Target effective level · Lv{item.effectiveLevel}</p></div>
-                    </div>
-                    <p className="mt-3 text-sm leading-6 text-[var(--body-soft)]"><span className="font-semibold text-[var(--heading)]">Role:</span> {item.role}</p>
-                  </Card>
-                ))}
-              </div>
+              {(data.coreItems.some(item => item.group) ? ['Essential Engine', 'Supporting Core'] : ['']).map(group => <div key={group}>
+                {group && <h3 className="mb-3 font-serif text-xl font-semibold text-[var(--heading)]">{group}</h3>}
+                <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">{data.coreItems.filter(item => !group || (item.group ?? 'Essential Engine') === group).map(item => <Card key={item.name}>
+                  <div className="flex min-w-0 items-center gap-3"><LocalGameImage image={item.image} size={44} /><div className="min-w-0"><h4 className="break-words font-semibold leading-6 text-[var(--heading)]">{item.name}</h4><p className="text-sm text-[var(--gold-text)]">Target effective level · Lv{item.effectiveLevel}</p></div></div>
+                  <p className="mt-3 text-sm leading-6 text-[var(--body-soft)]"><span className="font-semibold text-[var(--heading)]">Role:</span> {item.role}</p>
+                  {item.categories && <p className="mt-2 text-xs text-[var(--muted)]">{item.categories.join(' / ')}</p>}
+                </Card>)}</div>
+              </div>)}
             </PageSection>
 
             <PageSection id="damage" number="03" title="How This Build Deals Damage">
@@ -286,8 +292,16 @@ export function SephiriaSwordShieldBuildPage({
 
             <PageSection id="replacements" number="05" title="Replacements">
               <Card>
-                <p className="text-sm leading-6 text-[var(--body-soft)]">No replacement Artifact has been verified for this exact preset yet. The page lists its confirmed core items without suggesting unverified swaps.</p>
+                <p className="text-sm leading-6 text-[var(--body-soft)]">{data.replacementsText ?? 'No replacement Artifact has been verified for this exact preset yet. The page lists its confirmed core items without suggesting unverified swaps.'}</p>
               </Card>
+              {data.replacements && <div className="grid gap-3 md:grid-cols-2">
+                {data.replacements.map((entry) => <Card key={entry.missing}>
+                  <h3 className="font-semibold text-[var(--heading)]">Missing: {entry.missing}</h3><p className="mt-2 text-sm font-semibold text-[var(--gold-text)]">Use: {entry.replacement}</p>
+                  <p className="mt-3 text-sm leading-6 text-[var(--body-soft)]"><strong>Keeps:</strong> {entry.keep}</p>
+                  <p className="mt-2 text-sm leading-6 text-[var(--body-soft)]"><strong>Trade-off:</strong> {entry.tradeOff}</p>
+                </Card>)}
+              </div>}
+              {data.replacementKeep && <Card><p className="text-sm leading-6 text-[var(--body-soft)]">{data.replacementKeep}</p></Card>}
             </PageSection>
 
             {layout && <PageSection id="build-layout" number="06" title="Build Layout">
@@ -295,7 +309,7 @@ export function SephiriaSwordShieldBuildPage({
             </PageSection>}
 
             <PageSection id="gameplay-demo" number="07" title="Gameplay Demo">
-              <SephiriaBuildVideo videoPath={data.videoPath} title={`${data.buildId} gameplay demo`} caption="A short gameplay clip showing the build in an actual run." />
+              <SephiriaBuildVideo videoPath={data.videoPath} poster={data.videoPoster} title={`${data.hideBuildId ? data.subtitle : data.buildId} gameplay demo`} caption="A short gameplay clip showing the build in an actual run." />
             </PageSection>
 
             <PageSection id="related-guides" number="08" title="Related Guides">

@@ -1,6 +1,6 @@
 import type { GameWikiConfig } from './game-wiki';
 import { sephiriaWikiPages } from '@/lib/sephiria-wiki-data';
-import { weaponBuildGroups } from '@/lib/sephiria-build-navigation';
+import { listedWeaponBuildGroups as weaponBuildGroups } from '@/lib/sephiria-build-navigation';
 
 const categories = sephiriaWikiPages.filter((page) => page.group === 'category');
 const systems = sephiriaWikiPages.filter((page) => page.group === 'system');

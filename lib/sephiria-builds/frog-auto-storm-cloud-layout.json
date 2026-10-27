@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "1.0.33",
+  "capacity": 33,
+  "weapon": "SWORD_AND_SHIELD",
+  "placements": [
+    {
+      "slot": 0,
+      "itemId": 1239,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 1,
+      "itemId": 1076,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 2,
+      "itemId": 2042,
+      "kind": "Tablet",
+      "rotation": "LEFT"
+    },
+    {
+      "slot": 3,
+      "itemId": 1245,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 4,
+      "itemId": 1320,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 5,
+      "itemId": 2051,
+      "kind": "Tablet",
+      "rotation": "DOWN"
+    },
+    {
+      "slot": 6,
+      "itemId": 1276,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 7,
+      "itemId": 1187,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 8,
+      "itemId": 1066,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 9,
+      "itemId": 1170,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 10,
+      "itemId": 2046,
+      "kind": "Tablet",
+      "rotation": "DOWN"
+    },
+    {
+      "slot": 11,
+      "itemId": 1130,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 12,
+      "itemId": 2100,
+      "kind": "Tablet",
+      "rotation": "UP"
+    },
+    {
+      "slot": 13,
+      "itemId": 1071,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 14,
+      "itemId": 1104,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 15,
+      "itemId": 1263,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 16,
+      "itemId": 1055,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 17,
+      "itemId": 1129,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 18,
+      "itemId": 1200,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 19,
+      "itemId": 1202,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 20,
+      "itemId": 1029,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 21,
+      "itemId": 1216,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 22,
+      "itemId": 1113,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 23,
+      "itemId": 2052,
+      "kind": "Tablet",
+      "rotation": "UP"
+    },
+    {
+      "slot": 24,
+      "itemId": 1065,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 25,
+      "itemId": 1249,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 26,
+      "itemId": 1090,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 27,
+      "itemId": 1198,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 28,
+      "itemId": 1053,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 29,
+      "itemId": 1197,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 30,
+      "itemId": 3011,
+      "kind": "Artifact"
+    },
+    {
+      "slot": 31,
+      "itemId": 2003,
+      "kind": "Tablet",
+      "rotation": "UP"
+    },
+    {
+      "slot": 32,
+      "itemId": 2058,
+      "kind": "Tablet",
+      "rotation": "UP"
+    }
+  ]
+}

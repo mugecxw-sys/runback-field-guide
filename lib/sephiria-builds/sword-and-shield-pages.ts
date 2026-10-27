@@ -15,24 +15,35 @@ export type SephiriaSwordShieldBuildPageData = {
   h1?: string;
   introDetail?: string;
   costumeName?: string;
+  costumeEffects?: string[];
+  buildStyle?: string;
+  weaponName?: string;
   hideBuildId?: boolean;
   href: string;
   subtitle: string;
   description: string;
   intro: string;
   mainDamage: string;
+  coreEngine?: string;
+  comboLabel?: string;
   costumeImage: LocalBuildImage;
   weaponRoute: { label: string; image: LocalBuildImage }[];
-  setup: { title: string; lines: string[]; image?: LocalBuildImage }[];
+  setup: { title: string; lines: string[]; image?: LocalBuildImage; description?: string; fruits?: { category: string; fruit: string; quantity: number; image: LocalBuildImage }[] }[];
   coreItems: {
     name: string;
     effectiveLevel: number;
     role: string;
     image: LocalBuildImage;
+    categories?: string[];
+    group?: 'Essential Engine' | 'Supporting Core';
   }[];
   damageHeading: string;
   damageSteps: { title: string; detail: string }[];
   videoPath: string;
+  videoPoster?: string;
+  replacementsText?: string;
+  replacements?: { missing: string; replacement: string; keep: string; tradeOff: string }[];
+  replacementKeep?: string;
   relatedGuides: { href: string; title: string }[];
 };
 
@@ -43,7 +54,7 @@ const itemMap = new Map(
   ]),
 );
 
-function itemImage(id: number): LocalBuildImage {
+export function itemImage(id: number): LocalBuildImage {
   const item = itemMap.get(id);
   if (!item?.image?.src) throw new Error(`Missing verified item image for ${id}`);
   return {
@@ -54,7 +65,7 @@ function itemImage(id: number): LocalBuildImage {
   };
 }
 
-function upgradeImage(key: string): LocalBuildImage {
+export function upgradeImage(key: string): LocalBuildImage {
   const image = sephiriaImageManifest[key];
   if (!image) throw new Error(`Missing local Sephiria image ${key}`);
   return image;
@@ -62,7 +73,7 @@ function upgradeImage(key: string): LocalBuildImage {
 
 const costume = upgradeImage('CST-02');
 const shieldmate = itemImage(1034);
-const fruitSkewer: LocalBuildImage = {
+export const fruitSkewer: LocalBuildImage = {
   src: '/images/games/sephiria/wiki/pre-run/fruit-skewer.webp',
   alt: 'Fruit Skewer',
   width: 50,
@@ -81,7 +92,7 @@ const commonSetup = () => [
   { title: 'Fruit Skewer', lines: [...fruitAllocation], image: fruitSkewer },
 ];
 
-function coreItem(
+export function coreItem(
   id: number,
   effectiveLevel: number,
   role: string,

@@ -44,6 +44,7 @@ export function buildLayoutForDisplay(build: SephiriaBuildDefinition): BuildLayo
   return {
     buildId: build.href.split('/').pop()!, label: build.title, columns: 6,
     activeSlots: input.capacity, artifactCount: result.summary.artifacts, tabletCount: result.summary.tablets,
+    inactiveSlotLabel: build.inactiveSlotLabel,
     comboCounts: comboNames.flatMap((name) => {
       const combo = result.summary.combos.find((entry) => entry.name === name);
       return combo ? [{ name, count: combo.count }] : [];

@@ -6,7 +6,7 @@ import { chapterOneGuide } from '@/lib/sephiria-chapter-one-guide';
 import { chapterTwoGuide } from '@/lib/sephiria-chapter-two-guide';
 import { chapterThreeGuide } from '@/lib/sephiria-chapter-three-guide';
 import { chapterFourGuide } from '@/lib/sephiria-chapter-four-guide';
-import { weaponBuildGroups } from '@/lib/sephiria-build-navigation';
+import { listedWeaponBuildGroups as weaponBuildGroups } from '@/lib/sephiria-build-navigation';
 
 const categories = sephiriaWikiPages.filter((page) => page.group === 'category');
 const systems = sephiriaWikiPages.filter((page) => page.group === 'system');

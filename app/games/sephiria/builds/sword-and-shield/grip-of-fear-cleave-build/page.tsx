@@ -5,7 +5,7 @@ import {
   SephiriaBuildMobileNav,
   SephiriaBuildSidebar,
 } from '@/components/game-wiki/sephiria-build-sidebar';
-import { weaponBuildGroups } from '@/lib/sephiria-build-navigation';
+import { listedWeaponBuildGroups as weaponBuildGroups } from '@/lib/sephiria-build-navigation';
 import { SephiriaBuildLayout } from '@/components/game-wiki/sephiria-build-layout';
 import { sephiriaImageManifest } from '@/lib/sephiria-image-manifest';
 import { siteUrl } from '@/lib/repo-guide-pages';
@@ -602,6 +602,7 @@ export default function SephiriaSwordAndShieldBuildPage() {
                       </span>{' '}
                       {build.finalBuild.join(' · ')}
                     </p>
+                    {build.style && <p className="mt-1 text-sm leading-6 text-[var(--body-soft)]"><span className="font-semibold text-[var(--heading)]">Style:</span> {build.style}</p>}
                   </a>
                 ))}
               </div>

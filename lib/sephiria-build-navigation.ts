@@ -2,6 +2,7 @@ import type { BagPlannerLayoutV1 } from '@/lib/sephiria-planner/bag-planner-layo
 import sns01 from '@/lib/sephiria-builds/sns-01-layout.json';
 import sns04 from '@/lib/sephiria-builds/sns-04-layout.json';
 import sns11 from '@/lib/sephiria-builds/sns-11-layout.json';
+import { frogAutoStormCloudBuild } from '@/lib/sephiria-builds/frog-auto-storm-cloud';
 
 export type SephiriaBuildDefinition = {
   title: string;
@@ -11,6 +12,10 @@ export type SephiriaBuildDefinition = {
   fieldNotes: { title: string; detail: string }[];
   plannerLayout?: BagPlannerLayoutV1 | null;
   coreArtifactIds?: number[];
+  listed?: boolean;
+  comboLabel?: string;
+  style?: string;
+  inactiveSlotLabel?: string;
 };
 
 export type SephiriaWeaponBuildGroup = {
@@ -112,6 +117,7 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           { title: 'Keep Frostbite active so automatic ice projectiles continue contributing damage.', detail: '' },
         ],
       },
+      frogAutoStormCloudBuild,
     ],
   },
   { name: 'Greatsword', imageKey: 'WPN-02', builds: [] },
@@ -120,3 +126,9 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
   { name: 'Crossbow', imageKey: 'WPN-03', builds: [] },
   { name: 'Katana', imageKey: 'WPN-05', builds: [] },
 ];
+
+// Keep existing routes and layout metadata available while controlling public discovery.
+export const listedWeaponBuildGroups = weaponBuildGroups.map((group) => ({
+  ...group,
+  builds: group.builds.filter((build) => build.listed !== false),
+}));

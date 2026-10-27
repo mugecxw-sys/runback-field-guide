@@ -19,6 +19,7 @@ export type BuildLayoutData = {
   label?: string;
   columns: number;
   activeSlots: number;
+  inactiveSlotLabel?: string;
   artifactCount: number;
   tabletCount: number;
   comboCounts: { name: string; count: number }[];
@@ -125,9 +126,9 @@ export function SephiriaBuildLayout({
           <div
             key={`locked-${index}`}
             className={styles.locked}
-            aria-label="Locked slot"
+            aria-label={layout.inactiveSlotLabel ?? 'Locked slot'}
           >
-            <span aria-hidden="true">×</span>
+            <span aria-hidden="true" className={layout.inactiveSlotLabel ? 'text-[9px] leading-4 sm:text-[10px]' : undefined}>{layout.inactiveSlotLabel ?? '×'}</span>
           </div>
         ))}
       </fieldset>
@@ -140,7 +141,7 @@ export function SephiriaBuildLayout({
         <p className={styles.intro}>
           Artifacts start at Lv1. Tablets supply the level bonuses shown here.
         </p>
-        <h3>Final Build</h3>
+        <h3>{build?.comboLabel ?? 'Final Build'}</h3>
         <div className={styles.combos}>
           {layout.comboCounts.map((combo) => (
             <span key={combo.name}>
@@ -231,3 +232,4 @@ export function SephiriaBuildLayout({
     </div>
   );
 }
+

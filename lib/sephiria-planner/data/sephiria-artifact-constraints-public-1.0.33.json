@@ -2266,7 +2266,7 @@
     },
     {
       "id": 3011,
-      "name": "Lightning Arrow",
+      "name": "Lightning Bolt",
       "image": "images/items/item-3011-lightning-arrow.webp",
       "maxLevel": 2,
       "constraints": []

@@ -1,5 +1,5 @@
 import { sephiriaWikiConfig } from './sephiria-config';
-import { weaponBuildGroups } from '@/lib/sephiria-build-navigation';
+import { listedWeaponBuildGroups } from '@/lib/sephiria-build-navigation';
 
 const linkStyle =
   'block border-l-2 border-transparent px-3 py-1.5 text-sm text-[var(--secondary)] hover:text-[var(--heading)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--orange-text)]';
@@ -32,7 +32,7 @@ export function SephiriaBuildSidebar({ activeHref }: { activeHref: string }) {
           Build
         </summary>
         <div className="mt-2 space-y-1">
-          {weaponBuildGroups.map((group) => {
+          {listedWeaponBuildGroups.map((group) => {
             const current = group.builds.some(
               (build) => build.href === activeHref,
             );
