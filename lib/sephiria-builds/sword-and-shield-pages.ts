@@ -10,7 +10,7 @@ export type LocalBuildImage = {
 };
 
 export type SephiriaSwordShieldBuildPageData = {
-  buildId: 'SNS-04' | 'SNS-06' | 'SNS-11';
+  buildId: string;
   seoTitle?: string;
   h1?: string;
   introDetail?: string;

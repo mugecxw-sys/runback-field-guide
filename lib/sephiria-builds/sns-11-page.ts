@@ -1,7 +1,10 @@
 import itemsDatabase from '@/public/data/sephiria-items-1.0.33.json';
 import { sephiriaImageManifest } from '@/lib/sephiria-image-manifest';
 import setup from '@/lib/sephiria-builds/sns-11-setup.json';
-import layout from '@/lib/sephiria-builds/sns-11-layout.json';
+import { weaponBuildGroups } from '@/lib/sephiria-build-navigation';
+import { buildLayoutForDisplay } from '@/lib/sephiria-builds/build-layout-from-planner';
+const build = weaponBuildGroups.flatMap((group) => group.builds).find((entry) => entry.href.endsWith('/blizzards-eve-build'))!;
+const layout = buildLayoutForDisplay(build);
 import type { LocalBuildImage, SephiriaSwordShieldBuildPageData } from './sword-and-shield-pages';
 
 function imageFor(key: string): LocalBuildImage {

@@ -8,13 +8,12 @@ import { SephiriaBuildLayout } from '@/components/game-wiki/sephiria-build-layou
 import { weaponBuildGroups } from '@/lib/sephiria-build-navigation';
 import { sephiriaImageManifest } from '@/lib/sephiria-image-manifest';
 import type { LocalBuildImage, SephiriaSwordShieldBuildPageData } from '@/lib/sephiria-builds/sword-and-shield-pages';
-import sns04Layout from '@/lib/sephiria-builds/sns-04-layout.json';
 import sns06Layout from '@/lib/sephiria-builds/sns-06-layout.json';
 import type { BuildLayoutData } from '@/components/game-wiki/sephiria-build-layout';
+import { buildLayoutForDisplay } from '@/lib/sephiria-builds/build-layout-from-planner';
 import { siteUrl } from '@/lib/repo-guide-pages';
 
 const layoutByBuild = {
-  'SNS-04': sns04Layout as BuildLayoutData,
   'SNS-06': sns06Layout as BuildLayoutData,
 };
 
@@ -124,8 +123,8 @@ export function SephiriaSwordShieldBuildPage({
     group.builds.some((build) => build.href === data.href),
   );
   if (!currentGroup) throw new Error(`Missing Weapon Builds navigation for ${data.buildId}`);
-  const layout = layoutData ?? layoutByBuild[data.buildId as keyof typeof layoutByBuild];
-  if (!layout) throw new Error(`Missing build layout for ${data.buildId}`);
+  const currentBuild = currentGroup.builds.find((build) => build.href === data.href)!;
+  const layout = layoutData ?? (currentBuild.plannerLayout ? buildLayoutForDisplay(currentBuild) : layoutByBuild[data.buildId as keyof typeof layoutByBuild]);
   const breadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -230,7 +229,7 @@ export function SephiriaSwordShieldBuildPage({
                       {data.weaponRoute.map((step, index) => <span key={step.label} className="inline-flex items-center gap-1.5">{index > 0 && <span aria-hidden="true" className="text-[var(--muted)]">→</span>}<span className="inline-flex items-center gap-1"><LocalGameImage image={step.image} size={32} />{step.label}</span></span>)}
                     </span>
                   </SnapshotField>
-                  <SnapshotField label="Final Build"><span className="flex flex-wrap gap-x-2 gap-y-1">{layout.comboCounts.map((combo) => <span key={combo.name}>{combo.name} {combo.count}</span>)}</span></SnapshotField>
+                  <SnapshotField label="Final Build"><span className="flex flex-wrap gap-x-2 gap-y-1">{layout ? layout.comboCounts.map((combo) => <span key={combo.name}>{combo.name} {combo.count}</span>) : currentBuild.finalBuild.map((combo) => <span key={combo}>{combo}</span>)}</span></SnapshotField>
                   <SnapshotField label="Main Damage"><span className="font-semibold text-[var(--orange-text)]">{data.mainDamage}</span></SnapshotField>
                 </dl>
               </aside>
@@ -291,9 +290,9 @@ export function SephiriaSwordShieldBuildPage({
               </Card>
             </PageSection>
 
-            <PageSection id="build-layout" number="06" title="Build Layout">
-              <SephiriaBuildLayout layoutData={layout} />
-            </PageSection>
+            {layout && <PageSection id="build-layout" number="06" title="Build Layout">
+              <SephiriaBuildLayout layoutData={layout} build={currentBuild} />
+            </PageSection>}
 
             <PageSection id="gameplay-demo" number="07" title="Gameplay Demo">
               <SephiriaBuildVideo videoPath={data.videoPath} title={`${data.buildId} gameplay demo`} caption="A short gameplay clip showing the build in an actual run." />

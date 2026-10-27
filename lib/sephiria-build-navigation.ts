@@ -1,9 +1,16 @@
+import type { BagPlannerLayoutV1 } from '@/lib/sephiria-planner/bag-planner-layout';
+import sns01 from '@/lib/sephiria-builds/sns-01-layout.json';
+import sns04 from '@/lib/sephiria-builds/sns-04-layout.json';
+import sns11 from '@/lib/sephiria-builds/sns-11-layout.json';
+
 export type SephiriaBuildDefinition = {
   title: string;
   href: string;
   weaponRoute: string[];
   finalBuild: string[];
   fieldNotes: { title: string; detail: string }[];
+  plannerLayout?: BagPlannerLayoutV1 | null;
+  coreArtifactIds?: number[];
 };
 
 export type SephiriaWeaponBuildGroup = {
@@ -24,6 +31,8 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
       {
         title: 'Grip of Fear Cleave Build',
         href: '/games/sephiria/builds/sword-and-shield/grip-of-fear-cleave-build',
+        plannerLayout: sns01 as BagPlannerLayoutV1,
+        coreArtifactIds: [1034, 1221, 1112, 1009, 1191],
         weaponRoute: ['Tiny Destruction', 'Grip of Fear'],
         finalBuild: ['Sturdy 10', 'Wind Song 10', 'Precision 8'],
         fieldNotes: [
@@ -62,6 +71,8 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
       {
         title: 'Indomitable Normal Attack Build',
         href: '/games/sephiria/builds/sword-and-shield/indomitable-normal-attack-build',
+        plannerLayout: sns04 as BagPlannerLayoutV1,
+        coreArtifactIds: [1262, 1080, 1218, 1086, 1191],
         weaponRoute: ['Default Sword & Shield', 'Perfect Balance', 'Indomitable'],
         finalBuild: ['Sturdy 10', 'Wind Song 10', 'Precision 8'],
         fieldNotes: [
@@ -90,6 +101,8 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
       {
         title: "Blizzard's Eve Frost Hammer Build",
         href: '/games/sephiria/builds/sword-and-shield/blizzards-eve-build',
+        plannerLayout: sns11 as BagPlannerLayoutV1,
+        coreArtifactIds: [1208, 1209, 1210, 1145, 1027, 1179, 1063],
         weaponRoute: ['Default Sword & Shield', 'Frost Shard', "Blizzard's Eve"],
         finalBuild: ['Frost Relic 10', 'Glacier 8', 'Precision 7'],
         fieldNotes: [

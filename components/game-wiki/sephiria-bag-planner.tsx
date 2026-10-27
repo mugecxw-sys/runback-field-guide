@@ -1,10 +1,12 @@
 'use client';
 
 import Image from 'next/image';
-import { useEffect, useMemo, useState } from 'react';
-import type { ReactNode } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
+import type { ReactNode, SetStateAction } from 'react';
 import { Check, CircleHelp, MoveRight, RotateCw, Search, ShieldAlert, Trash2, X } from 'lucide-react';
 import styles from './sephiria-bag-planner.module.css';
+import { decodeBagPlannerLayout, encodeBagPlannerLayout, getBagPlannerUrl, layoutToPlannerState, plannerStateToLayout, validateBagPlannerLayout } from '@/lib/sephiria-planner/bag-planner-layout';
+import { weaponBuildGroups } from '@/lib/sephiria-build-navigation';
 import { evaluateBagLayout } from '@/lib/sephiria-planner/engine/bag-planner-engine.mjs';
 import type { PlannerArtifactState, PlannerCell } from '@/lib/sephiria-planner/engine/bag-planner-engine.mjs';
 import {
@@ -125,23 +127,56 @@ export function SephiriaBagPlanner() {
   const [movingPlacementId, setMovingPlacementId] = useState<string | null>(null);
   const [hoveredSlot, setHoveredSlot] = useState<number | null>(null);
   const [notice, setNotice] = useState('');
+  const [manualShareUrl, setManualShareUrl] = useState('');
+  const [temporaryShared, setTemporaryShared] = useState(false);
+  const [sourceBuild, setSourceBuild] = useState<{ title: string; href: string } | null>(null);
+  const persistAllowed = useRef(true);
+  const editLayout = (next: SetStateAction<PlannerLayout>) => { persistAllowed.current = true; setTemporaryShared(false); setLayout(next); };
+
+  const shareLayout = async () => {
+    const url = getBagPlannerUrl(plannerStateToLayout(layout), { origin: window.location.origin });
+    try {
+      if (!navigator.clipboard?.writeText) throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(url);
+      setManualShareUrl('');
+      setNotice('Link copied');
+    } catch {
+      setManualShareUrl(url);
+      setNotice('Copy this link to share your layout.');
+    }
+  };
 
   useEffect(() => {
     let active = true;
     queueMicrotask(() => {
       if (!active) return;
-      try {
-        const result = safeRestoreLayout(
-          window.localStorage.getItem(PLANNER_STORAGE_KEY),
-          plannerItemsById,
-          (tabletId) => Boolean(plannerTabletRulesById.get(tabletId)?.rotation.canRotate),
-          new Set(plannerWeapons.map((weapon) => weapon.value)),
-          defaultPlannerWeapon,
-        );
-        setLayout(result.layout);
-        if (result.recovered) setNotice(result.removedCount ? `Restored the layout and skipped ${result.removedCount} invalid saved item${result.removedCount === 1 ? '' : 's'}.` : 'The saved layout was invalid or from another version, so an empty bag was restored.');
-      } catch {
-        setNotice('Saved layout could not be read. A fresh bag is ready.');
+      const params = new URLSearchParams(window.location.search);
+      const payload = params.get('layout');
+      const shared = payload === null ? null : decodeBagPlannerLayout(payload);
+      if (shared?.valid) {
+        persistAllowed.current = false;
+        setTemporaryShared(true);
+        setLayout(layoutToPlannerState(shared.layout));
+        const slug = params.get('source');
+        const build = weaponBuildGroups.flatMap((group) => group.builds).find((entry) => entry.href.split('/').pop() === slug);
+        if (build?.plannerLayout && validateBagPlannerLayout(build.plannerLayout).valid && encodeBagPlannerLayout(build.plannerLayout) === encodeBagPlannerLayout(shared.layout)) {
+          setSourceBuild({ title: build.title, href: build.href });
+        }
+      } else {
+        try {
+          const result = safeRestoreLayout(
+            window.localStorage.getItem(PLANNER_STORAGE_KEY),
+            plannerItemsById,
+            (tabletId) => Boolean(plannerTabletRulesById.get(tabletId)?.rotation.canRotate),
+            new Set(plannerWeapons.map((weapon) => weapon.value)),
+            defaultPlannerWeapon,
+          );
+          setLayout(result.layout);
+          if (shared && !shared.valid) setNotice(shared.errors.some((error) => error.code === 'GAME_VERSION') ? 'This shared layout was created for another game version. This shared layout could not be loaded.' : 'This shared layout could not be loaded.');
+          else if (result.recovered) setNotice(result.removedCount ? `Restored the layout and skipped ${result.removedCount} invalid saved item${result.removedCount === 1 ? '' : 's'}.` : 'The saved layout was invalid or from another version, so an empty bag was restored.');
+        } catch {
+          setNotice(shared ? 'This shared layout could not be loaded.' : 'Saved layout could not be read. A fresh bag is ready.');
+        }
       }
       setReady(true);
     });
@@ -149,9 +184,11 @@ export function SephiriaBagPlanner() {
   }, []);
 
   useEffect(() => {
-    if (!ready) return;
+    if (!ready || !persistAllowed.current) return;
     try {
-      window.localStorage.setItem(PLANNER_STORAGE_KEY, JSON.stringify(layout));
+      const canonical = plannerStateToLayout(layout);
+      if (!validateBagPlannerLayout(canonical).valid) throw new Error('Invalid layout');
+      window.localStorage.setItem(PLANNER_STORAGE_KEY, JSON.stringify(canonical));
     } catch {
       queueMicrotask(() => setNotice('This browser could not save the layout. You can still use the Planner for this session.'));
     }
@@ -209,7 +246,7 @@ export function SephiriaBagPlanner() {
     const result = resizeLayout(layout, nextCapacity);
     if (!result.layout) return;
     if (result.removed.length && !window.confirm(`Changing capacity will remove ${result.removed.length} item${result.removed.length === 1 ? '' : 's'} outside the new bag size. Continue?`)) return;
-    setLayout(result.layout);
+    editLayout(result.layout);
     setSelectedPlacementId(null);
     setPendingItemId(null);
     setMovingPlacementId(null);
@@ -230,7 +267,7 @@ export function SephiriaBagPlanner() {
         setNotice('Choose an empty active slot to move this item.');
         return;
       }
-      setLayout(next);
+      editLayout(next);
       setMovingPlacementId(null);
       setSelectedPlacementId(null);
       setNotice('Item moved.');
@@ -251,7 +288,7 @@ export function SephiriaBagPlanner() {
         return;
       }
       const placement = next.slots[slot];
-      setLayout(next);
+      editLayout(next);
       setPendingItemId(null);
       setSelectedPlacementId(placement?.placementId ?? null);
       setHoveredSlot(null);
@@ -273,7 +310,7 @@ export function SephiriaBagPlanner() {
 
   const removeSelected = () => {
     if (selectedPlacementSlot < 0) return;
-    setLayout(removeItem(layout, selectedPlacementSlot));
+    editLayout(removeItem(layout, selectedPlacementSlot));
     setSelectedPlacementId(null);
     setMovingPlacementId(null);
     setNotice('Item removed from the bag.');
@@ -292,7 +329,7 @@ export function SephiriaBagPlanner() {
 
   const rotateSelected = () => {
     if (selectedPlacementSlot < 0 || !selectedTabletRule?.rotation.canRotate) return;
-    setLayout(rotateTablet(layout, selectedPlacementSlot, selectedTabletRule.rotation.canRotate));
+    editLayout(rotateTablet(layout, selectedPlacementSlot, selectedTabletRule.rotation.canRotate));
   };
 
   useEffect(() => {
@@ -311,7 +348,7 @@ export function SephiriaBagPlanner() {
       )) return;
       if (selectedPlacement?.itemKind !== 'Tablet' || !selectedTabletRule?.rotation.canRotate) return;
       event.preventDefault();
-      setLayout((current) => rotateTablet(current, selectedPlacementSlot, selectedTabletRule.rotation.canRotate));
+      editLayout((current) => rotateTablet(current, selectedPlacementSlot, selectedTabletRule.rotation.canRotate));
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
@@ -330,7 +367,7 @@ export function SephiriaBagPlanner() {
   }, [selectedPlacementId]);
 
   const handleClear = () => {
-    setLayout(clearLayout(layout));
+    editLayout(clearLayout(layout));
     setSelectedPlacementId(null);
     setPendingItemId(null);
     setMovingPlacementId(null);
@@ -339,7 +376,7 @@ export function SephiriaBagPlanner() {
   };
 
   const handleReset = () => {
-    setLayout(resetLayout(defaultPlannerWeapon));
+    editLayout(resetLayout(defaultPlannerWeapon));
     setSelectedPlacementId(null);
     setPendingItemId(null);
     setMovingPlacementId(null);
@@ -348,7 +385,7 @@ export function SephiriaBagPlanner() {
   };
 
   const updateWeapon = (weapon: PlannerWeapon) => {
-    setLayout({ ...layout, weapon });
+    editLayout({ ...layout, weapon });
     setNotice(`Weapon changed to ${humanWeapon(weapon)}. Artifact requirements recalculated.`);
   };
 
@@ -417,7 +454,7 @@ export function SephiriaBagPlanner() {
         {tabletState && <span className={styles.tabletDirection} aria-label={`${directionLabel[(placement?.rotation ?? 'UP') as PlannerRotation]} orientation`}>{directionGlyph[(placement?.rotation ?? 'UP') as PlannerRotation]}</span>}
         <span className={styles.gridSlotLabel}>{slot + 1}</span>
       </button>
-      {isSelected && selectedPlacement && selectedItem && <fieldset
+      {isSelected && !movingPlacementId && selectedPlacement && selectedItem && <fieldset
         className={styles.actionPopover}
         data-planner-item-actions="true"
         data-side={popoverSide}
@@ -433,6 +470,7 @@ export function SephiriaBagPlanner() {
   };
 
   return <div className="mt-6 space-y-5">
+    {sourceBuild && <div className="flex flex-wrap items-center gap-3 text-sm text-[var(--secondary)]">Loaded from: <strong className="text-[var(--heading)]">{sourceBuild.title}</strong><a href={sourceBuild.href} className="font-semibold text-[var(--orange-text)] underline underline-offset-4">Back to Build</a></div>}
     <section className="grid gap-3 border border-[var(--gold-border)]/25 bg-[var(--surface)] p-4 sm:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_auto] sm:items-end sm:p-5" aria-label="Planner controls">
       <label className="block min-w-0 text-xs font-semibold text-[var(--heading)]" htmlFor="planner-capacity">Bag capacity
         <select id="planner-capacity" value={layout.capacity} onChange={(event) => handleCapacityChange(Number(event.target.value))} className="mt-1.5 block w-full border border-[var(--gold-border)]/30 bg-[var(--wiki-page-bg)] px-3 py-2.5 text-sm text-[var(--text)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--orange-text)]">
@@ -445,11 +483,15 @@ export function SephiriaBagPlanner() {
         </select>
       </label>
       <div className="flex flex-wrap gap-2 sm:justify-end">
+        <button type="button" onClick={shareLayout} disabled={!ready} className="inline-flex min-h-10 items-center gap-2 border border-[var(--orange-text)]/60 px-3 text-xs font-semibold text-[var(--heading)] hover:bg-[var(--neutral-wash)]/[0.06] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--orange-text)]">Share Layout</button>
         <button type="button" onClick={handleClear} className="inline-flex min-h-10 items-center gap-2 border border-[var(--gold-border)]/30 px-3 text-xs font-semibold text-[var(--secondary)] hover:bg-[var(--neutral-wash)]/[0.06] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--orange-text)]"><Trash2 size={14} />Clear Bag</button>
         <button type="button" onClick={handleReset} className="inline-flex min-h-10 items-center gap-2 border border-[var(--gold-border)]/30 px-3 text-xs font-semibold text-[var(--secondary)] hover:bg-[var(--neutral-wash)]/[0.06] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--orange-text)]"><RotateCw size={14} />Reset</button>
       </div>
     </section>
 
+    {manualShareUrl && <label className="block min-w-0 border border-[var(--gold-border)]/25 bg-[var(--surface)] p-3 text-xs font-semibold text-[var(--heading)]">Copy this link
+      <input aria-label="Share link" readOnly value={manualShareUrl} onFocus={(event) => event.currentTarget.select()} className="mt-2 block w-full min-w-0 border border-[var(--gold-border)]/30 bg-[var(--wiki-page-bg)] px-3 py-2 text-sm text-[var(--text)]" />
+    </label>}
     {notice && <output className="flex items-start justify-between gap-3 border border-[var(--gold-border)]/25 bg-[var(--surface)] px-3 py-2 text-xs text-[var(--secondary)]" aria-live="polite"><span>{notice}</span><button type="button" onClick={() => setNotice('')} aria-label="Dismiss message" className="shrink-0 text-[var(--muted)] hover:text-[var(--heading)]"><X size={14} /></button></output>}
 
     <div className={styles.plannerLayout}>
@@ -488,7 +530,7 @@ export function SephiriaBagPlanner() {
             </div>}
           </div>
           {planner.summary.unresolvedArtifacts > 0 && <p className="mt-3 text-xs text-amber-100">{planner.summary.unresolvedArtifacts} Artifact{planner.summary.unresolvedArtifacts === 1 ? '' : 's'} need more layout or weapon information.</p>}
-          <p className="mt-3 flex items-center gap-1.5 text-[11px] text-[var(--muted)]"><Check size={13} className="text-emerald-300" />{ready ? 'Layout saved in this browser' : 'Restoring saved layout…'}</p>
+          <p className="mt-3 flex items-center gap-1.5 text-[11px] text-[var(--muted)]"><Check size={13} className="text-emerald-300" />{!ready ? 'Restoring saved layout…' : temporaryShared ? 'Shared layout · changes will be saved in this browser' : 'Layout saved in this browser'}</p>
         </Panel>
 
         <Panel title={selectedItem ? 'Selected Item' : 'Item Details'}>

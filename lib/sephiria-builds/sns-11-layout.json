@@ -1,938 +1,178 @@
 {
-  "buildId": "SNS-11",
+  "schemaVersion": 1,
   "gameVersion": "1.0.33",
-  "columns": 6,
-  "activeSlots": 33,
-  "artifactCount": 28,
-  "tabletCount": 5,
-  "comboCounts": [
-    {
-      "name": "Frost Relic",
-      "count": 10
-    },
-    {
-      "name": "Glacier",
-      "count": 8
-    },
-    {
-      "name": "Precision",
-      "count": 7
-    }
-  ],
-  "coreTargets": [
-    {
-      "name": "Blizzard Hammer",
-      "effectiveLevel": 6
-    },
-    {
-      "name": "Frozen Heart",
-      "effectiveLevel": 4
-    },
-    {
-      "name": "Ice Star",
-      "effectiveLevel": 6
-    },
-    {
-      "name": "Blue Claw",
-      "effectiveLevel": 4
-    },
-    {
-      "name": "Cold Lock",
-      "effectiveLevel": 5
-    },
-    {
-      "name": "Ice Wings",
-      "effectiveLevel": 5
-    },
-    {
-      "name": "Tiny Magic Conch",
-      "effectiveLevel": 3
-    }
-  ],
-  "cells": [
+  "capacity": 33,
+  "weapon": "SWORD_AND_SHIELD",
+  "placements": [
     {
       "slot": 0,
       "itemId": 1034,
-      "name": "Shieldmate",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-ad8a8c9fdc5ad6ad.webp",
-        "width": 20,
-        "height": 24
-      },
-      "baseLevel": 1,
-      "rawLevel": 2,
-      "tabletBonus": 1,
-      "effectiveLevel": 2,
-      "categories": [
-        "Sturdy"
-      ],
-      "contributors": [
-        {
-          "name": "Miracle",
-          "value": 1
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 1,
       "itemId": 1063,
-      "name": "Tiny Magic Conch",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-29525c14c53da989.webp",
-        "width": 25,
-        "height": 19
-      },
-      "baseLevel": 1,
-      "rawLevel": 3,
-      "tabletBonus": 2,
-      "effectiveLevel": 3,
-      "categories": [
-        "Frost Relic"
-      ],
-      "contributors": [
-        {
-          "name": "Brilliance",
-          "value": 2
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 2,
       "itemId": 2042,
-      "name": "Brilliance",
       "kind": "Tablet",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-107f483ecdc067ad.webp",
-        "width": 24,
-        "height": 20
-      },
-      "rotation": "LEFT",
-      "patterns": [
-        "Entire column · +1 Artifact level",
-        "1 cell left · +2 Artifact levels",
-        "1 cell right · +2 Artifact levels"
-      ],
-      "affectedArtifacts": [
-        {
-          "slot": 1,
-          "name": "Tiny Magic Conch",
-          "bonus": 2
-        },
-        {
-          "slot": 3,
-          "name": "Guillotine of Bitter Cold",
-          "bonus": 2
-        },
-        {
-          "slot": 8,
-          "name": "Golden Cloak",
-          "bonus": 1
-        },
-        {
-          "slot": 14,
-          "name": "Cold Lock",
-          "bonus": 1
-        },
-        {
-          "slot": 20,
-          "name": "Echo of the Glacier",
-          "bonus": 1
-        },
-        {
-          "slot": 26,
-          "name": "Sword Earrings",
-          "bonus": 1
-        },
-        {
-          "slot": 32,
-          "name": "Charm of Intelligence",
-          "bonus": 1
-        }
-      ],
-      "isActive": true
+      "rotation": "LEFT"
     },
     {
       "slot": 3,
       "itemId": 1303,
-      "name": "Guillotine of Bitter Cold",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-d7a80bc8e63bd668.webp",
-        "width": 21,
-        "height": 24
-      },
-      "baseLevel": 1,
-      "rawLevel": 3,
-      "tabletBonus": 2,
-      "effectiveLevel": 3,
-      "categories": [
-        "Frost Relic",
-        "Magitech"
-      ],
-      "contributors": [
-        {
-          "name": "Brilliance",
-          "value": 2
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 4,
       "itemId": 1014,
-      "name": "Scabbard of Exorcism",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-44b0360c9062d563.webp",
-        "width": 25,
-        "height": 23
-      },
-      "baseLevel": 1,
-      "rawLevel": 1,
-      "tabletBonus": 0,
-      "effectiveLevel": 1,
-      "categories": [
-        "Frost Relic"
-      ],
-      "contributors": []
+      "kind": "Artifact"
     },
     {
       "slot": 5,
       "itemId": 2051,
-      "name": "Conviction",
       "kind": "Tablet",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-e4bd1b5a8ab974bb.webp",
-        "width": 18,
-        "height": 24
-      },
-      "rotation": "DOWN",
-      "patterns": [
-        "1 cell below · +5 Artifact levels"
-      ],
-      "affectedArtifacts": [
-        {
-          "slot": 11,
-          "name": "Ice Star",
-          "bonus": 5
-        }
-      ],
-      "isActive": true
+      "rotation": "DOWN"
     },
     {
       "slot": 6,
       "itemId": 1150,
-      "name": "Frozen Egg",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-1073fd2e1449adae.webp",
-        "width": 18,
-        "height": 21
-      },
-      "baseLevel": 1,
-      "rawLevel": 2,
-      "tabletBonus": 1,
-      "effectiveLevel": 2,
-      "categories": [
-        "Glacier"
-      ],
-      "contributors": [
-        {
-          "name": "Miracle",
-          "value": 1
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 7,
       "itemId": 1137,
-      "name": "Voluspa",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-ca7fc2ee1f866755.webp",
-        "width": 19,
-        "height": 22
-      },
-      "baseLevel": 1,
-      "rawLevel": 1,
-      "tabletBonus": 0,
-      "effectiveLevel": 1,
-      "categories": [
-        "Frost Relic"
-      ],
-      "contributors": []
+      "kind": "Artifact"
     },
     {
       "slot": 8,
       "itemId": 1149,
-      "name": "Golden Cloak",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-b1cd73ee57213d99.webp",
-        "width": 24,
-        "height": 20
-      },
-      "baseLevel": 1,
-      "rawLevel": 2,
-      "tabletBonus": 1,
-      "effectiveLevel": 2,
-      "categories": [
-        "Wind Song"
-      ],
-      "contributors": [
-        {
-          "name": "Brilliance",
-          "value": 1
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 9,
       "itemId": 1247,
-      "name": "Frozen Bow",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-fd837efcbc752a64.webp",
-        "width": 23,
-        "height": 23
-      },
-      "baseLevel": 1,
-      "rawLevel": 1,
-      "tabletBonus": 0,
-      "effectiveLevel": 1,
-      "categories": [
-        "Frost Relic"
-      ],
-      "contributors": []
+      "kind": "Artifact"
     },
     {
       "slot": 10,
       "itemId": 2046,
-      "name": "Compression",
       "kind": "Tablet",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-05ebc69a58f80490.webp",
-        "width": 16,
-        "height": 18
-      },
-      "rotation": "DOWN",
-      "patterns": [
-        "1 cell below · +3 Artifact levels",
-        "2 cells below · +2 Artifact levels",
-        "3 cells below · +1 Artifact level"
-      ],
-      "affectedArtifacts": [
-        {
-          "slot": 16,
-          "name": "Blizzard Hammer",
-          "bonus": 3
-        },
-        {
-          "slot": 22,
-          "name": "Valter’s Work Monocle",
-          "bonus": 2
-        },
-        {
-          "slot": 28,
-          "name": "Ebony Scale",
-          "bonus": 1
-        }
-      ],
-      "isActive": true
+      "rotation": "DOWN"
     },
     {
       "slot": 11,
       "itemId": 1210,
-      "name": "Ice Star",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-e3cdfe4adb0c3668.webp",
-        "width": 21,
-        "height": 22
-      },
-      "baseLevel": 1,
-      "rawLevel": 6,
-      "tabletBonus": 5,
-      "effectiveLevel": 6,
-      "categories": [
-        "Frost Relic"
-      ],
-      "contributors": [
-        {
-          "name": "Conviction",
-          "value": 5
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 12,
       "itemId": 1179,
-      "name": "Ice Wings",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-d1ff289cc648d68e.webp",
-        "width": 25,
-        "height": 18
-      },
-      "baseLevel": 1,
-      "rawLevel": 5,
-      "tabletBonus": 4,
-      "effectiveLevel": 5,
-      "categories": [
-        "Frost Relic"
-      ],
-      "contributors": [
-        {
-          "name": "Miracle",
-          "value": 1
-        },
-        {
-          "name": "Requital",
-          "value": 3
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 13,
       "itemId": 2100,
-      "name": "Requital",
       "kind": "Tablet",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-274bb37c6d0d1281.webp",
-        "width": 25,
-        "height": 15
-      },
-      "rotation": "UP",
-      "patterns": [
-        "Entire row · +3 Artifact levels"
-      ],
-      "affectedArtifacts": [
-        {
-          "slot": 12,
-          "name": "Ice Wings",
-          "bonus": 3
-        },
-        {
-          "slot": 14,
-          "name": "Cold Lock",
-          "bonus": 3
-        },
-        {
-          "slot": 15,
-          "name": "Blue Claw",
-          "bonus": 3
-        },
-        {
-          "slot": 16,
-          "name": "Blizzard Hammer",
-          "bonus": 3
-        },
-        {
-          "slot": 17,
-          "name": "Frozen Heart",
-          "bonus": 3
-        }
-      ],
-      "isActive": true
+      "rotation": "UP"
     },
     {
       "slot": 14,
       "itemId": 1027,
-      "name": "Cold Lock",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-77b003ee96d3abd0.webp",
-        "width": 18,
-        "height": 21
-      },
-      "baseLevel": 1,
-      "rawLevel": 5,
-      "tabletBonus": 4,
-      "effectiveLevel": 5,
-      "categories": [],
-      "contributors": [
-        {
-          "name": "Brilliance",
-          "value": 1
-        },
-        {
-          "name": "Requital",
-          "value": 3
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 15,
       "itemId": 1145,
-      "name": "Blue Claw",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-01d6e4378a6878ce.webp",
-        "width": 14,
-        "height": 18
-      },
-      "baseLevel": 1,
-      "rawLevel": 4,
-      "tabletBonus": 3,
-      "effectiveLevel": 4,
-      "categories": [
-        "Glacier"
-      ],
-      "contributors": [
-        {
-          "name": "Requital",
-          "value": 3
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 16,
       "itemId": 1208,
-      "name": "Blizzard Hammer",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-46fc13cc2e8cfa94.webp",
-        "width": 23,
-        "height": 24
-      },
-      "baseLevel": 1,
-      "rawLevel": 7,
-      "tabletBonus": 6,
-      "effectiveLevel": 6,
-      "categories": [
-        "Frost Relic"
-      ],
-      "contributors": [
-        {
-          "name": "Compression",
-          "value": 3
-        },
-        {
-          "name": "Requital",
-          "value": 3
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 17,
       "itemId": 1209,
-      "name": "Frozen Heart",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-c2339c060733fdb3.webp",
-        "width": 20,
-        "height": 24
-      },
-      "baseLevel": 1,
-      "rawLevel": 4,
-      "tabletBonus": 3,
-      "effectiveLevel": 4,
-      "categories": [
-        "Frost Relic"
-      ],
-      "contributors": [
-        {
-          "name": "Requital",
-          "value": 3
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 18,
       "itemId": 1175,
-      "name": "Frostium Ring",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-5d55c95da6f98765.webp",
-        "width": 17,
-        "height": 21
-      },
-      "baseLevel": 1,
-      "rawLevel": 2,
-      "tabletBonus": 1,
-      "effectiveLevel": 2,
-      "categories": [
-        "Glacier"
-      ],
-      "contributors": [
-        {
-          "name": "Miracle",
-          "value": 1
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 19,
       "itemId": 1248,
-      "name": "Droplet of Plitvice",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-3b628bf740981938.webp",
-        "width": 15,
-        "height": 20
-      },
-      "baseLevel": 1,
-      "rawLevel": 1,
-      "tabletBonus": 0,
-      "effectiveLevel": 1,
-      "categories": [
-        "Frost Relic",
-        "Lake"
-      ],
-      "contributors": []
+      "kind": "Artifact"
     },
     {
       "slot": 20,
       "itemId": 1178,
-      "name": "Echo of the Glacier",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-06b268733ecdb4e5.webp",
-        "width": 25,
-        "height": 20
-      },
-      "baseLevel": 1,
-      "rawLevel": 2,
-      "tabletBonus": 1,
-      "effectiveLevel": 2,
-      "categories": [
-        "Glacier"
-      ],
-      "contributors": [
-        {
-          "name": "Brilliance",
-          "value": 1
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 21,
       "itemId": 1177,
-      "name": "Fluffy Fur Gloves",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-96a97a4992b35a75.webp",
-        "width": 24,
-        "height": 22
-      },
-      "baseLevel": 1,
-      "rawLevel": 1,
-      "tabletBonus": 0,
-      "effectiveLevel": 1,
-      "categories": [
-        "Glacier"
-      ],
-      "contributors": []
+      "kind": "Artifact"
     },
     {
       "slot": 22,
       "itemId": 1191,
-      "name": "Valter’s Work Monocle",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-fe3773f4a62a3b74.webp",
-        "width": 26,
-        "height": 23
-      },
-      "baseLevel": 1,
-      "rawLevel": 3,
-      "tabletBonus": 2,
-      "effectiveLevel": 3,
-      "categories": [
-        "Precision"
-      ],
-      "contributors": [
-        {
-          "name": "Compression",
-          "value": 2
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 23,
       "itemId": 1180,
-      "name": "Feet of the Ice Gull",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-490667f74a9d578b.webp",
-        "width": 26,
-        "height": 25
-      },
-      "baseLevel": 1,
-      "rawLevel": 1,
-      "tabletBonus": 0,
-      "effectiveLevel": 1,
-      "categories": [
-        "Glacier"
-      ],
-      "contributors": []
+      "kind": "Artifact"
     },
     {
       "slot": 24,
       "itemId": 2003,
-      "name": "Miracle",
       "kind": "Tablet",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-709c2252fd6ee6fe.webp",
-        "width": 24,
-        "height": 24
-      },
-      "rotation": "UP",
-      "patterns": [
-        "Entire row · +1 Artifact level",
-        "Entire column · +1 Artifact level"
-      ],
-      "affectedArtifacts": [
-        {
-          "slot": 0,
-          "name": "Shieldmate",
-          "bonus": 1
-        },
-        {
-          "slot": 6,
-          "name": "Frozen Egg",
-          "bonus": 1
-        },
-        {
-          "slot": 12,
-          "name": "Ice Wings",
-          "bonus": 1
-        },
-        {
-          "slot": 18,
-          "name": "Frostium Ring",
-          "bonus": 1
-        },
-        {
-          "slot": 25,
-          "name": "Faultfinder Needle",
-          "bonus": 1
-        },
-        {
-          "slot": 26,
-          "name": "Sword Earrings",
-          "bonus": 1
-        },
-        {
-          "slot": 27,
-          "name": "Warm Stone",
-          "bonus": 1
-        },
-        {
-          "slot": 28,
-          "name": "Ebony Scale",
-          "bonus": 1
-        },
-        {
-          "slot": 29,
-          "name": "Scythe of Berut",
-          "bonus": 1
-        },
-        {
-          "slot": 30,
-          "name": "Tainted Bandage",
-          "bonus": 1
-        }
-      ],
-      "isActive": true
+      "rotation": "UP"
     },
     {
       "slot": 25,
       "itemId": 1274,
-      "name": "Faultfinder Needle",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-ea7cbd6f537c56ad.webp",
-        "width": 19,
-        "height": 19
-      },
-      "baseLevel": 1,
-      "rawLevel": 2,
-      "tabletBonus": 1,
-      "effectiveLevel": 2,
-      "categories": [
-        "Precision"
-      ],
-      "contributors": [
-        {
-          "name": "Miracle",
-          "value": 1
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 26,
       "itemId": 1033,
-      "name": "Sword Earrings",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-458c4428770fd49c.webp",
-        "width": 12,
-        "height": 24
-      },
-      "baseLevel": 1,
-      "rawLevel": 3,
-      "tabletBonus": 2,
-      "effectiveLevel": 3,
-      "categories": [
-        "Precision"
-      ],
-      "contributors": [
-        {
-          "name": "Miracle",
-          "value": 1
-        },
-        {
-          "name": "Brilliance",
-          "value": 1
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 27,
       "itemId": 1018,
-      "name": "Warm Stone",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-ed8274fd12a70032.webp",
-        "width": 16,
-        "height": 18
-      },
-      "baseLevel": 1,
-      "rawLevel": 2,
-      "tabletBonus": 1,
-      "effectiveLevel": 2,
-      "categories": [
-        "Precision"
-      ],
-      "contributors": [
-        {
-          "name": "Miracle",
-          "value": 1
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 28,
       "itemId": 1091,
-      "name": "Ebony Scale",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-f2d0968f197e4cdd.webp",
-        "width": 27,
-        "height": 19
-      },
-      "baseLevel": 1,
-      "rawLevel": 3,
-      "tabletBonus": 2,
-      "effectiveLevel": 3,
-      "categories": [
-        "Precision"
-      ],
-      "contributors": [
-        {
-          "name": "Miracle",
-          "value": 1
-        },
-        {
-          "name": "Compression",
-          "value": 1
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 29,
       "itemId": 1173,
-      "name": "Scythe of Berut",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-e52a8ffcdb40d2c6.webp",
-        "width": 25,
-        "height": 26
-      },
-      "baseLevel": 1,
-      "rawLevel": 2,
-      "tabletBonus": 1,
-      "effectiveLevel": 2,
-      "categories": [
-        "Precision"
-      ],
-      "contributors": [
-        {
-          "name": "Miracle",
-          "value": 1
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 30,
       "itemId": 1109,
-      "name": "Tainted Bandage",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-05c564ceeea0f46a.webp",
-        "width": 26,
-        "height": 23
-      },
-      "baseLevel": 1,
-      "rawLevel": 2,
-      "tabletBonus": 1,
-      "effectiveLevel": 2,
-      "categories": [
-        "Precision"
-      ],
-      "contributors": [
-        {
-          "name": "Miracle",
-          "value": 1
-        }
-      ]
+      "kind": "Artifact"
     },
     {
       "slot": 31,
       "itemId": 1293,
-      "name": "Snow Mountain Long-eared Bat",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-a011c036fc537503.webp",
-        "width": 20,
-        "height": 22
-      },
-      "baseLevel": 1,
-      "rawLevel": 1,
-      "tabletBonus": 0,
-      "effectiveLevel": 1,
-      "categories": [
-        "Glacier",
-        "Wind Song"
-      ],
-      "contributors": []
+      "kind": "Artifact"
     },
     {
       "slot": 32,
       "itemId": 1002,
-      "name": "Charm of Intelligence",
-      "kind": "Artifact",
-      "image": {
-        "src": "/images/games/sephiria/wiki/items/item-5781da52e3098c7f.webp",
-        "width": 9,
-        "height": 13
-      },
-      "baseLevel": 1,
-      "rawLevel": 2,
-      "tabletBonus": 1,
-      "effectiveLevel": 2,
-      "categories": [
-        "Glacier"
-      ],
-      "contributors": [
-        {
-          "name": "Brilliance",
-          "value": 1
-        }
-      ]
+      "kind": "Artifact"
     }
-  ],
-  "label": "Blizzard's Eve"
+  ]
 }

@@ -847,7 +847,7 @@ export default function SephiriaSwordAndShieldBuildPage() {
             </PageSection>
 
             <PageSection id="build-layout" number="06" title="Build Layout">
-              <SephiriaBuildLayout />
+              <SephiriaBuildLayout build={currentBuild} />
             </PageSection>
 
             <PageSection id="gameplay-demo" number="07" title="Gameplay Demo">

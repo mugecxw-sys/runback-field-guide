@@ -7,12 +7,13 @@ import {
 } from '@/components/game-wiki/sephiria-sword-shield-build-page';
 import { SephiriaBuildLayout, type BuildLayoutData } from '@/components/game-wiki/sephiria-build-layout';
 import { sns11CoreArtifacts, sns11DamageSources, sns11Page } from '@/lib/sephiria-builds/sns-11-page';
-import sns11Layout from '@/lib/sephiria-builds/sns-11-layout.json';
+import { buildLayoutForDisplay } from '@/lib/sephiria-builds/build-layout-from-planner';
 import { weaponBuildGroups } from '@/lib/sephiria-build-navigation';
 
 export function SephiriaBlizzardsEveBuildPage() {
-  const layout = sns11Layout as BuildLayoutData;
-  const notes = weaponBuildGroups.flatMap((group) => group.builds).find((build) => build.href === sns11Page.href)!.fieldNotes;
+  const build = weaponBuildGroups.flatMap((group) => group.builds).find((entry) => entry.href === sns11Page.href)!;
+  const layout = buildLayoutForDisplay(build) as BuildLayoutData;
+  const notes = build.fieldNotes;
 
   return (
     <SephiriaSwordShieldBuildPage data={sns11Page} layoutData={layout}>
@@ -58,7 +59,7 @@ export function SephiriaBlizzardsEveBuildPage() {
 
       <PageSection id="build-layout" number="03" title="Backpack / Artifact Layout">
         <p className="text-sm text-[var(--body-soft)]">{layout.activeSlots} slots · {layout.artifactCount} Artifacts · {layout.tabletCount} Tablets</p>
-        <SephiriaBuildLayout layoutData={layout} />
+        <SephiriaBuildLayout layoutData={layout} build={build} />
       </PageSection>
 
       <PageSection id="why-this-build-works" number="04" title="Why This Build Works">

@@ -254,3 +254,10 @@
     order: 1;
   }
 }
+
+.empty {
+  min-width: 0;
+  min-height: 87px;
+  border: 1px dashed color-mix(in srgb, var(--gold-border) 25%, transparent);
+  background: var(--surface-inset);
+}

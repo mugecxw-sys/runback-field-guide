@@ -1,3 +1,4 @@
+import { validateBagPlannerLayout, layoutToPlannerState, plannerStateToLayout, type BagPlannerLayoutV1 } from './bag-planner-layout';
 import type { PlannerCatalogItem, PlannerItemKind, PlannerRotation, PlannerWeapon } from './data';
 import { ROTATIONS } from './engine/tablet-rule-engine.mjs';
 
@@ -109,7 +110,14 @@ export function safeRestoreLayout(
   const fallback = createEmptyLayout(defaultWeapon);
   if (!raw) return { layout: fallback, recovered: false, removedCount: 0 };
   try {
-    const saved = JSON.parse(raw) as Partial<PlannerLayout>;
+    const parsed: unknown = JSON.parse(raw);
+    const source = { itemsById, canRotate: canRotateTablet, validWeapons };
+    if (parsed && typeof parsed === 'object' && 'placements' in parsed) {
+      const validation = validateBagPlannerLayout(parsed, source);
+      if (!validation.valid) return { layout: fallback, recovered: true, removedCount: 0 };
+      return { layout: layoutToPlannerState(parsed as BagPlannerLayoutV1, source), recovered: false, removedCount: 0 };
+    }
+    const saved = parsed as Partial<PlannerLayout>;
     if (saved.schemaVersion !== PLANNER_SCHEMA_VERSION || saved.gameVersion !== PLANNER_GAME_VERSION || !Array.isArray(saved.slots)) {
       return { layout: fallback, recovered: true, removedCount: 0 };
     }
@@ -136,11 +144,9 @@ export function safeRestoreLayout(
       slots[slot] = { placementId: value.placementId, itemId: item.id, itemKind: item.itemKind, rotation, baseLevel: 1 };
     }
     const recovered = removedCount > 0 || saved.capacity !== capacity || !validWeapons.has(String(saved.weapon));
-    return {
-      layout: { schemaVersion: PLANNER_SCHEMA_VERSION, gameVersion: PLANNER_GAME_VERSION, capacity, weapon, slots },
-      recovered,
-      removedCount,
-    };
+    const restored = { schemaVersion: PLANNER_SCHEMA_VERSION as 1, gameVersion: PLANNER_GAME_VERSION as '1.0.33', capacity, weapon, slots };
+    if (!validateBagPlannerLayout(plannerStateToLayout(restored), source).valid) return { layout: fallback, recovered: true, removedCount };
+    return { layout: restored, recovered, removedCount };
   } catch {
     return { layout: fallback, recovered: true, removedCount: 0 };
   }

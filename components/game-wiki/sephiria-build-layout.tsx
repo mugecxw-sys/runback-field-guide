@@ -2,7 +2,9 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
-import sns01Layout from '@/lib/sephiria-builds/sns-01-layout.json';
+import { buildLayoutForDisplay } from '@/lib/sephiria-builds/build-layout-from-planner';
+import type { SephiriaBuildDefinition } from '@/lib/sephiria-build-navigation';
+import { OpenInBagPlannerButton } from '@/components/game-wiki/open-in-bag-planner-button';
 import styles from './sephiria-build-layout.module.css';
 
 const directionArrows: Record<string, string> = {
@@ -25,7 +27,7 @@ export type BuildLayoutData = {
     slot: number;
     itemId: number;
     name: string;
-    kind: 'Artifact' | 'Tablet';
+    kind: 'Artifact' | 'Tablet' | 'Consumable' | 'Item';
     image: { src: string; width: number; height: number } | null;
     effectiveLevel?: number;
     rawLevel?: number;
@@ -39,18 +41,20 @@ export type BuildLayoutData = {
   }[];
 };
 
-const defaultLayout = sns01Layout as unknown as BuildLayoutData;
 
 function signed(value: number) {
   return `${value >= 0 ? '+' : '−'}${Math.abs(value)}`;
 }
 
 export function SephiriaBuildLayout({
-  layoutData = defaultLayout,
+  layoutData,
+  build,
 }: {
   layoutData?: BuildLayoutData;
+  build?: SephiriaBuildDefinition;
 }) {
-  const layout = layoutData;
+  const layout = layoutData ?? (build?.plannerLayout ? buildLayoutForDisplay(build) : null);
+  if (!layout) throw new Error('Missing build layout');
   const detailId = `${layout.buildId.toLowerCase()}-layout-details`;
   const [selectedSlot, setSelectedSlot] = useState<number | null>(null);
   const detailsRef = useRef<HTMLElement>(null);
@@ -69,20 +73,30 @@ export function SephiriaBuildLayout({
   }, [selectedSlot]);
 
   return (
-    <div className={styles.layout}>
+    <div className="space-y-4">
+      {build && (
+        <OpenInBagPlannerButton
+          plannerLayout={build.plannerLayout}
+          buildSlug={build.href.split('/').pop()!}
+        />
+      )}
+      <div className={styles.layout}>
       <fieldset className={styles.grid} aria-label={`${layout.label ?? layout.buildId} inventory layout`}>
-        {layout.cells.map((cell) => (
+        {Array.from({ length: layout.activeSlots }, (_, slot) => {
+          const cell = layout.cells.find((entry) => entry.slot === slot);
+          if (!cell) return <div key={`empty-${slot}`} className={styles.empty} aria-label={`Empty slot ${slot + 1}`} />;
+          return (
           <button
             key={cell.slot}
             type="button"
             className={`${styles.cell} ${cell.kind === 'Tablet' ? styles.tablet : ''} ${selectedSlot === cell.slot ? styles.selected : ''}`}
-            aria-label={`${cell.name}, ${cell.kind === 'Tablet' ? `Tablet, facing ${cell.rotation?.toLowerCase()}` : `Lv${cell.effectiveLevel}`}`}
+            aria-label={`${cell.name}, ${cell.kind === 'Tablet' ? `Tablet, facing ${cell.rotation?.toLowerCase()}` : cell.kind === 'Artifact' ? `Lv${cell.effectiveLevel}` : cell.kind}`}
             aria-expanded={selectedSlot === cell.slot}
             aria-controls={detailId}
             title={
               cell.kind === 'Artifact'
                 ? `${cell.name} · Base Lv1 ${signed(cell.tabletBonus ?? 0)} Tablet → Lv${cell.effectiveLevel}\nCombo: ${cell.categories?.join(', ')}`
-                : `${cell.name} · Tablet\n${cell.patterns?.join('\n')}`
+                : cell.kind === 'Tablet' ? `${cell.name} · Tablet\n${cell.patterns?.join('\n')}` : `${cell.name} · ${cell.kind}`
             }
             onClick={() => setSelectedSlot(cell.slot)}
           >
@@ -102,10 +116,11 @@ export function SephiriaBuildLayout({
             <span className={styles.level}>
               {cell.kind === 'Tablet'
                 ? `Tablet ${directionArrows[cell.rotation ?? 'UP']}`
-                : `Lv${cell.effectiveLevel}`}
+                : cell.kind === 'Artifact' ? `Lv${cell.effectiveLevel}` : cell.kind}
             </span>
           </button>
-        ))}
+          );
+        })}
         {Array.from({ length: lockedCells }, (_, index) => (
           <div
             key={`locked-${index}`}
@@ -189,7 +204,7 @@ export function SephiriaBuildLayout({
                 </p>
               )}
             </>
-          ) : (
+          ) : selected.kind === 'Tablet' ? (
             <>
               <p className={styles.tabletLabel}>
                 Tablet · Facing {selected.rotation?.toLowerCase()}
@@ -209,9 +224,10 @@ export function SephiriaBuildLayout({
                 ))}
               </ul>
             </>
-          )}
+          ) : <p>{selected.kind}</p>}
         </section>
       )}
+      </div>
     </div>
   );
 }

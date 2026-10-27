@@ -7,7 +7,9 @@
   },
   "scripts": {
     "dev": "vinext dev",
+    "prebuild": "node --experimental-strip-types --import ./tests/sephiria-planner/node-loader-register.mjs tests/sephiria-planner/validate-build-presets.mjs",
     "build": "vinext build",
+    "validate:sephiria-build-layouts": "node --experimental-strip-types --import ./tests/sephiria-planner/node-loader-register.mjs tests/sephiria-planner/validate-build-presets.mjs",
     "start": "wrangler dev --config dist/server/wrangler.json",
     "lint": "oxlint",
     "format": "oxfmt"
