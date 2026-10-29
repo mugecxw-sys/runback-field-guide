@@ -7,7 +7,9 @@ import type { BuildLayoutData } from '@/components/game-wiki/sephiria-build-layo
 export function buildLayoutForDisplay(build: SephiriaBuildDefinition): BuildLayoutData {
   if (!build.plannerLayout) throw new Error('Build has no complete Planner layout');
   const input = build.plannerLayout;
-  const state = layoutToPlannerState(input);
+  // Article data can be evaluated during Worker module initialization, where
+  // random values are forbidden. Display calculations only need unique slot IDs.
+  const state = layoutToPlannerState(input, undefined, (slot) => `build-slot-${slot}`);
   const result = evaluateBagLayout({
     capacity: input.capacity, weapon: input.weapon, slots: state.slots,
     itemsById: plannerItemsById, tabletRulesById: plannerTabletRulesById,

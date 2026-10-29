@@ -67,12 +67,16 @@ export function plannerStateToLayout(state: PlannerLayout): BagPlannerLayoutV1 {
   };
 }
 
-export function layoutToPlannerState(layout: BagPlannerLayoutV1, source: LayoutCatalog = catalog): PlannerLayout {
+export function layoutToPlannerState(
+  layout: BagPlannerLayoutV1,
+  source: LayoutCatalog = catalog,
+  createPlacementId?: (slot: number) => string,
+): PlannerLayout {
   const check = validateBagPlannerLayout(layout, source);
   if (!check.valid) throw new Error('Invalid Planner layout: ' + check.errors.map((x) => x.code).join(', '));
   const slots: (PlannerPlacement | null)[] = Array(layout.capacity).fill(null);
   for (const p of layout.placements) slots[p.slot] = {
-    placementId: globalThis.crypto?.randomUUID?.() ?? `placement-${p.slot}-${Math.random().toString(36).slice(2)}`,
+    placementId: createPlacementId ? createPlacementId(p.slot) : (globalThis.crypto?.randomUUID?.() ?? `placement-${p.slot}-${Math.random().toString(36).slice(2)}`),
     itemId: p.itemId, itemKind: p.kind, rotation: p.kind === 'Tablet' ? p.rotation! : null, baseLevel: 1,
   };
   return { schemaVersion: 1, gameVersion: '1.0.33', capacity: layout.capacity, weapon: layout.weapon, slots };
