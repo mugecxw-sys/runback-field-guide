@@ -24,7 +24,7 @@ export function PageSection({
   children,
 }: {
   id: string;
-  number: string;
+  number?: string;
   title: string;
   children: ReactNode;
 }) {
@@ -34,9 +34,9 @@ export function PageSection({
       aria-labelledby={`${id}-heading`}
       className="mt-10 min-w-0 scroll-mt-24 border-t border-[var(--gold-border)]/25 pt-6 sm:mt-12 sm:pt-7"
     >
-      <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[var(--gold-label)]">
+      {number && <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[var(--gold-label)]">
         Build Guide / {number}
-      </p>
+      </p>}
       <h2
         id={`${id}-heading`}
         className="mb-4 mt-2 font-serif text-2xl font-semibold leading-tight text-[var(--heading)] sm:mb-5 sm:text-3xl"
@@ -78,6 +78,31 @@ export function LocalGameImage({ image, size = 44 }: { image: LocalBuildImage; s
   );
 }
 
+export function SephiriaBuildSetupCards({ cards }: { cards: SephiriaSwordShieldBuildPageData['setup'] }) {
+  return (
+    <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+      {cards.map((card) => (
+        <Card key={card.title}>
+          <h3 className="font-serif text-lg font-semibold text-[var(--heading)]">{card.title}</h3>
+          {card.fruits && <ul className="mt-3 space-y-3">{card.fruits.map(fruit => <li key={fruit.category} className="flex items-center gap-3">
+            <LocalGameImage image={fruit.image} size={40} />
+            <div><p className="font-semibold text-[var(--heading)]">{fruit.fruit} ×{fruit.quantity}</p><p className="text-sm text-[var(--muted)]">{fruit.category}</p></div>
+          </li>)}</ul>}
+          {card.selections && <ul className="mt-3 space-y-3">{card.selections.map(selection => <li key={selection.name} className="flex min-w-0 items-center gap-3">
+            <LocalGameImage image={selection.image} size={40} />
+            <div className="min-w-0"><p className="break-words text-sm font-semibold leading-6 text-[var(--heading)]">{selection.name}</p>{selection.note && <p className="text-xs leading-5 text-[var(--body-soft)]">{selection.note}</p>}</div>
+          </li>)}</ul>}
+          {(!card.selections || card.image || card.lines.length > 0) && <div className="mt-3 flex items-start gap-3">
+            {card.image && <LocalGameImage image={card.image} size={44} />}
+            <ul className="space-y-1 text-sm leading-6 text-[var(--body-soft)]">{card.lines.map((line) => <li key={line}>{line}</li>)}</ul>
+          </div>}
+          {card.description && <p className="mt-3 text-sm leading-6 text-[var(--body-soft)]">{card.description}</p>}
+        </Card>
+      ))}
+    </div>
+  );
+}
+
 function SnapshotField({ label, children }: { label: string; children: ReactNode }) {
   return (
     <div className="grid grid-cols-[6.5rem_minmax(0,1fr)] gap-3 border-b border-[var(--gold-border)]/15 pb-2 last:border-0 last:pb-0">
@@ -92,15 +117,17 @@ export function SephiriaBuildVideo({
   title,
   caption,
   poster,
+  preload = 'none',
 }: {
   videoPath: string;
   title: string;
   caption: string;
   poster?: string;
+  preload?: 'none' | 'metadata';
 }) {
   return (
     <div className="max-w-[640px]">
-      <video controls playsInline preload="none" poster={poster} aria-label={title} className="block aspect-video w-full border border-[var(--gold-border)]/25 bg-[var(--surface-inset)]">
+      <video controls playsInline preload={preload} poster={poster} aria-label={title} className="block aspect-video w-full border border-[var(--gold-border)]/25 bg-[var(--surface-inset)]">
         <source src={videoPath} type="video/mp4" />
         <track kind="captions" src={videoPath.replace('gameplay-demo.mp4', 'gameplay-context.vtt')} srcLang="en" label="Gameplay context" />
         Your browser does not support this video.
@@ -241,22 +268,7 @@ export function SephiriaSwordShieldBuildPage({
 
             {children ?? <>
             <PageSection id="before-the-run" number="01" title="Before the Run">
-              <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-                {data.setup.map((card) => (
-                  <Card key={card.title}>
-                    <h3 className="font-serif text-lg font-semibold text-[var(--heading)]">{card.title}</h3>
-                    {card.fruits && <ul className="mt-3 space-y-3">{card.fruits.map(fruit => <li key={fruit.category} className="flex items-center gap-3">
-                      <LocalGameImage image={fruit.image} size={40} />
-                      <div><p className="font-semibold text-[var(--heading)]">{fruit.fruit} ×{fruit.quantity}</p><p className="text-sm text-[var(--muted)]">{fruit.category}</p></div>
-                    </li>)}</ul>}
-                    <div className="mt-3 flex items-start gap-3">
-                      {card.image && <LocalGameImage image={card.image} size={44} />}
-                      <ul className="space-y-1 text-sm leading-6 text-[var(--body-soft)]">{card.lines.map((line) => <li key={line}>{line}</li>)}</ul>
-                    </div>
-                    {card.description && <p className="mt-3 text-sm leading-6 text-[var(--body-soft)]">{card.description}</p>}
-                  </Card>
-                ))}
-              </div>
+              <SephiriaBuildSetupCards cards={data.setup} />
             </PageSection>
 
             <PageSection id="core-items" number="02" title="Core Items">

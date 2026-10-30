@@ -3,6 +3,7 @@ import sns01 from '@/lib/sephiria-builds/sns-01-layout.json';
 import sns04 from '@/lib/sephiria-builds/sns-04-layout.json';
 import sns11 from '@/lib/sephiria-builds/sns-11-layout.json';
 import { frogAutoStormCloudBuild } from '@/lib/sephiria-builds/frog-auto-storm-cloud';
+import { electricDifficulty60Build } from '@/lib/sephiria-builds/shock-difficulty-60';
 
 export type SephiriaBuildDefinition = {
   title: string;
@@ -118,6 +119,7 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
         ],
       },
       frogAutoStormCloudBuild,
+      electricDifficulty60Build,
     ],
   },
   { name: 'Greatsword', imageKey: 'WPN-02', builds: [] },

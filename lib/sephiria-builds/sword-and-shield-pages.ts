@@ -28,7 +28,7 @@ export type SephiriaSwordShieldBuildPageData = {
   comboLabel?: string;
   costumeImage: LocalBuildImage;
   weaponRoute: { label: string; image: LocalBuildImage }[];
-  setup: { title: string; lines: string[]; image?: LocalBuildImage; description?: string; fruits?: { category: string; fruit: string; quantity: number; image: LocalBuildImage }[] }[];
+  setup: { title: string; lines: string[]; image?: LocalBuildImage; description?: string; selections?: { name: string; image: LocalBuildImage; note?: string }[]; fruits?: { category: string; fruit: string; quantity: number; image: LocalBuildImage }[] }[];
   coreItems: {
     name: string;
     effectiveLevel: number;
@@ -231,7 +231,7 @@ export const sns06Page: SephiriaSwordShieldBuildPageData = {
   ],
 };
 
-export function buildPageMetadata(data: SephiriaSwordShieldBuildPageData) {
+export function buildPageMetadata(data: Pick<SephiriaSwordShieldBuildPageData, 'href' | 'seoTitle' | 'subtitle' | 'description'>) {
   const canonical = `${siteUrl}${data.href}`;
   const title = data.seoTitle ?? `Sephiria Sword & Shield Build: ${data.subtitle} | RUNBACK`;
   return {
