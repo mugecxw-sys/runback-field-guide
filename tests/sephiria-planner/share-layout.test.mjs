@@ -111,7 +111,7 @@ void test('future Build obtains a valid URL from its optional layout alone',()=>
 });
 void test('all current official layouts validate and calculate after a round-trip',()=>{
  const builds=weaponBuildGroups.flatMap(g=>g.builds);
- assert.equal(builds.length,6);
+ assert.equal(builds.length,7);
  assert.equal(builds.filter(build=>build.plannerLayout).length,4);
  assert.equal(builds.find(build=>build.title==='Superconductor Lightning Spear Build')?.plannerLayout,undefined);
  for(const build of builds){

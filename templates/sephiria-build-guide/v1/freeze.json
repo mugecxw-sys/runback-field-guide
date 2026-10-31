@@ -1,0 +1,47 @@
+{
+  "template": "RUNBACK Sephiria Build Guide",
+  "version": 1,
+  "status": "FROZEN",
+  "frozenOn": "2026-10-31",
+  "timezone": "Asia/Shanghai",
+  "routes": {
+    "index": "/games/sephiria/builds/greatsword",
+    "detail": "/games/sephiria/builds/greatsword/greatsword-build"
+  },
+  "editableContent": [
+    "Build title",
+    "Costumes and their effects",
+    "Talents",
+    "Starting items",
+    "Core items",
+    "Weapon upgrades",
+    "Gameplay notes",
+    "Tips",
+    "Actual run results and media"
+  ],
+  "lockedDesign": [
+    "18-card structure",
+    "6-section order",
+    "Sidebar and category-to-card-to-detail navigation",
+    "RUNBACK light/dark theme",
+    "Card sizing, spacing and typography",
+    "Responsive behavior"
+  ],
+  "sourceSha256": {
+    "lib/sephiria-builds/greatsword-build-guide.ts": "ca21d4bb8e67ac69e018a0b7eccbb076bae3f104b05267d67b3656dcb94061b2",
+    "components/game-wiki/sephiria-greatsword-build-shell.tsx": "a8daee6e879266230b5199ec26cfdac2c20bdd7ddc559e9474db7b5fe80a2bbb",
+    "components/game-wiki/sephiria-build-sidebar.tsx": "b6f6e12e70886ac39f416d7695d53cc1086906b3aafbbf6482f183aa34a954dd",
+    "components/game-wiki/sephiria-sword-shield-build-page.tsx": "76bc30767a41750ff1489ec38e6f467112e02fca5104de594679d4951463b251",
+    "lib/sephiria-build-navigation.ts": "371e80a10b900441a26b0d7ce9f756ae78fb548c56097aa5fe3feface2573108",
+    "app/games/sephiria/builds/greatsword/page.tsx": "eb64eb8283f44e606c5c0117bfb2bec9be69e63a69072ed79a36a9c9c8169a36",
+    "app/games/sephiria/builds/greatsword/greatsword-build/page.tsx": "48f784d1c7d2746d9c66d9d787bf9d33147f4f67b08242e5b27168457aaba0aa",
+    "app/games/sephiria/builds/greatsword/build-guide-preview/page.tsx": "aaed8e1e1ad218668e5511c5bbe2a4627cf6f041968ff4b62fda20b439265ee2"
+  },
+  "exportedSha256": {
+    "index.html": "af3b702ca32bd65d2ed7edc89b971820fa04bc613ae5847f7ded64eb4ec53299",
+    "build.html": "de2ba632be2a5681428c92a56221d3a7450974199298afd85fef35245ec6fde2",
+    "assets/greatsword.webp": "72da663b5e4273740a23b60736bdff90a87cef9303fb079b1e1b960f5bbbdc85",
+    "README.md": "259a08b6ca8bd154692bb19427d59da509c502f626e32e4c53fcff499c08c608"
+  },
+  "hashNormalization": "Text: UTF-8 with LF line endings; binary: original bytes"
+}

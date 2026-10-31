@@ -22,6 +22,7 @@ export type SephiriaBuildDefinition = {
 export type SephiriaWeaponBuildGroup = {
   name: string;
   imageKey: string;
+  href?: string;
   builds: SephiriaBuildDefinition[];
 };
 
@@ -122,7 +123,18 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
       electricDifficulty60Build,
     ],
   },
-  { name: 'Greatsword', imageKey: 'WPN-02', builds: [] },
+  {
+    name: 'Greatsword',
+    href: '/games/sephiria/builds/greatsword',
+    imageKey: 'WPN-02',
+    builds: [{
+      title: '[Build Name]',
+      href: '/games/sephiria/builds/greatsword/greatsword-build',
+      weaponRoute: ['Greatsword'],
+      finalBuild: [],
+      fieldNotes: [],
+    }],
+  },
   { name: 'Dagger', imageKey: 'WPN-04', builds: [] },
   { name: 'Staff', imageKey: 'WPN-06', builds: [] },
   { name: 'Crossbow', imageKey: 'WPN-03', builds: [] },

@@ -35,7 +35,21 @@ export function SephiriaBuildSidebar({ activeHref }: { activeHref: string }) {
           {listedWeaponBuildGroups.map((group) => {
             const current = group.builds.some(
               (build) => build.href === activeHref,
-            );
+            ) || group.href === activeHref;
+            if (group.href) {
+              return (
+                <a
+                  key={group.name}
+                  href={group.href}
+                  data-weapon-group={group.name}
+                  aria-current={current ? (group.href === activeHref ? 'page' : 'location') : undefined}
+                  className={`${linkStyle} ${current ? 'bg-[var(--surface-raised)] font-semibold text-[var(--heading)]' : ''}`}
+                  style={current ? { borderLeftColor: 'var(--orange-text)' } : undefined}
+                >
+                  {group.name}
+                </a>
+              );
+            }
             return group.builds.length ? (
               <details
                 key={group.name}

@@ -5,3 +5,5 @@ Keep one public guide for setups with substantially the same weapon route, core 
 Choose the version supported by actual play that has the more complete, coherent setup. Publish a separate Build only when its gameplay loop, main damage source, weapon route, or core mechanism is meaningfully different.
 
 Public guides describe the retained setup without internal candidate names, comparison labels, or research history. Use official item types from the shared dataset, not names, to distinguish Artifacts and Tablets.
+
+Sephiria Build Guide Template V1 was frozen by the author on 2026-10-31. Its approved cards, section order, spacing, sidebar, theme colors and responsive behavior are documented in `templates/sephiria-build-guide/v1/README.md`. New Build names and gameplay content belong in their individual data. Preserve the frozen design unless the author explicitly requests a design change; record intentional design revisions as a new template version.

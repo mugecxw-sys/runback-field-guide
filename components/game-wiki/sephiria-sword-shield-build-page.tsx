@@ -167,7 +167,7 @@ export function SephiriaSwordShieldBuildPage({
     if (!image) throw new Error(`Missing local weapon category image ${group.imageKey}`);
     return {
       name: group.name,
-      href: group.builds[0]?.href,
+      href: group.href ?? group.builds[0]?.href,
       selected: group.name === currentGroup.name,
       count: group.builds.length,
       image,
