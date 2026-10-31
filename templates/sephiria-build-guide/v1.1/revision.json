@@ -1,0 +1,12 @@
+{
+  "template": "RUNBACK Sephiria Build Guide",
+  "version": "1.1",
+  "status": "FROZEN",
+  "baseVersion": "1",
+  "baseFreeze": "../v1/freeze.json",
+  "authorApprovedOn": "2026-11-01",
+  "change": "Remove the hero placeholder sentence: [The build’s main damage engine.]",
+  "sourceFile": "lib/sephiria-builds/greatsword-build-guide.ts",
+  "sourceSha256": "a6ed9870c4a8d46d26e584bf4fa3c6f27bf2d8f1aec3435e4d52b08f28b25038",
+  "hashNormalization": "UTF-8 with LF line endings"
+}

@@ -6,7 +6,6 @@ const greatswordBuildGuideHtml = `<div class="bg-wrap" style="padding-top:28px">
 <div style="flex:1.4 1 420px">
 <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px"><span class="bg-tag bg-g">Greatsword</span><span class="bg-tag">Difficulty 60</span></div>
 <h1 style="font-size:56px;line-height:1.15;font-weight:800">{{BUILD_NAME}}</h1>
-<p style="font-size:20px;margin-top:12px;font-weight:500;color:var(--gold-text)">[The build’s main damage engine.]</p>
 <p style="margin-top:16px;color:var(--body-soft);max-width:560px">[A short introduction to the core setup, playstyle, and who this build suits.]</p>
 <div class="bg-nv" style="margin-top:24px"><a href="#prep">Before the Run</a><a href="#core">Core Items</a><a href="#weapon">Weapon Route</a><a href="#play">How to Play</a><a href="#notes">Tips</a><a href="#final">Run Results</a></div>
 </div>
