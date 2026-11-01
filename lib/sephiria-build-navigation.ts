@@ -128,11 +128,20 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
     href: '/games/sephiria/builds/greatsword',
     imageKey: 'WPN-02',
     builds: [{
-      title: '[Build Name]',
+      title: 'Max Crit Rate Special Attack Greatsword',
       href: '/games/sephiria/builds/greatsword/greatsword-build',
-      weaponRoute: ['Greatsword'],
-      finalBuild: [],
-      fieldNotes: [],
+      weaponRoute: ['Greatsword', 'Hypersensitivity', 'Negligence'],
+      finalBuild: ['Sturdy 10', 'Precision 10'],
+      fieldNotes: [
+        {
+          title: 'Negligence is the pick',
+          detail: 'Whirlwind comes out already charged plus +15% Special Attack Damage. Loving Gaze is the alternative Tier 3 branch if that is what drops.',
+        },
+        {
+          title: 'Skeleton costume first',
+          detail: 'The built-in +20% damage is free and multiplies every crit the Special Attack lands.',
+        },
+      ],
     }],
   },
   { name: 'Dagger', imageKey: 'WPN-04', builds: [] },
