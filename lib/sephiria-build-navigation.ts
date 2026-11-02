@@ -162,6 +162,25 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           detail: '+33% Critical Damage Rate at max level, paid for with Max MP. Worth it once crit rate is already capped.',
         },
       ],
+    }, {
+      title: 'Attack Speed Special Attack Greatsword: Bloodletting Gearblade',
+      href: '/games/sephiria/builds/greatsword/bloodletting-gearblade-build',
+      weaponRoute: ['Greatsword', 'Bone Gearblade', 'Bloodletting Gearblade'],
+      finalBuild: ['Sturdy 10', 'Precision 10'],
+      fieldNotes: [
+        {
+          title: 'The blade trades HP for basic attacks',
+          detail: 'Bloodletting Gearblade shortens your HP bar on purpose and pays the difference back as Basic Attack Damage. That is why this run skips the crit stack and leans on Attack Speed instead.',
+        },
+        {
+          title: 'Attack Speed is the real engine',
+          detail: 'Sturdy and Precision still come first, but the damage here comes from landing basic attacks quickly and often. Mystical Pendulum and Pointed Club are the pieces that make that pay off.',
+        },
+        {
+          title: 'This list is a floor, not a ceiling',
+          detail: 'The run drew badly and several key items never dropped. Fill the empty slots with more Attack Speed or Basic Attack Damage and the build should only get better.',
+        },
+      ],
     }],
   },
   { name: 'Dagger', imageKey: 'WPN-04', builds: [] },
