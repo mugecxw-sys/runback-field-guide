@@ -8,8 +8,8 @@ const href = '/games/sephiria/builds/greatsword';
 
 export const metadata: Metadata = {
   title: 'Sephiria Greatsword Builds | RUNBACK',
+  description: 'Sephiria greatsword builds with talent spreads, core items, weapon upgrade routes, and gameplay notes for every run.',
   alternates: { canonical: href },
-  robots: { index: false, follow: false },
 };
 
 export default function GreatswordBuildsPage() {

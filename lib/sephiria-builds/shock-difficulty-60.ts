@@ -66,6 +66,7 @@ export const electricGameplayNotes = [
 export const electricDifficulty60Build: SephiriaBuildDefinition = {
   title: 'Sword & Shield Electric Build',
   href,
+  publishedAt: '2026-10-30T00:00:00.000Z',
   weaponRoute: shockWeaponRoute.map((step) => step.name),
   finalBuild: shockComboTargets.map((combo) => `${combo.name} ${combo.count}/${combo.count}`),
   comboLabel: 'Core Combo Targets',

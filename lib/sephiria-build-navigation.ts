@@ -17,6 +17,8 @@ export type SephiriaBuildDefinition = {
   comboLabel?: string;
   style?: string;
   inactiveSlotLabel?: string;
+  publishedAt?: string;
+  updatedAt?: string;
 };
 
 export type SephiriaWeaponBuildGroup = {
@@ -39,6 +41,8 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
       {
         title: 'Grip of Fear Cleave Build',
         href: '/games/sephiria/builds/sword-and-shield/grip-of-fear-cleave-build',
+        publishedAt: '2026-10-25T00:00:00.000Z',
+        updatedAt: '2026-10-28T00:00:00.000Z',
         plannerLayout: sns01 as BagPlannerLayoutV1,
         coreArtifactIds: [1034, 1221, 1112, 1009, 1191],
         weaponRoute: ['Tiny Destruction', 'Grip of Fear'],
@@ -79,6 +83,8 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
       {
         title: 'Indomitable Normal Attack Build',
         href: '/games/sephiria/builds/sword-and-shield/indomitable-normal-attack-build',
+        publishedAt: '2026-10-25T00:00:00.000Z',
+        updatedAt: '2026-10-28T00:00:00.000Z',
         plannerLayout: sns04 as BagPlannerLayoutV1,
         coreArtifactIds: [1262, 1080, 1218, 1086, 1191],
         weaponRoute: ['Default Sword & Shield', 'Perfect Balance', 'Indomitable'],
@@ -95,6 +101,8 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
       {
         title: 'Superconductor Lightning Spear Build',
         href: '/games/sephiria/builds/sword-and-shield/superconductor-lightning-spear-build',
+        publishedAt: '2026-10-25T00:00:00.000Z',
+        updatedAt: '2026-10-28T00:00:00.000Z',
         weaponRoute: ['Default Sword & Shield', 'Conductor', 'Superconductor'],
         finalBuild: ['Storm Cloud 8', 'Magitech 10', 'Sturdy 9'],
         fieldNotes: [
@@ -109,6 +117,7 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
       {
         title: "Blizzard's Eve Frost Hammer Build",
         href: '/games/sephiria/builds/sword-and-shield/blizzards-eve-build',
+        publishedAt: '2026-10-27T00:00:00.000Z',
         plannerLayout: sns11 as BagPlannerLayoutV1,
         coreArtifactIds: [1208, 1209, 1210, 1145, 1027, 1179, 1063],
         weaponRoute: ['Default Sword & Shield', 'Frost Shard', "Blizzard's Eve"],
@@ -131,6 +140,7 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
     builds: [{
       title: 'Max Crit Rate Special Attack Greatsword',
       href: '/games/sephiria/builds/greatsword/greatsword-build',
+      publishedAt: '2026-10-31T00:00:00.000Z',
       weaponRoute: ['Greatsword', 'Hypersensitivity', 'Negligence'],
       finalBuild: ['Sturdy 10', 'Precision 10'],
       fieldNotes: [
@@ -146,6 +156,7 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
     }, {
       title: 'Max Crit Rate Special Attack Greatsword: Black Iron Halberd',
       href: '/games/sephiria/builds/greatsword/black-iron-halberd-build',
+      publishedAt: '2026-11-01T00:00:00.000Z',
       weaponRoute: ['Greatsword', 'Hypersensitivity', 'Black Iron Halberd'],
       finalBuild: ['Sturdy 10', 'Precision 10'],
       fieldNotes: [
@@ -165,6 +176,7 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
     }, {
       title: 'Attack Speed Special Attack Greatsword: Bloodletting Gearblade',
       href: '/games/sephiria/builds/greatsword/bloodletting-gearblade-build',
+      publishedAt: '2026-11-02T00:00:00.000Z',
       weaponRoute: ['Greatsword', 'Bone Gearblade', 'Bloodletting Gearblade'],
       finalBuild: ['Sturdy 10', 'Precision 10'],
       fieldNotes: [

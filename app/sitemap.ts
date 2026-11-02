@@ -12,6 +12,7 @@ import {
 } from '@/lib/repo-guide-pages';
 import { wanderburgWikiPages } from '@/lib/wanderburg-wiki-pages';
 import { sephiriaWikiPages } from '@/lib/sephiria-wiki-data';
+import { listedWeaponBuildGroups } from '@/lib/sephiria-build-navigation';
 import { chapterOneGuide } from '@/lib/sephiria-chapter-one-guide';
 import { chapterTwoGuide } from '@/lib/sephiria-chapter-two-guide';
 import { chapterThreeGuide } from '@/lib/sephiria-chapter-three-guide';
@@ -31,6 +32,21 @@ const siteLastModified = latestDate(
   ],
   guidePublishedAt,
 );
+
+const sephiriaBuildIndexDate = '2026-11-02T00:00:00.000Z';
+
+// Every weapon group page plus every published build guide. New builds added to
+// weaponBuildGroups are picked up automatically — keep `publishedAt` on the
+// build definition current so lastmod stays meaningful.
+const sephiriaBuildPages = listedWeaponBuildGroups.flatMap((group) => [
+  ...(group.href
+    ? [{ href: group.href, lastModified: sephiriaBuildIndexDate }]
+    : []),
+  ...group.builds.map((build) => ({
+    href: build.href,
+    lastModified: build.updatedAt ?? build.publishedAt ?? sephiriaBuildIndexDate,
+  })),
+]);
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -69,6 +85,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: page.publishedAt,
       changeFrequency: 'monthly' as const,
       priority: page.group === 'game' || page.group === 'wiki' ? 0.9 : 0.8,
+    })),
+    ...sephiriaBuildPages.map((page) => ({
+      url: `${siteUrl}${page.href}`,
+      lastModified: page.lastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.9,
     })),
     {
       url: siteUrl,

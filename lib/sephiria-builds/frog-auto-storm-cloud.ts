@@ -18,6 +18,7 @@ const href = '/games/sephiria/builds/sword-and-shield/frog-auto-storm-cloud-buil
 export const frogAutoStormCloudBuild: SephiriaBuildDefinition = {
   title: 'Frog Auto Storm Cloud Build',
   href,
+  publishedAt: '2026-10-28T00:00:00.000Z',
   weaponRoute: ['Conductor', 'Ballista Sword'],
   finalBuild: ['Storm Cloud 10', 'Companion 10'],
   style: 'Low-Input Automatic Damage',

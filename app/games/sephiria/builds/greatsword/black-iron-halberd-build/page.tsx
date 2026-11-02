@@ -11,7 +11,7 @@ const currentBuild = group.builds[position];
 
 export const metadata: Metadata = {
   title: `Sephiria ${currentBuild.title} | RUNBACK`,
-  robots: { index: false, follow: false },
+  description: `${currentBuild.title} build for Sephiria — talent spread, core items, weapon route, and how to cap critical chance first before stacking critical damage.`,
   alternates: { canonical: href },
 };
 

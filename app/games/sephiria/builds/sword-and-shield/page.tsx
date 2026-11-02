@@ -8,8 +8,8 @@ const href = '/games/sephiria/builds/sword-and-shield';
 
 export const metadata: Metadata = {
   title: 'Sephiria Sword & Shield Builds | RUNBACK',
+  description: 'Sephiria sword and shield builds with talent spreads, core items, weapon upgrade routes, and gameplay notes for every run.',
   alternates: { canonical: href },
-  robots: { index: false, follow: false },
 };
 
 export default function SwordAndShieldBuildsPage() {
