@@ -13,7 +13,7 @@ export type GameWikiLink = {
 export type GameWikiNavigationSection = {
   label: string;
   links: GameWikiLink[];
-  groups?: { label: string; links: GameWikiLink[] }[];
+  groups?: { label: string; href?: string; links: GameWikiLink[] }[];
 };
 
 export type GameWikiConfig = {
@@ -31,12 +31,31 @@ function SectionLabel({ children }: { children: ReactNode }) {
 }
 
 function NavigationGroups({ groups, activeHref }: { groups: NonNullable<GameWikiNavigationSection['groups']>; activeHref: string }) {
-  return <div className="space-y-1">{groups.map((group) => group.links.length ? (
-    <details key={group.label} open data-weapon-group={group.label}>
-      <summary className={`cursor-pointer px-2 py-1.5 text-sm ${group.links.some((item) => item.href === activeHref) ? 'font-semibold text-[var(--gold-text)]' : 'text-[var(--secondary)]'}`}>{group.label}</summary>
-      <div className="ml-3">{group.links.map((item) => <a key={item.href} href={item.href} aria-current={item.href === activeHref ? 'page' : undefined} className="block border-l-2 px-3 py-2 text-sm text-[var(--secondary)] hover:text-[var(--heading)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--orange-text)]" style={{ borderLeftColor: item.href === activeHref ? 'var(--orange-text)' : 'transparent' }}>{item.label}</a>)}</div>
-    </details>
-  ) : <div key={group.label} data-weapon-group={group.label} className="px-2 py-1.5 text-sm text-[var(--secondary)]">{group.label}<span style={{ marginLeft: '0.5rem' }} className="text-[10px] text-[var(--muted)]">Coming Soon</span></div>)}</div>;
+  return <div className="space-y-1">{groups.map((group) => {
+    const current = group.href === activeHref || group.links.some((item) => item.href === activeHref);
+    if (group.href) {
+      return (
+        <a
+          key={group.label}
+          href={group.href}
+          data-weapon-group={group.label}
+          aria-current={current ? (group.href === activeHref ? 'page' : 'location') : undefined}
+          className={`block border-l-2 px-2 py-1.5 text-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--orange-text)] ${current ? 'font-semibold text-[var(--heading)]' : 'text-[var(--secondary)] hover:text-[var(--heading)]'}`}
+          style={{ borderLeftColor: current ? 'var(--orange-text)' : 'transparent' }}
+        >
+          {group.label}
+        </a>
+      );
+    }
+    return group.links.length ? (
+      <details key={group.label} open data-weapon-group={group.label}>
+        <summary className={`cursor-pointer px-2 py-1.5 text-sm ${group.links.some((item) => item.href === activeHref) ? 'font-semibold text-[var(--gold-text)]' : 'text-[var(--secondary)]'}`}>{group.label}</summary>
+        <div className="ml-3">{group.links.map((item) => <a key={item.href} href={item.href} aria-current={item.href === activeHref ? 'page' : undefined} className="block border-l-2 px-3 py-2 text-sm text-[var(--secondary)] hover:text-[var(--heading)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--orange-text)]" style={{ borderLeftColor: item.href === activeHref ? 'var(--orange-text)' : 'transparent' }}>{item.label}</a>)}</div>
+      </details>
+    ) : (
+      <div key={group.label} data-weapon-group={group.label} className="px-2 py-1.5 text-sm text-[var(--secondary)]">{group.label}<span style={{ marginLeft: '0.5rem' }} className="text-[10px] text-[var(--muted)]">Coming Soon</span></div>
+    );
+  })}</div>;
 }
 
 export function GameWikiSidebar({ config, activeHref }: { config: GameWikiConfig; activeHref: string }) {

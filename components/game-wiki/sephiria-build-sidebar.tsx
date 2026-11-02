@@ -113,6 +113,26 @@ export function SephiriaBuildSidebar({ activeHref }: { activeHref: string }) {
           </a>
         ))}
       </section>
+      <section data-sidebar-section="Database" className="mt-5">
+        <h2 className="mb-2 text-[11px] font-bold uppercase tracking-[0.18em] text-[var(--gold-label)]">
+          Database
+        </h2>
+        {sectionLinks('DATABASE').map((item) => (
+          <a key={item.href} href={item.href} className={linkStyle}>
+            {item.label}
+          </a>
+        ))}
+      </section>
+      <section data-sidebar-section="Systems" className="mt-5">
+        <h2 className="mb-2 text-[11px] font-bold uppercase tracking-[0.18em] text-[var(--gold-label)]">
+          Systems
+        </h2>
+        {sectionLinks('SYSTEMS').map((item) => (
+          <a key={item.href} href={item.href} className={linkStyle}>
+            {item.label}
+          </a>
+        ))}
+      </section>
     </nav>
   );
 }

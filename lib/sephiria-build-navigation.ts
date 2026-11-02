@@ -34,6 +34,7 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
   {
     name: 'Sword & Shield',
     imageKey: 'WPN-01',
+    href: '/games/sephiria/builds/sword-and-shield',
     builds: [
       {
         title: 'Grip of Fear Cleave Build',
