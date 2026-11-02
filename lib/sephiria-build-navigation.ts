@@ -143,6 +143,25 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           detail: 'The built-in +20% damage is free and multiplies every crit the Special Attack lands.',
         },
       ],
+    }, {
+      title: 'Max Crit Rate Special Attack Greatsword: Black Iron Halberd',
+      href: '/games/sephiria/builds/greatsword/black-iron-halberd-build',
+      weaponRoute: ['Greatsword', 'Hypersensitivity', 'Black Iron Halberd'],
+      finalBuild: ['Sturdy 10', 'Precision 10'],
+      fieldNotes: [
+        {
+          title: 'Same crit engine, halberd finish',
+          detail: 'Critical Chance is capped first, then everything goes into Critical Damage and Special Attack Damage. The weapon line ends on the halberd branch.',
+        },
+        {
+          title: 'The halberd pays out on the outer ring',
+          detail: 'Black Iron Halberd widens Whirlwind and adds 50% damage plus a small heal when the hit lands on the outer area. Fight from the edge.',
+        },
+        {
+          title: 'Sword Earrings are pure crit damage',
+          detail: '+33% Critical Damage Rate at max level, paid for with Max MP. Worth it once crit rate is already capped.',
+        },
+      ],
     }],
   },
   { name: 'Dagger', imageKey: 'WPN-04', builds: [] },
