@@ -193,6 +193,26 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           detail: 'The run drew badly and several key items never dropped. Fill the empty slots with more Attack Speed or Basic Attack Damage and the build should only get better.',
         },
       ],
+    }, {
+      title: 'Companion Special Attack Greatsword: Lazarion',
+      href: '/games/sephiria/builds/greatsword/lazarion-companion-build',
+      publishedAt: '2026-11-04T00:00:00.000Z',
+      weaponRoute: ['Greatsword', 'Troubling Delight', 'Lazarion'],
+      finalBuild: ['Companion 10', 'Precision 10'],
+      fieldNotes: [
+        {
+          title: 'The Special Attack summons your damage',
+          detail: 'Lazarion swaps Whirlwind for Amethyst Conjuration. The amethyst it summons counts as a companion, so it inherits the Companion combo and every point of crit you are already carrying.',
+        },
+        {
+          title: 'Tactical Manual is the whole build',
+          detail: 'It feeds +30% to +120% of your Critical Chance and Critical Damage into your Companion. Without it you just have two half-builds standing next to each other.',
+        },
+        {
+          title: 'Twenty HP is the real constraint',
+          detail: 'Scholar Lizard has infinite MP but Max HP locked at 20, so spare picks are better spent on the Guardian combo than on pushing Precision and Companion to 10/10.',
+        },
+      ],
     }],
   },
   { name: 'Dagger', imageKey: 'WPN-04', builds: [] },
