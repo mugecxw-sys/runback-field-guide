@@ -131,6 +131,27 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
       },
       frogAutoStormCloudBuild,
       electricDifficulty60Build,
+      {
+        title: 'Infinite Block Sword & Shield: Perfect Balance',
+        href: '/games/sephiria/builds/sword-and-shield/perfect-balance-guard-build',
+        publishedAt: '2026-11-04T00:00:00.000Z',
+        weaponRoute: ['Sword & Shield', 'Perfect Balance', 'Indomitable'],
+        finalBuild: ['Sturdy 10', 'Precision 10'],
+        fieldNotes: [
+          {
+            title: 'Block stops costing anything',
+            detail: 'Perfect Balance makes every Normal Attack Block in front of you automatically. Block normally drains MP, so pairing it with Scholar Lizard’s infinite MP is what turns it into an endless free guard.',
+          },
+          {
+            title: 'The two crowns do the damage',
+            detail: 'Crown of Humility scales the last hit of your combo and Golden Crown of Arrogance gives that same hit up to +100% Critical Chance. Build the run around them.',
+          },
+          {
+            title: 'One button, no rotation',
+            detail: 'Once it is online you simply keep Normal Attacking. There is no combo to track and no cooldown to manage, which is exactly why this one is worth recommending to newer players.',
+          },
+        ],
+      },
     ],
   },
   {
