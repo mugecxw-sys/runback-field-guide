@@ -234,6 +234,26 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           detail: 'Scholar Lizard has infinite MP but Max HP locked at 20, so spare picks are better spent on the Guardian combo than on pushing Precision and Companion to 10/10.',
         },
       ],
+    }, {
+      title: 'Normal Attack Greatsword: Eternal Frost Greatsword',
+      href: '/games/sephiria/builds/greatsword/eternal-frost-greatsword-build',
+      publishedAt: '2026-11-05T00:00:00.000Z',
+      weaponRoute: ['Greatsword', 'Frostbound Greatsword', 'Eternal Frost Greatsword'],
+      finalBuild: ['Glacier 10', 'Wind Song 8', 'Elemental 6'],
+      fieldNotes: [
+        {
+          title: 'Cold Damage is the whole damage profile',
+          detail: 'Eternal Frost Greatsword adds up to 55% of your Cold Damage onto every Weapon Attack. Wizard Bunny pushes it further with +15% Cold Damage, and its Physical penalty barely matters because almost nothing here is Physical.',
+        },
+        {
+          title: 'Keep the target Frostbitten',
+          detail: 'The basic combo is 15% faster, so you land more hits — and more hits keep Frostbite applied. Fluffy Fur Gloves then make every Cold hit on a Frostbitten target hurt more.',
+        },
+        {
+          title: 'Balance Elemental against Critical Chance',
+          detail: 'Damage here runs off the average of the two, so spreading picks evenly beats over-investing in one. Elemental at 6/6 is worth reaching for the combo bonus.',
+        },
+      ],
     }],
   },
   { name: 'Dagger', imageKey: 'WPN-04', builds: [] },
