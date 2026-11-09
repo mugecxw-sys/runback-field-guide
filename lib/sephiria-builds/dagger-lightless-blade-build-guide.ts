@@ -34,7 +34,7 @@ const buildGuideHtml = `<div class="bg-wrap" style="padding-top:28px">
 </div>
 <div class="bg-card">
 <h3>Run Preparation</h3>
-<ul class="bg-l"><li>Starting Items: Dagger and the Skeleton costume.</li><li>Difficulty: 60</li><li>Wish Pool Priority: Wings and Kriton’s Seal. Wings is not mobility here — it is a damage wish, because more Attack Speed means more Blade Prison hits. Kriton’s Seal hits nothing at all, but it keeps the Leaf economy healthy so the pieces you actually want are still there when they show up.</li><li>Early-Run Goal: Wind Song first, Precision second. Do not spread out before both are at 10/10.</li></ul>
+<ul class="bg-l"><li>Starting Items: Dagger and the Skeleton costume.</li><li>Difficulty: 60</li><li>Wish Pool Priority: Wings and Kriton’s Seal. Wings is the one that matters, and it is not a mobility pick — it gives +3% / +6% / +9% / +12% / +15% / +18% Attack Speed outright, then converts your extra Attack Speed into Universal Damage Boost: every 25% of bonus Attack Speed adds +1% at level 1, and that exchange rate tightens with every tier until it is +1% per 5% at level 6. Push it all the way to level 6 — nothing else in the pool multiplies the one stat this build runs on. Kriton’s Seal hits nothing at all, but it keeps the Leaf economy healthy so the pieces you actually want are still on the shelf when they show up.</li><li>Early-Run Goal: Wind Song first, Precision second. Do not spread out before both are at 10/10.</li></ul>
 </div>
 </div>
 </div>
