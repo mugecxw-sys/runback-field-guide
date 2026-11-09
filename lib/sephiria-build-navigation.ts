@@ -280,6 +280,26 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           detail: 'Precision and the Critical Damage pieces come after Attack Speed. Blade Prison rolls a critical on every individual hit, so crit multiplies the hit count instead of competing with it.',
         },
       ],
+    }, {
+      title: 'Special Attack Dagger: Absolute Envy',
+      href: '/games/sephiria/builds/dagger/absolute-envy-build',
+      publishedAt: '2026-11-09T00:00:00.000Z',
+      weaponRoute: ['Dagger', 'Beyond the Threshold', 'Absolute Envy'],
+      finalBuild: ['Wind Song 10', 'Precision 10'],
+      fieldNotes: [
+        {
+          title: 'Only three hits get the bonus',
+          detail: 'Absolute Envy raises the 3rd, 4th and 5th Normal Attack by 25% and stiffens their stagger. The rest of the string is just your normal damage, which is why the build feels like it is waiting for something.',
+        },
+        {
+          title: 'White Wolf trades defence for uptime',
+          detail: 'Infinity Dash means you can dash-attack forever. It also turns off dash invincibility, so you can no longer dash through attacks — the exact trade that makes this setup fragile at Difficulty 60.',
+        },
+        {
+          title: 'An honest ceiling',
+          detail: '6,500 DPS at Difficulty 60. The author calls this one a failed experiment, so read it as a starting point to tinker with, not a build to copy.',
+        },
+      ],
     }],
   },
   { name: 'Staff', imageKey: 'WPN-06', builds: [] },
