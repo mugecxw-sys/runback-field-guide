@@ -327,6 +327,26 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           detail: 'Bounty Hunter disables Dash Attack entirely, which makes any Dash Attack damage item worthless here — every slot has to feed Dash Count, Dash Recovery, or the crit line instead.',
         },
       ],
+    }, {
+      title: 'Colossal Crossbow: Mark Stabilization',
+      href: '/games/sephiria/builds/crossbow/mark-stabilization-build',
+      publishedAt: '2026-11-09T00:00:00.000Z',
+      weaponRoute: ['Colossal Crossbow', 'Colossal Crossbow: Unstable Lightning Mark', 'Colossal Crossbow: Mark Stabilization'],
+      finalBuild: ['Precision 10', 'Magitech 10', 'Elemental 6'],
+      fieldNotes: [
+        {
+          title: 'Lightning Arrow applies Electrocution',
+          detail: 'A 40% chance per Normal Attack to fire a Lightning Arrow, and every one of those arrows plants Electrocution with a 25% damage bonus. You are scaling a damage over time, not a bolt.',
+        },
+        {
+          title: 'Debuff duration is a damage stat',
+          detail: 'Oink Shaman’s Necklace adds up to +100% debuff duration and stacks with itself. Electrocution only pays if it lives long enough to tick.',
+        },
+        {
+          title: 'Mind the reload gap',
+          detail: 'Mini Ballista and Ahmad’s Spirit Powder exist to keep Electrocution running while you reload, which is the only window where the build goes quiet.',
+        },
+      ],
     }],
   },
   { name: 'Katana', imageKey: 'WPN-05', builds: [] },
