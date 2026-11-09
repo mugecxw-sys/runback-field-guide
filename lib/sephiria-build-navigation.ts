@@ -303,7 +303,32 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
     }],
   },
   { name: 'Staff', imageKey: 'WPN-06', builds: [] },
-  { name: 'Crossbow', imageKey: 'WPN-03', builds: [] },
+  {
+    name: 'Colossal Crossbow',
+    href: '/games/sephiria/builds/crossbow',
+    imageKey: 'WPN-03',
+    builds: [{
+      title: 'Colossal Crossbow: Bounty Hunter',
+      href: '/games/sephiria/builds/crossbow/bounty-hunter-build',
+      publishedAt: '2026-11-09T00:00:00.000Z',
+      weaponRoute: ['Colossal Crossbow', 'Colossal Crossbow: Reload Device', 'Bounty Hunter'],
+      finalBuild: ['Precision 10', 'Sturdy 10', 'Wind Song 6'],
+      fieldNotes: [
+        {
+          title: 'Dash Count is a damage stat',
+          detail: 'Bounty Hunter gives +7% damage per point of Dash Count. Dash Recovery and tablet upgrades into Dash Count are worth more than almost any other stat in the run.',
+        },
+        {
+          title: 'Dashing is your reload',
+          detail: 'The magazine is fixed at 6 rounds and reloads instantly when you dash, so the same charge that makes you hit harder also keeps you loaded. Fire six, dash, fire six.',
+        },
+        {
+          title: 'Dash Attack is gone',
+          detail: 'Bounty Hunter disables Dash Attack entirely, which makes any Dash Attack damage item worthless here — every slot has to feed Dash Count, Dash Recovery, or the crit line instead.',
+        },
+      ],
+    }],
+  },
   { name: 'Katana', imageKey: 'WPN-05', builds: [] },
 ];
 
