@@ -256,7 +256,32 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
       ],
     }],
   },
-  { name: 'Dagger', imageKey: 'WPN-04', builds: [] },
+  {
+    name: 'Dagger',
+    href: '/games/sephiria/builds/dagger',
+    imageKey: 'WPN-04',
+    builds: [{
+      title: 'Special Attack Dagger: Lightless Blade',
+      href: '/games/sephiria/builds/dagger/lightless-blade-build',
+      publishedAt: '2026-11-09T00:00:00.000Z',
+      weaponRoute: ['Dagger', 'Beyond the Threshold', 'Lightless Blade'],
+      finalBuild: ['Wind Song 10', 'Precision 10'],
+      fieldNotes: [
+        {
+          title: 'Attack Speed is literally hit count',
+          detail: 'Lightless Blade turns your Dash Attack into Blade Prison, and how many hits it lands is decided by your Attack Speed. Wind Song is not a speed stat here — it is a damage stat.',
+        },
+        {
+          title: 'The buff only lives ten seconds',
+          detail: 'Every Dash attack grants +20% Normal Attack damage and +30% Dash Attack damage for ten seconds. The whole build is a rhythm: dash, swing, dash again before it drops.',
+        },
+        {
+          title: 'Crit is the second half, not the first',
+          detail: 'Precision and the Critical Damage pieces come after Attack Speed. Blade Prison rolls a critical on every individual hit, so crit multiplies the hit count instead of competing with it.',
+        },
+      ],
+    }],
+  },
   { name: 'Staff', imageKey: 'WPN-06', builds: [] },
   { name: 'Crossbow', imageKey: 'WPN-03', builds: [] },
   { name: 'Katana', imageKey: 'WPN-05', builds: [] },
