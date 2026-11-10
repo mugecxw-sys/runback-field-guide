@@ -387,6 +387,26 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           detail: 'That is why the Sturdy crossbow artifact (Marksman’s Crank line) is skipped — it buys reload speed for a build whose whole point is never completing a reload.',
         },
       ],
+    }, {
+      title: 'The Barnacle',
+      href: '/games/sephiria/builds/crossbow/barnacle-build',
+      publishedAt: '2026-11-10T00:00:00.000Z',
+      weaponRoute: ['Colossal Crossbow', 'Colossal Crossbow: Scattershot Shooter', 'The Barnacle'],
+      finalBuild: ['Precision 10', 'Guardian 10', 'Wind Song 10'],
+      fieldNotes: [
+        {
+          title: 'Defense is the damage stat',
+          detail: 'Rock Elephant hits for 70%–200% of Defense, so Guardian 10/10 is not a defensive pick here — it is your main scaling stat.',
+        },
+        {
+          title: 'Attack Speed is projectile count',
+          detail: 'Rock Elephant adds another rock spear for every extra 15% Attack Speed, which is why Wind Song 10/10 and Wings both pay twice.',
+        },
+        {
+          title: 'The Barnacle plants the bombs',
+          detail: 'Normal Attacks and Dash Attacks attach a bomb to what they hit, and Special Attack detonates everything you have stuck down. Dashing is how you farm extra Rock Elephant volleys.',
+        },
+      ],
     }],
   },
   { name: 'Katana', imageKey: 'WPN-05', builds: [] },
