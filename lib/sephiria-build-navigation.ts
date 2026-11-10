@@ -367,6 +367,26 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           detail: 'It adds up to +30% damage to MP-consuming abilities, and Power Arrow is the only thing you cast. Highest value per slot in the whole run, and only Rare.',
         },
       ],
+    }, {
+      title: 'Colossal Crossbow: Gunpowder Synthesis',
+      href: '/games/sephiria/builds/crossbow/gunpowder-synthesis-build',
+      publishedAt: '2026-11-10T00:00:00.000Z',
+      weaponRoute: ['Colossal Crossbow', 'Colossal Crossbow: Scattershot Shooter', 'Colossal Crossbow: Gunpowder Synthesis'],
+      finalBuild: ['Precision 10', 'Sturdy 10', 'Wind Song 6'],
+      fieldNotes: [
+        {
+          title: 'The combo finisher always crits',
+          detail: 'Golden Crown of Arrogance pushes the last hit of the combo to +100% Critical Chance, so the strongest swing in every string is a forced critical. Crown of Humility then adds +84% damage to that exact same hit.',
+        },
+        {
+          title: 'Every crit pays a bullet back',
+          detail: 'Gunpowder Synthesis recharges 1 bullet whenever a Direct Attack crits. With the finisher guaranteed to crit, the shotgun feeds itself and the auto-reload almost never happens.',
+        },
+        {
+          title: 'Reload speed is a dead stat here',
+          detail: 'That is why the Sturdy crossbow artifact (Marksman’s Crank line) is skipped — it buys reload speed for a build whose whole point is never completing a reload.',
+        },
+      ],
     }],
   },
   { name: 'Katana', imageKey: 'WPN-05', builds: [] },
