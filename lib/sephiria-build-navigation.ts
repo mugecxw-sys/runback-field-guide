@@ -347,6 +347,26 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           detail: 'Mini Ballista and Ahmad’s Spirit Powder exist to keep Electrocution running while you reload, which is the only window where the build goes quiet.',
         },
       ],
+    }, {
+      title: 'Colossal Crossbow: Rapid-Fire Device',
+      href: '/games/sephiria/builds/crossbow/rapid-fire-device-build',
+      publishedAt: '2026-11-09T00:00:00.000Z',
+      weaponRoute: ['Colossal Crossbow', 'Colossal Crossbow: Enhanced Special Bolts', 'Colossal Crossbow: Rapid-Fire Device'],
+      finalBuild: ['Precision 10', 'Sturdy 10'],
+      fieldNotes: [
+        {
+          title: 'The chain has a two-second fuse',
+          detail: 'Casting Power Arrow again within 2 seconds adds +10% damage per consecutive cast, up to +50%. Stop casting and it resets — the stack is maintained, not built.',
+        },
+        {
+          title: 'Infinite MP is the enabler',
+          detail: 'Scholar Lizard fixes your Max MP and stops it draining, which removes the only reason you would ever pace your specials. Without it the chain falls apart on cost.',
+        },
+        {
+          title: 'Stone Spindle Whorl is a straight multiplier',
+          detail: 'It adds up to +30% damage to MP-consuming abilities, and Power Arrow is the only thing you cast. Highest value per slot in the whole run, and only Rare.',
+        },
+      ],
     }],
   },
   { name: 'Katana', imageKey: 'WPN-05', builds: [] },
