@@ -407,6 +407,26 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           detail: 'Normal Attacks and Dash Attacks attach a bomb to what they hit, and Special Attack detonates everything you have stuck down. Dashing is how you farm extra Rock Elephant volleys.',
         },
       ],
+    }, {
+      title: 'Mini Cannon',
+      href: '/games/sephiria/builds/crossbow/mini-cannon-build',
+      publishedAt: '2026-11-10T00:00:00.000Z',
+      weaponRoute: ['Colossal Crossbow', 'Colossal Crossbow: Fire Mine', 'Mini Cannon'],
+      finalBuild: ['Precision 10', 'Ember 10', 'Wind Song 6', 'Elemental 6'],
+      fieldNotes: [
+        {
+          title: 'Attack Speed is damage and radius',
+          detail: 'The Mini Cannon does not fire faster with Attack Speed — every 1% of bonus Attack Speed adds 1% grenade damage and 1% explosion size, which is why you stop aiming.',
+        },
+        {
+          title: 'The second upgrade makes it Fire',
+          detail: 'Fire Mine converts Direct Attack damage to Fire at a 20% damage penalty. That is why Elemental 6/6 and the Red-Clothed Cat costume pay off so cheaply — and why the Cat’s −20% Physical never lands on anything.',
+        },
+        {
+          title: 'Ember before a perfect crit split',
+          detail: 'Precision only needs enough crit chance to trigger Red Mist. Burn Damage from Ball of Red Yarn (up to +100%) is the real multiplier, and Wind Song is worth pushing past 6/8.',
+        },
+      ],
     }],
   },
   { name: 'Katana', imageKey: 'WPN-05', builds: [] },
