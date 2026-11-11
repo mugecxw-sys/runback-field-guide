@@ -1,0 +1,131 @@
+.grid {
+  display: grid;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.card {
+  --weapon-line: color-mix(in srgb, var(--gold-border) 30%, transparent);
+
+  padding: 0.875rem;
+  border: 1px solid var(--weapon-line);
+  background: var(--surface);
+}
+
+.identity {
+  display: grid;
+  grid-template-columns: minmax(0, 9.5rem) minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.image {
+  display: grid;
+  aspect-ratio: 2 / 1;
+  place-items: center;
+  border: 1px solid var(--gold-border);
+  background: var(--image-base);
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.card h3,
+.card h4 {
+  color: var(--heading);
+  font:
+    600 1.2rem/1.2 Georgia,
+    'Times New Roman',
+    serif;
+}
+
+.card h3 {
+  margin-top: 0.15rem;
+}
+
+.variants {
+  margin-top: 0.6rem;
+  border-top: 1px solid var(--weapon-line);
+}
+
+.variants summary {
+  display: flex;
+  min-height: 2.5rem;
+  padding-top: 0.25rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  list-style: none;
+  color: var(--gold-text);
+  font-size: 0.875rem;
+  font-weight: 650;
+  cursor: pointer;
+}
+
+.variants summary::-webkit-details-marker {
+  display: none;
+}
+
+.variants[open] summary svg {
+  transform: rotate(180deg);
+}
+
+.variantList {
+  display: grid;
+  gap: 1px;
+  margin-top: 0.25rem;
+}
+
+.variant,
+.variantWithImage {
+  padding: 0.625rem;
+  background: var(--surface-inset);
+}
+
+.variantWithImage {
+  display: grid;
+  grid-template-columns: minmax(0, 6.5rem) minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.variant h4,
+.variantWithImage h4 {
+  font-size: 1rem;
+}
+
+.facts {
+  display: grid;
+  gap: 0.25rem;
+  margin-top: 0.6rem;
+  font-size: 0.875rem;
+}
+
+.facts > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.5rem;
+}
+
+.facts dt {
+  color: var(--gold-text);
+}
+
+.facts dd {
+  color: var(--heading);
+}
+
+@media (min-width: 52rem) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 27rem) {
+  .identity {
+    grid-template-columns: minmax(0, 40%) minmax(0, 1fr);
+  }
+}

@@ -1,0 +1,138 @@
+.grid {
+  display: grid;
+  align-items: start;
+  gap: 0.75rem;
+}
+
+.card {
+  --module-icon-size: 3rem;
+  --card-line: color-mix(in srgb, var(--gold-border) 30%, transparent);
+
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: start;
+  padding: 0.875rem;
+  border: 1px solid var(--card-line);
+  background: var(--surface);
+}
+
+.content h3,
+.seriesTitle {
+  margin-top: 0.15rem;
+  color: var(--heading);
+  font:
+    600 1.2rem/1.2 Georgia,
+    'Times New Roman',
+    serif;
+}
+
+.description,
+.tooltipNote {
+  margin-top: 0.3rem;
+  color: var(--secondary);
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+
+.tooltipNote {
+  margin-bottom: 0.6rem;
+}
+
+.effects {
+  display: grid;
+  gap: 0.25rem;
+  margin-top: 0.55rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--card-line);
+  font-size: 0.8125rem;
+}
+
+.effects > div {
+  display: grid;
+  grid-template-columns: 4.25rem minmax(0, 1fr);
+  gap: 0.25rem;
+}
+
+.effects dt {
+  color: var(--gold-text);
+}
+
+.effects dd {
+  color: var(--heading);
+  font-weight: 600;
+}
+
+.series {
+  --card-line: color-mix(in srgb, var(--gold-border) 30%, transparent);
+}
+
+.series > summary {
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  cursor: pointer;
+}
+
+.series > summary::-webkit-details-marker {
+  display: none;
+}
+
+.series > summary:focus-visible {
+  outline: 2px solid var(--gold-text);
+  outline-offset: 2px;
+}
+
+.series > summary svg {
+  align-self: center;
+  color: var(--gold-text);
+}
+
+.series[open] > summary svg {
+  transform: rotate(180deg);
+}
+
+.series > summary .content > span {
+  display: block;
+}
+
+.variants,
+.copyNotes {
+  padding-inline: 0.875rem;
+  border: 1px solid var(--card-line);
+  border-top: 0;
+  background: var(--surface);
+}
+
+.variant {
+  padding-block: 0.75rem;
+  overflow-wrap: anywhere;
+}
+
+.variant + .variant {
+  border-top: 1px solid var(--card-line);
+}
+
+.variant h3,
+.copyNotes h3 {
+  color: var(--heading);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.copyNotes {
+  padding-block: 0.75rem;
+  border-top: 1px solid var(--card-line);
+}
+
+.copyNotes li,
+.copyNotes p {
+  margin-top: 0.3rem;
+  color: var(--secondary);
+  font-size: 0.8125rem;
+  overflow-wrap: anywhere;
+}
+
+@media (min-width: 52rem) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

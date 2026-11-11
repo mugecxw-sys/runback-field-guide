@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480">
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0v32" fill="none" stroke="#b99256" stroke-opacity=".2"/>
+    </pattern>
+  </defs>
+  <path fill="#0f1513" d="M0 0h960v480H0z"/>
+  <path fill="url(#grid)" d="M0 0h960v480H0z"/>
+  <path d="M30 78V30h48m804 0h48v48m0 324v48h-48m-804 0H30v-48" fill="none" stroke="#b99256" stroke-width="2"/>
+  <g transform="translate(480 215)" fill="none">
+    <circle r="120" stroke="#b99256" stroke-dasharray="4 8" opacity=".7"/>
+    <path d="m0-95 82 48v94L0 95l-82-48v-94z" fill="#17201d" stroke="#f0c98b" stroke-width="3"/>
+    <path d="M0-59 51-30v60L0 59l-51-29v-60z" stroke="#b99256" stroke-width="2"/>
+    <path d="M-17 0h34M0-17v34" stroke="#ff8662" stroke-width="3"/>
+    <path d="M-82-47h-89m253 94h89M0-95v-25M0 95v25" stroke="#b99256" stroke-width="2"/>
+  </g>
+  <text x="480" y="395" fill="#f0c98b" font-size="22" letter-spacing="4" text-anchor="middle" font-family="monospace">DEMO / MODULE SCHEMATIC</text>
+</svg>

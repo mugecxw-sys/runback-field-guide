@@ -1,0 +1,59 @@
+.identity {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(1rem, 2.5vw, 2rem);
+}
+
+.icon {
+  display: grid;
+  place-items: center;
+  width: var(--module-icon-size, clamp(5rem, 10vw, 8rem));
+  aspect-ratio: 1;
+  border: 1px solid var(--gold-border);
+  background: var(--image-base);
+}
+
+.icon img {
+  width: 74%;
+  height: auto;
+  object-fit: contain;
+}
+
+.title h1 {
+  font-size: clamp(1.9rem, 4vw, 3.4rem);
+}
+
+.effects {
+  --module-border: color-mix(in srgb, var(--gold-border) 30%, transparent);
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
+  gap: 1px;
+  border: 1px solid var(--module-border);
+  background: var(--module-border);
+}
+
+.effects > div {
+  padding: 0.9rem 1.1rem;
+  background: var(--surface);
+}
+
+.effects dt {
+  color: var(--gold-text);
+  font-size: 0.8rem;
+  font-weight: 650;
+}
+
+.effects dd {
+  margin-top: 0.3rem;
+  color: var(--heading);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+@media (max-width: 30rem) {
+  .identity {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

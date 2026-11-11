@@ -1,0 +1,163 @@
+{
+  "approvedMarkerKeys": [
+    "Strongholds::DA_Apex",
+    "Strongholds::DA_Boss",
+    "Strongholds::DA_Daemon",
+    "Strongholds::DA_DarkMist",
+    "Strongholds::DA_Extraction",
+    "Strongholds::DA_Fortified",
+    "Strongholds::DA_Frozen",
+    "Strongholds::DA_GravitationalAnomoly",
+    "Strongholds::DA_HighFrequency",
+    "Strongholds::DA_Hostiles",
+    "Strongholds::DA_Overclocked",
+    "Strongholds::DA_PlayerLocation",
+    "Strongholds::DA_Scorched",
+    "Strongholds::DA_Storm",
+    "Strongholds::DA_Virus",
+    "Strongholds::DA_Shortcut",
+    "Strongholds::DA_ShortcutEncrypted",
+    "OrangeAreas::DA_Chest",
+    "OrangeAreas::DA_Corruptor",
+    "OrangeAreas::DA_Obelisk",
+    "OrangeAreas::DA_Shop",
+    "OrangeAreas::DA_UnchartedArea"
+  ],
+  "withheldMarkerKeys": [
+    "Strongholds::DA_JustEnemies",
+    "Strongholds::DA_Teleporter",
+    "OrangeAreas::DA_Mission",
+    "OrangeAreas::DA_Teleporter"
+  ],
+  "navigationKeys": [
+    "Strongholds::DA_PlayerLocation",
+    "Strongholds::DA_Shortcut",
+    "Strongholds::DA_ShortcutEncrypted"
+  ],
+  "representativeLimit": 4,
+  "groupRules": [
+    {
+      "zone": 1,
+      "table": "DT_B01_MiniBoss",
+      "row": "GlitchedGrunt",
+      "label": "MiniBoss configuration"
+    },
+    {
+      "zone": 1,
+      "table": "DT_B01_MiniBoss",
+      "row": "GlitchedIgnit",
+      "label": "MiniBoss configuration"
+    },
+    {
+      "zone": 1,
+      "table": "DT_B01_MiniBoss",
+      "row": "Threadnest",
+      "label": "MiniBoss configuration"
+    },
+    {
+      "zone": 3,
+      "table": "DT_B03_EnemySpawnQuery",
+      "row": "MixedIceWave",
+      "label": "Mixed encounter configuration"
+    }
+  ],
+  "fieldWhitelist": [
+    {
+      "key": "zoneName",
+      "displayLabel": "Zone name",
+      "sourceRule": "05_zones/zone_data.json / ui_name",
+      "appliesTo": "Zone",
+      "verification": "Source-confirmed",
+      "allowed": true,
+      "missingBehavior": "Omit missing label"
+    },
+    {
+      "key": "enemies",
+      "displayLabel": "Enemy list / count / representative names",
+      "sourceRule": "Original non-Demo EnemyData rows + frozen Enemies public name / tags",
+      "appliesTo": "Zone",
+      "verification": "Source-confirmed, distinct source references",
+      "allowed": true,
+      "missingBehavior": "No inherited or shared-only members"
+    },
+    {
+      "key": "groups",
+      "displayLabel": "Encounter configurations",
+      "sourceRule": "AlwaysSpawn? + NumberToSpawnIfAlways on a specific approved row",
+      "appliesTo": "Zone",
+      "verification": "Source-confirmed configuration",
+      "allowed": true,
+      "missingBehavior": "Omit unsupported group"
+    },
+    {
+      "key": "modifiers",
+      "displayLabel": "Encounter modifiers",
+      "sourceRule": "Positive ChanceToGiveArmour? / ChanceToGiveShield? in same original EnemyData item",
+      "appliesTo": "Zone",
+      "verification": "Source-confirmed existence, no percentages",
+      "allowed": true,
+      "missingBehavior": "Omit when absent"
+    },
+    {
+      "key": "boss",
+      "displayLabel": "Associated boss",
+      "sourceRule": "Frozen Voidweaver identity + existing official ASCENSION statement",
+      "appliesTo": "Zone 05 only",
+      "verification": "Official developer statement, not gameplay-verified",
+      "allowed": true,
+      "missingBehavior": "Omit for other zones"
+    },
+    {
+      "key": "markerName",
+      "displayLabel": "Marker name",
+      "sourceRule": "anomaly_name, otherwise name",
+      "appliesTo": "Approved namespaced marker",
+      "verification": "Source-confirmed / UI text when matched",
+      "allowed": true,
+      "missingBehavior": "Withhold unnamed definition"
+    },
+    {
+      "key": "description",
+      "displayLabel": "Purpose",
+      "sourceRule": "anomaly_description, otherwise description",
+      "appliesTo": "Approved namespaced marker",
+      "verification": "Source-confirmed original English",
+      "allowed": true,
+      "missingBehavior": "Omit missing text; no invented content"
+    },
+    {
+      "key": "icons",
+      "displayLabel": "Map / anomaly marker",
+      "sourceRule": "Current definition thumbnail_image / anomaly_icon_image",
+      "appliesTo": "Approved namespaced marker",
+      "verification": "Source-confirmed direct reference",
+      "allowed": true,
+      "missingBehavior": "Omit missing image; never a placeholder"
+    },
+    {
+      "key": "notes",
+      "displayLabel": "World notes",
+      "sourceRule": "UI L47042 + explicit Zone objective texts at missions entries 22,28,30,40",
+      "appliesTo": "Global / explicit objective Zone",
+      "verification": "UI-confirmed / Source-confirmed text",
+      "allowed": true,
+      "missingBehavior": "Omit unsupported note"
+    },
+    {
+      "key": "placement",
+      "displayLabel": "Coordinates / fixed marker Zone / routes / rewards",
+      "sourceRule": "No reliable direct binding",
+      "appliesTo": "All markers",
+      "verification": "Not established",
+      "allowed": false,
+      "missingBehavior": "Always hidden"
+    }
+  ],
+  "demoPolicy": "Keep all original rows for audit; exclude *_Demo from public Zone membership and counts; shared tables never get inferred Zone",
+  "bossRule": {
+    "zone": 5,
+    "asset": "DA_Boss_05",
+    "source": "https://steamcommunity.com/app/2615540/allnews/",
+    "context": "ASCENSION update: Voidweaver in Zone 05"
+  }
+}

@@ -1,0 +1,3719 @@
+{
+  "standard": [
+    {
+      "name": "Assault Rifle",
+      "image": "T_UI_WeaponThumbnail_AssaultRifle.png",
+      "sourceIndex": 0,
+      "asset": {
+        "asset": "DA_Weapon_AssaultRifle",
+        "name": null,
+        "description": null,
+        "damage": 15.0,
+        "rpm": 600.0,
+        "magazine_size": 30,
+        "ammo_type": null,
+        "number_of_shots": null,
+        "number_of_slots": null,
+        "reload_speed": null,
+        "accuracy": null,
+        "ads_speed": null,
+        "default_stored_ammo": null,
+        "velocity_projectile": null,
+        "velocity_projectile_ads": null,
+        "gravity_projectile": null,
+        "location_recoil": "Recoil_Shotgun_Loc",
+        "rotation_recoil": "Recoil_Shotgun_Rot",
+        "fire_mode": null,
+        "unverified_fields": [
+          "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+          "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+          "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+          "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+        ],
+        "confidence": "verified"
+      },
+      "variants": [
+        {
+          "sourceIndex": 1,
+          "asset": {
+            "asset": "DA_Weapon_AssaultRifle_Arcflare",
+            "name": null,
+            "description": null,
+            "damage": 15.0,
+            "rpm": 600.0,
+            "magazine_size": 30,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Assault",
+            "row": "Assault_Arcflare"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "S[0]",
+            "assetId": "DA_Skin_AssaultRifle_Arcflare",
+            "label": "ARCFLARE",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "S[0]",
+              "path": "ui/WeaponThumbnails/Chasis/T_UI_WeaponSkinThumbnail_Arcflare.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Arcflare",
+          "nameEvidence": "S[0] display_name: ARCFLARE",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_AssaultRifle_Arcflare",
+              "rawField": "damage",
+              "rawValue": 15.0,
+              "text": "15",
+              "source": "03_weapons/weapon_stats.json#/weapons/1/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_AssaultRifle_Arcflare",
+              "rawField": "rpm",
+              "rawValue": 600.0,
+              "text": "600",
+              "source": "03_weapons/weapon_stats.json#/weapons/1/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_AssaultRifle_Arcflare",
+              "rawField": "magazine_size",
+              "rawValue": 30,
+              "text": "30",
+              "source": "03_weapons/weapon_stats.json#/weapons/1/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 2,
+          "asset": {
+            "asset": "DA_Weapon_AssaultRifle_Burst",
+            "name": null,
+            "description": null,
+            "damage": 24.0,
+            "rpm": 600.0,
+            "magazine_size": 21,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Assault",
+            "row": "Assault_Burst"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "S[1]",
+            "assetId": "DA_Skin_AssaultRifle_Burst",
+            "label": "BURST",
+            "description": "Default fire mode is 3 round burst"
+          },
+          "imageEvidence": [
+            {
+              "source": "S[1]",
+              "path": "ui/WeaponThumbnails/Chasis/T_UI_WeaponSkinThumbnail_Digi.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Burst",
+          "nameEvidence": "S[1] display_name: BURST",
+          "searchName": "Assault Burst",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_AssaultRifle_Burst",
+              "rawField": "damage",
+              "rawValue": 24.0,
+              "text": "24",
+              "source": "03_weapons/weapon_stats.json#/weapons/2/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_AssaultRifle_Burst",
+              "rawField": "rpm",
+              "rawValue": 600.0,
+              "text": "600",
+              "source": "03_weapons/weapon_stats.json#/weapons/2/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_AssaultRifle_Burst",
+              "rawField": "magazine_size",
+              "rawValue": 21,
+              "text": "21",
+              "source": "03_weapons/weapon_stats.json#/weapons/2/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 3,
+          "asset": {
+            "asset": "DA_Weapon_AssaultRifle_Precision",
+            "name": null,
+            "description": null,
+            "damage": 21.0,
+            "rpm": 480.0,
+            "magazine_size": 21,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Assault",
+            "row": "Assault_Precision"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "S[2]",
+            "assetId": "DA_Skin_AssaultRifle_Precision",
+            "label": "PRECISION",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "S[2]",
+              "path": "ui/WeaponThumbnails/Chasis/T_UI_WeaponSkinThumbnail_Precision.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Precision",
+          "nameEvidence": "S[2] display_name: PRECISION",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_AssaultRifle_Precision",
+              "rawField": "damage",
+              "rawValue": 21.0,
+              "text": "21",
+              "source": "03_weapons/weapon_stats.json#/weapons/3/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_AssaultRifle_Precision",
+              "rawField": "rpm",
+              "rawValue": 480.0,
+              "text": "480",
+              "source": "03_weapons/weapon_stats.json#/weapons/3/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_AssaultRifle_Precision",
+              "rawField": "magazine_size",
+              "rawValue": 21,
+              "text": "21",
+              "source": "03_weapons/weapon_stats.json#/weapons/3/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 4,
+          "asset": {
+            "asset": "DA_Weapon_AssaultRifle_Teardown",
+            "name": null,
+            "description": null,
+            "damage": 21.0,
+            "rpm": 480.0,
+            "magazine_size": 21,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Assault",
+            "row": "Assault_Teardown"
+          },
+          "configuration": null,
+          "imageEvidence": [
+            {
+              "source": "L[0]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_AssaultRifle.png"
+            }
+          ],
+          "legacyLabel": "TEARDOWN ASSAULT RIFLE",
+          "displayName": "Teardown Assault Rifle",
+          "nameEvidence": "L[0] display_name: TEARDOWN ASSAULT RIFLE",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_AssaultRifle_Teardown",
+              "rawField": "damage",
+              "rawValue": 21.0,
+              "text": "21",
+              "source": "03_weapons/weapon_stats.json#/weapons/4/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_AssaultRifle_Teardown",
+              "rawField": "rpm",
+              "rawValue": 480.0,
+              "text": "480",
+              "source": "03_weapons/weapon_stats.json#/weapons/4/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_AssaultRifle_Teardown",
+              "rawField": "magazine_size",
+              "rawValue": 21,
+              "text": "21",
+              "source": "03_weapons/weapon_stats.json#/weapons/4/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 5,
+          "asset": {
+            "asset": "DA_Weapon_AssaultRifle_Voltaic",
+            "name": null,
+            "description": null,
+            "damage": 15.0,
+            "rpm": 600.0,
+            "magazine_size": 30,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Assault",
+            "row": "Assault_Voltaic"
+          },
+          "configuration": null,
+          "imageEvidence": [],
+          "legacyLabel": null,
+          "holdReason": "材质行提供区分键，缺独立英文名称",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_AssaultRifle_Voltaic",
+              "rawField": "damage",
+              "rawValue": 15.0,
+              "text": "15",
+              "source": "03_weapons/weapon_stats.json#/weapons/5/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_AssaultRifle_Voltaic",
+              "rawField": "rpm",
+              "rawValue": 600.0,
+              "text": "600",
+              "source": "03_weapons/weapon_stats.json#/weapons/5/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_AssaultRifle_Voltaic",
+              "rawField": "magazine_size",
+              "rawValue": 30,
+              "text": "30",
+              "source": "03_weapons/weapon_stats.json#/weapons/5/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        }
+      ],
+      "verifiedProperties": {
+        "damage": {
+          "assetId": "DA_Weapon_AssaultRifle",
+          "rawField": "damage",
+          "rawValue": 15.0,
+          "text": "15",
+          "source": "03_weapons/weapon_stats.json#/weapons/0/damage",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "fireRate": {
+          "assetId": "DA_Weapon_AssaultRifle",
+          "rawField": "rpm",
+          "rawValue": 600.0,
+          "text": "600",
+          "source": "03_weapons/weapon_stats.json#/weapons/0/rpm",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "magazineSize": {
+          "assetId": "DA_Weapon_AssaultRifle",
+          "rawField": "magazine_size",
+          "rawValue": 30,
+          "text": "30",
+          "source": "03_weapons/weapon_stats.json#/weapons/0/magazine_size",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        }
+      }
+    },
+    {
+      "name": "LMG",
+      "image": "T_UI_WeaponThumbnail_LMG.png",
+      "sourceIndex": 8,
+      "asset": {
+        "asset": "DA_Weapon_LMG",
+        "name": null,
+        "description": null,
+        "damage": 25.0,
+        "rpm": 400.0,
+        "magazine_size": 45,
+        "ammo_type": null,
+        "number_of_shots": null,
+        "number_of_slots": null,
+        "reload_speed": null,
+        "accuracy": null,
+        "ads_speed": null,
+        "default_stored_ammo": null,
+        "velocity_projectile": null,
+        "velocity_projectile_ads": null,
+        "gravity_projectile": null,
+        "location_recoil": "Recoil_Shotgun_Loc",
+        "rotation_recoil": "Recoil_Shotgun_Rot",
+        "fire_mode": null,
+        "unverified_fields": [
+          "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+          "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+          "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+          "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+        ],
+        "confidence": "verified"
+      },
+      "variants": [
+        {
+          "sourceIndex": 9,
+          "asset": {
+            "asset": "DA_Weapon_LMG_Heavyweight",
+            "name": null,
+            "description": null,
+            "damage": 25.0,
+            "rpm": 400.0,
+            "magazine_size": 45,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_LMG",
+            "row": "LMG_Heavyweight"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "C[0]",
+            "assetId": "DA_Chasis_LMG_Heavyweight",
+            "label": "HEAVYWEIGHT",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "C[0]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_LMG.png"
+            },
+            {
+              "source": "L[1]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_LMG.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Heavyweight",
+          "nameEvidence": "C[0] display_name: HEAVYWEIGHT",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_LMG_Heavyweight",
+              "rawField": "damage",
+              "rawValue": 25.0,
+              "text": "25",
+              "source": "03_weapons/weapon_stats.json#/weapons/9/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_LMG_Heavyweight",
+              "rawField": "rpm",
+              "rawValue": 400.0,
+              "text": "400",
+              "source": "03_weapons/weapon_stats.json#/weapons/9/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_LMG_Heavyweight",
+              "rawField": "magazine_size",
+              "rawValue": 45,
+              "text": "45",
+              "source": "03_weapons/weapon_stats.json#/weapons/9/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 10,
+          "asset": {
+            "asset": "DA_Weapon_LMG_Overcharge",
+            "name": null,
+            "description": null,
+            "damage": 25.0,
+            "rpm": 400.0,
+            "magazine_size": 45,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_LMG",
+            "row": "LMG_Overcharge"
+          },
+          "configuration": null,
+          "imageEvidence": [
+            {
+              "source": "L[2]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_LMG.png"
+            }
+          ],
+          "legacyLabel": "OVERCHARGE LMG",
+          "displayName": "Overcharge LMG",
+          "nameEvidence": "L[2] display_name: OVERCHARGE LMG",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_LMG_Overcharge",
+              "rawField": "damage",
+              "rawValue": 25.0,
+              "text": "25",
+              "source": "03_weapons/weapon_stats.json#/weapons/10/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_LMG_Overcharge",
+              "rawField": "rpm",
+              "rawValue": 400.0,
+              "text": "400",
+              "source": "03_weapons/weapon_stats.json#/weapons/10/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_LMG_Overcharge",
+              "rawField": "magazine_size",
+              "rawValue": 45,
+              "text": "45",
+              "source": "03_weapons/weapon_stats.json#/weapons/10/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 11,
+          "asset": {
+            "asset": "DA_Weapon_LMG_Overkill",
+            "name": null,
+            "description": null,
+            "damage": 25.0,
+            "rpm": 400.0,
+            "magazine_size": 45,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_LMG",
+            "row": "LMG_Overkill"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "C[1]",
+            "assetId": "DA_Chasis_LMG_Overkill",
+            "label": "OVERKILL",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "C[1]",
+              "path": "ui/WeaponThumbnails/Chasis/T_UI_WeaponSkinThumbnail_Shredder.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Overkill",
+          "nameEvidence": "C[1] display_name: OVERKILL",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_LMG_Overkill",
+              "rawField": "damage",
+              "rawValue": 25.0,
+              "text": "25",
+              "source": "03_weapons/weapon_stats.json#/weapons/11/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_LMG_Overkill",
+              "rawField": "rpm",
+              "rawValue": 400.0,
+              "text": "400",
+              "source": "03_weapons/weapon_stats.json#/weapons/11/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_LMG_Overkill",
+              "rawField": "magazine_size",
+              "rawValue": 45,
+              "text": "45",
+              "source": "03_weapons/weapon_stats.json#/weapons/11/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 12,
+          "asset": {
+            "asset": "DA_Weapon_LMG_Shredder",
+            "name": null,
+            "description": null,
+            "damage": 13.0,
+            "rpm": 400.0,
+            "magazine_size": 45,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_LMG",
+            "row": "LMG_Shredder"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "C[2]",
+            "assetId": "DA_Chasis_LMG_Shredder",
+            "label": "SHREDDER",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "C[2]",
+              "path": "ui/WeaponThumbnails/Chasis/T_UI_WeaponSkinThumbnail_Shredder.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Shredder",
+          "nameEvidence": "C[2] display_name: SHREDDER",
+          "searchName": "LMG Shredder",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_LMG_Shredder",
+              "rawField": "damage",
+              "rawValue": 13.0,
+              "text": "13",
+              "source": "03_weapons/weapon_stats.json#/weapons/12/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_LMG_Shredder",
+              "rawField": "rpm",
+              "rawValue": 400.0,
+              "text": "400",
+              "source": "03_weapons/weapon_stats.json#/weapons/12/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_LMG_Shredder",
+              "rawField": "magazine_size",
+              "rawValue": 45,
+              "text": "45",
+              "source": "03_weapons/weapon_stats.json#/weapons/12/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 13,
+          "asset": {
+            "asset": "DA_Weapon_LMG_Siege",
+            "name": null,
+            "description": null,
+            "damage": 25.0,
+            "rpm": 400.0,
+            "magazine_size": 45,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_LMG",
+            "row": "LMG_Siege"
+          },
+          "configuration": null,
+          "imageEvidence": [
+            {
+              "source": "L[3]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_LMG.png"
+            }
+          ],
+          "legacyLabel": "SIEGE LMG",
+          "displayName": "Siege LMG",
+          "nameEvidence": "L[3] display_name: SIEGE LMG",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_LMG_Siege",
+              "rawField": "damage",
+              "rawValue": 25.0,
+              "text": "25",
+              "source": "03_weapons/weapon_stats.json#/weapons/13/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_LMG_Siege",
+              "rawField": "rpm",
+              "rawValue": 400.0,
+              "text": "400",
+              "source": "03_weapons/weapon_stats.json#/weapons/13/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_LMG_Siege",
+              "rawField": "magazine_size",
+              "rawValue": 45,
+              "text": "45",
+              "source": "03_weapons/weapon_stats.json#/weapons/13/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        }
+      ],
+      "verifiedProperties": {
+        "damage": {
+          "assetId": "DA_Weapon_LMG",
+          "rawField": "damage",
+          "rawValue": 25.0,
+          "text": "25",
+          "source": "03_weapons/weapon_stats.json#/weapons/8/damage",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "fireRate": {
+          "assetId": "DA_Weapon_LMG",
+          "rawField": "rpm",
+          "rawValue": 400.0,
+          "text": "400",
+          "source": "03_weapons/weapon_stats.json#/weapons/8/rpm",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "magazineSize": {
+          "assetId": "DA_Weapon_LMG",
+          "rawField": "magazine_size",
+          "rawValue": 45,
+          "text": "45",
+          "source": "03_weapons/weapon_stats.json#/weapons/8/magazine_size",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        }
+      }
+    },
+    {
+      "name": "Marksman",
+      "image": "T_UI_WeaponThumbnail_Marksman.png",
+      "sourceIndex": 14,
+      "asset": {
+        "asset": "DA_Weapon_Marksman",
+        "name": null,
+        "description": null,
+        "damage": 36.0,
+        "rpm": 300.0,
+        "magazine_size": 12,
+        "ammo_type": null,
+        "number_of_shots": null,
+        "number_of_slots": null,
+        "reload_speed": null,
+        "accuracy": null,
+        "ads_speed": null,
+        "default_stored_ammo": null,
+        "velocity_projectile": null,
+        "velocity_projectile_ads": null,
+        "gravity_projectile": null,
+        "location_recoil": "Recoil_Shotgun_Loc",
+        "rotation_recoil": "Recoil_Shotgun_Rot",
+        "fire_mode": null,
+        "unverified_fields": [
+          "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+          "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+          "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+          "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+        ],
+        "confidence": "verified"
+      },
+      "variants": [
+        {
+          "sourceIndex": 15,
+          "asset": {
+            "asset": "DA_Weapon_Marksman_Corroded",
+            "name": null,
+            "description": null,
+            "damage": 36.0,
+            "rpm": 300.0,
+            "magazine_size": 12,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Marksman",
+            "row": "Marksman_Corroded"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "S[3]",
+            "assetId": "DA_Skin_Marksman_Corroded",
+            "label": "CORRODED",
+            "description": "Comes equipped with corrosive shot projectile module"
+          },
+          "imageEvidence": [
+            {
+              "source": "S[3]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Marksman.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Corroded",
+          "nameEvidence": "S[3] display_name: CORRODED",
+          "searchName": "Marksman Corroded",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Marksman_Corroded",
+              "rawField": "damage",
+              "rawValue": 36.0,
+              "text": "36",
+              "source": "03_weapons/weapon_stats.json#/weapons/15/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Marksman_Corroded",
+              "rawField": "rpm",
+              "rawValue": 300.0,
+              "text": "300",
+              "source": "03_weapons/weapon_stats.json#/weapons/15/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Marksman_Corroded",
+              "rawField": "magazine_size",
+              "rawValue": 12,
+              "text": "12",
+              "source": "03_weapons/weapon_stats.json#/weapons/15/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 16,
+          "asset": {
+            "asset": "DA_Weapon_Marksman_Optical",
+            "name": null,
+            "description": null,
+            "damage": 36.0,
+            "rpm": 300.0,
+            "magazine_size": 12,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Marksman",
+            "row": "Marksman_Optical"
+          },
+          "configuration": null,
+          "imageEvidence": [],
+          "legacyLabel": null,
+          "displayName": "Optical",
+          "nameEvidence": "1.0 官方更新说明中的 Marksman optical chassis，与材质行相符",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Marksman_Optical",
+              "rawField": "damage",
+              "rawValue": 36.0,
+              "text": "36",
+              "source": "03_weapons/weapon_stats.json#/weapons/16/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Marksman_Optical",
+              "rawField": "rpm",
+              "rawValue": 300.0,
+              "text": "300",
+              "source": "03_weapons/weapon_stats.json#/weapons/16/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Marksman_Optical",
+              "rawField": "magazine_size",
+              "rawValue": 12,
+              "text": "12",
+              "source": "03_weapons/weapon_stats.json#/weapons/16/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 17,
+          "asset": {
+            "asset": "DA_Weapon_Marksman_Precision",
+            "name": null,
+            "description": null,
+            "damage": 36.0,
+            "rpm": 300.0,
+            "magazine_size": 6,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Marksman",
+            "row": "Marksman_Precision"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "S[5]",
+            "assetId": "DA_Skin_Marksman_Precision",
+            "label": "PRECISION",
+            "description": "Default fire mode is charge shot"
+          },
+          "imageEvidence": [
+            {
+              "source": "S[5]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Marksman.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Precision",
+          "nameEvidence": "S[5] display_name: PRECISION",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Marksman_Precision",
+              "rawField": "damage",
+              "rawValue": 36.0,
+              "text": "36",
+              "source": "03_weapons/weapon_stats.json#/weapons/17/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Marksman_Precision",
+              "rawField": "rpm",
+              "rawValue": 300.0,
+              "text": "300",
+              "source": "03_weapons/weapon_stats.json#/weapons/17/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Marksman_Precision",
+              "rawField": "magazine_size",
+              "rawValue": 6,
+              "text": "6",
+              "source": "03_weapons/weapon_stats.json#/weapons/17/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 18,
+          "asset": {
+            "asset": "DA_Weapon_Marksman_Scout",
+            "name": null,
+            "description": null,
+            "damage": 36.0,
+            "rpm": 300.0,
+            "magazine_size": 12,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Marksman",
+            "row": "Marksman_Scout"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "S[6]",
+            "assetId": "DA_Skin_Marksman_Scout",
+            "label": "SCOUT",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "S[6]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Marksman.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Scout",
+          "nameEvidence": "S[6] display_name: SCOUT",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Marksman_Scout",
+              "rawField": "damage",
+              "rawValue": 36.0,
+              "text": "36",
+              "source": "03_weapons/weapon_stats.json#/weapons/18/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Marksman_Scout",
+              "rawField": "rpm",
+              "rawValue": 300.0,
+              "text": "300",
+              "source": "03_weapons/weapon_stats.json#/weapons/18/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Marksman_Scout",
+              "rawField": "magazine_size",
+              "rawValue": 12,
+              "text": "12",
+              "source": "03_weapons/weapon_stats.json#/weapons/18/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 19,
+          "asset": {
+            "asset": "DA_Weapon_Marksman_Shattercap",
+            "name": null,
+            "description": null,
+            "damage": 22.0,
+            "rpm": 300.0,
+            "magazine_size": 12,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Marksman",
+            "row": "Marksman_Shattercap"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "S[7]",
+            "assetId": "DA_Skin_Marksman_Shattercap",
+            "label": "SHATTERCAP",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "S[7]",
+              "path": "ui/WeaponThumbnails/Chasis/T_UI_WeaponSkinThumbnail_Shattercap.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Shattercap",
+          "nameEvidence": "S[7] display_name: SHATTERCAP",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Marksman_Shattercap",
+              "rawField": "damage",
+              "rawValue": 22.0,
+              "text": "22",
+              "source": "03_weapons/weapon_stats.json#/weapons/19/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Marksman_Shattercap",
+              "rawField": "rpm",
+              "rawValue": 300.0,
+              "text": "300",
+              "source": "03_weapons/weapon_stats.json#/weapons/19/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Marksman_Shattercap",
+              "rawField": "magazine_size",
+              "rawValue": 12,
+              "text": "12",
+              "source": "03_weapons/weapon_stats.json#/weapons/19/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        }
+      ],
+      "verifiedProperties": {
+        "damage": {
+          "assetId": "DA_Weapon_Marksman",
+          "rawField": "damage",
+          "rawValue": 36.0,
+          "text": "36",
+          "source": "03_weapons/weapon_stats.json#/weapons/14/damage",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "fireRate": {
+          "assetId": "DA_Weapon_Marksman",
+          "rawField": "rpm",
+          "rawValue": 300.0,
+          "text": "300",
+          "source": "03_weapons/weapon_stats.json#/weapons/14/rpm",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "magazineSize": {
+          "assetId": "DA_Weapon_Marksman",
+          "rawField": "magazine_size",
+          "rawValue": 12,
+          "text": "12",
+          "source": "03_weapons/weapon_stats.json#/weapons/14/magazine_size",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        }
+      }
+    },
+    {
+      "name": "Pistol",
+      "image": "T_UI_WeaponThumbnail_Pistol.png",
+      "sourceIndex": 20,
+      "asset": {
+        "asset": "DA_Weapon_Pistol",
+        "name": null,
+        "description": null,
+        "damage": 24.0,
+        "rpm": 550.0,
+        "magazine_size": 14,
+        "ammo_type": null,
+        "number_of_shots": null,
+        "number_of_slots": null,
+        "reload_speed": null,
+        "accuracy": null,
+        "ads_speed": null,
+        "default_stored_ammo": null,
+        "velocity_projectile": null,
+        "velocity_projectile_ads": null,
+        "gravity_projectile": null,
+        "location_recoil": "Recoil_Shotgun_Loc",
+        "rotation_recoil": "Recoil_Shotgun_Rot",
+        "fire_mode": null,
+        "unverified_fields": [
+          "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+          "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+          "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+          "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+        ],
+        "confidence": "verified"
+      },
+      "variants": [
+        {
+          "sourceIndex": 21,
+          "asset": {
+            "asset": "DA_Weapon_Pistol_AutoPistol",
+            "name": null,
+            "description": null,
+            "damage": 17.0,
+            "rpm": 550.0,
+            "magazine_size": 17,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Pistol",
+            "row": "Pistol_AutoPistol"
+          },
+          "configuration": null,
+          "imageEvidence": [],
+          "legacyLabel": "AUTO PISTOL",
+          "displayName": "Auto Pistol",
+          "nameEvidence": "L[4] display_name: AUTO PISTOL",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Pistol_AutoPistol",
+              "rawField": "damage",
+              "rawValue": 17.0,
+              "text": "17",
+              "source": "03_weapons/weapon_stats.json#/weapons/21/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Pistol_AutoPistol",
+              "rawField": "rpm",
+              "rawValue": 550.0,
+              "text": "550",
+              "source": "03_weapons/weapon_stats.json#/weapons/21/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Pistol_AutoPistol",
+              "rawField": "magazine_size",
+              "rawValue": 17,
+              "text": "17",
+              "source": "03_weapons/weapon_stats.json#/weapons/21/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 22,
+          "asset": {
+            "asset": "DA_Weapon_Pistol_Executioner",
+            "name": null,
+            "description": null,
+            "damage": 24.0,
+            "rpm": 550.0,
+            "magazine_size": 14,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Pistol",
+            "row": "Pistol_Executioner"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "C[3]",
+            "assetId": "DA_Chasis_Pistol_Executioner",
+            "label": "EXECUTIONER",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "C[3]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Pistol.png"
+            },
+            {
+              "source": "L[5]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Pistol.png"
+            }
+          ],
+          "legacyLabel": "EXECUTIONER PISTOL",
+          "displayName": "Executioner Pistol",
+          "nameEvidence": "L[5] display_name: EXECUTIONER PISTOL",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Pistol_Executioner",
+              "rawField": "damage",
+              "rawValue": 24.0,
+              "text": "24",
+              "source": "03_weapons/weapon_stats.json#/weapons/22/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Pistol_Executioner",
+              "rawField": "rpm",
+              "rawValue": 550.0,
+              "text": "550",
+              "source": "03_weapons/weapon_stats.json#/weapons/22/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Pistol_Executioner",
+              "rawField": "magazine_size",
+              "rawValue": 14,
+              "text": "14",
+              "source": "03_weapons/weapon_stats.json#/weapons/22/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 23,
+          "asset": {
+            "asset": "DA_Weapon_Pistol_Nanofeed",
+            "name": null,
+            "description": null,
+            "damage": 24.0,
+            "rpm": 550.0,
+            "magazine_size": 10,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Pistol",
+            "row": "Pistol_Nanofeed"
+          },
+          "configuration": null,
+          "imageEvidence": [],
+          "legacyLabel": "NANOFEED PISTOL",
+          "displayName": "Nanofeed Pistol",
+          "nameEvidence": "L[6] display_name: NANOFEED PISTOL",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Pistol_Nanofeed",
+              "rawField": "damage",
+              "rawValue": 24.0,
+              "text": "24",
+              "source": "03_weapons/weapon_stats.json#/weapons/23/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Pistol_Nanofeed",
+              "rawField": "rpm",
+              "rawValue": 550.0,
+              "text": "550",
+              "source": "03_weapons/weapon_stats.json#/weapons/23/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Pistol_Nanofeed",
+              "rawField": "magazine_size",
+              "rawValue": 10,
+              "text": "10",
+              "source": "03_weapons/weapon_stats.json#/weapons/23/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 24,
+          "asset": {
+            "asset": "DA_Weapon_Pistol_Precision",
+            "name": null,
+            "description": null,
+            "damage": 36.0,
+            "rpm": 250.0,
+            "magazine_size": 6,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Pistol",
+            "row": "Pistol_Precision"
+          },
+          "configuration": null,
+          "imageEvidence": [],
+          "legacyLabel": null,
+          "holdReason": "材质行提供区分键，缺独立英文名称",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Pistol_Precision",
+              "rawField": "damage",
+              "rawValue": 36.0,
+              "text": "36",
+              "source": "03_weapons/weapon_stats.json#/weapons/24/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Pistol_Precision",
+              "rawField": "rpm",
+              "rawValue": 250.0,
+              "text": "250",
+              "source": "03_weapons/weapon_stats.json#/weapons/24/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Pistol_Precision",
+              "rawField": "magazine_size",
+              "rawValue": 6,
+              "text": "6",
+              "source": "03_weapons/weapon_stats.json#/weapons/24/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 25,
+          "asset": {
+            "asset": "DA_Weapon_Pistol_Scorched",
+            "name": null,
+            "description": null,
+            "damage": 24.0,
+            "rpm": 550.0,
+            "magazine_size": 14,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Pistol",
+            "row": "Pistol_Scorched"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "C[4]",
+            "assetId": "DA_Chasis_Pistol_Scorched",
+            "label": "SCORCHED",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "C[4]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Pistol.png"
+            },
+            {
+              "source": "L[7]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Pistol.png"
+            }
+          ],
+          "legacyLabel": "SCORCHED PISTOL",
+          "displayName": "Scorched Pistol",
+          "nameEvidence": "L[7] display_name: SCORCHED PISTOL",
+          "searchName": "Pistol Scorched",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Pistol_Scorched",
+              "rawField": "damage",
+              "rawValue": 24.0,
+              "text": "24",
+              "source": "03_weapons/weapon_stats.json#/weapons/25/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Pistol_Scorched",
+              "rawField": "rpm",
+              "rawValue": 550.0,
+              "text": "550",
+              "source": "03_weapons/weapon_stats.json#/weapons/25/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Pistol_Scorched",
+              "rawField": "magazine_size",
+              "rawValue": 14,
+              "text": "14",
+              "source": "03_weapons/weapon_stats.json#/weapons/25/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        }
+      ],
+      "verifiedProperties": {
+        "damage": {
+          "assetId": "DA_Weapon_Pistol",
+          "rawField": "damage",
+          "rawValue": 24.0,
+          "text": "24",
+          "source": "03_weapons/weapon_stats.json#/weapons/20/damage",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "fireRate": {
+          "assetId": "DA_Weapon_Pistol",
+          "rawField": "rpm",
+          "rawValue": 550.0,
+          "text": "550",
+          "source": "03_weapons/weapon_stats.json#/weapons/20/rpm",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "magazineSize": {
+          "assetId": "DA_Weapon_Pistol",
+          "rawField": "magazine_size",
+          "rawValue": 14,
+          "text": "14",
+          "source": "03_weapons/weapon_stats.json#/weapons/20/magazine_size",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        }
+      }
+    },
+    {
+      "name": "SMG",
+      "image": "T_UI_WeaponThumbnail_SMG.png",
+      "sourceIndex": 27,
+      "asset": {
+        "asset": "DA_Weapon_SMG",
+        "name": null,
+        "description": null,
+        "damage": 10.0,
+        "rpm": 1100.0,
+        "magazine_size": 45,
+        "ammo_type": null,
+        "number_of_shots": null,
+        "number_of_slots": null,
+        "reload_speed": null,
+        "accuracy": null,
+        "ads_speed": null,
+        "default_stored_ammo": null,
+        "velocity_projectile": null,
+        "velocity_projectile_ads": null,
+        "gravity_projectile": null,
+        "location_recoil": "Recoil_Shotgun_Loc",
+        "rotation_recoil": "Recoil_Shotgun_Rot",
+        "fire_mode": null,
+        "unverified_fields": [
+          "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+          "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+          "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+          "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+        ],
+        "confidence": "verified"
+      },
+      "variants": [
+        {
+          "sourceIndex": 28,
+          "asset": {
+            "asset": "DA_Weapon_SMG_Bloodrush",
+            "name": null,
+            "description": null,
+            "damage": 10.0,
+            "rpm": 1100.0,
+            "magazine_size": 45,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "C",
+          "material": {
+            "table": "DT_WeaponSkins_SMG",
+            "row": "SMG_Bloodrush"
+          },
+          "configuration": null,
+          "imageEvidence": [
+            {
+              "source": "L[9]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_SMG.png"
+            }
+          ],
+          "legacyLabel": "BLOOSRUSH SMG",
+          "holdReason": "旧表 BLOOSRUSH SMG 与材质行 Bloodrush 拼写冲突",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_SMG_Bloodrush",
+              "rawField": "damage",
+              "rawValue": 10.0,
+              "text": "10",
+              "source": "03_weapons/weapon_stats.json#/weapons/28/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_SMG_Bloodrush",
+              "rawField": "rpm",
+              "rawValue": 1100.0,
+              "text": "1100",
+              "source": "03_weapons/weapon_stats.json#/weapons/28/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_SMG_Bloodrush",
+              "rawField": "magazine_size",
+              "rawValue": 45,
+              "text": "45",
+              "source": "03_weapons/weapon_stats.json#/weapons/28/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 29,
+          "asset": {
+            "asset": "DA_Weapon_SMG_Compact",
+            "name": null,
+            "description": null,
+            "damage": 10.0,
+            "rpm": 1100.0,
+            "magazine_size": 22,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_SMG",
+            "row": "SMG_Compact"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "C[5]",
+            "assetId": "DA_Chasis_SMG_Compact",
+            "label": "COMPACT",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "C[5]",
+              "path": "ui/WeaponThumbnails/Chasis/T_UI_WeaponSkinThumbnail_Compact.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Compact",
+          "nameEvidence": "C[5] display_name: COMPACT",
+          "searchName": "SMG Compact",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_SMG_Compact",
+              "rawField": "damage",
+              "rawValue": 10.0,
+              "text": "10",
+              "source": "03_weapons/weapon_stats.json#/weapons/29/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_SMG_Compact",
+              "rawField": "rpm",
+              "rawValue": 1100.0,
+              "text": "1100",
+              "source": "03_weapons/weapon_stats.json#/weapons/29/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_SMG_Compact",
+              "rawField": "magazine_size",
+              "rawValue": 22,
+              "text": "22",
+              "source": "03_weapons/weapon_stats.json#/weapons/29/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 30,
+          "asset": {
+            "asset": "DA_Weapon_SMG_Lightweight",
+            "name": null,
+            "description": null,
+            "damage": 10.0,
+            "rpm": 1100.0,
+            "magazine_size": 45,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_SMG",
+            "row": "SMG_Lightweight"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "C[7]",
+            "assetId": "DA_Chasis_SMG_Lightweight",
+            "label": "LIGHTWEIGHT",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "C[7]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_SMG.png"
+            },
+            {
+              "source": "L[10]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_SMG.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Lightweight",
+          "nameEvidence": "C[7] display_name: LIGHTWEIGHT",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_SMG_Lightweight",
+              "rawField": "damage",
+              "rawValue": 10.0,
+              "text": "10",
+              "source": "03_weapons/weapon_stats.json#/weapons/30/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_SMG_Lightweight",
+              "rawField": "rpm",
+              "rawValue": 1100.0,
+              "text": "1100",
+              "source": "03_weapons/weapon_stats.json#/weapons/30/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_SMG_Lightweight",
+              "rawField": "magazine_size",
+              "rawValue": 45,
+              "text": "45",
+              "source": "03_weapons/weapon_stats.json#/weapons/30/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 31,
+          "asset": {
+            "asset": "DA_Weapon_SMG_Precision",
+            "name": null,
+            "description": null,
+            "damage": 14.0,
+            "rpm": 600.0,
+            "magazine_size": 22,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_SMG",
+            "row": "SMG_Precision"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "C[8]",
+            "assetId": "DA_Chasis_SMG_Precision",
+            "label": "PRECISION",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "C[8]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_SMG.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Precision",
+          "nameEvidence": "C[8] display_name: PRECISION",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_SMG_Precision",
+              "rawField": "damage",
+              "rawValue": 14.0,
+              "text": "14",
+              "source": "03_weapons/weapon_stats.json#/weapons/31/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_SMG_Precision",
+              "rawField": "rpm",
+              "rawValue": 600.0,
+              "text": "600",
+              "source": "03_weapons/weapon_stats.json#/weapons/31/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_SMG_Precision",
+              "rawField": "magazine_size",
+              "rawValue": 22,
+              "text": "22",
+              "source": "03_weapons/weapon_stats.json#/weapons/31/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 32,
+          "asset": {
+            "asset": "DA_Weapon_SMG_Scorched",
+            "name": null,
+            "description": null,
+            "damage": 10.0,
+            "rpm": 1100.0,
+            "magazine_size": 22,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_SMG",
+            "row": "SMG_Scorched"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "C[9]",
+            "assetId": "DA_Chasis_SMG_Scorched",
+            "label": "SCORCHED",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "C[9]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_SMG.png"
+            },
+            {
+              "source": "L[11]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_SMG.png"
+            }
+          ],
+          "legacyLabel": "SCORCHED SMG",
+          "displayName": "Scorched SMG",
+          "nameEvidence": "L[11] display_name: SCORCHED SMG",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_SMG_Scorched",
+              "rawField": "damage",
+              "rawValue": 10.0,
+              "text": "10",
+              "source": "03_weapons/weapon_stats.json#/weapons/32/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_SMG_Scorched",
+              "rawField": "rpm",
+              "rawValue": 1100.0,
+              "text": "1100",
+              "source": "03_weapons/weapon_stats.json#/weapons/32/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_SMG_Scorched",
+              "rawField": "magazine_size",
+              "rawValue": 22,
+              "text": "22",
+              "source": "03_weapons/weapon_stats.json#/weapons/32/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        }
+      ],
+      "verifiedProperties": {
+        "damage": {
+          "assetId": "DA_Weapon_SMG",
+          "rawField": "damage",
+          "rawValue": 10.0,
+          "text": "10",
+          "source": "03_weapons/weapon_stats.json#/weapons/27/damage",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "fireRate": {
+          "assetId": "DA_Weapon_SMG",
+          "rawField": "rpm",
+          "rawValue": 1100.0,
+          "text": "1100",
+          "source": "03_weapons/weapon_stats.json#/weapons/27/rpm",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "magazineSize": {
+          "assetId": "DA_Weapon_SMG",
+          "rawField": "magazine_size",
+          "rawValue": 45,
+          "text": "45",
+          "source": "03_weapons/weapon_stats.json#/weapons/27/magazine_size",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        }
+      }
+    },
+    {
+      "name": "Shotgun",
+      "image": "T_UI_WeaponThumbnail_Shotgun.png",
+      "sourceIndex": 33,
+      "asset": {
+        "asset": "DA_Weapon_Shotgun",
+        "name": null,
+        "description": null,
+        "damage": 18.0,
+        "rpm": 150.0,
+        "magazine_size": 5,
+        "ammo_type": "Enum_AmmoType::NewEnumerator1",
+        "number_of_shots": 9,
+        "number_of_slots": 16,
+        "reload_speed": 4.0,
+        "accuracy": 10.0,
+        "ads_speed": 0.45,
+        "default_stored_ammo": 52,
+        "velocity_projectile": 0.0,
+        "velocity_projectile_ads": null,
+        "gravity_projectile": 1.6,
+        "location_recoil": "Recoil_Shotgun_Loc",
+        "rotation_recoil": "Recoil_Shotgun_Rot",
+        "fire_mode": null,
+        "unverified_fields": [
+          "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+        ],
+        "thumbnail": "T_UI_WeaponThumbnail_Shotgun",
+        "thumbnail_image": "12_images/ui/WeaponThumbnails/T_UI_WeaponThumbnail_Shotgun.png",
+        "confidence": "verified"
+      },
+      "variants": [
+        {
+          "sourceIndex": 34,
+          "asset": {
+            "asset": "DA_Weapon_Shotgun_Auto",
+            "name": null,
+            "description": null,
+            "damage": 11.0,
+            "rpm": 200.0,
+            "magazine_size": 10,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Shotgun",
+            "row": "Shotgun_Auto"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "S[9]",
+            "assetId": "DA_Skin_Shotgun_Auto",
+            "label": "AUTO",
+            "description": "Default fire mode is full auto"
+          },
+          "imageEvidence": [
+            {
+              "source": "S[9]",
+              "path": "ui/WeaponThumbnails/Chasis/T_UI_WeaponSkinThumbnail_AutoShotgun.png"
+            },
+            {
+              "source": "L[13]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Shotgun.png"
+            }
+          ],
+          "legacyLabel": "AUTO SHOTGUN",
+          "displayName": "Auto Shotgun",
+          "nameEvidence": "L[13] display_name: AUTO SHOTGUN",
+          "searchName": "Auto Shotgun",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Shotgun_Auto",
+              "rawField": "damage",
+              "rawValue": 11.0,
+              "text": "11",
+              "source": "03_weapons/weapon_stats.json#/weapons/34/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Shotgun_Auto",
+              "rawField": "rpm",
+              "rawValue": 200.0,
+              "text": "200",
+              "source": "03_weapons/weapon_stats.json#/weapons/34/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Shotgun_Auto",
+              "rawField": "magazine_size",
+              "rawValue": 10,
+              "text": "10",
+              "source": "03_weapons/weapon_stats.json#/weapons/34/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 35,
+          "asset": {
+            "asset": "DA_Weapon_Shotgun_Frozen",
+            "name": null,
+            "description": null,
+            "damage": 13.0,
+            "rpm": 200.0,
+            "magazine_size": 10,
+            "ammo_type": "Enum_AmmoType::NewEnumerator1",
+            "number_of_shots": 9,
+            "number_of_slots": 16,
+            "reload_speed": 4.0,
+            "accuracy": 10.0,
+            "ads_speed": 0.45,
+            "default_stored_ammo": 52,
+            "velocity_projectile": 0.0,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": 1.6,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "thumbnail": "T_UI_WeaponThumbnail_Shotgun",
+            "thumbnail_image": "12_images/ui/WeaponThumbnails/T_UI_WeaponThumbnail_Shotgun.png",
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Shotgun",
+            "row": "Shotgun_Frozen"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "S[11]",
+            "assetId": "DA_Skin_Shotgun_Frozen",
+            "label": "FROZEN",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "S[11]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Shotgun.png"
+            },
+            {
+              "source": "W[35]",
+              "path": "12_images/ui/WeaponThumbnails/T_UI_WeaponThumbnail_Shotgun.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Frozen",
+          "nameEvidence": "S[11] display_name: FROZEN",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Shotgun_Frozen",
+              "rawField": "damage",
+              "rawValue": 13.0,
+              "text": "13",
+              "source": "03_weapons/weapon_stats.json#/weapons/35/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Shotgun_Frozen",
+              "rawField": "rpm",
+              "rawValue": 200.0,
+              "text": "200",
+              "source": "03_weapons/weapon_stats.json#/weapons/35/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Shotgun_Frozen",
+              "rawField": "magazine_size",
+              "rawValue": 10,
+              "text": "10",
+              "source": "03_weapons/weapon_stats.json#/weapons/35/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 36,
+          "asset": {
+            "asset": "DA_Weapon_Shotgun_Precision",
+            "name": null,
+            "description": null,
+            "damage": 9.0,
+            "rpm": 200.0,
+            "magazine_size": 5,
+            "ammo_type": "Enum_AmmoType::NewEnumerator1",
+            "number_of_shots": 9,
+            "number_of_slots": 16,
+            "reload_speed": 4.0,
+            "accuracy": 5.0,
+            "ads_speed": 0.45,
+            "default_stored_ammo": 52,
+            "velocity_projectile": 0.0,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": 1.6,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "thumbnail": "T_UI_WeaponThumbnail_Shotgun",
+            "thumbnail_image": "12_images/ui/WeaponThumbnails/T_UI_WeaponThumbnail_Shotgun.png",
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Shotgun",
+            "row": "Shotgun_Precision"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "S[12]",
+            "assetId": "DA_Skin_Shotgun_Precision",
+            "label": "PRECISION",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "S[12]",
+              "path": "ui/WeaponThumbnails/Chasis/T_UI_WeaponSkinThumbnail_Precision.png"
+            },
+            {
+              "source": "L[14]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Shotgun.png"
+            },
+            {
+              "source": "W[36]",
+              "path": "12_images/ui/WeaponThumbnails/T_UI_WeaponThumbnail_Shotgun.png"
+            }
+          ],
+          "legacyLabel": "PRECISION SHOTGUN",
+          "displayName": "Precision Shotgun",
+          "nameEvidence": "L[14] display_name: PRECISION SHOTGUN",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Shotgun_Precision",
+              "rawField": "damage",
+              "rawValue": 9.0,
+              "text": "9",
+              "source": "03_weapons/weapon_stats.json#/weapons/36/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Shotgun_Precision",
+              "rawField": "rpm",
+              "rawValue": 200.0,
+              "text": "200",
+              "source": "03_weapons/weapon_stats.json#/weapons/36/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Shotgun_Precision",
+              "rawField": "magazine_size",
+              "rawValue": 5,
+              "text": "5",
+              "source": "03_weapons/weapon_stats.json#/weapons/36/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 37,
+          "asset": {
+            "asset": "DA_Weapon_Shotgun_Stubby",
+            "name": null,
+            "description": null,
+            "damage": 36.0,
+            "rpm": 200.0,
+            "magazine_size": 2,
+            "ammo_type": "Enum_AmmoType::NewEnumerator1",
+            "number_of_shots": 9,
+            "number_of_slots": 16,
+            "reload_speed": 4.0,
+            "accuracy": 10.0,
+            "ads_speed": 0.45,
+            "default_stored_ammo": 52,
+            "velocity_projectile": 0.0,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": 1.6,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "thumbnail": "T_UI_WeaponThumbnail_Shotgun",
+            "thumbnail_image": "12_images/ui/WeaponThumbnails/T_UI_WeaponThumbnail_Shotgun.png",
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Shotgun",
+            "row": "Shotgun_Stubby"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "S[13]",
+            "assetId": "DA_Skin_Shotgun_Stubby",
+            "label": "STUBBY SHOTGUN",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "S[13]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Shotgun.png"
+            },
+            {
+              "source": "L[15]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Shotgun.png"
+            },
+            {
+              "source": "W[37]",
+              "path": "12_images/ui/WeaponThumbnails/T_UI_WeaponThumbnail_Shotgun.png"
+            }
+          ],
+          "legacyLabel": "STUBBY SHOTGUN",
+          "displayName": "Stubby Shotgun",
+          "nameEvidence": "L[15] display_name: STUBBY SHOTGUN",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Shotgun_Stubby",
+              "rawField": "damage",
+              "rawValue": 36.0,
+              "text": "36",
+              "source": "03_weapons/weapon_stats.json#/weapons/37/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Shotgun_Stubby",
+              "rawField": "rpm",
+              "rawValue": 200.0,
+              "text": "200",
+              "source": "03_weapons/weapon_stats.json#/weapons/37/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Shotgun_Stubby",
+              "rawField": "magazine_size",
+              "rawValue": 2,
+              "text": "2",
+              "source": "03_weapons/weapon_stats.json#/weapons/37/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 38,
+          "asset": {
+            "asset": "DA_Weapon_Shotgun_Thumper",
+            "name": null,
+            "description": null,
+            "damage": 18.0,
+            "rpm": 200.0,
+            "magazine_size": 10,
+            "ammo_type": "Enum_AmmoType::NewEnumerator1",
+            "number_of_shots": 9,
+            "number_of_slots": 16,
+            "reload_speed": 4.0,
+            "accuracy": 10.0,
+            "ads_speed": 0.45,
+            "default_stored_ammo": 52,
+            "velocity_projectile": 0.0,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": 1.6,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "thumbnail": "T_UI_WeaponThumbnail_Shotgun",
+            "thumbnail_image": "12_images/ui/WeaponThumbnails/T_UI_WeaponThumbnail_Shotgun.png",
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Shotgun",
+            "row": "Shotgun_Thumper"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "S[14]",
+            "assetId": "DA_Skin_Shotgun_Thumper",
+            "label": "THUMPER",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "S[14]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Shotgun.png"
+            },
+            {
+              "source": "W[38]",
+              "path": "12_images/ui/WeaponThumbnails/T_UI_WeaponThumbnail_Shotgun.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Thumper",
+          "nameEvidence": "S[14] display_name: THUMPER",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Shotgun_Thumper",
+              "rawField": "damage",
+              "rawValue": 18.0,
+              "text": "18",
+              "source": "03_weapons/weapon_stats.json#/weapons/38/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Shotgun_Thumper",
+              "rawField": "rpm",
+              "rawValue": 200.0,
+              "text": "200",
+              "source": "03_weapons/weapon_stats.json#/weapons/38/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Shotgun_Thumper",
+              "rawField": "magazine_size",
+              "rawValue": 10,
+              "text": "10",
+              "source": "03_weapons/weapon_stats.json#/weapons/38/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        }
+      ],
+      "verifiedProperties": {
+        "damage": {
+          "assetId": "DA_Weapon_Shotgun",
+          "rawField": "damage",
+          "rawValue": 18.0,
+          "text": "18",
+          "source": "03_weapons/weapon_stats.json#/weapons/33/damage",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "fireRate": {
+          "assetId": "DA_Weapon_Shotgun",
+          "rawField": "rpm",
+          "rawValue": 150.0,
+          "text": "150",
+          "source": "03_weapons/weapon_stats.json#/weapons/33/rpm",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "magazineSize": {
+          "assetId": "DA_Weapon_Shotgun",
+          "rawField": "magazine_size",
+          "rawValue": 5,
+          "text": "5",
+          "source": "03_weapons/weapon_stats.json#/weapons/33/magazine_size",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        }
+      }
+    },
+    {
+      "name": "Sniper",
+      "image": "T_UI_WeaponThumbnail_Sniper.png",
+      "sourceIndex": 39,
+      "asset": {
+        "asset": "DA_Weapon_Sniper",
+        "name": null,
+        "description": null,
+        "damage": 85.0,
+        "rpm": 150.0,
+        "magazine_size": 8,
+        "ammo_type": null,
+        "number_of_shots": null,
+        "number_of_slots": null,
+        "reload_speed": null,
+        "accuracy": null,
+        "ads_speed": null,
+        "default_stored_ammo": null,
+        "velocity_projectile": null,
+        "velocity_projectile_ads": null,
+        "gravity_projectile": null,
+        "location_recoil": "Recoil_Shotgun_Loc",
+        "rotation_recoil": "Recoil_Shotgun_Rot",
+        "fire_mode": null,
+        "unverified_fields": [
+          "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+          "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+          "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+          "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+        ],
+        "confidence": "verified"
+      },
+      "variants": [
+        {
+          "sourceIndex": 40,
+          "asset": {
+            "asset": "DA_Weapon_Sniper_BountyHunter",
+            "name": null,
+            "description": null,
+            "damage": 85.0,
+            "rpm": 150.0,
+            "magazine_size": 8,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "C",
+          "material": null,
+          "configuration": {
+            "status": "candidate",
+            "source": "C[10]",
+            "assetId": "DA_Chasis_Sniper_BountyHunter",
+            "label": "BOUNTY HUNTER",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "C[10]",
+              "path": "ui/WeaponThumbnails/Chasis/T_UI_WeaponSkinThumbnail_Bounty.png"
+            }
+          ],
+          "legacyLabel": null,
+          "holdReason": "具名 Chassis 候选，缺配套材质行及直接绑定",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Sniper_BountyHunter",
+              "rawField": "damage",
+              "rawValue": 85.0,
+              "text": "85",
+              "source": "03_weapons/weapon_stats.json#/weapons/40/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Sniper_BountyHunter",
+              "rawField": "rpm",
+              "rawValue": 150.0,
+              "text": "150",
+              "source": "03_weapons/weapon_stats.json#/weapons/40/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Sniper_BountyHunter",
+              "rawField": "magazine_size",
+              "rawValue": 8,
+              "text": "8",
+              "source": "03_weapons/weapon_stats.json#/weapons/40/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 41,
+          "asset": {
+            "asset": "DA_Weapon_Sniper_ChargeRifle",
+            "name": null,
+            "description": null,
+            "damage": 45.0,
+            "rpm": 150.0,
+            "magazine_size": 8,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Sniper",
+            "row": "Sniper_ChargeRifle"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "C[11]",
+            "assetId": "DA_Chasis_Sniper_ChargeRifle",
+            "label": "CHARGE RIFLE",
+            "description": "Default fire mode is charge shot"
+          },
+          "imageEvidence": [
+            {
+              "source": "C[11]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Sniper.png"
+            },
+            {
+              "source": "L[17]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Sniper.png"
+            }
+          ],
+          "legacyLabel": "SNIPER",
+          "displayName": "Charge Rifle",
+          "nameEvidence": "C[11] display_name: CHARGE RIFLE",
+          "searchName": "Sniper Charge Rifle",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Sniper_ChargeRifle",
+              "rawField": "damage",
+              "rawValue": 45.0,
+              "text": "45",
+              "source": "03_weapons/weapon_stats.json#/weapons/41/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Sniper_ChargeRifle",
+              "rawField": "rpm",
+              "rawValue": 150.0,
+              "text": "150",
+              "source": "03_weapons/weapon_stats.json#/weapons/41/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Sniper_ChargeRifle",
+              "rawField": "magazine_size",
+              "rawValue": 8,
+              "text": "8",
+              "source": "03_weapons/weapon_stats.json#/weapons/41/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 42,
+          "asset": {
+            "asset": "DA_Weapon_Sniper_Optical",
+            "name": null,
+            "description": null,
+            "damage": 85.0,
+            "rpm": 150.0,
+            "magazine_size": 8,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Sniper",
+            "row": "Sniper_Optical"
+          },
+          "configuration": null,
+          "imageEvidence": [
+            {
+              "source": "L[18]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Sniper.png"
+            }
+          ],
+          "legacyLabel": "SNIPER",
+          "holdReason": "旧表名称 SNIPER，材质行提供区分键，缺独立英文名称",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Sniper_Optical",
+              "rawField": "damage",
+              "rawValue": 85.0,
+              "text": "85",
+              "source": "03_weapons/weapon_stats.json#/weapons/42/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Sniper_Optical",
+              "rawField": "rpm",
+              "rawValue": 150.0,
+              "text": "150",
+              "source": "03_weapons/weapon_stats.json#/weapons/42/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Sniper_Optical",
+              "rawField": "magazine_size",
+              "rawValue": 8,
+              "text": "8",
+              "source": "03_weapons/weapon_stats.json#/weapons/42/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 43,
+          "asset": {
+            "asset": "DA_Weapon_Sniper_Precision",
+            "name": null,
+            "description": null,
+            "damage": 106.0,
+            "rpm": 150.0,
+            "magazine_size": 8,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Sniper",
+            "row": "Sniper_Precision"
+          },
+          "configuration": null,
+          "imageEvidence": [
+            {
+              "source": "L[19]",
+              "path": "ui/WeaponThumbnails/T_UI_WeaponThumbnail_Sniper.png"
+            }
+          ],
+          "legacyLabel": "SNIPER",
+          "holdReason": "旧表名称 SNIPER，材质行提供区分键，缺独立英文名称",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Sniper_Precision",
+              "rawField": "damage",
+              "rawValue": 106.0,
+              "text": "106",
+              "source": "03_weapons/weapon_stats.json#/weapons/43/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Sniper_Precision",
+              "rawField": "rpm",
+              "rawValue": 150.0,
+              "text": "150",
+              "source": "03_weapons/weapon_stats.json#/weapons/43/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Sniper_Precision",
+              "rawField": "magazine_size",
+              "rawValue": 8,
+              "text": "8",
+              "source": "03_weapons/weapon_stats.json#/weapons/43/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        },
+        {
+          "sourceIndex": 44,
+          "asset": {
+            "asset": "DA_Weapon_Sniper_Refraction",
+            "name": null,
+            "description": null,
+            "damage": 85.0,
+            "rpm": 150.0,
+            "magazine_size": 8,
+            "ammo_type": null,
+            "number_of_shots": null,
+            "number_of_slots": null,
+            "reload_speed": null,
+            "accuracy": null,
+            "ads_speed": null,
+            "default_stored_ammo": null,
+            "velocity_projectile": null,
+            "velocity_projectile_ads": null,
+            "gravity_projectile": null,
+            "location_recoil": "Recoil_Shotgun_Loc",
+            "rotation_recoil": "Recoil_Shotgun_Rot",
+            "fire_mode": null,
+            "unverified_fields": [
+              "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+              "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+              "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+              "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+              "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+              "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+              "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+            ],
+            "confidence": "verified"
+          },
+          "grade": "B",
+          "material": {
+            "table": "DT_WeaponSkins_Sniper",
+            "row": "Sniper_Refraction"
+          },
+          "configuration": {
+            "status": "candidate",
+            "source": "C[13]",
+            "assetId": "DA_Chasis_Sniper_Refraction",
+            "label": "REFRACTION",
+            "description": null
+          },
+          "imageEvidence": [
+            {
+              "source": "C[13]",
+              "path": "ui/WeaponThumbnails/Chasis/T_UI_WeaponSkinThumbnail_Sniper_Refraction.png"
+            }
+          ],
+          "legacyLabel": null,
+          "displayName": "Refraction",
+          "nameEvidence": "C[13] display_name: REFRACTION",
+          "verifiedProperties": {
+            "damage": {
+              "assetId": "DA_Weapon_Sniper_Refraction",
+              "rawField": "damage",
+              "rawValue": 85.0,
+              "text": "85",
+              "source": "03_weapons/weapon_stats.json#/weapons/44/damage",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "fireRate": {
+              "assetId": "DA_Weapon_Sniper_Refraction",
+              "rawField": "rpm",
+              "rawValue": 150.0,
+              "text": "150",
+              "source": "03_weapons/weapon_stats.json#/weapons/44/rpm",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            },
+            "magazineSize": {
+              "assetId": "DA_Weapon_Sniper_Refraction",
+              "rawField": "magazine_size",
+              "rawValue": 8,
+              "text": "8",
+              "source": "03_weapons/weapon_stats.json#/weapons/44/magazine_size",
+              "sourceBuild": "26439385",
+              "status": "source-confirmed"
+            }
+          }
+        }
+      ],
+      "verifiedProperties": {
+        "damage": {
+          "assetId": "DA_Weapon_Sniper",
+          "rawField": "damage",
+          "rawValue": 85.0,
+          "text": "85",
+          "source": "03_weapons/weapon_stats.json#/weapons/39/damage",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "fireRate": {
+          "assetId": "DA_Weapon_Sniper",
+          "rawField": "rpm",
+          "rawValue": 150.0,
+          "text": "150",
+          "source": "03_weapons/weapon_stats.json#/weapons/39/rpm",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "magazineSize": {
+          "assetId": "DA_Weapon_Sniper",
+          "rawField": "magazine_size",
+          "rawValue": 8,
+          "text": "8",
+          "source": "03_weapons/weapon_stats.json#/weapons/39/magazine_size",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        }
+      }
+    }
+  ],
+  "endgame": [
+    {
+      "name": "Revolver",
+      "image": "T_UI_WeaponThumbnail_Revolver.png",
+      "sourceIndex": 26,
+      "asset": {
+        "asset": "DA_Weapon_Revolver",
+        "name": null,
+        "description": null,
+        "damage": null,
+        "rpm": 550.0,
+        "magazine_size": 6,
+        "ammo_type": null,
+        "number_of_shots": null,
+        "number_of_slots": null,
+        "reload_speed": null,
+        "accuracy": null,
+        "ads_speed": null,
+        "default_stored_ammo": null,
+        "velocity_projectile": null,
+        "velocity_projectile_ads": null,
+        "gravity_projectile": null,
+        "location_recoil": "Recoil_Shotgun_Loc",
+        "rotation_recoil": "Recoil_Shotgun_Rot",
+        "fire_mode": null,
+        "unverified_fields": [
+          "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+          "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+          "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+          "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+        ],
+        "confidence": "partial"
+      },
+      "verifiedProperties": {
+        "fireRate": {
+          "assetId": "DA_Weapon_Revolver",
+          "rawField": "rpm",
+          "rawValue": 550.0,
+          "text": "550",
+          "source": "03_weapons/weapon_stats.json#/weapons/26/rpm",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "magazineSize": {
+          "assetId": "DA_Weapon_Revolver",
+          "rawField": "magazine_size",
+          "rawValue": 6,
+          "text": "6",
+          "source": "03_weapons/weapon_stats.json#/weapons/26/magazine_size",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        }
+      }
+    },
+    {
+      "name": "Flamethrower",
+      "image": "T_UI_WeaponThumbnail_Flamethrower.png",
+      "sourceIndex": 7,
+      "asset": {
+        "asset": "DA_Weapon_Flamethrower",
+        "name": null,
+        "description": null,
+        "damage": 26.0,
+        "rpm": 350.0,
+        "magazine_size": 30,
+        "ammo_type": null,
+        "number_of_shots": null,
+        "number_of_slots": null,
+        "reload_speed": null,
+        "accuracy": null,
+        "ads_speed": null,
+        "default_stored_ammo": null,
+        "velocity_projectile": null,
+        "velocity_projectile_ads": null,
+        "gravity_projectile": null,
+        "location_recoil": "Recoil_Shotgun_Loc",
+        "rotation_recoil": "Recoil_Shotgun_Rot",
+        "fire_mode": null,
+        "unverified_fields": [
+          "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+          "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+          "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+          "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+        ],
+        "confidence": "verified"
+      },
+      "verifiedProperties": {
+        "damage": {
+          "assetId": "DA_Weapon_Flamethrower",
+          "rawField": "damage",
+          "rawValue": 26.0,
+          "text": "26",
+          "source": "03_weapons/weapon_stats.json#/weapons/7/damage",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "fireRate": {
+          "assetId": "DA_Weapon_Flamethrower",
+          "rawField": "rpm",
+          "rawValue": 350.0,
+          "text": "350",
+          "source": "03_weapons/weapon_stats.json#/weapons/7/rpm",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "magazineSize": {
+          "assetId": "DA_Weapon_Flamethrower",
+          "rawField": "magazine_size",
+          "rawValue": 30,
+          "text": "30",
+          "source": "03_weapons/weapon_stats.json#/weapons/7/magazine_size",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        }
+      }
+    },
+    {
+      "name": "Entity Rifle",
+      "image": "T_UI_WeaponThumbnail_EntityRifle.png",
+      "sourceIndex": 6,
+      "asset": {
+        "asset": "DA_Weapon_EntityRifle",
+        "name": null,
+        "description": null,
+        "damage": null,
+        "rpm": 300.0,
+        "magazine_size": 12,
+        "ammo_type": null,
+        "number_of_shots": null,
+        "number_of_slots": null,
+        "reload_speed": null,
+        "accuracy": null,
+        "ads_speed": null,
+        "default_stored_ammo": null,
+        "velocity_projectile": null,
+        "velocity_projectile_ads": null,
+        "gravity_projectile": null,
+        "location_recoil": "Recoil_Shotgun_Loc",
+        "rotation_recoil": "Recoil_Shotgun_Rot",
+        "fire_mode": null,
+        "unverified_fields": [
+          "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+          "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+          "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+          "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+        ],
+        "confidence": "partial"
+      },
+      "verifiedProperties": {
+        "fireRate": {
+          "assetId": "DA_Weapon_EntityRifle",
+          "rawField": "rpm",
+          "rawValue": 300.0,
+          "text": "300",
+          "source": "03_weapons/weapon_stats.json#/weapons/6/rpm",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "magazineSize": {
+          "assetId": "DA_Weapon_EntityRifle",
+          "rawField": "magazine_size",
+          "rawValue": 12,
+          "text": "12",
+          "source": "03_weapons/weapon_stats.json#/weapons/6/magazine_size",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        }
+      }
+    }
+  ],
+  "internal": [
+    {
+      "sourceIndex": 45,
+      "asset": {
+        "asset": "DA_Weapon_Unarmed",
+        "name": null,
+        "description": null,
+        "damage": 11.0,
+        "rpm": 600.0,
+        "magazine_size": 30,
+        "ammo_type": null,
+        "number_of_shots": null,
+        "number_of_slots": null,
+        "reload_speed": null,
+        "accuracy": null,
+        "ads_speed": null,
+        "default_stored_ammo": null,
+        "velocity_projectile": null,
+        "velocity_projectile_ads": null,
+        "gravity_projectile": null,
+        "location_recoil": "Recoil_Shotgun_Loc",
+        "rotation_recoil": "Recoil_Shotgun_Rot",
+        "fire_mode": null,
+        "unverified_fields": [
+          "reload_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "accuracy (未在该资产中覆写，继承父蓝本默认值)",
+          "ads_speed (未在该资产中覆写，继承父蓝本默认值)",
+          "ammo_type (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_shots (未在该资产中覆写，继承父蓝本默认值)",
+          "number_of_slots (未在该资产中覆写，继承父蓝本默认值)",
+          "default_stored_ammo (未在该资产中覆写，继承父蓝本默认值)",
+          "velocity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "gravity_projectile (未在该资产中覆写，继承父蓝本默认值)",
+          "fire_mode (未在该资产中覆写，继承父蓝本默认值)"
+        ],
+        "confidence": "verified"
+      },
+      "verifiedProperties": {
+        "damage": {
+          "assetId": "DA_Weapon_Unarmed",
+          "rawField": "damage",
+          "rawValue": 11.0,
+          "text": "11",
+          "source": "03_weapons/weapon_stats.json#/weapons/45/damage",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "fireRate": {
+          "assetId": "DA_Weapon_Unarmed",
+          "rawField": "rpm",
+          "rawValue": 600.0,
+          "text": "600",
+          "source": "03_weapons/weapon_stats.json#/weapons/45/rpm",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        },
+        "magazineSize": {
+          "assetId": "DA_Weapon_Unarmed",
+          "rawField": "magazine_size",
+          "rawValue": 30,
+          "text": "30",
+          "source": "03_weapons/weapon_stats.json#/weapons/45/magazine_size",
+          "sourceBuild": "26439385",
+          "status": "source-confirmed"
+        }
+      }
+    }
+  ]
+}

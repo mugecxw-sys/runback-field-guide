@@ -1,0 +1,3303 @@
+{
+  "core": [
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/0",
+      "raw": {
+        "asset": "DA_DIFF_AnomalyFault",
+        "name": "ANOMALY FAULT",
+        "description": "Anomalies provide no additional reward",
+        "thumbnail": "T_UI_Icon_AnomalyFault",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_AnomalyFault.png",
+        "Tag": "AnomalyFault"
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/1",
+      "raw": {
+        "asset": "DA_DIFF_AnomalySpike",
+        "name": "ANOMALY SPIKE",
+        "description": "Increased anomaly chance",
+        "thumbnail": "T_UI_Icon_AnomalySpike",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_AnomalySpike.png",
+        "Tag": "AnomalySpike"
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/2",
+      "raw": {
+        "asset": "DA_DIFF_ApexSurge",
+        "name": "APEX SURGE",
+        "description": "Increased chance for apex enemy variant to spawn",
+        "thumbnail": "T_UI_Icon_Combat_Apex",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_Combat_Apex.png",
+        "Tag": "ApexSurge",
+        "ChaosRating": 2
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/3",
+      "raw": {
+        "asset": "DA_DIFF_CreditSuspension",
+        "name": "CREDIT SUSPENSION",
+        "description": "Enemies drop no currency",
+        "thumbnail": "T_UI_CreditSuspension",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_CreditSuspension.png",
+        "Tag": "CreditSuspension"
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/4",
+      "raw": {
+        "asset": "DA_DIFF_DeathLock",
+        "name": "DEATH LOCK",
+        "description": "Enemies receive one hit death protection",
+        "thumbnail": "T_UI_Icon_DeathLock",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_DeathLock.png",
+        "Tag": "DeathLock"
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/5",
+      "raw": {
+        "asset": "DA_DIFF_EliteSurge",
+        "name": "ELITE SURGE",
+        "description": "Increased chance for elite enemy variant to spawn",
+        "thumbnail": "T_UI_Icon_Combat",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_Combat.png",
+        "Tag": "EliteSurge"
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/6",
+      "raw": {
+        "asset": "DA_DIFF_Empowered",
+        "name": "EMPOWERED",
+        "description": "Increased enemy level variance",
+        "thumbnail": "T_UI_Icon_Elite",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_Elite.png",
+        "Tag": "Empowered"
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/7",
+      "raw": {
+        "asset": "DA_DIFF_FastRecovery",
+        "name": "FAST RECOVERY",
+        "description": "Enemy stagger duration reduced",
+        "thumbnail": "T_UI_Icon_Recovery",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_Recovery.png",
+        "Tag": "FastRecovery"
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/8",
+      "raw": {
+        "asset": "DA_DIFF_Frenzy",
+        "name": "FRENZY",
+        "description": "Increased enemy aggression",
+        "thumbnail": "T_UI_Difficulty_Insanity",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Difficulty_Insanity.png",
+        "Tag": "Frenzy"
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/9",
+      "raw": {
+        "asset": "DA_DIFF_Inflation",
+        "name": "INFLATION",
+        "description": "Shops are more expensive",
+        "thumbnail": "T_UI_Icon_Inflation",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_Inflation.png",
+        "Tag": "Inflation"
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/10",
+      "raw": {
+        "asset": "DA_DIFF_Lifeline",
+        "name": "LIFELINE",
+        "description": "Defensive enemies appear earlier and in higher numbers",
+        "thumbnail": "T_UI_Icon_Lifeline",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_Lifeline.png",
+        "Tag": "Lifeline"
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/11",
+      "raw": {
+        "asset": "DA_DIFF_Reinforcements",
+        "name": "REINFORCEMENTS",
+        "description": "Mini-boss encounters have additional enemies",
+        "thumbnail": "T_UI_Icon_Reinforcemenets",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_Reinforcemenets.png",
+        "Tag": "Reinforcements"
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/12",
+      "raw": {
+        "asset": "DA_DIFF_RepeaterCap",
+        "name": "REPEATER CAP",
+        "description": "Repeaters will not exceed a maximum of 2 executions",
+        "thumbnail": "T_UI_Icon_SphereResonator",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_SphereResonator.png",
+        "Tag": "RepeaterCap",
+        "ChaosRating": 2
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/13",
+      "raw": {
+        "asset": "DA_DIFF_SilentNight",
+        "name": "SILENT NIGHT",
+        "description": "No enemy audio or attack indicators",
+        "thumbnail": "T_UI_Icon_SilentNight",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_SilentNight.png",
+        "Tag": "SilentNight"
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/14",
+      "raw": {
+        "asset": "DA_DIFF_SlimPickings",
+        "name": "SLIM PICKINGS",
+        "description": "Module chests only contain 2 options",
+        "thumbnail": "T_UI_Icon_SlimPickings",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_SlimPickings.png",
+        "Tag": "SlimPickings"
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/15",
+      "raw": {
+        "asset": "DA_DIFF_StackThrottle",
+        "name": "STACK THROTTLE",
+        "description": "Max elemental stacks reduced by half",
+        "thumbnail": "T_UI_Icon_Fire",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_Fire.png",
+        "Tag": "StackThrottle",
+        "ChaosRating": 2
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "C",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/16",
+      "raw": {
+        "asset": "DA_DIFF_Unknown",
+        "name": "UNKNOWN DATA [EARLY ACCESS]",
+        "description": "<< UNDER CONSTRUCTION >>",
+        "Tag": "Unknown"
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/17",
+      "raw": {
+        "asset": "DA_DIFF_UnluckyDay",
+        "name": "UNLUCKY DAY",
+        "description": "Decreases luck",
+        "thumbnail": "T_UI_Icon_UnluckyDay",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_UnluckyDay.png",
+        "Tag": "UnluckyDay"
+      }
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "category": "difficulty",
+      "grade": "B",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/18",
+      "raw": {
+        "asset": "DA_DIFF_Vulnerable",
+        "name": "VULNERABLE",
+        "description": "Remove one hit death protection",
+        "thumbnail": "T_UI_Icon_Vulnerable",
+        "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_Vulnerable.png",
+        "Tag": "Vulnerable",
+        "ChaosRating": 2
+      }
+    },
+    {
+      "namespace": "Corruptors",
+      "category": "corruptors",
+      "grade": "A",
+      "source": "13_additional_data/corruptors.json#/entries/0",
+      "raw": {
+        "asset": "DA_Corruptor_EMP",
+        "name": "EMP",
+        "description": "No access to ability or grenade.",
+        "CorruptorMasterClass": "AC_Corruptor_EMP_C",
+        "CorruptorUses": 1,
+        "LootReward": [
+          "DA_RareChest"
+        ]
+      }
+    },
+    {
+      "namespace": "Corruptors",
+      "category": "corruptors",
+      "grade": "A",
+      "source": "13_additional_data/corruptors.json#/entries/1",
+      "raw": {
+        "asset": "DA_Corruptor_Permafrost",
+        "name": "PERMAFROST",
+        "description": "Enemies release projectiles on death and leave freezing pools",
+        "CorruptorMasterClass": "AC_Corruptor_Permafrost_C",
+        "CorruptorUses": 1,
+        "LootReward": [
+          "DA_RareChest"
+        ]
+      }
+    },
+    {
+      "namespace": "Corruptors",
+      "category": "corruptors",
+      "grade": "A",
+      "source": "13_additional_data/corruptors.json#/entries/2",
+      "raw": {
+        "asset": "DA_Corruptor_StrengthenedEnemies",
+        "name": "STRENGTHENED ENEMIES",
+        "description": "You deal less damage",
+        "CorruptorMasterClass": "AC_Corruptor_StrengthenedEnemies_C",
+        "CorruptorUses": 1,
+        "LootReward": [
+          "DA_RareChest"
+        ]
+      }
+    },
+    {
+      "namespace": "Corruptors",
+      "category": "corruptors",
+      "grade": "A",
+      "source": "13_additional_data/corruptors.json#/entries/3",
+      "raw": {
+        "asset": "DA_Corruptor_SystemLag",
+        "name": "SYSTEM LAG",
+        "description": "Increases sliding friction. Slows reload speed. Slows ADS time.",
+        "CorruptorMasterClass": "AC_Corruptor_SystemLag_C",
+        "CorruptorUses": 1,
+        "LootReward": [
+          "DA_RareChest"
+        ]
+      }
+    },
+    {
+      "namespace": "Corruptors",
+      "category": "corruptors",
+      "grade": "A",
+      "source": "13_additional_data/corruptors.json#/entries/4",
+      "raw": {
+        "asset": "DA_Corruptor_VitalityOverride",
+        "name": "VITALITY OVERRIDE",
+        "description": "Unable to pickup health or ammo",
+        "CorruptorMasterClass": "AC_Corruptor_VitalityOverride_C",
+        "CorruptorUses": 1,
+        "LootReward": [
+          "DA_RareChest"
+        ]
+      }
+    },
+    {
+      "namespace": "Corruptors",
+      "category": "corruptors",
+      "grade": "A",
+      "source": "13_additional_data/corruptors.json#/entries/5",
+      "raw": {
+        "asset": "DA_Corruptor_Weakened",
+        "name": "WEAKENED",
+        "description": "Receive more damage from enemies",
+        "CorruptorMasterClass": "AC_Corruptor_Weakened_C",
+        "CorruptorUses": 1,
+        "LootReward": [
+          "DA_RareChest"
+        ]
+      }
+    },
+    {
+      "namespace": "Obelisks",
+      "category": "obelisks",
+      "grade": "A",
+      "source": "13_additional_data/obelisks.json#/entries/0",
+      "raw": {
+        "asset": "DA_Obelisk_AllIn",
+        "name": "All-In",
+        "description": "Spend all your credits for one legendary module (Must have at least 1 credit)",
+        "ObeliskMaster": "BP_Obelisk_All-In_Legend_C"
+      }
+    },
+    {
+      "namespace": "Obelisks",
+      "category": "obelisks",
+      "grade": "A",
+      "source": "13_additional_data/obelisks.json#/entries/1",
+      "raw": {
+        "asset": "DA_Obelisk_AntiHealer",
+        "name": "Anti-Heal",
+        "description": "Could either heal to max health or damage you slightly.",
+        "ObeliskMaster": "BP_Obelisk_Anti-Heal_C"
+      }
+    },
+    {
+      "namespace": "Obelisks",
+      "category": "obelisks",
+      "grade": "A",
+      "source": "13_additional_data/obelisks.json#/entries/2",
+      "raw": {
+        "asset": "DA_Obelisk_Commoner",
+        "name": "Commoner",
+        "description": "Deletes one random module from inventory, in exchange for 4 common modules",
+        "ObeliskMaster": "BP_Obelisk_Commoner_C"
+      }
+    },
+    {
+      "namespace": "Obelisks",
+      "category": "obelisks",
+      "grade": "A",
+      "source": "13_additional_data/obelisks.json#/entries/3",
+      "raw": {
+        "asset": "DA_Obelisk_Corrupted",
+        "name": "Corrupted",
+        "description": "Sets projectile ammo to 0 in exchange for 1 corrupted module",
+        "ObeliskMaster": "BP_Obelisk_Corrupted_C"
+      }
+    },
+    {
+      "namespace": "Obelisks",
+      "category": "obelisks",
+      "grade": "A",
+      "source": "13_additional_data/obelisks.json#/entries/4",
+      "raw": {
+        "asset": "DA_Obelisk_DoubleOrNothing",
+        "name": "Double Or Nothing",
+        "description": "Could double your credits and health. Or could halve them",
+        "ObeliskMaster": "BP_Obelisk_DoubleOrNothing_C"
+      }
+    },
+    {
+      "namespace": "Obelisks",
+      "category": "obelisks",
+      "grade": "A",
+      "source": "13_additional_data/obelisks.json#/entries/5",
+      "raw": {
+        "asset": "DA_Obelisk_DuplicationDelete",
+        "name": "Duplication / Delete",
+        "description": "Could duplicate a random module from your inventory. Or could delete it.",
+        "ObeliskMaster": "BP_Obelisk_DuplicationDelete_C"
+      }
+    },
+    {
+      "namespace": "Obelisks",
+      "category": "obelisks",
+      "grade": "A",
+      "source": "13_additional_data/obelisks.json#/entries/6",
+      "raw": {
+        "asset": "DA_Obelisk_Gambler",
+        "name": "Gambler",
+        "description": "Spend 80 credits for a 50% chance to receive a module of epic rarity or higher, or nothing at all.",
+        "ObeliskMaster": "BP_Obelisk_Gambler_C"
+      }
+    },
+    {
+      "namespace": "Obelisks",
+      "category": "obelisks",
+      "grade": "A",
+      "source": "13_additional_data/obelisks.json#/entries/7",
+      "raw": {
+        "asset": "DA_Obelisk_GoldRush",
+        "name": "Gold Rush",
+        "description": "Produces a large amount of credits but will damage you slightly",
+        "ObeliskMaster": "BP_Obelisk_GoldRush_C"
+      }
+    },
+    {
+      "namespace": "Obelisks",
+      "category": "obelisks",
+      "grade": "A",
+      "source": "13_additional_data/obelisks.json#/entries/8",
+      "raw": {
+        "asset": "DA_Obelisk_LuckyMod",
+        "name": "Lucky Weapon Mod",
+        "description": "Produces a random weapon module, but will damage you slightly",
+        "ObeliskMaster": "BP_Obelisk_LuckyMod_C"
+      }
+    },
+    {
+      "namespace": "Obelisks",
+      "category": "obelisks",
+      "grade": "A",
+      "source": "13_additional_data/obelisks.json#/entries/9",
+      "raw": {
+        "asset": "DA_Obelisk_Uncommoner",
+        "name": "Uncommoner",
+        "description": "Deletes one random module from inventory, in exchange for 3 uncommon modules",
+        "ObeliskMaster": "BP_Obelisk_Uncommoner_C"
+      }
+    },
+    {
+      "namespace": "Obelisks",
+      "category": "obelisks",
+      "grade": "C",
+      "source": "13_additional_data/obelisks.json#/entries/10",
+      "raw": {
+        "asset": "STR_ObeliskData",
+        "Guid": "BC28A16A-412B8762-24D0CD8C-5867F84D"
+      }
+    }
+  ],
+  "reward": {
+    "source": "13_additional_data/loot.json#/entries/6",
+    "raw": {
+      "asset": "DA_RareChest",
+      "name": "RARE MODIFICATION CHEST",
+      "description": "A chest containing higher tier modifications",
+      "thumbnail": "T_UI_Icon_Chest_Rare",
+      "thumbnail_image": "12_images/ui/Icons/T_UI_Icon_Chest_Rare.png",
+      "ChestType": "Enum_ChestType::NewEnumerator8"
+    }
+  },
+  "images": {
+    "12_images/ui/Icons/T_UI_Icon_AnomalyFault.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_AnomalyFault.png",
+      "width": 512,
+      "height": 512
+    },
+    "12_images/ui/Icons/T_UI_Icon_AnomalySpike.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_AnomalySpike.png",
+      "width": 512,
+      "height": 512
+    },
+    "12_images/ui/Icons/T_UI_Icon_Combat_Apex.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_Combat_Apex.png",
+      "width": 512,
+      "height": 512
+    },
+    "12_images/ui/Icons/T_UI_CreditSuspension.png": {
+      "src": "/games/void-breaker/chaos/T_UI_CreditSuspension.png",
+      "width": 512,
+      "height": 512
+    },
+    "12_images/ui/Icons/T_UI_Icon_DeathLock.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_DeathLock.png",
+      "width": 512,
+      "height": 512
+    },
+    "12_images/ui/Icons/T_UI_Icon_Combat.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_Combat.png",
+      "width": 128,
+      "height": 128
+    },
+    "12_images/ui/Icons/T_UI_Icon_Elite.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_Elite.png",
+      "width": 128,
+      "height": 128
+    },
+    "12_images/ui/Icons/T_UI_Icon_Recovery.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_Recovery.png",
+      "width": 256,
+      "height": 256
+    },
+    "12_images/ui/Icons/T_UI_Difficulty_Insanity.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Difficulty_Insanity.png",
+      "width": 1024,
+      "height": 1024
+    },
+    "12_images/ui/Icons/T_UI_Icon_Inflation.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_Inflation.png",
+      "width": 512,
+      "height": 512
+    },
+    "12_images/ui/Icons/T_UI_Icon_Lifeline.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_Lifeline.png",
+      "width": 512,
+      "height": 512
+    },
+    "12_images/ui/Icons/T_UI_Icon_Reinforcemenets.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_Reinforcemenets.png",
+      "width": 512,
+      "height": 512
+    },
+    "12_images/ui/Icons/T_UI_Icon_SphereResonator.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_SphereResonator.png",
+      "width": 256,
+      "height": 256
+    },
+    "12_images/ui/Icons/T_UI_Icon_SilentNight.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_SilentNight.png",
+      "width": 256,
+      "height": 256
+    },
+    "12_images/ui/Icons/T_UI_Icon_SlimPickings.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_SlimPickings.png",
+      "width": 512,
+      "height": 512
+    },
+    "12_images/ui/Icons/T_UI_Icon_Fire.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_Fire.png",
+      "width": 128,
+      "height": 128
+    },
+    "12_images/ui/Icons/T_UI_Icon_UnluckyDay.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_UnluckyDay.png",
+      "width": 512,
+      "height": 512
+    },
+    "12_images/ui/Icons/T_UI_Icon_Vulnerable.png": {
+      "src": "/games/void-breaker/chaos/T_UI_Icon_Vulnerable.png",
+      "width": 512,
+      "height": 512
+    }
+  },
+  "fieldEvidence": [
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_AnomalyFault",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/0/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_AnomalyFault",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_AnomalyFault",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/0/name",
+      "rawField": "name",
+      "rawValue": "ANOMALY FAULT",
+      "displayValue": "ANOMALY FAULT",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_AnomalyFault",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/0/description",
+      "rawField": "description",
+      "rawValue": "Anomalies provide no additional reward",
+      "displayValue": "Anomalies provide no additional reward",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_AnomalyFault",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/0/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_AnomalyFault",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_AnomalyFault",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/0/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_AnomalyFault.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_AnomalyFault.png",
+        "width": 512,
+        "height": 512
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_AnomalyFault",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/0/Tag",
+      "rawField": "Tag",
+      "rawValue": "AnomalyFault",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_AnomalySpike",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/1/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_AnomalySpike",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_AnomalySpike",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/1/name",
+      "rawField": "name",
+      "rawValue": "ANOMALY SPIKE",
+      "displayValue": "ANOMALY SPIKE",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_AnomalySpike",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/1/description",
+      "rawField": "description",
+      "rawValue": "Increased anomaly chance",
+      "displayValue": "Increased anomaly chance",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_AnomalySpike",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/1/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_AnomalySpike",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_AnomalySpike",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/1/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_AnomalySpike.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_AnomalySpike.png",
+        "width": 512,
+        "height": 512
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_AnomalySpike",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/1/Tag",
+      "rawField": "Tag",
+      "rawValue": "AnomalySpike",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_ApexSurge",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/2/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_ApexSurge",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_ApexSurge",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/2/name",
+      "rawField": "name",
+      "rawValue": "APEX SURGE",
+      "displayValue": "APEX SURGE",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_ApexSurge",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/2/description",
+      "rawField": "description",
+      "rawValue": "Increased chance for apex enemy variant to spawn",
+      "displayValue": "Increased chance for apex enemy variant to spawn",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_ApexSurge",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/2/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_Combat_Apex",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_ApexSurge",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/2/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_Combat_Apex.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_Combat_Apex.png",
+        "width": 512,
+        "height": 512
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_ApexSurge",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/2/Tag",
+      "rawField": "Tag",
+      "rawValue": "ApexSurge",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_ApexSurge",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/2/ChaosRating",
+      "rawField": "ChaosRating",
+      "rawValue": 2,
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_CreditSuspension",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/3/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_CreditSuspension",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_CreditSuspension",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/3/name",
+      "rawField": "name",
+      "rawValue": "CREDIT SUSPENSION",
+      "displayValue": "CREDIT SUSPENSION",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_CreditSuspension",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/3/description",
+      "rawField": "description",
+      "rawValue": "Enemies drop no currency",
+      "displayValue": "Enemies drop no currency",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_CreditSuspension",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/3/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_CreditSuspension",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_CreditSuspension",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/3/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_CreditSuspension.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_CreditSuspension.png",
+        "width": 512,
+        "height": 512
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_CreditSuspension",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/3/Tag",
+      "rawField": "Tag",
+      "rawValue": "CreditSuspension",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_DeathLock",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/4/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_DeathLock",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_DeathLock",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/4/name",
+      "rawField": "name",
+      "rawValue": "DEATH LOCK",
+      "displayValue": "DEATH LOCK",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_DeathLock",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/4/description",
+      "rawField": "description",
+      "rawValue": "Enemies receive one hit death protection",
+      "displayValue": "Enemies receive one hit death protection",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_DeathLock",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/4/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_DeathLock",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_DeathLock",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/4/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_DeathLock.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_DeathLock.png",
+        "width": 512,
+        "height": 512
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_DeathLock",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/4/Tag",
+      "rawField": "Tag",
+      "rawValue": "DeathLock",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_EliteSurge",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/5/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_EliteSurge",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_EliteSurge",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/5/name",
+      "rawField": "name",
+      "rawValue": "ELITE SURGE",
+      "displayValue": "ELITE SURGE",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_EliteSurge",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/5/description",
+      "rawField": "description",
+      "rawValue": "Increased chance for elite enemy variant to spawn",
+      "displayValue": "Increased chance for elite enemy variant to spawn",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_EliteSurge",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/5/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_Combat",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_EliteSurge",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/5/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_Combat.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_Combat.png",
+        "width": 128,
+        "height": 128
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_EliteSurge",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/5/Tag",
+      "rawField": "Tag",
+      "rawValue": "EliteSurge",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Empowered",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/6/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_Empowered",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Empowered",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/6/name",
+      "rawField": "name",
+      "rawValue": "EMPOWERED",
+      "displayValue": "EMPOWERED",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Empowered",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/6/description",
+      "rawField": "description",
+      "rawValue": "Increased enemy level variance",
+      "displayValue": "Increased enemy level variance",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Empowered",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/6/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_Elite",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Empowered",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/6/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_Elite.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_Elite.png",
+        "width": 128,
+        "height": 128
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Empowered",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/6/Tag",
+      "rawField": "Tag",
+      "rawValue": "Empowered",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_FastRecovery",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/7/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_FastRecovery",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_FastRecovery",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/7/name",
+      "rawField": "name",
+      "rawValue": "FAST RECOVERY",
+      "displayValue": "FAST RECOVERY",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_FastRecovery",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/7/description",
+      "rawField": "description",
+      "rawValue": "Enemy stagger duration reduced",
+      "displayValue": "Enemy stagger duration reduced",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_FastRecovery",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/7/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_Recovery",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_FastRecovery",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/7/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_Recovery.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_Recovery.png",
+        "width": 256,
+        "height": 256
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_FastRecovery",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/7/Tag",
+      "rawField": "Tag",
+      "rawValue": "FastRecovery",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Frenzy",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/8/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_Frenzy",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Frenzy",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/8/name",
+      "rawField": "name",
+      "rawValue": "FRENZY",
+      "displayValue": "FRENZY",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Frenzy",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/8/description",
+      "rawField": "description",
+      "rawValue": "Increased enemy aggression",
+      "displayValue": "Increased enemy aggression",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Frenzy",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/8/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Difficulty_Insanity",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Frenzy",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/8/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Difficulty_Insanity.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Difficulty_Insanity.png",
+        "width": 1024,
+        "height": 1024
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Frenzy",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/8/Tag",
+      "rawField": "Tag",
+      "rawValue": "Frenzy",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Inflation",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/9/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_Inflation",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Inflation",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/9/name",
+      "rawField": "name",
+      "rawValue": "INFLATION",
+      "displayValue": "INFLATION",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Inflation",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/9/description",
+      "rawField": "description",
+      "rawValue": "Shops are more expensive",
+      "displayValue": "Shops are more expensive",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Inflation",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/9/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_Inflation",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Inflation",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/9/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_Inflation.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_Inflation.png",
+        "width": 512,
+        "height": 512
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Inflation",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/9/Tag",
+      "rawField": "Tag",
+      "rawValue": "Inflation",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Lifeline",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/10/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_Lifeline",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Lifeline",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/10/name",
+      "rawField": "name",
+      "rawValue": "LIFELINE",
+      "displayValue": "LIFELINE",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Lifeline",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/10/description",
+      "rawField": "description",
+      "rawValue": "Defensive enemies appear earlier and in higher numbers",
+      "displayValue": "Defensive enemies appear earlier and in higher numbers",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Lifeline",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/10/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_Lifeline",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Lifeline",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/10/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_Lifeline.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_Lifeline.png",
+        "width": 512,
+        "height": 512
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Lifeline",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/10/Tag",
+      "rawField": "Tag",
+      "rawValue": "Lifeline",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Reinforcements",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/11/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_Reinforcements",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Reinforcements",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/11/name",
+      "rawField": "name",
+      "rawValue": "REINFORCEMENTS",
+      "displayValue": "REINFORCEMENTS",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Reinforcements",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/11/description",
+      "rawField": "description",
+      "rawValue": "Mini-boss encounters have additional enemies",
+      "displayValue": "Mini-boss encounters have additional enemies",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Reinforcements",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/11/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_Reinforcemenets",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Reinforcements",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/11/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_Reinforcemenets.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_Reinforcemenets.png",
+        "width": 512,
+        "height": 512
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Reinforcements",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/11/Tag",
+      "rawField": "Tag",
+      "rawValue": "Reinforcements",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_RepeaterCap",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/12/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_RepeaterCap",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_RepeaterCap",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/12/name",
+      "rawField": "name",
+      "rawValue": "REPEATER CAP",
+      "displayValue": "REPEATER CAP",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_RepeaterCap",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/12/description",
+      "rawField": "description",
+      "rawValue": "Repeaters will not exceed a maximum of 2 executions",
+      "displayValue": "Repeaters will not exceed a maximum of 2 executions",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_RepeaterCap",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/12/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_SphereResonator",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_RepeaterCap",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/12/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_SphereResonator.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_SphereResonator.png",
+        "width": 256,
+        "height": 256
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_RepeaterCap",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/12/Tag",
+      "rawField": "Tag",
+      "rawValue": "RepeaterCap",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_RepeaterCap",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/12/ChaosRating",
+      "rawField": "ChaosRating",
+      "rawValue": 2,
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_SilentNight",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/13/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_SilentNight",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_SilentNight",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/13/name",
+      "rawField": "name",
+      "rawValue": "SILENT NIGHT",
+      "displayValue": "SILENT NIGHT",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_SilentNight",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/13/description",
+      "rawField": "description",
+      "rawValue": "No enemy audio or attack indicators",
+      "displayValue": "No enemy audio or attack indicators",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_SilentNight",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/13/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_SilentNight",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_SilentNight",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/13/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_SilentNight.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_SilentNight.png",
+        "width": 256,
+        "height": 256
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_SilentNight",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/13/Tag",
+      "rawField": "Tag",
+      "rawValue": "SilentNight",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_SlimPickings",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/14/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_SlimPickings",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_SlimPickings",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/14/name",
+      "rawField": "name",
+      "rawValue": "SLIM PICKINGS",
+      "displayValue": "SLIM PICKINGS",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_SlimPickings",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/14/description",
+      "rawField": "description",
+      "rawValue": "Module chests only contain 2 options",
+      "displayValue": "Module chests only contain 2 options",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_SlimPickings",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/14/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_SlimPickings",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_SlimPickings",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/14/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_SlimPickings.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_SlimPickings.png",
+        "width": 512,
+        "height": 512
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_SlimPickings",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/14/Tag",
+      "rawField": "Tag",
+      "rawValue": "SlimPickings",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_StackThrottle",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/15/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_StackThrottle",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_StackThrottle",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/15/name",
+      "rawField": "name",
+      "rawValue": "STACK THROTTLE",
+      "displayValue": "STACK THROTTLE",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_StackThrottle",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/15/description",
+      "rawField": "description",
+      "rawValue": "Max elemental stacks reduced by half",
+      "displayValue": "Max elemental stacks reduced by half",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_StackThrottle",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/15/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_Fire",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_StackThrottle",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/15/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_Fire.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_Fire.png",
+        "width": 128,
+        "height": 128
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_StackThrottle",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/15/Tag",
+      "rawField": "Tag",
+      "rawValue": "StackThrottle",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_StackThrottle",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/15/ChaosRating",
+      "rawField": "ChaosRating",
+      "rawValue": 2,
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Unknown",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/16/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_Unknown",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "C-grade schema or placeholder"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Unknown",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/16/name",
+      "rawField": "name",
+      "rawValue": "UNKNOWN DATA [EARLY ACCESS]",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "C-grade schema or placeholder"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Unknown",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/16/description",
+      "rawField": "description",
+      "rawValue": "<< UNDER CONSTRUCTION >>",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "C-grade schema or placeholder"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Unknown",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/16/Tag",
+      "rawField": "Tag",
+      "rawValue": "Unknown",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "C-grade schema or placeholder"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_UnluckyDay",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/17/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_UnluckyDay",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_UnluckyDay",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/17/name",
+      "rawField": "name",
+      "rawValue": "UNLUCKY DAY",
+      "displayValue": "UNLUCKY DAY",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_UnluckyDay",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/17/description",
+      "rawField": "description",
+      "rawValue": "Decreases luck",
+      "displayValue": "Decreases luck",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_UnluckyDay",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/17/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_UnluckyDay",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_UnluckyDay",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/17/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_UnluckyDay.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_UnluckyDay.png",
+        "width": 512,
+        "height": 512
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_UnluckyDay",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/17/Tag",
+      "rawField": "Tag",
+      "rawValue": "UnluckyDay",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Vulnerable",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/18/asset",
+      "rawField": "asset",
+      "rawValue": "DA_DIFF_Vulnerable",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Vulnerable",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/18/name",
+      "rawField": "name",
+      "rawValue": "VULNERABLE",
+      "displayValue": "VULNERABLE",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Vulnerable",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/18/description",
+      "rawField": "description",
+      "rawValue": "Remove one hit death protection",
+      "displayValue": "Remove one hit death protection",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Vulnerable",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/18/thumbnail",
+      "rawField": "thumbnail",
+      "rawValue": "T_UI_Icon_Vulnerable",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Vulnerable",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/18/thumbnail_image",
+      "rawField": "thumbnail_image",
+      "rawValue": "12_images/ui/Icons/T_UI_Icon_Vulnerable.png",
+      "displayValue": {
+        "src": "/games/void-breaker/chaos/T_UI_Icon_Vulnerable.png",
+        "width": 512,
+        "height": 512
+      },
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Vulnerable",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/18/Tag",
+      "rawField": "Tag",
+      "rawValue": "Vulnerable",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "DifficultyModifiers",
+      "asset": "DA_DIFF_Vulnerable",
+      "source": "13_additional_data/difficulty_modifiers.json#/entries/18/ChaosRating",
+      "rawField": "ChaosRating",
+      "rawValue": 2,
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_EMP",
+      "source": "13_additional_data/corruptors.json#/entries/0/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Corruptor_EMP",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_EMP",
+      "source": "13_additional_data/corruptors.json#/entries/0/name",
+      "rawField": "name",
+      "rawValue": "EMP",
+      "displayValue": "EMP",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_EMP",
+      "source": "13_additional_data/corruptors.json#/entries/0/description",
+      "rawField": "description",
+      "rawValue": "No access to ability or grenade.",
+      "displayValue": "No access to ability or grenade.",
+      "verification": "UI-confirmed",
+      "uiEvidence": [
+        "10_raw/ui_text_evidence.txt:L57064"
+      ],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_EMP",
+      "source": "13_additional_data/corruptors.json#/entries/0/CorruptorMasterClass",
+      "rawField": "CorruptorMasterClass",
+      "rawValue": "AC_Corruptor_EMP_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_EMP",
+      "source": "13_additional_data/corruptors.json#/entries/0/CorruptorUses",
+      "rawField": "CorruptorUses",
+      "rawValue": 1,
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_EMP",
+      "source": "13_additional_data/corruptors.json#/entries/0/LootReward",
+      "rawField": "LootReward",
+      "rawValue": [
+        "DA_RareChest"
+      ],
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_Permafrost",
+      "source": "13_additional_data/corruptors.json#/entries/1/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Corruptor_Permafrost",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_Permafrost",
+      "source": "13_additional_data/corruptors.json#/entries/1/name",
+      "rawField": "name",
+      "rawValue": "PERMAFROST",
+      "displayValue": "PERMAFROST",
+      "verification": "UI-confirmed",
+      "uiEvidence": [
+        "10_raw/ui_text_evidence.txt:L57098"
+      ],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_Permafrost",
+      "source": "13_additional_data/corruptors.json#/entries/1/description",
+      "rawField": "description",
+      "rawValue": "Enemies release projectiles on death and leave freezing pools",
+      "displayValue": "Enemies release projectiles on death and leave freezing pools",
+      "verification": "UI-confirmed",
+      "uiEvidence": [
+        "10_raw/ui_text_evidence.txt:L57100"
+      ],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_Permafrost",
+      "source": "13_additional_data/corruptors.json#/entries/1/CorruptorMasterClass",
+      "rawField": "CorruptorMasterClass",
+      "rawValue": "AC_Corruptor_Permafrost_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_Permafrost",
+      "source": "13_additional_data/corruptors.json#/entries/1/CorruptorUses",
+      "rawField": "CorruptorUses",
+      "rawValue": 1,
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_Permafrost",
+      "source": "13_additional_data/corruptors.json#/entries/1/LootReward",
+      "rawField": "LootReward",
+      "rawValue": [
+        "DA_RareChest"
+      ],
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_StrengthenedEnemies",
+      "source": "13_additional_data/corruptors.json#/entries/2/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Corruptor_StrengthenedEnemies",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_StrengthenedEnemies",
+      "source": "13_additional_data/corruptors.json#/entries/2/name",
+      "rawField": "name",
+      "rawValue": "STRENGTHENED ENEMIES",
+      "displayValue": "STRENGTHENED ENEMIES",
+      "verification": "UI-confirmed",
+      "uiEvidence": [
+        "10_raw/ui_text_evidence.txt:L47005"
+      ],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_StrengthenedEnemies",
+      "source": "13_additional_data/corruptors.json#/entries/2/description",
+      "rawField": "description",
+      "rawValue": "You deal less damage",
+      "displayValue": "You deal less damage",
+      "verification": "UI-confirmed",
+      "uiEvidence": [
+        "10_raw/ui_text_evidence.txt:L57091"
+      ],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_StrengthenedEnemies",
+      "source": "13_additional_data/corruptors.json#/entries/2/CorruptorMasterClass",
+      "rawField": "CorruptorMasterClass",
+      "rawValue": "AC_Corruptor_StrengthenedEnemies_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_StrengthenedEnemies",
+      "source": "13_additional_data/corruptors.json#/entries/2/CorruptorUses",
+      "rawField": "CorruptorUses",
+      "rawValue": 1,
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_StrengthenedEnemies",
+      "source": "13_additional_data/corruptors.json#/entries/2/LootReward",
+      "rawField": "LootReward",
+      "rawValue": [
+        "DA_RareChest"
+      ],
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_SystemLag",
+      "source": "13_additional_data/corruptors.json#/entries/3/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Corruptor_SystemLag",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_SystemLag",
+      "source": "13_additional_data/corruptors.json#/entries/3/name",
+      "rawField": "name",
+      "rawValue": "SYSTEM LAG",
+      "displayValue": "SYSTEM LAG",
+      "verification": "UI-confirmed",
+      "uiEvidence": [
+        "10_raw/ui_text_evidence.txt:L57093"
+      ],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_SystemLag",
+      "source": "13_additional_data/corruptors.json#/entries/3/description",
+      "rawField": "description",
+      "rawValue": "Increases sliding friction. Slows reload speed. Slows ADS time.",
+      "displayValue": "Increases sliding friction. Slows reload speed. Slows ADS time.",
+      "verification": "UI-confirmed",
+      "uiEvidence": [
+        "10_raw/ui_text_evidence.txt:L57095"
+      ],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_SystemLag",
+      "source": "13_additional_data/corruptors.json#/entries/3/CorruptorMasterClass",
+      "rawField": "CorruptorMasterClass",
+      "rawValue": "AC_Corruptor_SystemLag_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_SystemLag",
+      "source": "13_additional_data/corruptors.json#/entries/3/CorruptorUses",
+      "rawField": "CorruptorUses",
+      "rawValue": 1,
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_SystemLag",
+      "source": "13_additional_data/corruptors.json#/entries/3/LootReward",
+      "rawField": "LootReward",
+      "rawValue": [
+        "DA_RareChest"
+      ],
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_VitalityOverride",
+      "source": "13_additional_data/corruptors.json#/entries/4/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Corruptor_VitalityOverride",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_VitalityOverride",
+      "source": "13_additional_data/corruptors.json#/entries/4/name",
+      "rawField": "name",
+      "rawValue": "VITALITY OVERRIDE",
+      "displayValue": "VITALITY OVERRIDE",
+      "verification": "UI-confirmed",
+      "uiEvidence": [
+        "10_raw/ui_text_evidence.txt:L57104"
+      ],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_VitalityOverride",
+      "source": "13_additional_data/corruptors.json#/entries/4/description",
+      "rawField": "description",
+      "rawValue": "Unable to pickup health or ammo",
+      "displayValue": "Unable to pickup health or ammo",
+      "verification": "UI-confirmed",
+      "uiEvidence": [
+        "10_raw/ui_text_evidence.txt:L57106"
+      ],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_VitalityOverride",
+      "source": "13_additional_data/corruptors.json#/entries/4/CorruptorMasterClass",
+      "rawField": "CorruptorMasterClass",
+      "rawValue": "AC_Corruptor_VitalityOverride_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_VitalityOverride",
+      "source": "13_additional_data/corruptors.json#/entries/4/CorruptorUses",
+      "rawField": "CorruptorUses",
+      "rawValue": 1,
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_VitalityOverride",
+      "source": "13_additional_data/corruptors.json#/entries/4/LootReward",
+      "rawField": "LootReward",
+      "rawValue": [
+        "DA_RareChest"
+      ],
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_Weakened",
+      "source": "13_additional_data/corruptors.json#/entries/5/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Corruptor_Weakened",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_Weakened",
+      "source": "13_additional_data/corruptors.json#/entries/5/name",
+      "rawField": "name",
+      "rawValue": "WEAKENED",
+      "displayValue": "WEAKENED",
+      "verification": "UI-confirmed",
+      "uiEvidence": [
+        "10_raw/ui_text_evidence.txt:L57059"
+      ],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_Weakened",
+      "source": "13_additional_data/corruptors.json#/entries/5/description",
+      "rawField": "description",
+      "rawValue": "Receive more damage from enemies",
+      "displayValue": "Receive more damage from enemies",
+      "verification": "UI-confirmed",
+      "uiEvidence": [
+        "10_raw/ui_text_evidence.txt:L57061"
+      ],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_Weakened",
+      "source": "13_additional_data/corruptors.json#/entries/5/CorruptorMasterClass",
+      "rawField": "CorruptorMasterClass",
+      "rawValue": "AC_Corruptor_Weakened_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_Weakened",
+      "source": "13_additional_data/corruptors.json#/entries/5/CorruptorUses",
+      "rawField": "CorruptorUses",
+      "rawValue": 1,
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_Weakened",
+      "source": "13_additional_data/corruptors.json#/entries/5/LootReward",
+      "rawField": "LootReward",
+      "rawValue": [
+        "DA_RareChest"
+      ],
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_AllIn",
+      "source": "13_additional_data/obelisks.json#/entries/0/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Obelisk_AllIn",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_AllIn",
+      "source": "13_additional_data/obelisks.json#/entries/0/name",
+      "rawField": "name",
+      "rawValue": "All-In",
+      "displayValue": "All-In",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_AllIn",
+      "source": "13_additional_data/obelisks.json#/entries/0/description",
+      "rawField": "description",
+      "rawValue": "Spend all your credits for one legendary module (Must have at least 1 credit)",
+      "displayValue": "Spend all your credits for one legendary module (Must have at least 1 credit)",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_AllIn",
+      "source": "13_additional_data/obelisks.json#/entries/0/ObeliskMaster",
+      "rawField": "ObeliskMaster",
+      "rawValue": "BP_Obelisk_All-In_Legend_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_AntiHealer",
+      "source": "13_additional_data/obelisks.json#/entries/1/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Obelisk_AntiHealer",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_AntiHealer",
+      "source": "13_additional_data/obelisks.json#/entries/1/name",
+      "rawField": "name",
+      "rawValue": "Anti-Heal",
+      "displayValue": "Anti-Heal",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_AntiHealer",
+      "source": "13_additional_data/obelisks.json#/entries/1/description",
+      "rawField": "description",
+      "rawValue": "Could either heal to max health or damage you slightly.",
+      "displayValue": "Could either heal to max health or damage you slightly.",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_AntiHealer",
+      "source": "13_additional_data/obelisks.json#/entries/1/ObeliskMaster",
+      "rawField": "ObeliskMaster",
+      "rawValue": "BP_Obelisk_Anti-Heal_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Commoner",
+      "source": "13_additional_data/obelisks.json#/entries/2/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Obelisk_Commoner",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Commoner",
+      "source": "13_additional_data/obelisks.json#/entries/2/name",
+      "rawField": "name",
+      "rawValue": "Commoner",
+      "displayValue": "Commoner",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Commoner",
+      "source": "13_additional_data/obelisks.json#/entries/2/description",
+      "rawField": "description",
+      "rawValue": "Deletes one random module from inventory, in exchange for 4 common modules",
+      "displayValue": "Deletes one random module from inventory, in exchange for 4 common modules",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Commoner",
+      "source": "13_additional_data/obelisks.json#/entries/2/ObeliskMaster",
+      "rawField": "ObeliskMaster",
+      "rawValue": "BP_Obelisk_Commoner_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Corrupted",
+      "source": "13_additional_data/obelisks.json#/entries/3/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Obelisk_Corrupted",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Corrupted",
+      "source": "13_additional_data/obelisks.json#/entries/3/name",
+      "rawField": "name",
+      "rawValue": "Corrupted",
+      "displayValue": "Corrupted",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Corrupted",
+      "source": "13_additional_data/obelisks.json#/entries/3/description",
+      "rawField": "description",
+      "rawValue": "Sets projectile ammo to 0 in exchange for 1 corrupted module",
+      "displayValue": "Sets projectile ammo to 0 in exchange for 1 corrupted module",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Corrupted",
+      "source": "13_additional_data/obelisks.json#/entries/3/ObeliskMaster",
+      "rawField": "ObeliskMaster",
+      "rawValue": "BP_Obelisk_Corrupted_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_DoubleOrNothing",
+      "source": "13_additional_data/obelisks.json#/entries/4/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Obelisk_DoubleOrNothing",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_DoubleOrNothing",
+      "source": "13_additional_data/obelisks.json#/entries/4/name",
+      "rawField": "name",
+      "rawValue": "Double Or Nothing",
+      "displayValue": "Double Or Nothing",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_DoubleOrNothing",
+      "source": "13_additional_data/obelisks.json#/entries/4/description",
+      "rawField": "description",
+      "rawValue": "Could double your credits and health. Or could halve them",
+      "displayValue": "Could double your credits and health. Or could halve them",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_DoubleOrNothing",
+      "source": "13_additional_data/obelisks.json#/entries/4/ObeliskMaster",
+      "rawField": "ObeliskMaster",
+      "rawValue": "BP_Obelisk_DoubleOrNothing_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_DuplicationDelete",
+      "source": "13_additional_data/obelisks.json#/entries/5/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Obelisk_DuplicationDelete",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_DuplicationDelete",
+      "source": "13_additional_data/obelisks.json#/entries/5/name",
+      "rawField": "name",
+      "rawValue": "Duplication / Delete",
+      "displayValue": "Duplication / Delete",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_DuplicationDelete",
+      "source": "13_additional_data/obelisks.json#/entries/5/description",
+      "rawField": "description",
+      "rawValue": "Could duplicate a random module from your inventory. Or could delete it.",
+      "displayValue": "Could duplicate a random module from your inventory. Or could delete it.",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_DuplicationDelete",
+      "source": "13_additional_data/obelisks.json#/entries/5/ObeliskMaster",
+      "rawField": "ObeliskMaster",
+      "rawValue": "BP_Obelisk_DuplicationDelete_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Gambler",
+      "source": "13_additional_data/obelisks.json#/entries/6/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Obelisk_Gambler",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Gambler",
+      "source": "13_additional_data/obelisks.json#/entries/6/name",
+      "rawField": "name",
+      "rawValue": "Gambler",
+      "displayValue": "Gambler",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Gambler",
+      "source": "13_additional_data/obelisks.json#/entries/6/description",
+      "rawField": "description",
+      "rawValue": "Spend 80 credits for a 50% chance to receive a module of epic rarity or higher, or nothing at all.",
+      "displayValue": "Spend 80 credits for a 50% chance to receive a module of epic rarity or higher, or nothing at all.",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Gambler",
+      "source": "13_additional_data/obelisks.json#/entries/6/ObeliskMaster",
+      "rawField": "ObeliskMaster",
+      "rawValue": "BP_Obelisk_Gambler_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_GoldRush",
+      "source": "13_additional_data/obelisks.json#/entries/7/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Obelisk_GoldRush",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_GoldRush",
+      "source": "13_additional_data/obelisks.json#/entries/7/name",
+      "rawField": "name",
+      "rawValue": "Gold Rush",
+      "displayValue": "Gold Rush",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_GoldRush",
+      "source": "13_additional_data/obelisks.json#/entries/7/description",
+      "rawField": "description",
+      "rawValue": "Produces a large amount of credits but will damage you slightly",
+      "displayValue": "Produces a large amount of credits but will damage you slightly",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_GoldRush",
+      "source": "13_additional_data/obelisks.json#/entries/7/ObeliskMaster",
+      "rawField": "ObeliskMaster",
+      "rawValue": "BP_Obelisk_GoldRush_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_LuckyMod",
+      "source": "13_additional_data/obelisks.json#/entries/8/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Obelisk_LuckyMod",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_LuckyMod",
+      "source": "13_additional_data/obelisks.json#/entries/8/name",
+      "rawField": "name",
+      "rawValue": "Lucky Weapon Mod",
+      "displayValue": "Lucky Weapon Mod",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_LuckyMod",
+      "source": "13_additional_data/obelisks.json#/entries/8/description",
+      "rawField": "description",
+      "rawValue": "Produces a random weapon module, but will damage you slightly",
+      "displayValue": "Produces a random weapon module, but will damage you slightly",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_LuckyMod",
+      "source": "13_additional_data/obelisks.json#/entries/8/ObeliskMaster",
+      "rawField": "ObeliskMaster",
+      "rawValue": "BP_Obelisk_LuckyMod_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Uncommoner",
+      "source": "13_additional_data/obelisks.json#/entries/9/asset",
+      "rawField": "asset",
+      "rawValue": "DA_Obelisk_Uncommoner",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Uncommoner",
+      "source": "13_additional_data/obelisks.json#/entries/9/name",
+      "rawField": "name",
+      "rawValue": "Uncommoner",
+      "displayValue": "Uncommoner",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Uncommoner",
+      "source": "13_additional_data/obelisks.json#/entries/9/description",
+      "rawField": "description",
+      "rawValue": "Deletes one random module from inventory, in exchange for 3 uncommon modules",
+      "displayValue": "Deletes one random module from inventory, in exchange for 3 uncommon modules",
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": true,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": null
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "DA_Obelisk_Uncommoner",
+      "source": "13_additional_data/obelisks.json#/entries/9/ObeliskMaster",
+      "rawField": "ObeliskMaster",
+      "rawValue": "BP_Obelisk_Uncommoner_C",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "Outside approved player field whitelist"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "STR_ObeliskData",
+      "source": "13_additional_data/obelisks.json#/entries/10/asset",
+      "rawField": "asset",
+      "rawValue": "STR_ObeliskData",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "C-grade schema or placeholder"
+    },
+    {
+      "namespace": "Obelisks",
+      "asset": "STR_ObeliskData",
+      "source": "13_additional_data/obelisks.json#/entries/10/Guid",
+      "rawField": "Guid",
+      "rawValue": "BC28A16A-412B8762-24D0CD8C-5867F84D",
+      "displayValue": null,
+      "verification": "Source-confirmed",
+      "uiEvidence": [],
+      "public": false,
+      "relationEvidence": "Own field on this definition",
+      "holdReason": "C-grade schema or placeholder"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_EMP",
+      "source": "13_additional_data/corruptors.json#/entries/0/LootReward/0",
+      "rawField": "LootReward[0]",
+      "rawValue": "DA_RareChest",
+      "displayValue": "RARE MODIFICATION CHEST",
+      "verification": "Source-confirmed",
+      "public": true,
+      "relationEvidence": "Direct target: 13_additional_data/loot.json#/entries/6/name",
+      "holdReason": "Shared configured-reward statement only; no runtime guarantee"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_Permafrost",
+      "source": "13_additional_data/corruptors.json#/entries/1/LootReward/0",
+      "rawField": "LootReward[0]",
+      "rawValue": "DA_RareChest",
+      "displayValue": "RARE MODIFICATION CHEST",
+      "verification": "Source-confirmed",
+      "public": true,
+      "relationEvidence": "Direct target: 13_additional_data/loot.json#/entries/6/name",
+      "holdReason": "Shared configured-reward statement only; no runtime guarantee"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_StrengthenedEnemies",
+      "source": "13_additional_data/corruptors.json#/entries/2/LootReward/0",
+      "rawField": "LootReward[0]",
+      "rawValue": "DA_RareChest",
+      "displayValue": "RARE MODIFICATION CHEST",
+      "verification": "Source-confirmed",
+      "public": true,
+      "relationEvidence": "Direct target: 13_additional_data/loot.json#/entries/6/name",
+      "holdReason": "Shared configured-reward statement only; no runtime guarantee"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_SystemLag",
+      "source": "13_additional_data/corruptors.json#/entries/3/LootReward/0",
+      "rawField": "LootReward[0]",
+      "rawValue": "DA_RareChest",
+      "displayValue": "RARE MODIFICATION CHEST",
+      "verification": "Source-confirmed",
+      "public": true,
+      "relationEvidence": "Direct target: 13_additional_data/loot.json#/entries/6/name",
+      "holdReason": "Shared configured-reward statement only; no runtime guarantee"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_VitalityOverride",
+      "source": "13_additional_data/corruptors.json#/entries/4/LootReward/0",
+      "rawField": "LootReward[0]",
+      "rawValue": "DA_RareChest",
+      "displayValue": "RARE MODIFICATION CHEST",
+      "verification": "Source-confirmed",
+      "public": true,
+      "relationEvidence": "Direct target: 13_additional_data/loot.json#/entries/6/name",
+      "holdReason": "Shared configured-reward statement only; no runtime guarantee"
+    },
+    {
+      "namespace": "Corruptors",
+      "asset": "DA_Corruptor_Weakened",
+      "source": "13_additional_data/corruptors.json#/entries/5/LootReward/0",
+      "rawField": "LootReward[0]",
+      "rawValue": "DA_RareChest",
+      "displayValue": "RARE MODIFICATION CHEST",
+      "verification": "Source-confirmed",
+      "public": true,
+      "relationEvidence": "Direct target: 13_additional_data/loot.json#/entries/6/name",
+      "holdReason": "Shared configured-reward statement only; no runtime guarantee"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "approvedAssets": [
+    "DA_Upgrade_BlastCache",
+    "DA_Upgrade_CombatMed",
+    "DA_Upgrade_CorruptionCleanse",
+    "DA_Upgrade_Credimax",
+    "DA_Upgrade_DynamicRefill",
+    "DA_Upgrade_ExpandedHolster",
+    "DA_Upgrade_ExpandedMemory",
+    "DA_Upgrade_HealthModulator",
+    "DA_Upgrade_LootRecalibrator",
+    "DA_Upgrade_Medcore",
+    "DA_Upgrade_MunitionsAugmentor",
+    "DA_Upgrade_Pyromaniac",
+    "DA_Upgrade_Pyrotechnic",
+    "DA_Upgrade_Recycler",
+    "DA_Upgrade_Scavenger",
+    "DA_Upgrade_SchematicHyperdrive",
+    "DA_Upgrade_StackOverflow",
+    "DA_Upgrade_SupplyCrate",
+    "DA_Upgrade_Velociboost",
+    "DA_Upgrade_Voidmax"
+  ],
+  "withheldTierAssets": [
+    "DA_Upgrade_Medcore"
+  ],
+  "tierHoldReasons": {
+    "DA_Upgrade_Medcore": "All four Description values lack confirmed units or meaning. Hide the whole tier table, including costs."
+  },
+  "withheldAssets": [
+    "DA_UPG_HealthModulator01",
+    "DA_UPG_HealthModulator02",
+    "DA_UPG_HealthModulator03",
+    "DA_UPG_LootRecalibrator",
+    "DA_UPG_MedcoreAmp",
+    "DA_UPG_MunitionsAugmentor",
+    "DA_UPG_NanoMed",
+    "DA_UPG_OpticCalibrator",
+    "DA_UPG_PlunderPulse01",
+    "DA_UPG_PlunderPulse02",
+    "DA_UPG_SupplyCrateModule01",
+    "DA_UPG_SupplyCrateModule02",
+    "DA_UPG_VelociBoostCore01",
+    "DA_UPG_VelociBoostCore02",
+    "DA_UPG_VelociBoostCore03",
+    "DA_UPG_VelociBoostCore04",
+    "DA_UPG_VitalityCore01",
+    "DA_UPG_VitalityCore02",
+    "DA_UPG_VitalityCore03",
+    "DA_UPG_VitalityCore04",
+    "DA_UPG_VitalityCore05",
+    "DA_UPG_VitalityCore06",
+    "DA_UPG_VoidMaxCore"
+  ],
+  "publicFieldWhitelist": [
+    "name",
+    "description",
+    "icon.src",
+    "icon.width",
+    "icon.height",
+    "tiers.tier",
+    "tiers.effect",
+    "tiers.voidiumCost"
+  ],
+  "tierNumbering": "Source array position + 1; editorial order only, not UI rank or maximum level",
+  "pricePolicy": "Never expose Price; currency and purpose unresolved",
+  "displayDecision": "Approved phase 2: 20 entries / 19 tier tables / 88 effect-and-cost rows. Do not expose Medcore costs separately."
+}

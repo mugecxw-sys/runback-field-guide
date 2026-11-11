@@ -1,3 +1,4 @@
+import { voidBreakerReleasePaths } from '@/lib/game-hub-v1/void-breaker-release';
 import type { MetadataRoute } from 'next';
 import {
   articleLibraries,
@@ -50,6 +51,11 @@ const sephiriaBuildPages = listedWeaponBuildGroups.flatMap((group) => [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
+    ...voidBreakerReleasePaths.map((pathname) => ({
+      url: siteUrl + pathname,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    })),
     { url: siteUrl + chapterOneGuide.href, changeFrequency: 'monthly', priority: 0.8 },
     { url: siteUrl + chapterTwoGuide.href, changeFrequency: 'monthly', priority: 0.8 },
     { url: siteUrl + chapterThreeGuide.href, changeFrequency: 'monthly', priority: 0.8 },

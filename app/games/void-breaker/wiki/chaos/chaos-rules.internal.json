@@ -1,0 +1,50 @@
+{
+  "approvedAssets": [
+    "DA_DIFF_AnomalyFault",
+    "DA_DIFF_AnomalySpike",
+    "DA_DIFF_ApexSurge",
+    "DA_DIFF_CreditSuspension",
+    "DA_DIFF_DeathLock",
+    "DA_DIFF_EliteSurge",
+    "DA_DIFF_Empowered",
+    "DA_DIFF_FastRecovery",
+    "DA_DIFF_Frenzy",
+    "DA_DIFF_Inflation",
+    "DA_DIFF_Lifeline",
+    "DA_DIFF_Reinforcements",
+    "DA_DIFF_RepeaterCap",
+    "DA_DIFF_SilentNight",
+    "DA_DIFF_SlimPickings",
+    "DA_DIFF_StackThrottle",
+    "DA_DIFF_UnluckyDay",
+    "DA_DIFF_Vulnerable",
+    "DA_Corruptor_EMP",
+    "DA_Corruptor_Permafrost",
+    "DA_Corruptor_StrengthenedEnemies",
+    "DA_Corruptor_SystemLag",
+    "DA_Corruptor_VitalityOverride",
+    "DA_Corruptor_Weakened",
+    "DA_Obelisk_AllIn",
+    "DA_Obelisk_AntiHealer",
+    "DA_Obelisk_Commoner",
+    "DA_Obelisk_Corrupted",
+    "DA_Obelisk_DoubleOrNothing",
+    "DA_Obelisk_DuplicationDelete",
+    "DA_Obelisk_Gambler",
+    "DA_Obelisk_GoldRush",
+    "DA_Obelisk_LuckyMod",
+    "DA_Obelisk_Uncommoner"
+  ],
+  "heldAssets": [
+    "DA_DIFF_Unknown",
+    "STR_ObeliskData"
+  ],
+  "allowedFields": [
+    "name",
+    "description",
+    "thumbnail_image"
+  ],
+  "rewardMode": "shared-configured-only",
+  "difficultyGrade": "B",
+  "difficultyPermission": "Name, description, direct icon only; no rating or inferred relationships"
+}

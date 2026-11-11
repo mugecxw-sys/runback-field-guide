@@ -134,6 +134,17 @@ export const gameLibraries: GameLibrary[] = [
     categories: ['Start', 'Characters', 'Squads', 'Upgrades', 'Achievements', 'Bosses'],
     sourceHref: 'https://yetanotherzombie.wiki/guides/beginner-guide',
   },
+  {
+    slug: 'void-breaker',
+    title: 'VOID/BREAKER',
+    type: 'Roguelite FPS',
+    version: '1.0',
+    description: 'Modules, weapons, enemies, locations, upgrades, and Chaos reference.',
+    status: 'LIVE',
+    guideCount: 0,
+    categories: ['Wiki'],
+    sourceHref: 'https://store.steampowered.com/app/2615540/VOIDBREAKER/',
+  },
 ];
 
 export const additionalGames = gameLibraries.filter(game => game.slug !== 'repo');
