@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/editorial' },
   title: 'Editorial Policy | RUNBACK',
   description: 'How RUNBACK researches, rewrites, credits, and updates roguelike guides.',
 };

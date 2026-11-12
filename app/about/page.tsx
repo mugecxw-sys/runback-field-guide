@@ -3,6 +3,7 @@ import { libraryStatistics } from '@/lib/library-statistics';
 import { AboutDisclosure } from '@/components/game-disclosure';
 
 export const metadata: Metadata = {
+  alternates: { canonical: '/about' },
   title: 'About | RUNBACK',
   description: 'About RUNBACK, a multi-game roguelike field guide library.',
 };
