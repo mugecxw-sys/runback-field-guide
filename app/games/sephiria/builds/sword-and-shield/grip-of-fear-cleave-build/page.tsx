@@ -105,33 +105,6 @@ const weaponRoute = [
   { label: 'Grip of Fear', image: snapshotImages.gripOfFear },
 ];
 
-function weaponImage(key: string): LocalImageAsset {
-  const image = sephiriaImageManifest[key];
-  if (!image) throw new Error(`Missing local Sephiria weapon image: ${key}`);
-  return image;
-}
-
-type WeaponBuildOption = {
-  name: string;
-  href?: string;
-  status: 'Selected' | 'Available' | 'Coming Soon';
-  image: LocalImageAsset;
-  buildCount: number;
-};
-
-const weaponBuilds: WeaponBuildOption[] = weaponBuildGroups.map((group) => ({
-  name: group.name,
-  href: group.builds[0]?.href,
-  status:
-    group.builds.length === 0
-      ? 'Coming Soon'
-      : group.name === currentWeaponGroup.name
-        ? 'Selected'
-        : 'Available',
-  image: weaponImage(group.imageKey),
-  buildCount: group.builds.length,
-}));
-
 type SetupCard = {
   title: string;
   lines: string[];
@@ -435,50 +408,6 @@ function BuildSnapshotField({
   );
 }
 
-function WeaponBuildCard({ option }: { option: WeaponBuildOption }) {
-  const className =
-    'flex min-h-[4.25rem] min-w-0 items-center gap-3 border p-3 transition-colors ' +
-    (option.status === 'Selected'
-      ? 'border-[var(--orange-text)]/60 bg-[var(--surface-raised)] text-[var(--heading)] hover:border-[var(--orange-text)]'
-      : 'border-[var(--gold-border)]/25 bg-[var(--surface)] text-[var(--secondary)]');
-
-  const content = (
-    <>
-      <LocalGameImage image={option.image} size={44} />
-      <span className="min-w-0">
-        <span className="block break-words text-sm font-semibold leading-5">
-          {option.name}
-        </span>
-        <span
-          className={
-            'mt-1 block text-[10px] font-bold uppercase tracking-[0.12em] ' +
-            (option.status === 'Selected'
-              ? 'text-[var(--orange-text)]'
-              : 'text-[var(--muted)]')
-          }
-        >
-          {option.buildCount > 0 && `${option.buildCount} Build · `}
-          {option.status}
-        </span>
-      </span>
-    </>
-  );
-
-  return option.href ? (
-    <a
-      href={option.href}
-      aria-current={option.status === 'Selected' ? 'page' : undefined}
-      className={className}
-    >
-      {content}
-    </a>
-  ) : (
-    <div aria-disabled="true" className={className}>
-      {content}
-    </div>
-  );
-}
-
 function MechanicCard({ title, detail }: { title: string; detail: string }) {
   return (
     <Card>
@@ -532,81 +461,6 @@ export default function SephiriaSwordAndShieldBuildPage() {
               <span aria-hidden="true">/</span>
               <span aria-current="page">Sword &amp; Shield Build</span>
             </nav>
-
-            <section aria-labelledby="weapon-builds-heading">
-              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[var(--gold-label)]">
-                SEPHIRIA BUILDS
-              </p>
-              <h2
-                id="weapon-builds-heading"
-                className="mb-3 mt-1 font-serif text-2xl font-semibold text-[var(--heading)]"
-              >
-                Weapon Builds
-              </h2>
-              <div
-                className="grid gap-2"
-                style={{
-                  gridTemplateColumns:
-                    'repeat(auto-fit, minmax(min(100%, 10rem), 1fr))',
-                }}
-              >
-                {weaponBuilds.map((option) => (
-                  <WeaponBuildCard key={option.name} option={option} />
-                ))}
-              </div>
-            </section>
-
-            <section
-              aria-labelledby="weapon-build-list-heading"
-              className="mt-6"
-            >
-              <h2
-                id="weapon-build-list-heading"
-                className="mb-3 font-serif text-2xl font-semibold text-[var(--heading)]"
-              >
-                {currentWeaponGroup.name} Builds
-              </h2>
-              <div
-                className="grid gap-3"
-                style={{
-                  gridTemplateColumns:
-                    'repeat(auto-fit, minmax(min(100%, 22rem), 1fr))',
-                }}
-              >
-                {currentWeaponGroup.builds.map((build) => (
-                  <a
-                    key={build.href}
-                    href={build.href}
-                    aria-current={build.href === href ? 'page' : undefined}
-                    className="min-w-0 border border-[var(--orange-text)]/60 bg-[var(--surface)] p-4 hover:border-[var(--orange-text)]"
-                  >
-                    <div className="flex flex-wrap items-center justify-between gap-2">
-                      <h3 className="font-serif text-lg font-semibold text-[var(--heading)]">
-                        {build.title}
-                      </h3>
-                      {build.href === href && (
-                        <span className="text-[10px] font-bold uppercase tracking-wide text-[var(--orange-text)]">
-                          Current
-                        </span>
-                      )}
-                    </div>
-                    <p className="mt-2 text-sm leading-6 text-[var(--body-soft)]">
-                      <span className="font-semibold text-[var(--heading)]">
-                        Weapon Route:
-                      </span>{' '}
-                      {build.weaponRoute.join(' → ')}
-                    </p>
-                    <p className="mt-1 text-sm leading-6 text-[var(--body-soft)]">
-                      <span className="font-semibold text-[var(--heading)]">
-                        Final Build:
-                      </span>{' '}
-                      {build.finalBuild.join(' · ')}
-                    </p>
-                    {build.style && <p className="mt-1 text-sm leading-6 text-[var(--body-soft)]"><span className="font-semibold text-[var(--heading)]">Style:</span> {build.style}</p>}
-                  </a>
-                ))}
-              </div>
-            </section>
 
             <header
               className="mt-8 grid min-w-0 gap-5 border border-[var(--gold-border)]/35 bg-[var(--surface)] p-5 sm:p-8"

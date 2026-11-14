@@ -5,8 +5,7 @@ import {
   SephiriaBuildSidebar,
 } from '@/components/game-wiki/sephiria-build-sidebar';
 import { SephiriaBuildLayout } from '@/components/game-wiki/sephiria-build-layout';
-import { listedWeaponBuildGroups, weaponBuildGroups } from '@/lib/sephiria-build-navigation';
-import { sephiriaImageManifest } from '@/lib/sephiria-image-manifest';
+import { weaponBuildGroups } from '@/lib/sephiria-build-navigation';
 import type { LocalBuildImage, SephiriaSwordShieldBuildPageData } from '@/lib/sephiria-builds/sword-and-shield-pages';
 import sns06Layout from '@/lib/sephiria-builds/sns-06-layout.json';
 import type { BuildLayoutData } from '@/components/game-wiki/sephiria-build-layout';
@@ -162,18 +161,6 @@ export function SephiriaSwordShieldBuildPage({
     ],
   };
 
-  const weaponOptions = listedWeaponBuildGroups.map((group) => {
-    const image = sephiriaImageManifest[group.imageKey];
-    if (!image) throw new Error(`Missing local weapon category image ${group.imageKey}`);
-    return {
-      name: group.name,
-      href: group.href ?? group.builds[0]?.href,
-      selected: group.name === currentGroup.name,
-      count: group.builds.length,
-      image,
-    };
-  });
-
   return (
     <main className="min-h-screen bg-[var(--wiki-page-bg)] px-4 py-6 text-[var(--text)] sm:px-5 sm:py-8">
       <div className="mx-auto max-w-[1440px] lg:grid lg:grid-cols-[13.5rem_minmax(0,1fr)] lg:gap-9">
@@ -201,43 +188,6 @@ export function SephiriaSwordShieldBuildPage({
               <span aria-hidden="true">/</span>
               <span aria-current="page">Sword &amp; Shield Build</span>
             </nav>
-
-            <section aria-labelledby="weapon-builds-heading">
-              <p className="text-[11px] font-bold uppercase tracking-[0.18em] text-[var(--gold-label)]">SEPHIRIA BUILDS</p>
-              <h2 id="weapon-builds-heading" className="mb-3 mt-1 font-serif text-2xl font-semibold text-[var(--heading)]">Weapon Builds</h2>
-              <div className="grid gap-2" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 10rem), 1fr))' }}>
-                {weaponOptions.map((option) => (
-                  <Card key={option.name}>
-                    <div className="flex min-w-0 items-center gap-3">
-                      {option.image ? <LocalGameImage image={option.image} size={36} /> : <span aria-hidden="true" className="flex h-9 w-9 items-center justify-center border border-[var(--gold-border)]/25 text-xs text-[var(--gold-text)]">◇</span>}
-                      <div className="min-w-0">
-                        {option.href ? (
-                          <a href={option.href} className="font-semibold text-[var(--heading)] hover:text-[var(--orange-hover)]">{option.name}</a>
-                        ) : <span className="font-semibold text-[var(--heading)]">{option.name}</span>}
-                        <p className="mt-1 text-xs text-[var(--muted)]">{option.count ? `${option.count} build${option.count === 1 ? '' : 's'}` : 'Coming soon'}{option.selected ? ' · Selected' : ''}</p>
-                      </div>
-                    </div>
-                  </Card>
-                ))}
-              </div>
-            </section>
-
-            <section aria-labelledby="weapon-build-list-heading" className="mt-6">
-              <h2 id="weapon-build-list-heading" className="mb-3 font-serif text-2xl font-semibold text-[var(--heading)]">Sword &amp; Shield Builds</h2>
-              <div className="grid gap-3" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 22rem), 1fr))' }}>
-                {currentGroup.builds.filter((build) => build.listed !== false).map((build) => (
-                  <a key={build.href} href={build.href} aria-current={build.href === data.href ? 'page' : undefined} className="min-w-0 border border-[var(--orange-text)]/60 bg-[var(--surface)] p-4 hover:border-[var(--orange-text)]">
-                    <div className="flex flex-wrap items-center justify-between gap-2">
-                      <h3 className="font-serif text-lg font-semibold text-[var(--heading)]">{build.title}</h3>
-                      {build.href === data.href && <span className="text-[10px] font-bold uppercase tracking-wide text-[var(--orange-text)]">Current</span>}
-                    </div>
-                    <p className="mt-2 text-sm leading-6 text-[var(--body-soft)]"><span className="font-semibold text-[var(--heading)]">Weapon Route:</span> {build.weaponRoute.join(' → ')}</p>
-                    <p className="mt-1 text-sm leading-6 text-[var(--body-soft)]"><span className="font-semibold text-[var(--heading)]">{build.comboLabel ?? 'Final Build'}:</span> {build.finalBuild.join(' · ')}</p>
-                    {build.style && <p className="mt-1 text-sm leading-6 text-[var(--body-soft)]"><span className="font-semibold text-[var(--heading)]">Style:</span> {build.style}</p>}
-                  </a>
-                ))}
-              </div>
-            </section>
 
             <header className="mt-8 grid min-w-0 gap-5 border border-[var(--gold-border)]/35 bg-[var(--surface)] p-5 sm:p-8" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 24rem), 1fr))' }}>
               <div className="min-w-0">
