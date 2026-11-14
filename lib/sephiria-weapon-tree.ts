@@ -283,7 +283,8 @@ const entries: TreeEntry[] = [
     "depth": 1,
     "parent": "WPN-01",
     "children": [
-      "upgrade-1007"
+      "upgrade-1007",
+      "upgrade-1033"
     ],
     "slug": "rapier",
     "effectCurrent": "Dash attack is disabled, and Normal Attack is changed to Dash attack type. Attack Speed increases by 10%.",
@@ -442,7 +443,8 @@ const entries: TreeEntry[] = [
     "depth": 1,
     "parent": "WPN-02",
     "children": [
-      "upgrade-16"
+      "upgrade-16",
+      "upgrade-1125"
     ],
     "slug": "swarming-shadow",
     "effectCurrent": "Special Attack: Whirlwind charge time increases by 100%, but Normal Attack Damage increases by 20%.",
@@ -980,7 +982,8 @@ const entries: TreeEntry[] = [
     "depth": 1,
     "parent": "WPN-03",
     "children": [
-      "upgrade-117"
+      "upgrade-117",
+      "upgrade-129"
     ],
     "slug": "colossal-crossbow-enhanced-special-bolts",
     "effectCurrent": "The attack range of Special Attack: Power Arrow is increased, and damage is increased by 30%.",
@@ -1425,7 +1428,8 @@ const entries: TreeEntry[] = [
     "depth": 1,
     "parent": "WPN-04",
     "children": [
-      "upgrade-1209"
+      "upgrade-1209",
+      "upgrade-1219"
     ],
     "slug": "jade-vestige",
     "effectCurrent": "You can no longer use Special Attack: Parry, but gain Trance every 2.8 seconds. (1% increased charge rate per Evasion, up to 33%)",
@@ -2089,6 +2093,54 @@ const entries: TreeEntry[] = [
       "upgrade-529"
     ],
     "slug": "staff"
+  },
+  {
+    "key": "upgrade-1033",
+    "name": "Keen-Eyed Rapier",
+    "weapon": "Sword & Shield",
+    "weaponAnchor": "sword-shield",
+    "depth": 2,
+    "parent": "upgrade-1006",
+    "children": [],
+    "slug": "keen-eyed-rapier",
+    "effectCurrent": "Dash attack is disabled, and Normal Attack is changed to Dash attack type. Attack Speed increases by 10%.\nWhen dealing damage (excluding debuff damage), has a 60% chance to inflict Tempo Loss.",
+    "mechanicCurrent": null
+  },
+  {
+    "key": "upgrade-1125",
+    "name": "Scattered Longing",
+    "weapon": "Greatsword",
+    "weaponAnchor": "greatsword",
+    "depth": 2,
+    "parent": "upgrade-12",
+    "children": [],
+    "slug": "scattered-longing",
+    "effectCurrent": "Special Attack: Whirlwind charge time increases by 100%, but Normal Attack Damage increases by 20%.\nGain 1 stack of Chain Slash with each attack.\nUsing Special Attack during the second hit of Normal Attack activates Double Slash.",
+    "mechanicCurrent": null
+  },
+  {
+    "key": "upgrade-1219",
+    "name": "Fierce Humming",
+    "weapon": "Dagger",
+    "weaponAnchor": "dagger",
+    "depth": 2,
+    "parent": "upgrade-1208",
+    "children": [],
+    "slug": "fierce-humming",
+    "effectCurrent": "You can no longer use Special Attack: Parry, but gain Trance every 2.8 seconds. (1% increased charge rate per Evasion, up to 33%)\nOn Special Attack: Fury hit, activate Artifact Green Gi in the aimed direction. When Green Gi successfully Evasion, activate it in three directions.",
+    "mechanicCurrent": null
+  },
+  {
+    "key": "upgrade-129",
+    "name": "Colossal Crossbow: Radiant Dial",
+    "weapon": "Crossbow",
+    "weaponAnchor": "crossbow",
+    "depth": 2,
+    "parent": "upgrade-106",
+    "children": [],
+    "slug": "colossal-crossbow-radiant-dial",
+    "effectCurrent": "The attack range of Special Attack: Power Arrow is increased, and damage is increased by 30%.\nEach Normal Attack charges a Light Arrow. Special Attack changes to Special Attack: Full Bloom.",
+    "mechanicCurrent": null
   }
 ];
 

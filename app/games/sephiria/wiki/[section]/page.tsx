@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { title, description, alternates: { canonical }, openGraph: { title, description, type: 'article', url: canonical, siteName: 'RUNBACK' } };
 }
 
-const weaponTreeDescription = 'Explore the upgrade paths for all six weapons, from first to second upgrades, with effects and mechanics for each branch.';
+const weaponTreeDescription = 'Explore 157 upgrades across all six weapons, from first to second upgrades, with effects and mechanics for each branch.';
 
 const h2Id = (value: string) => value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 

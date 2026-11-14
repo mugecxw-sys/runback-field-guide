@@ -1,3 +1,4 @@
+import { sephiriaCurrentGameVersion } from '@/lib/sephiria-current-version';
 import type { GameWikiConfig } from './game-wiki';
 import { sephiriaWikiPages } from '@/lib/sephiria-wiki-data';
 import { listedWeaponBuildGroups as weaponBuildGroups } from '@/lib/sephiria-build-navigation';
@@ -9,7 +10,7 @@ const tools = sephiriaWikiPages.filter((page) => page.group === 'tool');
 export const sephiriaWikiConfig: GameWikiConfig = {
   gameName: 'Sephiria',
   hubHref: '/games/sephiria',
-  version: 'Patch 1.0.33',
+  version: `Game version ${sephiriaCurrentGameVersion}`,
   showAboutLink: false,
   relatedLabel: 'Related pages',
   navigationSections: [

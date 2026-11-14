@@ -9,6 +9,7 @@ type PublicItem = {
   slug: string;
   displayName: string;
   itemKind: string;
+  itemSubtype?: string;
   rarity: string;
   isBondItem: boolean;
   bondLabel: string | null;
@@ -22,6 +23,7 @@ type PublicItem = {
 };
 type ItemsData = {
   version: string;
+  baselineVersion?: string;
   counts: { items: number; categories: number; categoryMemberships: number; bondItems: number; rarities: Record<string, number>; kinds: Record<string, number> };
   categories: string[];
   items: PublicItem[];
@@ -40,7 +42,7 @@ function getLocationSearch() { return window.location.search; }
 function notifyItems() { itemsListeners.forEach((listener) => listener()); }
 function loadItems() {
   if (itemsRequest) return;
-  itemsRequest = fetch('/data/sephiria-items-1.0.33.json')
+  itemsRequest = fetch('/data/sephiria-items-1.1.3.json')
     .then((response) => { if (!response.ok) throw new Error('Items database request failed'); return response.json() as Promise<ItemsData>; })
     .then((data) => { itemsSnapshot = { data, loadError: false }; notifyItems(); })
     .catch(() => { itemsSnapshot = { data: null, loadError: true }; notifyItems(); });
@@ -64,7 +66,7 @@ function ItemCard({ item, activeCategory, onCategoryClick }: { item: PublicItem;
         <div className="min-w-0 flex-1">
           <h3 className="break-words font-serif text-lg font-semibold leading-6 text-[var(--heading)]">{item.displayName}</h3>
           <div className="mt-2 flex flex-wrap gap-1.5 text-[11px]">
-            <span className="border border-[var(--gold-border)]/25 bg-[var(--wiki-page-bg)] px-2 py-1 text-[var(--secondary)]">{item.itemKind}</span>
+            <span className="border border-[var(--gold-border)]/25 bg-[var(--wiki-page-bg)] px-2 py-1 text-[var(--secondary)]">{item.itemSubtype ?? item.itemKind}</span>
             <span className={'border px-2 py-1 ' + (rarityStyles[item.rarity] ?? 'border-[var(--gold-border)]/25 text-[var(--secondary)]')}>{item.rarity}</span>
             {item.isBondItem && <span className="border border-[var(--orange-text)]/30 bg-[var(--orange-text)]/10 px-2 py-1 font-semibold text-[var(--orange-hover)]">{item.bondLabel ?? 'Bond'}</span>}
           </div>
@@ -135,6 +137,7 @@ export function SephiriaItemsDatabase() {
       {data && <div className="mb-5 grid grid-cols-2 gap-2 sm:grid-cols-4">
         {[[String(data.counts.items), 'Public items'], [String(data.counts.categories), 'Categories'], [String(data.counts.bondItems), 'Bond items'], [data.version, 'Game version']].map(([value, label]) => <div key={label} className="min-w-0 border border-[var(--gold-border)]/20 bg-[var(--surface)] px-3 py-3"><p className="break-words font-semibold text-[var(--heading)]">{value}</p><p className="mt-1 text-[11px] uppercase tracking-wide text-[var(--muted)]">{label}</p></div>)}
       </div>}
+      {data?.baselineVersion && <p className="mb-4 text-sm leading-6 text-[var(--secondary)]">New items verified for {data.version}. Existing entries retain the {data.baselineVersion} data baseline.</p>}
       <div className="border border-[var(--gold-border)]/25 bg-[var(--surface)] p-4 sm:p-5">
         <div className="grid min-w-0 gap-3 sm:grid-cols-2 xl:grid-cols-[2fr_1fr_1fr_1fr]">
           <div className="min-w-0 sm:col-span-2 xl:col-span-1"><label htmlFor="sephiria-items-search" className="mb-1.5 block text-xs font-semibold text-[var(--heading)]">Search items</label><input id="sephiria-items-search" type="search" value={activeQuery} onChange={(event) => updateQuery(event.target.value)} placeholder="Name, description, effect, category" className="w-full min-w-0 border border-[var(--gold-border)]/25 bg-[var(--wiki-page-bg)] px-3 py-2.5 text-sm text-[var(--text)] placeholder:text-[var(--muted)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--orange-text)]" /></div>

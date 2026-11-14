@@ -1,3 +1,4 @@
+import { sephiriaCurrentGameVersion } from './sephiria-current-version';
 export type GameLibrary = {
   slug: string;
   title: string;
@@ -115,7 +116,7 @@ export const gameLibraries: GameLibrary[] = [
     slug: 'sephiria',
     title: 'Sephiria',
     type: 'Grid-based action roguelike',
-    version: 'Patch 1.0.33',
+    version: `Patch ${sephiriaCurrentGameVersion}`,
     description: 'A structured reference for weapons, upgrades, Artifacts, Tablets, costumes, grimoires, bosses, and systems.',
     status: 'LIVE',
     guideCount: 0,

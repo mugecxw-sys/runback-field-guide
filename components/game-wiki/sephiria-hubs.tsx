@@ -1,3 +1,4 @@
+import { sephiriaCurrentGameVersion } from '@/lib/sephiria-current-version';
 import { GameWikiCategoryCard, GameWikiHero, GameWikiShell } from './game-wiki';
 import { sephiriaWikiConfig } from './sephiria-config';
 import { sephiriaWikiPages } from '@/lib/sephiria-wiki-data';
@@ -12,7 +13,7 @@ const categories = sephiriaWikiPages.filter((page) => page.group === 'category')
 const systems = sephiriaWikiPages.filter((page) => page.group === 'system');
 const tools = sephiriaWikiPages.filter((page) => page.group === 'tool');
 const facts = [
-  ['Current Version', '1.0.33'], ['Chapters', '6'], ['Weapons', '6'],
+  ['Current Version', sephiriaCurrentGameVersion], ['Chapters', '6'], ['Weapons', '6'],
   ['Artifacts', 'About 300 at 1.0 launch'], ['Tablets', 'About 70 at 1.0 launch'],
   ['Bosses', '10+'], ['Hard Mode Elements', '18'], ['Online Co-op', 'Up to 4 players'],
 ];
@@ -81,7 +82,7 @@ export function SephiriaWikiLanding() {
   const url = `${siteUrl}${page.href}`;
   return <GameWikiShell config={sephiriaWikiConfig} activeHref={page.href}>
     <Schema title="Sephiria Wiki | RUNBACK" url={url} description={page.summary} />
-    <GameWikiHero eyebrow="SEPHIRIA REFERENCE" title="Sephiria Wiki" description="Browse the weapon, item, encounter and system indexes." version="Patch 1.0.33" />
+    <GameWikiHero eyebrow="SEPHIRIA REFERENCE" title="Sephiria Wiki" description="Browse the weapon, item, encounter and system indexes." version={`Game version ${sephiriaCurrentGameVersion}`} />
     <section className="mt-8" aria-labelledby="sephiria-categories"><h2 id="sephiria-categories" className="font-serif text-2xl font-semibold text-[var(--heading)]">Categories</h2><div className="mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{categories.map((item) => <GameWikiCategoryCard key={item.href} item={{ href: item.href, label: item.title, description: item.summary }} />)}</div></section>
     <section className="mt-9 border-t border-[var(--gold-border)]/25 pt-7" aria-labelledby="sephiria-systems"><h2 id="sephiria-systems" className="font-serif text-2xl font-semibold text-[var(--heading)]">Systems</h2><div className="mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{systems.map((item) => <GameWikiCategoryCard key={item.href} item={{ href: item.href, label: item.title, description: item.summary }} />)}</div></section>
     <section className="mt-9 border-t border-[var(--gold-border)]/25 pt-7" aria-labelledby="sephiria-wiki-tools"><h2 id="sephiria-wiki-tools" className="font-serif text-2xl font-semibold text-[var(--heading)]">Tools</h2><div className="mt-4 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">{tools.map((item) => <GameWikiCategoryCard key={item.href} item={{ href: item.href, label: item.title, description: item.summary, count: 'Interactive planner' }} />)}</div></section>

@@ -324,4 +324,9 @@ export const sephiriaImageManifest: Partial<Record<string, SephiriaRecordImage>>
   "BOS-15": {"src": "/images/games/sephiria/wiki/bosses/lions-afterimage.webp", "alt": "Lion's Afterimage", "width": 68, "height": 65, "fit": "contain", "rendering": "pixelated"},
   "BOS-16": {"src": "/images/games/sephiria/wiki/bosses/mouses-afterimage.webp", "alt": "Mouse's Afterimage", "width": 28, "height": 49, "fit": "contain", "rendering": "pixelated"},
   "BOS-17": {"src": "/images/games/sephiria/wiki/bosses/spinning-staff-demon.webp", "alt": "Spinning Staff Demon", "width": 40, "height": 35, "fit": "contain", "rendering": "pixelated"},
+
+  "upgrade-1033": {"src": "/images/games/sephiria/wiki/weapon-upgrades/weapon-1033-69c3e519adaca09c.webp", "alt": "Keen-Eyed Rapier", "width": 22, "height": 29, "fit": "contain", "rendering": "pixelated"},
+  "upgrade-1125": {"src": "/images/games/sephiria/wiki/weapon-upgrades/weapon-1125-02e6c37c891e5583.webp", "alt": "Scattered Longing", "width": 13, "height": 31, "fit": "contain", "rendering": "pixelated"},
+  "upgrade-1219": {"src": "/images/games/sephiria/wiki/weapon-upgrades/weapon-1219-3235c2a0ffa62233.webp", "alt": "Fierce Humming", "width": 13, "height": 25, "fit": "contain", "rendering": "pixelated"},
+  "upgrade-129": {"src": "/images/games/sephiria/wiki/weapon-upgrades/weapon-129-81aeb44211b9cbb7.webp", "alt": "Colossal Crossbow: Radiant Dial", "width": 29, "height": 13, "fit": "contain", "rendering": "pixelated"},
 };

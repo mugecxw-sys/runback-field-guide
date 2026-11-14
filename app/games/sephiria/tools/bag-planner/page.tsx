@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 };
 
 export default function SephiriaBagPlannerPage() {
-  return <GameWikiShell config={sephiriaWikiConfig} activeHref="/games/sephiria/tools/bag-planner">
+  return <GameWikiShell config={{ ...sephiriaWikiConfig, version: 'Planner rules · 1.0.33' }} activeHref="/games/sephiria/tools/bag-planner">
     <GameWikiHero eyebrow="SEPHIRIA TOOL · PATCH 1.0.33" title="Sephiria Bag & Tablet Planner" description="Arrange Artifacts, Tablets and inventory items, then see their levels, placement restrictions and Tablet effects update together." version="Planner V1 · 6-column bag" gameHref={sephiriaWikiConfig.hubHref} />
     <SephiriaBagPlanner />
   </GameWikiShell>;
