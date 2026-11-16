@@ -449,7 +449,34 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
       ],
     }],
   },
-  { name: 'Katana', imageKey: 'WPN-05', builds: [] },
+  {
+    name: 'Katana',
+    href: '/games/sephiria/builds/katana',
+    imageKey: 'WPN-05',
+    builds: [
+      {
+        title: 'Blazing Helbanus',
+        href: '/games/sephiria/builds/katana/blazing-helbanus-build',
+        publishedAt: '2026-11-16T00:00:00.000Z',
+        weaponRoute: ['Blade', 'Helbanus', 'Blazing Helbanus'],
+        finalBuild: ['Solar Blade 10', 'Ember 10', 'Elemental 6'],
+        fieldNotes: [
+          {
+            title: 'Burn stacks are the damage',
+            detail: 'Blazing Helbanus adds 2 Burn stacks and 4 Fire Damage to every Weapon Attack, and deals extra damage equal to 30% of Fire Damage on the hit itself. Ball of Red Yarn then doubles whatever the Burn was going to do.',
+          },
+          {
+            title: 'Ember pays for itself twice',
+            detail: 'Flame Bug adds Burn stacks per application and Blacksmith’s Tongs make Weapon Attacks hit burning targets harder, so the Ember tree feeds both the burn and your direct damage.',
+          },
+          {
+            title: 'Melee range is a defensive stat here',
+            detail: 'Wind Sheet Music from the wish pool is up to +50% Melee Attack range — every stack needs a Weapon Attack, so reach is what keeps you attacking without trading hits to do it.',
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 // Keep existing routes and layout metadata available while controlling public discovery.
