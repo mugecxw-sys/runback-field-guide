@@ -475,6 +475,27 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           },
         ],
       },
+      {
+        title: 'Solis Ekli',
+        href: '/games/sephiria/builds/katana/solis-ekli-build',
+        publishedAt: '2026-11-16T00:00:00.000Z',
+        weaponRoute: ['Blade', 'Helbanus', 'Solis Ekli'],
+        finalBuild: ['Solar Blade 10', 'Precision 8', 'Wind Song 6'],
+        fieldNotes: [
+          {
+            title: 'Eclipse spends Solar Blade',
+            detail: 'Solis Ekli keeps Helbanus’s 30%-of-Fire-Damage bonus and replaces Sheath with Eclipse, which spends Solar Blade charges to hit harder — so the stat you stack is also the resource you burn.',
+          },
+          {
+            title: 'Ignore Defense is the whole plan',
+            detail: 'Solis Dekri takes up to +14% Ignore Defense plus up to +50% Solar Blade crit chance, and Angry Potato adds up to +15% Ignore Defense on top. That is how the damage gets through armored enemies at Difficulty 60.',
+          },
+          {
+            title: 'Eternal Furnace is the fuel line',
+            detail: 'It creates 1 Solar Blade every 10 / 8 / 5 seconds while the Solar Blade effect is active — on a weapon that pays for damage with charges, the generator is what keeps the loop running.',
+          },
+        ],
+      },
     ],
   },
 ];
