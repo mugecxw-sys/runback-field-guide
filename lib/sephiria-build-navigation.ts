@@ -427,6 +427,26 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           detail: 'Precision only needs enough crit chance to trigger Red Mist. Burn Damage from Ball of Red Yarn (up to +100%) is the real multiplier, and Wind Song is worth pushing past 6/8.',
         },
       ],
+    }, {
+      title: 'M-9200',
+      href: '/games/sephiria/builds/crossbow/m-9200-build',
+      publishedAt: '2026-11-16T00:00:00.000Z',
+      weaponRoute: ['Colossal Crossbow', 'M-9199', 'M-9200'],
+      finalBuild: ['Precision 10', 'Sturdy 10', 'Wind Song 6'],
+      fieldNotes: [
+        {
+          title: 'Special Attack becomes a loading press',
+          detail: 'M-9199 replaces it with Ammo Compression: 10 MP folds every bullet in the magazine into one round, and each bullet merged adds 25% damage. Normal Attacks also pierce and damage goes up 15%.',
+        },
+        {
+          title: 'Ten rounds is the upgrade point',
+          detail: 'M-9200 turns a compression of 10 rounds or more into an Enhanced Compressed Round — a larger projectile that deals another 20% — so a short magazine loses more than just the per-bullet bonus.',
+        },
+        {
+          title: 'The round counts as a Normal Attack',
+          detail: 'That is why the multipliers stack on it: Crown of Humility pays its +84% combo finisher, Mystical Pendulum adds +50% Normal Attack Damage, and Marksman’s Crank adds +40% after each reload.',
+        },
+      ],
     }],
   },
   { name: 'Katana', imageKey: 'WPN-05', builds: [] },
