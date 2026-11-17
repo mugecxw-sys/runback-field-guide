@@ -517,6 +517,27 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           },
         ],
       },
+      {
+        title: "Beast Marks Sword 'Hou'",
+        href: '/games/sephiria/builds/katana/beast-marks-sword-hou-build',
+        publishedAt: '2026-11-17T00:00:00.000Z',
+        weaponRoute: ['Blade', "Long Blade 'Onohara'", "Beast Marks Sword 'Hou'"],
+        finalBuild: ['Precision 10', 'Shadow 10'],
+        fieldNotes: [
+          {
+            title: 'Evasion is the damage stat',
+            detail: 'Hou raises damage off Evasion and lets its special attack hit distant enemies, so the defensive stat and the damage stat are the same purchase. It plays nothing like Muramasa’s speed build.',
+          },
+          {
+            title: '24% slower base swing — the cost',
+            detail: 'The special attack has 24% lower base attack speed than normal, which is why the build feels heavy and why reach and positioning matter more than standing in and trading.',
+          },
+          {
+            title: 'Fight from outside their range',
+            detail: 'Wind Sheet Music is the wish-pool target and Helena’s Model Stairway adds movement. Hou rewards hitting distant enemies, so more reach means more swings from outside the retaliation range.',
+          },
+        ],
+      },
     ],
   },
 ];
