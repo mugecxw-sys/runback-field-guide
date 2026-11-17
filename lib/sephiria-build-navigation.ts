@@ -580,6 +580,27 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           },
         ],
       },
+      {
+        title: 'Silence of Everfrost',
+        href: '/games/sephiria/builds/katana/silence-of-everfrost-build',
+        publishedAt: '2026-11-17T00:00:00.000Z',
+        weaponRoute: ['Blade', "Winter Smith's Draftblade", 'Silence of Everfrost'],
+        finalBuild: ['Glacier 10', 'Precision 10', 'Elemental 6'],
+        fieldNotes: [
+          {
+            title: 'A counter weapon, not a DPS weapon',
+            detail: 'Blocking an enemy attack during invincibility triggers Echo of the Glacier for 120% of your Cold Damage. Damage comes from timing blocks, not from swinging — the closest relative on this site is the Sword & Shield perfect-block playstyle.',
+          },
+          {
+            title: 'Frostbite is the fuel line',
+            detail: 'Feet of the Ice Gull turns every Frostbite into Frozen Touch (+1 Cold Damage, up to 20 stacks), Blue Claw can apply Frostbite twice, and Ice Vine adds more on Special Attack. Cold Damage is the whole build.',
+          },
+          {
+            title: 'Honest verdict: the weakest katana here',
+            detail: 'It is execution-heavy for a payoff the other katanas reach by simply attacking. Take every Glacier book the run offers, and play it for the counter-block rhythm rather than for its numbers.',
+          },
+        ],
+      },
     ],
   },
 ];
