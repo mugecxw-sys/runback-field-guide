@@ -643,6 +643,27 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           },
         ],
       },
+      {
+        title: "Cerulean Cloud Sword 'Arges'",
+        href: '/games/sephiria/builds/katana/cerulean-cloud-sword-arges-build',
+        publishedAt: '2026-11-17T00:00:00.000Z',
+        weaponRoute: ['Blade', "Thunder Sword 'Bronte'", "Cerulean Cloud Sword 'Arges'"],
+        finalBuild: ['Storm Cloud 10', 'Magitech 10', 'Elemental 6'],
+        fieldNotes: [
+          {
+            title: 'Everything becomes Lightning',
+            detail: 'Arges converts your damage to Lightning, so every Lightning Damage roll on your gear applies to the whole build. The cost is real: the Bronte tier you upgrade through cuts Weapon Attack damage by 20%.',
+          },
+          {
+            title: 'Stack Residual Thunder first',
+            detail: 'Normal and Dash attacks build Residual Thunder. Glue yourself to the target and fill the stacks before you touch Cloud Slash — firing it early throws away a large chunk of its multiplier.',
+          },
+          {
+            title: 'Cloud Slash is the payoff, not the rotation',
+            detail: 'One Cloud Slash at full stacks is the damage spike. Stacks have no use sitting on the bar, but a half-empty bar is a half-power nuke, so the discipline is filling then dumping.',
+          },
+        ],
+      },
     ],
   },
 ];
