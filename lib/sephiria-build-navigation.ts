@@ -538,6 +538,27 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           },
         ],
       },
+      {
+        title: 'Rendblade: Drifting Willow',
+        href: '/games/sephiria/builds/katana/rendblade-drifting-willow-build',
+        publishedAt: '2026-11-17T00:00:00.000Z',
+        weaponRoute: ['Blade', 'Rendblade: Heavenrend', 'Rendblade: Drifting Willow'],
+        finalBuild: ['Precision 10', 'Sturdy 10', 'Elemental 6'],
+        fieldNotes: [
+          {
+            title: 'Every Iaido Slash counts as the last hit',
+            detail: 'Drifting Willow replaces the special attack with Normal Attack: Iaido Slash, and each one reads as the last hit of the combo — so Crown of Humility (+84% last-hit damage) and Golden Crown of Arrogance (+100% last-hit crit chance) fire on every swing.',
+          },
+          {
+            title: 'Physical, no stacking',
+            detail: 'No burn, no DoT, no charge counter — the damage is on the first hit. Mystical Pendulum’s +50% Normal Attack Damage is aimed at your main button here, at the cost of −10% attack speed.',
+          },
+          {
+            title: 'The ceilings are the scythe',
+            detail: 'The last hit is already over 100% crit, and Scythe of Berut turns excess Critical Chance into Execution Chance. That pairing is where the damage ceiling actually is; Wind Song contributes very little.',
+          },
+        ],
+      },
     ],
   },
 ];
