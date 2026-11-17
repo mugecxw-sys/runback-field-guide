@@ -601,6 +601,27 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           },
         ],
       },
+      {
+        title: 'Fragment of Nastrond',
+        href: '/games/sephiria/builds/katana/fragment-of-nastrond-build',
+        publishedAt: '2026-11-17T00:00:00.000Z',
+        weaponRoute: ['Blade', "Winter Smith's Draftblade", 'Fragment of Nastrond'],
+        finalBuild: ['Glacier 10', 'Frost Relic 10', 'Elemental 6'],
+        fieldNotes: [
+          {
+            title: 'A Frost Relic build holding a katana',
+            detail: 'Attacking after a Tackle activates Frost Relic: Skaði, so Scabbard of Exorcism’s charged slash, Frozen Bow’s auto-arrows and Tiny Magic Conch’s relic multiplier do most of the killing. The sword itself is barely the damage.',
+          },
+          {
+            title: 'Better than Silence of Everfrost, only somewhat',
+            detail: 'Same Cold Damage skeleton and the same execution demands, but the relic line adds damage the sword cannot. Still not a weapon the damage comes from — play it for the relic side.',
+          },
+          {
+            title: 'Take the Glacier books',
+            detail: 'Without Cold Damage stacked high, ordinary rooms at Difficulty 60 are a real fight. Glacier first, then Frost Relic, then Elemental.',
+          },
+        ],
+      },
     ],
   },
 ];
