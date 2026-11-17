@@ -49,6 +49,8 @@ const sephiriaBuildPages = listedWeaponBuildGroups.flatMap((group) => [
   })),
 ]);
 
+const sephiriaBuildFundamentalsPage = { href: '/games/sephiria/builds/fundamentals', lastModified: '2026-11-13T00:00:00.000Z' };
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...voidBreakerReleasePaths.map((pathname) => ({
@@ -98,6 +100,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.9,
     })),
+    {
+      url: `${siteUrl}${sephiriaBuildFundamentalsPage.href}`,
+      lastModified: sephiriaBuildFundamentalsPage.lastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
     {
       url: siteUrl,
       lastModified: siteLastModified,

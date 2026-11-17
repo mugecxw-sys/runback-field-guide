@@ -32,6 +32,14 @@ export function SephiriaBuildSidebar({ activeHref }: { activeHref: string }) {
           Build
         </summary>
         <div className="mt-2 space-y-1">
+          <a
+            href="/games/sephiria/builds/fundamentals"
+            aria-current={activeHref === '/games/sephiria/builds/fundamentals' ? 'page' : undefined}
+            className={`${linkStyle} ${activeHref === '/games/sephiria/builds/fundamentals' ? 'bg-[var(--surface-raised)] font-semibold text-[var(--heading)]' : ''}`}
+            style={activeHref === '/games/sephiria/builds/fundamentals' ? { borderLeftColor: 'var(--orange-text)' } : undefined}
+          >
+            Build Fundamentals
+          </a>
           {listedWeaponBuildGroups.map((group) => {
             const current = group.builds.some(
               (build) => build.href === activeHref,
