@@ -559,6 +559,27 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           },
         ],
       },
+      {
+        title: 'Rendblade: RuinDance',
+        href: '/games/sephiria/builds/katana/rendblade-ruindance-build',
+        publishedAt: '2026-11-17T00:00:00.000Z',
+        weaponRoute: ['Blade', 'Rendblade: Heavenrend', 'Rendblade: RuinDance'],
+        finalBuild: ['Wind Song 10', 'Shadow 10'],
+        fieldNotes: [
+          {
+            title: 'No crit — True Damage instead',
+            detail: 'This build skips the crit formula entirely and stacks flat True Damage with attack speed and hit count. True Damage is the stable floor while scaling enemies pile on damage reduction.',
+          },
+          {
+            title: 'Barrage is the engine',
+            detail: 'RuinDance grants Barrage when the Sword Strike gauge hits 100%, and Barrage is a high-frequency attack window. White Cape stretches buff duration up to +200%, which is why it is the wish-pool pick.',
+          },
+          {
+            title: 'You lose Great Iaido Slash',
+            detail: 'The real cost of RuinDance: no wide sweeping clear, so enemies die one swing at a time. Expect a lower-DPS run than the crit katanas — it still clears Difficulty 60.',
+          },
+        ],
+      },
     ],
   },
 ];
