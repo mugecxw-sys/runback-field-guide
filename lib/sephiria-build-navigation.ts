@@ -496,6 +496,27 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           },
         ],
       },
+      {
+        title: "Famed Sword 'Muramasa'",
+        href: '/games/sephiria/builds/katana/famed-sword-muramasa-build',
+        publishedAt: '2026-11-17T00:00:00.000Z',
+        weaponRoute: ['Blade', "Long Blade 'Onohara'", "Famed Sword 'Muramasa'"],
+        finalBuild: ['Precision 10', 'Wind Song 10'],
+        fieldNotes: [
+          {
+            title: 'Attack speed is the damage stat',
+            detail: 'Muramasa turns Heavy Slash into Swift Slash and makes Attack Speed 80% more efficient on it, so Wind Song is not a comfort pick here — it is the multiplier everything else feeds.',
+          },
+          {
+            title: 'Swift Slash does not lunge',
+            detail: 'The special attack fires without dragging you forward, and the arc is wide, so you can keep it up while repositioning instead of choosing between attacking and stepping out.',
+          },
+          {
+            title: 'Blue Wrist Guard is the wish-pool hit',
+            detail: 'Up to +42% Special Attack Damage at Legendary, and roughly all of this build’s output is Special Attack. It shares the Sturdy pool you are already levelling for survivability.',
+          },
+        ],
+      },
     ],
   },
 ];
