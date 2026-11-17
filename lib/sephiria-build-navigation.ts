@@ -622,6 +622,27 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           },
         ],
       },
+      {
+        title: 'Lightning Flash',
+        href: '/games/sephiria/builds/katana/lightning-flash-build',
+        publishedAt: '2026-11-17T00:00:00.000Z',
+        weaponRoute: ['Blade', "Thunder Sword 'Bronte'", 'Lightning Flash'],
+        finalBuild: ['Wind Song 10', 'Magitech 10', 'Elemental 6'],
+        fieldNotes: [
+          {
+            title: 'Attack speed is the multiplier',
+            detail: 'Lightning Flash trades −20% Weapon Attack damage to become Lightning Damage, then converts Electrocution into Electric Charge. 2 stacks turn Heavy Slash into Issen, and attack speed is what makes that loop fast — lightning damage comes second.',
+          },
+          {
+            title: 'Let the cloud do the stacking',
+            detail: 'A Storm Cloud or a companion applies Electrocution too, so Electric Charge keeps filling while you reposition. Ahmad’s Spirit Powder’s jellyfish does this on its own — it is the engine, not a damage slot.',
+          },
+          {
+            title: 'Spend the stacks',
+            detail: '10 stacks is five Issen. Holding charges does nothing; treat Issen as your default attack rather than a finisher.',
+          },
+        ],
+      },
     ],
   },
 ];
