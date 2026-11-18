@@ -1,9 +1,7 @@
 import type { ReactNode } from 'react';
 import Image from 'next/image';
-import {
-  SephiriaBuildMobileNav,
-  SephiriaBuildSidebar,
-} from '@/components/game-wiki/sephiria-build-sidebar';
+import { AdSlot, ContactRail, GameBreadcrumb, GameShell } from '@/components/game-wiki/game-wiki';
+import { sephiriaWikiConfig } from '@/components/game-wiki/sephiria-config';
 import { SephiriaBuildLayout } from '@/components/game-wiki/sephiria-build-layout';
 import { weaponBuildGroups } from '@/lib/sephiria-build-navigation';
 import type { LocalBuildImage, SephiriaSwordShieldBuildPageData } from '@/lib/sephiria-builds/sword-and-shield-pages';
@@ -162,15 +160,12 @@ export function SephiriaSwordShieldBuildPage({
   };
 
   return (
-    <main className="min-h-screen bg-[var(--wiki-page-bg)] px-4 py-6 text-[var(--text)] sm:px-5 sm:py-8">
-      <div className="mx-auto max-w-[1440px] lg:grid lg:grid-cols-[13.5rem_minmax(0,1fr)] lg:gap-9">
-        <aside className="hidden lg:block">
-          <div className="sticky top-24 border-r border-[var(--gold-border)]/20 pr-5">
-            <SephiriaBuildSidebar activeHref={data.href} />
-          </div>
-        </aside>
-        <div className="min-w-0">
-          <SephiriaBuildMobileNav activeHref={data.href} />
+    <GameShell
+      config={sephiriaWikiConfig}
+      activeHref={data.href}
+      breadcrumb={<GameBreadcrumb items={[{ label: 'Home', href: '/' }, { label: 'Games', href: '/#game-library' }, { label: 'Sephiria', href: '/games/sephiria' }, { label: 'Builds' }, { label: data.h1 ?? 'Build' }]} />}
+      rightRail={<><AdSlot variant="box" /><ContactRail /></>}
+    >
           <article className="mx-auto min-w-0 max-w-[1120px]">
             <script
               type="application/ld+json"
@@ -178,17 +173,6 @@ export function SephiriaSwordShieldBuildPage({
                 __html: JSON.stringify(breadcrumb).replace(/</g, '\\u003c'),
               }}
             />
-            <nav
-              aria-label="Breadcrumb"
-              className="mb-5 flex min-w-0 flex-wrap gap-2 text-xs text-[var(--muted)] sm:text-sm"
-            >
-              <a className="underline-offset-4 hover:text-[var(--orange-hover)] hover:underline" href="/">RUNBACK</a>
-              <span aria-hidden="true">/</span>
-              <a className="underline-offset-4 hover:text-[var(--orange-hover)] hover:underline" href="/games/sephiria">Sephiria</a>
-              <span aria-hidden="true">/</span>
-              <span aria-current="page">Sword &amp; Shield Build</span>
-            </nav>
-
             <header className="mt-8 grid min-w-0 gap-5 border border-[var(--gold-border)]/35 bg-[var(--surface)] p-5 sm:p-8" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 24rem), 1fr))' }}>
               <div className="min-w-0">
                 <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--gold-label)]">RUNBACK FIELD GUIDE / SEPHIRIA</p>
@@ -286,8 +270,6 @@ export function SephiriaSwordShieldBuildPage({
             </PageSection>
             </>}
           </article>
-        </div>
-      </div>
-    </main>
+    </GameShell>
   );
 }

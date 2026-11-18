@@ -80,16 +80,11 @@ export function GameWikiSidebar({ config, activeHref }: { config: GameWikiConfig
     <nav aria-label={`${config.gameName} navigation`} className="text-[var(--text)]">
       <p className="font-serif text-lg font-semibold tracking-wide text-[var(--heading)]">{config.gameName}</p>
       <p className="mt-1 text-xs text-[var(--gold-muted)]">{config.version}</p>
-      {config.navigationSections.map((section) => section.groups ? (
+      {config.navigationSections.map((section) => (
         <details key={section.label} open data-navigation-section={section.label}>
           <summary className="mb-2 mt-6 cursor-pointer text-[11px] font-bold tracking-[0.18em] text-[var(--gold)]">{section.label}</summary>
-          <NavigationGroups groups={section.groups} activeHref={activeHref} />
+          {section.groups ? <NavigationGroups groups={section.groups} activeHref={activeHref} /> : <div>{section.links.map(link)}</div>}
         </details>
-      ) : (
-        <div key={section.label} data-navigation-section={section.label}>
-          <SectionLabel>{section.label}</SectionLabel>
-          <div>{section.links.map(link)}</div>
-        </div>
       ))}
       {(config.officialHref || config.showAboutLink !== false) && <SectionLabel>MORE</SectionLabel>}
       {config.officialHref && (
@@ -134,14 +129,110 @@ export function GameWikiMobileNav({ config, activeHref }: { config: GameWikiConf
   );
 }
 
-export function GameWikiShell({ config, activeHref, children }: { config: GameWikiConfig; activeHref: string; children: ReactNode }) {
+export type GameBreadcrumbItem = { label: string; href?: string };
+
+export function GameBreadcrumb({ items }: { items: GameBreadcrumbItem[] }) {
+  return (
+    <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[var(--muted)]">
+      {items.map((item, index) => (
+        <span key={`${item.label}-${index}`} className="contents">
+          {index > 0 && <span aria-hidden="true">›</span>}
+          {item.href ? (
+            <a href={item.href} className="underline-offset-4 hover:text-[var(--orange-hover)] hover:underline">{item.label}</a>
+          ) : (
+            <span aria-current="page">{item.label}</span>
+          )}
+        </span>
+      ))}
+    </nav>
+  );
+}
+
+// Fixed-height ad reservation. No ad loads; this only reserves the exact
+// 90px / 250px space so a future ad never causes layout shift.
+export function AdSlot({ variant = 'box' }: { variant?: 'inline' | 'box' }) {
+  const box = variant === 'box';
+  return (
+    <div
+      data-ad-slot={variant}
+      aria-label="Advertisement placeholder"
+      className={`flex items-center justify-center border border-dashed border-[var(--gold-border)]/40 bg-[var(--surface-inset)] text-center text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--muted)] ${box ? 'h-[250px]' : 'h-[90px]'}`}
+    >
+      {box ? 'Ad · 300×250' : 'Ad · 728×90'}
+    </div>
+  );
+}
+
+export function ContactRail() {
+  return (
+    <nav aria-label="Contact and feedback">
+      <p className="text-sm font-semibold text-[var(--heading)]">Feedback</p>
+      <p className="mt-3 text-sm leading-6 text-[var(--body-soft)]">Spotted an error, or have a question or suggestion?</p>
+      <a href="mailto:contact@roguelikegame.org" className="mt-3 inline-block text-sm font-semibold text-[var(--orange-text)] hover:text-[var(--orange-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-text)]">contact@roguelikegame.org</a>
+      <a href="/contact" className="mt-2 block text-sm text-[var(--body-soft)] hover:text-[var(--orange-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-text)]">More ways to reach us →</a>
+    </nav>
+  );
+}
+
+export function OnThisPage({ toc, compact = false }: { toc: string[]; compact?: boolean }) {
+  const links = toc.map((item) => ({ label: item, href: '#' + item.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') }));
+  return (
+    <nav aria-label="On this page" className={compact ? 'border border-[var(--gold-border)]/25 bg-[var(--surface)] p-4' : ''}>
+      <p className="text-sm font-semibold text-[var(--heading)]">On this page</p>
+      <ul className="mt-3 space-y-2 text-sm">
+        {links.map((item) => <li key={item.href}><a href={item.href} className="text-[var(--body-soft)] hover:text-[var(--orange-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-text)]">{item.label}</a></li>)}
+      </ul>
+    </nav>
+  );
+}
+
+// The single site shell for every game page: masthead (global) sits above,
+// then a three-column grid — left rail / content / right rail. Breakpoints:
+//   <1024  single column with a collapsible nav
+//   1024   left rail + content
+//   ≥1280  left rail + content + right rail
+export function GameShell({ config, activeHref, children, breadcrumb, rightRail }: {
+  config: GameWikiConfig;
+  activeHref: string;
+  children: ReactNode;
+  breadcrumb?: ReactNode;
+  rightRail?: ReactNode;
+}) {
+  const defaultBreadcrumb = (
+    <GameBreadcrumb items={[
+      { label: 'Home', href: '/' },
+      { label: 'Games', href: '/#game-library' },
+      { label: config.gameName, href: activeHref === config.hubHref ? undefined : config.hubHref },
+    ]} />
+  );
   return (
     <main className="min-h-screen bg-[var(--wiki-page-bg)] px-4 py-6 text-[var(--text)] sm:px-5 sm:py-8">
-      <div className="mx-auto max-w-[1440px] lg:grid lg:grid-cols-[13.5rem_minmax(0,1fr)] lg:gap-9">
-        <aside className="hidden lg:block"><div className="sticky top-24 border-r border-[var(--gold-border)]/20 pr-5"><GameWikiSidebar config={config} activeHref={activeHref} /></div></aside>
-        <div className="min-w-0"><GameWikiMobileNav config={config} activeHref={activeHref} />{children}</div>
+      <div className="mx-auto max-w-[1440px] lg:grid lg:grid-cols-[13.5rem_minmax(0,1fr)] lg:gap-9 xl:grid-cols-[13.5rem_minmax(0,1fr)_13rem]">
+        <aside className="hidden lg:block">
+          <div className="sticky top-6 border-r border-[var(--gold-border)]/20 pr-5">
+            <GameWikiSidebar config={config} activeHref={activeHref} />
+          </div>
+        </aside>
+        <div className="min-w-0">
+          <GameWikiMobileNav config={config} activeHref={activeHref} />
+          <div className="mb-5">{breadcrumb ?? defaultBreadcrumb}</div>
+          {children}
+        </div>
+        {rightRail != null && (
+          <aside className="hidden xl:block">
+            <div className="sticky top-6 space-y-8 border-l border-[var(--gold-border)]/20 pl-5">{rightRail}</div>
+          </aside>
+        )}
       </div>
     </main>
+  );
+}
+
+export function GameWikiShell({ config, activeHref, children }: { config: GameWikiConfig; activeHref: string; children: ReactNode }) {
+  return (
+    <GameShell config={config} activeHref={activeHref} rightRail={<><AdSlot variant="box" /><ContactRail /></>}>
+      {children}
+    </GameShell>
   );
 }
 
@@ -175,36 +266,39 @@ export function GameWikiCategoryCard({ item }: { item: GameWikiLink }) {
 }
 
 export function GameWikiArticleLayout({ config, activeHref, title, description, publishedAt, modifiedAt, reviewedAt, toc, children, schema, label = 'Reference', labelTone = 'verified', coverage, footerNote = 'RUNBACK reference', breadcrumbItems }: { config: GameWikiConfig; activeHref: string; title: string; description: string; publishedAt?: string; modifiedAt?: string; reviewedAt?: string; toc: string[]; children: ReactNode; schema: unknown; label?: string; labelTone?: 'verified' | 'neutral'; coverage?: string; footerNote?: string; breadcrumbItems?: { label: string; href?: string }[] }) {
-  const related = config.navigationSections.flatMap((section) => section.links).filter((item) => item.href !== activeHref);
   const lastReviewed = reviewedAt ?? modifiedAt ?? publishedAt;
-  const tocLinks = toc.map((item) => ({ label: item, href: '#' + item.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') }));
-  const onThisPage = (compact = false) => (
-    <nav aria-label="On this page" className={compact ? 'border border-[var(--gold-border)]/25 bg-[var(--surface)] p-4' : ''}>
-      <p className="text-sm font-semibold text-[var(--heading)]">On this page</p>
-      <ul className="mt-3 space-y-2 text-sm">
-        {tocLinks.map((item) => <li key={item.href}><a href={item.href} className="text-[var(--body-soft)] hover:text-[var(--orange-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-text)]">{item.label}</a></li>)}
-      </ul>
-    </nav>
-  );
+  const crumbs = breadcrumbItems ?? [
+    { label: 'Home', href: '/' },
+    { label: 'Games', href: '/#game-library' },
+    { label: config.gameName, href: config.hubHref },
+    { label: title },
+  ];
   return (
-    <main className="min-h-screen bg-[var(--wiki-page-bg)] px-4 py-6 text-[var(--text)] sm:px-5 sm:py-8">
-      <div className="mx-auto max-w-[1440px] lg:grid lg:grid-cols-[13.5rem_minmax(0,1fr)] lg:gap-9 xl:grid-cols-[13.5rem_minmax(0,46rem)_13rem]">
-        <aside className="hidden lg:block"><div className="sticky top-24 border-r border-[var(--gold-border)]/20 pr-5"><GameWikiSidebar config={config} activeHref={activeHref} /></div></aside>
-        <article className="min-w-0">
-          <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
-          <GameWikiMobileNav config={config} activeHref={activeHref} />
-          <nav aria-label="Breadcrumb" className="flex flex-wrap gap-2 text-sm text-[var(--muted)]">{breadcrumbItems ? breadcrumbItems.map((item, index) => <span key={item.label} className="contents">{index > 0 && <span aria-hidden="true">›</span>}{item.href ? <a href={item.href}>{item.label}</a> : <span aria-current="page">{item.label}</span>}</span>) : <><a href="/">Home</a><span>›</span><a href="/#game-library">Games</a><span>›</span><a href={config.hubHref}>{config.gameName}</a><span>›</span><span aria-current="page">{title}</span></>}</nav>
-          <header className="mt-5 border-b border-[var(--gold-border)]/25 pb-6">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--gold-label)]">RUNBACK → {config.gameName} Wiki</p>
-            <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight text-[var(--heading)] sm:text-4xl">{title}</h1>
-            <p className="mt-4 text-base leading-7 text-[var(--body-soft)]">{description}</p>
-            <div className="mt-5 flex flex-wrap gap-2 text-xs"><span className="border border-[var(--gold-border)]/30 bg-[var(--surface)] px-2.5 py-1.5 font-semibold text-[var(--gold-text)]">{config.version}</span><span className={`border px-2.5 py-1.5 font-semibold ${labelTone === 'neutral' ? 'border-[var(--gold-label)]/30 bg-[var(--gold-label)]/10 text-[var(--gold-bright)]' : 'border-[var(--success)]/30 bg-[var(--success)]/10 text-[var(--success-soft)]'}`}>{label}</span>{coverage && <span className="border border-[var(--neutral-edge)]/10 bg-[var(--neutral-wash)]/[0.035] px-2.5 py-1.5 text-[var(--body-soft)]">{coverage}</span>}{lastReviewed && <span className="border border-[var(--neutral-edge)]/10 bg-[var(--neutral-wash)]/[0.035] px-2.5 py-1.5 text-[var(--body-soft)]">Last reviewed {lastReviewed.slice(0, 10)}</span>}</div>
-          </header>
-          <details className="mt-5 border border-[var(--gold-border)]/25 bg-[var(--surface)] p-4 xl:hidden"><summary className="cursor-pointer text-sm font-semibold text-[var(--heading)]">On this page</summary><div className="mt-3">{onThisPage()}</div></details>
-          {children}
-        </article>
-        <aside className="hidden xl:block"><div className="sticky top-24 space-y-8 border-l border-[var(--gold-border)]/20 pl-5">{onThisPage()}<nav aria-label={config.relatedLabel ?? 'Related guides'}><p className="text-sm font-semibold text-[var(--heading)]">{config.relatedLabel ?? 'Related guides'}</p><ul className="mt-3 space-y-2 text-sm">{related.map((item) => <li key={item.href}><a href={item.href} className="text-[var(--body-soft)] hover:text-[var(--orange-hover)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--orange-text)]">{item.label}</a></li>)}</ul></nav><div className="border-t border-[var(--neutral-edge)]/10 pt-4 text-xs leading-5 text-[var(--muted)]">{config.version}<br />{footerNote}</div></div></aside>
-      </div>
-    </main>
+    <GameShell
+      config={config}
+      activeHref={activeHref}
+      breadcrumb={<GameBreadcrumb items={crumbs} />}
+      rightRail={
+        <>
+          <OnThisPage toc={toc} />
+          <AdSlot variant="box" />
+          <ContactRail />
+          <div className="border-t border-[var(--neutral-edge)]/10 pt-4 text-xs leading-5 text-[var(--muted)]">{config.version}<br />{footerNote}</div>
+        </>
+      }
+    >
+      <article className="min-w-0">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema).replace(/</g, '\\u003c') }} />
+        <header className="border-b border-[var(--gold-border)]/25 pb-6">
+          <p className="text-xs font-bold uppercase tracking-[0.18em] text-[var(--gold-label)]">RUNBACK → {config.gameName} Wiki</p>
+          <h1 className="mt-3 font-serif text-3xl font-semibold leading-tight text-[var(--heading)] sm:text-4xl">{title}</h1>
+          <p className="mt-4 text-base leading-7 text-[var(--body-soft)]">{description}</p>
+          <div className="mt-5 flex flex-wrap gap-2 text-xs"><span className="border border-[var(--gold-border)]/30 bg-[var(--surface)] px-2.5 py-1.5 font-semibold text-[var(--gold-text)]">{config.version}</span><span className={`border px-2.5 py-1.5 font-semibold ${labelTone === 'neutral' ? 'border-[var(--gold-label)]/30 bg-[var(--gold-label)]/10 text-[var(--gold-bright)]' : 'border-[var(--success)]/30 bg-[var(--success)]/10 text-[var(--success-soft)]'}`}>{label}</span>{coverage && <span className="border border-[var(--neutral-edge)]/10 bg-[var(--neutral-wash)]/[0.035] px-2.5 py-1.5 text-[var(--body-soft)]">{coverage}</span>}{lastReviewed && <span className="border border-[var(--neutral-edge)]/10 bg-[var(--neutral-wash)]/[0.035] px-2.5 py-1.5 text-[var(--body-soft)]">Last reviewed {lastReviewed.slice(0, 10)}</span>}</div>
+        </header>
+        <AdSlot variant="inline" />
+        <details className="mt-5 border border-[var(--gold-border)]/25 bg-[var(--surface)] p-4 xl:hidden"><summary className="cursor-pointer text-sm font-semibold text-[var(--heading)]">On this page</summary><div className="mt-3"><OnThisPage toc={toc} compact /></div></details>
+        {children}
+      </article>
+    </GameShell>
   );
 }

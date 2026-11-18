@@ -14,8 +14,8 @@ export const sephiriaWikiConfig: GameWikiConfig = {
   showAboutLink: false,
   relatedLabel: 'Related pages',
   navigationSections: [
-    { label: 'START', links: [{ href: '/games/sephiria', label: 'Overview' }, { href: '/games/sephiria/wiki', label: 'Wiki Home' }] },
-    { label: 'BUILD', links: weaponBuildGroups.flatMap((group) => group.builds.map((build) => ({ href: build.href, label: build.title }))), groups: weaponBuildGroups.map((group) => ({ label: group.name, href: group.href, links: group.builds.map((build) => ({ href: build.href, label: build.title })) })) },
+    { label: 'START', links: [{ href: '/games/sephiria', label: 'Overview' }] },
+    { label: 'BUILD', links: weaponBuildGroups.flatMap((group) => group.builds.map((build) => ({ href: build.href, label: build.title }))), groups: [{ label: 'Build Fundamentals', href: '/games/sephiria/builds/fundamentals', links: [] }, ...weaponBuildGroups.map((group) => ({ label: group.name, href: group.href, links: group.builds.map((build) => ({ href: build.href, label: build.title })) }))] },
     { label: 'TOOLS', links: tools.map(({ title, href }) => ({ href, label: title })) },
     { label: 'DATABASE', links: categories.map(({ title, href }) => ({ href, label: title })) },
     { label: 'SYSTEMS', links: systems.map(({ title, href }) => ({ href, label: title })) },

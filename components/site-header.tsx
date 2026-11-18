@@ -3,7 +3,7 @@ import { ThemeSwitcher } from './theme-switcher';
 export function SiteHeader() {
   return (
     <header className="border-b border-[var(--neutral-edge)]/10 bg-[var(--page-bg)]">
-      <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-5 py-5">
+      <div className="mx-auto flex max-w-[1440px] flex-wrap items-center justify-between gap-4 px-4 py-5 sm:px-5">
         <a
           href="/"
           className="font-mono text-xl font-bold tracking-widest text-[var(--orange-text)]"
