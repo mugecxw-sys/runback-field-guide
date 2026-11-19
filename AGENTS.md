@@ -58,8 +58,8 @@ templates/           页面/文章模板
 ## 4. 数据约定
 
 - **对外数据必须带版本号，且版本号进文件名**：
-  `public/data/sephiria-items-1.0.33.json`、`sephiria-items-1.1.3.json`
-  当前版本常量在 `lib/sephiria-current-version.ts`（现为 `1.1.3`）。历史版本不要删，Planner 需要跨版本比对。
+  `public/data/sephiria-items-1.0.33.json`、`sephiria-items-1.1.4.json`
+  当前版本常量在 `lib/sephiria-current-version.ts`（现为 `1.1.4`）。历史版本不要删，Planner 需要跨版本比对。
 - **内部数据与对外数据分层**：`*.internal.json` / `*-internal.ts` 只供内部计算，不直接渲染到页面。
 - **图标**：集中在 `public/images/games/<game>/...`，清单思路见 `lib/sephiria-image-manifest.ts`；新增图标必须同步清单，缺图要有占位。
 - 数据来源是逆向/解包，**每条数值应能追溯到"来源 + 游戏版本 + 全量或抽样"**；没有出处的数值不要写进页面正文。

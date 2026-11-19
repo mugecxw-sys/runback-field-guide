@@ -17,8 +17,6 @@ type PublicItem = {
   displayDescription: string | null;
   displayEffectLines: string[];
   verifiedDisplayLevelLines: DisplayLevel[];
-  price: number | null;
-  sapphirePrice: number | null;
   image: { src: string; width: number; height: number };
 };
 type ItemsData = {
@@ -42,7 +40,7 @@ function getLocationSearch() { return window.location.search; }
 function notifyItems() { itemsListeners.forEach((listener) => listener()); }
 function loadItems() {
   if (itemsRequest) return;
-  itemsRequest = fetch('/data/sephiria-items-1.1.3.json')
+  itemsRequest = fetch('/data/sephiria-items-1.1.4.json')
     .then((response) => { if (!response.ok) throw new Error('Items database request failed'); return response.json() as Promise<ItemsData>; })
     .then((data) => { itemsSnapshot = { data, loadError: false }; notifyItems(); })
     .catch(() => { itemsSnapshot = { data: null, loadError: true }; notifyItems(); });
@@ -58,7 +56,7 @@ const rarityStyles: Record<string, string> = {
 
 function ItemCard({ item, activeCategory, onCategoryClick }: { item: PublicItem; activeCategory: string; onCategoryClick: (category: string) => void }) {
   return (
-    <article id={item.slug} className="min-w-0 border border-[var(--gold-border)]/25 bg-[var(--surface)] p-4 shadow-[0_8px_20px_rgba(0,0,0,0.12)] sm:p-5">
+    <article id={item.slug} className="flex h-full min-w-0 flex-col border border-[var(--gold-border)]/25 bg-[var(--surface)] p-4 shadow-[0_8px_20px_rgba(0,0,0,0.12)] sm:p-5">
       <div className="flex min-w-0 items-start gap-3">
         <span className="relative flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden border border-[var(--gold-border)]/25 bg-[var(--wiki-page-bg)] p-1">
           <Image src={item.image.src} alt={item.displayName + ' icon'} width={item.image.width} height={item.image.height} unoptimized loading="lazy" decoding="async" sizes="56px" className="h-full w-full object-contain [image-rendering:pixelated]" />
@@ -72,19 +70,16 @@ function ItemCard({ item, activeCategory, onCategoryClick }: { item: PublicItem;
           </div>
         </div>
       </div>
-      {item.categories.length > 0 && <ul aria-label="Categories" className="mt-3 flex min-w-0 flex-wrap gap-1.5">{item.categories.map((category) => <li key={category}><button type="button" aria-pressed={activeCategory === category} onClick={() => onCategoryClick(category)} className={"max-w-full break-words border px-2 py-1 text-left text-[11px] leading-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--orange-text)] " + (activeCategory === category ? "border-[var(--orange-text)]/50 bg-[var(--orange-text)]/10 text-[var(--orange-hover)]" : "border-[var(--gold-border)]/20 bg-[var(--wiki-page-bg)] text-[var(--gold-text)] hover:bg-[var(--neutral-wash)]/[0.05]")}>{category}</button></li>)}</ul> }
-      {item.displayDescription && <p className="mt-3 break-words text-sm leading-6 text-[var(--secondary)]">{item.displayDescription}</p>}
-      {item.displayEffectLines.length > 0 && <div className="mt-3 space-y-1 border-t border-[var(--neutral-edge)]/10 pt-3 text-sm leading-6 text-[var(--text)]">
-        {item.displayEffectLines.map((line, index) => <p key={index} className="break-words">{index === 0 && <span className="font-semibold text-[var(--heading)]">Effect: </span>}{line}</p>)}
-      </div>}
-      {item.verifiedDisplayLevelLines.length > 0 && <details className="mt-3 border-t border-[var(--neutral-edge)]/10 pt-3 text-sm">
-        <summary className="cursor-pointer font-semibold text-[var(--gold-label)]">Level effects · {item.verifiedDisplayLevelLines.length} {item.verifiedDisplayLevelLines.length === 1 ? 'level' : 'levels'}</summary>
-        <ol className="mt-2 space-y-1.5 text-[var(--secondary)]">{item.verifiedDisplayLevelLines.map((level) => <li key={level.level} className="break-words"><span className="font-semibold text-[var(--heading)]">Lv. {level.level}:</span> {level.lines.join(' · ')}</li>)}</ol>
+      {item.displayEffectLines.length > 0 && <p className="mt-3 line-clamp-2 text-sm leading-6 text-[var(--text)]"><span className="font-semibold text-[var(--heading)]">Effect: </span>{item.displayEffectLines[0]}</p>}
+      {item.categories.length > 0 && <ul aria-label="Categories" className="mt-2 flex min-w-0 flex-wrap gap-1.5">{item.categories.map((category) => <li key={category}><button type="button" aria-pressed={activeCategory === category} onClick={() => onCategoryClick(category)} className={"max-w-full break-words border px-2 py-1 text-left text-[11px] leading-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[var(--orange-text)] " + (activeCategory === category ? "border-[var(--orange-text)]/50 bg-[var(--orange-text)]/10 text-[var(--orange-hover)]" : "border-[var(--gold-border)]/20 bg-[var(--wiki-page-bg)] text-[var(--gold-text)] hover:bg-[var(--neutral-wash)]/[0.05]")}>{category}</button></li>)}</ul> }
+      {(item.displayDescription || item.displayEffectLines.length > 1 || item.verifiedDisplayLevelLines.length > 0) && <details className="mt-auto border-t border-[var(--neutral-edge)]/10 pt-3 text-sm">
+        <summary className="cursor-pointer text-xs font-semibold text-[var(--gold-label)]">Details</summary>
+        <div className="mt-2 space-y-3">
+          {item.displayDescription && <p className="break-words leading-6 text-[var(--secondary)]">{item.displayDescription}</p>}
+          {item.displayEffectLines.length > 0 && <div className="space-y-1 leading-6 text-[var(--text)]">{item.displayEffectLines.map((line, index) => <p key={index} className="break-words">{line}</p>)}</div>}
+          {item.verifiedDisplayLevelLines.length > 0 && <ol className="space-y-1.5 text-[var(--secondary)]">{item.verifiedDisplayLevelLines.map((level) => <li key={level.level} className="break-words"><span className="font-semibold text-[var(--heading)]">Lv. {level.level}:</span> {level.lines.join(' · ')}</li>)}</ol>}
+        </div>
       </details>}
-      {(item.price !== null || item.sapphirePrice !== null) && <dl className="mt-3 grid grid-cols-2 gap-2 border-t border-[var(--neutral-edge)]/10 pt-3 text-xs">
-        {item.price !== null && <div className="min-w-0"><dt className="text-[var(--muted)]">Price</dt><dd className="mt-1 break-words font-semibold text-[var(--text)]">{item.price}</dd></div>}
-        {item.sapphirePrice !== null && <div className="min-w-0"><dt className="text-[var(--muted)]">Sapphire Price</dt><dd className="mt-1 break-words font-semibold text-[var(--text)]">{item.sapphirePrice}</dd></div>}
-      </dl>}
     </article>
   );
 }
