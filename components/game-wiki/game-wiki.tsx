@@ -148,19 +148,12 @@ export function GameBreadcrumb({ items }: { items: GameBreadcrumbItem[] }) {
   );
 }
 
-// Fixed-height ad reservation. No ad loads; this only reserves the exact
-// 90px / 250px space so a future ad never causes layout shift.
+// Ad reservation. Ads are NOT integrated yet, so this renders nothing visible
+// and reserves no layout space — the site stays clean. When ads go live,
+// restore the fixed 90px / 250px box here so a real ad never causes layout
+// shift (CLS). The data attributes keep each slot position marked for later.
 export function AdSlot({ variant = 'box' }: { variant?: 'inline' | 'box' }) {
-  const box = variant === 'box';
-  return (
-    <div
-      data-ad-slot={variant}
-      aria-label="Advertisement placeholder"
-      className={`flex items-center justify-center border border-dashed border-[var(--gold-border)]/40 bg-[var(--surface-inset)] text-center text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--muted)] ${box ? 'h-[250px]' : 'h-[90px]'}`}
-    >
-      {box ? 'Ad · 300×250' : 'Ad · 728×90'}
-    </div>
-  );
+  return <div hidden aria-hidden="true" data-ad-slot={variant} data-ad-h={variant === 'box' ? 250 : 90} />;
 }
 
 export function ContactRail() {
