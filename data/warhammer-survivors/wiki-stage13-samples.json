@@ -1,0 +1,1624 @@
+{
+  "title": "Wiki samples / 样本预览",
+  "description": "样本预览。展示部分条目及其关联；完整 Wiki 的1,408条记录保持原样。",
+  "groups": [
+    {
+      "slug": "characters",
+      "label": "Characters",
+      "entryDisplay": "compact",
+      "fields": [
+        {
+          "key": "universe",
+          "label": "Universe",
+          "filter": true,
+          "multiValue": true,
+          "allLabel": "All universes"
+        },
+        {
+          "key": "startingWeapon",
+          "label": "Starting weapon",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        },
+        {
+          "key": "baseStats",
+          "label": "Base stats",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": "",
+          "hideInDetail": true
+        }
+      ],
+      "entries": [
+        {
+          "slug": "character-malum",
+          "title": "Malum Caedo",
+          "summary": "Gains +3% Strength for every weapon and passive equipped. +1 Save reduces incoming damage.",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "startingWeapon": "Chainsword",
+            "baseStats": [
+              "Max HP: 120",
+              "Armor: 1",
+              "Regen: 0",
+              "Move speed: 1"
+            ]
+          },
+          "detailSections": [
+            {
+              "title": "Level bonuses",
+              "description": "Each listed value is a change at that level, not a cumulative total. Base attributes remain separate above.",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Level"
+                },
+                {
+                  "key": "effect",
+                  "label": "Change"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "10",
+                  "effect": "+10% Strength"
+                },
+                {
+                  "level": "20",
+                  "effect": "+10% Strength"
+                },
+                {
+                  "level": "30",
+                  "effect": "+10% Strength"
+                },
+                {
+                  "level": "40",
+                  "effect": "+10% Strength"
+                },
+                {
+                  "level": "50",
+                  "effect": "+10% Strength"
+                }
+              ]
+            }
+          ],
+          "icon": {
+            "src": "/images/games/warhammer-survivors/stage13-samples/C_MalumCaedo_01.png",
+            "alt": "Malum Caedo"
+          },
+          "href": "/games/warhammer-survivors/wiki-samples/character-malum",
+          "relatedLinks": [
+            {
+              "label": "Starting weapon",
+              "title": "Chainsword",
+              "href": "/games/warhammer-survivors/wiki-samples/weapon-chainsword",
+              "summary": "Weapon levels, documented changes, and evolution."
+            }
+          ]
+        },
+        {
+          "slug": "character-valius",
+          "title": "Valius the Keeper Aqshian",
+          "summary": "",
+          "attributes": {
+            "universe": [
+              "Warhammer Age of Sigmar"
+            ],
+            "startingWeapon": "Mystical Ward"
+          }
+        },
+        {
+          "slug": "character-pask",
+          "title": "Knight-Commander Pask",
+          "summary": "",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "startingWeapon": "Battle Cannon"
+          },
+          "detailSections": [
+            {
+              "title": "Base attributes",
+              "columns": [
+                {
+                  "key": "attribute",
+                  "label": "Attribute"
+                },
+                {
+                  "key": "value",
+                  "label": "Source value"
+                }
+              ],
+              "rows": [
+                {
+                  "attribute": "Max HP",
+                  "value": "350"
+                },
+                {
+                  "attribute": "Armor",
+                  "value": "2"
+                },
+                {
+                  "attribute": "Regen",
+                  "value": "0"
+                },
+                {
+                  "attribute": "Move speed",
+                  "value": "0.75"
+                }
+              ]
+            }
+          ],
+          "href": "/games/warhammer-survivors/wiki-samples/character-pask"
+        },
+        {
+          "slug": "character-balphamus-vaulk",
+          "title": "Balphamus Vaulk",
+          "summary": "Gains +10% Tithe for each weapon and passive equipped. Harnesses the Motive Force.",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "startingWeapon": "Reliquary",
+            "baseStats": []
+          }
+        }
+      ]
+    },
+    {
+      "slug": "weapons",
+      "label": "Weapons",
+      "entryDisplay": "compact",
+      "fields": [
+        {
+          "key": "universe",
+          "label": "Universe",
+          "filter": true,
+          "multiValue": true,
+          "allLabel": "All universes"
+        },
+        {
+          "key": "evolvesFrom",
+          "label": "Evolves from",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        },
+        {
+          "key": "evolvesInto",
+          "label": "Evolves into",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        },
+        {
+          "key": "requiredPassive",
+          "label": "Required passive",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        }
+      ],
+      "entries": [
+        {
+          "slug": "weapon-chainsword",
+          "title": "Chainsword",
+          "summary": "Horizontal slash attack, hacks through enemies.",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "evolvesInto": "Eviscerator Chainsword",
+            "requiredPassive": "Tape Measure"
+          },
+          "detailSections": [
+            {
+              "title": "Extracted level data",
+              "description": "These are settings copied from the local weapon data. The extraction contains no official upgrade wording or game code to confirm their units, whether each value adds to or replaces a prior value, or its in-game effect. They are not damage-per-hit or DPS values.",
+              "columns": [
+                {
+                  "key": "level",
+                  "label": "Level"
+                },
+                {
+                  "key": "change",
+                  "label": "Extracted settings"
+                }
+              ],
+              "rows": [
+                {
+                  "level": "1",
+                  "change": "Amount setting: 1; Power setting: 1; Area setting: 1"
+                },
+                {
+                  "level": "2",
+                  "change": "Amount setting: 1"
+                },
+                {
+                  "level": "3",
+                  "change": "Power setting: 0.5"
+                },
+                {
+                  "level": "4",
+                  "change": "Power setting: 0.5; Area setting: 0.05"
+                },
+                {
+                  "level": "5",
+                  "change": "Power setting: 0.5"
+                },
+                {
+                  "level": "6",
+                  "change": "Power setting: 0.5; Area setting: 0.05"
+                },
+                {
+                  "level": "7",
+                  "change": "Power setting: 0.5"
+                },
+                {
+                  "level": "8",
+                  "change": "Power setting: 0.5; Evolved weapon reference: Eviscerator Chainsword"
+                }
+              ]
+            }
+          ],
+          "icon": {
+            "src": "/images/games/warhammer-survivors/stage13-samples/W_Chainsword.png",
+            "alt": "Chainsword"
+          },
+          "href": "/games/warhammer-survivors/wiki-samples/weapon-chainsword",
+          "relatedLinks": [
+            {
+              "label": "Evolves into",
+              "title": "Eviscerator Chainsword",
+              "href": "/games/warhammer-survivors/wiki-samples#sample-entry-weapon-eviscerator",
+              "summary": "Evolution result."
+            },
+            {
+              "label": "Required passive",
+              "title": "Tape Measure",
+              "href": "/games/warhammer-survivors/wiki-samples#sample-entry-passive-tape-measure",
+              "summary": "Required for this evolution."
+            },
+            {
+              "label": "Evolution record",
+              "title": "Chainsword → Eviscerator Chainsword",
+              "href": "/games/warhammer-survivors/wiki-samples#sample-entry-evolution-chainsword",
+              "summary": "View the linked evolution details."
+            }
+          ]
+        },
+        {
+          "slug": "weapon-eviscerator",
+          "title": "Eviscerator Chainsword",
+          "summary": "Evolved Chainsword. Brutal horizontal slash attack that inflicts Bleeding.",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "evolvesFrom": "Chainsword",
+            "requiredPassive": "Tape Measure"
+          },
+          "icon": {
+            "src": "/images/games/warhammer-survivors/stage13-samples/W_EvisceratorChainsword.png",
+            "alt": "Eviscerator Chainsword"
+          }
+        },
+        {
+          "slug": "passive-tape-measure",
+          "title": "Tape Measure",
+          "summary": "Increases size of attacks by 10%.",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000",
+              "Warhammer Age of Sigmar"
+            ],
+            "evolvesInto": "",
+            "requiredPassive": ""
+          }
+        }
+      ]
+    },
+    {
+      "slug": "evolutions",
+      "label": "Evolutions",
+      "entryDisplay": "compact",
+      "fields": [
+        {
+          "key": "baseWeapon",
+          "label": "Base weapon",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        },
+        {
+          "key": "evolvedWeapon",
+          "label": "Evolved weapon",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        },
+        {
+          "key": "synergy",
+          "label": "Required passive",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        }
+      ],
+      "entries": [
+        {
+          "slug": "evolution-chainsword",
+          "title": "Chainsword → Eviscerator Chainsword",
+          "summary": "",
+          "attributes": {
+            "baseWeapon": "Chainsword",
+            "evolvedWeapon": "Eviscerator Chainsword",
+            "synergy": "Tape Measure"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "in-run-passives",
+      "label": "Passives",
+      "entryDisplay": "compact",
+      "fields": [
+        {
+          "key": "universe",
+          "label": "Universe",
+          "filter": true,
+          "multiValue": true,
+          "allLabel": "All universes"
+        }
+      ],
+      "entries": [
+        {
+          "slug": "passive-ws-40k-da-lucky-stikk",
+          "title": "Da Lucky Stikk",
+          "summary": "",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ]
+          },
+          "icon": {
+            "src": "/images/games/warhammer-survivors/stage13-samples/Passive_LuckyStikk.png",
+            "alt": "Da Lucky Stikk"
+          }
+        },
+        {
+          "slug": "passive-ws-aos-master-rune",
+          "title": "Kragg Blackhammer's Master Rune",
+          "summary": "All held passives (excluding the Master Rune) gain +1 level. Reuniting with the Verminslayer would prove useful.",
+          "attributes": {
+            "universe": [
+              "Warhammer Age of Sigmar"
+            ]
+          },
+          "icon": {
+            "src": "/images/games/warhammer-survivors/stage13-samples/Passive_Masterwork_Rune.png",
+            "alt": "Kragg Blackhammer's Master Rune"
+          }
+        },
+        {
+          "slug": "passive-ws-veterancy",
+          "title": "White Dwarf",
+          "summary": "Character gains 8% more experience.",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000",
+              "Warhammer Age of Sigmar"
+            ]
+          },
+          "icon": {
+            "src": "/images/games/warhammer-survivors/stage13-samples/Passive_Veterancy.png",
+            "alt": "White Dwarf"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "enhancements",
+      "label": "Enhancements",
+      "entryDisplay": "compact",
+      "fields": [
+        {
+          "key": "universe",
+          "label": "Universe",
+          "filter": true,
+          "multiValue": true,
+          "allLabel": "All universes"
+        }
+      ],
+      "entries": [
+        {
+          "slug": "enhancement-strength",
+          "title": "Strength",
+          "summary": "Raises inflicted damage by 4% per rank (max +40%).",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000",
+              "Warhammer Age of Sigmar"
+            ]
+          },
+          "detailSections": [
+            {
+              "title": "Verified effect",
+              "description": "Official per-rank effect and the official maximum. Total purchase cost is not calculated because its formula has not been verified.",
+              "columns": [
+                {
+                  "key": "rank",
+                  "label": "Scope"
+                },
+                {
+                  "key": "effect",
+                  "label": "Effect"
+                }
+              ],
+              "rows": [
+                {
+                  "rank": "Per rank",
+                  "effect": "+4% inflicted damage per rank"
+                },
+                {
+                  "rank": "Official cap",
+                  "effect": "Official maximum: +40%"
+                }
+              ]
+            }
+          ],
+          "icon": {
+            "src": "/images/games/warhammer-survivors/stage13-samples/Passive_Strength.png",
+            "alt": "Strength"
+          },
+          "href": "/games/warhammer-survivors/wiki-samples/enhancement-strength"
+        },
+        {
+          "slug": "enhancement-saves",
+          "title": "Save",
+          "summary": "Reduces incoming damage by 0.5 per rank (max -2.5).",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000",
+              "Warhammer Age of Sigmar"
+            ]
+          },
+          "detailSections": [
+            {
+              "title": "Verified effect",
+              "description": "Official per-rank effect and the official maximum. Total purchase cost is not calculated because its formula has not been verified.",
+              "columns": [
+                {
+                  "key": "rank",
+                  "label": "Scope"
+                },
+                {
+                  "key": "effect",
+                  "label": "Effect"
+                }
+              ],
+              "rows": [
+                {
+                  "rank": "Per rank",
+                  "effect": "-0.5 incoming damage per rank"
+                },
+                {
+                  "rank": "Official cap",
+                  "effect": "Official maximum: -2.5"
+                }
+              ]
+            }
+          ],
+          "icon": {
+            "src": "/images/games/warhammer-survivors/stage13-samples/Passive_Save.png",
+            "alt": "Save"
+          },
+          "href": "/games/warhammer-survivors/wiki-samples/enhancement-saves"
+        }
+      ]
+    },
+    {
+      "slug": "arcanas",
+      "label": "Arcana",
+      "entryDisplay": "compact",
+      "fields": [
+        {
+          "key": "universe",
+          "label": "Universe",
+          "filter": true,
+          "multiValue": true,
+          "allLabel": "All universes"
+        }
+      ],
+      "entries": [
+        {
+          "slug": "arcana-god-emperor",
+          "title": "VIII - The God-Emperor",
+          "summary": "Gives +3 Requisitions. Consuming a Requisition gives +10% Wounds, +1 Save, and +5% Strength, Range, Hits and Move.",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ]
+          },
+          "icon": {
+            "src": "/images/games/warhammer-survivors/stage13-samples/Arcana_EmperorsTarot_VIII_GodEmperor.png",
+            "alt": "VIII - The God-Emperor"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "enemies",
+      "label": "Enemies",
+      "entryDisplay": "compact",
+      "fields": [
+        {
+          "key": "universe",
+          "label": "Universe",
+          "filter": true,
+          "multiValue": true,
+          "allLabel": "All universes"
+        }
+      ],
+      "entries": [
+        {
+          "slug": "enemy-family-hive-tyrant",
+          "title": "Hive Tyrant",
+          "summary": "Hive Tyrants enact the Hive Mind's will on the battlefield as the massive commanders of the Tyranid swarm. Every part of their body is perfectly sculpted to maim, kill, and consume - and guide lesser bioforms in doing the same.",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "variantCount": [
+              "2 variants"
+            ]
+          },
+          "detailSections": [
+            {
+              "title": "Variants",
+              "description": "Each variant has its own attributes and stage listing.",
+              "columns": [
+                {
+                  "key": "variant",
+                  "label": "Variant"
+                },
+                {
+                  "key": "description",
+                  "label": "Attributes"
+                },
+                {
+                  "key": "stage",
+                  "label": "Listed stage"
+                }
+              ],
+              "rows": [
+                {
+                  "variant": "Variant 1",
+                  "description": "Max HP: 250; Speed: 190; Power: 30; XP value: 50",
+                  "stage": "Imperial Bastion"
+                },
+                {
+                  "variant": "Variant 2",
+                  "description": "Max HP: 300; Speed: 200; Power: 50; XP value: 50",
+                  "stage": "Imperial Bastion"
+                }
+              ]
+            }
+          ],
+          "icon": {
+            "src": "/images/games/warhammer-survivors/stage13-samples/E_Tyr_HiveTyrant_A_0.png",
+            "alt": "Hive Tyrant"
+          },
+          "href": "/games/warhammer-survivors/wiki-samples/enemy-family-hive-tyrant"
+        },
+        {
+          "slug": "enemy-zoanthrope-no-icon",
+          "title": "Zoanthrope",
+          "summary": "Zoanthropes are the powerful psykers of the Hive Mind, floating through the battlefield with bulbous heads protected by chitinous plates.",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slug": "stages",
+      "label": "Stages",
+      "entryDisplay": "compact",
+      "fields": [
+        {
+          "key": "universe",
+          "label": "Universe",
+          "filter": true,
+          "multiValue": true,
+          "allLabel": "All universes"
+        },
+        {
+          "key": "stageNumber",
+          "label": "Stage",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        },
+        {
+          "key": "timeLimit",
+          "label": "Time limit",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        }
+      ],
+      "entries": [
+        {
+          "slug": "stage-ws-40k-imperial-bastion",
+          "title": "Imperial Bastion",
+          "summary": "An Imperial bastion swarmed by Tyranids in a consumed wasteland.",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "stageNumber": "Stage 1",
+            "timeLimit": "1500 (unit not specified)"
+          },
+          "detailSections": [
+            {
+              "title": "Minute-indexed source rows",
+              "description": "These rows use the source minute indices 0–25. Direct boss references and GENERIC_BOSS_SPAWN events are separate source types. The row range does not establish the stage duration.",
+              "columns": [
+                {
+                  "key": "minute",
+                  "label": "Minute index"
+                },
+                {
+                  "key": "configuredEnemies",
+                  "label": "Enemies"
+                },
+                {
+                  "key": "directBosses",
+                  "label": "Listed bosses"
+                },
+                {
+                  "key": "bossEvents",
+                  "label": "Boss spawn events"
+                }
+              ],
+              "rows": [
+                {
+                  "minute": "0",
+                  "configuredEnemies": "Ripper (variants 3, 4)",
+                  "directBosses": "",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "1",
+                  "configuredEnemies": "Ripper (variants 3, 4)",
+                  "directBosses": "Termagant",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "2",
+                  "configuredEnemies": "Termagant, Ripper (variants 3, 4)",
+                  "directBosses": "",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "3",
+                  "configuredEnemies": "Termagant",
+                  "directBosses": "Termagant",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "4",
+                  "configuredEnemies": "Termagant",
+                  "directBosses": "Von Ryan’s Leaper",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "5",
+                  "configuredEnemies": "Termagant",
+                  "directBosses": "",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "6",
+                  "configuredEnemies": "Hormagaunt",
+                  "directBosses": "Von Ryan’s Leaper",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "7",
+                  "configuredEnemies": "Ripper (variants 3, 4)",
+                  "directBosses": "",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "8",
+                  "configuredEnemies": "Termagant",
+                  "directBosses": "Tyranid Warrior",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "9",
+                  "configuredEnemies": "Termagant",
+                  "directBosses": "",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "10",
+                  "configuredEnemies": "Termagant",
+                  "directBosses": "Tyranid Warrior",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "11",
+                  "configuredEnemies": "Termagant",
+                  "directBosses": "Tyranid Warrior",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "12",
+                  "configuredEnemies": "Hormagaunt",
+                  "directBosses": "",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "13",
+                  "configuredEnemies": "Hormagaunt, Termagant",
+                  "directBosses": "Biovore",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "14",
+                  "configuredEnemies": "Termagant",
+                  "directBosses": "",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "15",
+                  "configuredEnemies": "Termagant",
+                  "directBosses": "Carnifex",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "16",
+                  "configuredEnemies": "Hormagaunt",
+                  "directBosses": "Zoanthrope",
+                  "bossEvents": "Von Ryan's Leaper"
+                },
+                {
+                  "minute": "17",
+                  "configuredEnemies": "Termagant, Hormagaunt",
+                  "directBosses": "",
+                  "bossEvents": "Warrior"
+                },
+                {
+                  "minute": "18",
+                  "configuredEnemies": "Termagant",
+                  "directBosses": "Zoanthrope",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "19",
+                  "configuredEnemies": "Hormagaunt, Termagant, Ripper (variants 3)",
+                  "directBosses": "Winged Tyranid Prime",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "20",
+                  "configuredEnemies": "Hormagaunt, SporeMine",
+                  "directBosses": "",
+                  "bossEvents": "Von Ryan's Leaper"
+                },
+                {
+                  "minute": "21",
+                  "configuredEnemies": "Termagant, Ripper (variants 7)",
+                  "directBosses": "Hive Tyrant",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "22",
+                  "configuredEnemies": "Spore Mine, Termagant, Von Ryan's Leaper, Ripper",
+                  "directBosses": "",
+                  "bossEvents": "Zoanthrope"
+                },
+                {
+                  "minute": "23",
+                  "configuredEnemies": "Termagant, Hormagaunt",
+                  "directBosses": "Winged Tyranid Prime",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "24",
+                  "configuredEnemies": "Hormagaunt, Termagant, Warrior with Devourer, Von Ryan's Leaper",
+                  "directBosses": "",
+                  "bossEvents": ""
+                },
+                {
+                  "minute": "25",
+                  "configuredEnemies": "",
+                  "directBosses": "Norn Emissary",
+                  "bossEvents": ""
+                }
+              ]
+            },
+            {
+              "title": "Stage boss roster",
+              "columns": [
+                {
+                  "key": "value",
+                  "label": "Enemy"
+                }
+              ],
+              "rows": [
+                {
+                  "value": "Biovore"
+                },
+                {
+                  "value": "Norn Emissary"
+                },
+                {
+                  "value": "Carnifex"
+                },
+                {
+                  "value": "Hive Tyrant"
+                },
+                {
+                  "value": "Von Ryan’s Leaper"
+                },
+                {
+                  "value": "Termagant"
+                },
+                {
+                  "value": "Winged Tyranid Prime"
+                },
+                {
+                  "value": "Tyranid Warrior"
+                },
+                {
+                  "value": "Zoanthrope"
+                }
+              ]
+            }
+          ],
+          "href": "/games/warhammer-survivors/wiki-samples/stage-ws-40k-imperial-bastion"
+        },
+        {
+          "slug": "stage-ws-aos-great-parch",
+          "title": "The Great Parch",
+          "summary": "A dry, desolate land. Full of blazing heat, sulphurous fumes and teeming with Skaven.",
+          "attributes": {
+            "universe": [
+              "Warhammer Age of Sigmar"
+            ],
+            "stageNumber": "Stage 1",
+            "timeLimit": "1500 (unit not specified)"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "merchants",
+      "label": "Merchants",
+      "entryDisplay": "compact",
+      "fields": [
+        {
+          "key": "universe",
+          "label": "Universe",
+          "filter": true,
+          "multiValue": true,
+          "allLabel": "All universes"
+        },
+        {
+          "key": "offers",
+          "label": "Known stock",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        },
+        {
+          "key": "limitedStock",
+          "label": "Limited stock",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        }
+      ],
+      "entries": [
+        {
+          "slug": "merchant-ws-40k-daedalosus",
+          "title": "Technoarcheologist Daedalosus",
+          "summary": "How may I augment?",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "offers": [
+              "Boltgun",
+              "Archeotech",
+              "Teleportarium",
+              "Promethium Canister",
+              "Medicae Bag"
+            ],
+            "limitedStock": [
+              "Promethium Canister: 1",
+              "Medicae Bag: 1"
+            ]
+          },
+          "detailSections": [
+            {
+              "title": "Known stock",
+              "description": "Item effects and stock limits appear where listed. Prices appear only when the exact configured price field exists.",
+              "columns": [
+                {
+                  "key": "item",
+                  "label": "Item or service"
+                },
+                {
+                  "key": "effect",
+                  "label": "Effect"
+                },
+                {
+                  "key": "configuredPrice",
+                  "label": "Price"
+                },
+                {
+                  "key": "stockLimit",
+                  "label": "Stock limit"
+                }
+              ],
+              "rows": [
+                {
+                  "item": "Boltgun",
+                  "effect": "Fires bursts of exploding bolts in the faced direction.",
+                  "configuredPrice": "500",
+                  "stockLimit": ""
+                },
+                {
+                  "item": "Archeotech",
+                  "effect": "PLACEHOLDER. Base weapon selection.",
+                  "configuredPrice": "2000",
+                  "stockLimit": ""
+                },
+                {
+                  "item": "Teleportarium",
+                  "effect": "Allows limited safe passage through the warp.",
+                  "configuredPrice": "10000",
+                  "stockLimit": ""
+                },
+                {
+                  "item": "Promethium Canister",
+                  "effect": "Burn your enemies with a torrent of roaring fire.",
+                  "configuredPrice": "300",
+                  "stockLimit": "1"
+                },
+                {
+                  "item": "Medicae Bag",
+                  "effect": "Restores 60 health points.",
+                  "configuredPrice": "600",
+                  "stockLimit": "1"
+                }
+              ]
+            }
+          ],
+          "href": "/games/warhammer-survivors/wiki-samples/merchant-ws-40k-daedalosus"
+        },
+        {
+          "slug": "merchant-ws-40k-techpriest-manipulus",
+          "title": "Balphamus Vaulk",
+          "summary": "The flesh is weak?",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "offers": [
+              "Skip",
+              "Banish",
+              "Reroll",
+              "Pick a Card",
+              "Broken Sword",
+              "Hunting Trap"
+            ],
+            "limitedStock": [
+              "Skip: 3",
+              "Banish: 3",
+              "Reroll: 3",
+              "Pick a Card: 1"
+            ]
+          },
+          "detailSections": [
+            {
+              "title": "Known stock",
+              "description": "Item effects and stock limits appear where listed. Prices appear only when the exact configured price field exists.",
+              "columns": [
+                {
+                  "key": "item",
+                  "label": "Item or service"
+                },
+                {
+                  "key": "effect",
+                  "label": "Effect"
+                },
+                {
+                  "key": "configuredPrice",
+                  "label": "Price"
+                },
+                {
+                  "key": "stockLimit",
+                  "label": "Stock limit"
+                }
+              ],
+              "rows": [
+                {
+                  "item": "Skip",
+                  "effect": "Gives +1 Skip for this run.",
+                  "configuredPrice": "",
+                  "stockLimit": "3"
+                },
+                {
+                  "item": "Banish",
+                  "effect": "Gives +1 Banish for this run.",
+                  "configuredPrice": "",
+                  "stockLimit": "3"
+                },
+                {
+                  "item": "Reroll",
+                  "effect": "Gives +1 Reroll for this run.",
+                  "configuredPrice": "",
+                  "stockLimit": "3"
+                },
+                {
+                  "item": "Pick a Card",
+                  "effect": "Gives an extra Arcana for this run.",
+                  "configuredPrice": "",
+                  "stockLimit": "1"
+                },
+                {
+                  "item": "Broken Sword",
+                  "effect": "Unlocks the Retribution stat in the Enhancements menu for Warhammer 40,000 and Warhammer Age of Sigmar universes.",
+                  "configuredPrice": "5000",
+                  "stockLimit": ""
+                },
+                {
+                  "item": "Hunting Trap",
+                  "effect": "Unlocks the Bait stat in the Enhancements menu for Warhammer 40,000 and Warhammer Age of Sigmar universes.",
+                  "configuredPrice": "5000",
+                  "stockLimit": ""
+                }
+              ]
+            }
+          ],
+          "relatedLinks": [
+            {
+              "label": "Merchant character",
+              "title": "Balphamus Vaulk",
+              "href": "/games/warhammer-survivors/wiki-samples/character-balphamus-vaulk"
+            }
+          ],
+          "href": "/games/warhammer-survivors/wiki-samples/merchant-ws-40k-techpriest-manipulus"
+        },
+        {
+          "slug": "merchant-ws-aos-brokk",
+          "title": "Lord-Magnate Brokk Grungsson",
+          "summary": "Weapons from Kharadron!",
+          "attributes": {
+            "universe": [
+              "Warhammer Age of Sigmar"
+            ],
+            "offers": [
+              "Nuln Oil",
+              "D6 Dice",
+              "Exotic Weaponry",
+              "Barak-Nar Contract",
+              "Aqua Ghyranis Vessel"
+            ],
+            "limitedStock": [
+              "Aqua Ghyranis Vessel: 1"
+            ]
+          },
+          "detailSections": [
+            {
+              "title": "Known stock",
+              "description": "Item effects and stock limits appear where listed. Prices appear only when the exact configured price field exists.",
+              "columns": [
+                {
+                  "key": "item",
+                  "label": "Item or service"
+                },
+                {
+                  "key": "effect",
+                  "label": "Effect"
+                },
+                {
+                  "key": "configuredPrice",
+                  "label": "Price"
+                },
+                {
+                  "key": "stockLimit",
+                  "label": "Stock limit"
+                }
+              ],
+              "rows": [
+                {
+                  "item": "Nuln Oil",
+                  "effect": "Generates damaging zones.",
+                  "configuredPrice": "800",
+                  "stockLimit": ""
+                },
+                {
+                  "item": "D6 Dice",
+                  "effect": "Throws exploding dice. Damage is based on the number rolled. Increase Blessing to roll better.",
+                  "configuredPrice": "400",
+                  "stockLimit": ""
+                },
+                {
+                  "item": "Exotic Weaponry",
+                  "effect": "Base weapon selection.",
+                  "configuredPrice": "2000",
+                  "stockLimit": ""
+                },
+                {
+                  "item": "Barak-Nar Contract",
+                  "effect": "Signs an exclusive trade agreement with Brokk Grungsson, allowing you to purchase his wares.",
+                  "configuredPrice": "1000",
+                  "stockLimit": ""
+                },
+                {
+                  "item": "Aqua Ghyranis Vessel",
+                  "effect": "Restores 60 health points.",
+                  "configuredPrice": "600",
+                  "stockLimit": "1"
+                }
+              ]
+            }
+          ],
+          "href": "/games/warhammer-survivors/wiki-samples/merchant-ws-aos-brokk"
+        },
+        {
+          "slug": "merchant-ws-aos-drekki",
+          "title": "Drekki Flynt",
+          "summary": "Need more firepower?",
+          "attributes": {
+            "universe": [
+              "Warhammer Age of Sigmar"
+            ],
+            "offers": [
+              "Barak-Mhornar Contract",
+              "Skip",
+              "Banish",
+              "Reroll",
+              "Pick a Card",
+              "Broken Sword",
+              "Hunting Trap"
+            ],
+            "limitedStock": [
+              "Skip: 3",
+              "Banish: 3",
+              "Reroll: 3",
+              "Pick a Card: 1"
+            ]
+          },
+          "detailSections": [
+            {
+              "title": "Known stock",
+              "description": "Item effects and stock limits appear where listed. Prices appear only when the exact configured price field exists.",
+              "columns": [
+                {
+                  "key": "item",
+                  "label": "Item or service"
+                },
+                {
+                  "key": "effect",
+                  "label": "Effect"
+                },
+                {
+                  "key": "configuredPrice",
+                  "label": "Price"
+                },
+                {
+                  "key": "stockLimit",
+                  "label": "Stock limit"
+                }
+              ],
+              "rows": [
+                {
+                  "item": "Barak-Mhornar Contract",
+                  "effect": "Signs an exclusive trade agreement with Drekki Flynt, allowing you to purchase his wares.",
+                  "configuredPrice": "1000",
+                  "stockLimit": ""
+                },
+                {
+                  "item": "Skip",
+                  "effect": "Gives +1 Skip for this run.",
+                  "configuredPrice": "",
+                  "stockLimit": "3"
+                },
+                {
+                  "item": "Banish",
+                  "effect": "Gives +1 Banish for this run.",
+                  "configuredPrice": "",
+                  "stockLimit": "3"
+                },
+                {
+                  "item": "Reroll",
+                  "effect": "Gives +1 Reroll for this run.",
+                  "configuredPrice": "",
+                  "stockLimit": "3"
+                },
+                {
+                  "item": "Pick a Card",
+                  "effect": "Gives an extra Arcana for this run.",
+                  "configuredPrice": "",
+                  "stockLimit": "1"
+                },
+                {
+                  "item": "Broken Sword",
+                  "effect": "Unlocks the Retribution stat in the Enhancements menu for Warhammer 40,000 and Warhammer Age of Sigmar universes.",
+                  "configuredPrice": "5000",
+                  "stockLimit": ""
+                },
+                {
+                  "item": "Hunting Trap",
+                  "effect": "Unlocks the Bait stat in the Enhancements menu for Warhammer 40,000 and Warhammer Age of Sigmar universes.",
+                  "configuredPrice": "5000",
+                  "stockLimit": ""
+                }
+              ]
+            }
+          ],
+          "href": "/games/warhammer-survivors/wiki-samples/merchant-ws-aos-drekki"
+        }
+      ]
+    },
+    {
+      "slug": "objectives",
+      "label": "Objectives",
+      "entryDisplay": "compact",
+      "fields": [
+        {
+          "key": "universe",
+          "label": "Universe",
+          "filter": true,
+          "multiValue": true,
+          "allLabel": "All universes"
+        },
+        {
+          "key": "requires",
+          "label": "Requires",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        },
+        {
+          "key": "unlocks",
+          "label": "Unlocks",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        }
+      ],
+      "entries": [
+        {
+          "slug": "objective-ws-40k-defeat-enemies-orks-vehicles",
+          "title": "Defeat a total of 100 Ork Vehicles.",
+          "summary": "",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "requires": [
+              "Survive 1 minute on Ork Stronghold."
+            ],
+            "unlocks": [
+              "Knight-Commander Pask"
+            ]
+          }
+        },
+        {
+          "slug": "objective-ws-40k-evolve-chainsword",
+          "title": "Evolve the Chainsword.",
+          "summary": "",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "requires": [
+              "Survive 1 minute with any character."
+            ],
+            "unlocks": []
+          },
+          "icon": {
+            "src": "/images/games/warhammer-survivors/stage13-samples/W_EvisceratorChainsword.png",
+            "alt": "Eviscerator Chainsword"
+          }
+        },
+        {
+          "slug": "objective-ws-40k-completestage-imperialbastion",
+          "title": "Complete Imperial Bastion.",
+          "summary": "",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "requires": [
+              "Reach level 20 on Imperial Bastion."
+            ],
+            "unlocks": []
+          },
+          "icon": {
+            "src": "/images/games/warhammer-survivors/stage13-samples/ObjectiveIcon_Trophy.png",
+            "alt": "Complete Imperial Bastion."
+          }
+        },
+        {
+          "slug": "objective-ws-shared-defeat-enemies-orkstronghold",
+          "title": "Defeat 10,000 enemies on Ork Stronghold.",
+          "summary": "",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000",
+              "Warhammer Age of Sigmar"
+            ],
+            "requires": [],
+            "unlocks": [
+              "Celestra Grey"
+            ]
+          }
+        },
+        {
+          "slug": "objective-ws-40k-buy-balphamusvaulk",
+          "title": "Purchase Balphamus Vaulk as a playable character from Balphamus Vaulk.",
+          "summary": "",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "requires": [
+              "Collect the Ferrosanctic Orrery."
+            ],
+            "unlocks": [
+              "Balphamus Vaulk"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slug": "steam-achievements",
+      "label": "Steam Achievements",
+      "entryDisplay": "compact",
+      "fields": [
+        {
+          "key": "universe",
+          "label": "Universe",
+          "filter": true,
+          "multiValue": true,
+          "allLabel": "All universes"
+        },
+        {
+          "key": "requires",
+          "label": "Requires",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        },
+        {
+          "key": "unlocks",
+          "label": "Unlocks",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        }
+      ],
+      "entries": [
+        {
+          "slug": "steam-orks-vehicles",
+          "title": "Defeat a total of 100 Ork Vehicles.",
+          "summary": "",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "requires": [
+              "Survive 1 minute on Ork Stronghold."
+            ],
+            "unlocks": [
+              "Knight-Commander Pask"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slug": "puzzles",
+      "label": "Puzzles",
+      "entryDisplay": "compact",
+      "fields": [
+        {
+          "key": "universe",
+          "label": "Universe",
+          "filter": true,
+          "multiValue": true,
+          "allLabel": "All universes"
+        },
+        {
+          "key": "requires",
+          "label": "Requires",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        },
+        {
+          "key": "unlocks",
+          "label": "Unlocks",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        }
+      ],
+      "entries": [
+        {
+          "slug": "puzzle-buy-balphamus-vaulk",
+          "title": "Once all relays are active, make an offering to the Tech-Priest of Mars.",
+          "summary": "",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "requires": [
+              "Encounter the Merchant."
+            ],
+            "unlocks": [
+              "Balphamus Vaulk"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "slug": "spells",
+      "label": "Spells",
+      "entryDisplay": "compact",
+      "fields": [
+        {
+          "key": "universe",
+          "label": "Universe",
+          "filter": true,
+          "multiValue": true,
+          "allLabel": "All universes"
+        },
+        {
+          "key": "inputWord",
+          "label": "Input word",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        },
+        {
+          "key": "unlocks",
+          "label": "Unlocks",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        }
+      ],
+      "entries": [
+        {
+          "slug": "spell-ws-40k-spell-ignorama",
+          "title": "0 The Fool",
+          "summary": "",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "inputWord": "ignorama",
+            "unlocks": [
+              "0 - The Fool"
+            ]
+          }
+        },
+        {
+          "slug": "spell-ws-spell-despoiler",
+          "title": "Abaddon Black (Base)",
+          "summary": "",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000",
+              "Warhammer Age of Sigmar"
+            ],
+            "inputWord": "despoiler",
+            "unlocks": [
+              "Abaddon Black"
+            ]
+          }
+        },
+        {
+          "slug": "spell-ws-40k-spell-crusade",
+          "title": "Limitless Mode",
+          "summary": "",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "inputWord": "crusade",
+            "unlocks": []
+          },
+          "icon": {
+            "src": "/images/games/warhammer-survivors/stage13-samples/Element_KillsSkull.png",
+            "alt": "Limitless Mode"
+          }
+        }
+      ]
+    },
+    {
+      "slug": "paintpots",
+      "label": "Paint pots",
+      "entryDisplay": "compact",
+      "fields": [
+        {
+          "key": "universe",
+          "label": "Universe",
+          "filter": true,
+          "multiValue": true,
+          "allLabel": "All universes"
+        },
+        {
+          "key": "acquisition",
+          "label": "How to obtain",
+          "filter": false,
+          "multiValue": false,
+          "allLabel": ""
+        }
+      ],
+      "entries": [
+        {
+          "slug": "paintpot-abaddon-black",
+          "title": "Abaddon Black",
+          "summary": "Collecting the required paint pots can unlock additional characters.",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "acquisition": [
+              "Found on Imperial Bastion"
+            ]
+          }
+        },
+        {
+          "slug": "paintpot-celestra-grey",
+          "title": "Celestra Grey",
+          "summary": "Collecting the required paint pots can unlock additional characters.",
+          "attributes": {
+            "universe": [
+              "Warhammer 40,000"
+            ],
+            "acquisition": [
+              "Defeat 10,000 enemies on Ork Stronghold."
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "view_count": 34,
+  "unique_source_records": 55,
+  "icon_sources": {
+    "/images/games/warhammer-survivors/stage13-samples/C_MalumCaedo_01.png": "characters/images/C_MalumCaedo_01.png",
+    "/images/games/warhammer-survivors/stage13-samples/W_Chainsword.png": "weapons/images/W_Chainsword.png",
+    "/images/games/warhammer-survivors/stage13-samples/W_EvisceratorChainsword.png": "weapons/images/W_EvisceratorChainsword.png",
+    "/images/games/warhammer-survivors/stage13-samples/Passive_LuckyStikk.png": "weapons/images/Passive_LuckyStikk.png",
+    "/images/games/warhammer-survivors/stage13-samples/Passive_Masterwork_Rune.png": "weapons/images/Passive_Masterwork_Rune.png",
+    "/images/games/warhammer-survivors/stage13-samples/Passive_Veterancy.png": "weapons/images/Passive_Veterancy.png",
+    "/images/games/warhammer-survivors/stage13-samples/Passive_Strength.png": "passives/images/Passive_Strength.png",
+    "/images/games/warhammer-survivors/stage13-samples/Passive_Save.png": "passives/images/Passive_Save.png",
+    "/images/games/warhammer-survivors/stage13-samples/Arcana_EmperorsTarot_VIII_GodEmperor.png": "arcanas/images/Arcana_EmperorsTarot_VIII_GodEmperor.png",
+    "/images/games/warhammer-survivors/stage13-samples/E_Tyr_HiveTyrant_A_0.png": "enemies/images/E_Tyr_HiveTyrant_A_0.png",
+    "/images/games/warhammer-survivors/stage13-samples/ObjectiveIcon_Trophy.png": "achievements/images/ObjectiveIcon_Trophy.png",
+    "/images/games/warhammer-survivors/stage13-samples/Element_KillsSkull.png": "secrets/images/Element_KillsSkull.png"
+  }
+}

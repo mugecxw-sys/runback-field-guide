@@ -1,3 +1,4 @@
+import { warhammerReleasePaths } from '@/lib/game-hub-v1/warhammer-release';
 import { voidBreakerReleasePaths } from '@/lib/game-hub-v1/void-breaker-release';
 import type { MetadataRoute } from 'next';
 import {
@@ -53,6 +54,7 @@ const sephiriaBuildFundamentalsPage = { href: '/games/sephiria/builds/fundamenta
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
+    ...warhammerReleasePaths.map((pathname) => ({ url: siteUrl + pathname, lastModified: '2026-11-21T00:00:00.000Z', changeFrequency: 'monthly' as const, priority: 0.8 })),
     ...voidBreakerReleasePaths.map((pathname) => ({
       url: siteUrl + pathname,
       changeFrequency: 'monthly' as const,

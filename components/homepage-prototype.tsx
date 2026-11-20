@@ -14,6 +14,7 @@ type HomeGuide = {
 
 // Select only categories already offered by each game library.
 const contentTypes: Record<string, string[]> = {
+  'warhammer-survivors': ['Characters', 'Equipment', 'Unlocks'],
   'void-breaker': ['Modules', 'Weapons', 'Wiki'],
   brotato: ['Characters', 'Builds', 'Weapons'],
   wanderburg: ['Modules', 'Vehicles', 'Bosses'],
@@ -31,7 +32,7 @@ const contentTypes: Record<string, string[]> = {
 // Homepage-only artwork; covers come from each game's official Steam listing.
 function coverFor(gameName: string) {
   const game = gameLibraries.find((entry) => entry.title === gameName);
-  return game ? `/images/home-prototype/${game.slug}.webp` : undefined;
+  return game ? (game.slug === 'warhammer-survivors' ? '/images/games/warhammer-survivors/warhammer-survivors-cover-ai.png' : `/images/home-prototype/${game.slug}.webp`) : undefined;
 }
 
 function RunbackLogo() {
@@ -69,7 +70,7 @@ export function HomepagePrototype({ featured, latest }: { featured: HomeGuide[];
           <div className={styles.gameGrid}>
             {gameLibraries.map((game) => (
               <a href={`/games/${game.slug}`} key={game.slug} className={styles.gameCard}>
-                <div className={styles.cover}><Image src={game.slug === 'void-breaker' ? '/images/games/void-breaker/cover.jpg' : `/images/home-prototype/${game.slug}.webp`} alt={`${game.title} cover`} width={460} height={215} loading="lazy" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw" unoptimized /></div>
+                <div className={styles.cover}><Image src={game.slug === 'void-breaker' ? '/images/games/void-breaker/cover.jpg' : game.slug === 'warhammer-survivors' ? '/images/games/warhammer-survivors/warhammer-survivors-cover-ai.png' : `/images/home-prototype/${game.slug}.webp`} alt={`${game.title} cover`} width={460} height={215} loading="lazy" sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw" unoptimized /></div>
                 <div className={styles.gameInfo}><h3>{game.title}</h3><p>{game.slug === 'wanderburg' ? 'Action roguelike' : game.type}</p><div className={styles.gameMeta}>{contentTypes[game.slug].join(' · ')}</div></div>
               </a>
             ))}

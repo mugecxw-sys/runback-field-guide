@@ -1,0 +1,2095 @@
+{
+  "version": "2.1.7",
+  "files": [
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_Celestial_Orrery_0_RealmOfUlgu_64px.png",
+      "bytes": 4491,
+      "sha256": "1056e220a5dc9a84d58c520449dcc6ab3f116814304bd754f23dc317ac0dc28f"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_Celestial_Orrery_II_TwinTailedComet_64px.png",
+      "bytes": 3933,
+      "sha256": "05c00276f43b5757da934f41e42c77b74c08022410ac75e5bdba02d531582787"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_Celestial_Orrery_I_Dracothian_64px.png",
+      "bytes": 4492,
+      "sha256": "a650c0c35593ade67c09752fb4d6c15f914b381c410ca9f5bc2d68bfca9ff786"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_Celestial_Orrery_VIII_TheEightpoints_64px.png",
+      "bytes": 4130,
+      "sha256": "ca0a2707718e705d3f25a8658d01f931d73e0eb8f4c689fe97f872dc17e37d78"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_Celestial_Orrery_VI_Glimmerlust_64px.png",
+      "bytes": 3788,
+      "sha256": "11e9c8c15194000a984b062fd46185fecfeccde16d173afbccfede5b4897da55"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_Celestial_Orrery_XIII_CursedSkies_64px.png",
+      "bytes": 5190,
+      "sha256": "5d9227de8acc5f8e34602247c227feea75bdb4811ac72bdbe7b0e6f660126ba5"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_Celestial_Orrery_XIV_Necroquake_64px.png",
+      "bytes": 4098,
+      "sha256": "1dea5620414ada3d391cafa4859ae1487b304e017efd67dd8e7e758b8871a281"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_Celestial_Orrery_XVI_RealmOfGyran_64px.png",
+      "bytes": 4450,
+      "sha256": "9a86775cee230d4987234658d11a17c2b54dc3050d25cd3a3770fd961fa116a1"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_Celestial_Orrery_XV_RealmOfAzyr_64px.png",
+      "bytes": 4215,
+      "sha256": "1aaa00f140333ee8b8d8cff0e9784a7b54065a286df987e3d34dd1fe4cf3c011"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_Celestial_Orrery_X_AnvilOfApotheosis_64px.png",
+      "bytes": 4199,
+      "sha256": "1033d0405bbf8d6edca52e6c96464e5ab96c44bae022f7b4f73fa343dd80e3f4"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_EmperorsTarot_0_Fool_64px.png",
+      "bytes": 4123,
+      "sha256": "d0b8bcab8d837fbddafb6b7b7a52df7eec6e89a19fb145157b6e51eef9070794"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_EmperorsTarot_III_TheHulk_64px.png",
+      "bytes": 3036,
+      "sha256": "aaa2bcde407a4d5dc3f764f694acd73e2aa68a5c5ad73383d08c02b32f85b357"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_EmperorsTarot_IV_TheSilverKey_64px.png",
+      "bytes": 4834,
+      "sha256": "fa5298e033076cedaf241a2b2ec0cf3071d166a3a2c401c3906c29604d45fde3"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_EmperorsTarot_IX_Daemon_64px.png",
+      "bytes": 3587,
+      "sha256": "ad9aac440390c6179dd15e50d86b20368f671eac9fead6d723d912ef780c0536"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_EmperorsTarot_I_Galaxy_64px.png",
+      "bytes": 4353,
+      "sha256": "d0d98c25bd5c1ec2e230b150bab1351858f7bc36353d7722f9511cb15f4e437a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_EmperorsTarot_XIV_YoungWarrior_64px.png",
+      "bytes": 5663,
+      "sha256": "4b41b341a2cffb59824b56e865f737c2a555cc1c8059ce789865474ca88b1993"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_EmperorsTarot_XVI_TreeOfLife_64px.png",
+      "bytes": 5598,
+      "sha256": "7c1f515dbd1a9f0dfbb89e9e028b841703c5f583815e414ffa04bf539d732d7b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_EmperorsTarot_XV_TheWarp_64px.png",
+      "bytes": 4133,
+      "sha256": "e6400b2ae75c02e354f4048f3c954335bfb018084f507fed0405264fc080f3b9"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/arcanas/Arcana_EmperorsTarot_X_Astartes_64px.png",
+      "bytes": 3516,
+      "sha256": "c749e79d197e363e06cec1c21828b431823067cc9613b171961aab49d77192e1"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_ApothecaryBiologis_01.png",
+      "bytes": 3917,
+      "sha256": "036a0eb77c850ca642ac72acc2722673b6fcdf28cc81a2b4918b6b594591e58c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_ArbitesVigilant_01.png",
+      "bytes": 1100,
+      "sha256": "afb4fabac4786c51659de24e327b6cc72bb6838d9ccb1ac885d05a26d7b9ef2d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_ArmandCallis_01.png",
+      "bytes": 1218,
+      "sha256": "53a7f80a78d4ea59d674a8e89cb553d5a35bfce6c4e68ad6a21e3c4a51b2fb96"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_AuricRunemaster_01.png",
+      "bytes": 2742,
+      "sha256": "b7474d22f436a67a9b57ae99e3cccb2edf2709b5a714c1185223aa3baa942827"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_BastianCarthalos_01.png",
+      "bytes": 2471,
+      "sha256": "8198e41e5fc7fa8a2ca2a50c3966e52c008d94005685954badde9fd82322d8c0"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_BrokkGrungsson_01.png",
+      "bytes": 4576,
+      "sha256": "170ce51f69796b50986e75692b1663ccd22d92ff0e25d21d3d0a6dc9e69dcefb"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_BrotherLuca_01.png",
+      "bytes": 1688,
+      "sha256": "87c2a301b88a834414198fc9ff115521d18bc120804d8abb94062189349c641b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_CanonessVeyrath_01.png",
+      "bytes": 1887,
+      "sha256": "e0d34d16a5ec6b08df2ee960ecc9e6afdb2e82c1b91d08c5f4fade2c3df69718"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_Castellan_01.png",
+      "bytes": 2959,
+      "sha256": "e12a03837c147df4a109f1bae9e0600a89806cf4b114a7ee97d8b35cb3d5ddb8"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_CelestantPrime_A_01.png",
+      "bytes": 5898,
+      "sha256": "deaf3e1259446bd7c2b53ad9a4479adb27558dd4ce621ebb2c0c716bd014fe2d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_CelestiantAveline_01.png",
+      "bytes": 1894,
+      "sha256": "916f71caa957ffce53b46efb46ebded3d384264778a8e8b3f82ad6cf0a75be10"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_ChaplainFoBaran_01.png",
+      "bytes": 2992,
+      "sha256": "a2ea0cc2af6083bb7f8a895fbf3ccee48501c228ef0181dea76ff3ab2ca76ff8"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_CommisarYarrick_01.png",
+      "bytes": 1911,
+      "sha256": "677c76641a84c929838a99a46af9d37501136ce95798f1d89e370873dc6686a3"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_DrekkiFlynt_A_01.png",
+      "bytes": 1840,
+      "sha256": "b6f20f2a35269d268e3ee88820601128e6a727a27acab836c3ac38b286540f16"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_EversorAssassin_01.png",
+      "bytes": 1933,
+      "sha256": "d1a9f1bc61f5d9df49c3e87251adbaeeef6067058a729998734c0b7ded30f64c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_FemaleStormcastEternal_01.png",
+      "bytes": 1360,
+      "sha256": "c2e6c3ee5d3436f49f7e3e72b4f29132a6da655a6427f22b8694e176671e2cff"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_FreeguildFusilier_01.png",
+      "bytes": 1726,
+      "sha256": "ee541100879bcd4af04de38064ae846b2b6d51391e457d1590efe15aac7a55fc"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_GotrekGurnisson_01.png",
+      "bytes": 1814,
+      "sha256": "5c6e222ce4f9b0a03114b3769a1e700d78a489e6cd43c44b2fa69ec62beebe08"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_HanniverToll_01.png",
+      "bytes": 1459,
+      "sha256": "b20553dbe4271e64492c1fe5aaeb4071f9b79884101dc5c2987d968e1912d828"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_HendrickTheSilverWolf_01.png",
+      "bytes": 2314,
+      "sha256": "2680c55982a4bafdfba62293478271806312bc4b3026ca167365f8fbcf8fd7ba"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_InquisitorGreyfax_01.png",
+      "bytes": 1867,
+      "sha256": "de391c3881a29205c5c5ff5c31a07a320db8d62e0dd6315bc6548deffef577a0"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_K9CyberMastiff_01.png",
+      "bytes": 832,
+      "sha256": "a16e7532c5cfd7ca99202b4744d3fe3c0878f085250c2003a59e521dcff7e11d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_KnightCommanderPask_01.png",
+      "bytes": 8927,
+      "sha256": "0f33db9c5c503e27d07e9bf5136685435f426860ba6cf01bf349ed9f30d19372"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_Krethusa_01.png",
+      "bytes": 4490,
+      "sha256": "b67ddaa55f188451a124de6266ddf244f77c3422eb4b84260aa27a99ed10952f"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_LieutenantTitus_01.png",
+      "bytes": 2353,
+      "sha256": "15c45d530f1f962f6d5a4a43a0a0c45d12b21b4324cad5ee510b83e4e9b9dcfd"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_Lorai_01.png",
+      "bytes": 1413,
+      "sha256": "0b703d0d6ef4b57909767846954013dae4d3e376d8a190d1c7a61fa3652c23ec"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_Lugash_A_01.png",
+      "bytes": 2315,
+      "sha256": "e4f80619ce51b45c39522f86c49854164bd6cba2429d2fb2222eba36a6a04704"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_LyssaRevenya_A_01.png",
+      "bytes": 1122,
+      "sha256": "f5cf75ff0a6116a8eb99574f282e93c47deea5969e4298399e4dadb9506315c6"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_MajorDocheval_01.png",
+      "bytes": 4273,
+      "sha256": "d699be972529fd124ceebfaf954906ae168c0b439e9ed2c1e65f657cca866633"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_MalenethWitchblade_01.png",
+      "bytes": 1559,
+      "sha256": "6f5d8563c5b3fedf45ca817dbc0969eafcac405ff7b5e11acc6ac2878e35ae56"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_MarneusCalgar_01.png",
+      "bytes": 3702,
+      "sha256": "315324f775ab82a942a978a5728a98d79e2fe438ec04e18a9d243f88e7e8f9e4"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_Mephiston_01.png",
+      "bytes": 2952,
+      "sha256": "75088570495245ce467ae1a86d45079bc5a9779cf9f6b57b1a03bcd2beed652f"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_MistressVerentia_A_01.png",
+      "bytes": 1241,
+      "sha256": "c5809c80dedc549fbe8ef994e8a60ab87ac9c6170b458fd8abe8a549b602ed16"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_Morgwaeth_01.png",
+      "bytes": 2788,
+      "sha256": "3efcbbd172544f4e080f3084186450f22cd18dee249ef53df210ad80116d632d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_MorvennVahl_01.png",
+      "bytes": 5411,
+      "sha256": "3f6f0cb333f500d5cb1417652b94705ce92b693d4e7deb8bfee8c9ec1f9522ab"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_NeaveBlacktalon_01.png",
+      "bytes": 2040,
+      "sha256": "19c93957b32cdd78d5493432abd71110165db4375915a91452e4fde9e2ee020e"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_RostusOxenhammer_01.png",
+      "bytes": 2038,
+      "sha256": "9eb022d3e98eb5e985ad1cfb26837e839e87ee6ef90647b443b90598c4bedc32"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_SaintCelestine_01.png",
+      "bytes": 2837,
+      "sha256": "2047b5dba5c4474fdc41566d1275a1f76f355e84a603b4f23bea96aee6314738"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_SergeantFuran_01.png",
+      "bytes": 2645,
+      "sha256": "8e1aa2484d3be10e953a667272dde7eb6eb55dc038ae927ecac96cb5d885b729"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_Shakana_01.png",
+      "bytes": 1764,
+      "sha256": "a6d351733225db76c1f38fe796dcfef0eaf723a05b67ea622b4bcecf56c3d2d9"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_SisterSuperiorNovena_01.png",
+      "bytes": 1725,
+      "sha256": "106f70e7d61de9b747ea3bd2c8ee7490d63d9096e1a66328c8cb1b499d6df1c8"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_TechPriestManipulus_01.png",
+      "bytes": 3418,
+      "sha256": "cf8e3d2d1ba74c8ed41be57a2492823a50f14fd93f66b15b56b08e20129aa434"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_Technoarcheologist_01.png",
+      "bytes": 2126,
+      "sha256": "fafd3dc526628938f8b78c5ac8a14e4609902b5d351a638114c1df032e4fba86"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_TheLegendOfCatachan_01.png",
+      "bytes": 1332,
+      "sha256": "72ba61c771433d6a0fa27eb65963c1fa7790ed8423df6427f0a5312949db5f8d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_TorGaradon_01.png",
+      "bytes": 2916,
+      "sha256": "e627356be37a1e32984bfc73d06866c26ca20f18536a2e7c5d703ded0173eae4"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_TrooperKozlowski_01.png",
+      "bytes": 911,
+      "sha256": "df1980224a83b85b12482d613df7841db2bdc13e72ebfc64ff7dcf3eb443b70c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_Valius_01.png",
+      "bytes": 2346,
+      "sha256": "a2eb73db0d62b29ddc8eff5ddcc4d5865898ec02ae551ed076623d8ce985191e"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/characters/C_Yndrasta_A_01.png",
+      "bytes": 4369,
+      "sha256": "d2d361c96ed626e9dd04fe6dc10ccc2bc67cfc5a3036706d3ad7c2eb1df9a613"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Bok_BloodWarriors_A_0.png",
+      "bytes": 2096,
+      "sha256": "6cca396358540cfc08e68c11f7f429b29434a9ebda3d003a5d2520a30472b7ac"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Bok_Khorgorath_A_0.png",
+      "bytes": 4698,
+      "sha256": "323250993e32e84d2e072af6fda7e5f7bb023a6565e0afb0a7b703f0c9c7f9e4"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Bok_MightySkullcrushers_A_0.png",
+      "bytes": 4728,
+      "sha256": "26296e683fba83bda394bc9dd88c5ba56f9045883859d1258a0bc3df31369cf1"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Bok_Skarbrand_A_0.png",
+      "bytes": 14181,
+      "sha256": "7e4cde6b7e5ad5ff3ba3af3754f54fa0a86740bf6ded05310855aab4423ab627"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Bok_SkullCannon_A_0.png",
+      "bytes": 10154,
+      "sha256": "188f902cd862722b5e5071a53126f1f0414baecd30890f24a4282c7909ad48ec"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Bok_Skullgrinder_A_0.png",
+      "bytes": 2675,
+      "sha256": "ca4b11f2725cd5458def52467ba9647ac4885419180218367ea97b947b95808b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Cha_WrathAxe_Axe_0.png",
+      "bytes": 2485,
+      "sha256": "f58327307f6e443468d941743f9a48018e730a712a4f7419ce2d8be8c9908fbc"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_BeastOfNurgle_A_0.png",
+      "bytes": 5481,
+      "sha256": "1477ad3ea54b368d1bf64d040babd68375f94fdcbf0a64f4bebc6c6207615f94"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_BlightlordTerminator_A_0.png",
+      "bytes": 3969,
+      "sha256": "730f6d2862ca1ae0d63582e328c3b45abb610f413df3d9088e05cd050eef6333"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_Helbrute_A_0.png",
+      "bytes": 6786,
+      "sha256": "502cdc1eed21d4e9c6ece989875ac3d3a0eef696fd85f15ba5f72f421ff32562"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_MiasmicMalignifier_A_0.png",
+      "bytes": 8960,
+      "sha256": "ceb565381044bfbda6c22f6f4041fa7be98802e5e052e6901cdbc6d518f55148"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_Mortarion_0.png",
+      "bytes": 15550,
+      "sha256": "0402acdf8b27228b3cb320b09993cd39273cccda1cb42629912a47e217356e83"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_MyphiticBlightHauler_A_0.png",
+      "bytes": 5612,
+      "sha256": "9c10dbece91e731fc0dc69986717b2e378d15ab660d00a6a63f881234d158b9d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_Nurgling_A_0.png",
+      "bytes": 1136,
+      "sha256": "ffa2a7f659b23ffd599301f9c51e38b4ba86895e13470db4d9f07bf0cb8a7b7e"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_PlagueDrone_A_0.png",
+      "bytes": 5273,
+      "sha256": "c3c979fe8d4174fc66061e6d54265a448343b421097968bc2ec280bbce83d2be"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_PlagueMarine_0.png",
+      "bytes": 2912,
+      "sha256": "597be93cdbb5e8457b88c24e5015a11f59cd02813ee60afa9c4d11af8bb69775"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_Plaguebearer_A_0.png",
+      "bytes": 1699,
+      "sha256": "691a949cdf299650619f2a3a2c502f73e17ee4d6befc386b7d94f073fd3ff13b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_Plaguebearer_B_0.png",
+      "bytes": 1677,
+      "sha256": "3cb1b65662438e443e6d2c71070a283ce79d4f66c9592ca6669562b6d34ea15b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_Plaguebearer_C_0.png",
+      "bytes": 1785,
+      "sha256": "99b6486192426085221ac8e41f72ddd6ac7d1ca509aeecfaec0b813e81146b55"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_Poxwalker_0.png",
+      "bytes": 1452,
+      "sha256": "801b6644f02b8b8b83aaa72272df83075320f95edc81df9d509192aee31d3ac0"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_Poxwalker_B_0.png",
+      "bytes": 1453,
+      "sha256": "d3b24f81f07967a1ee0f8de9c3eb3206d869281da51a5383993dc315e379170a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_TheGreatUncleanOne_0.png",
+      "bytes": 10807,
+      "sha256": "712d5e248cd807de7e064326dc5afc702b1628814f3847fce9a29c0e5c870b3b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Dea_Typhus_A_0.png",
+      "bytes": 5657,
+      "sha256": "d598e781dca88925f714d9180bf5e09e83d7535fcce73d055c97a535a541ee9e"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Glo_BoingrotBounderz_A_0.png",
+      "bytes": 2375,
+      "sha256": "263aa402dbb13424abc9aa59126a800361ddc17486c8a5f22c1aaf576db48cb4"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Glo_DankholdTroggoth_A_0.png",
+      "bytes": 10524,
+      "sha256": "bf4b7921fd23db0555cdb67b00f8d8c00f0455e8e6b0a0437386ba8689ba34ce"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Glo_FellwaterTroggoth_A_0.png",
+      "bytes": 3478,
+      "sha256": "1c3ed8e5b732728db126c864eba6fbdb21ef108fee7be051237eb0466e4e516d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Glo_Loonboss_A_0.png",
+      "bytes": 3619,
+      "sha256": "8b2394533b31444217656dcacf491c00c22541a5be02a518fa37d6c012525c85"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Glo_LoonsmashaFanatic_A_0.png",
+      "bytes": 2066,
+      "sha256": "ea2d6a567d0be2dfdd4700f4652a7d932bc18111686e7e59f5c1d272377868eb"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Glo_MalevolentMoon_A_0.png",
+      "bytes": 6038,
+      "sha256": "93cd873510943c38e5e8de6acafacbe3066bc7205856bc628f9da34d00a72051"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Glo_ManglerSquig_A_0.png",
+      "bytes": 7012,
+      "sha256": "6c5497432a2420a29d6914985ee67e1e572f0bfdb1f378f3d644dccba892feff"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Glo_MoonclanStabba_A_0.png",
+      "bytes": 1335,
+      "sha256": "f30005a95f30568d1bfe411db4156c0dc44b4007498682f2423c096aac04fdb4"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Glo_MoonclanStabba_B_0.png",
+      "bytes": 1163,
+      "sha256": "b948d7e9c86705c10807315cc9400bd6df3c4a18d5771858ba85f91283991f26"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Glo_MoonclanStabba_C_0.png",
+      "bytes": 1363,
+      "sha256": "6f1d3a04e0f317afb5de70875ae612d497b69a27d0f5e955c7a237d319394c4f"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Glo_MoonclanStabba_D_0.png",
+      "bytes": 1195,
+      "sha256": "7f03bb7a0b06bca01df7991f9240b3faf4b47d876fe4f7301bba655a7910cafc"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Glo_MorksMushroom_A_0.png",
+      "bytes": 4336,
+      "sha256": "edb439444672618a4a9874fe35f503b7a35cd532081ae178d5c99d0b18d96a22"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Glo_TruggTheTroggothKing_0.png",
+      "bytes": 12790,
+      "sha256": "e89a029b951ae089f5e6d347aff705d402998d6d5ae40b9b4efad5d23e28738c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Obr_Nagash_A_0.png",
+      "bytes": 17692,
+      "sha256": "dd4587d9ab4ac496d3912102aadff80a74d04f25d4ddc24da0799cb806838c40"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ork_BigMek_A_0.png",
+      "bytes": 4709,
+      "sha256": "1284cf3d13d0e008d5d32dd7b78a6a834df67043c88b442a593c66eeebd6cac7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ork_BombSquig_A_0.png",
+      "bytes": 1287,
+      "sha256": "33d63af2a5ce2ae892da82ec7b02779e0bbb8e382797fdaf400a4e6c29b5ed7f"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ork_GhazghkullThraka_A_0.png",
+      "bytes": 13795,
+      "sha256": "98958730404dfa139c7c033cb06be8ba401c40fe16a7237a758ce1e405e39537"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ork_Gretchin_A_0.png",
+      "bytes": 783,
+      "sha256": "83152a9194be83cf399a991fde2c2eebb7aafbd41ce336e5e15acd548366dd02"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ork_KillaKan_A_0.png",
+      "bytes": 7433,
+      "sha256": "076dfb488b87a0c5f402b5f91bca03f505a79246e31ff49f200f4334bf8ec485"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ork_Lootas_A_0.png",
+      "bytes": 2833,
+      "sha256": "b97369625fdcd5ef965ae5c1d1c9bce173ecbbc3741733c0fe6fb8286a4ddfe4"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ork_Makari_A_0.png",
+      "bytes": 3369,
+      "sha256": "f2894d3f9c38abbe131a3245164c442630c653f91b218b66136f55b692de6140"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ork_MegaNobz_A_0.png",
+      "bytes": 3318,
+      "sha256": "a33016f95230935e0d7449798bbc3d5623e7ece9098353740346de6586a64bdc"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ork_Runtherd_0.png",
+      "bytes": 2781,
+      "sha256": "fbcf9582b2ece9ab186c321c38409c2ead182ec312bbd0112b7beb1f089ee7d2"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ork_Warboss_0.png",
+      "bytes": 5307,
+      "sha256": "d2b656368710384709975c13ff06a3c2199e4b02f90a58eb8fc9f8c1ac831db0"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ork_Warboss_Squig_0.png",
+      "bytes": 1197,
+      "sha256": "ae49c41b6ee92c875e399dd7f337754d6cca763c84ceb19e13c9e117b2c987a8"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ska_Clanrat_0.png",
+      "bytes": 1667,
+      "sha256": "eab9152f870d7cd28188df76a7d61dacf77db282b7dceb234055c2c0b04b48b2"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ska_Clanrat_B_0.png",
+      "bytes": 1359,
+      "sha256": "0b9ca12f3e1747f211213dfbdfac2053d35e2526e662cba42c88816030e474f8"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ska_Clanrat_C_0.png",
+      "bytes": 1596,
+      "sha256": "c2b2ed53aac65d9395f0f9adf16b9f1952c1386cfbbd34d4f3097a62f9109f9a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ska_Clanrat_D_0.png",
+      "bytes": 1524,
+      "sha256": "69ddcfcf9524029bc468bd8d9da7404d33fd271ba7cd549a254ea49205cd0836"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ska_Clawlord_A_0.png",
+      "bytes": 4416,
+      "sha256": "ef7a94696fb7518fedd25bddd7cf7bc9bc149a3f5da96478b143f1a8c50691df"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ska_GreySeer_0.png",
+      "bytes": 4667,
+      "sha256": "4da46dd7ab240782ee9b823c41d405b2770e4d876b7284dda84755a705e33636"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ska_RatOgor_0.png",
+      "bytes": 6112,
+      "sha256": "2526f26dfa26c47b0678f73d7828ffc54bf913d757a03e054ac10dc54358a715"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ska_WarlockEngineer_0.png",
+      "bytes": 3122,
+      "sha256": "38b213982de753efa272a7b0ff97cc47a0bd527a9e067188941ab2b1e81032aa"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ska_WarlockJezzails_A_0.png",
+      "bytes": 4820,
+      "sha256": "6b7c7c8e019b03f0dfffad37835c208bfee5d96cfff2524140f909d1780513f4"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Ska_WarpsparkBattery_A_0.png",
+      "bytes": 4344,
+      "sha256": "8bd5621c7e026aa1cb4d0138592a7a7a483ff1704969e40356f724e716577708"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Tyr_Biovore_A_0.png",
+      "bytes": 4685,
+      "sha256": "fd5bfd1cd7320b21df86bb5e276b43588c571de2a2e79600d26007b49f05d8f1"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Tyr_Carnifex_A_0.png",
+      "bytes": 9594,
+      "sha256": "a9c4115f75a9a8dd2aaf01466ed2686706d056f41b1141bc8991d6a7d3cc5a5e"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Tyr_HiveTyrant_A_0.png",
+      "bytes": 7297,
+      "sha256": "acc03d743154b8bd5f9aacfcc67017fea1a866e0fd5c2b67b2f1e47906795b50"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Tyr_NornEmissary_A_0.png",
+      "bytes": 14060,
+      "sha256": "f7187d57819ca20e40a22a8691ad3ffda0fc79151de93e317314f60ee925ac7d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Tyr_Prime_A_0.png",
+      "bytes": 4312,
+      "sha256": "d361229ccd49a33ccef44bfdf08304686ef4def45354dd943c7fcaa037b31998"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Tyr_SporeMine_A_0.png",
+      "bytes": 984,
+      "sha256": "caab62cb467bd9e60494afcbd0183dff0635bcd98e37d00accb629214c9f219f"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Tyr_Termagant_D_0.png",
+      "bytes": 2033,
+      "sha256": "24b9c8a02372bf1932ca04cc63eb528c0b1a221a6d9a0da622de2ced6bbcb521"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Tyr_Warrior_A_0.png",
+      "bytes": 3501,
+      "sha256": "259b3a514d21949bbf3ef7f6c76a6be4167be1571156b0266967d8b21bb992fa"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/E_Tyr_Warrior_B_0.png",
+      "bytes": 3315,
+      "sha256": "c8316e7530622fea846182c9402cb1d4aef433d71437175db5ab47ddbded7149"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/VFX_Nagash_LiberMortis_1.png",
+      "bytes": 817,
+      "sha256": "726528bb83bcf0b220cade5bcededdc0570b3e1a46ec320ab262ab4ea158922e"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enemies/VFX_PurpleSunOfShyish.png",
+      "bytes": 8806,
+      "sha256": "b39752bd34335ed11fc3264d18cbe2e5dcd97e09a348379f43e14637964a0392"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Ability.png",
+      "bytes": 504,
+      "sha256": "3f2951ceaa9938de4c6cc9bca4c906975ac0bff77b0e9c8924aa73af6f281811"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Attacks.png",
+      "bytes": 459,
+      "sha256": "69a4618aa935b897e4ec3283dfe02cdc94702744ab1a7147d615fa30ca1d48da"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Aura.png",
+      "bytes": 468,
+      "sha256": "8494a027bdcf267d8c62d4093bb42ba584a8de086b91c65cf865c32f2ce7aaa4"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Bait.png",
+      "bytes": 328,
+      "sha256": "79346326111bdf9ba1df528d47ef4e36221144610e8dc20b865cb90dfa2ecb9c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Banish.png",
+      "bytes": 653,
+      "sha256": "796abcd18d5a03f34135c6a6a4c6c9d5e060bcc930e8785722efa7d5171cf847"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Chance.png",
+      "bytes": 319,
+      "sha256": "d27ba1a702a084943d1e0864afe7a8e83b81e90e8322b783107380b284b4740b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Corruption.png",
+      "bytes": 380,
+      "sha256": "812f6c60e90a644131dbbd6b42260e7862718a0ac53e3eee7d389796cc107a9c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Fervour.png",
+      "bytes": 292,
+      "sha256": "0122f9d19a251f315be3f82737f6096931db34ed51bfba990243259854e8e520"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Move.png",
+      "bytes": 405,
+      "sha256": "b967bf575e6d3252fa33a8074de36dfbee92f8e8ffa319a8461437e5d296811c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Range.png",
+      "bytes": 316,
+      "sha256": "2370e5c95cbafb7f3445a92572249887c5972891e5cf4f30291df2cfccc414e7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Redeployment.png",
+      "bytes": 462,
+      "sha256": "2b8eca479d8161d276169b3aa99ece5018dfe65b70e28583b34e281ff5355ea6"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Reload.png",
+      "bytes": 244,
+      "sha256": "68714fdffb5a9a30985fd342758326d525ddc486687411c84d3c7d35415e4a44"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Reroll.png",
+      "bytes": 305,
+      "sha256": "d8b7341b17fc0d2626635ac64da3cc3b17509b5b7bd78ee3c0ede4c70746939c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Retribution.png",
+      "bytes": 228,
+      "sha256": "ab381a1594017d658749b5b7f837a6dfafdf4f2032ef9d7bf87b6ecf24634a4e"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Seal.png",
+      "bytes": 554,
+      "sha256": "f2c39ea3741449dd73b84a29d0d77f8de8ff1bf1c3ffa9575475ffc33a4f3342"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Skill.png",
+      "bytes": 261,
+      "sha256": "2c19cc0473cba7ea84dc6b31c81ec4329e536b797a7f472a5319a9d59e9094cd"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Skip.png",
+      "bytes": 200,
+      "sha256": "721e8373d7d681fce531677efd4b04ec085013012c17106de437ac7d40018155"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Sustain.png",
+      "bytes": 404,
+      "sha256": "fe8ef57b3b82ddec9760801f5b91493bbb0e9f4ef3c939cad007a55277632f15"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Tithe.png",
+      "bytes": 515,
+      "sha256": "0a2e0ffcfbd96bd4c9507ef1708cf82b566bebb77a16dfa7364231df4d8160fc"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Toughness.png",
+      "bytes": 403,
+      "sha256": "4db01d446e54ac097eda67ba448c7489b1f40774cc6602e9ba0439aec2fc1f15"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Veterancy.png",
+      "bytes": 369,
+      "sha256": "53aa86cc50d019dd3ab43392f99ff6f9342fa8a299b8a9c3a24de7acb0a07752"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/enhancements/Passive_Wounds.png",
+      "bytes": 464,
+      "sha256": "efc5099d70f230750660665990bfd435b94c7190668cf93b35ea949ae7f35a97"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/incantations/Element_KillsSkull.png",
+      "bytes": 455,
+      "sha256": "a9c15068440d6202ada0764b8a6a7812219dfa1e78988e65c8802c732352c49d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/C_TechPriestManipulus_01.png",
+      "bytes": 3418,
+      "sha256": "cf8e3d2d1ba74c8ed41be57a2492823a50f14fd93f66b15b56b08e20129aa434"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/E_Ska_GreySeer_0.png",
+      "bytes": 4667,
+      "sha256": "4da46dd7ab240782ee9b823c41d405b2770e4d876b7284dda84755a705e33636"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Passive_Bait.png",
+      "bytes": 328,
+      "sha256": "79346326111bdf9ba1df528d47ef4e36221144610e8dc20b865cb90dfa2ecb9c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Passive_Banish.png",
+      "bytes": 653,
+      "sha256": "796abcd18d5a03f34135c6a6a4c6c9d5e060bcc930e8785722efa7d5171cf847"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Passive_Redeployment.png",
+      "bytes": 462,
+      "sha256": "2b8eca479d8161d276169b3aa99ece5018dfe65b70e28583b34e281ff5355ea6"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Passive_Reroll.png",
+      "bytes": 305,
+      "sha256": "d8b7341b17fc0d2626635ac64da3cc3b17509b5b7bd78ee3c0ede4c70746939c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Passive_Retribution.png",
+      "bytes": 228,
+      "sha256": "ab381a1594017d658749b5b7f837a6dfafdf4f2032ef9d7bf87b6ecf24634a4e"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Passive_Skip.png",
+      "bytes": 200,
+      "sha256": "721e8373d7d681fce531677efd4b04ec085013012c17106de437ac7d40018155"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Aqua_Ghyranis_Single.png",
+      "bytes": 299,
+      "sha256": "3e02585bdef411a45474c80376d076149f27a102d4c6b8650a2b99866069cb0d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Aqua_Ghyranis_Small_01.png",
+      "bytes": 417,
+      "sha256": "b5bfa6f9cbc2e2f821cb05243d56f79b23c4d22caa70da00a0022b75c327ff41"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_BlastTemplate_01.png",
+      "bytes": 306,
+      "sha256": "ba3de15424e2232b2b82bfbff35747cff744cf6a79d0e57bf0a57e59924537e0"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Blessing_01.png",
+      "bytes": 325,
+      "sha256": "4d1fc3a3190854a9baf6454f04c5190617bca78930d16c9bf3ffa61d2ec5dd98"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_BloodDrop_01.png",
+      "bytes": 220,
+      "sha256": "d744ca29b17f34fb667c04a26ed2a6a12b55f659f4d65927fabd25b31388c525"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Chest_00.png",
+      "bytes": 637,
+      "sha256": "84a70eb331dbe61533f856f70e398b7b32ded8852491b7add0731c3eda4b0908"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Chest_Arcana_00.png",
+      "bytes": 298,
+      "sha256": "0800e9d541254c0d9e33b9698e2334562746a12008364509a3d22829b9ab404f"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Chest_Large_00.png",
+      "bytes": 658,
+      "sha256": "31197039e62bb59558d0fca229dc30207973440c5763503e294cf0296d7d421e"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Chest_Passive_00.png",
+      "bytes": 629,
+      "sha256": "38c825233730f91587e3164fa2d3aa54acaa62e14c25780adb03dc26c37a0ac2"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_ChronomanticCog_01.png",
+      "bytes": 573,
+      "sha256": "22a02dc8018ac0c884f68b7abfe10e4e58dc4ca3bd7ceba483613750ce647a6d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_CinderblastBomb_00.png",
+      "bytes": 457,
+      "sha256": "d05f8aa54c22df95792d07a542bbdc37b2e4bee367e4a388ba7a93f50f487870"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Comet_01.png",
+      "bytes": 375,
+      "sha256": "09e8863a966e14cf8a4ca75891454fdb45ea4e201f98b4589526c272db7c1690"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Corruption.png",
+      "bytes": 228,
+      "sha256": "60ac6de9ba68f179fbb80723f8db8e7ec3990e473ac0e1583403903d278e503f"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Currency_Large.png",
+      "bytes": 476,
+      "sha256": "0e78b80aa082d45660bf7fa4333e83abdf223488ffd628abc72920640592b554"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Currency_Medium.png",
+      "bytes": 557,
+      "sha256": "c91d11d99d6126a5d8cb946fb1666f013e0036685af3c2666dcf319b7348c87f"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Currency_Single.png",
+      "bytes": 465,
+      "sha256": "5c22aa6adae2ac7ab28a35f8e846a46ab00a289be3bfba7df60679dd88197c24"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Currency_Small.png",
+      "bytes": 545,
+      "sha256": "d266bfb40243b2d37bbf42111d6b044850fb907beb871e8b901631bef33009bb"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_EmeraldLifeSwarm_01.png",
+      "bytes": 481,
+      "sha256": "99f095cfcabedc41335a55f0c6ab5f4aef38180fb3012782fb9f046987ae5a9a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Frag_Grenade.png",
+      "bytes": 483,
+      "sha256": "65d7ba1dacfc45874ae5ada6bb026654d1a02d22d44084be5a9b4b1249611418"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Frenzon_01.png",
+      "bytes": 366,
+      "sha256": "c3b811297c4b8c7e831d872cdcfc2d46d721905fce87c3c8dbbc3c282baac270"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Gnashing_Jaws_01.png",
+      "bytes": 608,
+      "sha256": "60535be1fd534d21ddfa83d9fe3406fce31d60780aa31efa73a8cb5c268f7d36"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_HellfireAmmo_00.png",
+      "bytes": 415,
+      "sha256": "dcc8e4f2c8216d9fc059ef8b2ddcdb0e8c7d96f83922ef671b49d1f50e7dfebc"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_KrakGrenade_00.png",
+      "bytes": 437,
+      "sha256": "583723522f99eff86510280e7971445fa6159ffff69b3ab66819de67f678ab0a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_LaudHailer_00.png",
+      "bytes": 432,
+      "sha256": "ed5790ec213302e7c7485e5a92a74b105db9873b1317b2668dbb5156712cef64"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Magnet_0.png",
+      "bytes": 322,
+      "sha256": "f5348e30a1611dd1409b046bde374f13ac59d9f3e90dba9ca8a35319aa2dfe41"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_MalevolentMaelstrom_00.png",
+      "bytes": 578,
+      "sha256": "b4d17319e7eee1ecce5b9264bef11be4a3508e968aaf107d7d48e6a24934ec88"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_MedicaeBag_00.png",
+      "bytes": 423,
+      "sha256": "38c9c7f3d748130465a79c9db608107c3cc1af8b9d0518b2a329f03a000ca809"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Medpack.png",
+      "bytes": 437,
+      "sha256": "f21c817fcd8d9cda9b98626665c631da7ade10541d29ebef2c9a252eb1bcce6a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_MeltaBomb_00.png",
+      "bytes": 281,
+      "sha256": "7d510f8b748d1dd68115330d33a527b62b6fcf2df47cdc5ac7906cbe23e99af6"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Onslaught_01.png",
+      "bytes": 382,
+      "sha256": "b5746f8a286f12150f2fd81da1739a98454166dd4812bb98c1adff3fdaee484f"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_PrismaticPalisade_01.png",
+      "bytes": 669,
+      "sha256": "3c9fb32747fbf5ec61eb5261f67d72e965101c52a98a679d4991429370b4623c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_PromethiumCanister_00.png",
+      "bytes": 473,
+      "sha256": "576c34bf9f0891bb7e14e79962cd8bdcb53c52fe04acd999850857889855132a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_PuritySeal_00.png",
+      "bytes": 539,
+      "sha256": "bff3fb897d0b31f55290b05b0219d24ecff7b8b623c6e7d7ad7383ac407df991"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_PurpleSun_01.png",
+      "bytes": 559,
+      "sha256": "91c1be94b174190723d693c6e5d293b17cd4c77cecd78d7ff26fbf22546fb10d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Recaff_00.png",
+      "bytes": 417,
+      "sha256": "f80519a04341729780d8c3849b7a97badf65f49cbb4773d6856f57d71ac9d7d4"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_SkullGem_Blue.png",
+      "bytes": 358,
+      "sha256": "21506133dc259dbbd06b658fcac3c787317129a0552b585759e85da9d9b78d2d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_SuffocatingGravetide_00.png",
+      "bytes": 636,
+      "sha256": "04b00a894380b492c9722ea609d13316436fcbc5b79ed27222f1ed02c7718281"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Tithe_00.png",
+      "bytes": 503,
+      "sha256": "bec4a50a602faa13359b18e4c2236ce5a5b25e057ac6d8dbfc5eb43d13d7fb8a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_UrGold_00.png",
+      "bytes": 276,
+      "sha256": "35162abc8b141609692caa2cfd0c8a1c583ab8f29406b8b37be24d0e7bac68b4"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Pickup_Varanite_00.png",
+      "bytes": 373,
+      "sha256": "ab9b027e328b4fdf3c67aaa574ef1be29077b720a005121c294378eed036aac1"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_Amberbone.png",
+      "bytes": 537,
+      "sha256": "b422b34391a18db81cf6cb5a212eb697526457e77fb036caea560ba0460f3620"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_Arcanoscope.png",
+      "bytes": 468,
+      "sha256": "34f275bdcd2081ad2e4a274ec9189ef39a296cd30ee3922fc3bf2e84859e52d9"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_AstropathicRelay_DeathWorldInvasion.png",
+      "bytes": 627,
+      "sha256": "3c021433669d4052d06ae80a6891abee8131fa37f5fd30718a3e4e41f2c79cf2"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_AstropathicRelay_Gallowdark.png",
+      "bytes": 635,
+      "sha256": "63a8939f3b75d31d9e0c48257b415f604e8ef2a0f7364414abbe7f4a882a58be"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_AstropathicRelay_HobbyTable.png",
+      "bytes": 626,
+      "sha256": "b6c042297146112fb8fa625f7982a728bece9f4d88381f7f03e9f05b3fe93f91"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_AstropathicRelay_ImperialBastion.png",
+      "bytes": 635,
+      "sha256": "1ec357b1e9b941cd48929b0ef07242c0c419db52c1673775fbd381aa7457fa68"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_AstropathicRelay_ImperialShipyard.png",
+      "bytes": 641,
+      "sha256": "3df3e01b81486bb2eed39dd005dee5d4a38bed7a9c9677443e98c7ed7fc39c06"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_AstropathicRelay_OrkStronghold.png",
+      "bytes": 636,
+      "sha256": "03416a6d6e5f9128843364e97d4d0ff667d9d891ccc1aecd5e4cc5d7cc79fa55"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_Atmospheric_Anatomiser.png",
+      "bytes": 518,
+      "sha256": "197f7f2960cf602b4cc0672bc36136685920ec9c6bc2d169fae7ff85a021eef1"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_Auspex.png",
+      "bytes": 467,
+      "sha256": "66afe229ceb224704056a0e270d16822d9eacf19ba50f9e37e888bdfc762dd58"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_BookOfWoe.png",
+      "bytes": 369,
+      "sha256": "88ff47d81da9dc208be7ddd17534814c692456776367d33ed9b452e900891172"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_CartoArcanabulum.png",
+      "bytes": 619,
+      "sha256": "237b3d7a82c8caea154f7b685782acd7a5a58efa89466f04cd96b6c9ac037408"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_Celestial_Orrery.png",
+      "bytes": 513,
+      "sha256": "c9068a44ee0fc0e4459195c1b9a06f950080721263b77d81970924c9e15071ca"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_CreaturaMythologica.png",
+      "bytes": 334,
+      "sha256": "e60e76e1ee0873494c1471ecf05f3d31a2f08e0885984e4292515f6af3cc3971"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_Dataslate.png",
+      "bytes": 382,
+      "sha256": "5ceb4c06b0c035b06b1fc72f80b001a1a6677096d9b85a83eb271c017ecd9d27"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_EmperorsTarot.png",
+      "bytes": 466,
+      "sha256": "6bfa84ae0a8129ec1f85503a4845e3779a0c272c9fd58bce14f61624c696b408"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_Eye_Tzeentch.png",
+      "bytes": 535,
+      "sha256": "c88bf41ec9e58c07fec058218f143c961cd210fc46edb1a3fb360e70a861837f"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_FerrosancticOrrery.png",
+      "bytes": 503,
+      "sha256": "d941f2fc79b0d21166443f155947a7b67c95f0dfb5a0fa0e310949df85bcebdd"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_Glimmering.png",
+      "bytes": 371,
+      "sha256": "d9ca2e1995deb501311a94884a675ae1766239edef81eab3d4d9d34bdd4f8bf7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_GyrotemporalVault.png",
+      "bytes": 428,
+      "sha256": "81b25a7b6b508f22455c8e80cc26c276881a7f114c76598bb6ba51daf1919cec"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_MaelstromKey.png",
+      "bytes": 610,
+      "sha256": "d3a230c22822378c924e3d7ec56202b6dc24e049054c52f2b637197fc6508a09"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_Oathstone.png",
+      "bytes": 557,
+      "sha256": "4c836df2734b82a2f29ba20ac974636e4ac5415d8534d02b2b6143ce89f18add"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_QuicksilverDraught.png",
+      "bytes": 480,
+      "sha256": "dd7438e2c631bede3dd4bccb44caf5c294b08db20ea80642bc1c09d64a282d94"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_SignumArray.png",
+      "bytes": 411,
+      "sha256": "58b510413b6d2ae2dd014d7195c4e95d4dfc94321579d5c9c4464f9ed9a4e4c6"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_StandardEmperorAscendant.png",
+      "bytes": 477,
+      "sha256": "6b4c13049123965399f136656d489c76f0dfd030ce201c337468e4b57c9e3d1b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_Teleportarium.png",
+      "bytes": 468,
+      "sha256": "17709ed06d1ead262eeb6e0eae36226f05517b69236a22f3f4651695da524c1d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_TomeOfEctolades.png",
+      "bytes": 557,
+      "sha256": "0b9bc1f25a713a8988b6efca8e0d4df216d3b2db24aee7c4b70cddae021c1687"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_Trade_Agreement.png",
+      "bytes": 507,
+      "sha256": "808420bc96f2ac7e85a5a4ca47aedc2c6a9b0f6190e9760f81612d6c55b12c21"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_TzeentchBook.png",
+      "bytes": 550,
+      "sha256": "fff474dcd2beb6cede0b0db08dda30df58886d1fa7512a059750c6015c0d771a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_WarpstoneCharm.png",
+      "bytes": 487,
+      "sha256": "67f5b1f1265bf8db8a3df67939bb284f5f088a1db2cf29754f8e48eff57ef36b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/Relic_Warscroll.png",
+      "bytes": 478,
+      "sha256": "e1a07f6bdda681d7fa1fcaf253b9c6a5f977fc6d0854c3a5e9b487dbdf9c639c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/items/W_QuicksilverSwords.png",
+      "bytes": 711,
+      "sha256": "447fd56bc3e79f4c832fda49c27399aadba14d8df9e0ec92743c3fc7b82298f7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/merchants/Portrait_BrokkGrungsson.png",
+      "bytes": 1494,
+      "sha256": "9cec4b03ea228a1c077dabb33cc26ebd74d1939b5ccf337a671bcf9b5545660a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/merchants/Portrait_DrekkiFlynt.png",
+      "bytes": 1492,
+      "sha256": "d74f1c7d8a2bf2bf810945a3d3b2a4f1dac99664b194fe3306d7493785ca7acb"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/merchants/Portrait_TechPriestManipulus.png",
+      "bytes": 1482,
+      "sha256": "9a0089e24e3260e4b4d44a85cb7646a760f2de3f98a5c9dfd410140208dd0c81"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/merchants/Portrait_Technoarcheologist.png",
+      "bytes": 1569,
+      "sha256": "83759ee4a3f33baf30cf5949134dcd8d2356946323d991c67cebe9e43951b4a7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/paintpots/Relic_PaintPot_External.png",
+      "bytes": 273,
+      "sha256": "0ebbef65c009d982f3ebc2767888ef8e743df24cdce765a3629535cab352cc3d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Ability.png",
+      "bytes": 504,
+      "sha256": "3f2951ceaa9938de4c6cc9bca4c906975ac0bff77b0e9c8924aa73af6f281811"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Attacks.png",
+      "bytes": 459,
+      "sha256": "69a4618aa935b897e4ec3283dfe02cdc94702744ab1a7147d615fa30ca1d48da"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Aura.png",
+      "bytes": 468,
+      "sha256": "8494a027bdcf267d8c62d4093bb42ba584a8de086b91c65cf865c32f2ce7aaa4"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Chance.png",
+      "bytes": 319,
+      "sha256": "d27ba1a702a084943d1e0864afe7a8e83b81e90e8322b783107380b284b4740b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_CodexAstartes.png",
+      "bytes": 461,
+      "sha256": "b491d6c12cfde7393bb2ee0c74b199b8e685a09bcfaecef33d18f38e2bac24a9"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Corruption.png",
+      "bytes": 380,
+      "sha256": "812f6c60e90a644131dbbd6b42260e7862718a0ac53e3eee7d389796cc107a9c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Invulnerable.png",
+      "bytes": 421,
+      "sha256": "37c6c52a141624afca4dd4436a969f295446511ac8e46da79c15945800e88ad9"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Move.png",
+      "bytes": 405,
+      "sha256": "b967bf575e6d3252fa33a8074de36dfbee92f8e8ffa319a8461437e5d296811c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_NullPendant.png",
+      "bytes": 413,
+      "sha256": "4129bc28fa4d426ea48f882b7779e84fe5a6bfe928fe659c51b49eab8abd44d7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Range.png",
+      "bytes": 316,
+      "sha256": "2370e5c95cbafb7f3445a92572249887c5972891e5cf4f30291df2cfccc414e7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Redeployment.png",
+      "bytes": 462,
+      "sha256": "2b8eca479d8161d276169b3aa99ece5018dfe65b70e28583b34e281ff5355ea6"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Reload.png",
+      "bytes": 244,
+      "sha256": "68714fdffb5a9a30985fd342758326d525ddc486687411c84d3c7d35415e4a44"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Save.png",
+      "bytes": 277,
+      "sha256": "5c336ce88b9e9bebb097c1e8afe662c30341661fc764d0afe11948b3c2ea4eee"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Skill.png",
+      "bytes": 261,
+      "sha256": "2c19cc0473cba7ea84dc6b31c81ec4329e536b797a7f472a5319a9d59e9094cd"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Strength.png",
+      "bytes": 469,
+      "sha256": "07f9987fd619f4a88d89f403d0cb91001e8669855ce1578747ab53167a79bdde"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Sustain.png",
+      "bytes": 404,
+      "sha256": "fe8ef57b3b82ddec9760801f5b91493bbb0e9f4ef3c939cad007a55277632f15"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Tithe.png",
+      "bytes": 515,
+      "sha256": "0a2e0ffcfbd96bd4c9507ef1708cf82b566bebb77a16dfa7364231df4d8160fc"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Toughness.png",
+      "bytes": 403,
+      "sha256": "4db01d446e54ac097eda67ba448c7489b1f40774cc6602e9ba0439aec2fc1f15"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/passives/Passive_Wounds.png",
+      "bytes": 464,
+      "sha256": "efc5099d70f230750660665990bfd435b94c7190668cf93b35ea949ae7f35a97"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/stages/Button_StageSelect_BloodwindSpoil.png",
+      "bytes": 83843,
+      "sha256": "7e69fe306d558511248810d5fa88a0e88810290139a018d2bf2e0f2d979c607b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/stages/Button_StageSelect_DeathworldInvasion.png",
+      "bytes": 120780,
+      "sha256": "e7389d0d7e9bd2e01abc890bc5503644bd2e5ca9fdaea7447eae8ff60fa8ff17"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/stages/Button_StageSelect_DesertWasteland.png",
+      "bytes": 95251,
+      "sha256": "085d5d09351eae1c30bd6f8eb61ff3d4297df2d7f2e273792e64d86e3a729719"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/stages/Button_StageSelect_Gallowdark.png",
+      "bytes": 68997,
+      "sha256": "26bbb62f324c52f0988d360bc35b5f2ea36ac06f292cb79fff49f58994b4bb78"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/stages/Button_StageSelect_Gnarlwood.png",
+      "bytes": 91862,
+      "sha256": "004a3fdf02eb51f26432819941368b95ef3a47462dcc74b186dceaef17efeede"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/stages/Button_StageSelect_GreatParch.png",
+      "bytes": 82967,
+      "sha256": "5e03f5580d3d5f3e86fa96d479d3a7c3186b8ea750c0f193a5ba0f29711946c6"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/stages/Button_StageSelect_Hammerhal.png",
+      "bytes": 71538,
+      "sha256": "6320bdf232b221ba7788629dfb17c26828d0128c193972665b301499fc1574a5"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/stages/Button_StageSelect_HobbyTable.png",
+      "bytes": 46562,
+      "sha256": "3f8e480e7fa556ae79498e05d2a331017c64365c24f723e189c3802fdb87dea1"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/stages/Button_StageSelect_ImperialBastion.png",
+      "bytes": 85073,
+      "sha256": "c3ad1695a91738cb7edda5b7a43d165709e8488242b8259075270ef580007ad5"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/stages/Button_StageSelect_ImperialShipyard.png",
+      "bytes": 50791,
+      "sha256": "26410c60049ea477aa45050858fa58fa4a6ec16857caedbabf6bef53ed8cc92d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/stages/Button_StageSelect_Necropolis.png",
+      "bytes": 99129,
+      "sha256": "e15941ecfe5ae00ab8e84e5afa5a486cbab01d486257b46449d545a37f09dd0c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/stages/Button_StageSelect_OrkStronghold.png",
+      "bytes": 84283,
+      "sha256": "4d9cbfc8825f5987ce1aad744002942c75a2a434de2cc7249c7e559bbb3fbdd7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/stages/Button_StageSelect_SkrappaSpill.png",
+      "bytes": 92756,
+      "sha256": "7067e1c60c8a2f494715d230084747e8a7e76954d70e6b8cd8defb6215958a1c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/stages/Button_StageSelect_TheWarp.png",
+      "bytes": 34740,
+      "sha256": "71032767124b18a41e1ddda2c0f9694e66265555b8eeb08ff8f4869dd8c1e109"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/stages/Button_StageSelect_UnderEmpire.png",
+      "bytes": 77514,
+      "sha256": "0a84dee5241ff7a112c5d2b8190f99ae35a42e55c59dc6815e2ab306d82b0c5b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/Arcana_EmperorsTarot_I_Galaxy_Small.png",
+      "bytes": 770,
+      "sha256": "a3693ebab1eca49c2ef0f7634a9913b2c3cd8dc28c032fed7ac19f5f938a06c8"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/Passive_Veterancy.png",
+      "bytes": 369,
+      "sha256": "53aa86cc50d019dd3ab43392f99ff6f9342fa8a299b8a9c3a24de7acb0a07752"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/Pickup_ChronomanticCog_01.png",
+      "bytes": 573,
+      "sha256": "22a02dc8018ac0c884f68b7abfe10e4e58dc4ca3bd7ceba483613750ce647a6d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/Pickup_CinderblastBomb_00.png",
+      "bytes": 457,
+      "sha256": "d05f8aa54c22df95792d07a542bbdc37b2e4bee367e4a388ba7a93f50f487870"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/Pickup_Frag_Grenade.png",
+      "bytes": 483,
+      "sha256": "65d7ba1dacfc45874ae5ada6bb026654d1a02d22d44084be5a9b4b1249611418"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/Pickup_Gnashing_Jaws_01.png",
+      "bytes": 608,
+      "sha256": "60535be1fd534d21ddfa83d9fe3406fce31d60780aa31efa73a8cb5c268f7d36"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/Pickup_MalevolentMaelstrom_00.png",
+      "bytes": 578,
+      "sha256": "b4d17319e7eee1ecce5b9264bef11be4a3508e968aaf107d7d48e6a24934ec88"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/Pickup_MeltaBomb_00.png",
+      "bytes": 281,
+      "sha256": "7d510f8b748d1dd68115330d33a527b62b6fcf2df47cdc5ac7906cbe23e99af6"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/Pickup_PromethiumCanister_00.png",
+      "bytes": 473,
+      "sha256": "576c34bf9f0891bb7e14e79962cd8bdcb53c52fe04acd999850857889855132a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_AntiWizardFlintlock.png",
+      "bytes": 772,
+      "sha256": "26d9d676d727916f65d8165c2470171dba91ab77b9ebb70611831c8aa1b5bbb4"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_AquaticIllusions.png",
+      "bytes": 602,
+      "sha256": "ab85590265db8568d1685e92810cbb420d51faf2994ba43d79bc59d593fc3318"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_Archeotech.png",
+      "bytes": 684,
+      "sha256": "eadc132d6dd86f4dddb418212e272a3ebb2537faaa56245a90477f1baeecc8b1"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_ArdentBlade.png",
+      "bytes": 497,
+      "sha256": "65c88dfb5345a33df0825f9ed06f4bcdb9aac9234d09275dc40b455967210106"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_ArtefactsOfPower.png",
+      "bytes": 716,
+      "sha256": "bab556d71f2383069389b6422319ee0c74346b1364f2374af3a0a3ae2783cc79"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_AssaultCannon.png",
+      "bytes": 579,
+      "sha256": "70fb8fe12d5682fbd56fffd7fbbe9b273f667636cf1608aa8cf3480e89a61e58"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_BaleEye.png",
+      "bytes": 419,
+      "sha256": "a464a5a11d33766624bf0e1afd4faca0ea25409a07db00b41f31fe74277695af"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_BattleCannon.png",
+      "bytes": 337,
+      "sha256": "d17e3f3d5c49efe7b74f9016f7593258edc54556151cda32a860548331b67ad7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_BenedictionOfFury.png",
+      "bytes": 749,
+      "sha256": "c9e51c83e02bb1dac09d74b41da1a707ccd6722af19baeeaf11d269caf148bba"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_BladeOfTheHighHeavens.png",
+      "bytes": 298,
+      "sha256": "d5f5ce5dd04bb6fc42bb90de9019f6710cd42da35a580b11c1e2993cc4f7ea7e"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_BloodRitual.png",
+      "bytes": 369,
+      "sha256": "950e448b92fbfb220f54208627519bb80885a3995de44ae05e0d082df520c95a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_Boltgun.png",
+      "bytes": 612,
+      "sha256": "c3f166bf15407b5cc3260c7a8fc5309274aea727339d06b9f569943159d046c0"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_BoltstormPistol.png",
+      "bytes": 575,
+      "sha256": "412f809ab2c05235d0cfc1a8a504379ae25cef684910e23f3a5e296ab6bc88e0"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_BrazierStaff.png",
+      "bytes": 654,
+      "sha256": "f2160ceeff69e0c118b25ab0a764decaaa942b35a503bb71a10241b01a8686e6"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_CelestialGreatsword.png",
+      "bytes": 682,
+      "sha256": "a586fea7b49253d1f2c7e84776507f7f00c3477ec3f993bbf4d31d7327b5d160"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_CombatShotgun.png",
+      "bytes": 367,
+      "sha256": "1eda9e55e343ada85afd390040309c1473f3e162cfb53a29b0ead1029dbc5fab"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_CroziusArcanum.png",
+      "bytes": 473,
+      "sha256": "d593101389ca1713fbdae1beb66e1ba146c75ecfbfde3fa21216af171cf7a484"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_CycloneSword.png",
+      "bytes": 838,
+      "sha256": "b3f05ad6efa60f313a5a7da8e23671700e1b1330c2ae31098dc05202810e270b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_D6Dice.png",
+      "bytes": 521,
+      "sha256": "b664cfdc06d0e2de3db3ef13374ba166e0306c11aa005200005e9b563236390d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_DeathstrikeMissile.png",
+      "bytes": 365,
+      "sha256": "67f6600476564d63e4e02a51a5406c6ea70cd7d4bcb85e8b6d03b58a3555a500"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_DuelingPistols.png",
+      "bytes": 382,
+      "sha256": "539ea480a1d1fe5bfb255618cc8d3d3180461038bc8d57e16bda1cd26a5e7291"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_EmperorWrath.png",
+      "bytes": 668,
+      "sha256": "b954f9bb40181b039c970b75cbeb4f14e74676674f72633ec4bb111626a9d0f9"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_EnchantedGlove.png",
+      "bytes": 521,
+      "sha256": "6862b4b0f4a4a91a1f6504970f4ec03f0b3f2f8fc0718b83de1c3bff05790929"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_ExecutionerShotgun.png",
+      "bytes": 434,
+      "sha256": "a5d6199434c38896481c563d6cd72c888d8a4d596b5d4b0a7bf8335ca0986ac7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_ExoticWeaponry.png",
+      "bytes": 511,
+      "sha256": "41076f7d6cdb1c3bd0823e4fa04f1e6e0fcac81c463a39c5c35c3cb76ef32731"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_Fidelis.png",
+      "bytes": 471,
+      "sha256": "232b94f461749c9f12865ed1a407abbff59ddc99d43e51d60c05fa437e6f9ab9"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_Flamer.png",
+      "bytes": 427,
+      "sha256": "658d015d27cc4415b2ce59c0a7efac427643420d1a9fd12699f4bcd7261bddbe"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_FlintlockPistols.png",
+      "bytes": 508,
+      "sha256": "652d1e8a71296a2b258d22b5cf32de545b1c9b941bf4043ce27a12b949779459"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_FragGrenade.png",
+      "bytes": 491,
+      "sha256": "c19b7e1ad7aab9049b724a2112ab6dc5ec4f4fd55e2032d71f560e2d1091f24c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_FuryOfTheAncients.png",
+      "bytes": 507,
+      "sha256": "563425605f759f2fbb68710c4351548fa20785c8ca7011ee92ac1fa6cf5ca6d2"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_FusilCannon.png",
+      "bytes": 502,
+      "sha256": "6ce2f43c9bbd12317921bd5182cd4a756e417be217b8808eba02d7c84653762b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_FyrestormGreataxe.png",
+      "bytes": 500,
+      "sha256": "9b997f10d371d11275b45bfe3b7a909202e5dc68bbc92b86be890669ea2725be"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_GauntletsofUltramar.png",
+      "bytes": 573,
+      "sha256": "ab30335bef02545ea6ec8b8bfd6c147ae80e4d694bf0ad9a57ec317bb9120fe2"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_GhalMaraz.png",
+      "bytes": 822,
+      "sha256": "4a3eec822717bb2742e25977d921aba24fbadb7545887a04f52d3e2b03adb463"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_GhostOfRhea.png",
+      "bytes": 592,
+      "sha256": "d162f02fa0c51e405b7d1ee25fb8aff77a8b93e546a960c31f1f0d484d44540d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_Grandblade.png",
+      "bytes": 383,
+      "sha256": "88ffb545f7a2326c4cd690860ec843454b0702dbf32a97ed799b10765200cdba"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_HeavyBolter.png",
+      "bytes": 626,
+      "sha256": "c811cbe80d09da8a5c4f3eac5bab59bc87c170ef59af7f68456cdfafa24673a1"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_HeavyFlamer.png",
+      "bytes": 395,
+      "sha256": "4ee14135ed2c5517b13d5ef0e866ed33ef64ffdcc78c2d4a7c116d233999e44a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_Lasgun.png",
+      "bytes": 369,
+      "sha256": "36c0a4189f25ee060bc7503b3bcfa603b4ff1501ab77ebe81300576428d11e82"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_LongFusil.png",
+      "bytes": 564,
+      "sha256": "3c1d6ecc59f1c8d61e641859960fe87d87bdfba98ed1e96d6a6ef11ffd0b501f"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_MasterOfRunes.png",
+      "bytes": 1011,
+      "sha256": "e9516b0626599b2f433d5db0d661078ab1af3fdf45ffb445f33d51804aeca3fb"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_MechanicalBite.png",
+      "bytes": 408,
+      "sha256": "1c2534d4cf2726a290e8d7c12c911dfcb24c94ad4d5550b5f5595cb7dafb904c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_Meltagun.png",
+      "bytes": 475,
+      "sha256": "7c4380b8d68e0ab0a590bf5f2ca96ce877917f38012cc757cef16dc786ef57cc"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_MordantEarth.png",
+      "bytes": 386,
+      "sha256": "d6aabac7b67b6b45f802c523498d88cef48995d43db593ee2d017ab9a14ce950"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_MysticalWard.png",
+      "bytes": 873,
+      "sha256": "32ba74dcfb0f908ec10d07369da670da707f47e566edbce9a12d68a0da1a834b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_NebolousSeaFog.png",
+      "bytes": 431,
+      "sha256": "0315684c4836365a6aa3603848c28f5e7984aad5e093c9464206e61a41e830ef"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_NulnOil.png",
+      "bytes": 304,
+      "sha256": "73b1a8fe1aa9f0d877986f1d23bc6d2304530762c641391be654a6727a21e58a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_OrbitalBombardment.png",
+      "bytes": 815,
+      "sha256": "79fb406086f7f0adf0dd3fd4c8dcbb22d23ad0b3960a26fc0a2d3523d31be94d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_PoisonedKnives.png",
+      "bytes": 461,
+      "sha256": "913a0261719f47dca9f1389d3591f80875c797faa4d61d88a686e12e898f99d5"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_PowerKlaw.png",
+      "bytes": 462,
+      "sha256": "6805b2f50ec2017a507b094532d0fc5bd3eac3071f24b3cf52a2d7423c7fb93b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_Powerfist.png",
+      "bytes": 399,
+      "sha256": "a8f63303941113d5d53361a2e70f3c296cec38e6e4547ccfbed44aa501768a1f"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_PurgatorMirabilis.png",
+      "bytes": 451,
+      "sha256": "a09a6474681f19671d365610aacfa9ff47b4f67ee2b6debd737fcc257741d5ce"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_QuicksilverSwords.png",
+      "bytes": 711,
+      "sha256": "447fd56bc3e79f4c832fda49c27399aadba14d8df9e0ec92743c3fc7b82298f7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_Reliquary.png",
+      "bytes": 460,
+      "sha256": "beaf407aa331d4d3f19f2defa57c3440fef375fd9db83bebf5c7bb97c350f4f0"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_RemoteDetonation.png",
+      "bytes": 518,
+      "sha256": "34674de1aca72254a0f9c4bb8bd127ec9a5eb08cf97836ac280011430c335192"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_RetaliatoryBite.png",
+      "bytes": 304,
+      "sha256": "80dbe42219998584256b2405e8d9d9daec2f791fb1a06dd6bf4c64c6901a8e4b"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_RipperPistol.png",
+      "bytes": 468,
+      "sha256": "80289726e062c286e3cfc6382d69dbe8d995f137ce26ed6af587268648741bab"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_RopeAndGrapnel.png",
+      "bytes": 431,
+      "sha256": "c712595545179a2471853316324705e8a7b47607b2d800da8a4863eb228d9eb9"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_SacrificialWeapon.png",
+      "bytes": 487,
+      "sha256": "b3691d1a65d50aba47c087660cfe8174f2f8f3bcdb17e678f40182e8fde7b118"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_ShadowStrike.png",
+      "bytes": 606,
+      "sha256": "348166d8554090d255fcc6ee9ab454065192e2d24a8b1e101205b4d571814b1c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_ShieldOfFaith.png",
+      "bytes": 342,
+      "sha256": "3c40374cda8fd5e81b9e1c7c4f7e6451074ca6377c708960494663d6e1baf5bb"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_SideSponsons.png",
+      "bytes": 482,
+      "sha256": "51dcf8e6d83647db2fcf0daa1bdb982fde9106aecedd1111175e9783652f0d5d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_Smite.png",
+      "bytes": 454,
+      "sha256": "455f675c5ce35102d5279bb7d0742ab76fee5c5ea1e4d2d3bf6f8532d239fb70"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_SpearOfTheFaithful.png",
+      "bytes": 502,
+      "sha256": "49f60a6892c49762fb8a5e99555e7c34675313b0c9ee01e1e7c8336576dcbd4a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_Squish.png",
+      "bytes": 333,
+      "sha256": "bda1537b815321d88416aacabfaf9f5cbdf4e75a5f3ead701f1a62102f24a243"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_StormBolter.png",
+      "bytes": 501,
+      "sha256": "2cfcceb9b1b4900c975d40c769fcf90e0158cd7ec38c2a7f50d88627339934e1"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_StormEagleRocket.png",
+      "bytes": 433,
+      "sha256": "573332c37409b938ae3aaceeff175b04030a0d7d2de198c659bd36368e9cc507"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_StormchargedWarhammer.png",
+      "bytes": 660,
+      "sha256": "b44cba4ebb85c44e0ce563420160a037bebaa0df3e6939ac5ff49938c7ce3a4e"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_SustainedFireDice.png",
+      "bytes": 367,
+      "sha256": "61ac62229a71e26acae6a7aa45786a8d09cbe71ed0527eaa9013b5960dd45be5"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_TempestAxes.png",
+      "bytes": 466,
+      "sha256": "8ac0937e779e3df837b8f377f37ba2fc1d63fc104132ba0899b9d2d9c13dfb9a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_Thengavar.png",
+      "bytes": 745,
+      "sha256": "a7a07795cad8035798ca200545892e174802a666f5004280d54df798749473ec"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_ThornOfTheWhiteRose.png",
+      "bytes": 470,
+      "sha256": "14deea43c2d8717fa0ee2d31156ff0e20c667902cbcc90a82e0bf409997c854e"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_TwinTailedCat.png",
+      "bytes": 450,
+      "sha256": "6315aabb9eb85f1b88a9ea22b9b7fd2bcd742e07a67281b41fcc9b764e0ebe1c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_TyphoonCrossbow.png",
+      "bytes": 639,
+      "sha256": "08a346c1c257dc566f9b842139bb13b80bdc277e968382baeff15dd888e8a9d3"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_UskavarTheSunderer.png",
+      "bytes": 527,
+      "sha256": "444f7a77b0300c4a963f838993688b93ef3f4dd535961ca2b885d2dd0a7f0b8d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_VoiceOfTheGodKing.png",
+      "bytes": 680,
+      "sha256": "8b72f3ddc62184cda29758a5dbcc997f1f335bb5fbb9ce5aa2b1e2f4426a7b34"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_WardingLantern_Icon.png",
+      "bytes": 600,
+      "sha256": "42b2d670fc99d965b1db8fdf2cfa9309ffa912d35f9942bfdd4bf8631bbe25ea"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_WeaponOfTheMatriarch.png",
+      "bytes": 379,
+      "sha256": "279944e0dd7ee58592f75a454c6134a089813e49a463aeba6b9472c8d342e3a7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_WhirlwindAxes.png",
+      "bytes": 870,
+      "sha256": "d9051624fde1afa0cbba1dc6cb551adf8d1b57a3766defc5a5eb79c99d410fc7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_WhirlwindBattery_A.png",
+      "bytes": 458,
+      "sha256": "1f445338cbeac0433f43075af9b363a42798b31baa832d1edde9524b1703dbab"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/library-icons/weapons/W_ZangromThaz.png",
+      "bytes": 614,
+      "sha256": "5936c549e52a555112242261a18fa11b338df8f139732100b9ec3a1652e0f15e"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/039c95693d4f032cf34ad6430d615dc3fda88b237aa163efd04e92d2cc552441.png",
+      "bytes": 665,
+      "sha256": "039c95693d4f032cf34ad6430d615dc3fda88b237aa163efd04e92d2cc552441"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/08a346c1c257dc566f9b842139bb13b80bdc277e968382baeff15dd888e8a9d3.png",
+      "bytes": 639,
+      "sha256": "08a346c1c257dc566f9b842139bb13b80bdc277e968382baeff15dd888e8a9d3"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/14deea43c2d8717fa0ee2d31156ff0e20c667902cbcc90a82e0bf409997c854e.png",
+      "bytes": 470,
+      "sha256": "14deea43c2d8717fa0ee2d31156ff0e20c667902cbcc90a82e0bf409997c854e"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/26d9d676d727916f65d8165c2470171dba91ab77b9ebb70611831c8aa1b5bbb4.png",
+      "bytes": 772,
+      "sha256": "26d9d676d727916f65d8165c2470171dba91ab77b9ebb70611831c8aa1b5bbb4"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/279944e0dd7ee58592f75a454c6134a089813e49a463aeba6b9472c8d342e3a7.png",
+      "bytes": 379,
+      "sha256": "279944e0dd7ee58592f75a454c6134a089813e49a463aeba6b9472c8d342e3a7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/34674de1aca72254a0f9c4bb8bd127ec9a5eb08cf97836ac280011430c335192.png",
+      "bytes": 518,
+      "sha256": "34674de1aca72254a0f9c4bb8bd127ec9a5eb08cf97836ac280011430c335192"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/348166d8554090d255fcc6ee9ab454065192e2d24a8b1e101205b4d571814b1c.png",
+      "bytes": 606,
+      "sha256": "348166d8554090d255fcc6ee9ab454065192e2d24a8b1e101205b4d571814b1c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/42b2d670fc99d965b1db8fdf2cfa9309ffa912d35f9942bfdd4bf8631bbe25ea.png",
+      "bytes": 600,
+      "sha256": "42b2d670fc99d965b1db8fdf2cfa9309ffa912d35f9942bfdd4bf8631bbe25ea"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/444f7a77b0300c4a963f838993688b93ef3f4dd535961ca2b885d2dd0a7f0b8d.png",
+      "bytes": 527,
+      "sha256": "444f7a77b0300c4a963f838993688b93ef3f4dd535961ca2b885d2dd0a7f0b8d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/4a3eec822717bb2742e25977d921aba24fbadb7545887a04f52d3e2b03adb463.png",
+      "bytes": 822,
+      "sha256": "4a3eec822717bb2742e25977d921aba24fbadb7545887a04f52d3e2b03adb463"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/4ee14135ed2c5517b13d5ef0e866ed33ef64ffdcc78c2d4a7c116d233999e44a.png",
+      "bytes": 395,
+      "sha256": "4ee14135ed2c5517b13d5ef0e866ed33ef64ffdcc78c2d4a7c116d233999e44a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/51dcf8e6d83647db2fcf0daa1bdb982fde9106aecedd1111175e9783652f0d5d.png",
+      "bytes": 482,
+      "sha256": "51dcf8e6d83647db2fcf0daa1bdb982fde9106aecedd1111175e9783652f0d5d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/539ea480a1d1fe5bfb255618cc8d3d3180461038bc8d57e16bda1cd26a5e7291.png",
+      "bytes": 382,
+      "sha256": "539ea480a1d1fe5bfb255618cc8d3d3180461038bc8d57e16bda1cd26a5e7291"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/563425605f759f2fbb68710c4351548fa20785c8ca7011ee92ac1fa6cf5ca6d2.png",
+      "bytes": 507,
+      "sha256": "563425605f759f2fbb68710c4351548fa20785c8ca7011ee92ac1fa6cf5ca6d2"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/5936c549e52a555112242261a18fa11b338df8f139732100b9ec3a1652e0f15e.png",
+      "bytes": 614,
+      "sha256": "5936c549e52a555112242261a18fa11b338df8f139732100b9ec3a1652e0f15e"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/61ac62229a71e26acae6a7aa45786a8d09cbe71ed0527eaa9013b5960dd45be5.png",
+      "bytes": 367,
+      "sha256": "61ac62229a71e26acae6a7aa45786a8d09cbe71ed0527eaa9013b5960dd45be5"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/67f6600476564d63e4e02a51a5406c6ea70cd7d4bcb85e8b6d03b58a3555a500.png",
+      "bytes": 365,
+      "sha256": "67f6600476564d63e4e02a51a5406c6ea70cd7d4bcb85e8b6d03b58a3555a500"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/6862b4b0f4a4a91a1f6504970f4ec03f0b3f2f8fc0718b83de1c3bff05790929.png",
+      "bytes": 521,
+      "sha256": "6862b4b0f4a4a91a1f6504970f4ec03f0b3f2f8fc0718b83de1c3bff05790929"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/70fb8fe12d5682fbd56fffd7fbbe9b273f667636cf1608aa8cf3480e89a61e58.png",
+      "bytes": 579,
+      "sha256": "70fb8fe12d5682fbd56fffd7fbbe9b273f667636cf1608aa8cf3480e89a61e58"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/79fb406086f7f0adf0dd3fd4c8dcbb22d23ad0b3960a26fc0a2d3523d31be94d.png",
+      "bytes": 815,
+      "sha256": "79fb406086f7f0adf0dd3fd4c8dcbb22d23ad0b3960a26fc0a2d3523d31be94d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/7c4380b8d68e0ab0a590bf5f2ca96ce877917f38012cc757cef16dc786ef57cc.png",
+      "bytes": 475,
+      "sha256": "7c4380b8d68e0ab0a590bf5f2ca96ce877917f38012cc757cef16dc786ef57cc"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/80289726e062c286e3cfc6382d69dbe8d995f137ce26ed6af587268648741bab.png",
+      "bytes": 468,
+      "sha256": "80289726e062c286e3cfc6382d69dbe8d995f137ce26ed6af587268648741bab"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/8b72f3ddc62184cda29758a5dbcc997f1f335bb5fbb9ce5aa2b1e2f4426a7b34.png",
+      "bytes": 680,
+      "sha256": "8b72f3ddc62184cda29758a5dbcc997f1f335bb5fbb9ce5aa2b1e2f4426a7b34"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/a09a6474681f19671d365610aacfa9ff47b4f67ee2b6debd737fcc257741d5ce.png",
+      "bytes": 451,
+      "sha256": "a09a6474681f19671d365610aacfa9ff47b4f67ee2b6debd737fcc257741d5ce"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/a464a5a11d33766624bf0e1afd4faca0ea25409a07db00b41f31fe74277695af.png",
+      "bytes": 419,
+      "sha256": "a464a5a11d33766624bf0e1afd4faca0ea25409a07db00b41f31fe74277695af"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/a586fea7b49253d1f2c7e84776507f7f00c3477ec3f993bbf4d31d7327b5d160.png",
+      "bytes": 682,
+      "sha256": "a586fea7b49253d1f2c7e84776507f7f00c3477ec3f993bbf4d31d7327b5d160"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/a5d6199434c38896481c563d6cd72c888d8a4d596b5d4b0a7bf8335ca0986ac7.png",
+      "bytes": 434,
+      "sha256": "a5d6199434c38896481c563d6cd72c888d8a4d596b5d4b0a7bf8335ca0986ac7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/a7a07795cad8035798ca200545892e174802a666f5004280d54df798749473ec.png",
+      "bytes": 745,
+      "sha256": "a7a07795cad8035798ca200545892e174802a666f5004280d54df798749473ec"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/ab30335bef02545ea6ec8b8bfd6c147ae80e4d694bf0ad9a57ec317bb9120fe2.png",
+      "bytes": 573,
+      "sha256": "ab30335bef02545ea6ec8b8bfd6c147ae80e4d694bf0ad9a57ec317bb9120fe2"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/ab85590265db8568d1685e92810cbb420d51faf2994ba43d79bc59d593fc3318.png",
+      "bytes": 602,
+      "sha256": "ab85590265db8568d1685e92810cbb420d51faf2994ba43d79bc59d593fc3318"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/b954f9bb40181b039c970b75cbeb4f14e74676674f72633ec4bb111626a9d0f9.png",
+      "bytes": 668,
+      "sha256": "b954f9bb40181b039c970b75cbeb4f14e74676674f72633ec4bb111626a9d0f9"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/c811cbe80d09da8a5c4f3eac5bab59bc87c170ef59af7f68456cdfafa24673a1.png",
+      "bytes": 626,
+      "sha256": "c811cbe80d09da8a5c4f3eac5bab59bc87c170ef59af7f68456cdfafa24673a1"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/c9e51c83e02bb1dac09d74b41da1a707ccd6722af19baeeaf11d269caf148bba.png",
+      "bytes": 749,
+      "sha256": "c9e51c83e02bb1dac09d74b41da1a707ccd6722af19baeeaf11d269caf148bba"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/d162f02fa0c51e405b7d1ee25fb8aff77a8b93e546a960c31f1f0d484d44540d.png",
+      "bytes": 592,
+      "sha256": "d162f02fa0c51e405b7d1ee25fb8aff77a8b93e546a960c31f1f0d484d44540d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/d6aabac7b67b6b45f802c523498d88cef48995d43db593ee2d017ab9a14ce950.png",
+      "bytes": 386,
+      "sha256": "d6aabac7b67b6b45f802c523498d88cef48995d43db593ee2d017ab9a14ce950"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/d9051624fde1afa0cbba1dc6cb551adf8d1b57a3766defc5a5eb79c99d410fc7.png",
+      "bytes": 870,
+      "sha256": "d9051624fde1afa0cbba1dc6cb551adf8d1b57a3766defc5a5eb79c99d410fc7"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/objective-icons/e9516b0626599b2f433d5db0d661078ab1af3fdf45ffb445f33d51804aeca3fb.png",
+      "bytes": 1011,
+      "sha256": "e9516b0626599b2f433d5db0d661078ab1af3fdf45ffb445f33d51804aeca3fb"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/stage13-samples/Arcana_EmperorsTarot_VIII_GodEmperor.png",
+      "bytes": 344833,
+      "sha256": "a30d52f28a332e3cb2a13dce6fd199e78c5edfa617510cad9c1abcb71630dc3f"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/stage13-samples/C_MalumCaedo_01.png",
+      "bytes": 2143,
+      "sha256": "c411758fe868c08e3aafa72204c8b0293615b1b5ea3504f7de5e12d1c9df0d2c"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/stage13-samples/E_Tyr_HiveTyrant_A_0.png",
+      "bytes": 7297,
+      "sha256": "acc03d743154b8bd5f9aacfcc67017fea1a866e0fd5c2b67b2f1e47906795b50"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/stage13-samples/Element_KillsSkull.png",
+      "bytes": 455,
+      "sha256": "a9c15068440d6202ada0764b8a6a7812219dfa1e78988e65c8802c732352c49d"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/stage13-samples/ObjectiveIcon_Trophy.png",
+      "bytes": 665,
+      "sha256": "039c95693d4f032cf34ad6430d615dc3fda88b237aa163efd04e92d2cc552441"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/stage13-samples/Passive_LuckyStikk.png",
+      "bytes": 432,
+      "sha256": "d3295c53dbc662963e4b576fe4537572b27936f25a6223edf566f4df76737df9"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/stage13-samples/Passive_Masterwork_Rune.png",
+      "bytes": 555,
+      "sha256": "81bf7403192a53d297992493467303d48e681c52cac7b259730f0375dab9934a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/stage13-samples/Passive_Save.png",
+      "bytes": 277,
+      "sha256": "5c336ce88b9e9bebb097c1e8afe662c30341661fc764d0afe11948b3c2ea4eee"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/stage13-samples/Passive_Strength.png",
+      "bytes": 469,
+      "sha256": "07f9987fd619f4a88d89f403d0cb91001e8669855ce1578747ab53167a79bdde"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/stage13-samples/Passive_Veterancy.png",
+      "bytes": 369,
+      "sha256": "53aa86cc50d019dd3ab43392f99ff6f9342fa8a299b8a9c3a24de7acb0a07752"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/stage13-samples/W_Chainsword.png",
+      "bytes": 474,
+      "sha256": "24f41c2d1b4cebf2328235222fc217087061678b62fdf8a159e1c0ee9b20320a"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/stage13-samples/W_EvisceratorChainsword.png",
+      "bytes": 636,
+      "sha256": "da6f9ae6c2f2e89ff3082036503df111d16e6cea0ce014255e48c81c2b5c4e48"
+    },
+    {
+      "path": "/images/games/warhammer-survivors/warhammer-survivors-cover-ai.png",
+      "bytes": 3395112,
+      "sha256": "32bee74ae3afc4eae66600b63d1ed182e60f12f3c8483f3aa125c9792f44bcd7"
+    }
+  ]
+}

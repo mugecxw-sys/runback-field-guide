@@ -34,7 +34,7 @@ export default function Home() {
     .map((h) => searchIndex.find((x) => x.href === h))
     .filter(Boolean);
   const latest = searchIndex
-    .filter((x) => x.kind !== 'Game' && x.kind !== 'Enemy')
+    .filter((x) => x.kind !== 'Game' && x.kind !== 'Enemy' && x.game !== 'Warhammer Survivors')
     .slice()
     .sort((a, b) => b.date.localeCompare(a.date))
     .slice(0, 6);

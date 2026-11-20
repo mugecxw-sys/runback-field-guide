@@ -1,3 +1,4 @@
+import { warhammerSearchRecords } from './game-hub-v1/warhammer-release';
 import { articleLibraries, articlePublishedAt, articleSortDate } from './game-articles';
 import { gameLibraries } from './game-catalog';
 import { repoGuidePages, guidePublishedAt, guideSortDate } from './repo-guide-pages';
@@ -6,6 +7,7 @@ import { wanderburgWikiPages } from './wanderburg-wiki-pages';
 import { sephiriaAllRecords, sephiriaWikiPages } from './sephiria-wiki-data';
 import sephiriaItemsSearchIndex from './sephiria-items-search-index.json';
 export const searchIndex = [
+  ...warhammerSearchRecords,
   ...gameLibraries.map((g) => ({
     title: g.title,
     game: g.title,

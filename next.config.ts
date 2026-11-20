@@ -1,5 +1,16 @@
 import type { NextConfig } from 'next';
 import { sephiriaLegacyRedirects } from './lib/sephiria-wiki-data';
+import sampleData from './data/warhammer-survivors/wiki-stage13-samples.json';
+
+const warhammerCompactSampleRedirects = sampleData.groups.flatMap((group) =>
+  (group.entries as Array<{ slug: string; href?: string }>)
+    .filter((entry) => !entry.href)
+    .map((entry) => ({
+      source: `/games/warhammer-survivors/wiki-samples/${entry.slug}`,
+      destination: `/games/warhammer-survivors/wiki-samples#sample-entry-${entry.slug}`,
+      permanent: false,
+    })),
+);
 
 const nextConfig: NextConfig = {
   trailingSlash: false,
@@ -19,6 +30,7 @@ const nextConfig: NextConfig = {
         destination,
         permanent: true,
       })),
+      ...warhammerCompactSampleRedirects,
     ];
   },
 };

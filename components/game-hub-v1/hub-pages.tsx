@@ -2,6 +2,7 @@ import { ArrowLeft, ArrowUpRight } from 'lucide-react';
 import Image from 'next/image';
 import {
   findHubEntry,
+  getHubSection,
   hubHref,
   hubSections,
   visibleHubSections,
@@ -53,12 +54,15 @@ export function HubOverview({ game }: { game: GameHubConfig }) {
             src={game.cover.src}
             alt={game.cover.alt}
             fill
+            style={{ objectFit: game.coverFit ?? 'cover' }}
             sizes="(max-width: 680px) 100vw, 48vw"
             unoptimized
           />
         </div>
       </header>
-      <HubFacts facts={game.info} />
+      {game.showInfoFacts !== false && game.info.length > 0 && (
+        <HubFacts facts={game.info} />
+      )}
       {game.demo && <DemoNote />}
       <section className={styles.block} aria-labelledby="explore-hub">
         <h2 id="explore-hub">Explore the Hub</h2>
@@ -70,7 +74,9 @@ export function HubOverview({ game }: { game: GameHubConfig }) {
                 key={section}
                 href={hubHref(game.slug, section)}
                 title={hubSections[section].label}
-                summary={hubSections[section].description}
+                summary={game.useSectionCardDescriptions
+                  ? getHubSection(game, section)?.description ?? hubSections[section].description
+                  : hubSections[section].description}
                 icon={sectionIcons[section]}
                 demo={game.demo}
               />
@@ -101,27 +107,61 @@ export function HubSectionPage({
   groups,
   description,
   pageSize,
+  compactGrid,
+  showResultCount,
+  emptyState,
+  heading,
+  breadcrumbLabel,
+  breadcrumbHref,
+  notice,
 }: {
   game: GameHubConfig;
   section: HubResourceSection;
   groups: readonly HubGroup[];
   description: string;
   pageSize?: number;
+  compactGrid?: boolean;
+  showResultCount?: boolean;
+  emptyState?: { title: string; description: string };
+  heading?: string;
+  breadcrumbLabel?: string;
+  breadcrumbHref?: string;
+  notice?: { text: string; href: string; label: string };
 }) {
   return (
-    <HubShell game={game} active={section}>
+    <HubShell
+      game={game}
+      active={section}
+      breadcrumbLabel={breadcrumbLabel}
+      breadcrumbHref={breadcrumbHref}
+    >
       <header className={styles.pageHeader}>
         <p className={styles.eyebrow}>{game.name}</p>
-        <h1>{hubSections[section].label}</h1>
+        <h1>{heading ?? hubSections[section].label}</h1>
         <p className={styles.lead}>{description}</p>
+        {notice && (
+          <p className={styles.sampleNotice}>
+            {notice.text}{' '}
+            <a href={notice.href}>{notice.label}</a>
+          </p>
+        )}
       </header>
       {game.demo && <DemoNote />}
-      {section === 'wiki' ? (
+      {emptyState && !groups.some((group) => group.entries.length) ? (
+        <output className={styles.emptyState}>
+          <div className={styles.empty}>
+            <h2>{emptyState.title}</h2>
+            <p>{emptyState.description}</p>
+          </div>
+        </output>
+      ) : section === 'wiki' ? (
         <HubWiki
           slug={game.slug}
           groups={groups}
           demo={game.demo}
           pageSize={pageSize}
+          compactGrid={compactGrid}
+          showResultCount={showResultCount}
         />
       ) : (
         groups
@@ -158,18 +198,27 @@ export function HubEntryPage({
   group,
   entry,
   back,
+  breadcrumbLabel,
+  breadcrumbHref,
+  alternateLink,
 }: {
   game: GameHubConfig;
   section: HubResourceSection;
   group: HubGroup;
   entry: HubEntry;
   back?: { href: string; label: string };
+  breadcrumbLabel?: string;
+  breadcrumbHref?: string;
+  alternateLink?: { href: string; label: string };
 }) {
   const demo = game.demo || entry.demo;
   const facts = (group.fields ?? [])
+    .filter(({ hideInDetail }) => !hideInDetail)
     .flatMap(({ key, label }) => {
       const value = entry.attributes?.[key];
-      return value ? [{ label, value }] : [];
+      return value
+        ? [{ label, value: typeof value === 'string' ? value : value.join(', ') }]
+        : [];
     })
     .concat(entry.facts ?? []);
   const related = (entry.related ?? []).flatMap((slug) => {
@@ -178,7 +227,13 @@ export function HubEntryPage({
     return record ? [record] : [];
   });
   return (
-    <HubShell game={game} active={section} detail>
+    <HubShell
+      game={game}
+      active={section}
+      detail
+      breadcrumbLabel={breadcrumbLabel}
+      breadcrumbHref={breadcrumbHref}
+    >
       <article>
         <header className={styles.pageHeader}>
           <div className={styles.recordMeta}>
@@ -195,7 +250,12 @@ export function HubEntryPage({
             {demo && <DemoBadge />}
           </div>
           <h1>{entry.title}</h1>
-          <p className={styles.lead}>{entry.summary}</p>
+          {entry.summary && <p className={styles.lead}>{entry.summary}</p>}
+          {alternateLink && (
+            <p className={styles.sampleNotice}>
+              <a href={alternateLink.href}>{alternateLink.label}</a>
+            </p>
+          )}
         </header>
         {demo && <DemoNote />}
         {entry.image && (
@@ -210,12 +270,60 @@ export function HubEntryPage({
           </div>
         )}
         {facts.length > 0 && <HubFacts facts={facts} />}
-        <section className={styles.block} aria-labelledby="entry-notes">
-          <h2 id="entry-notes">
-            {section === 'wiki' ? 'Reference notes' : 'Overview'}
-          </h2>
-          <p className={styles.notes}>{entry.detail}</p>
-        </section>
+        {entry.detail && (
+          <section className={styles.block} aria-labelledby="entry-notes">
+            <h2 id="entry-notes">
+              {section === 'wiki' ? 'Reference notes' : 'Overview'}
+            </h2>
+            <p className={styles.notes}>{entry.detail}</p>
+          </section>
+        )}
+        {entry.detailSections?.map((detailSection, sectionIndex) => (
+          <section
+            className={styles.block}
+            aria-labelledby={`detail-section-${sectionIndex}`}
+            key={detailSection.title}
+          >
+            <h2 id={`detail-section-${sectionIndex}`}>{detailSection.title}</h2>
+            {detailSection.description && <p className={styles.notes}>{detailSection.description}</p>}
+            <div className={styles.detailTableWrap}>
+              <table className={styles.detailTable}>
+                <thead>
+                  <tr>
+                    {detailSection.columns.map(({ key, label }) => (
+                      <th scope="col" key={key}>{label}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {detailSection.rows.map((row, rowIndex) => (
+                    <tr key={`${detailSection.title}-${rowIndex}`}>
+                      {detailSection.columns.map(({ key, label }) => (
+                        <td data-label={label} key={key}>{row[key] ?? ''}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        ))}
+        {entry.relatedLinks && entry.relatedLinks.length > 0 && (
+          <section className={styles.block} aria-labelledby="sample-related-links">
+            <h2 id="sample-related-links">Related entries</h2>
+            <div className={styles.cardGrid}>
+              {entry.relatedLinks.map((link) => (
+                <HubCard
+                  key={link.href}
+                  href={link.href}
+                  title={link.title}
+                  summary={link.summary ?? ''}
+                  label={link.label}
+                />
+              ))}
+            </div>
+          </section>
+        )}
         {related.length > 0 && (
           <section className={styles.block} aria-labelledby="related-entries">
             <h2 id="related-entries">Related entries</h2>

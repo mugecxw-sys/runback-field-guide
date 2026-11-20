@@ -30,20 +30,41 @@ export type HubEntry = {
   slug: string;
   title: string;
   summary: string;
-  detail: string;
+  detail?: string;
   facts?: readonly { label: string; value: string }[];
   href?: string;
+  /** Optional per-entry override for mixed simple and complex Wiki groups. */
+  entryDisplay?: 'compact' | 'detail';
   demo?: boolean;
   image?: HubImage;
   icon?: HubImage;
-  attributes?: Readonly<Record<string, string>>;
+  attributes?: Readonly<Record<string, string | readonly string[]>>;
   related?: readonly string[];
+  relatedLinks?: readonly {
+    label: string;
+    title: string;
+    href: string;
+    summary?: string;
+  }[];
+  detailSections?: readonly HubDetailSection[];
+};
+
+export type HubDetailSection = {
+  title: string;
+  description?: string;
+  columns: readonly { key: string; label: string }[];
+  rows: readonly Readonly<Record<string, string>>[];
 };
 
 export type HubWikiField = {
   key: string;
   label: string;
   filter?: boolean;
+  multiValue?: boolean;
+  allLabel?: string;
+  hideInDetail?: boolean;
+  /** Hide this field when its source-backed value is already represented by another field. */
+  deduplicateWith?: string;
 };
 
 export type HubGroup = {
@@ -51,6 +72,15 @@ export type HubGroup = {
   label: string;
   entries: readonly HubEntry[];
   fields?: readonly HubWikiField[];
+  entryDisplay?: 'compact' | 'detail';
+  entryIconSize?: number;
+  /** Render source-backed relation links inline for compact cards when enabled by a game config. */
+  compactRelationLinks?: boolean;
+};
+
+export type HubEmptyState = {
+  title: string;
+  description: string;
 };
 
 export type GameHubConfig = {
@@ -59,9 +89,13 @@ export type GameHubConfig = {
   version: string;
   description: string;
   cover: HubImage;
+  coverFit?: 'cover' | 'contain';
   info: readonly { label: string; value: string }[];
+  showInfoFacts?: boolean;
   officialHref?: string;
   demo?: boolean;
+  narrowViewportSafe?: boolean;
+  useSectionCardDescriptions?: boolean;
   sections: Partial<
     Record<
       HubResourceSection,
@@ -70,6 +104,9 @@ export type GameHubConfig = {
         groups: readonly HubGroup[];
         enabled?: boolean;
         pageSize?: number;
+        compactGrid?: boolean;
+        showResultCount?: boolean;
+        emptyState?: HubEmptyState;
       }
     >
   >;
@@ -93,7 +130,8 @@ export function getHubSection(
   const content = game.sections[section];
   if (
     content?.enabled !== false &&
-    content?.groups.some((group) => group.entries.length)
+    (content?.groups.some((group) => group.entries.length) ||
+      (content?.enabled === true && content.emptyState !== undefined))
   ) {
     return content;
   }

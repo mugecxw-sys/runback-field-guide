@@ -67,14 +67,21 @@ export function HubShell({
   active,
   children,
   detail = false,
+  breadcrumbLabel,
+  breadcrumbHref,
 }: {
   game: GameHubConfig;
   active: HubSection;
   children: ReactNode;
   detail?: boolean;
+  breadcrumbLabel?: string;
+  breadcrumbHref?: string;
 }) {
   return (
-    <main className={styles.shell}>
+    <main
+      className={styles.shell}
+      data-narrow-viewport-safe={game.narrowViewportSafe || undefined}
+    >
       <div className={styles.layout}>
         <aside className={styles.sidebar}>
           <p className={styles.eyebrow}>Game Hub</p>
@@ -102,11 +109,13 @@ export function HubShell({
                 <a href={hubHref(game.slug)}>{game.name}</a>
                 <span aria-hidden="true">/</span>
                 {detail ? (
-                  <a href={hubHref(game.slug, active)}>
-                    {hubSections[active].label}
+                  <a href={breadcrumbHref ?? hubHref(game.slug, active)}>
+                    {breadcrumbLabel ?? hubSections[active].label}
                   </a>
                 ) : (
-                  <span aria-current="page">{hubSections[active].label}</span>
+                  <span aria-current="page">
+                    {breadcrumbLabel ?? hubSections[active].label}
+                  </span>
                 )}
               </>
             )}

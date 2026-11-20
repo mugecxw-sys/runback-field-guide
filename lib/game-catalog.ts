@@ -14,6 +14,18 @@ export type GameLibrary = {
 
 export const gameLibraries: GameLibrary[] = [
   {
+    slug: 'warhammer-survivors',
+    title: 'Warhammer Survivors',
+    type: 'Arena survival roguelite',
+    version: '2.1.7',
+    description: 'Explore characters, equipment, enemies, stages, and unlocks in the Warhammer Survivors Wiki.',
+    status: 'LIVE',
+    guideCount: 0,
+    contentLabel: 'Wiki reference',
+    categories: ['Characters', 'Enhancements', 'Equipment', 'Objectives', 'Enemies'],
+    sourceHref: 'https://store.steampowered.com/app/3669620/Warhammer_Survivors/',
+  },
+  {
     slug: 'brotato',
     title: 'Brotato',
     type: 'Arena survival roguelite',
