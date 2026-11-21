@@ -302,7 +302,32 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
       ],
     }],
   },
-  { name: 'Staff', imageKey: 'WPN-06', builds: [] },
+  {
+    name: 'Staff',
+    href: '/games/sephiria/builds/staff',
+    imageKey: 'WPN-06',
+    builds: [{
+      title: 'Staff of Great Might',
+      href: '/games/sephiria/builds/staff/great-might-build',
+      publishedAt: '2026-11-20T00:00:00.000Z',
+      weaponRoute: ['Staff', 'Flourish Staff', 'Staff of Great Might'],
+      finalBuild: ['Sturdy 10', 'Precision 10', 'Wind Song 10'],
+      fieldNotes: [
+        {
+          title: 'The spin is the build',
+          detail: 'Flourish Staff turns the normal attack into Normal Attack: Flower Staff, a continuous spin. Stay inside the pack and keep it running — distance is damage you chose not to deal.',
+        },
+        {
+          title: 'Normal Attack Damage first',
+          detail: 'Staff of Great Might adds +30% Normal Attack Damage, so the Sturdy tree and items like Mystical Pendulum compound with it directly. Precision converts that into crits.',
+        },
+        {
+          title: 'The shield is a bonus, not a plan',
+          detail: '5% of Defense refreshed every 20 seconds is not worth building Defense for. Spend those slots on damage and fix survival with Evasion instead.',
+        },
+      ],
+    }],
+  },
   {
     name: 'Colossal Crossbow',
     href: '/games/sephiria/builds/crossbow',
