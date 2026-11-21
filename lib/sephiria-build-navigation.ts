@@ -664,6 +664,27 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           },
         ],
       },
+      {
+        title: "Yui's Short Dagger",
+        href: '/games/sephiria/builds/katana/yuis-short-dagger-build',
+        publishedAt: '2026-11-18T00:00:00.000Z',
+        weaponRoute: ['Blade', 'The Awaiting Azureblade', "Yui's Short Dagger"],
+        finalBuild: ['Academy 10', 'Elemental 6'],
+        fieldNotes: [
+          {
+            title: 'Sheathing is the attack',
+            detail: 'Blade Slash only builds from Sheath, so the button you never press on a normal katana is this build\u2019s builder. Normal attacks are the thing you give up.',
+          },
+          {
+            title: 'The buff is per cast',
+            detail: 'Each Grimoire cast spends 10 Blade Slash for +20% Grimoire Damage. A half-filled bar is a 20% loss on every cast in that window, which is the main skill check on the weapon.',
+          },
+          {
+            title: 'Ghost pays the MP bill',
+            detail: 'Seven spellbooks on rotation only works because Grimoire casts cost no MP with the Ghost costume on. Otherwise the rotation is mana-gated and the build stalls.',
+          },
+        ],
+      },
     ],
   },
 ];
