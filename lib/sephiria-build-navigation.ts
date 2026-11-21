@@ -326,6 +326,26 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           detail: '5% of Defense refreshed every 20 seconds is not worth building Defense for. Spend those slots on damage and fix survival with Evasion instead.',
         },
       ],
+    }, {
+      title: "Ilonica's Spirit Staff",
+      href: '/games/sephiria/builds/staff/ilonica-spirit-build',
+      publishedAt: '2026-11-21T00:00:00.000Z',
+      weaponRoute: ['Staff', 'Flourish Staff', "Ilonica's Spirit Staff"],
+      finalBuild: ['Academy 10', 'Shadow 10', 'Elemental 6'],
+      fieldNotes: [
+        {
+          title: 'You cannot cast by hand anymore',
+          detail: 'The weapon removes manual Grimoire casting and turns the Flower Staff spin into Grimoire: Bolt Barrage. The bolts fire themselves, so your job is positioning and what you carry.',
+        },
+        {
+          title: 'Bolt Grimoires are ammunition',
+          detail: 'Fire Bolt, Lightning Bolt, Ice Bolt and friends are not buttons here — the barrage fires from the bolts you hold, so a thin spellbook library means a thin barrage.',
+        },
+        {
+          title: 'Low number, so plan for survival',
+          detail: '6,000 DPS means fights run long, and long fights need Shadow or Guardian. Precision is the only ceiling raiser once Academy is capped.',
+        },
+      ],
     }],
   },
   {
