@@ -685,6 +685,27 @@ export const weaponBuildGroups: SephiriaWeaponBuildGroup[] = [
           },
         ],
       },
+      {
+        title: 'Adamah’s Oath (Magic Blade)',
+        href: '/games/sephiria/builds/katana/adamahs-oath-magic-blade-build',
+        publishedAt: '2026-11-19T00:00:00.000Z',
+        weaponRoute: ['Blade', 'The Awaiting Azureblade', 'Adamah’s Oath'],
+        finalBuild: ['Lake 9', 'Academy 10', 'Elemental 6'],
+        fieldNotes: [
+          {
+            title: 'Damage scales off empty MP',
+            detail: 'The Magic Blade hits for 20 + 70% of your empty MP, so the weaker your bar is the harder it hits. A full bar is the one mistake that quietly deletes the build.',
+          },
+          {
+            title: 'Big pool, kept empty',
+            detail: 'Max MP raises the ceiling on the formula and Jolow’s Watering Can converts a Max MP threshold into an extra Grimoire cast. The Lake tree is the damage tree here.',
+          },
+          {
+            title: 'Regen is a trade, not a free stat',
+            detail: 'MP regeneration keeps the rotation alive but shrinks the empty-MP number the blade scales off. Take only enough to keep casting, then spend slots on Max MP and Grimoire damage.',
+          },
+        ],
+      },
     ],
   },
 ];
